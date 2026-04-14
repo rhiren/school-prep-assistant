@@ -1,0 +1,240 @@
+Generate content for:
+
+Concept: percent relationships
+
+You are working inside a code repository.
+
+Your task is to generate production-quality math test content,
+create JSON files, AND update the course manifest safely.
+
+This content must feel like a teacher-designed practice test, not pattern-generated output.
+
+-------------------------------------
+INPUT
+-------------------------------------
+
+Concept: <CONCEPT_NAME>
+
+-------------------------------------
+STEP 1 — DERIVE IDS
+-------------------------------------
+
+Convert concept name into:
+
+conceptId = concept-<kebab-case>
+
+-------------------------------------
+STEP 2 — CREATE TEST FILES
+-------------------------------------
+
+Create TWO files:
+
+1. content/test-sets/concept-<concept-id>-core.json
+2. content/test-sets/concept-<concept-id>-review.json
+
+-------------------------------------
+STEP 3 — TEST FILE STRUCTURE (STRICT)
+-------------------------------------
+
+{
+  "testId": "concept-<concept-id>-core",
+  "conceptId": "concept-<concept-id>",
+  "type": "concept",
+  "questions": [...]
+}
+
+{
+  "testId": "concept-<concept-id>-review",
+  "conceptId": "concept-<concept-id>",
+  "type": "review",
+  "questions": [...]
+}
+
+-------------------------------------
+STEP 4 — DIFFICULTY DESIGN
+-------------------------------------
+
+Core Test (50 questions):
+- 1–15 → EASY
+- 16–30 → MEDIUM
+- 31–45 → HARD
+- 46–50 → CHALLENGE
+
+Review Test (20 questions):
+- Mostly EASY + MEDIUM
+- Last 3–4 slightly more applied
+
+-------------------------------------
+STEP 5 — QUESTION VARIETY (CRITICAL)
+-------------------------------------
+
+The test MUST include a balanced mix of:
+
+- direct unit rate calculations
+- multi-step problems
+- real-world word problems
+- comparison / “better buy” problems
+- table-based problems
+- missing value problems
+- reasoning questions (which method is correct)
+- error analysis (identify mistake)
+- unit conversion problems
+- problems where choosing divide vs multiply is non-trivial
+
+DO NOT generate more than 3–4 questions of the same pattern.
+
+-------------------------------------
+STEP 6 — DISTRACTOR DESIGN (VERY IMPORTANT)
+-------------------------------------
+
+Wrong answers must reflect real student mistakes:
+
+Examples:
+- multiplying instead of dividing
+- reversing the rate (e.g., mpg vs gpm)
+- forgetting unit conversion
+- partial scaling
+- using wrong denominator
+
+Avoid:
+- random numbers
+- obviously incorrect answers
+
+-------------------------------------
+STEP 7 — CHALLENGE QUESTIONS (CRITICAL)
+-------------------------------------
+
+Include at least:
+
+- 2 comparison problems
+- 2 unit conversion problems
+- 2 reasoning / method validation questions
+- 2 trap questions (reverse unit or misinterpretation)
+
+-------------------------------------
+STEP 8 — EXPLANATION QUALITY
+-------------------------------------
+
+Each explanation must:
+
+- be step-by-step
+- explain WHY the method works
+- explicitly mention the likely mistake
+- use simple student-friendly language
+
+Example:
+"Divide total cost by number of items. 8 ÷ 4 = 2. A common mistake is multiplying instead of dividing."
+
+-------------------------------------
+STEP 9 — ANSWER FORMAT RULES
+-------------------------------------
+
+- correctAnswer must be numeric only (no units, no $)
+- If needed, include:
+  "unit": "dollars" / "mph" / etc.
+
+- Ensure answerType matches:
+  number / decimal / fraction
+
+-------------------------------------
+STEP 10 — UPDATE MANIFEST (CRITICAL)
+-------------------------------------
+
+Open:
+
+content/manifest/course2_manifest.json
+
+Find concept with:
+
+"id": "concept-<concept-id>"
+
+Then:
+
+- Add test entries if not present
+- DO NOT overwrite existing entries
+- DO NOT duplicate
+
+Add:
+
+{
+  "id": "concept-<concept-id>-core",
+  "type": "concept",
+  "path": "/content/test-sets/concept-<concept-id>-core.json"
+}
+
+{
+  "id": "concept-<concept-id>-review",
+  "type": "review",
+  "path": "/content/test-sets/concept-<concept-id>-review.json"
+}
+
+-------------------------------------
+STEP 11 — QUALITY VALIDATION (MANDATORY)
+-------------------------------------
+
+Before finishing:
+
+- No duplicate questions
+- No repeated patterns > 4 times
+- Difficulty progression correct
+- Explanations exist for all questions
+- Distractors are realistic
+- JSON is valid
+- Paths match filenames exactly
+
+-------------------------------------
+STEP 12 — ADVANCED QUALITY ENFORCEMENT (CRITICAL)
+-------------------------------------
+
+To ensure teacher-quality content:
+
+1. Include at least:
+   - 3 interpretation questions (what does the ratio mean)
+   - 3 table-based questions
+   - 3 reverse problems (find original from result)
+   - 2 multi-step reasoning chains
+   - 2 “which situation matches this ratio” questions
+
+2. Avoid overusing patterns:
+   - direct scale-up problems
+   - total ÷ parts → multiply
+
+3. Challenge questions MUST include:
+   - misleading wording
+   - unit traps
+   - multi-step reasoning
+   - comparison across contexts
+
+4. Review test must:
+   - feel easier than core
+   - avoid heavy multi-step reasoning
+   - reinforce fundamentals
+
+5. Include at least:
+   - 2 comparison-of-ratios questions
+   - 2 “which statement is true” interpretation questions
+   - 2 deeper table problems (missing row or incorrect row)
+
+6. Include at least:
+   - 3 equation-setup questions (choose correct proportion)
+   - 2 comparison questions (which situation is proportional)
+   - 2 problems that require checking a proportion without solving
+
+-------------------------------------
+FINAL SELF-CHECK
+-------------------------------------
+
+- No single pattern appears more than 4 times
+- At least 30% questions require reasoning
+- At least 20% include misconception-based traps
+
+-------------------------------------
+FINAL OUTPUT
+-------------------------------------
+
+1. Create both test files
+2. Update manifest
+3. Confirm:
+   - files created
+   - manifest updated
+   - question counts

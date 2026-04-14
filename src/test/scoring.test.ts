@@ -11,26 +11,26 @@ describe("BasicScoringEngine", () => {
       id: "session-1",
       mode: "concept",
       courseId: "course-2",
-      conceptId: "concept-unit-rate",
-      conceptIds: ["concept-unit-rate"],
+      conceptId: "concept-unit-rates",
+      conceptIds: ["concept-unit-rates"],
       questionIds: [
-        "course-2-unit-rate-001",
-        "course-2-unit-rate-002",
-        "course-2-unit-rate-003",
+        "concept-unit-rates-core-001",
+        "concept-unit-rates-core-002",
+        "concept-unit-rates-core-003",
       ],
       answers: {
-        "course-2-unit-rate-001": {
-          questionId: "course-2-unit-rate-001",
-          response: "60.0",
+        "concept-unit-rates-core-001": {
+          questionId: "concept-unit-rates-core-001",
+          response: "8.0",
           answeredAt: "2026-04-12T12:00:00.000Z",
         },
-        "course-2-unit-rate-002": {
-          questionId: "course-2-unit-rate-002",
-          response: "2",
+        "concept-unit-rates-core-002": {
+          questionId: "concept-unit-rates-core-002",
+          response: "6",
           answeredAt: "2026-04-12T12:00:00.000Z",
         },
-        "course-2-unit-rate-003": {
-          questionId: "course-2-unit-rate-003",
+        "concept-unit-rates-core-003": {
+          questionId: "concept-unit-rates-core-003",
           response: "   ",
           answeredAt: "2026-04-12T12:00:00.000Z",
         },
@@ -49,20 +49,20 @@ describe("BasicScoringEngine", () => {
     expect(attempt.summary.percentage).toBe(33);
   });
 
-  it("marks ratio-equivalent notation as correct and adds a feedback tip", async () => {
+  it("marks equivalent numeric formatting as correct", async () => {
     const repository = createDefaultContentRepository();
     const engine = new BasicScoringEngine(repository);
     const session: TestSession = {
       id: "session-2",
       mode: "concept",
       courseId: "course-2",
-      conceptId: "concept-ratios",
-      conceptIds: ["concept-ratios"],
-      questionIds: ["course-2-ratios-002"],
+      conceptId: "concept-unit-rates",
+      conceptIds: ["concept-unit-rates"],
+      questionIds: ["concept-unit-rates-core-017"],
       answers: {
-        "course-2-ratios-002": {
-          questionId: "course-2-ratios-002",
-          response: "2/3",
+        "concept-unit-rates-core-017": {
+          questionId: "concept-unit-rates-core-017",
+          response: "6.50",
           answeredAt: "2026-04-12T12:00:00.000Z",
         },
       },
@@ -75,6 +75,6 @@ describe("BasicScoringEngine", () => {
     const attempt = await engine.scoreSession(session);
 
     expect(attempt.summary.correctCount).toBe(1);
-    expect(attempt.results[0]?.feedbackTip).toContain('":"');
+    expect(attempt.results[0]?.feedbackTip).toBeNull();
   });
 });

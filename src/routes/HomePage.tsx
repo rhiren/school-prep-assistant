@@ -33,6 +33,16 @@ function getEncouragement(completed: number, total: number): string {
   return "Great work. You finished this set.";
 }
 
+function sortConceptsForDisplay(concepts: Concept[]): Concept[] {
+  return [...concepts].sort((left, right) => {
+    if (left.hasTest !== right.hasTest) {
+      return left.hasTest ? -1 : 1;
+    }
+
+    return left.order - right.order;
+  });
+}
+
 export function HomePage() {
   const navigate = useNavigate();
   const { contentRepository, progressService, sessionService, testGenerationService } =
@@ -99,9 +109,18 @@ export function HomePage() {
     );
   }, [concepts, progressByConcept]);
 
-  const recommendedNextStep = useMemo(() => {
-    const orderedConcepts = [...concepts].sort((left, right) => left.order - right.order);
+  const orderedConcepts = useMemo(() => sortConceptsForDisplay(concepts), [concepts]);
+  const hasStartedAnyConcept = useMemo(
+    () =>
+      lastSession !== null ||
+      orderedConcepts.some(
+        (concept) => toStudentStatus(progressByConcept[concept.id]) !== "Not Started",
+      ),
+    [lastSession, orderedConcepts, progressByConcept],
+  );
+  const firstConceptId = orderedConcepts[0]?.id ?? null;
 
+  const recommendedNextStep = useMemo(() => {
     if (resumeConcept && lastSession) {
       return {
         title: "Continue Practice",
@@ -164,12 +183,12 @@ export function HomePage() {
               : navigate(`/concept/${nextToReview.id}/tutorial`),
         }
       : null;
-  }, [concepts, lastSession, navigate, progressByConcept, resumeConcept]);
+  }, [lastSession, navigate, orderedConcepts, progressByConcept, resumeConcept]);
   const conceptsByUnit = useMemo(() => {
     return concepts.reduce<Record<string, Concept[]>>((groups, concept) => {
       groups[concept.unitId] ??= [];
       groups[concept.unitId].push(concept);
-      groups[concept.unitId].sort((left, right) => left.order - right.order);
+      groups[concept.unitId] = sortConceptsForDisplay(groups[concept.unitId]);
       return groups;
     }, {});
   }, [concepts]);
@@ -334,7 +353,11 @@ export function HomePage() {
                 {unitConcepts.map((concept) => (
                   <article
                     key={concept.id}
-                    className="rounded-2xl border border-stone-200 bg-white px-4 py-4"
+                    className={`rounded-2xl border bg-white px-4 py-4 ${
+                      !hasStartedAnyConcept && concept.id === firstConceptId
+                        ? "border-accent ring-1 ring-accent/30"
+                        : "border-stone-200"
+                    }`}
                   >
                     <div className="flex flex-wrap items-start justify-between gap-3">
                       <div>
@@ -342,6 +365,11 @@ export function HomePage() {
                         {recommendedNextStep?.concept.id === concept.id &&
                         recommendedNextStep.title === "Start Here" ? (
                           <p className="mt-1 text-sm font-semibold text-accent">Start Here</p>
+                        ) : null}
+                        {!concept.hasTest ? (
+                          <p className="mt-1 text-sm font-medium text-amber-700">
+                            ⏳ Practice Coming Soon
+                          </p>
                         ) : null}
                       </div>
                       <div className="text-sm text-stone-600">

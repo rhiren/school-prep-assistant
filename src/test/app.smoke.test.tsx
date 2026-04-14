@@ -33,7 +33,7 @@ describe("app smoke flow", () => {
     await user.click(screen.getAllByRole("button", { name: "Start test" })[0]);
 
     expect(await screen.findByText("Concept Test Session")).toBeInTheDocument();
-    expect(screen.getByText("Question 1 of 4")).toBeInTheDocument();
+    expect(screen.getByText("Question 1 of 50")).toBeInTheDocument();
     expect(
       screen.getByRole("button", { name: "Review unanswered questions" }),
     ).toBeInTheDocument();

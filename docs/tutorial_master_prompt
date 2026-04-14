@@ -1,0 +1,197 @@
+You are working inside a code repository.
+
+Your task is to generate a high-quality, student-friendly math tutorial.
+
+This tutorial must feel like a teacher explaining the concept clearly,
+not just a definition.
+
+-------------------------------------
+INPUT
+-------------------------------------
+
+Concept: equivalent-ratios
+
+-------------------------------------
+FILE TO CREATE
+-------------------------------------
+
+content/tutorials/concept-<concept-id>.md
+
+-------------------------------------
+STEP 0 — VALIDATE CONCEPT (CRITICAL)
+-------------------------------------
+
+Open:
+
+content/manifest/course2_manifest.json
+
+Check if the concept exists with:
+
+"id": "concept-<concept-id>"
+
+IF the concept DOES NOT exist:
+
+- STOP immediately
+- DO NOT create any files
+- DO NOT modify the repository
+- Return an error message:
+
+  "Error: concept '<concept-id>' not found in manifest. Please add it to the manifest before generating tutorial."
+
+IF the concept exists:
+
+- Proceed with tutorial generation
+
+-------------------------------------
+TARGET AUDIENCE
+-------------------------------------
+
+- Grade 6–7 student
+- Beginner-friendly
+- Clear and encouraging tone
+
+-------------------------------------
+STYLE RULES
+-------------------------------------
+
+- Use short sentences
+- Avoid jargon
+- Use examples
+- Explain reasoning (not just steps)
+- Make it easy to read
+
+-------------------------------------
+STRUCTURE (STRICT)
+-------------------------------------
+
+# <Concept Title>
+
+## 1. What is this concept?
+
+- Explain in 2–4 simple sentences
+- Include at least one real-life example
+
+-------------------------------------
+
+## 2. What does it mean?
+
+- Explain interpretation in plain language
+
+Example:
+“For every 2 red apples, there are 3 green apples.”
+
+-------------------------------------
+
+## 3. Key Ideas
+
+- List 2–4 important rules
+- Include:
+  - order matters
+  - part-to-part vs part-to-whole (if relevant)
+  - simplification or equivalence (if relevant)
+
+-------------------------------------
+
+## 4. How to Solve (Step-by-Step)
+
+Provide a clear method:
+
+1. Identify what is being compared
+2. Determine type of relationship (if applicable)
+3. Set up correctly
+4. Solve
+5. Check answer
+
+-------------------------------------
+
+## 5. Why This Works
+
+Explain the reasoning behind the method.
+
+Use a simple explanation or analogy.
+
+Example:
+“A ratio is like a recipe. If you double all ingredients, the taste stays the same.”
+
+-------------------------------------
+
+## 6. Common Mistakes
+
+List 3–5 realistic mistakes:
+
+- reversing order
+- mixing part-to-part and part-to-whole
+- incorrect scaling
+- wrong operation (add vs multiply)
+
+Each should include a short explanation.
+
+-------------------------------------
+
+## 7. Examples (CRITICAL)
+
+Include 3 examples:
+
+Example 1 (easy)
+- basic application
+
+Example 2 (medium)
+- multi-step or part-to-whole
+
+Example 3 (tricky)
+- includes a common mistake or trap
+
+Each example must:
+- show steps clearly
+- include explanation
+- include final answer
+
+-------------------------------------
+
+## 8. Real-Life Connection
+
+Include one short example from real life:
+
+- recipes
+- shopping
+- sports
+- maps
+
+Explain how the concept applies.
+
+-------------------------------------
+
+## 9. Quick Practice
+
+Provide 3 questions:
+
+- 1 easy
+- 1 medium
+- 1 slightly tricky
+
+-------------------------------------
+
+## 10. Answers to Quick Practice
+
+Provide correct answers only (no full explanation).
+
+-------------------------------------
+
+-------------------------------------
+QUALITY REQUIREMENTS
+-------------------------------------
+
+- Must be easy to read in under 5 minutes
+- Must include at least:
+  - 1 analogy
+  - 1 interpretation explanation
+  - 1 misconception example
+- Avoid long paragraphs
+- Avoid repetition
+
+-------------------------------------
+FINAL STEP
+-------------------------------------
+
+Create the markdown file with correct naming.
+Ensure formatting is clean and readable.

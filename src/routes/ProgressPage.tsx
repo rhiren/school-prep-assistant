@@ -5,6 +5,30 @@ import type { Concept, ProgressRecord } from "../domain/models";
 import { useAppServices } from "../state/AppServicesProvider";
 import { formatDate } from "../utils/format";
 
+const LAST_BACKUP_KEY = "math-prep:last-backup-at";
+
+function getLastBackupLabel(lastBackupAt: string | null): string {
+  if (!lastBackupAt) {
+    return "Never";
+  }
+
+  const timestamp = new Date(lastBackupAt).getTime();
+  if (Number.isNaN(timestamp)) {
+    return "Never";
+  }
+
+  const diffDays = Math.floor((Date.now() - timestamp) / (1000 * 60 * 60 * 24));
+  if (diffDays <= 0) {
+    return "Today";
+  }
+
+  if (diffDays === 1) {
+    return "1 day ago";
+  }
+
+  return `${diffDays} days ago`;
+}
+
 export function ProgressPage() {
   const { contentRepository, mixedTestService, progressService, dataTransferService } =
     useAppServices();
@@ -15,6 +39,7 @@ export function ProgressPage() {
     conceptIds: [],
   });
   const [transferMessage, setTransferMessage] = useState<string | null>(null);
+  const [lastBackupAt, setLastBackupAt] = useState<string | null>(null);
 
   useEffect(() => {
     contentRepository.getCourseConcepts("course-2").then(setConcepts);
@@ -24,6 +49,9 @@ export function ProgressPage() {
       );
     });
     mixedTestService.getEligibility("course-2").then(setEligibility);
+    if (typeof window !== "undefined") {
+      setLastBackupAt(window.localStorage.getItem(LAST_BACKUP_KEY));
+    }
   }, [contentRepository, mixedTestService, progressService]);
 
   const handleDownload = async () => {
@@ -37,6 +65,10 @@ export function ProgressPage() {
     link.download = `math-progress-${snapshot.exportedAt.slice(0, 10)}.json`;
     link.click();
     window.URL.revokeObjectURL(url);
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem(LAST_BACKUP_KEY, snapshot.exportedAt);
+    }
+    setLastBackupAt(snapshot.exportedAt);
     setTransferMessage("Progress downloaded.");
   };
 
@@ -68,7 +100,7 @@ export function ProgressPage() {
       })();
 
       const confirmed = window.confirm(
-        `Replace your current saved data with this import?\n\nSessions: ${counts.sessions}\nAttempts: ${counts.attempts}\nProgress records: ${counts.progress}`,
+        `This will replace your current progress. It is recommended to download a backup first.\n\nReplace your current saved data with this import?\n\nSessions: ${counts.sessions}\nAttempts: ${counts.attempts}\nProgress records: ${counts.progress}`,
       );
 
       if (!confirmed) {
@@ -111,6 +143,9 @@ export function ProgressPage() {
             <input className="hidden" onChange={(event) => void handleUpload(event)} type="file" accept="application/json" />
           </label>
         </div>
+        <p className="mt-3 text-sm text-stone-600">
+          Last backup: {getLastBackupLabel(lastBackupAt)}
+        </p>
         {transferMessage ? (
           <p className="mt-3 text-sm text-stone-600">{transferMessage}</p>
         ) : null}

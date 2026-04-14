@@ -1,55 +1,45 @@
 import { describe, expect, it } from "vitest";
 import { MixedTestEligibilityEngine } from "../engines/mixedTestEligibilityEngine";
-import { BasicScoringEngine } from "../engines/basicScoringEngine";
-import { DeterministicConceptTestEngine } from "../engines/deterministicConceptTestEngine";
-import { StableSelectionStrategy } from "../engines/questionSelectionStrategy";
-import { createDefaultContentRepository } from "../services/contentRepository";
-import { LocalProgressService } from "../services/progressService";
-import { LocalSessionService } from "../services/sessionService";
-import { MemoryStorageService } from "../storage/memoryStorageService";
-import {
-  AttemptRepository,
-  ProgressRepository,
-  SessionRepository,
-} from "../storage/repositories";
+import type { ProgressService } from "../services/contracts";
 
 describe("MixedTestEligibilityEngine", () => {
   it("unlocks after three completed concepts", async () => {
-    const repository = createDefaultContentRepository();
-    const store = new MemoryStorageService();
-    const sessionRepository = new SessionRepository(store);
-    const attemptRepository = new AttemptRepository(store);
-    const progressRepository = new ProgressRepository(store);
-    const progressService = new LocalProgressService(attemptRepository, progressRepository);
-    const sessionService = new LocalSessionService(
-      sessionRepository,
-      attemptRepository,
-      new BasicScoringEngine(repository),
-      progressService,
-    );
-    const generator = new DeterministicConceptTestEngine(
-      repository,
-      sessionRepository,
-      new StableSelectionStrategy(),
-    );
+    const progressService: ProgressService = {
+      getProgress: async () => [
+        {
+          conceptId: "concept-ratios",
+          courseId: "course-2",
+          attemptCount: 1,
+          latestScore: 70,
+          bestScore: 70,
+          masteryStatus: "needs_review",
+          lastAttemptedAt: "2026-04-12T12:00:00.000Z",
+        },
+        {
+          conceptId: "concept-unit-rates",
+          courseId: "course-2",
+          attemptCount: 2,
+          latestScore: 85,
+          bestScore: 90,
+          masteryStatus: "mastered",
+          lastAttemptedAt: "2026-04-12T11:00:00.000Z",
+        },
+        {
+          conceptId: "concept-integer-operations",
+          courseId: "course-2",
+          attemptCount: 1,
+          latestScore: 80,
+          bestScore: 80,
+          masteryStatus: "practiced",
+          lastAttemptedAt: "2026-04-12T10:00:00.000Z",
+        },
+      ],
+      getConceptProgress: async () => null,
+      getConceptAttempts: async () => [],
+      getAttempt: async () => null,
+      updateFromAttempt: async () => {},
+    };
     const mixedService = new MixedTestEligibilityEngine(progressService);
-
-    for (const conceptId of [
-      "concept-ratios",
-      "concept-unit-rate",
-      "concept-integer-operations",
-    ]) {
-      const session = await generator.createConceptSession(conceptId);
-      const questions = await repository.getQuestionsForConcept(conceptId);
-      for (const question of questions) {
-        await sessionService.saveAnswer(session.id, {
-          questionId: question.id,
-          response: question.correctAnswer,
-          answeredAt: "2026-04-12T12:00:00.000Z",
-        });
-      }
-      await sessionService.submitSession(session.id);
-    }
 
     const eligibility = await mixedService.getEligibility("course-2");
 

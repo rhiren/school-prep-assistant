@@ -5,6 +5,20 @@ import type { Concept, ProgressRecord, TestAttempt, TestSet } from "../domain/mo
 import { useAppServices } from "../state/AppServicesProvider";
 import { formatDate } from "../utils/format";
 
+function getTestSetLabel(testSet: TestSet): string {
+  const key = `${testSet.id} ${testSet.title}`.toLowerCase();
+
+  if (key.includes("review")) {
+    return "Review";
+  }
+
+  if (key.includes("practice")) {
+    return "Practice";
+  }
+
+  return "Main Test";
+}
+
 export function ConceptPage() {
   const { conceptId } = useParams();
   const navigate = useNavigate();
@@ -46,9 +60,11 @@ export function ConceptPage() {
             Back to course
           </Link>
           <h2 className="mt-2 text-3xl font-semibold text-ink">{concept.title}</h2>
-          <p className="mt-2 max-w-2xl text-sm leading-6 text-stone-600">
-            {concept.description}
-          </p>
+          {concept.description ? (
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-stone-600">
+              {concept.description}
+            </p>
+          ) : null}
         </div>
         <MasteryBadge status={progress?.masteryStatus ?? concept.masteryStatus} />
       </div>
@@ -63,7 +79,7 @@ export function ConceptPage() {
             </div>
             <div>
               <dt className="font-semibold text-ink">Tags</dt>
-              <dd>{concept.tags.join(", ")}</dd>
+              <dd>{concept.tags.length > 0 ? concept.tags.join(", ") : "—"}</dd>
             </div>
             <div>
               <dt className="font-semibold text-ink">Question target</dt>
@@ -110,7 +126,7 @@ export function ConceptPage() {
 
             {testSets.length === 0 ? (
               <div className="rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-sm text-amber-900">
-                Practice coming soon. Review the tutorial now and come back when a test set is available.
+                Practice coming soon. You can review the tutorial for now.
               </div>
             ) : (
               testSets.map((testSet) => (
@@ -121,6 +137,11 @@ export function ConceptPage() {
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div>
                       <div className="font-semibold text-ink">{testSet.title}</div>
+                      <div className="mt-2">
+                        <span className="rounded-full bg-stone-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-stone-600">
+                          {getTestSetLabel(testSet)}
+                        </span>
+                      </div>
                       <div className="mt-1 text-sm text-stone-600">{testSet.description}</div>
                     </div>
                     <div className="text-sm text-stone-500">

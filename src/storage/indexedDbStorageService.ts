@@ -1,6 +1,7 @@
 import { openDB, type DBSchema, type IDBPDatabase } from "idb";
 import { APP_VERSION } from "../app/version";
 import type { ProgressRecord, TestAttempt, TestSession } from "../domain/models";
+import { normalizeConceptId, normalizeConceptIds } from "../utils/conceptIds";
 import type { StorageService, StoreName } from "./storageService";
 
 const DB_NAME = "math-prep-assistant";
@@ -122,21 +123,24 @@ export class IndexedDBStorageService implements StorageService {
     }
 
     for (const session of Object.values(sessions)) {
-      await this.db.put("sessions", session, session.id);
+      await this.db.put("sessions", this.normalizeSession(session), session.id);
     }
 
     for (const attempt of attempts) {
-      await this.db.put("attempts", attempt, attempt.attemptId);
+      await this.db.put("attempts", this.normalizeAttempt(attempt), attempt.attemptId);
     }
 
     for (const record of Object.values(progress)) {
-      await this.db.put("progress", record, record.conceptId);
+      const normalizedRecord = this.normalizeProgress(record);
+      await this.db.put("progress", normalizedRecord, normalizedRecord.conceptId);
     }
 
     Object.values(LEGACY_KEYS).forEach((key) => window.localStorage.removeItem(key));
   }
 
   private async runMigrations(): Promise<void> {
+    await this.migrateLegacyConceptIds();
+
     const currentVersion = await this.getVersion();
 
     if (!currentVersion) {
@@ -149,5 +153,57 @@ export class IndexedDBStorageService implements StorageService {
     }
 
     await this.setVersion(APP_VERSION);
+  }
+
+  private normalizeSession(session: TestSession): TestSession {
+    const conceptId = normalizeConceptId(session.conceptId);
+    return {
+      ...session,
+      conceptId: conceptId ?? undefined,
+      conceptIds: normalizeConceptIds(session.conceptIds),
+    };
+  }
+
+  private normalizeAttempt(attempt: TestAttempt): TestAttempt {
+    const conceptId = normalizeConceptId(attempt.conceptId);
+    return {
+      ...attempt,
+      conceptId: conceptId ?? undefined,
+      conceptIds: normalizeConceptIds(attempt.conceptIds),
+    };
+  }
+
+  private normalizeProgress(progress: ProgressRecord): ProgressRecord {
+    return {
+      ...progress,
+      conceptId: normalizeConceptId(progress.conceptId) ?? progress.conceptId,
+    };
+  }
+
+  private async migrateLegacyConceptIds(): Promise<void> {
+    const sessions = await this.getAll<TestSession>("sessions");
+    for (const session of sessions) {
+      const normalized = this.normalizeSession(session);
+      if (JSON.stringify(normalized) !== JSON.stringify(session)) {
+        await this.db.put("sessions", normalized, normalized.id);
+      }
+    }
+
+    const attempts = await this.getAll<TestAttempt>("attempts");
+    for (const attempt of attempts) {
+      const normalized = this.normalizeAttempt(attempt);
+      if (JSON.stringify(normalized) !== JSON.stringify(attempt)) {
+        await this.db.put("attempts", normalized, normalized.attemptId);
+      }
+    }
+
+    const progress = await this.getAll<ProgressRecord>("progress");
+    for (const record of progress) {
+      const normalized = this.normalizeProgress(record);
+      if (normalized.conceptId !== record.conceptId) {
+        await this.db.delete("progress", record.conceptId);
+        await this.db.put("progress", normalized, normalized.conceptId);
+      }
+    }
   }
 }

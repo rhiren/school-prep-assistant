@@ -4,6 +4,16 @@ import { ConceptCard } from "../components/ConceptCard";
 import type { Course, ProgressRecord } from "../domain/models";
 import { useAppServices } from "../state/AppServicesProvider";
 
+function sortConceptsForDisplay(concepts: Course["units"][number]["concepts"]) {
+  return [...concepts].sort((left, right) => {
+    if (left.hasTest !== right.hasTest) {
+      return left.hasTest ? -1 : 1;
+    }
+
+    return left.order - right.order;
+  });
+}
+
 export function CoursePage() {
   const { courseId } = useParams();
   const { contentRepository, progressService } = useAppServices();
@@ -48,7 +58,7 @@ export function CoursePage() {
             <p className="mt-1 text-sm text-stone-600">{unit.description}</p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {unit.concepts.map((concept) => (
+            {sortConceptsForDisplay(unit.concepts).map((concept) => (
               <ConceptCard
                 key={concept.id}
                 concept={concept}

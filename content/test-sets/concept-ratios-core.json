@@ -1,76 +1,512 @@
 {
-  "id": "ratios-core",
+  "testId": "concept-ratios-core",
   "conceptId": "concept-ratios",
-  "title": "Core Practice",
-  "description": "Build confidence with equivalent ratios and ratio language.",
+  "type": "concept",
   "questions": [
     {
-      "id": "course-2-ratios-001",
-      "courseId": "course-2",
-      "unitId": "unit-ratios",
-      "conceptId": "concept-ratios",
-      "tags": ["ratios", "simplify"],
+      "id": "concept-ratios-core-001",
+      "type": "multiple_choice",
+      "questionText": "A bag has 3 red marbles and 5 blue marbles. What fraction shows the ratio of red marbles to blue marbles?",
+      "options": ["3/5", "5/3", "3/8", "5/8"],
+      "correctAnswer": "3/5",
       "difficulty": "easy",
-      "questionType": "multiple_choice",
-      "answerType": "ratio",
-      "prompt": "Which ratio is equivalent to 6:9?",
-      "choices": [
-        { "id": "a", "label": "A", "value": "2:3" },
-        { "id": "b", "label": "B", "value": "3:2" },
-        { "id": "c", "label": "C", "value": "6:3" },
-        { "id": "d", "label": "D", "value": "9:6" }
-      ],
-      "correctAnswer": "2:3",
-      "explanation": "Divide both terms of 6:9 by 3 to get 2:3.",
-      "eligibleForMixed": true
+      "answerType": "fraction",
+      "explanation": "A ratio compares one group to another group. Red to blue means 3 to 5, so the fraction is 3/5. A common mistake is using 3/8, which compares red marbles to the total instead of to blue marbles."
     },
     {
-      "id": "course-2-ratios-002",
-      "courseId": "course-2",
-      "unitId": "unit-ratios",
-      "conceptId": "concept-ratios",
-      "tags": ["ratios", "language"],
-      "difficulty": "medium",
-      "questionType": "short_text",
-      "answerType": "ratio",
-      "prompt": "A class has 8 girls and 12 boys. Write the ratio of girls to boys in simplest form.",
-      "correctAnswer": "2:3",
-      "explanation": "The ratio 8:12 simplifies by dividing both parts by 4.",
-      "eligibleForMixed": true
+      "id": "concept-ratios-core-002",
+      "type": "multiple_choice",
+      "questionText": "A class has 4 students wearing hats and 7 students not wearing hats. What fraction shows the ratio of students wearing hats to all students?",
+      "options": ["4/7", "4/11", "7/4", "7/11"],
+      "correctAnswer": "4/11",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "All students means add both groups first: 4 + 7 = 11. Then compare students wearing hats to all students: 4/11. A common mistake is choosing 4/7, which compares hats to no hats instead of hats to the whole class."
     },
     {
-      "id": "course-2-ratios-003",
-      "courseId": "course-2",
-      "unitId": "unit-ratios",
-      "conceptId": "concept-ratios",
-      "tags": ["ratios", "comparison"],
-      "difficulty": "hard",
-      "questionType": "multiple_choice",
-      "answerType": "ratio",
-      "prompt": "A recipe uses 10 cups of flour and 4 cups of sugar. What is the ratio of sugar to flour in simplest form?",
-      "choices": [
-        { "id": "a", "label": "A", "value": "2:5" },
-        { "id": "b", "label": "B", "value": "5:2" },
-        { "id": "c", "label": "C", "value": "4:10" },
-        { "id": "d", "label": "D", "value": "10:4" }
-      ],
-      "correctAnswer": "2:5",
-      "explanation": "Sugar to flour is 4:10, which simplifies to 2:5.",
-      "eligibleForMixed": true
+      "id": "concept-ratios-core-003",
+      "type": "multiple_choice",
+      "questionText": "At recess, there are 6 girls and 9 boys on the court. What fraction shows the ratio of girls to boys in simplest form?",
+      "options": ["6/9", "2/3", "3/2", "6/15"],
+      "correctAnswer": "2/3",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "Girls to boys is 6/9. Simplify by dividing both numbers by 3 to get 2/3. A common mistake is choosing 6/15, which compares girls to all students instead of girls to boys."
     },
     {
-      "id": "course-2-ratios-004",
-      "courseId": "course-2",
-      "unitId": "unit-ratios",
-      "conceptId": "concept-ratios",
-      "tags": ["ratios", "numeric"],
-      "difficulty": "challenge",
-      "questionType": "numeric",
+      "id": "concept-ratios-core-004",
+      "type": "multiple_choice",
+      "questionText": "A recipe uses 2 cups of rice for every 3 cups of water. If you use 8 cups of rice, how many cups of water are needed to keep the ratio the same?",
+      "options": ["10", "12", "16", "24"],
+      "correctAnswer": "12",
+      "difficulty": "easy",
       "answerType": "number",
-      "prompt": "A ratio is equivalent to 3:4. If the first term is 15, what is the second term?",
+      "explanation": "The rice amount went from 2 cups to 8 cups, which is 4 times as much. Multiply the water by the same factor: 3 times 4 equals 12. A common mistake is adding 8 and 3 instead of scaling both parts of the ratio by the same number."
+    },
+    {
+      "id": "concept-ratios-core-005",
+      "type": "multiple_choice",
+      "questionText": "A table shows 2 apples for every 3 oranges. If there are 10 apples, how many oranges keep the same ratio?",
+      "options": ["12", "15", "18", "30"],
+      "correctAnswer": "15",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The apples went from 2 to 10, which is 5 times as many. Multiply the oranges by 5 too: 3 times 5 equals 15. A common mistake is dividing 10 by 3, but here you need to scale both parts by the same factor."
+    },
+    {
+      "id": "concept-ratios-core-006",
+      "type": "multiple_choice",
+      "questionText": "A park map shows 4 trees for every 1 bench. If the map shows 12 trees, how many benches should it show?",
+      "options": ["2", "3", "4", "8"],
+      "correctAnswer": "3",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Twelve trees is 3 groups of 4 trees. That means there should also be 3 groups of 1 bench, so 3 benches. A common mistake is dividing 12 by 1 instead of matching the groups in the ratio."
+    },
+    {
+      "id": "concept-ratios-core-007",
+      "type": "multiple_choice",
+      "questionText": "A club has 5 sixth graders for every 2 seventh graders. What fraction shows the ratio of seventh graders to sixth graders?",
+      "options": ["2/5", "5/2", "2/7", "5/7"],
+      "correctAnswer": "2/5",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "The question asks for seventh graders to sixth graders, so write 2/5. A common mistake is reversing the order and choosing 5/2 because that is sixth graders to seventh graders."
+    },
+    {
+      "id": "concept-ratios-core-008",
+      "type": "multiple_choice",
+      "questionText": "An art set has 8 markers and 12 crayons. What fraction shows the ratio of markers to crayons in simplest form?",
+      "options": ["8/12", "2/3", "3/2", "4/5"],
+      "correctAnswer": "2/3",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "Markers to crayons is 8/12. Simplify by dividing both numbers by 4 to get 2/3. A common mistake is choosing 8/12 without simplifying when the question asks for simplest form."
+    },
+    {
+      "id": "concept-ratios-core-009",
+      "type": "multiple_choice",
+      "questionText": "A class has boys and girls in the ratio 1 to 2. If there are 18 students total, how many are boys?",
+      "options": ["6", "9", "12", "17"],
+      "correctAnswer": "6",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The ratio 1 to 2 has 3 total parts. Divide 18 by 3 to get 6 students in each part. Boys are 1 part, so there are 6 boys. A common mistake is taking 2 parts for boys even though boys are listed first."
+    },
+    {
+      "id": "concept-ratios-core-010",
+      "type": "multiple_choice",
+      "questionText": "A pet chart shows the ratio of cats to dogs is 3 to 8. What fraction shows the ratio of dogs to cats?",
+      "options": ["3/8", "8/3", "3/11", "8/11"],
+      "correctAnswer": "8/3",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "Dogs to cats reverses the order, so use 8/3. A common mistake is keeping 3/8, but that still represents cats to dogs, not dogs to cats."
+    },
+    {
+      "id": "concept-ratios-core-011",
+      "type": "multiple_choice",
+      "questionText": "A bracelet uses 4 blue beads and 6 green beads. What fraction shows the ratio of blue beads to all beads in simplest form?",
+      "options": ["2/5", "4/6", "4/10", "3/5"],
+      "correctAnswer": "2/5",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "There are 10 beads total, so blue to total is 4/10. Simplify 4/10 to 2/5. A common mistake is choosing 4/6, which compares blue to green instead of blue to all beads."
+    },
+    {
+      "id": "concept-ratios-core-012",
+      "type": "multiple_choice",
+      "questionText": "A craft uses 1 yard of ribbon for every 2 feet of lace. After changing both measurements to feet, what is the ratio of ribbon to lace in simplest form?",
+      "options": ["1/2", "2/1", "3/2", "2/3"],
+      "correctAnswer": "3/2",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "One yard is 3 feet. So the ratio becomes 3 feet to 2 feet, which is 3/2. A common mistake is leaving 1 and 2 without converting the yard into feet first."
+    },
+    {
+      "id": "concept-ratios-core-013",
+      "type": "multiple_choice",
+      "questionText": "Which choice shows a ratio equal to 2 to 5? 1) 4 to 10  2) 6 to 10  3) 8 to 15  4) 10 to 12",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Multiply both parts of 2 to 5 by the same number. Two times 2 is 4 and five times 2 is 10, so choice 1 matches. A common mistake is picking choice 2 because 6 and 10 look close, but 6/10 simplifies to 3/5, not 2/5."
+    },
+    {
+      "id": "concept-ratios-core-014",
+      "type": "multiple_choice",
+      "questionText": "A student wants a ratio of 3 stars for every 4 circles. Which method makes a matching drawing? 1) 12 stars and 16 circles  2) 9 stars and 16 circles  3) 6 stars and 10 circles  4) 3 stars and 7 circles",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A matching drawing must multiply both parts of the ratio by the same number. Choice 1 multiplies 3 and 4 by 4 to get 12 and 16. A common mistake is changing only one part of the ratio, as in choice 2."
+    },
+    {
+      "id": "concept-ratios-core-015",
+      "type": "multiple_choice",
+      "questionText": "A map scale says 1 centimeter represents 5 meters. If two buildings are 3 centimeters apart on the map, how many meters apart are they in real life?",
+      "options": ["8", "15", "20", "30"],
+      "correctAnswer": "15",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Each centimeter stands for 5 meters, so multiply 3 by 5 to get 15 meters. A common mistake is adding 3 and 5 instead of using the scale as equal groups.",
+      "unit": "meters"
+    },
+    {
+      "id": "concept-ratios-core-016",
+      "type": "multiple_choice",
+      "questionText": "A smoothie recipe uses 3 bananas for every 2 cups of yogurt. If you use 15 bananas, how many cups of yogurt are needed?",
+      "options": ["5", "10", "12", "17"],
+      "correctAnswer": "10",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Fifteen bananas is 5 groups of 3 bananas. So you need 5 groups of 2 cups of yogurt, which is 10 cups. A common mistake is subtracting 3 from 15 instead of finding how many groups fit the ratio."
+    },
+    {
+      "id": "concept-ratios-core-017",
+      "type": "multiple_choice",
+      "questionText": "A jar has red and blue buttons in the ratio 2 to 5. If there are 21 buttons total, how many are blue?",
+      "options": ["6", "9", "15", "19"],
+      "correctAnswer": "15",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio has 7 total parts. Divide 21 by 7 to get 3 buttons per part. Blue is 5 parts, so 5 times 3 equals 15. A common mistake is taking 2 parts for blue even though blue is the second number in the ratio."
+    },
+    {
+      "id": "concept-ratios-core-018",
+      "type": "multiple_choice",
+      "questionText": "A table shows a juice mix ratio of 4 cups juice to 7 cups water. If the table shows 12 cups of juice, what amount of water should be in the matching row?",
+      "options": ["16", "19", "21", "28"],
+      "correctAnswer": "21",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The juice amount went from 4 to 12, which is 3 times as much. Multiply the water by 3 too: 7 times 3 equals 21. A common mistake is adding 12 and 7 instead of scaling both parts equally."
+    },
+    {
+      "id": "concept-ratios-core-019",
+      "type": "multiple_choice",
+      "questionText": "Which mix has the greater ratio of red paint to blue paint? 1) 2 red to 3 blue  2) 5 red to 4 blue  3) They are equal  4) There is not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "2",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Compare the fractions 2/3 and 5/4. Since 5/4 is greater than 2/3, mix 2 has the greater red-to-blue ratio. A common mistake is comparing only the first numbers, but both parts of the ratio matter."
+    },
+    {
+      "id": "concept-ratios-core-020",
+      "type": "multiple_choice",
+      "questionText": "A display has 2 feet of ribbon for every 18 inches of lace. After changing both to inches, what is the ratio of ribbon to lace in simplest form?",
+      "options": ["2", "4/3", "3/4", "24"],
+      "correctAnswer": "4/3",
+      "difficulty": "medium",
+      "answerType": "fraction",
+      "explanation": "Two feet is 24 inches. The ratio becomes 24 to 18, which simplifies by dividing both numbers by 6 to get 4/3. A common mistake is leaving the feet and inches unconverted and comparing 2 to 18 directly."
+    },
+    {
+      "id": "concept-ratios-core-021",
+      "type": "multiple_choice",
+      "questionText": "If the ratio 7 to 9 is equal to x to 36, what is x?",
+      "options": ["21", "27", "28", "32"],
+      "correctAnswer": "28",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The second number went from 9 to 36, which is 4 times as large. Multiply the first number by the same factor: 7 times 4 equals 28. A common mistake is adding 27 because 36 is 27 more than 9, but ratios scale by multiplication."
+    },
+    {
+      "id": "concept-ratios-core-022",
+      "type": "multiple_choice",
+      "questionText": "A lunch table keeps milk and juice in the ratio 3 to 2. If there are 20 drinks total, how many are juice?",
+      "options": ["8", "10", "12", "18"],
+      "correctAnswer": "8",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio has 5 total parts. Divide 20 by 5 to get 4 drinks per part. Juice is 2 parts, so 2 times 4 equals 8. A common mistake is choosing 12 because milk is the larger part, but the question asks for juice."
+    },
+    {
+      "id": "concept-ratios-core-023",
+      "type": "multiple_choice",
+      "questionText": "A student says the ratio of green cubes to all cubes is 3/5 because there are 3 green cubes and 5 yellow cubes. Which mistake did the student make? 1) The student reversed the order  2) The student compared green to yellow instead of green to all  3) The student should have multiplied 3 and 5  4) The student should have changed the ratio to a decimal",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "2",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Green to all cubes should be 3 out of 8, not 3 out of 5. The student compared green cubes to yellow cubes instead of green cubes to the whole set. A common mistake is mixing up part-to-part and part-to-whole ratios."
+    },
+    {
+      "id": "concept-ratios-core-024",
+      "type": "multiple_choice",
+      "questionText": "A bag has red and blue blocks in the ratio 3 to 5. If there are 64 blocks total, how many are blue?",
+      "options": ["24", "32", "40", "56"],
+      "correctAnswer": "40",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "There are 8 total parts in the ratio. Divide 64 by 8 to get 8 blocks per part. Blue is 5 parts, so 5 times 8 equals 40. A common mistake is choosing 24 because that is the number of red blocks, not blue blocks."
+    },
+    {
+      "id": "concept-ratios-core-025",
+      "type": "multiple_choice",
+      "questionText": "Which team has the greater wins-to-losses ratio? 1) Team A: 8 wins to 4 losses  2) Team B: 9 wins to 6 losses  3) They are equal  4) Not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Team A has a ratio of 8/4, which is 2. Team B has a ratio of 9/6, which is 1.5. Since 2 is greater than 1.5, Team A has the greater wins-to-losses ratio. A common mistake is comparing 9 wins to 8 wins without checking the losses too."
+    },
+    {
+      "id": "concept-ratios-core-026",
+      "type": "multiple_choice",
+      "questionText": "A sign compares 2 liters of juice to 500 milliliters of syrup. After changing both to milliliters, what is the ratio of juice to syrup in simplest form?",
+      "options": ["4", "2", "1/4", "2000"],
+      "correctAnswer": "4",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Two liters is 2000 milliliters. The ratio becomes 2000 to 500, and 2000 divided by 500 equals 4, so the simplified ratio is 4 to 1. A common mistake is comparing 2 to 500 without changing to the same unit first."
+    },
+    {
+      "id": "concept-ratios-core-027",
+      "type": "multiple_choice",
+      "questionText": "A science poster uses 4 star stickers for every 7 circle stickers. If there are 35 circle stickers, how many star stickers are needed?",
+      "options": ["5", "20", "28", "39"],
       "correctAnswer": "20",
-      "explanation": "Multiply both parts of 3:4 by 5 to get 15:20.",
-      "eligibleForMixed": false
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The number of circle stickers went from 7 to 35, which is 5 times as many. Multiply the star stickers by 5 too: 4 times 5 equals 20. A common mistake is dividing 35 by 4, but the scale factor comes from matching the 7 circles first."
+    },
+    {
+      "id": "concept-ratios-core-028",
+      "type": "multiple_choice",
+      "questionText": "A student wants the ratio 2 triangles for every 3 squares. Which method works? 1) Multiply both numbers by 4  2) Add 4 to only the number of triangles  3) Subtract 1 from only the number of squares  4) Divide the first number by 2 and leave the second the same",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Equivalent ratios are made by multiplying or dividing both parts by the same number. Multiplying both numbers by 4 keeps the comparison the same. A common mistake is changing only one part of the ratio, which creates a new comparison."
+    },
+    {
+      "id": "concept-ratios-core-029",
+      "type": "multiple_choice",
+      "questionText": "A fruit mix has apples and pears in the ratio 2 to 3. Which mistake is a student making if they say there are 2 apples because 2 is the first number in the ratio, even though there are 25 fruits total? 1) Forgetting to find the number of parts  2) Reversing the ratio  3) Using the wrong unit  4) Simplifying too early",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The numbers in a ratio show parts, not actual amounts unless the scale is known. With 25 fruits total, you must first divide by the 5 total parts to find the size of one part. A common mistake is treating the ratio numbers as the actual counts right away."
+    },
+    {
+      "id": "concept-ratios-core-030",
+      "type": "multiple_choice",
+      "questionText": "Which juice mix has the greater orange-to-water ratio? 1) 3 cups orange to 5 cups water  2) 4 cups orange to 5 cups water  3) They are equal  4) There is not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "2",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Compare 3/5 and 4/5. Since 4/5 is greater than 3/5, mix 2 has more orange for the same amount of water. A common mistake is thinking the ratios are close enough to be equal, but the numerators are different while the denominators match."
+    },
+    {
+      "id": "concept-ratios-core-031",
+      "type": "multiple_choice",
+      "questionText": "A school schedule has practice time to break time in the ratio 7 to 2. If the total time is 63 minutes, how many minutes are for practice?",
+      "options": ["14", "21", "42", "49"],
+      "correctAnswer": "49",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The ratio has 9 total parts. Divide 63 by 9 to get 7 minutes per part. Practice is 7 parts, so 7 times 7 equals 49 minutes. A common mistake is taking 2 parts because break time is smaller, but the question asks for practice time."
+    },
+    {
+      "id": "concept-ratios-core-032",
+      "type": "multiple_choice",
+      "questionText": "A paint recipe compares 2 cups of red paint to 1 quart of white paint. After changing the quart to cups, what is the ratio of red paint to white paint in simplest form?",
+      "options": ["1/2", "2", "4", "8"],
+      "correctAnswer": "1/2",
+      "difficulty": "hard",
+      "answerType": "fraction",
+      "explanation": "One quart is 4 cups. The ratio becomes 2 cups to 4 cups, which simplifies to 1/2. A common mistake is leaving the quart unconverted and comparing 2 to 1, which does not use the same unit."
+    },
+    {
+      "id": "concept-ratios-core-033",
+      "type": "multiple_choice",
+      "questionText": "At a science fair, the ratio of completed projects to unfinished projects is 5 to 3. If there are 16 more completed projects than unfinished projects, how many completed projects are there?",
+      "options": ["24", "32", "40", "48"],
+      "correctAnswer": "40",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The difference between 5 parts and 3 parts is 2 parts. If 2 parts equal 16 projects, then 1 part is 8 projects. Completed projects are 5 parts, so 5 times 8 equals 40. A common mistake is using the total of 8 parts even though the problem gives the difference."
+    },
+    {
+      "id": "concept-ratios-core-034",
+      "type": "multiple_choice",
+      "questionText": "A student wants to use the ratio 3 blue tiles for every 4 yellow tiles and make 28 tiles total. Which method is correct? 1) Add 3 and 4, then divide 28 by 7  2) Divide 28 by 4 because yellow is bigger  3) Multiply 3 and 4 to get 12  4) Subtract 3 from 4",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "A total of 28 tiles is split into 7 parts because 3 plus 4 equals 7. Dividing 28 by 7 gives the size of one part, which is the correct first step. A common mistake is dividing by only one side of the ratio instead of by the total number of parts."
+    },
+    {
+      "id": "concept-ratios-core-035",
+      "type": "multiple_choice",
+      "questionText": "Which class has the greater ratio of girls to all students? 1) Class A: 15 girls out of 24 students  2) Class B: 21 girls out of 30 students  3) They are equal  4) Not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "2",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Class A has 15/24, which simplifies to 5/8. Class B has 21/30, which simplifies to 7/10. Since 7/10 is greater than 5/8, Class B has the greater ratio. A common mistake is comparing 21 and 15 without looking at the class totals."
+    },
+    {
+      "id": "concept-ratios-core-036",
+      "type": "multiple_choice",
+      "questionText": "There are 8 red blocks and 12 blue blocks. A student says the ratio of red to blue is 12/8. Which numbered statement is correct? 1) The student reversed the order  2) The student forgot to simplify  3) The student should have added the numbers  4) The student should have changed to decimals first",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Red to blue should be 8/12, not 12/8. The student reversed the order of the ratio. A common mistake is thinking the order does not matter, but in ratios it changes the meaning completely."
+    },
+    {
+      "id": "concept-ratios-core-037",
+      "type": "multiple_choice",
+      "questionText": "A bread recipe uses flour and sugar in the ratio 5 to 2. If a baker uses 3 cups of sugar, how many cups of flour are needed?",
+      "options": ["5", "7.5", "10", "15"],
+      "correctAnswer": "7.5",
+      "difficulty": "hard",
+      "answerType": "decimal",
+      "explanation": "Sugar is the 2-part amount. Going from 2 cups of sugar to 3 cups means multiplying by 1.5. Multiply the flour by the same factor: 5 times 1.5 equals 7.5 cups. A common mistake is adding 5 and 2 instead of using the scale factor."
+    },
+    {
+      "id": "concept-ratios-core-038",
+      "type": "multiple_choice",
+      "questionText": "A map scale says 2 centimeters represent 1 kilometer. If two towns are 7.5 centimeters apart on the map, how far apart are they in real life?",
+      "options": ["3.25", "3.75", "5.5", "15"],
+      "correctAnswer": "3.75",
+      "difficulty": "hard",
+      "answerType": "decimal",
+      "explanation": "If 2 centimeters represent 1 kilometer, then 1 centimeter represents 0.5 kilometer. Multiply 7.5 by 0.5 to get 3.75 kilometers. A common mistake is multiplying 7.5 by 2, which reverses the scale.",
+      "unit": "kilometers"
+    },
+    {
+      "id": "concept-ratios-core-039",
+      "type": "multiple_choice",
+      "questionText": "Which drink mix is stronger in powder compared with water? 1) Mix A: 3 scoops powder to 20 ounces water  2) Mix B: 5 scoops powder to 30 ounces water  3) They are equal  4) Not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "2",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Compare 3/20 with 5/30. Since 5/30 simplifies to 1/6, and 1/6 is greater than 3/20, Mix B has more powder for each ounce of water. A common mistake is choosing Mix A because 20 ounces is smaller, but you must compare the whole ratios."
+    },
+    {
+      "id": "concept-ratios-core-040",
+      "type": "multiple_choice",
+      "questionText": "A student uses the ratio 4 to 6 with a total of 30 and says each side should be 15 because 30 divided by 2 is 15. Which mistake did the student make? 1) Divided by the number of ratio terms instead of the total parts  2) Reversed the ratio  3) Simplified the ratio too soon  4) Used the wrong unit",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The ratio 4 to 6 has 10 total parts, not 2. The student divided by the number of terms in the ratio instead of by the total number of parts. A common mistake is treating each number as one big group instead of counting all the parts together."
+    },
+    {
+      "id": "concept-ratios-core-041",
+      "type": "multiple_choice",
+      "questionText": "The ratio of cats to dogs is 3 to 5. If there are 10 more dogs than cats, how many animals are there in all?",
+      "options": ["24", "32", "40", "50"],
+      "correctAnswer": "40",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The difference between 5 parts and 3 parts is 2 parts. If 2 parts equal 10 animals, then 1 part is 5. Altogether there are 8 parts, so 8 times 5 equals 40 animals. A common mistake is using 10 as the total instead of the difference."
+    },
+    {
+      "id": "concept-ratios-core-042",
+      "type": "multiple_choice",
+      "questionText": "Which table row does NOT match the ratio 3 cups of concentrate to 8 cups of water? 1) 6 cups concentrate and 16 cups water  2) 9 cups concentrate and 24 cups water  3) 12 cups concentrate and 30 cups water  4) 15 cups concentrate and 40 cups water",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "3",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Rows 1, 2, and 4 all multiply 3 to 8 by the same number. Row 3 would need 32 cups of water to match 12 cups of concentrate, not 30. A common mistake is seeing numbers that are close and assuming the ratios are still equivalent."
+    },
+    {
+      "id": "concept-ratios-core-043",
+      "type": "multiple_choice",
+      "questionText": "What is the ratio of 1 foot to 8 inches after changing both measurements to inches, written in simplest form?",
+      "options": ["2/1", "3/2", "12/8", "8/12"],
+      "correctAnswer": "3/2",
+      "difficulty": "hard",
+      "answerType": "fraction",
+      "explanation": "One foot is 12 inches, so the ratio becomes 12 to 8. Simplify 12/8 by dividing by 4 to get 3/2. A common mistake is choosing 12/8 without simplifying when the question asks for simplest form."
+    },
+    {
+      "id": "concept-ratios-core-044",
+      "type": "multiple_choice",
+      "questionText": "Which method correctly compares 2 to 3 and 4 to 7? 1) Rewrite them as 2/3 and 4/7, then compare  2) Add the numbers in each ratio  3) Compare only the first numbers  4) Compare only the second numbers",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Writing the ratios as fractions lets you compare the full relationships: 2/3 and 4/7. The other methods ignore part of the ratio. A common mistake is comparing only one number from each ratio instead of the complete comparison."
+    },
+    {
+      "id": "concept-ratios-core-045",
+      "type": "multiple_choice",
+      "questionText": "A trail map uses the scale 1 inch to 4 miles. If a trail measures 2.75 inches on the map, how long is the trail?",
+      "options": ["6.75", "7", "11", "14.75"],
+      "correctAnswer": "11",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Multiply 2.75 inches by 4 miles per inch. That gives 11 miles. A common mistake is adding 2.75 and 4 instead of using the scale as a multiplication factor.",
+      "unit": "miles"
+    },
+    {
+      "id": "concept-ratios-core-046",
+      "type": "multiple_choice",
+      "questionText": "Which mix has the greater juice-to-water ratio? 1) Mix A: 1.5 liters juice to 750 milliliters water  2) Mix B: 4 cups juice to 2 cups water  3) They are equal  4) Not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "3",
+      "difficulty": "challenge",
+      "answerType": "number",
+      "explanation": "Change Mix A to the same unit first: 1.5 liters is 1500 milliliters, so Mix A is 1500/750, which is 2. Mix B is 4/2, which is also 2. The ratios are equal. A common mistake is comparing 1.5 and 4 directly without converting or simplifying.",
+      "unit": "ratio"
+    },
+    {
+      "id": "concept-ratios-core-047",
+      "type": "multiple_choice",
+      "questionText": "A class says the ratio of boys to girls is 2 to 3, and there are 25 students total. Which statement is true? 1) The class could have 10 boys and 15 girls  2) The class could have 12 boys and 13 girls  3) The class could have 8 boys and 17 girls  4) The class cannot have exactly that ratio with 25 students",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "challenge",
+      "answerType": "number",
+      "explanation": "A ratio of 2 to 3 has 5 total parts. Since 25 is a multiple of 5, each part is 5 students. That gives 10 boys and 15 girls, so choice 1 is correct. A common mistake is thinking any total can fit any ratio without checking the number of parts first."
+    },
+    {
+      "id": "concept-ratios-core-048",
+      "type": "multiple_choice",
+      "questionText": "A map scale says 3 centimeters represent 250 meters. If two buildings are 1.5 kilometers apart, how many centimeters apart should they be on the map?",
+      "options": ["6", "12", "18", "36"],
+      "correctAnswer": "18",
+      "difficulty": "challenge",
+      "answerType": "number",
+      "explanation": "First change 1.5 kilometers to 1500 meters. Since 250 meters matches 3 centimeters, 1500 meters is 6 groups of 250. Multiply 3 centimeters by 6 to get 18 centimeters. A common mistake is forgetting to convert kilometers to meters first.",
+      "unit": "centimeters"
+    },
+    {
+      "id": "concept-ratios-core-049",
+      "type": "multiple_choice",
+      "questionText": "Class A has boys to girls in the ratio 12 to 15. Class B has boys to girls in the ratio 4 to 5. Which statement is true? 1) Class A has the greater ratio  2) Class B has the greater ratio  3) The ratios are equal  4) Not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "3",
+      "difficulty": "challenge",
+      "answerType": "number",
+      "explanation": "Simplify 12 to 15 by dividing both numbers by 3 to get 4 to 5. That matches Class B exactly, so the ratios are equal. A common mistake is thinking 12 to 15 must be larger because the numbers are larger, but ratios compare the relationship, not the size of the numbers."
+    },
+    {
+      "id": "concept-ratios-core-050",
+      "type": "multiple_choice",
+      "questionText": "A drink uses syrup to water in the ratio 2 to 7. If a pitcher holds 36 cups total, how many cups should be syrup?",
+      "options": ["8", "12", "14", "28"],
+      "correctAnswer": "8",
+      "difficulty": "challenge",
+      "answerType": "number",
+      "explanation": "The ratio has 9 total parts. Divide 36 by 9 to get 4 cups per part. Syrup is 2 parts, so 2 times 4 equals 8 cups. A common mistake is dividing 36 by 3 because there are two numbers in the ratio and then using the wrong total number of parts."
     }
   ]
 }

@@ -19,11 +19,11 @@ describe("DeterministicConceptTestEngine", () => {
       strategy,
     );
 
-    const session = await engine.createConceptSession("concept-ratios");
+    const session = await engine.createConceptSession("concept-unit-rates");
 
     expect(selectQuestions).toHaveBeenCalledOnce();
     expect(session.questionIds).toHaveLength(1);
-    expect(selectQuestions.mock.calls[0]?.[1]?.targetCount).toBe(4);
+    expect(selectQuestions.mock.calls[0]?.[1]?.targetCount).toBe(50);
   });
 
   it("keeps deterministic stable ordering by default", async () => {
@@ -35,13 +35,14 @@ describe("DeterministicConceptTestEngine", () => {
       new StableSelectionStrategy(),
     );
 
-    const session = await engine.createConceptSession("concept-unit-rate");
+    const session = await engine.createConceptSession("concept-unit-rates");
 
-    expect(session.questionIds).toEqual([
-      "course-2-unit-rate-001",
-      "course-2-unit-rate-002",
-      "course-2-unit-rate-003",
-      "course-2-unit-rate-004",
+    expect(session.questionIds).toHaveLength(50);
+    expect(session.questionIds.slice(0, 4)).toEqual([
+      "concept-unit-rates-core-001",
+      "concept-unit-rates-core-002",
+      "concept-unit-rates-core-003",
+      "concept-unit-rates-core-004",
     ]);
   });
 });

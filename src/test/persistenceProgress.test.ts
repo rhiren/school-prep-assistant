@@ -33,19 +33,19 @@ describe("session persistence and progress", () => {
       new StableSelectionStrategy(),
     );
 
-    const firstSession = await generator.createConceptSession("concept-ratios");
+    const firstSession = await generator.createConceptSession("concept-unit-rates");
     await sessionService.setCurrentQuestionIndex(firstSession.id, 2);
     await sessionService.saveAnswer(firstSession.id, {
-      questionId: "course-2-ratios-001",
-      response: "3:2",
+      questionId: "concept-unit-rates-core-001",
+      response: "9",
       answeredAt: "2026-04-12T12:00:00.000Z",
     });
 
     expect((await sessionService.getSession(firstSession.id))?.currentQuestionIndex).toBe(2);
 
     const firstAttempt = await sessionService.submitSession(firstSession.id);
-    const secondSession = await generator.createConceptSession("concept-ratios");
-    const questions = await repository.getQuestionsForConcept("concept-ratios");
+    const secondSession = await generator.createConceptSession("concept-unit-rates");
+    const questions = await repository.getQuestionsForConcept("concept-unit-rates");
     for (const question of questions) {
       await sessionService.saveAnswer(secondSession.id, {
         questionId: question.id,
@@ -55,14 +55,14 @@ describe("session persistence and progress", () => {
     }
     const secondAttempt = await sessionService.submitSession(secondSession.id);
 
-    const attempts = await progressService.getConceptAttempts("concept-ratios");
-    const progress = await progressService.getConceptProgress("concept-ratios");
+    const attempts = await progressService.getConceptAttempts("concept-unit-rates");
+    const progress = await progressService.getConceptProgress("concept-unit-rates");
 
     expect(firstAttempt.attemptId).not.toBe(secondAttempt.attemptId);
     expect(attempts).toHaveLength(2);
     expect(progress?.attemptCount).toBe(2);
-    expect(progress?.bestScore).toBe(100);
-    expect(progress?.latestScore).toBe(100);
-    expect(progress?.masteryStatus).toBe("mastered");
+    expect(progress?.bestScore).toBe(78);
+    expect(progress?.latestScore).toBe(78);
+    expect(progress?.masteryStatus).toBe("needs_review");
   });
 });

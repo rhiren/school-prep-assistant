@@ -1,0 +1,208 @@
+{
+  "testId": "concept-equivalent-ratios-review",
+  "conceptId": "concept-equivalent-ratios",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-equivalent-ratios-review-001",
+      "type": "multiple_choice",
+      "questionText": "Which ratio is equivalent to 2:3?",
+      "options": ["4/6", "4/5", "6/7", "8/9"],
+      "correctAnswer": "4/6",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "Multiply both numbers in 2:3 by 2 to get 4:6. That keeps the same comparison. A common mistake is choosing any larger numbers instead of checking whether both parts were scaled by the same factor."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-002",
+      "type": "multiple_choice",
+      "questionText": "If 4:5 is equivalent to 8:x, what is x?",
+      "options": ["9", "10", "12", "13"],
+      "correctAnswer": "10",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The first number doubled from 4 to 8, so the second number must double too. Five times 2 equals 10. A common mistake is adding 8 and 5 instead of using the scale factor."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-003",
+      "type": "multiple_choice",
+      "questionText": "Which row matches the ratio 3 stars to 4 circles? 1) 6 stars and 8 circles  2) 6 stars and 7 circles  3) 9 stars and 10 circles  4) 12 stars and 14 circles",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A matching row must multiply both parts by the same number. Choice 1 doubles both numbers, so it stays 3 to 4. A common mistake is choosing a row where only one number matches the pattern."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-004",
+      "type": "multiple_choice",
+      "questionText": "A bag has 5 red counters and 10 blue counters. What is the simplest ratio of red counters to blue counters?",
+      "options": ["1/2", "2/1", "5/10", "5/15"],
+      "correctAnswer": "1/2",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "The ratio 5/10 simplifies by dividing both numbers by 5 to get 1/2. A common mistake is leaving the ratio as 5/10 even when the question asks for simplest form."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-005",
+      "type": "multiple_choice",
+      "questionText": "Which situation matches the ratio 2:1? 1) 6 red balloons and 3 blue balloons  2) 4 apples and 6 oranges  3) 5 boys and 5 girls  4) 8 pencils and 12 pens",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Six to 3 simplifies to 2 to 1 because both numbers divide by 3. The other choices simplify to different ratios. A common mistake is choosing any pair where the first number is larger."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-006",
+      "type": "multiple_choice",
+      "questionText": "A ratio simplified to 2:3. Which original ratio could it have come from?",
+      "options": ["12/18", "12/20", "10/12", "8/15"],
+      "correctAnswer": "12/18",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "Twelve eighteenth simplifies by dividing both numbers by 6 to get 2/3. The other choices simplify to different ratios. A common mistake is choosing any pair where both numbers are even."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-007",
+      "type": "multiple_choice",
+      "questionText": "What is the ratio of 1 foot to 8 inches after changing both measurements to inches, written in simplest form?",
+      "options": ["3/2", "2/3", "12/8", "8/12"],
+      "correctAnswer": "3/2",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "One foot is 12 inches, so the ratio becomes 12 to 8. Simplify 12/8 by dividing by 4 to get 3/2. A common mistake is forgetting to convert the foot to inches."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-008",
+      "type": "multiple_choice",
+      "questionText": "If 6:x is equivalent to 3:7, what is x?",
+      "options": ["10", "12", "14", "21"],
+      "correctAnswer": "14",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The first number doubled from 3 to 6, so the second number must double too. Seven times 2 equals 14. A common mistake is adding 6 and 7 instead of using the same scale factor."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-009",
+      "type": "multiple_choice",
+      "questionText": "Which pair is equivalent? 1) 3:4 and 9:12  2) 3:4 and 8:12  3) 3:4 and 10:12  4) 3:4 and 12:14",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Nine to 12 simplifies to 3 to 4, so choice 1 is equivalent. The other choices simplify to different ratios. A common mistake is thinking any pair with larger numbers must match."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-010",
+      "type": "multiple_choice",
+      "questionText": "A table shows 4 cups of juice for every 6 cups of water. If there are 8 cups of juice, how much water should there be?",
+      "options": ["10", "12", "14", "16"],
+      "correctAnswer": "12",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The juice doubled from 4 to 8, so the water must double too. Six times 2 equals 12. A common mistake is adding 8 and 6 instead of scaling both parts equally."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-011",
+      "type": "multiple_choice",
+      "questionText": "A ratio of 1:3 has a total of 24. How many are in the first group?",
+      "options": ["6", "8", "12", "18"],
+      "correctAnswer": "6",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio has 4 total parts. Divide 24 by 4 to get 6 in each part. The first group is 1 part, so it has 6. A common mistake is taking 3 parts instead of 1 part for the first group."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-012",
+      "type": "multiple_choice",
+      "questionText": "Which method correctly makes an equivalent ratio to 5:7? 1) Multiply both numbers by 3  2) Add 3 to both numbers  3) Subtract 1 from only the first number  4) Reverse the order",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Equivalent ratios are made by multiplying or dividing both parts by the same number. Multiplying both by 3 gives 15:21, which is equivalent. A common mistake is adding the same amount to both numbers."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-013",
+      "type": "multiple_choice",
+      "questionText": "Which pair is equivalent? 1) 3:5 and 12:20  2) 3:5 and 10:20  3) 3:5 and 9:20  4) 3:5 and 15:20",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Twelve to 20 simplifies by dividing by 4 to get 3:5. The other choices simplify to different ratios. A common mistake is choosing 15:20 because both numbers are multiples of 5."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-014",
+      "type": "multiple_choice",
+      "questionText": "If 5:6 is equivalent to 20:x, what is x?",
+      "options": ["22", "24", "26", "30"],
+      "correctAnswer": "24",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The first number went from 5 to 20, which is 4 times as much. Multiply the second number by 4 too: 6 times 4 equals 24. A common mistake is adding 20 and 6 instead of using the scale factor."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-015",
+      "type": "multiple_choice",
+      "questionText": "Which situation matches the ratio 3:2? 1) 12 red blocks and 8 blue blocks  2) 9 pencils and 9 pens  3) 10 apples and 8 oranges  4) 14 cups and 10 plates",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Twelve to 8 simplifies to 3 to 2 because both numbers divide by 4. The other choices simplify to different ratios. A common mistake is choosing any pair where the first number is slightly bigger."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-016",
+      "type": "multiple_choice",
+      "questionText": "What is the ratio of 2 meters to 50 centimeters after changing both measurements to centimeters, written in simplest form?",
+      "options": ["2", "4", "25", "200"],
+      "correctAnswer": "4",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Two meters is 200 centimeters. The ratio becomes 200 to 50, which simplifies to 4 to 1. A common mistake is comparing 2 to 50 without converting the meters."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-017",
+      "type": "multiple_choice",
+      "questionText": "A student says 4:6 is equivalent to 6:8 because both numbers increased by 2. Which mistake did the student make? 1) Used addition instead of the same scale factor  2) Reversed the order  3) Forgot to use decimals  4) Used the wrong unit",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Equivalent ratios must multiply or divide both numbers by the same factor. Adding 2 to both parts changes the comparison here. A common mistake is thinking the same increase always keeps a ratio equivalent."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-018",
+      "type": "multiple_choice",
+      "questionText": "Which statement about 4:6 and 10:15 is true? 1) The first ratio is greater  2) The second ratio is greater  3) They are equivalent  4) They cannot be compared",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "3",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Four to 6 simplifies to 2:3, and 10 to 15 also simplifies to 2:3. That means the ratios are equivalent. A common mistake is comparing the original numbers instead of simplifying first."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-019",
+      "type": "multiple_choice",
+      "questionText": "A ratio of 2:5 has a total of 35. How many are in the smaller group?",
+      "options": ["7", "10", "14", "25"],
+      "correctAnswer": "10",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio has 7 total parts. Divide 35 by 7 to get 5 in each part. The smaller group is 2 parts, so 2 times 5 equals 10. A common mistake is choosing 25 because it matches the larger ratio number."
+    },
+    {
+      "id": "concept-equivalent-ratios-review-020",
+      "type": "multiple_choice",
+      "questionText": "A map scale says 2 centimeters represent 3 kilometers. If a trail is 8 centimeters on the map, how long is the trail in real life?",
+      "options": ["10", "12", "16", "24"],
+      "correctAnswer": "12",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The map distance went from 2 centimeters to 8 centimeters, which is 4 times as much. Multiply the real distance by 4 too: 3 times 4 equals 12 kilometers. A common mistake is dividing 8 by 3 instead of using the scale factor.",
+      "unit": "kilometers"
+    }
+  ]
+}
