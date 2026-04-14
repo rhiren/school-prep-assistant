@@ -1,0 +1,147 @@
+{
+  "courses": [
+    {
+      "id": "course-2",
+      "title": "Course 2",
+      "description": "Foundational math mastery organized by concept.",
+      "order": 1,
+      "units": [
+        {
+          "id": "unit-ratios-and-proportions",
+          "title": "Ratios and Proportions",
+          "description": "Build confidence comparing quantities and solving proportion problems.",
+          "order": 1,
+          "concepts": [
+            {
+              "id": "concept-ratios",
+              "title": "Ratios",
+              "description": "Learn how ratios compare two quantities and what the numbers mean.",
+              "order": 1,
+              "tutorial": "./content/tutorials/concept-ratios.md",
+              "tests": [
+                {
+                  "id": "concept-ratios-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-ratios-core.json"
+                },
+                {
+                  "id": "concept-ratios-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-ratios-review.json"
+                }
+              ]
+            },
+            {
+              "id": "concept-equivalent-ratios",
+              "title": "Equivalent Ratios",
+              "description": "Practice finding ratios that show the same comparison in different forms.",
+              "order": 2,
+              "tutorial": "./content/tutorials/concept-equivalent-ratios.md",
+              "tests": [
+                {
+                  "id": "concept-equivalent-ratios-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-equivalent-ratios-core.json"
+                },
+                {
+                  "id": "concept-equivalent-ratios-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-equivalent-ratios-review.json"
+                }
+              ]
+            },
+            {
+              "id": "concept-unit-rates",
+              "title": "Unit Rates",
+              "description": "Use division to find the amount for one item, one hour, or one unit.",
+              "order": 3,
+              "tutorial": "./content/tutorials/concept-unit-rates.md",
+              "tests": [
+                {
+                  "id": "concept-unit-rates-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-unit-rates-core.json"
+                },
+                {
+                  "id": "concept-unit-rates-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-unit-rates-review.json"
+                }
+              ]
+            },
+            {
+              "id": "concept-proportions",
+              "title": "Proportions",
+              "description": "Understand when two ratios are equal and how to recognize a proportion.",
+              "order": 4,
+              "tutorial": "./content/tutorials/concept-proportions.md",
+              "tests": [
+                {
+                  "id": "concept-proportions-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-proportions-core.json"
+                },
+                {
+                  "id": "concept-proportions-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-proportions-review.json"
+                }
+              ]
+            },
+            {
+              "id": "concept-solving-proportions",
+              "title": "Solving Proportions",
+              "description": "Solve for missing values in proportion problems using clear steps.",
+              "order": 5,
+              "tutorial": "./content/tutorials/concept-solving-proportions.md",
+              "tests": []
+            },
+            {
+              "id": "concept-percent-relationships",
+              "title": "Percent Relationships",
+              "description": "Use percents to compare part and whole, solve discounts, and understand percent change.",
+              "order": 6,
+              "tutorial": "./content/tutorials/concept-percent-relationships.md",
+              "tests": [
+                {
+                  "id": "concept-percent-relationships-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-percent-relationships-core.json"
+                },
+                {
+                  "id": "concept-percent-relationships-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-percent-relationships-review.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "unit-integers",
+          "title": "Integers",
+          "description": "Work with positive and negative numbers in simple, real-world situations.",
+          "order": 2,
+          "concepts": [
+            {
+              "id": "concept-integer-operations",
+              "title": "Integer Operations",
+              "description": "Add, subtract, multiply, and divide integers with confidence.",
+              "order": 1,
+              "tutorial": "./content/tutorials/concept-integer-operations.md",
+              "tests": []
+            },
+            {
+              "id": "concept-compare-integers",
+              "title": "Compare Integers",
+              "description": "Use number lines and reasoning to compare positive and negative numbers.",
+              "order": 2,
+              "tutorial": "./content/tutorials/concept-compare-integers.md",
+              "tests": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

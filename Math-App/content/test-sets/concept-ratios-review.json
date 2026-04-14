@@ -1,0 +1,208 @@
+{
+  "testId": "concept-ratios-review",
+  "conceptId": "concept-ratios",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-ratios-review-001",
+      "type": "multiple_choice",
+      "questionText": "A jar has 2 red counters and 3 blue counters. What fraction shows the ratio of red counters to blue counters?",
+      "options": ["2/3", "3/2", "2/5", "3/5"],
+      "correctAnswer": "2/3",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "Red to blue means compare 2 to 3, so the ratio is 2/3. A common mistake is choosing 2/5, which compares red counters to the total instead of to blue counters."
+    },
+    {
+      "id": "concept-ratios-review-002",
+      "type": "multiple_choice",
+      "questionText": "A class has 3 students absent and 2 students present online. What fraction shows the ratio of absent students to all these students?",
+      "options": ["3/2", "3/5", "2/3", "2/5"],
+      "correctAnswer": "3/5",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "All the students in the problem make 5 total, so absent to all is 3/5. A common mistake is using 3/2, which compares absent students to online students instead of the whole group."
+    },
+    {
+      "id": "concept-ratios-review-003",
+      "type": "multiple_choice",
+      "questionText": "If the ratio is 4 stars to 7 circles, how many circles are needed with 12 stars?",
+      "options": ["19", "21", "24", "28"],
+      "correctAnswer": "21",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Twelve stars is 3 groups of 4 stars. Multiply the circles by the same factor: 7 times 3 equals 21. A common mistake is adding 12 and 7 instead of scaling both parts equally."
+    },
+    {
+      "id": "concept-ratios-review-004",
+      "type": "multiple_choice",
+      "questionText": "A table shows 3 apples for every 5 bananas. If there are 9 apples, how many bananas should there be?",
+      "options": ["12", "15", "18", "45"],
+      "correctAnswer": "15",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The apples went from 3 to 9, which is 3 times as many. Multiply the bananas by 3 too: 5 times 3 equals 15. A common mistake is dividing 9 by 5 instead of matching the scale factor first."
+    },
+    {
+      "id": "concept-ratios-review-005",
+      "type": "multiple_choice",
+      "questionText": "Boys to girls is 1 to 2 in a group of 18 students. How many boys are there?",
+      "options": ["6", "8", "10", "12"],
+      "correctAnswer": "6",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The ratio has 3 total parts. Divide 18 by 3 to get 6 students per part. Boys are 1 part, so there are 6 boys. A common mistake is using 2 parts for boys even though boys are listed first."
+    },
+    {
+      "id": "concept-ratios-review-006",
+      "type": "multiple_choice",
+      "questionText": "What is the ratio of 1 foot to 6 inches after changing both measurements to inches?",
+      "options": ["2", "3/2", "6/12", "18"],
+      "correctAnswer": "2",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "One foot is 12 inches. The ratio becomes 12 to 6, which simplifies to 2 to 1, so the numeric ratio value is 2. A common mistake is comparing 1 to 6 without converting the foot into inches first."
+    },
+    {
+      "id": "concept-ratios-review-007",
+      "type": "multiple_choice",
+      "questionText": "Which method correctly makes a ratio equal to 3 to 4? 1) Multiply both numbers by 2  2) Add 2 to only the first number  3) Subtract 1 from only the second number  4) Reverse the order",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Equivalent ratios are made by multiplying or dividing both parts by the same number. Only choice 1 keeps the comparison the same. A common mistake is changing just one part of the ratio."
+    },
+    {
+      "id": "concept-ratios-review-008",
+      "type": "multiple_choice",
+      "questionText": "Which snack mix has the greater raisin-to-nut ratio? 1) 2 raisins to 5 nuts  2) 3 raisins to 5 nuts  3) They are equal  4) Not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "2",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Compare 2/5 and 3/5. Since 3/5 is greater, mix 2 has the greater raisin-to-nut ratio. A common mistake is thinking both are the same because the nuts are both 5."
+    },
+    {
+      "id": "concept-ratios-review-009",
+      "type": "multiple_choice",
+      "questionText": "A pet picture shows 4 cats and 9 dogs. What fraction shows the ratio of dogs to cats?",
+      "options": ["4/9", "9/4", "9/13", "4/13"],
+      "correctAnswer": "9/4",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "Dogs to cats means compare 9 to 4, so the ratio is 9/4. A common mistake is choosing 4/9 because that is cats to dogs, not dogs to cats."
+    },
+    {
+      "id": "concept-ratios-review-010",
+      "type": "multiple_choice",
+      "questionText": "The ratio of red beads to blue beads is 2 to 3. If there are 25 beads total, how many are red?",
+      "options": ["5", "10", "15", "20"],
+      "correctAnswer": "10",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "There are 5 total parts in the ratio. Divide 25 by 5 to get 5 beads per part. Red is 2 parts, so 2 times 5 equals 10. A common mistake is taking 3 parts for red even though red is the first number in the ratio."
+    },
+    {
+      "id": "concept-ratios-review-011",
+      "type": "multiple_choice",
+      "questionText": "If the ratio 5 to 8 is equal to x to 24, what is x?",
+      "options": ["10", "12", "15", "16"],
+      "correctAnswer": "15",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The second number went from 8 to 24, which is 3 times as much. Multiply 5 by 3 to get 15. A common mistake is adding 16 because 24 is 16 more than 8, but equivalent ratios use multiplication or division."
+    },
+    {
+      "id": "concept-ratios-review-012",
+      "type": "multiple_choice",
+      "questionText": "A box has 6 red cubes and 4 blue cubes. What fraction shows the ratio of red cubes to all cubes in simplest form?",
+      "options": ["3/5", "6/4", "6/10", "2/3"],
+      "correctAnswer": "3/5",
+      "difficulty": "medium",
+      "answerType": "fraction",
+      "explanation": "There are 10 cubes total, so red to all is 6/10. Simplify 6/10 to 3/5. A common mistake is using 6/4, which compares red cubes to blue cubes instead of to the whole set."
+    },
+    {
+      "id": "concept-ratios-review-013",
+      "type": "multiple_choice",
+      "questionText": "Which row matches the ratio 1 triangle to 4 squares? 1) 3 triangles and 8 squares  2) 4 triangles and 16 squares  3) 5 triangles and 12 squares  4) 6 triangles and 20 squares",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "2",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A matching row must multiply both parts by the same number. Choice 2 multiplies 1 and 4 by 4 to get 4 and 16. A common mistake is choosing 4 because 20 looks like a multiple of 4, but 6 to 20 does not match 1 to 4."
+    },
+    {
+      "id": "concept-ratios-review-014",
+      "type": "multiple_choice",
+      "questionText": "What is the ratio of 2 meters to 50 centimeters after changing both measurements to centimeters?",
+      "options": ["2", "4", "25", "200"],
+      "correctAnswer": "4",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Two meters is 200 centimeters. The ratio becomes 200 to 50, and 200 divided by 50 is 4, so the simplified ratio is 4 to 1. A common mistake is comparing 2 to 50 without changing the meters to centimeters."
+    },
+    {
+      "id": "concept-ratios-review-015",
+      "type": "multiple_choice",
+      "questionText": "Which class has the greater girls-to-boys ratio? 1) Class A: 4 girls to 5 boys  2) Class B: 6 girls to 10 boys  3) They are equal  4) Not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Compare 4/5 with 6/10, which simplifies to 3/5. Since 4/5 is greater than 3/5, Class A has the greater girls-to-boys ratio. A common mistake is thinking 6 girls must be greater without comparing the number of boys too."
+    },
+    {
+      "id": "concept-ratios-review-016",
+      "type": "multiple_choice",
+      "questionText": "A student uses the ratio 3 to 2 with a total of 20 and divides 20 by 2 to get 10 for each part. Which mistake did the student make? 1) Divided by only one side instead of total parts  2) Reversed the ratio  3) Used the wrong unit  4) Forgot to simplify",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio 3 to 2 has 5 total parts, so the first step should be dividing 20 by 5. The student divided by only one side of the ratio instead of by all the parts. A common mistake is treating the two numbers as two equal groups."
+    },
+    {
+      "id": "concept-ratios-review-017",
+      "type": "multiple_choice",
+      "questionText": "A map scale says 1 centimeter represents 200 meters. If a road is 4.5 centimeters long on the map, how long is the road in real life?",
+      "options": ["450", "800", "900", "1200"],
+      "correctAnswer": "900",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Multiply 4.5 by 200 to get 900 meters. A common mistake is adding 4.5 and 200 instead of using the scale as repeated groups.",
+      "unit": "meters"
+    },
+    {
+      "id": "concept-ratios-review-018",
+      "type": "multiple_choice",
+      "questionText": "A recipe uses flour and sugar in the ratio 4 to 3. If the total amount of flour and sugar is 21 cups, how many cups are sugar?",
+      "options": ["9", "12", "16", "18"],
+      "correctAnswer": "9",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio has 7 total parts. Divide 21 by 7 to get 3 cups per part. Sugar is 3 parts, so 3 times 3 equals 9 cups. A common mistake is taking 4 parts for sugar even though sugar is the second number in the ratio."
+    },
+    {
+      "id": "concept-ratios-review-019",
+      "type": "multiple_choice",
+      "questionText": "Which statement about 6 to 9 and 14 to 21 is true? 1) The first ratio is greater  2) The second ratio is greater  3) The ratios are equal  4) There is not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "3",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Simplify both ratios. Six to 9 simplifies to 2 to 3, and 14 to 21 also simplifies to 2 to 3. Since they simplify to the same ratio, the ratios are equal. A common mistake is comparing 14 and 6 directly instead of simplifying first."
+    },
+    {
+      "id": "concept-ratios-review-020",
+      "type": "multiple_choice",
+      "questionText": "The ratio of boys to girls is 14 to 5. Which statement is true if the total number of students is 40? 1) The ratio can fit exactly  2) There would be 20 girls  3) The total cannot fit that exact ratio  4) There is not enough information",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "3",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio has 19 total parts. Since 40 is not a multiple of 19, a total of 40 students cannot fit that exact ratio. A common mistake is trying to force the ratio to work without checking whether the total is divisible by the number of parts."
+    }
+  ]
+}
