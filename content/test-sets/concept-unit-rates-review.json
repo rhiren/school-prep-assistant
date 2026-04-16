@@ -1,0 +1,316 @@
+{
+  "testId": "concept-unit-rates-review",
+  "conceptId": "concept-unit-rates",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-unit-rates-review-001",
+      "type": "multiple_choice",
+      "questionText": "A fruit stand table shows 2 apples cost $4, 4 apples cost $8, and 6 apples cost $12. What is the cost of 1 apple?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "correctAnswer": "2",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Use any row in the table to find the unit price. For example, 8 divided by 4 equals 2, so each apple costs 2 dollars. A likely mistake is choosing 4 because it appears in the table, but 4 is the number of apples, not the cost of one apple.",
+      "unit": "dollars"
+    },
+    {
+      "id": "concept-unit-rates-review-002",
+      "type": "multiple_choice",
+      "questionText": "A runner travels 12 miles in 3 hours. What is the unit rate in miles per hour?",
+      "options": [
+        "3",
+        "4",
+        "9",
+        "15"
+      ],
+      "correctAnswer": "4",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Miles per hour means divide miles by hours. 12 divided by 3 equals 4. So the runner goes 4 miles in 1 hour."
+    },
+    {
+      "id": "concept-unit-rates-review-003",
+      "type": "multiple_choice",
+      "questionText": "Six bags hold 30 marbles. How many marbles are in 1 bag?",
+      "options": [
+        "5",
+        "6",
+        "24",
+        "36"
+      ],
+      "correctAnswer": "5",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Divide the total marbles by the number of bags. 30 divided by 6 equals 5. The unit rate is the amount for one bag."
+    },
+    {
+      "id": "concept-unit-rates-review-004",
+      "type": "multiple_choice",
+      "questionText": "A 15-ounce box of cereal is shared equally into 3 bowls. How many ounces go in each bowl?",
+      "options": [
+        "3",
+        "5",
+        "12",
+        "18"
+      ],
+      "correctAnswer": "5",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Divide the total ounces by the number of bowls. 15 divided by 3 equals 5. Each bowl gets 5 ounces."
+    },
+    {
+      "id": "concept-unit-rates-review-005",
+      "type": "multiple_choice",
+      "questionText": "Store A sells 4 pens for $2. Store B sells 10 pens for $5. What is the price per pen at both stores?",
+      "options": [
+        "0.25",
+        "0.5",
+        "1",
+        "1.5"
+      ],
+      "correctAnswer": "0.5",
+      "difficulty": "easy",
+      "answerType": "decimal",
+      "explanation": "Find the unit price for each store. Store A is 2 divided by 4, which is 0.5 dollars per pen. Store B is 5 divided by 10, which is also 0.5 dollars per pen. A likely mistake is thinking the larger pack must cost less per pen without checking the unit rate.",
+      "unit": "dollars"
+    },
+    {
+      "id": "concept-unit-rates-review-006",
+      "type": "multiple_choice",
+      "questionText": "A faucet fills 18 cups in 6 minutes. How many cups does it fill each minute?",
+      "options": [
+        "2",
+        "3",
+        "6",
+        "12"
+      ],
+      "correctAnswer": "3",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Divide cups by minutes. 18 divided by 6 equals 3. So the faucet fills 3 cups per minute."
+    },
+    {
+      "id": "concept-unit-rates-review-007",
+      "type": "multiple_choice",
+      "questionText": "Eight muffins cost $12. What is the cost of 1 muffin?",
+      "options": [
+        "1",
+        "1.5",
+        "2",
+        "4"
+      ],
+      "correctAnswer": "1.5",
+      "difficulty": "easy",
+      "answerType": "decimal",
+      "explanation": "Divide the total cost by the number of muffins. 12 divided by 8 equals 1.5. Each muffin costs $1.5.",
+      "unit": "dollars"
+    },
+    {
+      "id": "concept-unit-rates-review-008",
+      "type": "multiple_choice",
+      "questionText": "A boat goes 40 miles in 5 hours. How far does it go in 1 hour?",
+      "options": [
+        "5",
+        "8",
+        "35",
+        "45"
+      ],
+      "correctAnswer": "8",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Divide miles by hours. 40 divided by 5 equals 8. So the boat travels 8 miles per hour."
+    },
+    {
+      "id": "concept-unit-rates-review-009",
+      "type": "multiple_choice",
+      "questionText": "A bag has 2 pizzas shared equally among 8 students. How much pizza does each student get?",
+      "options": [
+        "1/8",
+        "1/4",
+        "2/8",
+        "4"
+      ],
+      "correctAnswer": "1/4",
+      "difficulty": "easy",
+      "answerType": "fraction",
+      "explanation": "Divide 2 pizzas by 8 students. 2 divided by 8 equals 2/8, which simplifies to 1/4. Each student gets one fourth of a pizza."
+    },
+    {
+      "id": "concept-unit-rates-review-010",
+      "type": "multiple_choice",
+      "questionText": "Which method correctly finds the number of stickers in 1 pack if 3 packs contain 27 stickers?",
+      "options": [
+        "Divide 27 by 3",
+        "Multiply 27 by 3",
+        "Add 27 and 3",
+        "Divide 3 by 27"
+      ],
+      "correctAnswer": "Divide 27 by 3",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "To find the amount in one pack, divide the total number of stickers by the number of packs. Twenty-seven divided by three equals nine stickers per pack. The likely mistake is multiplying instead of dividing, which would make the number much too large."
+    },
+    {
+      "id": "concept-unit-rates-review-011",
+      "type": "multiple_choice",
+      "questionText": "A 2.5-pound bag of grapes costs $5. What is the cost per pound?",
+      "options": [
+        "1",
+        "2",
+        "2.5",
+        "7.5"
+      ],
+      "correctAnswer": "2",
+      "difficulty": "medium",
+      "answerType": "decimal",
+      "explanation": "Divide the total cost by the total pounds. 5 divided by 2.5 equals 2. So the unit price is $2 per pound.",
+      "unit": "dollars"
+    },
+    {
+      "id": "concept-unit-rates-review-012",
+      "type": "multiple_choice",
+      "questionText": "A train travels 72 miles in 1.5 hours. What is the speed in miles per hour?",
+      "options": [
+        "36",
+        "48",
+        "54",
+        "108"
+      ],
+      "correctAnswer": "48",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Divide distance by time. 72 divided by 1.5 equals 48. So the train travels 48 miles in one hour."
+    },
+    {
+      "id": "concept-unit-rates-review-013",
+      "type": "multiple_choice",
+      "questionText": "A table shows 2 boxes hold 18 pencils and 4 boxes hold 36 pencils. At the same rate, how many pencils would 7 boxes hold?",
+      "options": [
+        "54",
+        "63",
+        "72",
+        "126"
+      ],
+      "correctAnswer": "63",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "First find the unit rate from the table. Thirty-six divided by four equals nine pencils per box. Then multiply nine by seven boxes to get 63 pencils. The likely mistake is choosing 72 by adding instead of using the unit rate."
+    },
+    {
+      "id": "concept-unit-rates-review-014",
+      "type": "multiple_choice",
+      "questionText": "A class walks 15 miles in 3 days. At that same rate, how far will they walk in 5 days?",
+      "options": [
+        "20",
+        "25",
+        "45",
+        "75"
+      ],
+      "correctAnswer": "25",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "First find the unit rate. 15 divided by 3 equals 5 miles per day. Then multiply 5 by 5 days to get 25 miles.",
+      "unit": "miles"
+    },
+    {
+      "id": "concept-unit-rates-review-015",
+      "type": "multiple_choice",
+      "questionText": "A recipe uses 3 cups of milk for 12 pancakes. A student divides 12 by 3 and gets 4. What does 4 represent?",
+      "options": [
+        "cups per pancake",
+        "pancakes per cup",
+        "cups for 1 pancake",
+        "milk for 4 pancakes"
+      ],
+      "correctAnswer": "pancakes per cup",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Dividing 12 by 3 gives 4 pancakes per cup, not cups per pancake. To find cups per pancake, you would divide 3 by 12 and get 1/4 cup per pancake. The likely mistake is reversing the rate and using pancakes per cup when the question is about cups per pancake.",
+      "unit": "cup"
+    },
+    {
+      "id": "concept-unit-rates-review-016",
+      "type": "multiple_choice",
+      "questionText": "A printer makes 84 pages in 7 minutes. How many pages will it make in 10 minutes at the same rate?",
+      "options": [
+        "91",
+        "100",
+        "120",
+        "840"
+      ],
+      "correctAnswer": "120",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "First find pages per minute. 84 divided by 7 equals 12. Then multiply 12 by 10 to get 120 pages."
+    },
+    {
+      "id": "concept-unit-rates-review-017",
+      "type": "multiple_choice",
+      "questionText": "Store A sells 6 yogurts for $4.20. Store B sells 8 yogurts for $5.20. Which store has the lower price per yogurt?",
+      "options": [
+        "Store A",
+        "Store B",
+        "Both stores cost the same per yogurt",
+        "There is not enough information"
+      ],
+      "correctAnswer": "Store B",
+      "difficulty": "medium",
+      "answerType": "decimal",
+      "explanation": "Find both unit prices. Store A: 4.20 divided by 6 equals 0.70. Store B: 5.20 divided by 8 equals 0.65. Since 0.65 is less, Store B is cheaper."
+    },
+    {
+      "id": "concept-unit-rates-review-018",
+      "type": "multiple_choice",
+      "questionText": "A machine uses 3/4 gallon of water in 3 hours. How much water does it use each hour?",
+      "options": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "9/4"
+      ],
+      "correctAnswer": "1/4",
+      "difficulty": "medium",
+      "answerType": "fraction",
+      "explanation": "Divide 3/4 by 3 to find the amount for 1 hour. 3/4 divided by 3 equals 1/4. So the machine uses 1/4 gallon per hour.",
+      "unit": "gallon"
+    },
+    {
+      "id": "concept-unit-rates-review-019",
+      "type": "multiple_choice",
+      "questionText": "A student says 28 miles in 4 hours is 112 miles per hour because 28 times 4 equals 112. Which mistake did the student make?",
+      "options": [
+        "multiplied instead of divided",
+        "divided in the wrong order",
+        "forgot to change hours to minutes",
+        "used the wrong units for miles"
+      ],
+      "correctAnswer": "multiplied instead of divided",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "To find miles per hour, divide 28 by 4 to get 7 miles per hour. The student multiplied instead of divided, which is the most common unit-rate mistake. Reversing the numbers would also be wrong, but that is not what happened here.",
+      "unit": "miles per hour"
+    },
+    {
+      "id": "concept-unit-rates-review-020",
+      "type": "multiple_choice",
+      "questionText": "A bakery uses 1.8 kilograms of flour for 12 loaves. How many grams of flour are used for each loaf?",
+      "options": [
+        "15",
+        "150",
+        "180",
+        "216"
+      ],
+      "correctAnswer": "150",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "First divide 1.8 by 12 to get 0.15 kilograms per loaf. Then change kilograms to grams. 0.15 kilograms equals 150 grams. A common mistake is forgetting the unit conversion.",
+      "unit": "grams"
+    }
+  ]
+}

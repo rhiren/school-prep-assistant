@@ -1,0 +1,531 @@
+{
+  "courses": [
+    {
+      "id": "course-2",
+      "title": "Course 2",
+      "description": "Foundational math mastery organized by concept.",
+      "order": 1,
+      "units": [
+        {
+          "id": "unit-ratios-proportions",
+          "title": "Ratios and Proportional Relationships",
+          "description": "Build understanding of ratios, rates, proportions, and percent relationships through clear concept practice.",
+          "order": 1,
+          "concepts": [
+            {
+              "id": "concept-ratios",
+              "title": "Ratios",
+              "description": "Learn how ratios compare two quantities and what the numbers mean.",
+              "order": 1,
+              "tutorial": "./content/tutorials/concept-ratios.md",
+              "tests": [
+                {
+                  "id": "concept-ratios-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-ratios-core.json"
+                },
+                {
+                  "id": "concept-ratios-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-ratios-review.json"
+                }
+              ]
+            },
+            {
+              "id": "concept-equivalent-ratios",
+              "title": "Equivalent Ratios",
+              "description": "Practice finding ratios that show the same comparison in different forms.",
+              "order": 2,
+              "tutorial": "./content/tutorials/concept-equivalent-ratios.md",
+              "tests": [
+                {
+                  "id": "concept-equivalent-ratios-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-equivalent-ratios-core.json"
+                },
+                {
+                  "id": "concept-equivalent-ratios-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-equivalent-ratios-review.json"
+                }
+              ]
+            },
+            {
+              "id": "concept-unit-rates",
+              "title": "Unit Rates",
+              "description": "Use division to find the amount for one item, one hour, or one unit.",
+              "order": 3,
+              "tutorial": "./content/tutorials/concept-unit-rates.md",
+              "tests": [
+                {
+                  "id": "concept-unit-rates-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-unit-rates-core.json"
+                },
+                {
+                  "id": "concept-unit-rates-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-unit-rates-review.json"
+                }
+              ]
+            },
+            {
+              "id": "concept-scale-drawings",
+              "title": "Scale Drawings",
+              "description": "Use scale drawings to compare real sizes and drawing sizes accurately.",
+              "order": 4,
+              "tutorial": "./content/tutorials/concept-scale-drawings.md",
+              "tests": []
+            },
+            {
+              "id": "concept-proportional-relationships",
+              "title": "Proportional Relationships",
+              "description": "Recognize when two quantities change together at a constant rate.",
+              "order": 5,
+              "tutorial": "./content/tutorials/concept-proportional-relationships.md",
+              "tests": []
+            },
+            {
+              "id": "concept-constant-of-proportionality",
+              "title": "Constant of Proportionality",
+              "description": "Find the constant rate that connects one quantity to another.",
+              "order": 6,
+              "tutorial": "./content/tutorials/concept-constant-of-proportionality.md",
+              "tests": []
+            },
+            {
+              "id": "concept-proportional-tables",
+              "title": "Proportional Tables",
+              "description": "Use tables to spot and complete proportional relationships.",
+              "order": 7,
+              "tutorial": "./content/tutorials/concept-proportional-tables.md",
+              "tests": []
+            },
+            {
+              "id": "concept-proportional-graphs",
+              "title": "Proportional Graphs",
+              "description": "Read and interpret graphs that show proportional relationships.",
+              "order": 8,
+              "tutorial": "./content/tutorials/concept-proportional-graphs.md",
+              "tests": []
+            },
+            {
+              "id": "concept-proportional-equations",
+              "title": "Proportional Equations",
+              "description": "Write equations that model proportional relationships clearly.",
+              "order": 9,
+              "tutorial": "./content/tutorials/concept-proportional-equations.md",
+              "tests": []
+            },
+            {
+              "id": "concept-proportions",
+              "title": "Proportions",
+              "description": "Understand when two ratios are equal and how to recognize a proportion.",
+              "order": 10,
+              "tutorial": "./content/tutorials/concept-proportions.md",
+              "tests": [
+                {
+                  "id": "concept-proportions-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-proportions-core.json"
+                },
+                {
+                  "id": "concept-proportions-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-proportions-review.json"
+                }
+              ]
+            },
+            {
+              "id": "concept-solving-proportions",
+              "title": "Solving Proportions",
+              "description": "Solve for missing values in proportion problems using clear steps.",
+              "order": 11,
+              "tutorial": "./content/tutorials/concept-solving-proportions.md",
+              "tests": []
+            },
+            {
+              "id": "concept-percent-basics",
+              "title": "Percent Basics",
+              "description": "Understand percent as a part out of 100 and what that means in simple situations.",
+              "order": 12,
+              "tutorial": "./content/tutorials/concept-percent-basics.md",
+              "tests": []
+            },
+            {
+              "id": "concept-percent-increase-decrease",
+              "title": "Percent Increase and Decrease",
+              "description": "Calculate how much an amount increases or decreases using percent change.",
+              "order": 13,
+              "tutorial": "./content/tutorials/concept-percent-increase-decrease.md",
+              "tests": []
+            },
+            {
+              "id": "concept-multi-step-percent",
+              "title": "Multi-Step Percent",
+              "description": "Solve percent problems that need multiple steps and careful problem solving.",
+              "order": 14,
+              "tutorial": "./content/tutorials/concept-multi-step-percent.md",
+              "tests": []
+            },
+            {
+              "id": "concept-percent-relationships",
+              "title": "Percent Relationships",
+              "description": "Apply percents in real situations like discounts, tax, markups, and comparisons.",
+              "order": 15,
+              "tutorial": "./content/tutorials/concept-percent-relationships.md",
+              "tests": [
+                {
+                  "id": "concept-percent-relationships-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-percent-relationships-core.json"
+                },
+                {
+                  "id": "concept-percent-relationships-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-percent-relationships-review.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "unit-rational-numbers",
+          "title": "Rational Numbers",
+          "description": "Build confidence working with integers and rational numbers in number lines, operations, and real situations.",
+          "order": 2,
+          "concepts": [
+            {
+              "id": "concept-integers",
+              "title": "Integers",
+              "description": "Learn what integers are and how they represent positive and negative values.",
+              "order": 1,
+              "tutorial": "./content/tutorials/concept-integers.md",
+              "tests": []
+            },
+            {
+              "id": "concept-compare-integers",
+              "title": "Compare Integers",
+              "description": "Use number lines and reasoning to compare positive and negative numbers.",
+              "order": 2,
+              "tutorial": "./content/tutorials/concept-compare-integers.md",
+              "tests": []
+            },
+            {
+              "id": "concept-absolute-value",
+              "title": "Absolute Value",
+              "description": "Understand absolute value as a number's distance from zero.",
+              "order": 3,
+              "tutorial": "./content/tutorials/concept-absolute-value.md",
+              "tests": []
+            },
+            {
+              "id": "concept-add-subtract-integers",
+              "title": "Add and Subtract Integers",
+              "description": "Practice adding and subtracting positive and negative numbers.",
+              "order": 4,
+              "tutorial": "./content/tutorials/concept-add-subtract-integers.md",
+              "tests": []
+            },
+            {
+              "id": "concept-multiply-divide-integers",
+              "title": "Multiply and Divide Integers",
+              "description": "Use sign rules to multiply and divide integers correctly.",
+              "order": 5,
+              "tutorial": "./content/tutorials/concept-multiply-divide-integers.md",
+              "tests": []
+            },
+            {
+              "id": "concept-rational-numbers",
+              "title": "Rational Numbers",
+              "description": "Recognize fractions, decimals, and integers as rational numbers.",
+              "order": 6,
+              "tutorial": "./content/tutorials/concept-rational-numbers.md",
+              "tests": []
+            },
+            {
+              "id": "concept-add-subtract-rationals",
+              "title": "Add and Subtract Rational Numbers",
+              "description": "Add and subtract fractions and decimals in clear, organized steps.",
+              "order": 7,
+              "tutorial": "./content/tutorials/concept-add-subtract-rationals.md",
+              "tests": []
+            },
+            {
+              "id": "concept-multiply-divide-rationals",
+              "title": "Multiply and Divide Rational Numbers",
+              "description": "Multiply and divide rational numbers with attention to signs and form.",
+              "order": 8,
+              "tutorial": "./content/tutorials/concept-multiply-divide-rationals.md",
+              "tests": []
+            },
+            {
+              "id": "concept-rational-number-applications",
+              "title": "Rational Number Applications",
+              "description": "Apply rational numbers to real-world situations like money, temperature, and distance.",
+              "order": 9,
+              "tutorial": "./content/tutorials/concept-rational-number-applications.md",
+              "tests": []
+            },
+            {
+              "id": "concept-integer-operations",
+              "title": "Integer Operations",
+              "description": "Add, subtract, multiply, and divide integers with confidence.",
+              "order": 10,
+              "tutorial": "./content/tutorials/concept-integer-operations.md",
+              "tests": []
+            }
+          ]
+        },
+        {
+          "id": "unit-expressions-equations",
+          "title": "Expressions and Equations",
+          "description": "Use algebra skills to write expressions, solve equations, and describe number relationships.",
+          "order": 3,
+          "concepts": [
+            {
+              "id": "concept-expressions",
+              "title": "Expressions",
+              "description": "Write and read expressions that show mathematical situations.",
+              "order": 1,
+              "tutorial": "./content/tutorials/concept-expressions.md",
+              "tests": []
+            },
+            {
+              "id": "concept-properties-of-operations",
+              "title": "Properties of Operations",
+              "description": "Use operation properties to reason about expressions more efficiently.",
+              "order": 2,
+              "tutorial": "./content/tutorials/concept-properties-of-operations.md",
+              "tests": []
+            },
+            {
+              "id": "concept-equivalent-expressions",
+              "title": "Equivalent Expressions",
+              "description": "Recognize when two expressions have the same value.",
+              "order": 3,
+              "tutorial": "./content/tutorials/concept-equivalent-expressions.md",
+              "tests": []
+            },
+            {
+              "id": "concept-distributive-property",
+              "title": "Distributive Property",
+              "description": "Use the distributive property to expand or simplify expressions.",
+              "order": 4,
+              "tutorial": "./content/tutorials/concept-distributive-property.md",
+              "tests": []
+            },
+            {
+              "id": "concept-evaluate-expressions",
+              "title": "Evaluate Expressions",
+              "description": "Substitute values and find the value of an expression correctly.",
+              "order": 5,
+              "tutorial": "./content/tutorials/concept-evaluate-expressions.md",
+              "tests": []
+            },
+            {
+              "id": "concept-one-step-equations",
+              "title": "One-Step Equations",
+              "description": "Solve simple equations by undoing one operation at a time.",
+              "order": 6,
+              "tutorial": "./content/tutorials/concept-one-step-equations.md",
+              "tests": []
+            },
+            {
+              "id": "concept-two-step-equations",
+              "title": "Two-Step Equations",
+              "description": "Solve equations that need two operations to find the unknown.",
+              "order": 7,
+              "tutorial": "./content/tutorials/concept-two-step-equations.md",
+              "tests": []
+            },
+            {
+              "id": "concept-multi-step-equations",
+              "title": "Multi-Step Equations",
+              "description": "Solve more complex equations by working through each step carefully.",
+              "order": 8,
+              "tutorial": "./content/tutorials/concept-multi-step-equations.md",
+              "tests": []
+            },
+            {
+              "id": "concept-inequalities",
+              "title": "Inequalities",
+              "description": "Compare values using inequality symbols and reasoning.",
+              "order": 9,
+              "tutorial": "./content/tutorials/concept-inequalities.md",
+              "tests": []
+            },
+            {
+              "id": "concept-graph-inequalities",
+              "title": "Graph Inequalities",
+              "description": "Show inequality solutions clearly on a number line.",
+              "order": 10,
+              "tutorial": "./content/tutorials/concept-graph-inequalities.md",
+              "tests": []
+            },
+            {
+              "id": "concept-equation-word-problems",
+              "title": "Equation Word Problems",
+              "description": "Turn word problems into equations and solve them step by step.",
+              "order": 11,
+              "tutorial": "./content/tutorials/concept-equation-word-problems.md",
+              "tests": []
+            }
+          ]
+        },
+        {
+          "id": "unit-geometry",
+          "title": "Geometry",
+          "description": "Study shapes, angles, area, surface area, and volume through visual reasoning and measurement.",
+          "order": 4,
+          "concepts": [
+            {
+              "id": "concept-scale-geometry",
+              "title": "Scale Geometry",
+              "description": "Use scale ideas to compare lengths and drawings in geometry problems.",
+              "order": 1,
+              "tutorial": "./content/tutorials/concept-scale-geometry.md",
+              "tests": []
+            },
+            {
+              "id": "concept-circles",
+              "title": "Circles",
+              "description": "Learn the important parts of circles and how they are measured.",
+              "order": 2,
+              "tutorial": "./content/tutorials/concept-circles.md",
+              "tests": []
+            },
+            {
+              "id": "concept-angle-relationships",
+              "title": "Angle Relationships",
+              "description": "Use angle relationships to solve for missing angle measures.",
+              "order": 3,
+              "tutorial": "./content/tutorials/concept-angle-relationships.md",
+              "tests": []
+            },
+            {
+              "id": "concept-triangles",
+              "title": "Triangles",
+              "description": "Study triangle properties, side lengths, and angle relationships.",
+              "order": 4,
+              "tutorial": "./content/tutorials/concept-triangles.md",
+              "tests": []
+            },
+            {
+              "id": "concept-area",
+              "title": "Area",
+              "description": "Find the area of common shapes using formulas and reasoning.",
+              "order": 5,
+              "tutorial": "./content/tutorials/concept-area.md",
+              "tests": []
+            },
+            {
+              "id": "concept-composite-area",
+              "title": "Composite Area",
+              "description": "Break complex shapes into simpler parts to find total area.",
+              "order": 6,
+              "tutorial": "./content/tutorials/concept-composite-area.md",
+              "tests": []
+            },
+            {
+              "id": "concept-surface-area",
+              "title": "Surface Area",
+              "description": "Find the total area covering the outside of a three-dimensional figure.",
+              "order": 7,
+              "tutorial": "./content/tutorials/concept-surface-area.md",
+              "tests": []
+            },
+            {
+              "id": "concept-volume",
+              "title": "Volume",
+              "description": "Measure how much space is inside a three-dimensional figure.",
+              "order": 8,
+              "tutorial": "./content/tutorials/concept-volume.md",
+              "tests": []
+            }
+          ]
+        },
+        {
+          "id": "unit-statistics-probability",
+          "title": "Statistics and Probability",
+          "description": "Explore data, sampling, probability, and chance through questions and real situations.",
+          "order": 5,
+          "concepts": [
+            {
+              "id": "concept-statistical-questions",
+              "title": "Statistical Questions",
+              "description": "Learn how to tell whether a question is statistical.",
+              "order": 1,
+              "tutorial": "./content/tutorials/concept-statistical-questions.md",
+              "tests": []
+            },
+            {
+              "id": "concept-sampling",
+              "title": "Sampling",
+              "description": "Understand how samples can be used to learn about a larger group.",
+              "order": 2,
+              "tutorial": "./content/tutorials/concept-sampling.md",
+              "tests": []
+            },
+            {
+              "id": "concept-compare-data",
+              "title": "Compare Data",
+              "description": "Compare data sets and describe what the data shows.",
+              "order": 3,
+              "tutorial": "./content/tutorials/concept-compare-data.md",
+              "tests": []
+            },
+            {
+              "id": "concept-measures-of-center",
+              "title": "Measures of Center",
+              "description": "Use mean, median, mode, and range to understand data.",
+              "order": 4,
+              "tutorial": "./content/tutorials/concept-measures-of-center.md",
+              "tests": []
+            },
+            {
+              "id": "concept-distributions",
+              "title": "Distributions",
+              "description": "Describe how data is spread out and where it clusters.",
+              "order": 5,
+              "tutorial": "./content/tutorials/concept-distributions.md",
+              "tests": []
+            },
+            {
+              "id": "concept-probability",
+              "title": "Probability",
+              "description": "Use probability to describe how likely an event is.",
+              "order": 6,
+              "tutorial": "./content/tutorials/concept-probability.md",
+              "tests": []
+            },
+            {
+              "id": "concept-probability-models",
+              "title": "Probability Models",
+              "description": "Use organized models to predict outcomes and chances.",
+              "order": 7,
+              "tutorial": "./content/tutorials/concept-probability-models.md",
+              "tests": []
+            },
+            {
+              "id": "concept-experimental-probability",
+              "title": "Experimental Probability",
+              "description": "Use results from experiments to estimate probability.",
+              "order": 8,
+              "tutorial": "./content/tutorials/concept-experimental-probability.md",
+              "tests": []
+            },
+            {
+              "id": "concept-compound-probability",
+              "title": "Compound Probability",
+              "description": "Find probabilities for situations with more than one event.",
+              "order": 9,
+              "tutorial": "./content/tutorials/concept-compound-probability.md",
+              "tests": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

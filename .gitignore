@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+MathPractice-darwin-x64/
+content.zip
+
+# Generated config outputs
+vite.config.js
+vite.config.d.ts
+tailwind.config.js
+tailwind.config.d.ts
