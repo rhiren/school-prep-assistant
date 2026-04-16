@@ -15,17 +15,17 @@ import type {
 import { normalizeConceptId } from "../utils/conceptIds";
 import type { ContentRepository } from "./contracts";
 
-const bundledManifestModules = import.meta.glob("../../content/manifest/*.json", {
+const bundledManifestModules = import.meta.glob("../../public/content/manifest/*.json", {
   eager: true,
   import: "default",
 }) as Record<string, unknown>;
 
-const bundledTestSetModules = import.meta.glob("../../content/test-sets/*.json", {
+const bundledTestSetModules = import.meta.glob("../../public/content/test-sets/*.json", {
   eager: true,
   import: "default",
 }) as Record<string, unknown>;
 
-const bundledTutorialModules = import.meta.glob("../../content/tutorials/*.md", {
+const bundledTutorialModules = import.meta.glob("../../public/content/tutorials/*.md", {
   eager: true,
   query: "?raw",
   import: "default",
@@ -587,10 +587,27 @@ async function loadRuntimeManifest(): Promise<CourseManifestDocument> {
   });
 }
 
-function loadTestManifest(): CourseManifestDocument {
-  const manifests = Object.entries(bundledManifestModules)
-    .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath))
-    .map(([, manifest]) => manifest);
+async function readTestContentDirectory(subdirectory: "manifest" | "test-sets" | "tutorials") {
+  const fs = await import("node:fs/promises");
+  const directoryPath = `${process.cwd()}/public/content/${subdirectory}`;
+  const fileNames = (await fs.readdir(directoryPath)).sort((left, right) => left.localeCompare(right));
+
+  return fileNames
+    .filter((fileName) => !fileName.startsWith("."))
+    .map((fileName) => ({
+      fileName,
+      path: `./content/${subdirectory}/${fileName}`,
+      absolutePath: `${directoryPath}/${fileName}`,
+    }));
+}
+
+async function loadTestManifest(): Promise<CourseManifestDocument> {
+  const fs = await import("node:fs/promises");
+  const manifests = await Promise.all(
+    (await readTestContentDirectory("manifest")).map(async ({ absolutePath }) =>
+      JSON.parse(await fs.readFile(absolutePath, "utf8")),
+    ),
+  );
 
   if (manifests.length === 0) {
     throw new Error("No course manifest found in ./content/manifest.");
@@ -627,11 +644,12 @@ async function loadRuntimeTutorials(
   return Object.fromEntries(tutorials.filter((entry): entry is readonly [string, string] => entry !== null));
 }
 
-function loadTestTutorials(): Record<string, string> {
+async function loadTestTutorials(): Promise<Record<string, string>> {
+  const fs = await import("node:fs/promises");
   return Object.fromEntries(
-    Object.entries(bundledTutorialModules)
-      .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath))
-      .map(([path, content]) => {
+    await Promise.all(
+      (await readTestContentDirectory("tutorials")).map(async ({ path, absolutePath }) => {
+        const content = await fs.readFile(absolutePath, "utf8");
         const conceptId = path.split("/").pop()?.replace(".md", "");
         if (!conceptId) {
           throw new Error(`Cannot derive tutorial concept id from path ${path}`);
@@ -639,6 +657,7 @@ function loadTestTutorials(): Record<string, string> {
 
         return [conceptId, content];
       }),
+    ),
   );
 }
 
@@ -676,22 +695,23 @@ async function loadRuntimeQuestionBanks(
   );
 }
 
-function loadTestQuestionBanks(): Array<{ path: string; document: unknown }> {
-  return Object.entries(bundledTestSetModules)
-    .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath))
-    .map(([path, document]) => ({
-      path: `./content/test-sets/${getPathFileName(path)}`,
-      document,
-    }));
+async function loadTestQuestionBanks(): Promise<Array<{ path: string; document: unknown }>> {
+  const fs = await import("node:fs/promises");
+  return Promise.all(
+    (await readTestContentDirectory("test-sets")).map(async ({ path, absolutePath }) => ({
+      path,
+      document: JSON.parse(await fs.readFile(absolutePath, "utf8")),
+    })),
+  );
 }
 
 export async function createDefaultContentRepository(): Promise<StaticContentRepository> {
-  const manifest = import.meta.env.MODE === "test" ? loadTestManifest() : await loadRuntimeManifest();
+  const manifest = import.meta.env.MODE === "test" ? await loadTestManifest() : await loadRuntimeManifest();
   const tutorialsByConceptId =
-    import.meta.env.MODE === "test" ? loadTestTutorials() : await loadRuntimeTutorials(manifest);
+    import.meta.env.MODE === "test" ? await loadTestTutorials() : await loadRuntimeTutorials(manifest);
   const loadedQuestionBanks =
     import.meta.env.MODE === "test"
-      ? loadTestQuestionBanks()
+      ? await loadTestQuestionBanks()
       : await loadRuntimeQuestionBanks(manifest);
 
   const validationResult = validateManifest(

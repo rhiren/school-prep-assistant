@@ -1,4 +1,5 @@
 const { app, BrowserWindow, protocol } = require('electron');
+const fs = require('fs');
 const path = require('path');
 
 function createWindow() {
@@ -34,11 +35,22 @@ app.whenReady().then(() => {
         process.platform === 'win32' && decodedPath.startsWith('/')
           ? decodedPath.slice(1)
           : decodedPath;
+      const repoBaseSegment = `${path.sep}math-prep-assistant${path.sep}`;
       const contentSegment = `${path.sep}content${path.sep}`;
+
+      if (normalizedPath.includes(repoBaseSegment)) {
+        const relativePath = normalizedPath.split(repoBaseSegment)[1];
+        const mappedPath = relativePath.startsWith(`content${path.sep}`)
+          ? path.join(__dirname, '../public', relativePath)
+          : path.join(__dirname, '../dist', relativePath);
+        callback({ path: mappedPath });
+        return;
+      }
 
       if (normalizedPath.includes(contentSegment)) {
         const relativePath = normalizedPath.split(contentSegment)[1];
-        callback({ path: path.join(__dirname, '../content', relativePath) });
+        const publicContentPath = path.join(__dirname, '../public/content', relativePath);
+        callback({ path: fs.existsSync(publicContentPath) ? publicContentPath : normalizedPath });
         return;
       }
 

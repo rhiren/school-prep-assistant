@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "start:electron": "electron .",
     "build:electron": "electron-packager . MathPractice --platform=darwin --arch=x64 --icon=electron/assets/icon.icns --overwrite --ignore=node_modules --ignore=src --ignore=\\.git",
+    "deploy": "gh-pages -d dist",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -30,6 +31,7 @@
     "autoprefixer": "^10.4.20",
     "electron": "^41.2.1",
     "electron-packager": "^17.1.2",
+    "gh-pages": "^6.3.0",
     "jsdom": "^25.0.1",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
