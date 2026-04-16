@@ -2,11 +2,14 @@
   "name": "math-prep-assistant",
   "private": true,
   "version": "0.0.0",
+  "main": "electron/main.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
+    "start:electron": "electron .",
+    "build:electron": "electron-packager . MathPractice --platform=darwin --arch=x64 --icon=electron/assets/icon.icns --overwrite --ignore=node_modules --ignore=src --ignore=\\.git",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -25,6 +28,8 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
+    "electron": "^41.2.1",
+    "electron-packager": "^17.1.2",
     "jsdom": "^25.0.1",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
