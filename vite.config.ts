@@ -2,7 +2,7 @@ import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/math-prep-assistant/",
+  base: "/school-prep-assistant/",
   plugins: [react()],
   test: {
     environment: "jsdom",
