@@ -77,6 +77,7 @@ describe("DataTransferService", () => {
       bestScore: 100,
       masteryStatus: "mastered",
       lastAttemptedAt: "2026-04-12T00:00:00.000Z",
+      lastModified: "2026-04-12T00:00:00.000Z",
     };
     const snapshot = {
       appVersion: APP_VERSION,

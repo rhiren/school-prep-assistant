@@ -103,6 +103,7 @@ describe("IndexedDBStorageService", () => {
       bestScore: 100,
       masteryStatus: "mastered",
       lastAttemptedAt: "2026-04-12T00:00:00.000Z",
+      lastModified: "2026-04-12T00:00:00.000Z",
     };
 
     window.localStorage.setItem(LEGACY_KEYS.sessions, JSON.stringify({ [session.id]: session }));
@@ -160,6 +161,7 @@ describe("IndexedDBStorageService", () => {
       bestScore: 100,
       masteryStatus: "mastered",
       lastAttemptedAt: "2026-04-12T00:00:00.000Z",
+      lastModified: "2026-04-12T00:00:00.000Z",
     };
 
     storage = await IndexedDBStorageService.create();

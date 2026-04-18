@@ -12,6 +12,14 @@ import { MixedTestEligibilityEngine } from "../engines/mixedTestEligibilityEngin
 import { StableSelectionStrategy } from "../engines/questionSelectionStrategy";
 import { createDefaultContentRepository } from "../services/contentRepository";
 import { DataTransferService } from "../services/dataTransferService";
+import {
+  DEFAULT_PROGRESS_SYNC_USER_ID,
+  FirestoreProgressSyncClient,
+  ProgressSyncManager,
+  type ProgressSyncStatus,
+  SyncingDataTransferService,
+  SyncingProgressService,
+} from "../services/firebaseProgressSync";
 import { LocalProgressService } from "../services/progressService";
 import { LocalSessionService } from "../services/sessionService";
 import { IndexedDBStorageService } from "../storage/indexedDbStorageService";
@@ -38,18 +46,28 @@ export interface AppServices {
   progressService: ProgressService;
   mixedTestService: MixedTestService;
   dataTransferService: DataTransferServiceContract;
+  progressSyncManager?: ProgressSyncManager;
 }
 
 const AppServicesContext = createContext<AppServices | null>(null);
+const ProgressSyncStatusContext = createContext<ProgressSyncStatus>("offline");
+
+interface CreateAppServicesOptions {
+  progressSyncManager?: ProgressSyncManager;
+}
 
 export async function createAppServices(
   store: StorageService = new MemoryStorageService(),
+  options: CreateAppServicesOptions = {},
 ): Promise<AppServices> {
   const contentRepository = await createDefaultContentRepository();
   const sessionRepository = new SessionRepository(store);
   const attemptRepository = new AttemptRepository(store);
   const progressRepository = new ProgressRepository(store);
-  const progressService = new LocalProgressService(attemptRepository, progressRepository);
+  const localProgressService = new LocalProgressService(attemptRepository, progressRepository);
+  const progressService = options.progressSyncManager
+    ? new SyncingProgressService(localProgressService, options.progressSyncManager)
+    : localProgressService;
   const scoringService = new BasicScoringEngine(contentRepository);
   const sessionService = new LocalSessionService(
     sessionRepository,
@@ -64,7 +82,10 @@ export async function createAppServices(
     selectionStrategy,
   );
   const mixedTestService = new MixedTestEligibilityEngine(progressService);
-  const dataTransferService = new DataTransferService(store);
+  const localDataTransferService = new DataTransferService(store);
+  const dataTransferService = options.progressSyncManager
+    ? new SyncingDataTransferService(localDataTransferService, options.progressSyncManager)
+    : localDataTransferService;
 
   return {
     contentRepository,
@@ -73,12 +94,20 @@ export async function createAppServices(
     progressService,
     mixedTestService,
     dataTransferService,
+    progressSyncManager: options.progressSyncManager,
   };
 }
 
 async function createDefaultAppServices(): Promise<AppServices> {
   const store = await IndexedDBStorageService.create();
-  return createAppServices(store);
+  const progressSyncManager = new ProgressSyncManager(
+    new FirestoreProgressSyncClient(),
+    new DataTransferService(store),
+    DEFAULT_PROGRESS_SYNC_USER_ID,
+  );
+  const services = await createAppServices(store, { progressSyncManager });
+  await progressSyncManager.initialize();
+  return services;
 }
 
 export function AppServicesProvider({
@@ -86,10 +115,14 @@ export function AppServicesProvider({
   services: providedServices,
 }: PropsWithChildren<{ services?: AppServices }>) {
   const [services, setServices] = useState<AppServices | null>(providedServices ?? null);
+  const [syncStatus, setSyncStatus] = useState<ProgressSyncStatus>(
+    providedServices?.progressSyncManager?.getStatus() ?? "offline",
+  );
 
   useEffect(() => {
     if (providedServices) {
       setServices(providedServices);
+      setSyncStatus(providedServices.progressSyncManager?.getStatus() ?? "offline");
       return;
     }
 
@@ -105,6 +138,15 @@ export function AppServicesProvider({
     };
   }, [providedServices]);
 
+  useEffect(() => {
+    if (!services?.progressSyncManager) {
+      setSyncStatus("offline");
+      return;
+    }
+
+    return services.progressSyncManager.subscribe(setSyncStatus);
+  }, [services]);
+
   const resolvedServices = useMemo(() => services, [services]);
 
   if (!resolvedServices) {
@@ -112,9 +154,11 @@ export function AppServicesProvider({
   }
 
   return (
-    <AppServicesContext.Provider value={resolvedServices}>
-      {children}
-    </AppServicesContext.Provider>
+    <ProgressSyncStatusContext.Provider value={syncStatus}>
+      <AppServicesContext.Provider value={resolvedServices}>
+        {children}
+      </AppServicesContext.Provider>
+    </ProgressSyncStatusContext.Provider>
   );
 }
 
@@ -125,4 +169,8 @@ export function useAppServices(): AppServices {
   }
 
   return value;
+}
+
+export function useProgressSyncStatus(): ProgressSyncStatus {
+  return useContext(ProgressSyncStatusContext);
 }

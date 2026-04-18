@@ -47,6 +47,7 @@ export class LocalProgressService implements ProgressService {
       bestScore,
       masteryStatus: getMasteryStatus(attempt.summary.percentage, attempts.length),
       lastAttemptedAt: attempt.submittedAt,
+      lastModified: attempt.submittedAt,
     };
 
     await this.progressRepository.save(progress);

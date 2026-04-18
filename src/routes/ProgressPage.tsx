@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MasteryBadge } from "../components/MasteryBadge";
 import type { Concept, ProgressRecord } from "../domain/models";
-import { useAppServices } from "../state/AppServicesProvider";
+import { useAppServices, useProgressSyncStatus } from "../state/AppServicesProvider";
 import { formatDate } from "../utils/format";
 
 const LAST_BACKUP_KEY = "math-prep:last-backup-at";
@@ -32,6 +32,7 @@ function getLastBackupLabel(lastBackupAt: string | null): string {
 export function ProgressPage() {
   const { contentRepository, mixedTestService, progressService, dataTransferService } =
     useAppServices();
+  const syncStatus = useProgressSyncStatus();
   const [concepts, setConcepts] = useState<Concept[]>([]);
   const [progress, setProgress] = useState<Record<string, ProgressRecord>>({});
   const [eligibility, setEligibility] = useState<{ unlocked: boolean; conceptIds: string[] }>({
@@ -145,6 +146,14 @@ export function ProgressPage() {
         </div>
         <p className="mt-3 text-sm text-stone-600">
           Last backup: {getLastBackupLabel(lastBackupAt)}
+        </p>
+        <p className="mt-1 text-sm text-stone-600">
+          Sync status:{" "}
+          {syncStatus === "synced"
+            ? "Synced"
+            : syncStatus === "syncing"
+              ? "Syncing"
+              : "Offline (using local progress)"}
         </p>
         {transferMessage ? (
           <p className="mt-3 text-sm text-stone-600">{transferMessage}</p>

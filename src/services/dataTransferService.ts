@@ -13,6 +13,19 @@ export interface ProgressSnapshot {
   };
 }
 
+function getLatestIsoTimestamp(values: Array<string | null | undefined>): string {
+  const timestamps = values
+    .filter((value): value is string => typeof value === "string" && value.length > 0)
+    .map((value) => Date.parse(value))
+    .filter((value) => Number.isFinite(value));
+
+  if (timestamps.length === 0) {
+    return new Date(0).toISOString();
+  }
+
+  return new Date(Math.max(...timestamps)).toISOString();
+}
+
 function isObject(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
 }
@@ -67,6 +80,14 @@ export function validateProgressSnapshot(value: unknown): ProgressSnapshot {
       progress,
     },
   };
+}
+
+export function getProgressSnapshotLastModified(snapshot: ProgressSnapshot): string {
+  return getLatestIsoTimestamp([
+    ...snapshot.data.sessions.flatMap((session) => [session.createdAt, session.updatedAt]),
+    ...snapshot.data.attempts.map((attempt) => attempt.submittedAt),
+    ...snapshot.data.progress.flatMap((progress) => [progress.lastModified, progress.lastAttemptedAt]),
+  ]);
 }
 
 export class DataTransferService {

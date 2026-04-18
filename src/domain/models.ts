@@ -132,6 +132,7 @@ export interface ProgressRecord {
   bestScore: number | null;
   masteryStatus: MasteryStatus;
   lastAttemptedAt: string | null;
+  lastModified: string | null;
 }
 
 export interface CourseManifestDocument {

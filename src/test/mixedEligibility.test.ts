@@ -14,6 +14,7 @@ describe("MixedTestEligibilityEngine", () => {
           bestScore: 70,
           masteryStatus: "needs_review",
           lastAttemptedAt: "2026-04-12T12:00:00.000Z",
+          lastModified: "2026-04-12T12:00:00.000Z",
         },
         {
           conceptId: "concept-unit-rates",
@@ -23,6 +24,7 @@ describe("MixedTestEligibilityEngine", () => {
           bestScore: 90,
           masteryStatus: "mastered",
           lastAttemptedAt: "2026-04-12T11:00:00.000Z",
+          lastModified: "2026-04-12T11:00:00.000Z",
         },
         {
           conceptId: "concept-integer-operations",
@@ -32,6 +34,7 @@ describe("MixedTestEligibilityEngine", () => {
           bestScore: 80,
           masteryStatus: "practiced",
           lastAttemptedAt: "2026-04-12T10:00:00.000Z",
+          lastModified: "2026-04-12T10:00:00.000Z",
         },
       ],
       getConceptProgress: async () => null,

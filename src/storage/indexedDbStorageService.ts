@@ -177,6 +177,7 @@ export class IndexedDBStorageService implements StorageService {
     return {
       ...progress,
       conceptId: normalizeConceptId(progress.conceptId) ?? progress.conceptId,
+      lastModified: progress.lastModified ?? progress.lastAttemptedAt ?? null,
     };
   }
 
