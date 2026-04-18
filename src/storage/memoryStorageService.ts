@@ -5,6 +5,7 @@ export class MemoryStorageService implements StorageService {
     sessions: new Map<string, unknown>(),
     attempts: new Map<string, unknown>(),
     progress: new Map<string, unknown>(),
+    students: new Map<string, unknown>(),
   };
   private version: string | null = null;
 

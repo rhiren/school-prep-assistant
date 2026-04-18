@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { ScoreSummary } from "../components/ScoreSummary";
 import type { Question, TestAttempt } from "../domain/models";
-import { useAppServices } from "../state/AppServicesProvider";
+import { useAppServices, useStudentProfiles } from "../state/AppServicesProvider";
 import { useTestMode } from "../state/TestModeProvider";
 import { formatDate } from "../utils/format";
 
@@ -10,6 +10,7 @@ export function ResultsPage() {
   const { attemptId } = useParams();
   const navigate = useNavigate();
   const { contentRepository, progressService, testGenerationService } = useAppServices();
+  const { activeProfile } = useStudentProfiles();
   const { setIsTestMode } = useTestMode();
   const [attempt, setAttempt] = useState<TestAttempt | null>(null);
   const [questionsById, setQuestionsById] = useState<Record<string, Question>>({});
@@ -51,7 +52,7 @@ export function ResultsPage() {
         setTestSetTitle(null);
       }
     });
-  }, [attemptId, contentRepository, progressService]);
+  }, [activeProfile?.studentId, attemptId, contentRepository, progressService]);
 
   if (!attempt) {
     return <div className="panel panel-padding">Attempt not found.</div>;

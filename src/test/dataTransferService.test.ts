@@ -2,7 +2,8 @@ import { describe, expect, it } from "vitest";
 import { APP_VERSION } from "../app/version";
 import type { ProgressRecord, TestAttempt, TestSession } from "../domain/models";
 import { DataTransferService } from "../services/dataTransferService";
-import { STORE_NAMES } from "../storage/repositories";
+import { DEFAULT_STUDENT_ID } from "../services/studentProfileService";
+import { getStudentScopedKey, STORE_NAMES } from "../storage/repositories";
 import { MemoryStorageService } from "../storage/memoryStorageService";
 
 describe("DataTransferService", () => {
@@ -11,6 +12,7 @@ describe("DataTransferService", () => {
     const service = new DataTransferService(storage);
     const session: TestSession = {
       id: "session-1",
+      studentId: DEFAULT_STUDENT_ID,
       mode: "concept",
       courseId: "course-2",
       conceptId: "concept-ratios",
@@ -23,11 +25,20 @@ describe("DataTransferService", () => {
       updatedAt: "2026-04-12T00:00:00.000Z",
     };
 
-    await storage.set(STORE_NAMES.sessions, session.id, session);
+    await storage.set(
+      STORE_NAMES.sessions,
+      getStudentScopedKey(DEFAULT_STUDENT_ID, session.id),
+      session,
+    );
 
     const snapshot = await service.exportProgress();
 
     expect(snapshot.appVersion).toBe(APP_VERSION);
+    expect(snapshot.student).toEqual({
+      studentId: DEFAULT_STUDENT_ID,
+      displayName: "Student 1",
+      gradeLevel: undefined,
+    });
     expect(snapshot.data.sessions).toEqual([session]);
     expect(snapshot.data.attempts).toEqual([]);
     expect(snapshot.data.progress).toEqual([]);
@@ -36,8 +47,9 @@ describe("DataTransferService", () => {
   it("imports validated snapshot data and replaces existing records", async () => {
     const storage = new MemoryStorageService();
     const service = new DataTransferService(storage);
-    await storage.set(STORE_NAMES.sessions, "old", {
+    await storage.set(STORE_NAMES.sessions, getStudentScopedKey(DEFAULT_STUDENT_ID, "old"), {
       id: "old",
+      studentId: DEFAULT_STUDENT_ID,
       mode: "concept",
       courseId: "course-2",
       conceptId: "concept-ratios",
@@ -52,6 +64,7 @@ describe("DataTransferService", () => {
 
     const attempt: TestAttempt = {
       attemptId: "attempt-1",
+      studentId: DEFAULT_STUDENT_ID,
       sessionId: "session-1",
       mode: "concept",
       courseId: "course-2",
@@ -70,6 +83,7 @@ describe("DataTransferService", () => {
       submittedAt: "2026-04-12T00:00:00.000Z",
     };
     const progress: ProgressRecord = {
+      studentId: DEFAULT_STUDENT_ID,
       conceptId: "concept-ratios",
       courseId: "course-2",
       attemptCount: 1,
@@ -86,6 +100,7 @@ describe("DataTransferService", () => {
         sessions: [
           {
             id: "session-1",
+            studentId: DEFAULT_STUDENT_ID,
             mode: "concept",
             courseId: "course-2",
             conceptId: "concept-ratios",

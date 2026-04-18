@@ -52,6 +52,7 @@ export class BasicScoringEngine implements ScoringService {
 
     return {
       attemptId: createId("attempt"),
+      studentId: session.studentId,
       sessionId: session.id,
       mode: session.mode,
       courseId: session.courseId,

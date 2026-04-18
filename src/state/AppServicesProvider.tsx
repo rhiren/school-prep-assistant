@@ -10,10 +10,10 @@ import { BasicScoringEngine } from "../engines/basicScoringEngine";
 import { DeterministicConceptTestEngine } from "../engines/deterministicConceptTestEngine";
 import { MixedTestEligibilityEngine } from "../engines/mixedTestEligibilityEngine";
 import { StableSelectionStrategy } from "../engines/questionSelectionStrategy";
+import type { StudentProfile } from "../domain/models";
 import { createDefaultContentRepository } from "../services/contentRepository";
 import { DataTransferService } from "../services/dataTransferService";
 import {
-  DEFAULT_PROGRESS_SYNC_USER_ID,
   FirestoreProgressSyncClient,
   ProgressSyncManager,
   type ProgressSyncStatus,
@@ -22,12 +22,14 @@ import {
 } from "../services/firebaseProgressSync";
 import { LocalProgressService } from "../services/progressService";
 import { LocalSessionService } from "../services/sessionService";
+import { LocalStudentProfileService } from "../services/studentProfileService";
 import { IndexedDBStorageService } from "../storage/indexedDbStorageService";
 import { MemoryStorageService } from "../storage/memoryStorageService";
 import {
   AttemptRepository,
   ProgressRepository,
   SessionRepository,
+  StudentProfileRepository,
 } from "../storage/repositories";
 import type { StorageService } from "../storage/storageService";
 import type {
@@ -36,6 +38,7 @@ import type {
   MixedTestService,
   ProgressService,
   SessionService,
+  StudentProfileService,
   TestGenerationService,
 } from "../services/contracts";
 
@@ -46,14 +49,24 @@ export interface AppServices {
   progressService: ProgressService;
   mixedTestService: MixedTestService;
   dataTransferService: DataTransferServiceContract;
+  studentProfileService: StudentProfileService;
   progressSyncManager?: ProgressSyncManager;
 }
 
 const AppServicesContext = createContext<AppServices | null>(null);
 const ProgressSyncStatusContext = createContext<ProgressSyncStatus>("offline");
+interface StudentProfilesContextValue {
+  profiles: StudentProfile[];
+  activeProfile: StudentProfile | null;
+  setActiveStudent: (studentId: string) => Promise<void>;
+  createStudentProfile: (displayName: string, gradeLevel?: string) => Promise<void>;
+}
+
+const StudentProfilesContext = createContext<StudentProfilesContextValue | null>(null);
 
 interface CreateAppServicesOptions {
   progressSyncManager?: ProgressSyncManager;
+  studentProfileService?: StudentProfileService;
 }
 
 export async function createAppServices(
@@ -61,9 +74,12 @@ export async function createAppServices(
   options: CreateAppServicesOptions = {},
 ): Promise<AppServices> {
   const contentRepository = await createDefaultContentRepository();
-  const sessionRepository = new SessionRepository(store);
-  const attemptRepository = new AttemptRepository(store);
-  const progressRepository = new ProgressRepository(store);
+  const studentProfileService =
+    options.studentProfileService ??
+    new LocalStudentProfileService(new StudentProfileRepository(store));
+  const sessionRepository = new SessionRepository(store, studentProfileService);
+  const attemptRepository = new AttemptRepository(store, studentProfileService);
+  const progressRepository = new ProgressRepository(store, studentProfileService);
   const localProgressService = new LocalProgressService(attemptRepository, progressRepository);
   const progressService = options.progressSyncManager
     ? new SyncingProgressService(localProgressService, options.progressSyncManager)
@@ -80,9 +96,10 @@ export async function createAppServices(
     contentRepository,
     sessionRepository,
     selectionStrategy,
+    studentProfileService,
   );
   const mixedTestService = new MixedTestEligibilityEngine(progressService);
-  const localDataTransferService = new DataTransferService(store);
+  const localDataTransferService = new DataTransferService(store, studentProfileService);
   const dataTransferService = options.progressSyncManager
     ? new SyncingDataTransferService(localDataTransferService, options.progressSyncManager)
     : localDataTransferService;
@@ -94,18 +111,20 @@ export async function createAppServices(
     progressService,
     mixedTestService,
     dataTransferService,
+    studentProfileService,
     progressSyncManager: options.progressSyncManager,
   };
 }
 
 async function createDefaultAppServices(): Promise<AppServices> {
   const store = await IndexedDBStorageService.create();
+  const studentProfileService = new LocalStudentProfileService(new StudentProfileRepository(store));
   const progressSyncManager = new ProgressSyncManager(
     new FirestoreProgressSyncClient(),
-    new DataTransferService(store),
-    DEFAULT_PROGRESS_SYNC_USER_ID,
+    new DataTransferService(store, studentProfileService),
+    () => studentProfileService.getActiveStudentId(),
   );
-  const services = await createAppServices(store, { progressSyncManager });
+  const services = await createAppServices(store, { progressSyncManager, studentProfileService });
   await progressSyncManager.initialize();
   return services;
 }
@@ -118,6 +137,8 @@ export function AppServicesProvider({
   const [syncStatus, setSyncStatus] = useState<ProgressSyncStatus>(
     providedServices?.progressSyncManager?.getStatus() ?? "offline",
   );
+  const [profiles, setProfiles] = useState<StudentProfile[]>([]);
+  const [activeProfile, setActiveProfile] = useState<StudentProfile | null>(null);
 
   useEffect(() => {
     if (providedServices) {
@@ -147,7 +168,51 @@ export function AppServicesProvider({
     return services.progressSyncManager.subscribe(setSyncStatus);
   }, [services]);
 
+  useEffect(() => {
+    if (!services) {
+      setProfiles([]);
+      setActiveProfile(null);
+      return;
+    }
+
+    let isMounted = true;
+    void services.studentProfileService.listProfiles().then((loadedProfiles) => {
+      if (isMounted) {
+        setProfiles(loadedProfiles);
+      }
+    });
+    void services.studentProfileService.getActiveProfile().then((profile) => {
+      if (isMounted) {
+        setActiveProfile(profile);
+      }
+    });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [services]);
+
   const resolvedServices = useMemo(() => services, [services]);
+  const studentProfilesValue = useMemo<StudentProfilesContextValue | null>(() => {
+    if (!resolvedServices) {
+      return null;
+    }
+
+    return {
+      profiles,
+      activeProfile,
+      setActiveStudent: async (studentId: string) => {
+        const profile = await resolvedServices.studentProfileService.setActiveStudent(studentId);
+        setActiveProfile(profile);
+        setProfiles(await resolvedServices.studentProfileService.listProfiles());
+        await resolvedServices.progressSyncManager?.initialize();
+      },
+      createStudentProfile: async (displayName: string, gradeLevel?: string) => {
+        await resolvedServices.studentProfileService.createProfile(displayName, gradeLevel);
+        setProfiles(await resolvedServices.studentProfileService.listProfiles());
+      },
+    };
+  }, [activeProfile, profiles, resolvedServices]);
 
   if (!resolvedServices) {
     return <div className="app-shell"><div className="panel panel-padding">Loading app data...</div></div>;
@@ -155,9 +220,11 @@ export function AppServicesProvider({
 
   return (
     <ProgressSyncStatusContext.Provider value={syncStatus}>
-      <AppServicesContext.Provider value={resolvedServices}>
-        {children}
-      </AppServicesContext.Provider>
+      <StudentProfilesContext.Provider value={studentProfilesValue}>
+        <AppServicesContext.Provider value={resolvedServices}>
+          {children}
+        </AppServicesContext.Provider>
+      </StudentProfilesContext.Provider>
     </ProgressSyncStatusContext.Provider>
   );
 }
@@ -173,4 +240,13 @@ export function useAppServices(): AppServices {
 
 export function useProgressSyncStatus(): ProgressSyncStatus {
   return useContext(ProgressSyncStatusContext);
+}
+
+export function useStudentProfiles(): StudentProfilesContextValue {
+  const value = useContext(StudentProfilesContext);
+  if (!value) {
+    throw new Error("StudentProfilesContext is missing.");
+  }
+
+  return value;
 }

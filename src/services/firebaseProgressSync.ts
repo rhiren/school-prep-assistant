@@ -13,7 +13,7 @@ import {
 } from "./dataTransferService";
 import { db } from "./firebase";
 
-export const DEFAULT_PROGRESS_SYNC_USER_ID = "daughter-1";
+const LEGACY_PROGRESS_SYNC_USER_ID = "daughter-1";
 
 export type ProgressSyncStatus = "offline" | "syncing" | "synced";
 
@@ -26,8 +26,8 @@ export interface CloudProgressDocument {
 
 export interface ProgressSyncClient {
   isReady(): boolean;
-  saveProgressToCloud(userId: string, progressData: ProgressSnapshot): Promise<void>;
-  loadProgressFromCloud(userId: string): Promise<CloudProgressDocument | null>;
+  saveProgressToCloud(studentId: string, progressData: ProgressSnapshot): Promise<void>;
+  loadProgressFromCloud(studentId: string): Promise<CloudProgressDocument | null>;
 }
 
 type ProgressSyncListener = (status: ProgressSyncStatus) => void;
@@ -62,12 +62,12 @@ export class FirestoreProgressSyncClient implements ProgressSyncClient {
     return this.firestore !== null;
   }
 
-  async saveProgressToCloud(userId: string, progressData: ProgressSnapshot): Promise<void> {
+  async saveProgressToCloud(studentId: string, progressData: ProgressSnapshot): Promise<void> {
     if (!this.firestore) {
       throw new Error("Firebase sync is not configured.");
     }
 
-    const documentRef = doc(this.firestore, "progress", userId);
+    const documentRef = doc(this.firestore, "students", studentId, "progress", "current");
     await setDoc(
       documentRef,
       {
@@ -81,26 +81,44 @@ export class FirestoreProgressSyncClient implements ProgressSyncClient {
     );
   }
 
-  async loadProgressFromCloud(userId: string): Promise<CloudProgressDocument | null> {
+  async loadProgressFromCloud(studentId: string): Promise<CloudProgressDocument | null> {
     if (!this.firestore) {
       throw new Error("Firebase sync is not configured.");
     }
 
-    const documentRef = doc(this.firestore, "progress", userId);
+    const documentRef = doc(this.firestore, "students", studentId, "progress", "current");
     const snapshot = await getDoc(documentRef);
 
-    if (!snapshot.exists()) {
+    if (snapshot.exists()) {
+      const data = snapshot.data();
+      if (!isCloudProgressDocument(data)) {
+        throw new Error("Cloud progress data is invalid.");
+      }
+
+      return {
+        ...data,
+        snapshot: validateProgressSnapshot(data.snapshot),
+      };
+    }
+
+    if (studentId !== "student-1") {
       return null;
     }
 
-    const data = snapshot.data();
-    if (!isCloudProgressDocument(data)) {
+    const legacyDocumentRef = doc(this.firestore, "progress", LEGACY_PROGRESS_SYNC_USER_ID);
+    const legacySnapshot = await getDoc(legacyDocumentRef);
+    if (!legacySnapshot.exists()) {
+      return null;
+    }
+
+    const legacyData = legacySnapshot.data();
+    if (!isCloudProgressDocument(legacyData)) {
       throw new Error("Cloud progress data is invalid.");
     }
 
     return {
-      ...data,
-      snapshot: validateProgressSnapshot(data.snapshot),
+      ...legacyData,
+      snapshot: validateProgressSnapshot(legacyData.snapshot),
     };
   }
 }
@@ -113,7 +131,7 @@ export class ProgressSyncManager {
   constructor(
     private readonly client: ProgressSyncClient,
     private readonly dataTransferService: DataTransferServiceContract,
-    private readonly userId: string = DEFAULT_PROGRESS_SYNC_USER_ID,
+    private readonly getActiveStudentId: () => Promise<string>,
   ) {}
 
   getStatus(): ProgressSyncStatus {
@@ -158,9 +176,10 @@ export class ProgressSyncManager {
     this.setStatus("syncing");
 
     try {
+      const studentId = await this.getActiveStudentId();
       const localSnapshot = await this.dataTransferService.exportProgress();
       const localLastModified = getProgressSnapshotLastModified(localSnapshot);
-      const cloudDocument = await this.client.loadProgressFromCloud(this.userId);
+      const cloudDocument = await this.client.loadProgressFromCloud(studentId);
 
       if (cloudDocument) {
         const cloudLastModified = cloudDocument.lastModified;
@@ -172,7 +191,7 @@ export class ProgressSyncManager {
       }
 
       if (hasSnapshotData(localSnapshot) || cloudDocument !== null) {
-        await this.client.saveProgressToCloud(this.userId, localSnapshot);
+        await this.client.saveProgressToCloud(studentId, localSnapshot);
       }
 
       this.setStatus("synced");

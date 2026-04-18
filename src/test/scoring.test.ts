@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { BasicScoringEngine } from "../engines/basicScoringEngine";
 import type { TestSession } from "../domain/models";
 import { createDefaultContentRepository } from "../services/contentRepository";
+import { DEFAULT_STUDENT_ID } from "../services/studentProfileService";
 
 describe("BasicScoringEngine", () => {
   it("scores correct, incorrect, and unanswered responses with normalization", async () => {
@@ -9,6 +10,7 @@ describe("BasicScoringEngine", () => {
     const engine = new BasicScoringEngine(repository);
     const session: TestSession = {
       id: "session-1",
+      studentId: DEFAULT_STUDENT_ID,
       mode: "concept",
       courseId: "course-2",
       conceptId: "concept-unit-rates",
@@ -54,6 +56,7 @@ describe("BasicScoringEngine", () => {
     const engine = new BasicScoringEngine(repository);
     const session: TestSession = {
       id: "session-2",
+      studentId: DEFAULT_STUDENT_ID,
       mode: "concept",
       courseId: "course-2",
       conceptId: "concept-unit-rates",

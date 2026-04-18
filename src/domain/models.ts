@@ -11,6 +11,15 @@ export type SessionMode = "concept" | "mixed";
 export type SessionStatus = "in_progress" | "submitted";
 export type AnswerType = "ratio" | "fraction" | "decimal" | "number";
 
+export interface StudentProfile {
+  studentId: string;
+  displayName: string;
+  gradeLevel?: string;
+  createdAt: string;
+  lastActiveAt: string;
+  isActive: boolean;
+}
+
 export interface Course {
   id: string;
   subjectId: string;
@@ -100,6 +109,7 @@ export interface ScoreSummary {
 
 export interface TestSession {
   id: string;
+  studentId: string;
   mode: SessionMode;
   courseId: string;
   conceptId?: string;
@@ -115,6 +125,7 @@ export interface TestSession {
 
 export interface TestAttempt {
   attemptId: string;
+  studentId: string;
   sessionId: string;
   mode: SessionMode;
   courseId: string;
@@ -129,6 +140,7 @@ export interface TestAttempt {
 }
 
 export interface ProgressRecord {
+  studentId: string;
   conceptId: string;
   courseId: string;
   attemptCount: number;

@@ -1,4 +1,4 @@
-export type StoreName = "sessions" | "attempts" | "progress";
+export type StoreName = "sessions" | "attempts" | "progress" | "students";
 
 export interface StorageService {
   get<T>(storeName: StoreName, key: string): Promise<T | null>;

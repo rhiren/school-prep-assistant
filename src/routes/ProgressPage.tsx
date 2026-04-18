@@ -2,10 +2,18 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MasteryBadge } from "../components/MasteryBadge";
 import type { Concept, ProgressRecord } from "../domain/models";
-import { useAppServices, useProgressSyncStatus } from "../state/AppServicesProvider";
+import {
+  useAppServices,
+  useProgressSyncStatus,
+  useStudentProfiles,
+} from "../state/AppServicesProvider";
 import { formatDate } from "../utils/format";
 
-const LAST_BACKUP_KEY = "math-prep:last-backup-at";
+const LAST_BACKUP_KEY_PREFIX = "math-prep:last-backup-at";
+
+function getLastBackupStorageKey(studentId: string | null | undefined): string {
+  return `${LAST_BACKUP_KEY_PREFIX}:${studentId ?? "student-1"}`;
+}
 
 function getLastBackupLabel(lastBackupAt: string | null): string {
   if (!lastBackupAt) {
@@ -32,6 +40,7 @@ function getLastBackupLabel(lastBackupAt: string | null): string {
 export function ProgressPage() {
   const { contentRepository, mixedTestService, progressService, dataTransferService } =
     useAppServices();
+  const { activeProfile } = useStudentProfiles();
   const syncStatus = useProgressSyncStatus();
   const [concepts, setConcepts] = useState<Concept[]>([]);
   const [progress, setProgress] = useState<Record<string, ProgressRecord>>({});
@@ -51,9 +60,9 @@ export function ProgressPage() {
     });
     mixedTestService.getEligibility("course-2").then(setEligibility);
     if (typeof window !== "undefined") {
-      setLastBackupAt(window.localStorage.getItem(LAST_BACKUP_KEY));
+      setLastBackupAt(window.localStorage.getItem(getLastBackupStorageKey(activeProfile?.studentId)));
     }
-  }, [contentRepository, mixedTestService, progressService]);
+  }, [activeProfile?.studentId, contentRepository, mixedTestService, progressService]);
 
   const handleDownload = async () => {
     const snapshot = await dataTransferService.exportProgress();
@@ -67,7 +76,10 @@ export function ProgressPage() {
     link.click();
     window.URL.revokeObjectURL(url);
     if (typeof window !== "undefined") {
-      window.localStorage.setItem(LAST_BACKUP_KEY, snapshot.exportedAt);
+      window.localStorage.setItem(
+        getLastBackupStorageKey(activeProfile?.studentId),
+        snapshot.exportedAt,
+      );
     }
     setLastBackupAt(snapshot.exportedAt);
     setTransferMessage("Progress downloaded.");
@@ -128,6 +140,9 @@ export function ProgressPage() {
             Progress
           </p>
           <h2 className="text-2xl font-semibold text-ink">Concept mastery dashboard</h2>
+          <p className="mt-1 text-sm text-stone-600">
+            Viewing progress for {activeProfile?.displayName ?? "Student 1"}.
+          </p>
         </div>
         <Link className="secondary-link" to="/courses">
           Back to courses

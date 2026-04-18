@@ -1,5 +1,9 @@
 import type { TestSession } from "../domain/models";
-import type { ContentRepository, TestGenerationService } from "../services/contracts";
+import type {
+  ContentRepository,
+  StudentProfileService,
+  TestGenerationService,
+} from "../services/contracts";
 import type { SessionRepository } from "../storage/repositories";
 import { createId } from "../utils/id";
 import type { QuestionSelectionStrategy } from "./questionSelectionStrategy";
@@ -9,6 +13,9 @@ export class DeterministicConceptTestEngine implements TestGenerationService {
     private readonly contentRepository: ContentRepository,
     private readonly sessionRepository: SessionRepository,
     private readonly selectionStrategy: QuestionSelectionStrategy,
+    private readonly studentProfileService: Pick<StudentProfileService, "getActiveStudentId"> = {
+      getActiveStudentId: async () => "student-1",
+    },
   ) {}
 
   async createConceptSession(conceptId: string, testSetId?: string): Promise<TestSession> {
@@ -35,9 +42,11 @@ export class DeterministicConceptTestEngine implements TestGenerationService {
       targetCount,
     });
     const now = new Date().toISOString();
+    const studentId = await this.studentProfileService.getActiveStudentId();
 
     const session: TestSession = {
       id: createId("session"),
+      studentId,
       mode: "concept",
       courseId: concept.courseId,
       conceptId: concept.id,

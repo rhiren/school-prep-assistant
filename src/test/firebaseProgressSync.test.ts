@@ -9,6 +9,7 @@ import {
   SyncingProgressService,
   type ProgressSyncClient,
 } from "../services/firebaseProgressSync";
+import { DEFAULT_STUDENT_ID } from "../services/studentProfileService";
 import type { ProgressService } from "../services/contracts";
 import type { ProgressRecord, TestAttempt } from "../domain/models";
 import { MemoryStorageService } from "../storage/memoryStorageService";
@@ -23,6 +24,7 @@ function buildSnapshot(exportedAt: string, score: number): ProgressSnapshot {
       attempts: [],
       progress: [
         {
+          studentId: DEFAULT_STUDENT_ID,
           conceptId: "concept-ratios",
           courseId: "course-2",
           attemptCount: 1,
@@ -91,6 +93,7 @@ describe("ProgressSyncManager", () => {
     const manager = new ProgressSyncManager(
       new FakeProgressSyncClient({ cloudSnapshot }),
       dataTransferService,
+      async () => DEFAULT_STUDENT_ID,
     );
 
     await manager.initialize();
@@ -108,6 +111,7 @@ describe("ProgressSyncManager", () => {
     const manager = new ProgressSyncManager(
       new FakeProgressSyncClient({ throwOnLoad: true }),
       dataTransferService,
+      async () => DEFAULT_STUDENT_ID,
     );
 
     await manager.initialize();
@@ -134,11 +138,12 @@ describe("SyncingProgressService", () => {
     await dataTransferService.importProgress(buildSnapshot("2026-04-12T10:00:00.000Z", 70));
 
     const client = new FakeProgressSyncClient();
-    const manager = new ProgressSyncManager(client, dataTransferService);
+    const manager = new ProgressSyncManager(client, dataTransferService, async () => DEFAULT_STUDENT_ID);
     const service = new SyncingProgressService(delegate, manager);
 
     const attempt = {
       attemptId: "attempt-1",
+      studentId: DEFAULT_STUDENT_ID,
       sessionId: "session-1",
       mode: "concept",
       courseId: "course-2",

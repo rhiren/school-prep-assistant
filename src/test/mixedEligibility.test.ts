@@ -1,12 +1,14 @@
 import { describe, expect, it } from "vitest";
 import { MixedTestEligibilityEngine } from "../engines/mixedTestEligibilityEngine";
 import type { ProgressService } from "../services/contracts";
+import { DEFAULT_STUDENT_ID } from "../services/studentProfileService";
 
 describe("MixedTestEligibilityEngine", () => {
   it("unlocks after three completed concepts", async () => {
     const progressService: ProgressService = {
       getProgress: async () => [
         {
+          studentId: DEFAULT_STUDENT_ID,
           conceptId: "concept-ratios",
           courseId: "course-2",
           attemptCount: 1,
@@ -17,6 +19,7 @@ describe("MixedTestEligibilityEngine", () => {
           lastModified: "2026-04-12T12:00:00.000Z",
         },
         {
+          studentId: DEFAULT_STUDENT_ID,
           conceptId: "concept-unit-rates",
           courseId: "course-2",
           attemptCount: 2,
@@ -27,6 +30,7 @@ describe("MixedTestEligibilityEngine", () => {
           lastModified: "2026-04-12T11:00:00.000Z",
         },
         {
+          studentId: DEFAULT_STUDENT_ID,
           conceptId: "concept-integer-operations",
           courseId: "course-2",
           attemptCount: 1,

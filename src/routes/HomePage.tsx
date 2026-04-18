@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import type { Concept, ProgressRecord, TestAttempt, TestSession } from "../domain/models";
-import { useAppServices } from "../state/AppServicesProvider";
+import { useAppServices, useStudentProfiles } from "../state/AppServicesProvider";
 
 function toStudentStatus(
   progress: ProgressRecord | null | undefined,
@@ -47,6 +47,7 @@ export function HomePage() {
   const navigate = useNavigate();
   const { contentRepository, progressService, sessionService, testGenerationService } =
     useAppServices();
+  const { activeProfile } = useStudentProfiles();
   const [subjectTitle, setSubjectTitle] = useState("Mathematics");
   const [courseTitle, setCourseTitle] = useState("Course 2");
   const [unitTitles, setUnitTitles] = useState<Record<string, string>>({});
@@ -95,7 +96,7 @@ export function HomePage() {
 
       contentRepository.getConcept(session.conceptId).then(setResumeConcept);
     });
-  }, [contentRepository, progressService, sessionService]);
+  }, [activeProfile?.studentId, contentRepository, progressService, sessionService]);
 
   const progressSummary = useMemo(() => {
     return concepts.reduce(

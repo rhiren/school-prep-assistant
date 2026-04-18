@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { MasteryBadge } from "../components/MasteryBadge";
 import type { Concept, ProgressRecord, TestAttempt, TestSet } from "../domain/models";
-import { useAppServices } from "../state/AppServicesProvider";
+import { useAppServices, useStudentProfiles } from "../state/AppServicesProvider";
 import { formatDate } from "../utils/format";
 
 function getTestSetLabel(testSet: TestSet): string {
@@ -23,6 +23,7 @@ export function ConceptPage() {
   const { conceptId } = useParams();
   const navigate = useNavigate();
   const { contentRepository, progressService, testGenerationService } = useAppServices();
+  const { activeProfile } = useStudentProfiles();
   const [concept, setConcept] = useState<Concept | null>(null);
   const [progress, setProgress] = useState<ProgressRecord | null>(null);
   const [attempts, setAttempts] = useState<TestAttempt[]>([]);
@@ -38,7 +39,7 @@ export function ConceptPage() {
     contentRepository.getTestSetsForConcept(conceptId).then(setTestSets);
     progressService.getConceptProgress(conceptId).then(setProgress);
     progressService.getConceptAttempts(conceptId).then(setAttempts);
-  }, [conceptId, contentRepository, progressService]);
+  }, [activeProfile?.studentId, conceptId, contentRepository, progressService]);
 
   if (!concept) {
     return <div className="panel panel-padding">Concept not found.</div>;

@@ -3,13 +3,14 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { QuestionNav } from "../components/QuestionNav";
 import { QuestionRenderer } from "../components/QuestionRenderer";
 import type { Question, TestSession } from "../domain/models";
-import { useAppServices } from "../state/AppServicesProvider";
+import { useAppServices, useStudentProfiles } from "../state/AppServicesProvider";
 import { useTestMode } from "../state/TestModeProvider";
 
 export function TestPage() {
   const { sessionId } = useParams();
   const navigate = useNavigate();
   const { contentRepository, sessionService } = useAppServices();
+  const { activeProfile } = useStudentProfiles();
   const { setIsTestMode } = useTestMode();
   const [session, setSession] = useState<TestSession | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -43,7 +44,7 @@ export function TestPage() {
       );
       setQuestions(loadedQuestions.filter((question): question is Question => Boolean(question)));
     });
-  }, [contentRepository, sessionId, sessionService]);
+  }, [activeProfile?.studentId, contentRepository, sessionId, sessionService]);
 
   const currentQuestion = useMemo(() => {
     if (!session) {

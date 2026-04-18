@@ -40,6 +40,7 @@ export class LocalProgressService implements ProgressService {
     );
 
     const progress: ProgressRecord = {
+      studentId: attempt.studentId,
       conceptId: attempt.conceptId,
       courseId: attempt.courseId,
       attemptCount: attempts.length,

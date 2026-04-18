@@ -7,6 +7,7 @@ import type {
   TestSet,
   TestAttempt,
   TestSession,
+  StudentProfile,
 } from "../domain/models";
 
 export interface ContentRepository {
@@ -43,6 +44,11 @@ export interface DataTransferServiceContract {
   exportProgress(): Promise<{
     appVersion: string;
     exportedAt: string;
+    student?: {
+      studentId: string;
+      displayName: string;
+      gradeLevel?: string;
+    };
     data: {
       sessions: TestSession[];
       attempts: TestAttempt[];
@@ -52,6 +58,11 @@ export interface DataTransferServiceContract {
   importProgress(value: unknown): Promise<{
     appVersion: string;
     exportedAt: string;
+    student?: {
+      studentId: string;
+      displayName: string;
+      gradeLevel?: string;
+    };
     data: {
       sessions: TestSession[];
       attempts: TestAttempt[];
@@ -70,4 +81,12 @@ export interface SessionService {
 
 export interface MixedTestService {
   getEligibility(courseId: string): Promise<{ unlocked: boolean; conceptIds: string[] }>;
+}
+
+export interface StudentProfileService {
+  listProfiles(): Promise<StudentProfile[]>;
+  getActiveProfile(): Promise<StudentProfile>;
+  getActiveStudentId(): Promise<string>;
+  setActiveStudent(studentId: string): Promise<StudentProfile>;
+  createProfile(displayName: string, gradeLevel?: string): Promise<StudentProfile>;
 }

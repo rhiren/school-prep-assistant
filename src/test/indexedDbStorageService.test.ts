@@ -3,8 +3,9 @@ import { deleteDB } from "idb";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { APP_VERSION } from "../app/version";
 import type { ProgressRecord, TestAttempt, TestSession } from "../domain/models";
+import { DEFAULT_STUDENT_ID } from "../services/studentProfileService";
 import { IndexedDBStorageService } from "../storage/indexedDbStorageService";
-import { STORE_NAMES } from "../storage/repositories";
+import { getStudentScopedKey, STORE_NAMES } from "../storage/repositories";
 
 const LEGACY_KEYS = {
   sessions: "math-prep:sessions:v1",
@@ -36,6 +37,7 @@ describe("IndexedDBStorageService", () => {
     storage = await IndexedDBStorageService.create();
     const session: TestSession = {
       id: "session-1",
+      studentId: DEFAULT_STUDENT_ID,
       mode: "concept",
       courseId: "course-2",
       conceptId: "concept-ratios",
@@ -48,9 +50,18 @@ describe("IndexedDBStorageService", () => {
       updatedAt: "2026-04-12T00:00:00.000Z",
     };
 
-    await storage.set(STORE_NAMES.sessions, session.id, session);
+    await storage.set(
+      STORE_NAMES.sessions,
+      getStudentScopedKey(DEFAULT_STUDENT_ID, session.id),
+      session,
+    );
 
-    expect(await storage.get<TestSession>(STORE_NAMES.sessions, "session-1")).toEqual(session);
+    expect(
+      await storage.get<TestSession>(
+        STORE_NAMES.sessions,
+        getStudentScopedKey(DEFAULT_STUDENT_ID, "session-1"),
+      ),
+    ).toEqual(session);
     expect(await storage.getAll<TestSession>(STORE_NAMES.sessions)).toHaveLength(1);
   });
 
@@ -65,6 +76,7 @@ describe("IndexedDBStorageService", () => {
   it("migrates existing localStorage data on first load", async () => {
     const session: TestSession = {
       id: "session-legacy",
+      studentId: DEFAULT_STUDENT_ID,
       mode: "concept",
       courseId: "course-2",
       conceptId: "concept-ratios",
@@ -78,6 +90,7 @@ describe("IndexedDBStorageService", () => {
     };
     const attempt: TestAttempt = {
       attemptId: "attempt-legacy",
+      studentId: DEFAULT_STUDENT_ID,
       sessionId: "session-legacy",
       mode: "concept",
       courseId: "course-2",
@@ -96,6 +109,7 @@ describe("IndexedDBStorageService", () => {
       submittedAt: "2026-04-12T00:00:00.000Z",
     };
     const progress: ProgressRecord = {
+      studentId: DEFAULT_STUDENT_ID,
       conceptId: "concept-ratios",
       courseId: "course-2",
       attemptCount: 1,
@@ -112,9 +126,24 @@ describe("IndexedDBStorageService", () => {
 
     storage = await IndexedDBStorageService.create();
 
-    expect(await storage.get<TestSession>(STORE_NAMES.sessions, session.id)).toEqual(session);
-    expect(await storage.get<TestAttempt>(STORE_NAMES.attempts, attempt.attemptId)).toEqual(attempt);
-    expect(await storage.get<ProgressRecord>(STORE_NAMES.progress, progress.conceptId)).toEqual(progress);
+    expect(
+      await storage.get<TestSession>(
+        STORE_NAMES.sessions,
+        getStudentScopedKey(DEFAULT_STUDENT_ID, session.id),
+      ),
+    ).toEqual(session);
+    expect(
+      await storage.get<TestAttempt>(
+        STORE_NAMES.attempts,
+        getStudentScopedKey(DEFAULT_STUDENT_ID, attempt.attemptId),
+      ),
+    ).toEqual(attempt);
+    expect(
+      await storage.get<ProgressRecord>(
+        STORE_NAMES.progress,
+        getStudentScopedKey(DEFAULT_STUDENT_ID, progress.conceptId),
+      ),
+    ).toEqual(progress);
     expect(window.localStorage.getItem(LEGACY_KEYS.sessions)).toBeNull();
     expect(window.localStorage.getItem(LEGACY_KEYS.attempts)).toBeNull();
     expect(window.localStorage.getItem(LEGACY_KEYS.progress)).toBeNull();
@@ -123,6 +152,7 @@ describe("IndexedDBStorageService", () => {
   it("normalizes legacy concept ids during startup migration", async () => {
     const legacySession: TestSession = {
       id: "session-unit-rate",
+      studentId: DEFAULT_STUDENT_ID,
       mode: "concept",
       courseId: "course-2",
       conceptId: "concept-unit-rate",
@@ -136,6 +166,7 @@ describe("IndexedDBStorageService", () => {
     };
     const legacyAttempt: TestAttempt = {
       attemptId: "attempt-unit-rate",
+      studentId: DEFAULT_STUDENT_ID,
       sessionId: "session-unit-rate",
       mode: "concept",
       courseId: "course-2",
@@ -154,6 +185,7 @@ describe("IndexedDBStorageService", () => {
       submittedAt: "2026-04-12T00:00:00.000Z",
     };
     const legacyProgress: ProgressRecord = {
+      studentId: DEFAULT_STUDENT_ID,
       conceptId: "concept-unit-rate",
       courseId: "course-2",
       attemptCount: 1,
@@ -165,23 +197,55 @@ describe("IndexedDBStorageService", () => {
     };
 
     storage = await IndexedDBStorageService.create();
-    await storage.set(STORE_NAMES.sessions, legacySession.id, legacySession);
-    await storage.set(STORE_NAMES.attempts, legacyAttempt.attemptId, legacyAttempt);
-    await storage.set(STORE_NAMES.progress, legacyProgress.conceptId, legacyProgress);
+    await storage.set(
+      STORE_NAMES.sessions,
+      getStudentScopedKey(DEFAULT_STUDENT_ID, legacySession.id),
+      legacySession,
+    );
+    await storage.set(
+      STORE_NAMES.attempts,
+      getStudentScopedKey(DEFAULT_STUDENT_ID, legacyAttempt.attemptId),
+      legacyAttempt,
+    );
+    await storage.set(
+      STORE_NAMES.progress,
+      getStudentScopedKey(DEFAULT_STUDENT_ID, legacyProgress.conceptId),
+      legacyProgress,
+    );
     storage.close();
 
     storage = await IndexedDBStorageService.create();
 
-    expect(await storage.get<TestSession>(STORE_NAMES.sessions, legacySession.id)).toMatchObject({
+    expect(
+      await storage.get<TestSession>(
+        STORE_NAMES.sessions,
+        getStudentScopedKey(DEFAULT_STUDENT_ID, legacySession.id),
+      ),
+    ).toMatchObject({
       conceptId: "concept-unit-rates",
       conceptIds: ["concept-unit-rates"],
     });
-    expect(await storage.get<TestAttempt>(STORE_NAMES.attempts, legacyAttempt.attemptId)).toMatchObject({
+    expect(
+      await storage.get<TestAttempt>(
+        STORE_NAMES.attempts,
+        getStudentScopedKey(DEFAULT_STUDENT_ID, legacyAttempt.attemptId),
+      ),
+    ).toMatchObject({
       conceptId: "concept-unit-rates",
       conceptIds: ["concept-unit-rates"],
     });
-    expect(await storage.get<ProgressRecord>(STORE_NAMES.progress, "concept-unit-rate")).toBeNull();
-    expect(await storage.get<ProgressRecord>(STORE_NAMES.progress, "concept-unit-rates")).toMatchObject({
+    expect(
+      await storage.get<ProgressRecord>(
+        STORE_NAMES.progress,
+        getStudentScopedKey(DEFAULT_STUDENT_ID, "concept-unit-rate"),
+      ),
+    ).toBeNull();
+    expect(
+      await storage.get<ProgressRecord>(
+        STORE_NAMES.progress,
+        getStudentScopedKey(DEFAULT_STUDENT_ID, "concept-unit-rates"),
+      ),
+    ).toMatchObject({
       conceptId: "concept-unit-rates",
     });
   });

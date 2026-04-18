@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { useStudentProfiles } from "../state/AppServicesProvider";
 import { useTestMode } from "../state/TestModeProvider";
 
 const navItems = [
@@ -9,6 +10,17 @@ const navItems = [
 
 export function AppLayout() {
   const { isTestMode } = useTestMode();
+  const { activeProfile, createStudentProfile, profiles, setActiveStudent } = useStudentProfiles();
+
+  const handleCreateStudent = async () => {
+    const displayName = window.prompt("Add a student name");
+    if (!displayName) {
+      return;
+    }
+
+    const gradeLevel = window.prompt("Grade level (optional)") ?? undefined;
+    await createStudentProfile(displayName, gradeLevel);
+  };
 
   return (
     <div className="app-shell">
@@ -20,6 +32,31 @@ export function AppLayout() {
               <p className="mt-2 text-sm leading-6 text-stone-600">
                 Start with mathematics today, and keep the structure ready for more subjects later.
               </p>
+            </div>
+            <div className="flex flex-col gap-2 sm:min-w-[240px] sm:items-end">
+              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                Active Student
+              </div>
+              {profiles.length > 1 ? (
+                <select
+                  className="rounded-xl border border-stone-300 bg-white px-3 py-2 text-sm text-ink"
+                  onChange={(event) => void setActiveStudent(event.target.value)}
+                  value={activeProfile?.studentId ?? ""}
+                >
+                  {profiles.map((profile) => (
+                    <option key={profile.studentId} value={profile.studentId}>
+                      {profile.displayName}
+                    </option>
+                  ))}
+                </select>
+              ) : (
+                <div className="rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm font-medium text-ink">
+                  {activeProfile?.displayName ?? "Student 1"}
+                </div>
+              )}
+              <button className="text-sm font-medium text-accent" onClick={() => void handleCreateStudent()} type="button">
+                Add student
+              </button>
             </div>
           </div>
           <nav className="flex flex-wrap gap-2 px-5 py-4 sm:px-6">

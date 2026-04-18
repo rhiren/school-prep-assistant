@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ConceptCard } from "../components/ConceptCard";
 import type { Course, ProgressRecord } from "../domain/models";
-import { useAppServices } from "../state/AppServicesProvider";
+import { useAppServices, useStudentProfiles } from "../state/AppServicesProvider";
 
 function sortConceptsForDisplay(concepts: Course["units"][number]["concepts"]) {
   return [...concepts].sort((left, right) => {
@@ -17,6 +17,7 @@ function sortConceptsForDisplay(concepts: Course["units"][number]["concepts"]) {
 export function CoursePage() {
   const { courseId } = useParams();
   const { contentRepository, progressService } = useAppServices();
+  const { activeProfile } = useStudentProfiles();
   const [course, setCourse] = useState<Course | null>(null);
   const [progress, setProgress] = useState<Record<string, ProgressRecord>>({});
 
@@ -31,7 +32,7 @@ export function CoursePage() {
         Object.fromEntries(records.map((record) => [record.conceptId, record])),
       );
     });
-  }, [contentRepository, courseId, progressService]);
+  }, [activeProfile?.studentId, contentRepository, courseId, progressService]);
 
   if (!course) {
     return <div className="panel panel-padding">Course not found.</div>;
