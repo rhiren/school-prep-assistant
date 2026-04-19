@@ -1,4 +1,5 @@
 import {
+  deleteField,
   doc,
   getDoc,
   serverTimestamp,
@@ -59,6 +60,33 @@ function isCloudProgressDocument(value: unknown): value is CloudProgressDocument
   );
 }
 
+function parseCloudProgressDocument(value: unknown): CloudProgressDocument | null {
+  if (!isCloudProgressDocument(value)) {
+    return null;
+  }
+
+  return {
+    ...value,
+    snapshot: validateProgressSnapshot(value.snapshot),
+  };
+}
+
+function sanitizeProgressSnapshotForCloud<T>(value: T): T {
+  if (Array.isArray(value)) {
+    return value.map((item) => sanitizeProgressSnapshotForCloud(item)) as T;
+  }
+
+  if (typeof value !== "object" || value === null) {
+    return value;
+  }
+
+  return Object.fromEntries(
+    Object.entries(value)
+      .filter(([, entryValue]) => typeof entryValue !== "undefined")
+      .map(([key, entryValue]) => [key, sanitizeProgressSnapshotForCloud(entryValue)]),
+  ) as T;
+}
+
 export class FirestoreProgressSyncClient implements ProgressSyncClient {
   constructor(private readonly firestore: Firestore | null = db) {}
 
@@ -72,13 +100,15 @@ export class FirestoreProgressSyncClient implements ProgressSyncClient {
     }
 
     const documentRef = doc(this.firestore, "students", studentId, "progress", "current");
+    const snapshot = sanitizeProgressSnapshotForCloud(progressData);
     await setDoc(
       documentRef,
       {
-        appVersion: progressData.appVersion,
-        lastModified: getProgressSnapshotLastModified(progressData),
+        appVersion: snapshot.appVersion,
+        debugCliWrite: deleteField(),
+        lastModified: getProgressSnapshotLastModified(snapshot),
         syncedAt: new Date().toISOString(),
-        snapshot: progressData,
+        snapshot,
         serverUpdatedAt: serverTimestamp(),
       },
       { merge: true },
@@ -94,15 +124,7 @@ export class FirestoreProgressSyncClient implements ProgressSyncClient {
     const snapshot = await getDoc(documentRef);
 
     if (snapshot.exists()) {
-      const data = snapshot.data();
-      if (!isCloudProgressDocument(data)) {
-        throw new Error("Cloud progress data is invalid.");
-      }
-
-      return {
-        ...data,
-        snapshot: validateProgressSnapshot(data.snapshot),
-      };
+      return parseCloudProgressDocument(snapshot.data());
     }
 
     if (studentId !== "student-1") {
@@ -115,15 +137,7 @@ export class FirestoreProgressSyncClient implements ProgressSyncClient {
       return null;
     }
 
-    const legacyData = legacySnapshot.data();
-    if (!isCloudProgressDocument(legacyData)) {
-      throw new Error("Cloud progress data is invalid.");
-    }
-
-    return {
-      ...legacyData,
-      snapshot: validateProgressSnapshot(legacyData.snapshot),
-    };
+    return parseCloudProgressDocument(legacySnapshot.data());
   }
 }
 
