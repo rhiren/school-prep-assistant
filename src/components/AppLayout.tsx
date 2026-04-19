@@ -30,12 +30,13 @@ export function AppLayout() {
             <div className="max-w-2xl">
               <h1 className="text-3xl font-semibold text-ink">School Prep Assistant</h1>
               <p className="mt-2 text-sm leading-6 text-stone-600">
-                Start with mathematics today, and keep the structure ready for more subjects later.
+                A growing learning platform for structured subject practice, progress tracking,
+                and steady confidence-building.
               </p>
             </div>
-            <div className="flex flex-col gap-2 sm:min-w-[240px] sm:items-end">
+            <div className="flex flex-col gap-2 rounded-2xl border border-stone-200/80 bg-white/80 px-4 py-3 sm:min-w-[260px] sm:items-end">
               <div className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
-                Active Student
+                Student
               </div>
               {profiles.length > 1 ? (
                 <select

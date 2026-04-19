@@ -227,21 +227,24 @@ export function HomePage() {
   return (
     <section className="space-y-6">
       <div className="panel panel-padding">
-        <h2 className="text-3xl font-semibold text-ink">Mathematics Dashboard</h2>
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+          School Prep Assistant
+        </p>
+        <h2 className="mt-2 text-3xl font-semibold text-ink">Learning Dashboard</h2>
         <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-600">
-          Welcome back. Continue where you left off, start a new concept, and check
-          your progress.
+          Build confidence across subjects with structured concept practice, progress
+          tracking, and mastery over time.
         </p>
         <p className="mt-3 text-sm text-stone-600">
-          How to use: choose a concept, answer the questions, then come back here to
-          see what to do next.
+          Start with mathematics today, then come back here to continue learning and
+          see what to do next as new subjects are added.
         </p>
       </div>
 
       <section className="panel panel-padding">
         <h3 className="text-xl font-semibold text-ink">Subjects</h3>
         <p className="mt-2 text-sm text-stone-600">
-          More subjects will be added over time. Mathematics is ready now.
+          Mathematics is active now, and Science is planned as the next subject area.
         </p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <Link
@@ -253,7 +256,7 @@ export function HomePage() {
                 <div className="text-2xl">📘</div>
                 <h4 className="mt-3 text-lg font-semibold text-ink">{subjectTitle}</h4>
                 <p className="mt-1 text-sm text-stone-600">
-                  Active subject. Continue into the current {courseTitle} flow.
+                  Active subject. Continue into the current {courseTitle} learning flow.
                 </p>
               </div>
               <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700">
@@ -268,7 +271,7 @@ export function HomePage() {
                 <div className="text-2xl">🧪</div>
                 <h4 className="mt-3 text-lg font-semibold text-ink">Science</h4>
                 <p className="mt-1 text-sm text-stone-600">
-                  Future subject area. This section is not active yet.
+                  Coming soon. This subject will be added in a future update.
                 </p>
               </div>
               <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-amber-700">
