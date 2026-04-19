@@ -236,8 +236,8 @@ export function HomePage() {
           tracking, and mastery over time.
         </p>
         <p className="mt-3 text-sm text-stone-600">
-          Start with mathematics today, then come back here to continue learning and
-          see what to do next as new subjects are added.
+          Mathematics is the active subject today, with Course 2 ready inside the
+          Subjects flow and more subjects planned over time.
         </p>
       </div>
 

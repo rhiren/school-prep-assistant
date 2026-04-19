@@ -4,7 +4,7 @@ import { useTestMode } from "../state/TestModeProvider";
 
 const navItems = [
   { to: "/", label: "Home" },
-  { to: "/courses", label: "Courses" },
+  { to: "/subjects", label: "Subjects" },
   { to: "/progress", label: "Progress" },
 ];
 

@@ -42,8 +42,8 @@ export function CoursePage() {
     <section className="space-y-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <Link className="text-sm font-medium text-accent" to="/courses">
-            Back to courses
+          <Link className="text-sm font-medium text-accent" to="/subjects">
+            Back to subjects
           </Link>
           <h2 className="mt-2 text-3xl font-semibold text-ink">{course.title}</h2>
           <p className="mt-2 text-sm leading-6 text-stone-600">{course.description}</p>

@@ -144,8 +144,8 @@ export function ProgressPage() {
             Viewing progress for {activeProfile?.displayName ?? "Student 1"}.
           </p>
         </div>
-        <Link className="secondary-link" to="/courses">
-          Back to courses
+        <Link className="secondary-link" to="/subjects">
+          Back to subjects
         </Link>
       </div>
 

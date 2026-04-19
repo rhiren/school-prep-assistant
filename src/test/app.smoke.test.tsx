@@ -11,10 +11,10 @@ import { TestModeProvider } from "../state/TestModeProvider";
 import { MemoryStorageService } from "../storage/memoryStorageService";
 
 describe("app smoke flow", () => {
-  it("navigates from courses to concept test start", async () => {
+  it("navigates from subjects to concept test start", async () => {
     const user = userEvent.setup();
     const router = createMemoryRouter(routes, {
-      initialEntries: ["/courses"],
+      initialEntries: ["/subjects"],
     });
     const services = await createAppServices(new MemoryStorageService());
 
@@ -26,8 +26,9 @@ describe("app smoke flow", () => {
       </AppServicesProvider>,
     );
 
-    expect(await screen.findByText("Course 2")).toBeInTheDocument();
-    await user.click(screen.getByRole("link", { name: "Open course" }));
+    expect(await screen.findByText("Mathematics")).toBeInTheDocument();
+    expect(screen.getByText("Current course: Course 2")).toBeInTheDocument();
+    await user.click(screen.getByRole("link", { name: "Open Course 2" }));
 
     expect(
       await screen.findByText("Ratios and Proportional Relationships"),

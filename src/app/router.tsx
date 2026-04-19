@@ -1,4 +1,4 @@
-import { createHashRouter, type RouteObject } from "react-router-dom";
+import { Navigate, createHashRouter, type RouteObject } from "react-router-dom";
 import { AppLayout } from "../components/AppLayout";
 import { ConceptPage } from "../routes/ConceptPage";
 import { ConceptTutorialPage } from "../routes/ConceptTutorialPage";
@@ -19,8 +19,12 @@ export const routes: RouteObject[] = [
         element: <HomePage />,
       },
       {
-        path: "courses",
+        path: "subjects",
         element: <CoursesPage />,
+      },
+      {
+        path: "courses",
+        element: <Navigate replace to="/subjects" />,
       },
       {
         path: "course/:courseId",
