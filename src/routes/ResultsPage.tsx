@@ -60,8 +60,14 @@ export function ResultsPage() {
 
   const incorrectResults = attempt.results.filter((result) => !result.isCorrect);
   const feedbackResults = attempt.results.filter((result) => result.feedbackTip);
+  const isSmartRetryAttempt = attempt.smartRetry?.kind === "targeted";
   const handleRetry = async () => {
     if (!attempt.conceptId) {
+      return;
+    }
+
+    if (isSmartRetryAttempt) {
+      navigate("/");
       return;
     }
 
@@ -95,7 +101,11 @@ export function ResultsPage() {
             onClick={() => void handleRetry()}
             type="button"
           >
-            {isRetrying ? "Creating retry..." : "Retry Concept Test"}
+            {isSmartRetryAttempt
+              ? "Back to dashboard"
+              : isRetrying
+                ? "Creating retry..."
+                : "Retry Concept Test"}
           </button>
         ) : null}
       </div>
@@ -116,21 +126,29 @@ export function ResultsPage() {
       <div className="panel panel-padding">
         <h3 className="text-lg font-semibold text-ink">Next step</h3>
         <p className="mt-2 text-sm leading-6 text-stone-600">
-          {attempt.summary.percentage >= 85
+          {isSmartRetryAttempt
+            ? "This short Smart Retry set is complete. Return to the dashboard and the next recommendation will explain whether you should move on or do one more focused retry."
+            : attempt.summary.percentage >= 85
             ? "Nice work. Review any notes below, then try another set or move ahead in the course."
             : "Review the explanation for each missed question, then retry this concept when you are ready."}
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           {attempt.conceptId ? (
             <>
-              <button
-                className="action-link"
-                disabled={isRetrying}
-                onClick={() => void handleRetry()}
-                type="button"
-              >
-                {isRetrying ? "Creating retry..." : "Retry this test"}
-              </button>
+              {isSmartRetryAttempt ? (
+                <button className="action-link" onClick={() => navigate("/")} type="button">
+                  Back to dashboard
+                </button>
+              ) : (
+                <button
+                  className="action-link"
+                  disabled={isRetrying}
+                  onClick={() => void handleRetry()}
+                  type="button"
+                >
+                  {isRetrying ? "Creating retry..." : "Retry this test"}
+                </button>
+              )}
               <Link className="secondary-link" to={`/concept/${attempt.conceptId}`}>
                 Back to concept
               </Link>

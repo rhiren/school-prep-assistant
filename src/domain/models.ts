@@ -12,6 +12,7 @@ export type SessionStatus = "in_progress" | "submitted";
 export type AnswerType = "ratio" | "fraction" | "decimal" | "number";
 export type StudentProfileType = "production" | "test";
 export type StudentFeatureFlags = Record<string, boolean>;
+export type SmartRetryKind = "targeted";
 
 export interface PlacementLevel {
   instructionalGrade?: string;
@@ -113,6 +114,11 @@ export interface AnswerRecord {
   answeredAt: string;
 }
 
+export interface SmartRetryMetadata {
+  kind: SmartRetryKind;
+  cycle: number;
+}
+
 export interface ScoredQuestionResult {
   questionId: string;
   isCorrect: boolean;
@@ -139,6 +145,7 @@ export interface TestSession {
   conceptIds: string[];
   questionIds: string[];
   answers: Record<string, AnswerRecord>;
+  smartRetry?: SmartRetryMetadata;
   currentQuestionIndex: number;
   status: SessionStatus;
   createdAt: string;
@@ -156,6 +163,7 @@ export interface TestAttempt {
   conceptIds: string[];
   questionIds: string[];
   answers: Record<string, AnswerRecord>;
+  smartRetry?: SmartRetryMetadata;
   results: ScoredQuestionResult[];
   summary: ScoreSummary;
   submittedAt: string;

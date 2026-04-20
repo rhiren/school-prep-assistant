@@ -165,6 +165,15 @@ requested.
 
 Keep production student experience stable by default.
 
+Rule-based targeted retry support may evolve, but it should begin simple,
+deterministic, and explainable.
+
+Remediation should remain lightweight and should not become a full alternate
+learning path.
+
+Adaptive behavior should begin with transparent rule-based interventions before
+introducing more complex intelligence.
+
 ---
 
 ### Hidden operational controls

@@ -5,6 +5,7 @@ import type {
   PlacementProfile,
   ProgressRecord,
   Question,
+  SmartRetryMetadata,
   StudentFeatureFlags,
   TestSet,
   TestAttempt,
@@ -28,7 +29,14 @@ export interface ContentRepository {
 }
 
 export interface TestGenerationService {
-  createConceptSession(conceptId: string, testSetId?: string): Promise<TestSession>;
+  createConceptSession(
+    conceptId: string,
+    testSetId?: string,
+    options?: {
+      questionIds?: string[];
+      smartRetry?: SmartRetryMetadata;
+    },
+  ): Promise<TestSession>;
 }
 
 export interface ScoringService {

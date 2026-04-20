@@ -18,7 +18,14 @@ export class DeterministicConceptTestEngine implements TestGenerationService {
     },
   ) {}
 
-  async createConceptSession(conceptId: string, testSetId?: string): Promise<TestSession> {
+  async createConceptSession(
+    conceptId: string,
+    testSetId?: string,
+    options?: {
+      questionIds?: string[];
+      smartRetry?: TestSession["smartRetry"];
+    },
+  ): Promise<TestSession> {
     const concept = await this.contentRepository.getConcept(conceptId);
     if (!concept) {
       throw new Error(`Unknown concept: ${conceptId}`);
@@ -28,19 +35,28 @@ export class DeterministicConceptTestEngine implements TestGenerationService {
       testSetId ??
       (await this.contentRepository.getTestSetsForConcept(conceptId))[0]?.id;
 
-    const questions = resolvedTestSetId
-      ? await this.contentRepository.getQuestionsForTestSet(resolvedTestSetId)
-      : [];
+    const questionIds = options?.questionIds;
+    const questions = questionIds
+      ? (
+          await Promise.all(
+            questionIds.map((questionId) => this.contentRepository.getQuestionById(questionId)),
+          )
+        ).filter((question): question is NonNullable<typeof question> => Boolean(question))
+      : resolvedTestSetId
+        ? await this.contentRepository.getQuestionsForTestSet(resolvedTestSetId)
+        : [];
 
-    if (questions.length === 0) {
+    if (questions.length === 0 || (questionIds && questions.length !== questionIds.length)) {
       throw new Error(`No questions found for concept ${conceptId}.`);
     }
 
     const targetCount = Math.min(concept.testQuestionCount ?? questions.length, questions.length);
-    const selectedQuestions = this.selectionStrategy.selectQuestions(questions, {
-      concept,
-      targetCount,
-    });
+    const selectedQuestions = questionIds
+      ? questions
+      : this.selectionStrategy.selectQuestions(questions, {
+          concept,
+          targetCount,
+        });
     const now = new Date().toISOString();
     const studentId = await this.studentProfileService.getActiveStudentId();
 
@@ -54,6 +70,7 @@ export class DeterministicConceptTestEngine implements TestGenerationService {
       conceptIds: [concept.id],
       questionIds: selectedQuestions.map((question) => question.id),
       answers: {},
+      smartRetry: options?.smartRetry,
       currentQuestionIndex: 0,
       status: "in_progress",
       createdAt: now,

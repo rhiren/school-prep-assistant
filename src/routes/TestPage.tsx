@@ -130,6 +130,7 @@ export function TestPage() {
   const isCurrentQuestionAnswered = answeredIds.includes(currentQuestion.id);
   const isCurrentQuestionFlagged = flaggedQuestionIds.includes(currentQuestion.id);
   const isLastQuestion = session.currentQuestionIndex === questions.length - 1;
+  const sessionTitle = session.smartRetry ? "Smart Retry Session" : "Concept Test Session";
 
   return (
     <section className="space-y-6">
@@ -141,9 +142,11 @@ export function TestPage() {
           <p className="mt-4 text-xs font-semibold uppercase tracking-[0.25em] text-accent">
             Question {session.currentQuestionIndex + 1} of {questions.length}
           </p>
-          <h2 className="mt-2 text-3xl font-semibold text-ink">Concept Test Session</h2>
+          <h2 className="mt-2 text-3xl font-semibold text-ink">{sessionTitle}</h2>
           <p className="mt-2 text-sm text-stone-600">
-            Autosave writes answers and current question position into local persistence.
+            {session.smartRetry
+              ? "This is a short 5-question targeted retry. Finish it, then return to your normal learning sequence."
+              : "Autosave writes answers and current question position into local persistence."}
           </p>
         </div>
 

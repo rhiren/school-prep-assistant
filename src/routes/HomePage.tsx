@@ -1,7 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import type { Concept, ProgressRecord, TestAttempt, TestSession } from "../domain/models";
+import type {
+  Concept,
+  ProgressRecord,
+  SmartRetryMetadata,
+  TestAttempt,
+  TestSession,
+} from "../domain/models";
 import { useAppServices, useStudentProfiles } from "../state/AppServicesProvider";
+import { getSmartRetryRecommendation } from "../services/smartRetry";
 
 function toStudentStatus(
   progress: ProgressRecord | null | undefined,
@@ -45,8 +52,13 @@ function sortConceptsForDisplay(concepts: Concept[]): Concept[] {
 
 export function HomePage() {
   const navigate = useNavigate();
-  const { contentRepository, progressService, sessionService, testGenerationService } =
-    useAppServices();
+  const {
+    contentRepository,
+    progressService,
+    sessionService,
+    studentProfileService,
+    testGenerationService,
+  } = useAppServices();
   const { activeProfile } = useStudentProfiles();
   const [subjectTitle, setSubjectTitle] = useState("Mathematics");
   const [courseTitle, setCourseTitle] = useState("Course 2");
@@ -56,47 +68,137 @@ export function HomePage() {
   const [latestAttemptsByConcept, setLatestAttemptsByConcept] = useState<
     Record<string, TestAttempt | null>
   >({});
+  const [smartRetryRecommendation, setSmartRetryRecommendation] = useState<{
+    concept: Concept;
+    explanation: string;
+    shortDescription: string;
+    questionIds: string[];
+    smartRetry: SmartRetryMetadata;
+  } | null>(null);
   const [lastSession, setLastSession] = useState<TestSession | null>(null);
   const [resumeConcept, setResumeConcept] = useState<Concept | null>(null);
   const [startingConceptId, setStartingConceptId] = useState<string | null>(null);
 
   useEffect(() => {
-    contentRepository.getCourse("course-2").then((course) => {
-      if (!course) {
+    let isMounted = true;
+
+    void (async () => {
+      const [course, loadedConcepts, records, session, smartRetryEnabled] = await Promise.all([
+        contentRepository.getCourse("course-2"),
+        contentRepository.getCourseConcepts("course-2"),
+        progressService.getProgress(),
+        sessionService.getLatestInProgressSession(),
+        activeProfile?.studentId
+          ? studentProfileService.isFeatureEnabled(activeProfile.studentId, "smartRetry")
+          : Promise.resolve(false),
+      ]);
+
+      if (!isMounted) {
         return;
       }
 
-      setSubjectTitle(course.subjectTitle);
-      setCourseTitle(course.title);
-      setUnitTitles(
-        Object.fromEntries(course.units.map((unit) => [unit.id, unit.title])),
-      );
-    });
-    contentRepository.getCourseConcepts("course-2").then(async (loadedConcepts) => {
+      if (course) {
+        setSubjectTitle(course.subjectTitle);
+        setCourseTitle(course.title);
+        setUnitTitles(
+          Object.fromEntries(course.units.map((unit) => [unit.id, unit.title])),
+        );
+      }
+
       setConcepts(loadedConcepts);
-      const attempts = await Promise.all(
-        loadedConcepts.map(async (concept) => {
-          const conceptAttempts = await progressService.getConceptAttempts(concept.id);
-          return [concept.id, conceptAttempts[0] ?? null] as const;
-        }),
-      );
-      setLatestAttemptsByConcept(Object.fromEntries(attempts));
-    });
-    progressService.getProgress().then((records) => {
       setProgressByConcept(
         Object.fromEntries(records.map((record) => [record.conceptId, record])),
       );
-    });
-    sessionService.getLatestInProgressSession().then((session) => {
       setLastSession(session);
-      if (!session?.conceptId) {
+
+      if (session?.conceptId) {
+        setResumeConcept(await contentRepository.getConcept(session.conceptId));
+      } else {
         setResumeConcept(null);
+      }
+
+      const attemptsByConceptEntries = await Promise.all(
+        loadedConcepts.map(async (concept) => {
+          const conceptAttempts = await progressService.getConceptAttempts(concept.id);
+          return [concept.id, conceptAttempts] as const;
+        }),
+      );
+      const questionsByConceptEntries = await Promise.all(
+        loadedConcepts.map(async (concept) => {
+          const conceptQuestions = await contentRepository.getQuestionsForConcept(concept.id);
+          return [concept.id, conceptQuestions] as const;
+        }),
+      );
+
+      if (!isMounted) {
         return;
       }
 
-      contentRepository.getConcept(session.conceptId).then(setResumeConcept);
-    });
-  }, [activeProfile?.studentId, contentRepository, progressService, sessionService]);
+      const attemptsByConcept = Object.fromEntries(attemptsByConceptEntries);
+      const questionsByConcept = Object.fromEntries(questionsByConceptEntries);
+      setLatestAttemptsByConcept(
+        Object.fromEntries(
+          attemptsByConceptEntries.map(([conceptId, conceptAttempts]) => [
+            conceptId,
+            conceptAttempts[0] ?? null,
+          ]),
+        ),
+      );
+
+      if (!smartRetryEnabled) {
+        setSmartRetryRecommendation(null);
+        return;
+      }
+
+      const retryConcept =
+        sortConceptsForDisplay(loadedConcepts)
+          .map((concept) => {
+            const recommendation = getSmartRetryRecommendation(
+              attemptsByConcept[concept.id] ?? [],
+              questionsByConcept[concept.id] ?? [],
+            );
+            return recommendation;
+          })
+          .map((recommendation) => {
+            if (!recommendation) {
+              return null;
+            }
+
+            const concept = loadedConcepts.find((candidate) => candidate.id === recommendation.conceptId);
+            if (!recommendation) {
+              return null;
+            }
+
+            if (!concept) {
+              return null;
+            }
+
+            return {
+              concept,
+              explanation: recommendation.explanation,
+              shortDescription: recommendation.shortDescription,
+              questionIds: recommendation.retrySet.questionIds,
+              smartRetry: {
+                kind: "targeted" as const,
+                cycle: recommendation.retryCycle,
+              },
+            };
+          })
+          .find((recommendation) => recommendation !== null) ?? null;
+
+      setSmartRetryRecommendation(retryConcept);
+    })();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [
+    activeProfile?.studentId,
+    contentRepository,
+    progressService,
+    sessionService,
+    studentProfileService,
+  ]);
 
   const progressSummary = useMemo(() => {
     return concepts.reduce(
@@ -131,6 +233,27 @@ export function HomePage() {
         actionLabel: "Resume Practice",
         helper: "You already started this concept. Finishing it is the best next step.",
         onClick: () => navigate(`/test/${lastSession.id}`),
+      };
+    }
+
+    if (smartRetryRecommendation) {
+      return {
+        title: "Retry Recommended",
+        concept: smartRetryRecommendation.concept,
+        actionLabel: smartRetryRecommendation.concept.hasTest
+          ? "Retry Practice"
+          : "View Tutorial",
+        helper: smartRetryRecommendation.concept.hasTest
+          ? `${smartRetryRecommendation.shortDescription}. ${smartRetryRecommendation.explanation}`
+          : `${smartRetryRecommendation.explanation} Practice is coming soon, so start with the tutorial.`,
+        onClick: () =>
+          smartRetryRecommendation.concept.hasTest
+            ? void handleStartConcept(
+                smartRetryRecommendation.concept.id,
+                smartRetryRecommendation.questionIds,
+                smartRetryRecommendation.smartRetry,
+              )
+            : navigate(`/concept/${smartRetryRecommendation.concept.id}/tutorial`),
       };
     }
 
@@ -186,7 +309,14 @@ export function HomePage() {
               : navigate(`/concept/${nextToReview.id}/tutorial`),
         }
       : null;
-  }, [lastSession, navigate, orderedConcepts, progressByConcept, resumeConcept]);
+  }, [
+    lastSession,
+    navigate,
+    orderedConcepts,
+    progressByConcept,
+    resumeConcept,
+    smartRetryRecommendation,
+  ]);
   const conceptsByUnit = useMemo(() => {
     return concepts.reduce<Record<string, Concept[]>>((groups, concept) => {
       groups[concept.unitId] ??= [];
@@ -218,9 +348,16 @@ export function HomePage() {
     };
   };
 
-  const handleStartConcept = async (conceptId: string) => {
+  const handleStartConcept = async (
+    conceptId: string,
+    questionIds?: string[],
+    smartRetry?: SmartRetryMetadata,
+  ) => {
     setStartingConceptId(conceptId);
-    const session = await testGenerationService.createConceptSession(conceptId);
+    const session = await testGenerationService.createConceptSession(conceptId, undefined, {
+      questionIds,
+      smartRetry,
+    });
     navigate(`/test/${session.id}`);
   };
 

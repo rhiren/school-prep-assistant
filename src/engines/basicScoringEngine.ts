@@ -60,6 +60,7 @@ export class BasicScoringEngine implements ScoringService {
       conceptIds: session.conceptIds,
       questionIds: session.questionIds,
       answers: session.answers,
+      smartRetry: session.smartRetry,
       results,
       summary: {
         totalQuestions,
