@@ -213,6 +213,63 @@ export class LocalStudentProfileService implements StudentProfileService {
     return Boolean(profile?.featureFlags?.[normalizedFeatureName]);
   }
 
+  async convertProfileToTest(studentId: string): Promise<StudentProfile> {
+    await this.ensureInitialized();
+
+    const profiles = await this.listSortedProfiles();
+    const profile = profiles.find((item) => item.studentId === studentId);
+
+    if (!profile) {
+      throw new Error(`Unknown student profile: ${studentId}`);
+    }
+
+    if (profile.profileType === "test") {
+      return profile;
+    }
+
+    const updatedProfile = normalizeStudentProfile({
+      ...profile,
+      profileType: "test",
+    });
+    await this.repository.save(updatedProfile);
+    return updatedProfile;
+  }
+
+  async setTestProfileFeatureFlag(
+    studentId: string,
+    featureName: string,
+    enabled: boolean,
+  ): Promise<StudentProfile> {
+    await this.ensureInitialized();
+
+    const normalizedFeatureName = normalizeOptionalText(featureName);
+    if (!normalizedFeatureName) {
+      throw new Error("Feature flag name is required.");
+    }
+
+    const profiles = await this.listSortedProfiles();
+    const profile = profiles.find((item) => item.studentId === studentId);
+
+    if (!profile) {
+      throw new Error(`Unknown student profile: ${studentId}`);
+    }
+
+    if (profile.profileType !== "test") {
+      throw new Error("Only test student profiles can change feature flags.");
+    }
+
+    const nextFeatureFlags = {
+      ...(profile.featureFlags ?? {}),
+      [normalizedFeatureName]: enabled,
+    };
+    const updatedProfile = normalizeStudentProfile({
+      ...profile,
+      featureFlags: nextFeatureFlags,
+    });
+    await this.repository.save(updatedProfile);
+    return updatedProfile;
+  }
+
   async deleteTestProfile(studentId: string): Promise<void> {
     await this.ensureInitialized();
 

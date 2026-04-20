@@ -14,9 +14,11 @@ export function AppLayout() {
   const { isTestMode } = useTestMode();
   const {
     activeProfile,
+    convertStudentProfileToTest,
     createStudentProfile,
     deleteTestStudentProfile,
     profiles,
+    setTestStudentFeatureFlag,
     setActiveStudent,
   } = useStudentProfiles();
   const [titleTapCount, setTitleTapCount] = useState(0);
@@ -237,20 +239,64 @@ export function AppLayout() {
                               {profile.profileType ?? "production"} profile
                             </div>
                           </div>
-                          <div className="text-xs text-stone-500">Read only</div>
+                          {profile.profileType === "test" ? (
+                            <div className="text-xs text-stone-500">Test profile controls</div>
+                          ) : (
+                            <button
+                              className="secondary-link"
+                              onClick={() => {
+                                if (
+                                  window.confirm(
+                                    `Convert ${profile.displayName} into a test profile for feature rollout and maintenance?`,
+                                  )
+                                ) {
+                                  void convertStudentProfileToTest(profile.studentId);
+                                }
+                              }}
+                              type="button"
+                            >
+                              Convert to test
+                            </button>
+                          )}
                         </div>
                         <div className="mt-3">
-                          {featureFlags.length === 0 ? (
-                            <p className="text-sm text-stone-600">No feature flags enabled.</p>
+                          {profile.profileType === "test" ? (
+                            <div className="space-y-3">
+                              <label className="flex items-center justify-between gap-3 text-sm text-ink">
+                                <span>smartRetry</span>
+                                <input
+                                  checked={Boolean(profile.featureFlags?.smartRetry)}
+                                  className="h-4 w-4 accent-accent"
+                                  onChange={(event) => {
+                                    void setTestStudentFeatureFlag(
+                                      profile.studentId,
+                                      "smartRetry",
+                                      event.target.checked,
+                                    );
+                                  }}
+                                  type="checkbox"
+                                />
+                              </label>
+                              <p className="text-xs text-stone-500">
+                                Hidden admin only. Enables Smart Retry for this test profile.
+                              </p>
+                              {featureFlags.length === 0 ? (
+                                <p className="text-sm text-stone-600">No feature flags enabled.</p>
+                              ) : (
+                                <ul className="space-y-2 text-sm text-ink">
+                                  {featureFlags.map(([flagName, isEnabled]) => (
+                                    <li className="flex items-center justify-between gap-3" key={flagName}>
+                                      <span>{flagName}</span>
+                                      <span className="text-stone-500">{isEnabled ? "enabled" : "disabled"}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
+                            </div>
                           ) : (
-                            <ul className="space-y-2 text-sm text-ink">
-                              {featureFlags.map(([flagName, isEnabled]) => (
-                                <li className="flex items-center justify-between gap-3" key={flagName}>
-                                  <span>{flagName}</span>
-                                  <span className="text-stone-500">{isEnabled ? "enabled" : "disabled"}</span>
-                                </li>
-                              ))}
-                            </ul>
+                            <p className="text-sm text-stone-600">
+                              Feature flags are read only for production profiles.
+                            </p>
                           )}
                         </div>
                       </div>

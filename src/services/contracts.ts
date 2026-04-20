@@ -117,5 +117,11 @@ export interface StudentProfileService {
     },
   ): Promise<StudentProfile>;
   isFeatureEnabled(studentId: string, featureName: string): Promise<boolean>;
+  convertProfileToTest(studentId: string): Promise<StudentProfile>;
+  setTestProfileFeatureFlag(
+    studentId: string,
+    featureName: string,
+    enabled: boolean,
+  ): Promise<StudentProfile>;
   deleteTestProfile(studentId: string): Promise<void>;
 }

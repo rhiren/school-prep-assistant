@@ -82,6 +82,48 @@ describe("student profiles", () => {
     ]);
   });
 
+  it("allows converting a production profile into a test profile for safe rollout", async () => {
+    const store = new MemoryStorageService();
+    const studentProfileService = new LocalStudentProfileService(
+      new StudentProfileRepository(store),
+      store,
+    );
+
+    const productionProfile = await studentProfileService.createProfile("test1", "6");
+    const convertedProfile = await studentProfileService.convertProfileToTest(
+      productionProfile.studentId,
+    );
+
+    expect(convertedProfile.profileType).toBe("test");
+    expect((await studentProfileService.listProfiles()).find(
+      (profile) => profile.studentId === productionProfile.studentId,
+    )?.profileType).toBe("test");
+  });
+
+  it("allows smart retry flag changes only for test profiles", async () => {
+    const store = new MemoryStorageService();
+    const studentProfileService = new LocalStudentProfileService(
+      new StudentProfileRepository(store),
+      store,
+    );
+
+    const testProfile = await studentProfileService.createProfile("Test Student", "6", undefined, {
+      profileType: "test",
+    });
+    await expect(
+      studentProfileService.setTestProfileFeatureFlag("student-1", "smartRetry", true),
+    ).rejects.toThrow("Only test student profiles can change feature flags.");
+
+    const updatedProfile = await studentProfileService.setTestProfileFeatureFlag(
+      testProfile.studentId,
+      "smartRetry",
+      true,
+    );
+
+    expect(updatedProfile.featureFlags).toEqual({ smartRetry: true });
+    expect(await studentProfileService.isFeatureEnabled(testProfile.studentId, "smartRetry")).toBe(true);
+  });
+
   it("keeps progress isolated per active student", async () => {
     const contentRepository = await createDefaultContentRepository();
     const store = new MemoryStorageService();

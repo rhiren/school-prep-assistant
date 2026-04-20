@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { RouterProvider, createMemoryRouter } from "react-router-dom";
 import { describe, expect, it, vi } from "vitest";
@@ -41,8 +41,8 @@ describe("admin console", () => {
 
     expect(await screen.findByText("Admin Console")).toBeInTheDocument();
     expect(screen.getByText(APP_VERSION)).toBeInTheDocument();
-    expect(screen.getByText("smartRetry")).toBeInTheDocument();
-    expect(screen.getByText("enabled")).toBeInTheDocument();
+    expect(screen.getAllByText("smartRetry").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("enabled").length).toBeGreaterThan(0);
     expect(screen.getAllByRole("button", { name: "Delete test profile" })).toHaveLength(1);
 
     const confirmSpy = vi.spyOn(window, "confirm").mockReturnValue(true);
@@ -55,5 +55,87 @@ describe("admin console", () => {
     expect(confirmSpy).toHaveBeenCalledOnce();
     expect(screen.queryByRole("button", { name: "Delete test profile" })).not.toBeInTheDocument();
     confirmSpy.mockRestore();
+  });
+
+  it("can convert a production profile into a test profile from hidden admin", async () => {
+    const user = userEvent.setup();
+    const router = createMemoryRouter(routes, {
+      initialEntries: ["/"],
+    });
+    const services = await createAppServices(new MemoryStorageService());
+
+    await services.studentProfileService.createProfile("test1", "6");
+
+    render(
+      <AppServicesProvider services={services}>
+        <TestModeProvider>
+          <RouterProvider router={router} />
+        </TestModeProvider>
+      </AppServicesProvider>,
+    );
+
+    const titleButton = await screen.findByRole("button", { name: "School Prep Assistant" });
+    for (let count = 0; count < 5; count += 1) {
+      await user.click(titleButton);
+    }
+
+    const confirmSpy = vi.spyOn(window, "confirm").mockReturnValue(true);
+    const featureFlagsSection = screen.getByText("Feature Flags").closest("section");
+    expect(featureFlagsSection).not.toBeNull();
+    const test1Card = within(featureFlagsSection as HTMLElement)
+      .getAllByText("test1")
+      .find((element) => element.tagName.toLowerCase() === "div")
+      ?.closest("div.rounded-2xl");
+    expect(test1Card).not.toBeNull();
+    await user.click(
+      within(test1Card as HTMLElement).getByRole("button", { name: "Convert to test" }),
+    );
+
+    await waitFor(() => {
+      const testStudentsSection = screen.getByText("Test Students").closest("section");
+      expect(testStudentsSection).not.toBeNull();
+      expect(within(testStudentsSection as HTMLElement).getByText("test1")).toBeInTheDocument();
+      expect(screen.getByRole("button", { name: "Delete test profile" })).toBeInTheDocument();
+    });
+
+    expect(confirmSpy).toHaveBeenCalledOnce();
+    confirmSpy.mockRestore();
+  });
+
+  it("can enable smart retry for a test profile from hidden admin", async () => {
+    const user = userEvent.setup();
+    const router = createMemoryRouter(routes, {
+      initialEntries: ["/"],
+    });
+    const services = await createAppServices(new MemoryStorageService());
+
+    await services.studentProfileService.createProfile("Test Student", "6", undefined, {
+      profileType: "test",
+    });
+
+    render(
+      <AppServicesProvider services={services}>
+        <TestModeProvider>
+          <RouterProvider router={router} />
+        </TestModeProvider>
+      </AppServicesProvider>,
+    );
+
+    const titleButton = await screen.findByRole("button", { name: "School Prep Assistant" });
+    for (let count = 0; count < 5; count += 1) {
+      await user.click(titleButton);
+    }
+
+    const featureFlagsSection = screen.getByText("Feature Flags").closest("section");
+    expect(featureFlagsSection).not.toBeNull();
+    const toggle = within(featureFlagsSection as HTMLElement).getByRole("checkbox");
+    expect(toggle).not.toBeChecked();
+
+    await user.click(toggle);
+
+    await waitFor(() => {
+      expect(toggle).toBeChecked();
+      expect(screen.getByText("enabled")).toBeInTheDocument();
+    });
   });
 });

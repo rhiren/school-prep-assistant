@@ -74,6 +74,8 @@ interface StudentProfilesContextValue {
       featureFlags?: StudentFeatureFlags;
     },
   ) => Promise<void>;
+  convertStudentProfileToTest: (studentId: string) => Promise<void>;
+  setTestStudentFeatureFlag: (studentId: string, featureName: string, enabled: boolean) => Promise<void>;
   deleteTestStudentProfile: (studentId: string) => Promise<void>;
 }
 
@@ -247,6 +249,26 @@ export function AppServicesProvider({
           options,
         );
         setProfiles(await resolvedServices.studentProfileService.listProfiles());
+      },
+      convertStudentProfileToTest: async (studentId: string) => {
+        const updatedProfile = await resolvedServices.studentProfileService.convertProfileToTest(
+          studentId,
+        );
+        setProfiles(await resolvedServices.studentProfileService.listProfiles());
+        if (updatedProfile.isActive) {
+          setActiveProfile(updatedProfile);
+        }
+      },
+      setTestStudentFeatureFlag: async (studentId: string, featureName: string, enabled: boolean) => {
+        const updatedProfile = await resolvedServices.studentProfileService.setTestProfileFeatureFlag(
+          studentId,
+          featureName,
+          enabled,
+        );
+        setProfiles(await resolvedServices.studentProfileService.listProfiles());
+        if (updatedProfile.isActive) {
+          setActiveProfile(updatedProfile);
+        }
       },
       deleteTestStudentProfile: async (studentId: string) => {
         await resolvedServices.studentProfileService.deleteTestProfile(studentId);
