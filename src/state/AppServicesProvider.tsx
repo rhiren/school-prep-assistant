@@ -32,6 +32,11 @@ import { LocalProgressService } from "../services/progressService";
 import { LocalSessionService } from "../services/sessionService";
 import { LocalStudentProfileService } from "../services/studentProfileService";
 import {
+  FirestoreRemoteDiagnosticsClient,
+  RemoteDiagnosticsManager,
+  type RemoteDiagnosticsSettings,
+} from "../services/remoteDiagnostics";
+import {
   syncDiagnosticsStore,
   type SyncDiagnosticEntry,
 } from "../services/syncDiagnostics";
@@ -63,11 +68,18 @@ export interface AppServices {
   dataTransferService: DataTransferServiceContract;
   studentProfileService: StudentProfileService;
   progressSyncManager?: ProgressSyncManager;
+  remoteDiagnosticsManager?: RemoteDiagnosticsManager;
 }
 
 const AppServicesContext = createContext<AppServices | null>(null);
 const ProgressSyncStatusContext = createContext<ProgressSyncStatus>("offline");
 const SyncDiagnosticsContext = createContext<SyncDiagnosticEntry[]>([]);
+const RemoteDiagnosticsContext = createContext<{
+  settings: RemoteDiagnosticsSettings;
+  setEnabled: (enabled: boolean) => Promise<void>;
+  setDeviceLabel: (deviceLabel: string) => Promise<void>;
+  uploadNow: () => Promise<void>;
+} | null>(null);
 interface StudentProfilesContextValue {
   profiles: StudentProfile[];
   activeProfile: StudentProfile | null;
@@ -91,6 +103,7 @@ const StudentProfilesContext = createContext<StudentProfilesContextValue | null>
 interface CreateAppServicesOptions {
   progressSyncManager?: ProgressSyncManager;
   studentProfileService?: StudentProfileService;
+  remoteDiagnosticsManager?: RemoteDiagnosticsManager;
 }
 
 export async function createAppServices(
@@ -101,6 +114,12 @@ export async function createAppServices(
   const studentProfileService =
     options.studentProfileService ??
     new LocalStudentProfileService(new StudentProfileRepository(store), store);
+  const remoteDiagnosticsManager =
+    options.remoteDiagnosticsManager ??
+    new RemoteDiagnosticsManager(
+      new FirestoreRemoteDiagnosticsClient(null),
+      async () => studentProfileService.getActiveProfile(),
+    );
   const sessionRepository = new SessionRepository(store, studentProfileService);
   const attemptRepository = new AttemptRepository(store, studentProfileService);
   const progressRepository = new ProgressRepository(store, studentProfileService);
@@ -140,6 +159,7 @@ export async function createAppServices(
     dataTransferService,
     studentProfileService,
     progressSyncManager: options.progressSyncManager,
+    remoteDiagnosticsManager,
   };
 }
 
@@ -158,9 +178,14 @@ async function createDefaultAppServices(): Promise<AppServices> {
     new DataTransferService(store, studentProfileServiceWithStorage),
     () => studentProfileServiceWithStorage.getActiveStudentId(),
   );
+  const remoteDiagnosticsManager = new RemoteDiagnosticsManager(
+    new FirestoreRemoteDiagnosticsClient(),
+    async () => studentProfileServiceWithStorage.getActiveProfile(),
+  );
   const services = await createAppServices(store, {
     progressSyncManager,
     studentProfileService: studentProfileServiceWithStorage,
+    remoteDiagnosticsManager,
   });
   await progressSyncManager.initialize();
   return services;
@@ -178,6 +203,16 @@ export function AppServicesProvider({
   const [activeProfile, setActiveProfile] = useState<StudentProfile | null>(null);
   const [syncDiagnostics, setSyncDiagnostics] = useState<SyncDiagnosticEntry[]>(
     syncDiagnosticsStore.getEntries(),
+  );
+  const [remoteDiagnosticsSettings, setRemoteDiagnosticsSettings] = useState<RemoteDiagnosticsSettings>(
+    providedServices?.remoteDiagnosticsManager?.getSettings() ?? {
+      deviceId: "unavailable",
+      deviceLabel: "This device",
+      enabled: false,
+      status: "unavailable",
+      lastUploadedAt: null,
+      lastError: null,
+    },
   );
 
   useEffect(() => {
@@ -211,6 +246,15 @@ export function AppServicesProvider({
   useEffect(() => {
     return syncDiagnosticsStore.subscribe(setSyncDiagnostics);
   }, []);
+
+  useEffect(() => {
+    if (!services?.remoteDiagnosticsManager) {
+      return;
+    }
+
+    setRemoteDiagnosticsSettings(services.remoteDiagnosticsManager.getSettings());
+    return services.remoteDiagnosticsManager.subscribe(setRemoteDiagnosticsSettings);
+  }, [services]);
 
   useEffect(() => {
     if (!services) {
@@ -302,14 +346,28 @@ export function AppServicesProvider({
     return <div className="app-shell"><div className="panel panel-padding">Loading app data...</div></div>;
   }
 
+  const remoteDiagnosticsValue = resolvedServices.remoteDiagnosticsManager
+    ? {
+        settings: remoteDiagnosticsSettings,
+        setEnabled: (enabled: boolean) =>
+          resolvedServices.remoteDiagnosticsManager?.setEnabled(enabled) ?? Promise.resolve(),
+        setDeviceLabel: (deviceLabel: string) =>
+          resolvedServices.remoteDiagnosticsManager?.setDeviceLabel(deviceLabel) ?? Promise.resolve(),
+        uploadNow: () =>
+          resolvedServices.remoteDiagnosticsManager?.uploadNow() ?? Promise.resolve(),
+      }
+    : null;
+
   return (
     <ProgressSyncStatusContext.Provider value={syncStatus}>
       <SyncDiagnosticsContext.Provider value={syncDiagnostics}>
-        <StudentProfilesContext.Provider value={studentProfilesValue}>
-          <AppServicesContext.Provider value={resolvedServices}>
-            {children}
-          </AppServicesContext.Provider>
-        </StudentProfilesContext.Provider>
+        <RemoteDiagnosticsContext.Provider value={remoteDiagnosticsValue}>
+          <StudentProfilesContext.Provider value={studentProfilesValue}>
+            <AppServicesContext.Provider value={resolvedServices}>
+              {children}
+            </AppServicesContext.Provider>
+          </StudentProfilesContext.Provider>
+        </RemoteDiagnosticsContext.Provider>
       </SyncDiagnosticsContext.Provider>
     </ProgressSyncStatusContext.Provider>
   );
@@ -330,6 +388,15 @@ export function useProgressSyncStatus(): ProgressSyncStatus {
 
 export function useSyncDiagnostics(): SyncDiagnosticEntry[] {
   return useContext(SyncDiagnosticsContext);
+}
+
+export function useRemoteDiagnostics() {
+  const value = useContext(RemoteDiagnosticsContext);
+  if (!value) {
+    throw new Error("RemoteDiagnosticsContext is missing.");
+  }
+
+  return value;
 }
 
 export function useStudentProfiles(): StudentProfilesContextValue {

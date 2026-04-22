@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { APP_VERSION } from "../app/version";
 import {
+  useRemoteDiagnostics,
   useStudentProfiles,
   useSyncDiagnostics,
 } from "../state/AppServicesProvider";
@@ -16,6 +17,7 @@ const navItems = [
 export function AppLayout() {
   const { isTestMode } = useTestMode();
   const syncDiagnostics = useSyncDiagnostics();
+  const remoteDiagnostics = useRemoteDiagnostics();
   const {
     activeProfile,
     convertStudentProfileToTest,
@@ -220,6 +222,74 @@ export function AppLayout() {
                       </div>
                     ))
                   )}
+                </div>
+              </section>
+
+              <section className="rounded-2xl border border-stone-200 bg-white p-4 sm:col-span-2">
+                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                  Remote Diagnostics
+                </div>
+                <div className="mt-3 space-y-3">
+                  <div className="rounded-2xl border border-stone-200 bg-stone-50 p-3">
+                    <div className="text-sm font-medium text-ink">
+                      {remoteDiagnostics.settings.deviceLabel}
+                    </div>
+                    <div className="mt-1 text-xs uppercase tracking-[0.16em] text-stone-500">
+                      {remoteDiagnostics.settings.deviceId}
+                    </div>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      <button
+                        className="secondary-link"
+                        onClick={() => {
+                          const nextLabel = window.prompt(
+                            "Set a label for this device in remote diagnostics",
+                            remoteDiagnostics.settings.deviceLabel,
+                          );
+                          if (nextLabel) {
+                            void remoteDiagnostics.setDeviceLabel(nextLabel);
+                          }
+                        }}
+                        type="button"
+                      >
+                        Rename device
+                      </button>
+                      <button
+                        className="secondary-link"
+                        onClick={() => void remoteDiagnostics.setEnabled(!remoteDiagnostics.settings.enabled)}
+                        type="button"
+                      >
+                        {remoteDiagnostics.settings.enabled
+                          ? "Disable remote diagnostics"
+                          : "Enable remote diagnostics"}
+                      </button>
+                      <button
+                        className="secondary-link"
+                        disabled={!remoteDiagnostics.settings.enabled}
+                        onClick={() => void remoteDiagnostics.uploadNow()}
+                        type="button"
+                      >
+                        Upload now
+                      </button>
+                    </div>
+                    <div className="mt-3 space-y-1 text-sm text-stone-600">
+                      <p>Status: {remoteDiagnostics.settings.status}</p>
+                      <p>
+                        Last uploaded:{" "}
+                        {remoteDiagnostics.settings.lastUploadedAt
+                          ? new Date(remoteDiagnostics.settings.lastUploadedAt).toLocaleString()
+                          : "Not yet uploaded"}
+                      </p>
+                      {remoteDiagnostics.settings.lastError ? (
+                        <p className="text-red-700">
+                          Last upload error: {remoteDiagnostics.settings.lastError}
+                        </p>
+                      ) : null}
+                    </div>
+                    <p className="mt-3 text-xs text-stone-500">
+                      Hidden admin only. Uploads recent sync diagnostics for this device to Firebase
+                      so issues can be triaged remotely.
+                    </p>
+                  </div>
                 </div>
               </section>
 

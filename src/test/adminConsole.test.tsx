@@ -15,6 +15,7 @@ import { MemoryStorageService } from "../storage/memoryStorageService";
 describe("admin console", () => {
   beforeEach(() => {
     syncDiagnosticsStore.clear();
+    window.localStorage.clear();
   });
 
   it("opens from the hidden title gesture and manages only test students", async () => {
@@ -46,6 +47,7 @@ describe("admin console", () => {
 
     expect(await screen.findByText("Admin Console")).toBeInTheDocument();
     expect(screen.getByText(APP_VERSION)).toBeInTheDocument();
+    expect(screen.getByText("Remote Diagnostics")).toBeInTheDocument();
     expect(screen.getByText("Sync Diagnostics")).toBeInTheDocument();
     expect(screen.getAllByText("smartRetry").length).toBeGreaterThan(0);
     expect(screen.getAllByText("enabled").length).toBeGreaterThan(0);
