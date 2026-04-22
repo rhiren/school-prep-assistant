@@ -23,6 +23,10 @@ import {
 import type { StudentProfile } from "../domain/models";
 import { db } from "./firebase";
 import { normalizeStudentProfile } from "./studentProfileService";
+import {
+  getSyncDiagnosticErrorDetails,
+  syncDiagnosticsStore,
+} from "./syncDiagnostics";
 
 const LEGACY_PROGRESS_SYNC_USER_ID = "daughter-1";
 const STUDENT_ROSTER_SYNC_PATH = ["sync", "student_roster"] as const;
@@ -203,6 +207,48 @@ function buildStudentProfileFromProgressFallback(
   });
 }
 
+function recordProfileSyncInfo(message: string, details?: Record<string, unknown>): void {
+  syncDiagnosticsStore.record({
+    severity: "info",
+    source: "profile-sync",
+    message,
+    details,
+  });
+}
+
+function recordProfileSyncError(message: string, error: unknown, details?: Record<string, unknown>): void {
+  syncDiagnosticsStore.record({
+    severity: "error",
+    source: "profile-sync",
+    message,
+    details: {
+      ...details,
+      ...getSyncDiagnosticErrorDetails(error),
+    },
+  });
+}
+
+function recordProgressSyncInfo(message: string, details?: Record<string, unknown>): void {
+  syncDiagnosticsStore.record({
+    severity: "info",
+    source: "progress-sync",
+    message,
+    details,
+  });
+}
+
+function recordProgressSyncError(message: string, error: unknown, details?: Record<string, unknown>): void {
+  syncDiagnosticsStore.record({
+    severity: "error",
+    source: "progress-sync",
+    message,
+    details: {
+      ...details,
+      ...getSyncDiagnosticErrorDetails(error),
+    },
+  });
+}
+
 export class FirestoreProgressSyncClient implements ProgressSyncClient {
   constructor(private readonly firestore: Firestore | null = db) {}
 
@@ -217,6 +263,12 @@ export class FirestoreProgressSyncClient implements ProgressSyncClient {
 
     const documentRef = doc(this.firestore, "students", studentId, "progress", "current");
     const snapshot = sanitizeProgressSnapshotForCloud(progressData);
+    recordProgressSyncInfo("Attempting Firestore progress write.", {
+      studentId,
+      sessionCount: snapshot.data.sessions.length,
+      attemptCount: snapshot.data.attempts.length,
+      progressCount: snapshot.data.progress.length,
+    });
     await setDoc(
       documentRef,
       {
@@ -229,6 +281,10 @@ export class FirestoreProgressSyncClient implements ProgressSyncClient {
       },
       { merge: true },
     );
+    recordProgressSyncInfo("Firestore progress write succeeded.", {
+      studentId,
+      lastModified: getProgressSnapshotLastModified(snapshot),
+    });
   }
 
   async loadProgressFromCloud(studentId: string): Promise<CloudProgressDocument | null> {
@@ -237,9 +293,11 @@ export class FirestoreProgressSyncClient implements ProgressSyncClient {
     }
 
     const documentRef = doc(this.firestore, "students", studentId, "progress", "current");
+    recordProgressSyncInfo("Loading cloud progress document.", { studentId });
     const snapshot = await getDoc(documentRef);
 
     if (snapshot.exists()) {
+      recordProgressSyncInfo("Loaded cloud progress document.", { studentId });
       return parseCloudProgressDocument(snapshot.data());
     }
 
@@ -253,6 +311,10 @@ export class FirestoreProgressSyncClient implements ProgressSyncClient {
       return null;
     }
 
+    recordProgressSyncInfo("Loaded legacy cloud progress fallback.", {
+      studentId,
+      legacyUserId: LEGACY_PROGRESS_SYNC_USER_ID,
+    });
     return parseCloudProgressDocument(legacySnapshot.data());
   }
 }
@@ -274,7 +336,12 @@ export class FirestoreStudentProfileSyncClient implements StudentProfileSyncClie
       if (rosterProfiles.length > 0) {
         return rosterProfiles;
       }
-    } catch {
+      recordProfileSyncInfo("Cloud student roster is empty. Falling back to legacy discovery.");
+    } catch (error) {
+      recordProfileSyncError(
+        "Cloud student roster read failed. Falling back to legacy discovery.",
+        error,
+      );
       // Fall through to legacy discovery so source devices can still republish local profiles.
     }
 
@@ -286,6 +353,11 @@ export class FirestoreStudentProfileSyncClient implements StudentProfileSyncClie
       throw new Error("Firebase sync is not configured.");
     }
 
+    recordProfileSyncInfo("Attempting cloud student profile sync.", {
+      studentId: profile.studentId,
+      displayName: profile.displayName,
+      profileType: profile.profileType ?? "production",
+    });
     await this.saveProfileToRoster(profile);
     await setDoc(
       doc(this.firestore, "students", profile.studentId, "profile", "current"),
@@ -296,6 +368,10 @@ export class FirestoreStudentProfileSyncClient implements StudentProfileSyncClie
       },
       { merge: true },
     );
+    recordProfileSyncInfo("Cloud student profile sync succeeded.", {
+      studentId: profile.studentId,
+      displayName: profile.displayName,
+    });
   }
 
   async deleteProfileFromCloud(studentId: string): Promise<void> {
@@ -303,11 +379,13 @@ export class FirestoreStudentProfileSyncClient implements StudentProfileSyncClie
       throw new Error("Firebase sync is not configured.");
     }
 
+    recordProfileSyncInfo("Deleting cloud student profile.", { studentId });
     await this.removeProfileFromRoster(studentId);
     await Promise.all([
       deleteDoc(doc(this.firestore, "students", studentId, "profile", "current")),
       deleteDoc(doc(this.firestore, "students", studentId, "progress", "current")),
     ]);
+    recordProfileSyncInfo("Cloud student profile deleted.", { studentId });
   }
 
   private async loadProfilesFromRoster(): Promise<StudentProfile[]> {
@@ -315,12 +393,23 @@ export class FirestoreStudentProfileSyncClient implements StudentProfileSyncClie
       return [];
     }
 
+    recordProfileSyncInfo("Loading shared student roster.", {
+      path: STUDENT_ROSTER_SYNC_PATH.join("/"),
+    });
     const rosterSnapshot = await getDoc(doc(this.firestore, ...STUDENT_ROSTER_SYNC_PATH));
     if (!rosterSnapshot.exists()) {
+      recordProfileSyncInfo("Shared student roster not found.", {
+        path: STUDENT_ROSTER_SYNC_PATH.join("/"),
+      });
       return [];
     }
 
-    return parseCloudStudentRosterDocument(rosterSnapshot.data());
+    const profiles = parseCloudStudentRosterDocument(rosterSnapshot.data());
+    recordProfileSyncInfo("Loaded shared student roster.", {
+      path: STUDENT_ROSTER_SYNC_PATH.join("/"),
+      profileCount: profiles.length,
+    });
+    return profiles;
   }
 
   private async loadProfilesFromLegacyDiscovery(): Promise<StudentProfile[]> {
@@ -329,6 +418,7 @@ export class FirestoreStudentProfileSyncClient implements StudentProfileSyncClie
     }
 
     try {
+      recordProfileSyncInfo("Attempting legacy cloud profile discovery.");
       const profilesById = new Map<string, StudentProfile>();
       const [profileSnapshot, progressSnapshot] = await Promise.all([
         getDocs(collectionGroup(this.firestore, "profile")),
@@ -362,7 +452,8 @@ export class FirestoreStudentProfileSyncClient implements StudentProfileSyncClie
       return [...profilesById.values()].sort((left, right) =>
         left.createdAt.localeCompare(right.createdAt),
       );
-    } catch {
+    } catch (error) {
+      recordProfileSyncError("Legacy cloud profile discovery failed.", error);
       return [];
     }
   }
@@ -391,6 +482,11 @@ export class FirestoreStudentProfileSyncClient implements StudentProfileSyncClie
         serverUpdatedAt: serverTimestamp(),
       }),
     );
+    recordProfileSyncInfo("Updated shared student roster.", {
+      path: STUDENT_ROSTER_SYNC_PATH.join("/"),
+      profileCount: profilesById.size,
+      studentId: profile.studentId,
+    });
   }
 
   private async removeProfileFromRoster(studentId: string): Promise<void> {
@@ -410,6 +506,11 @@ export class FirestoreStudentProfileSyncClient implements StudentProfileSyncClie
         serverUpdatedAt: serverTimestamp(),
       }),
     );
+    recordProfileSyncInfo("Removed student from shared roster.", {
+      path: STUDENT_ROSTER_SYNC_PATH.join("/"),
+      studentId,
+      remainingProfileCount: existingProfiles.filter((profile) => profile.studentId !== studentId).length,
+    });
   }
 }
 
@@ -465,8 +566,10 @@ export class ProgressSyncManager {
   private async runSync(): Promise<void> {
     this.setStatus("syncing");
 
+    let studentId: string | null = null;
     try {
-      const studentId = await this.getActiveStudentId();
+      studentId = await this.getActiveStudentId();
+      recordProgressSyncInfo("Starting background progress sync.", { studentId });
       const localSnapshot = await this.dataTransferService.exportProgress();
       const localLastModified = getProgressSnapshotLastModified(localSnapshot);
       const cloudDocument = await this.client.loadProgressFromCloud(studentId);
@@ -475,6 +578,11 @@ export class ProgressSyncManager {
         const cloudLastModified = cloudDocument.lastModified;
         if (Date.parse(cloudLastModified) > Date.parse(localLastModified)) {
           await this.dataTransferService.importProgress(cloudDocument.snapshot);
+          recordProgressSyncInfo("Imported newer cloud progress snapshot.", {
+            studentId,
+            cloudLastModified,
+            localLastModified,
+          });
           this.setStatus("synced");
           return;
         }
@@ -484,8 +592,16 @@ export class ProgressSyncManager {
         await this.client.saveProgressToCloud(studentId, localSnapshot);
       }
 
+      recordProgressSyncInfo("Background progress sync completed.", {
+        studentId,
+        localLastModified,
+        wroteCloudSnapshot: hasSnapshotData(localSnapshot) || cloudDocument !== null,
+      });
       this.setStatus("synced");
-    } catch {
+    } catch (error) {
+      recordProgressSyncError("Background progress sync failed.", error, {
+        studentId: studentId ?? undefined,
+      });
       this.setStatus("offline");
     }
   }
@@ -671,7 +787,15 @@ export class SyncingStudentProfileService implements StudentProfileService {
 
       await this.mergeCloudProfilesIntoLocal(localProfilesById, cloudProfiles);
       await this.syncProfilesNow(await this.delegate.listProfiles());
-    } catch {
+      recordProfileSyncInfo("Completed cloud profile merge.", {
+        localProfileCount: localProfiles.length,
+        cloudProfileCount: cloudProfiles.length,
+      });
+    } catch (error) {
+      recordProfileSyncError(
+        "Cloud profile merge failed. Keeping local profiles only.",
+        error,
+      );
       // Keep local-first behavior if Firebase is unavailable.
     } finally {
       this.mergedCloudProfiles = true;
@@ -733,7 +857,11 @@ export class SyncingStudentProfileService implements StudentProfileService {
       .then(async () => {
         await this.syncClient.saveProfileToCloud(profile);
       })
-      .catch(() => undefined);
+      .catch((error) => {
+        recordProfileSyncError("Queued student profile sync failed.", error, {
+          studentId: profile.studentId,
+        });
+      });
   }
 
   private queueDeleteProfile(studentId: string): void {
@@ -746,6 +874,10 @@ export class SyncingStudentProfileService implements StudentProfileService {
       .then(async () => {
         await this.syncClient.deleteProfileFromCloud(studentId);
       })
-      .catch(() => undefined);
+      .catch((error) => {
+        recordProfileSyncError("Queued student profile delete failed.", error, {
+          studentId,
+        });
+      });
   }
 }

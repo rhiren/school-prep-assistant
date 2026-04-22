@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { APP_VERSION } from "../app/version";
-import { useStudentProfiles } from "../state/AppServicesProvider";
+import {
+  useStudentProfiles,
+  useSyncDiagnostics,
+} from "../state/AppServicesProvider";
 import { useTestMode } from "../state/TestModeProvider";
 
 const navItems = [
@@ -12,6 +15,7 @@ const navItems = [
 
 export function AppLayout() {
   const { isTestMode } = useTestMode();
+  const syncDiagnostics = useSyncDiagnostics();
   const {
     activeProfile,
     convertStudentProfileToTest,
@@ -213,6 +217,50 @@ export function AppLayout() {
                             Delete test profile
                           </button>
                         </div>
+                      </div>
+                    ))
+                  )}
+                </div>
+              </section>
+
+              <section className="rounded-2xl border border-stone-200 bg-white p-4 sm:col-span-2">
+                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                  Sync Diagnostics
+                </div>
+                <div className="mt-3 space-y-3">
+                  {syncDiagnostics.length === 0 ? (
+                    <p className="text-sm text-stone-600">No sync diagnostics captured yet.</p>
+                  ) : (
+                    syncDiagnostics.slice(0, 8).map((entry) => (
+                      <div
+                        className="rounded-2xl border border-stone-200 bg-stone-50 p-3"
+                        key={entry.id}
+                      >
+                        <div className="flex flex-wrap items-center justify-between gap-3">
+                          <div className="flex flex-wrap items-center gap-2">
+                            <span
+                              className={`rounded-full px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] ${
+                                entry.severity === "error"
+                                  ? "bg-red-100 text-red-700"
+                                  : "bg-stone-200 text-stone-700"
+                              }`}
+                            >
+                              {entry.severity}
+                            </span>
+                            <span className="text-xs uppercase tracking-[0.16em] text-stone-500">
+                              {entry.source}
+                            </span>
+                          </div>
+                          <span className="text-xs text-stone-500">
+                            {new Date(entry.timestamp).toLocaleString()}
+                          </span>
+                        </div>
+                        <p className="mt-3 text-sm font-medium text-ink">{entry.message}</p>
+                        {entry.details ? (
+                          <pre className="mt-3 overflow-auto rounded-xl bg-white p-3 text-xs text-stone-600">
+                            {JSON.stringify(entry.details, null, 2)}
+                          </pre>
+                        ) : null}
                       </div>
                     ))
                   )}

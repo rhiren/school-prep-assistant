@@ -1,9 +1,10 @@
 import { render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { RouterProvider, createMemoryRouter } from "react-router-dom";
-import { describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { APP_VERSION } from "../app/version";
 import { routes } from "../app/router";
+import { syncDiagnosticsStore } from "../services/syncDiagnostics";
 import {
   AppServicesProvider,
   createAppServices,
@@ -12,6 +13,10 @@ import { TestModeProvider } from "../state/TestModeProvider";
 import { MemoryStorageService } from "../storage/memoryStorageService";
 
 describe("admin console", () => {
+  beforeEach(() => {
+    syncDiagnosticsStore.clear();
+  });
+
   it("opens from the hidden title gesture and manages only test students", async () => {
     const user = userEvent.setup();
     const router = createMemoryRouter(routes, {
@@ -41,6 +46,7 @@ describe("admin console", () => {
 
     expect(await screen.findByText("Admin Console")).toBeInTheDocument();
     expect(screen.getByText(APP_VERSION)).toBeInTheDocument();
+    expect(screen.getByText("Sync Diagnostics")).toBeInTheDocument();
     expect(screen.getAllByText("smartRetry").length).toBeGreaterThan(0);
     expect(screen.getAllByText("enabled").length).toBeGreaterThan(0);
     expect(screen.getAllByRole("button", { name: "Delete test profile" })).toHaveLength(1);
@@ -137,5 +143,38 @@ describe("admin console", () => {
       expect(toggle).toBeChecked();
       expect(screen.getByText("enabled")).toBeInTheDocument();
     });
+  });
+
+  it("shows captured sync diagnostics in hidden admin", async () => {
+    const user = userEvent.setup();
+    const router = createMemoryRouter(routes, {
+      initialEntries: ["/"],
+    });
+    const services = await createAppServices(new MemoryStorageService());
+
+    syncDiagnosticsStore.record({
+      severity: "error",
+      source: "profile-sync",
+      message: "Cloud student roster read failed.",
+      details: {
+        code: "permission-denied",
+      },
+    });
+
+    render(
+      <AppServicesProvider services={services}>
+        <TestModeProvider>
+          <RouterProvider router={router} />
+        </TestModeProvider>
+      </AppServicesProvider>,
+    );
+
+    const titleButton = await screen.findByRole("button", { name: "School Prep Assistant" });
+    for (let count = 0; count < 5; count += 1) {
+      await user.click(titleButton);
+    }
+
+    expect(await screen.findByText("Cloud student roster read failed.")).toBeInTheDocument();
+    expect(screen.getByText(/permission-denied/)).toBeInTheDocument();
   });
 });

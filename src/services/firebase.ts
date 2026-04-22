@@ -1,5 +1,9 @@
 import { initializeApp, type FirebaseApp } from "firebase/app";
 import { getFirestore, type Firestore } from "firebase/firestore";
+import {
+  getSyncDiagnosticErrorDetails,
+  syncDiagnosticsStore,
+} from "./syncDiagnostics";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY ?? "AIzaSyB-u4aI6K8o0cCrFoVzxn971uLAY8CIOuA",
@@ -12,8 +16,35 @@ function isPlaceholderConfig(config: typeof firebaseConfig): boolean {
 }
 
 export const isFirebaseConfigured = !isPlaceholderConfig(firebaseConfig);
-export const firebaseApp: FirebaseApp | null = isFirebaseConfigured
-  ? initializeApp(firebaseConfig)
-  : null;
+let firebaseApp: FirebaseApp | null = null;
+let db: Firestore | null = null;
 
-export const db: Firestore | null = firebaseApp ? getFirestore(firebaseApp) : null;
+if (!isFirebaseConfigured) {
+  syncDiagnosticsStore.record({
+    severity: "info",
+    source: "firebase-init",
+    message: "Firebase config missing. App is running local-first only.",
+  });
+} else {
+  try {
+    firebaseApp = initializeApp(firebaseConfig);
+    db = getFirestore(firebaseApp);
+    syncDiagnosticsStore.record({
+      severity: "info",
+      source: "firebase-init",
+      message: "Firebase initialized successfully.",
+      details: {
+        projectId: firebaseConfig.projectId,
+      },
+    });
+  } catch (error) {
+    syncDiagnosticsStore.record({
+      severity: "error",
+      source: "firebase-init",
+      message: "Firebase initialization failed.",
+      details: getSyncDiagnosticErrorDetails(error),
+    });
+  }
+}
+
+export { firebaseApp, db };

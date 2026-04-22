@@ -31,6 +31,10 @@ import {
 import { LocalProgressService } from "../services/progressService";
 import { LocalSessionService } from "../services/sessionService";
 import { LocalStudentProfileService } from "../services/studentProfileService";
+import {
+  syncDiagnosticsStore,
+  type SyncDiagnosticEntry,
+} from "../services/syncDiagnostics";
 import { IndexedDBStorageService } from "../storage/indexedDbStorageService";
 import { MemoryStorageService } from "../storage/memoryStorageService";
 import {
@@ -63,6 +67,7 @@ export interface AppServices {
 
 const AppServicesContext = createContext<AppServices | null>(null);
 const ProgressSyncStatusContext = createContext<ProgressSyncStatus>("offline");
+const SyncDiagnosticsContext = createContext<SyncDiagnosticEntry[]>([]);
 interface StudentProfilesContextValue {
   profiles: StudentProfile[];
   activeProfile: StudentProfile | null;
@@ -171,6 +176,9 @@ export function AppServicesProvider({
   );
   const [profiles, setProfiles] = useState<StudentProfile[]>([]);
   const [activeProfile, setActiveProfile] = useState<StudentProfile | null>(null);
+  const [syncDiagnostics, setSyncDiagnostics] = useState<SyncDiagnosticEntry[]>(
+    syncDiagnosticsStore.getEntries(),
+  );
 
   useEffect(() => {
     if (providedServices) {
@@ -199,6 +207,10 @@ export function AppServicesProvider({
 
     return services.progressSyncManager.subscribe(setSyncStatus);
   }, [services]);
+
+  useEffect(() => {
+    return syncDiagnosticsStore.subscribe(setSyncDiagnostics);
+  }, []);
 
   useEffect(() => {
     if (!services) {
@@ -292,11 +304,13 @@ export function AppServicesProvider({
 
   return (
     <ProgressSyncStatusContext.Provider value={syncStatus}>
-      <StudentProfilesContext.Provider value={studentProfilesValue}>
-        <AppServicesContext.Provider value={resolvedServices}>
-          {children}
-        </AppServicesContext.Provider>
-      </StudentProfilesContext.Provider>
+      <SyncDiagnosticsContext.Provider value={syncDiagnostics}>
+        <StudentProfilesContext.Provider value={studentProfilesValue}>
+          <AppServicesContext.Provider value={resolvedServices}>
+            {children}
+          </AppServicesContext.Provider>
+        </StudentProfilesContext.Provider>
+      </SyncDiagnosticsContext.Provider>
     </ProgressSyncStatusContext.Provider>
   );
 }
@@ -312,6 +326,10 @@ export function useAppServices(): AppServices {
 
 export function useProgressSyncStatus(): ProgressSyncStatus {
   return useContext(ProgressSyncStatusContext);
+}
+
+export function useSyncDiagnostics(): SyncDiagnosticEntry[] {
+  return useContext(SyncDiagnosticsContext);
 }
 
 export function useStudentProfiles(): StudentProfilesContextValue {
