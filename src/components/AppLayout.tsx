@@ -354,6 +354,9 @@ export function AppLayout() {
                           <div>
                             <div className="font-medium text-ink">{profile.displayName}</div>
                             <div className="mt-1 text-xs uppercase tracking-[0.16em] text-stone-500">
+                              {profile.studentId}
+                            </div>
+                            <div className="mt-1 text-xs uppercase tracking-[0.16em] text-stone-500">
                               {profile.profileType ?? "production"} profile
                             </div>
                           </div>

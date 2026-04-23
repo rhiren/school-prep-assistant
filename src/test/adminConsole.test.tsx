@@ -25,7 +25,7 @@ describe("admin console", () => {
     });
     const services = await createAppServices(new MemoryStorageService());
 
-    await services.studentProfileService.createProfile("Test Student", "6", undefined, {
+    const testProfile = await services.studentProfileService.createProfile("Test Student", "6", undefined, {
       profileType: "test",
       featureFlags: {
         smartRetry: true,
@@ -49,6 +49,8 @@ describe("admin console", () => {
     expect(screen.getByText(APP_VERSION)).toBeInTheDocument();
     expect(screen.getByText("Remote Diagnostics")).toBeInTheDocument();
     expect(screen.getByText("Sync Diagnostics")).toBeInTheDocument();
+    expect(screen.getAllByText("student-1").length).toBeGreaterThan(0);
+    expect(screen.getAllByText(testProfile.studentId).length).toBeGreaterThan(0);
     expect(screen.getAllByText("smartRetry").length).toBeGreaterThan(0);
     expect(screen.getAllByText("enabled").length).toBeGreaterThan(0);
     expect(screen.getAllByRole("button", { name: "Delete test profile" })).toHaveLength(1);
