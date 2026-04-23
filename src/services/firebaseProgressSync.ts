@@ -80,6 +80,41 @@ function hasSnapshotData(snapshot: ProgressSnapshot): boolean {
   );
 }
 
+function hasDerivedProgress(snapshot: ProgressSnapshot): boolean {
+  return snapshot.data.attempts.length > 0 || snapshot.data.progress.length > 0;
+}
+
+function getAnsweredResponseCount(snapshot: ProgressSnapshot): number {
+  return snapshot.data.sessions.reduce((total, session) => {
+    return (
+      total +
+      Object.values(session.answers ?? {}).filter(
+        (answer) => typeof answer?.response === "string" && answer.response.trim() !== "",
+      ).length
+    );
+  }, 0);
+}
+
+function shouldPreferCloudSnapshot(
+  localSnapshot: ProgressSnapshot,
+  cloudSnapshot: ProgressSnapshot,
+): boolean {
+  const localLastModified = Date.parse(getProgressSnapshotLastModified(localSnapshot));
+  const cloudLastModified = Date.parse(getProgressSnapshotLastModified(cloudSnapshot));
+
+  if (cloudLastModified > localLastModified) {
+    return true;
+  }
+
+  // For unsubmitted work, prefer the snapshot with more answered responses so a
+  // newer empty local session does not override richer cloud resume state.
+  if (!hasDerivedProgress(localSnapshot) && !hasDerivedProgress(cloudSnapshot)) {
+    return getAnsweredResponseCount(cloudSnapshot) > getAnsweredResponseCount(localSnapshot);
+  }
+
+  return false;
+}
+
 function isCloudProgressDocument(value: unknown): value is CloudProgressDocument {
   if (typeof value !== "object" || value === null) {
     return false;
@@ -576,12 +611,14 @@ export class ProgressSyncManager {
 
       if (cloudDocument) {
         const cloudLastModified = cloudDocument.lastModified;
-        if (Date.parse(cloudLastModified) > Date.parse(localLastModified)) {
+        if (shouldPreferCloudSnapshot(localSnapshot, cloudDocument.snapshot)) {
           await this.dataTransferService.importProgress(cloudDocument.snapshot);
           recordProgressSyncInfo("Imported newer cloud progress snapshot.", {
             studentId,
             cloudLastModified,
             localLastModified,
+            cloudAnsweredResponses: getAnsweredResponseCount(cloudDocument.snapshot),
+            localAnsweredResponses: getAnsweredResponseCount(localSnapshot),
           });
           this.setStatus("synced");
           return;

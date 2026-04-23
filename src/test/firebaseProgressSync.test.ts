@@ -12,7 +12,7 @@ import {
 } from "../services/firebaseProgressSync";
 import { DEFAULT_STUDENT_ID } from "../services/studentProfileService";
 import type { ProgressService, SessionService } from "../services/contracts";
-import type { AnswerRecord, ProgressRecord, TestAttempt } from "../domain/models";
+import type { AnswerRecord, ProgressRecord, TestAttempt, TestSession } from "../domain/models";
 import { MemoryStorageService } from "../storage/memoryStorageService";
 import { STORE_NAMES } from "../storage/repositories";
 
@@ -36,6 +36,47 @@ function buildSnapshot(exportedAt: string, score: number): ProgressSnapshot {
           lastModified: exportedAt,
         },
       ],
+    },
+  };
+}
+
+function buildInProgressSnapshot(
+  updatedAt: string,
+  answeredResponses: string[],
+): ProgressSnapshot {
+  const answers = Object.fromEntries(
+    answeredResponses.map((response, index) => [
+      `question-${index + 1}`,
+      {
+        questionId: `question-${index + 1}`,
+        response,
+        answeredAt: updatedAt,
+      },
+    ]),
+  );
+
+  return {
+    appVersion: "1.0.1",
+    exportedAt: updatedAt,
+    data: {
+      sessions: [
+        {
+          id: `session-${updatedAt}`,
+          studentId: DEFAULT_STUDENT_ID,
+          mode: "concept",
+          courseId: "course-2",
+          conceptId: "concept-ratios",
+          conceptIds: ["concept-ratios"],
+          questionIds: Array.from({ length: 50 }, (_, index) => `question-${index + 1}`),
+          answers,
+          currentQuestionIndex: answeredResponses.length,
+          status: "in_progress",
+          createdAt: updatedAt,
+          updatedAt,
+        } satisfies TestSession,
+      ],
+      attempts: [],
+      progress: [],
     },
   };
 }
@@ -120,6 +161,35 @@ describe("ProgressSyncManager", () => {
     const progress = await storage.getAll<ProgressRecord>(STORE_NAMES.progress);
     expect(progress[0]?.latestScore).toBe(70);
     expect(manager.getStatus()).toBe("offline");
+  });
+
+  it("prefers richer cloud in-progress work over a newer empty local session", async () => {
+    const storage = new MemoryStorageService();
+    const dataTransferService = new DataTransferService(storage);
+    const localSnapshot = buildInProgressSnapshot("2026-04-23T08:00:00.000Z", []);
+    const cloudSnapshot = buildInProgressSnapshot("2026-04-20T01:00:20.704Z", [
+      "3/5",
+      "4/11",
+      "2/3",
+    ]);
+
+    await dataTransferService.importProgress(localSnapshot);
+
+    const manager = new ProgressSyncManager(
+      new FakeProgressSyncClient({ cloudSnapshot }),
+      dataTransferService,
+      async () => DEFAULT_STUDENT_ID,
+    );
+
+    await manager.initialize();
+
+    const sessions = await storage.getAll<TestSession>(STORE_NAMES.sessions);
+    const restoredSession = sessions[0];
+
+    expect(restoredSession).toBeDefined();
+    expect(Object.keys(restoredSession?.answers ?? {})).toHaveLength(3);
+    expect(restoredSession?.currentQuestionIndex).toBe(3);
+    expect(manager.getStatus()).toBe("synced");
   });
 });
 
