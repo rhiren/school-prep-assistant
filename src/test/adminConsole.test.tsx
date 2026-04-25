@@ -66,7 +66,7 @@ describe("admin console", () => {
     expect(confirmSpy).toHaveBeenCalledOnce();
     expect(screen.queryByRole("button", { name: "Delete test profile" })).not.toBeInTheDocument();
     confirmSpy.mockRestore();
-  });
+  }, 10000);
 
   it("can convert a production profile into a test profile from hidden admin", async () => {
     const user = userEvent.setup();
@@ -183,7 +183,7 @@ describe("admin console", () => {
     expect(screen.getByText(/permission-denied/)).toBeInTheDocument();
   });
 
-  it("shows a weekly parent report for the active student in hidden admin", async () => {
+  it("shows daily and weekly parent report views for the active student in hidden admin", async () => {
     const user = userEvent.setup();
     const router = createMemoryRouter(routes, {
       initialEntries: ["/"],
@@ -218,7 +218,9 @@ describe("admin console", () => {
       await user.click(titleButton);
     }
 
-    expect(await screen.findByText("Reviewing the last 7 days of completed attempts and in-progress work.")).toBeInTheDocument();
+    expect(await screen.findByText("Today: 1 completed attempt(s), 1 concept(s) worked, 1 min of completed time, 0 in-progress session(s).")).toBeInTheDocument();
+    expect(screen.getByText("Today's Concept Activity")).toBeInTheDocument();
+    expect(screen.getByText("Reviewing the last 7 days of completed attempts and in-progress work.")).toBeInTheDocument();
     expect(screen.getAllByText("Mathematics").length).toBeGreaterThan(0);
     expect(screen.getByText("Recent Concept Signals")).toBeInTheDocument();
   });

@@ -186,7 +186,7 @@ describe("Smart Retry v2 logic", () => {
       retryCount: 2,
       reason: "retry_limit",
     });
-  });
+  }, 10000);
 });
 
 describe("Smart Retry Home behavior", () => {

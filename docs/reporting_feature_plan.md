@@ -165,6 +165,9 @@ Status:
 - `Phase 2A` implemented: hidden admin now shows a weekly parent report for the
   active student, grouped by subject and based on local-first progress plus the
   hidden duration signal
+- Daily parent summary also implemented in hidden admin for the active student,
+  focused on today's completed time, attempts, concepts worked, and in-progress
+  work
 - remaining Phase 2 work is mostly presentation polish, export options, and any
   future refinement to the "easy vs hard" heuristics
 

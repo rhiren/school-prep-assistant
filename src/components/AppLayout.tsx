@@ -7,8 +7,14 @@ import {
   useStudentProfiles,
   useSyncDiagnostics,
 } from "../state/AppServicesProvider";
-import type { WeeklyParentReport } from "../services/weeklyParentReport";
-import { buildWeeklyParentReport } from "../services/weeklyParentReport";
+import type {
+  DailyParentReport,
+  WeeklyParentReport,
+} from "../services/weeklyParentReport";
+import {
+  buildDailyParentReport,
+  buildWeeklyParentReport,
+} from "../services/weeklyParentReport";
 import { useTestMode } from "../state/TestModeProvider";
 
 const navItems = [
@@ -33,8 +39,9 @@ export function AppLayout() {
   } = useStudentProfiles();
   const [titleTapCount, setTitleTapCount] = useState(0);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
+  const [dailyReport, setDailyReport] = useState<DailyParentReport | null>(null);
   const [weeklyReport, setWeeklyReport] = useState<WeeklyParentReport | null>(null);
-  const [isWeeklyReportLoading, setIsWeeklyReportLoading] = useState(false);
+  const [isParentReportLoading, setIsParentReportLoading] = useState(false);
 
   const handleCreateStudent = async () => {
     const displayName = window.prompt("Add a student name");
@@ -81,7 +88,7 @@ export function AppLayout() {
     }
 
     let isMounted = true;
-    setIsWeeklyReportLoading(true);
+    setIsParentReportLoading(true);
 
     void Promise.all([
       dataTransferService.exportProgress(),
@@ -91,15 +98,17 @@ export function AppLayout() {
         return;
       }
 
+      setDailyReport(buildDailyParentReport(activeProfile, snapshot, courses));
       setWeeklyReport(buildWeeklyParentReport(activeProfile, snapshot, courses));
-      setIsWeeklyReportLoading(false);
+      setIsParentReportLoading(false);
     }).catch(() => {
       if (!isMounted) {
         return;
       }
 
+      setDailyReport(null);
       setWeeklyReport(null);
-      setIsWeeklyReportLoading(false);
+      setIsParentReportLoading(false);
     });
 
     return () => {
@@ -279,10 +288,113 @@ export function AppLayout() {
 
               <section className="rounded-2xl border border-stone-200 bg-white p-4 sm:col-span-2">
                 <div className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                  Daily Parent Summary
+                </div>
+                <div className="mt-3 space-y-3">
+                  {isParentReportLoading ? (
+                    <p className="text-sm text-stone-600">Loading daily summary...</p>
+                  ) : dailyReport && dailyReport.subjects.length > 0 ? (
+                    <>
+                      <div className="rounded-2xl border border-stone-200 bg-stone-50 p-3">
+                        <div className="text-sm font-medium text-ink">
+                          {dailyReport.studentDisplayName}
+                        </div>
+                        <p className="mt-1 text-sm text-stone-600">
+                          Today: {dailyReport.totalCompletedAttempts} completed attempt(s),{" "}
+                          {dailyReport.totalConceptsWorked} concept(s) worked,{" "}
+                          {formatDuration(dailyReport.totalCompletedTimeMs)} of completed time,{" "}
+                          {dailyReport.totalInProgressSessions} in-progress session(s).
+                        </p>
+                      </div>
+                      {dailyReport.subjects.map((subject) => (
+                        <div
+                          className="rounded-2xl border border-stone-200 bg-stone-50 p-4"
+                          key={subject.subjectId}
+                        >
+                          <div className="flex flex-wrap items-start justify-between gap-4">
+                            <div>
+                              <h3 className="text-lg font-semibold text-ink">{subject.subjectTitle}</h3>
+                              <p className="mt-1 text-sm text-stone-600">
+                                {subject.completedAttempts} completed attempt(s),{" "}
+                                {subject.conceptsWorked} concept(s) worked,{" "}
+                                {subject.inProgressSessionCount} in-progress session(s).
+                              </p>
+                            </div>
+                            <div className="grid gap-2 text-sm text-stone-600 sm:grid-cols-3">
+                              <div>
+                                <div className="font-semibold text-ink">Average score</div>
+                                <div>{subject.averageScore ?? "—"}%</div>
+                              </div>
+                              <div>
+                                <div className="font-semibold text-ink">Time today</div>
+                                <div>{formatDuration(subject.totalDurationMs)}</div>
+                              </div>
+                              <div>
+                                <div className="font-semibold text-ink">Smart Retry</div>
+                                <div>{subject.smartRetryCount}</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="mt-4 rounded-2xl border border-stone-200 bg-white p-3">
+                            <div className="text-xs font-semibold uppercase tracking-[0.16em] text-stone-500">
+                              Today's Concept Activity
+                            </div>
+                            <div className="mt-3 space-y-3">
+                              {subject.conceptSummaries.length === 0 ? (
+                                <p className="text-sm text-stone-600">
+                                  No completed concept attempts today yet.
+                                </p>
+                              ) : (
+                                subject.conceptSummaries.map((concept) => (
+                                  <div
+                                    className="flex flex-wrap items-start justify-between gap-3"
+                                    key={concept.conceptId}
+                                  >
+                                    <div className="max-w-2xl">
+                                      <div className="font-medium text-ink">{concept.conceptTitle}</div>
+                                      <p className="mt-1 text-sm text-stone-600">{concept.explanation}</p>
+                                    </div>
+                                    <div className="grid gap-2 text-sm text-stone-600 sm:grid-cols-4 sm:text-right">
+                                      <div>
+                                        <div className="font-semibold text-ink">Latest</div>
+                                        <div>{concept.latestScore ?? "—"}%</div>
+                                      </div>
+                                      <div>
+                                        <div className="font-semibold text-ink">Best</div>
+                                        <div>{concept.bestScore ?? "—"}%</div>
+                                      </div>
+                                      <div>
+                                        <div className="font-semibold text-ink">Attempts</div>
+                                        <div>{concept.attemptsToday}</div>
+                                      </div>
+                                      <div>
+                                        <div className="font-semibold text-ink">Time</div>
+                                        <div>{formatDuration(concept.totalDurationMs)}</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                ))
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </>
+                  ) : (
+                    <p className="text-sm text-stone-600">
+                      No activity has been captured for this student today yet.
+                    </p>
+                  )}
+                </div>
+              </section>
+
+              <section className="rounded-2xl border border-stone-200 bg-white p-4 sm:col-span-2">
+                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
                   Weekly Parent Report
                 </div>
                 <div className="mt-3 space-y-3">
-                  {isWeeklyReportLoading ? (
+                  {isParentReportLoading ? (
                     <p className="text-sm text-stone-600">Loading weekly report...</p>
                   ) : weeklyReport && weeklyReport.subjects.length > 0 ? (
                     <>

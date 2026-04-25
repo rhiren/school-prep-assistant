@@ -84,7 +84,8 @@ For each new idea, capture:
 - `Status`
   Phase 2A implemented. Hidden admin now includes a weekly parent report for the
   active student, grouped by subject and using local-first progress plus the
-  hidden duration signal. See [reporting_feature_plan.md](/Users/hiren/projects/school-prep-assistant/docs/reporting_feature_plan.md)
+  hidden duration signal. A daily parent summary for today's work is also now
+  available in hidden admin. See [reporting_feature_plan.md](/Users/hiren/projects/school-prep-assistant/docs/reporting_feature_plan.md)
   for remaining polish work.
 
 ### 2. Hidden Test Duration Signal
