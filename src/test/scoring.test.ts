@@ -274,6 +274,58 @@ describe("BasicScoringEngine", () => {
     expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
   });
 
+  it("scores compare integers text-valued multiple-choice answers correctly", async () => {
+    const repository = await createDefaultContentRepository();
+    const engine = new BasicScoringEngine(repository);
+    const session: TestSession = {
+      id: "session-3c",
+      studentId: DEFAULT_STUDENT_ID,
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-compare-integers",
+      conceptIds: ["concept-compare-integers"],
+      questionIds: [
+        "concept-compare-integers-core-008",
+        "concept-compare-integers-core-011",
+        "concept-compare-integers-review-005",
+        "concept-compare-integers-review-011",
+      ],
+      answers: {
+        "concept-compare-integers-core-008": {
+          questionId: "concept-compare-integers-core-008",
+          response: "-5 is closer to zero",
+          answeredAt: "2026-04-26T05:30:00.000Z",
+        },
+        "concept-compare-integers-core-011": {
+          questionId: "concept-compare-integers-core-011",
+          response: "The student forgot that farther left means smaller",
+          answeredAt: "2026-04-26T05:30:00.000Z",
+        },
+        "concept-compare-integers-review-005": {
+          questionId: "concept-compare-integers-review-005",
+          response: "-4 is greater because it is closer to zero",
+          answeredAt: "2026-04-26T05:30:00.000Z",
+        },
+        "concept-compare-integers-review-011": {
+          questionId: "concept-compare-integers-review-011",
+          response: "The student ignored that numbers farther left are smaller",
+          answeredAt: "2026-04-26T05:30:00.000Z",
+        },
+      },
+      currentQuestionIndex: 0,
+      status: "in_progress",
+      createdAt: "2026-04-26T05:30:00.000Z",
+      updatedAt: "2026-04-26T05:30:00.000Z",
+    };
+
+    const attempt = await engine.scoreSession(session);
+
+    expect(attempt.summary.correctCount).toBe(4);
+    expect(attempt.summary.incorrectCount).toBe(0);
+    expect(attempt.summary.percentage).toBe(100);
+    expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
+  });
+
   it("captures hidden duration metadata at submit time", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-04-24T16:05:30.000Z"));

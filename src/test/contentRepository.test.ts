@@ -14,10 +14,12 @@ describe("content repository", () => {
     const repository = await createDefaultContentRepository();
     const question = await repository.getQuestionById("concept-unit-rates-core-001");
     const testConcept = await repository.getConcept("concept-unit-rates");
-    const tutorialConcept = await repository.getConcept("concept-compare-integers");
+    const compareIntegersConcept = await repository.getConcept("concept-compare-integers");
+    const tutorialOnlyConcept = await repository.getConcept("concept-integer-operations");
     const solvingProportionsConcept = await repository.getConcept("concept-solving-proportions");
     const tutorialContent = await repository.getTutorialContent("concept-compare-integers");
     const testSets = await repository.getTestSetsForConcept("concept-unit-rates");
+    const compareIntegersTestSets = await repository.getTestSetsForConcept("concept-compare-integers");
     const solvingProportionsTestSets = await repository.getTestSetsForConcept("concept-solving-proportions");
     const reviewQuestions = await repository.getQuestionsForTestSet("concept-unit-rates-review");
 
@@ -26,11 +28,16 @@ describe("content repository", () => {
       "concept-unit-rates",
     );
     expect(testConcept?.hasTest).toBe(true);
-    expect(tutorialConcept?.hasTest).toBe(false);
+    expect(compareIntegersConcept?.hasTest).toBe(true);
+    expect(tutorialOnlyConcept?.hasTest).toBe(false);
     expect(solvingProportionsConcept?.hasTest).toBe(true);
     expect(testSets.map((testSet) => testSet.id)).toEqual([
       "concept-unit-rates-core",
       "concept-unit-rates-review",
+    ]);
+    expect(compareIntegersTestSets.map((testSet) => testSet.id)).toEqual([
+      "concept-compare-integers-core",
+      "concept-compare-integers-review",
     ]);
     expect(solvingProportionsTestSets.map((testSet) => testSet.id)).toEqual([
       "concept-solving-proportions-core",

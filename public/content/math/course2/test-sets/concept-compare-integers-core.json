@@ -1,0 +1,182 @@
+{
+  "testId": "concept-compare-integers-core",
+  "conceptId": "concept-compare-integers",
+  "type": "concept",
+  "questions": [
+    {
+      "id": "concept-compare-integers-core-001",
+      "type": "multiple_choice",
+      "questionText": "Which comparison is true?",
+      "options": ["4 > -3", "4 < -3", "4 = -3", "-3 > 4"],
+      "correctAnswer": "4 > -3",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Any positive number is greater than any negative number, so 4 > -3. A common mistake is focusing on the minus sign as if it makes the whole comparison larger."
+    },
+    {
+      "id": "concept-compare-integers-core-002",
+      "type": "multiple_choice",
+      "questionText": "Which comparison is true?",
+      "options": ["-2 < -9", "-2 > -9", "-2 = -9", "0 < -2"],
+      "correctAnswer": "-2 > -9",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Among negative numbers, the number closer to zero is greater. Since -2 is closer to zero than -9, -2 > -9. A common mistake is thinking the larger digit makes the number smaller."
+    },
+    {
+      "id": "concept-compare-integers-core-003",
+      "type": "multiple_choice",
+      "questionText": "Which comparison is correct?",
+      "options": ["0 < -1", "0 = -1", "0 > -1", "-1 > 0"],
+      "correctAnswer": "0 > -1",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Zero is greater than any negative number, so 0 > -1. A common mistake is forgetting that zero sits to the right of all negative numbers on the number line."
+    },
+    {
+      "id": "concept-compare-integers-core-004",
+      "type": "multiple_choice",
+      "questionText": "Which number is greater?",
+      "options": ["-6", "-1", "They are equal", "0"],
+      "correctAnswer": "-1",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "-1 is greater than -6 because it is closer to zero. A common mistake is choosing -6 because 6 is a larger digit."
+    },
+    {
+      "id": "concept-compare-integers-core-005",
+      "type": "multiple_choice",
+      "questionText": "Choose the correct comparison for 7 and 0.",
+      "options": ["7 < 0", "7 = 0", "7 > 0", "0 > 7"],
+      "correctAnswer": "7 > 0",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Any positive number is greater than zero, so 7 > 0. A common mistake is thinking zero is automatically greater because it has no sign."
+    },
+    {
+      "id": "concept-compare-integers-core-006",
+      "type": "multiple_choice",
+      "questionText": "Which comparison is true?",
+      "options": ["-10 > -3", "-10 < -3", "-10 = -3", "3 < -10"],
+      "correctAnswer": "-10 < -3",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "-10 is farther left on the number line than -3, so -10 < -3. A common mistake is thinking 10 being a larger digit makes -10 greater."
+    },
+    {
+      "id": "concept-compare-integers-core-007",
+      "type": "multiple_choice",
+      "questionText": "Which temperature is warmer?",
+      "options": ["-4 degrees", "2 degrees", "They are equal", "0 degrees"],
+      "correctAnswer": "2 degrees",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A warmer temperature is represented by the greater number. Since 2 > -4, 2 degrees is warmer. A common mistake is thinking negative numbers are warmer because the digit looks larger."
+    },
+    {
+      "id": "concept-compare-integers-core-008",
+      "type": "multiple_choice",
+      "questionText": "Which statement explains why -5 > -8?",
+      "options": [
+        "-5 is closer to zero",
+        "5 is larger than 8",
+        "-8 is positive",
+        "Both numbers are equal"
+      ],
+      "correctAnswer": "-5 is closer to zero",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Among negative numbers, the one closer to zero is greater. Since -5 is closer to zero than -8, -5 > -8. A common mistake is comparing the digits without thinking about their locations on the number line."
+    },
+    {
+      "id": "concept-compare-integers-core-009",
+      "type": "multiple_choice",
+      "questionText": "Which comparison is correct?",
+      "options": ["-12 > 5", "-12 = 5", "-12 < 5", "5 < -12"],
+      "correctAnswer": "-12 < 5",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Any negative number is less than any positive number, so -12 < 5. A common mistake is seeing 12 as a large digit and forgetting the negative sign."
+    },
+    {
+      "id": "concept-compare-integers-core-010",
+      "type": "multiple_choice",
+      "questionText": "Which number is the smallest?",
+      "options": ["4", "-2", "0", "7"],
+      "correctAnswer": "-2",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Negative numbers are less than zero and positive numbers. That makes -2 the smallest number in the set. A common mistake is picking 0 because it looks neutral."
+    },
+    {
+      "id": "concept-compare-integers-core-011",
+      "type": "multiple_choice",
+      "questionText": "A student says -9 > -4 because 9 is greater than 4. What is the mistake?",
+      "options": [
+        "The student forgot that farther left means smaller",
+        "The student should always choose the larger digit",
+        "The student treated -9 as positive",
+        "There is no mistake"
+      ],
+      "correctAnswer": "The student forgot that farther left means smaller",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "On the number line, -9 is farther left than -4, so it is smaller, not greater. A common mistake is comparing the digits and forgetting how negative numbers work."
+    },
+    {
+      "id": "concept-compare-integers-core-012",
+      "type": "multiple_choice",
+      "questionText": "Which number belongs in the blank: -3 ___ -3?",
+      "options": [">", "<", "=", "none"],
+      "correctAnswer": "=",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A number is always equal to itself, so -3 = -3. A common mistake is thinking the negative sign changes one side more than the other."
+    },
+    {
+      "id": "concept-compare-integers-core-013",
+      "type": "multiple_choice",
+      "questionText": "Which comparison is true?",
+      "options": ["-1 < 0", "-1 > 0", "-1 = 0", "0 < -1"],
+      "correctAnswer": "-1 < 0",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "-1 is to the left of 0 on the number line, so -1 < 0. A common mistake is thinking zero is less because it has no sign."
+    },
+    {
+      "id": "concept-compare-integers-core-014",
+      "type": "multiple_choice",
+      "questionText": "Which value is greater?",
+      "options": ["-15", "-11", "They are equal", "-20"],
+      "correctAnswer": "-11",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Among negative numbers, the value closer to zero is greater. Since -11 is closer to zero than -15 or -20, it is the greatest of the three. A common mistake is choosing -20 because 20 is the largest digit."
+    },
+    {
+      "id": "concept-compare-integers-core-015",
+      "type": "multiple_choice",
+      "questionText": "An elevator is at floor -2 and then moves to floor 3. Which floor is greater?",
+      "options": ["floor -2", "floor 3", "They are equal", "floor 0"],
+      "correctAnswer": "floor 3",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Positive floors are greater than negative floors, so floor 3 is greater than floor -2. A common mistake is thinking underground floors count as larger because the digit 2 is smaller than 3."
+    },
+    {
+      "id": "concept-compare-integers-core-016",
+      "type": "multiple_choice",
+      "questionText": "Which number line idea correctly compares -7 and -2?",
+      "options": [
+        "-2 is to the right of -7",
+        "-7 is to the right of -2",
+        "They are at the same point",
+        "Both are to the right of zero"
+      ],
+      "correctAnswer": "-2 is to the right of -7",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Numbers farther to the right are greater. Since -2 is to the right of -7, -2 > -7. A common mistake is thinking -7 is greater because 7 is a larger digit."
+    }
+  ]
+}
