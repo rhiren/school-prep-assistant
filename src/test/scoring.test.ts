@@ -222,6 +222,58 @@ describe("BasicScoringEngine", () => {
     expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
   });
 
+  it("scores solving proportions text-valued multiple-choice answers correctly", async () => {
+    const repository = await createDefaultContentRepository();
+    const engine = new BasicScoringEngine(repository);
+    const session: TestSession = {
+      id: "session-3b",
+      studentId: DEFAULT_STUDENT_ID,
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-solving-proportions",
+      conceptIds: ["concept-solving-proportions"],
+      questionIds: [
+        "concept-solving-proportions-core-009",
+        "concept-solving-proportions-core-014",
+        "concept-solving-proportions-review-007",
+        "concept-solving-proportions-review-014",
+      ],
+      answers: {
+        "concept-solving-proportions-core-009": {
+          questionId: "concept-solving-proportions-core-009",
+          response: "Both parts were multiplied by 3",
+          answeredAt: "2026-04-26T05:00:00.000Z",
+        },
+        "concept-solving-proportions-core-014": {
+          questionId: "concept-solving-proportions-core-014",
+          response: "The denominator did not scale by the same factor",
+          answeredAt: "2026-04-26T05:00:00.000Z",
+        },
+        "concept-solving-proportions-review-007": {
+          questionId: "concept-solving-proportions-review-007",
+          response: "The denominator did not change by the same factor",
+          answeredAt: "2026-04-26T05:00:00.000Z",
+        },
+        "concept-solving-proportions-review-014": {
+          questionId: "concept-solving-proportions-review-014",
+          response: "Both parts were multiplied by 3",
+          answeredAt: "2026-04-26T05:00:00.000Z",
+        },
+      },
+      currentQuestionIndex: 0,
+      status: "in_progress",
+      createdAt: "2026-04-26T05:00:00.000Z",
+      updatedAt: "2026-04-26T05:00:00.000Z",
+    };
+
+    const attempt = await engine.scoreSession(session);
+
+    expect(attempt.summary.correctCount).toBe(4);
+    expect(attempt.summary.incorrectCount).toBe(0);
+    expect(attempt.summary.percentage).toBe(100);
+    expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
+  });
+
   it("captures hidden duration metadata at submit time", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-04-24T16:05:30.000Z"));

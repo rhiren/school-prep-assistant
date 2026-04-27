@@ -15,8 +15,10 @@ describe("content repository", () => {
     const question = await repository.getQuestionById("concept-unit-rates-core-001");
     const testConcept = await repository.getConcept("concept-unit-rates");
     const tutorialConcept = await repository.getConcept("concept-compare-integers");
+    const solvingProportionsConcept = await repository.getConcept("concept-solving-proportions");
     const tutorialContent = await repository.getTutorialContent("concept-compare-integers");
     const testSets = await repository.getTestSetsForConcept("concept-unit-rates");
+    const solvingProportionsTestSets = await repository.getTestSetsForConcept("concept-solving-proportions");
     const reviewQuestions = await repository.getQuestionsForTestSet("concept-unit-rates-review");
 
     expect(question?.prompt).toContain("24 miles in 3 hours");
@@ -25,9 +27,14 @@ describe("content repository", () => {
     );
     expect(testConcept?.hasTest).toBe(true);
     expect(tutorialConcept?.hasTest).toBe(false);
+    expect(solvingProportionsConcept?.hasTest).toBe(true);
     expect(testSets.map((testSet) => testSet.id)).toEqual([
       "concept-unit-rates-core",
       "concept-unit-rates-review",
+    ]);
+    expect(solvingProportionsTestSets.map((testSet) => testSet.id)).toEqual([
+      "concept-solving-proportions-core",
+      "concept-solving-proportions-review",
     ]);
     expect(reviewQuestions).toHaveLength(20);
     expect(tutorialContent).toContain("#");

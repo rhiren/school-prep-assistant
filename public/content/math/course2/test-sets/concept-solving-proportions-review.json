@@ -1,0 +1,183 @@
+{
+  "testId": "concept-solving-proportions-review",
+  "conceptId": "concept-solving-proportions",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-solving-proportions-review-001",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 2/3 = x/12.",
+      "options": ["6", "7", "8", "9"],
+      "correctAnswer": "8",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The denominator went from 3 to 12, which is 4 times as much. Multiply the numerator by 4 too: 2 times 4 equals 8. A common mistake is adding 2 and 12 instead of scaling both parts equally."
+    },
+    {
+      "id": "concept-solving-proportions-review-002",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion x/18 = 5/6.",
+      "options": ["12", "15", "18", "20"],
+      "correctAnswer": "15",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The denominator 6 became 18, which is multiplying by 3. Multiply the numerator by 3 too: 5 times 3 equals 15. A common mistake is dividing 18 by 5 instead of matching the scale factor."
+    },
+    {
+      "id": "concept-solving-proportions-review-003",
+      "type": "multiple_choice",
+      "questionText": "A recipe uses 4 cups of flour for 10 muffins. How many cups of flour are needed for 25 muffins?",
+      "options": ["8", "10", "12", "14"],
+      "correctAnswer": "10",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Twenty-five muffins is 2.5 times as many as 10 muffins, so multiply the flour by 2.5 too: 4 times 2.5 = 10 cups. A common mistake is adding 25 and 4 instead of using the same scale factor.",
+      "unit": "cups"
+    },
+    {
+      "id": "concept-solving-proportions-review-004",
+      "type": "multiple_choice",
+      "questionText": "Which proportion correctly matches 7 books for 21 dollars and 10 books for x dollars?",
+      "options": ["7/21 = 10/x", "7/10 = 21/x", "21/7 = 10/x", "7/x = 21/10"],
+      "correctAnswer": "7/21 = 10/x",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Keep the same order: books over dollars equals books over dollars. That gives 7/21 = 10/x. A common mistake is flipping one ratio so the unit comparison changes."
+    },
+    {
+      "id": "concept-solving-proportions-review-005",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 6/9 = 14/x.",
+      "options": ["18", "20", "21", "24"],
+      "correctAnswer": "21",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Six ninths simplifies to 2/3. So 14/x must also equal 2/3, which means x = 21. A common mistake is multiplying 14 by 9 without considering the matching numerator."
+    },
+    {
+      "id": "concept-solving-proportions-review-006",
+      "type": "multiple_choice",
+      "questionText": "A map uses the scale 3 inches : 12 miles. If a trip is 32 miles, how many inches should it be on the map?",
+      "options": ["6", "7", "8", "9"],
+      "correctAnswer": "8",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Thirty-two miles is 8/3 times 12 miles, so multiply the map length by 8/3 too: 3 times 8/3 = 8 inches. A common mistake is multiplying 32 by 3 without dividing by 12 first.",
+      "unit": "inches"
+    },
+    {
+      "id": "concept-solving-proportions-review-007",
+      "type": "multiple_choice",
+      "questionText": "A student says 4/9 = 12/26 because the numerator tripled. What is the mistake?",
+      "options": [
+        "The denominator did not change by the same factor",
+        "Only denominators matter in a proportion",
+        "The second denominator is even",
+        "The first ratio is smaller"
+      ],
+      "correctAnswer": "The denominator did not change by the same factor",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "If the numerator triples from 4 to 12, the denominator must also triple from 9 to 27, not 26. A common mistake is checking only one part of the ratio."
+    },
+    {
+      "id": "concept-solving-proportions-review-008",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 11/16 = x/32.",
+      "options": ["18", "20", "22", "24"],
+      "correctAnswer": "22",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The denominator doubled from 16 to 32, so the numerator must double too. Eleven times 2 equals 22. A common mistake is adding 11 and 32 instead of using the same factor."
+    },
+    {
+      "id": "concept-solving-proportions-review-009",
+      "type": "multiple_choice",
+      "questionText": "A 5-foot ladder casts a 4-foot shadow. A tree casts a 12-foot shadow at the same time. How tall is the tree?",
+      "options": ["12", "15", "18", "20"],
+      "correctAnswer": "15",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The shadow went from 4 feet to 12 feet, which is 3 times as much. Multiply the height by 3 too: 5 times 3 equals 15 feet. A common mistake is adding 12 and 5 instead of scaling proportionally.",
+      "unit": "feet"
+    },
+    {
+      "id": "concept-solving-proportions-review-010",
+      "type": "multiple_choice",
+      "questionText": "Which value of x makes the proportion 12/18 = x/27 true?",
+      "options": ["15", "16", "18", "20"],
+      "correctAnswer": "18",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Twelve eighteenths simplifies to 2/3. That means x/27 must equal 2/3, so x = 18. A common mistake is dividing 27 by 12 instead of matching the ratio."
+    },
+    {
+      "id": "concept-solving-proportions-review-011",
+      "type": "multiple_choice",
+      "questionText": "If 9 cups of trail mix fill 6 bags, how many bags can be filled with 24 cups at the same rate?",
+      "options": ["14", "16", "18", "20"],
+      "correctAnswer": "16",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Twenty-four cups is 8/3 times as much as 9 cups, so multiply the number of bags by 8/3 too: 6 times 8/3 = 16 bags. A common mistake is dividing 24 by 6 without using the original comparison.",
+      "unit": "bags"
+    },
+    {
+      "id": "concept-solving-proportions-review-012",
+      "type": "multiple_choice",
+      "questionText": "Which equation should you solve to find x if 3 pounds of apples cost 5 dollars and x pounds cost 20 dollars?",
+      "options": ["3/5 = x/20", "3/5 = 20/x", "5/3 = x/20", "3/x = 5/20"],
+      "correctAnswer": "3/5 = x/20",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Keep the same order: pounds over dollars equals pounds over dollars. That makes 3/5 = x/20 the correct setup. A common mistake is comparing pounds to dollars in different positions."
+    },
+    {
+      "id": "concept-solving-proportions-review-013",
+      "type": "multiple_choice",
+      "questionText": "A blueprint uses 2 centimeters for 3 meters. If a room is 15 meters long, how many centimeters should it be on the blueprint?",
+      "options": ["8", "10", "12", "14"],
+      "correctAnswer": "10",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Fifteen meters is 5 times as much as 3 meters, so multiply the blueprint length by 5 too: 2 centimeters times 5 equals 10 centimeters. A common mistake is multiplying 15 by 2 without dividing by 3 first.",
+      "unit": "centimeters"
+    },
+    {
+      "id": "concept-solving-proportions-review-014",
+      "type": "multiple_choice",
+      "questionText": "Which statement best explains why 7/8 = 21/24 is true?",
+      "options": [
+        "Both parts were multiplied by 3",
+        "The numerators add to 28",
+        "Both denominators are even",
+        "The second ratio has bigger numbers"
+      ],
+      "correctAnswer": "Both parts were multiplied by 3",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "To go from 7/8 to 21/24, both numerator and denominator were multiplied by 3. That keeps the relationship equal. A common mistake is focusing on the larger numbers instead of the same factor."
+    },
+    {
+      "id": "concept-solving-proportions-review-015",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 14/x = 7/9.",
+      "options": ["16", "18", "20", "21"],
+      "correctAnswer": "18",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The numerator doubled from 7 to 14, so the denominator must double too. Nine times 2 equals 18. A common mistake is subtracting 7 from 14 instead of comparing the scale factor."
+    },
+    {
+      "id": "concept-solving-proportions-review-016",
+      "type": "multiple_choice",
+      "questionText": "A store sells 6 markers for 9 dollars. At the same rate, how much do 14 markers cost?",
+      "options": ["18", "20", "21", "24"],
+      "correctAnswer": "21",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Each marker costs 1.5 dollars because 9 divided by 6 = 1.5. Fourteen markers cost 14 times 1.5 = 21 dollars. A common mistake is adding 14 and 9 instead of using proportional reasoning.",
+      "unit": "dollars"
+    }
+  ]
+}

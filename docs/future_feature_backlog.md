@@ -38,6 +38,37 @@ For each new idea, capture:
 
 ## Backlog Items
 
+### 0. Course 2 Concept Readiness Rollout
+
+- `Title`
+  Course 2 concept rollout for current `Coming soon` concepts
+- `Problem`
+  Course 2 currently contains many manifest concepts that are not yet learner
+  ready because they are missing tutorials, test sets, or both.
+- `Desired outcome`
+  Convert `Coming soon` concepts into stable `Practice ready` concepts in a
+  deliberate order without disrupting the current math flow.
+- `Possible signals or data`
+  - manifest coverage by concept
+  - tutorial presence
+  - core/review test-set presence
+  - content validation pass/fail
+  - known-correct scoring spot checks
+- `Student UX guardrails`
+  - do not expose half-ready practice
+  - preserve the current concept flow and labels
+  - unlock concepts only when tutorial + tests are truly ready
+- `Parent/admin UX notes`
+  - prioritize concepts that make current Course 2 progression more coherent
+  - keep rollout order visible in a dedicated planning doc
+- `Risks or open questions`
+  - mass content expansion can create answer-key regressions if not phased
+  - tutorial quality and test quality should advance together
+  - later units should not crowd out the immediate need to finish the active
+    ratios/proportions journey
+- `Status`
+  Active planning. See [course2_concept_rollout_plan.md](/Users/hiren/projects/school-prep-assistant/docs/course2_concept_rollout_plan.md).
+
 ### 1. Weekly Parent Progress Report
 
 - `Title`
