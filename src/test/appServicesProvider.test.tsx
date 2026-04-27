@@ -67,6 +67,8 @@ describe("AppServicesProvider", () => {
       isFeatureEnabled: vi.fn(async () => false),
       convertProfileToTest: vi.fn(),
       setTestProfileFeatureFlag: vi.fn(),
+      getProfileDeletionSummary: vi.fn(),
+      deleteProfile: vi.fn(),
       deleteTestProfile: vi.fn(),
     };
 

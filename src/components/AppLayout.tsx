@@ -32,7 +32,8 @@ export function AppLayout() {
     activeProfile,
     convertStudentProfileToTest,
     createStudentProfile,
-    deleteTestStudentProfile,
+    deleteStudentProfile,
+    getStudentProfileDeletionSummary,
     profiles,
     setTestStudentFeatureFlag,
     setActiveStudent,
@@ -134,6 +135,24 @@ export function AppLayout() {
     return `${totalMinutes} min`;
   };
 
+  const handleDeleteProfile = async (studentId: string) => {
+    const summary = await getStudentProfileDeletionSummary(studentId);
+    const workSummary = summary.hasSavedWork
+      ? `This profile has saved work: ${summary.submittedAttemptCount} submitted attempt(s), ${summary.progressRecordCount} progress record(s), and ${summary.inProgressSessionCount} in-progress session(s).`
+      : "No saved work was found for this profile.";
+    const activeSummary = summary.isActive
+      ? " This is currently the active profile on this device."
+      : "";
+
+    if (
+      window.confirm(
+        `Delete profile ${summary.displayName} (${summary.studentId})?\n\n${workSummary}${activeSummary}\n\nThis will remove the profile and its synced progress data. Choose OK to confirm or Cancel to keep it.`,
+      )
+    ) {
+      await deleteStudentProfile(studentId);
+    }
+  };
+
   const testProfiles = profiles.filter((profile) => profile.profileType === "test");
 
   return (
@@ -220,7 +239,7 @@ export function AppLayout() {
                   </div>
                   <h2 className="mt-2 text-2xl font-semibold text-ink">Admin Console</h2>
                   <p className="mt-2 text-sm text-stone-600">
-                    Minimal operational controls for version visibility and test-profile maintenance.
+                    Minimal operational controls for version visibility and profile maintenance.
                   </p>
                 </div>
                 <button
@@ -267,17 +286,11 @@ export function AppLayout() {
                           <button
                             className="secondary-link text-red-700"
                             onClick={() => {
-                              if (
-                                window.confirm(
-                                  `Delete test profile ${profile.displayName} and its local progress data?`,
-                                )
-                              ) {
-                                void deleteTestStudentProfile(profile.studentId);
-                              }
+                              void handleDeleteProfile(profile.studentId);
                             }}
                             type="button"
                           >
-                            Delete test profile
+                            Delete profile
                           </button>
                         </div>
                       </div>
@@ -667,23 +680,45 @@ export function AppLayout() {
                             </div>
                           </div>
                           {profile.profileType === "test" ? (
-                            <div className="text-xs text-stone-500">Test profile controls</div>
+                            <div className="flex items-center gap-3 text-xs text-stone-500">
+                              <span>Test profile controls</span>
+                              <button
+                                className="secondary-link text-red-700"
+                                onClick={() => {
+                                  void handleDeleteProfile(profile.studentId);
+                                }}
+                                type="button"
+                              >
+                                Delete profile
+                              </button>
+                            </div>
                           ) : (
-                            <button
-                              className="secondary-link"
-                              onClick={() => {
-                                if (
-                                  window.confirm(
-                                    `Convert ${profile.displayName} into a test profile for feature rollout and maintenance?`,
-                                  )
-                                ) {
-                                  void convertStudentProfileToTest(profile.studentId);
-                                }
-                              }}
-                              type="button"
-                            >
-                              Convert to test
-                            </button>
+                            <div className="flex items-center gap-3">
+                              <button
+                                className="secondary-link"
+                                onClick={() => {
+                                  if (
+                                    window.confirm(
+                                      `Convert ${profile.displayName} into a test profile for feature rollout and maintenance?`,
+                                    )
+                                  ) {
+                                    void convertStudentProfileToTest(profile.studentId);
+                                  }
+                                }}
+                                type="button"
+                              >
+                                Convert to test
+                              </button>
+                              <button
+                                className="secondary-link text-red-700"
+                                onClick={() => {
+                                  void handleDeleteProfile(profile.studentId);
+                                }}
+                                type="button"
+                              >
+                                Delete profile
+                              </button>
+                            </div>
                           )}
                         </div>
                         <div className="mt-3">

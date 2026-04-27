@@ -1,8 +1,27 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { BasicScoringEngine } from "../engines/basicScoringEngine";
-import type { TestSession } from "../domain/models";
+import type { Question, TestSession } from "../domain/models";
+import type { ContentRepository } from "../services/contracts";
 import { createDefaultContentRepository } from "../services/contentRepository";
 import { DEFAULT_STUDENT_ID } from "../services/studentProfileService";
+
+function createRepositoryWithQuestions(questions: Question[]): ContentRepository {
+  const questionMap = new Map(questions.map((question) => [question.id, question]));
+
+  return {
+    listCourses: async () => [],
+    getCourse: async () => null,
+    getConcept: async () => null,
+    getQuestionsForConcept: async () => [],
+    getQuestionById: async (questionId) => questionMap.get(questionId) ?? null,
+    getQuestionByIdSync: (questionId) => questionMap.get(questionId) ?? null,
+    getCourseConcepts: async () => [],
+    getTutorialContent: async () => null,
+    getTestSetsForConcept: async () => [],
+    getTestSet: async () => null,
+    getQuestionsForTestSet: async () => [],
+  };
+}
 
 describe("BasicScoringEngine", () => {
   afterEach(() => {
@@ -10,7 +29,50 @@ describe("BasicScoringEngine", () => {
   });
 
   it("scores correct, incorrect, and unanswered responses with normalization", async () => {
-    const repository = await createDefaultContentRepository();
+    const repository = createRepositoryWithQuestions([
+      {
+        id: "numeric-1",
+        courseId: "course-2",
+        unitId: "unit-ratios-proportions",
+        conceptId: "concept-unit-rates",
+        tags: [],
+        difficulty: "easy",
+        questionType: "numeric",
+        answerType: "number",
+        prompt: "Enter the unit rate.",
+        correctAnswer: "8",
+        explanation: "",
+        eligibleForMixed: true,
+      },
+      {
+        id: "numeric-2",
+        courseId: "course-2",
+        unitId: "unit-ratios-proportions",
+        conceptId: "concept-unit-rates",
+        tags: [],
+        difficulty: "easy",
+        questionType: "numeric",
+        answerType: "number",
+        prompt: "Enter the incorrect row number.",
+        correctAnswer: "4",
+        explanation: "",
+        eligibleForMixed: true,
+      },
+      {
+        id: "numeric-3",
+        courseId: "course-2",
+        unitId: "unit-ratios-proportions",
+        conceptId: "concept-unit-rates",
+        tags: [],
+        difficulty: "easy",
+        questionType: "numeric",
+        answerType: "number",
+        prompt: "Enter the pages per day.",
+        correctAnswer: "9",
+        explanation: "",
+        eligibleForMixed: true,
+      },
+    ]);
     const engine = new BasicScoringEngine(repository);
     const session: TestSession = {
       id: "session-1",
@@ -19,24 +81,20 @@ describe("BasicScoringEngine", () => {
       courseId: "course-2",
       conceptId: "concept-unit-rates",
       conceptIds: ["concept-unit-rates"],
-      questionIds: [
-        "concept-unit-rates-core-001",
-        "concept-unit-rates-core-002",
-        "concept-unit-rates-core-003",
-      ],
+      questionIds: ["numeric-1", "numeric-2", "numeric-3"],
       answers: {
-        "concept-unit-rates-core-001": {
-          questionId: "concept-unit-rates-core-001",
+        "numeric-1": {
+          questionId: "numeric-1",
           response: "8.0",
           answeredAt: "2026-04-12T12:00:00.000Z",
         },
-        "concept-unit-rates-core-002": {
-          questionId: "concept-unit-rates-core-002",
+        "numeric-2": {
+          questionId: "numeric-2",
           response: "6",
           answeredAt: "2026-04-12T12:00:00.000Z",
         },
-        "concept-unit-rates-core-003": {
-          questionId: "concept-unit-rates-core-003",
+        "numeric-3": {
+          questionId: "numeric-3",
           response: "   ",
           answeredAt: "2026-04-12T12:00:00.000Z",
         },
@@ -56,7 +114,22 @@ describe("BasicScoringEngine", () => {
   });
 
   it("marks equivalent numeric formatting as correct", async () => {
-    const repository = await createDefaultContentRepository();
+    const repository = createRepositoryWithQuestions([
+      {
+        id: "decimal-1",
+        courseId: "course-2",
+        unitId: "unit-ratios-proportions",
+        conceptId: "concept-unit-rates",
+        tags: [],
+        difficulty: "medium",
+        questionType: "numeric",
+        answerType: "decimal",
+        prompt: "Enter the ticket price.",
+        correctAnswer: "6.5",
+        explanation: "",
+        eligibleForMixed: true,
+      },
+    ]);
     const engine = new BasicScoringEngine(repository);
     const session: TestSession = {
       id: "session-2",
@@ -65,10 +138,10 @@ describe("BasicScoringEngine", () => {
       courseId: "course-2",
       conceptId: "concept-unit-rates",
       conceptIds: ["concept-unit-rates"],
-      questionIds: ["concept-unit-rates-core-017"],
+      questionIds: ["decimal-1"],
       answers: {
-        "concept-unit-rates-core-017": {
-          questionId: "concept-unit-rates-core-017",
+        "decimal-1": {
+          questionId: "decimal-1",
           response: "6.50",
           answeredAt: "2026-04-12T12:00:00.000Z",
         },

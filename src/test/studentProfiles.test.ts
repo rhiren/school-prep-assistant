@@ -61,22 +61,61 @@ describe("student profiles", () => {
     expect(await studentProfileService.isFeatureEnabled(profile.studentId, "recommendedNext")).toBe(false);
   });
 
-  it("allows deleting test profiles without allowing production profile deletion", async () => {
+  it("summarizes saved work before deleting a production profile", async () => {
     const store = new MemoryStorageService();
     const studentProfileService = new LocalStudentProfileService(
       new StudentProfileRepository(store),
       store,
     );
-
-    const testProfile = await studentProfileService.createProfile("Test Student", "6", undefined, {
-      profileType: "test",
-    });
-
-    await expect(studentProfileService.deleteTestProfile("student-1")).rejects.toThrow(
-      "Only test student profiles can be deleted.",
+    const sessionRepository = new SessionRepository(store, studentProfileService);
+    const attemptRepository = new AttemptRepository(store, studentProfileService);
+    const progressRepository = new ProgressRepository(store, studentProfileService);
+    const contentRepository = await createDefaultContentRepository();
+    const progressService = new LocalProgressService(
+      contentRepository,
+      attemptRepository,
+      progressRepository,
+    );
+    const sessionService = new LocalSessionService(
+      sessionRepository,
+      attemptRepository,
+      new BasicScoringEngine(contentRepository),
+      progressService,
+    );
+    const generator = new DeterministicConceptTestEngine(
+      contentRepository,
+      sessionRepository,
+      new StableSelectionStrategy(),
+      studentProfileService,
     );
 
-    await studentProfileService.deleteTestProfile(testProfile.studentId);
+    const productionProfile = await studentProfileService.createProfile("Daughter", "6");
+    await studentProfileService.setActiveStudent(productionProfile.studentId);
+
+    const session = await generator.createConceptSession("concept-unit-rates");
+    const question = await contentRepository.getQuestionById(session.questionIds[0] ?? "");
+    if (!question) {
+      throw new Error("Expected unit rates question for deletion-summary test.");
+    }
+
+    await sessionService.saveAnswer(session.id, {
+      questionId: question.id,
+      response: question.correctAnswer,
+      answeredAt: "2026-04-24T10:02:00.000Z",
+    });
+
+    const summary = await studentProfileService.getProfileDeletionSummary(productionProfile.studentId);
+    expect(summary).toEqual(
+      expect.objectContaining({
+        studentId: productionProfile.studentId,
+        hasSavedWork: true,
+        inProgressSessionCount: 1,
+        submittedAttemptCount: 0,
+        progressRecordCount: 0,
+      }),
+    );
+
+    await studentProfileService.deleteProfile(productionProfile.studentId);
 
     expect((await studentProfileService.listProfiles()).map((profile) => profile.studentId)).toEqual([
       "student-1",
@@ -176,7 +215,11 @@ describe("student profiles", () => {
     const sessionRepository = new SessionRepository(store, studentProfileService);
     const attemptRepository = new AttemptRepository(store, studentProfileService);
     const progressRepository = new ProgressRepository(store, studentProfileService);
-    const progressService = new LocalProgressService(attemptRepository, progressRepository);
+    const progressService = new LocalProgressService(
+      contentRepository,
+      attemptRepository,
+      progressRepository,
+    );
     const sessionService = new LocalSessionService(
       sessionRepository,
       attemptRepository,

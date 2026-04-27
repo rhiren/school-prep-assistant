@@ -5,6 +5,7 @@ import { StableSelectionStrategy } from "../engines/questionSelectionStrategy";
 import { createDefaultContentRepository } from "../services/contentRepository";
 import { LocalProgressService } from "../services/progressService";
 import { LocalSessionService } from "../services/sessionService";
+import type { TestAttempt } from "../domain/models";
 import { MemoryStorageService } from "../storage/memoryStorageService";
 import {
   AttemptRepository,
@@ -19,7 +20,11 @@ describe("session persistence and progress", () => {
     const sessionRepository = new SessionRepository(store);
     const attemptRepository = new AttemptRepository(store);
     const progressRepository = new ProgressRepository(store);
-    const progressService = new LocalProgressService(attemptRepository, progressRepository);
+    const progressService = new LocalProgressService(
+      repository,
+      attemptRepository,
+      progressRepository,
+    );
     const scoringService = new BasicScoringEngine(repository);
     const sessionService = new LocalSessionService(
       sessionRepository,
@@ -68,5 +73,78 @@ describe("session persistence and progress", () => {
     expect(progress?.bestScore).toBe(100);
     expect(progress?.latestScore).toBe(100);
     expect(progress?.masteryStatus).toBe("mastered");
+  });
+
+  it("repairs persisted multiple-choice attempts that were scored incorrectly", async () => {
+    const repository = await createDefaultContentRepository();
+    const store = new MemoryStorageService();
+    const sessionRepository = new SessionRepository(store);
+    const attemptRepository = new AttemptRepository(store);
+    const progressRepository = new ProgressRepository(store);
+    const progressService = new LocalProgressService(
+      repository,
+      attemptRepository,
+      progressRepository,
+    );
+
+    const attempt: TestAttempt = {
+      attemptId: "attempt-stale",
+      studentId: "student-1",
+      sessionId: "session-stale",
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-unit-rates",
+      conceptIds: ["concept-unit-rates"],
+      questionIds: [
+        "concept-unit-rates-core-010",
+        "concept-unit-rates-core-021",
+      ],
+      answers: {
+        "concept-unit-rates-core-010": {
+          questionId: "concept-unit-rates-core-010",
+          response: "Divide 14 by 7",
+          answeredAt: "2026-04-25T18:50:56.849Z",
+        },
+        "concept-unit-rates-core-021": {
+          questionId: "concept-unit-rates-core-021",
+          response: "Store B",
+          answeredAt: "2026-04-25T18:57:46.803Z",
+        },
+      },
+      results: [
+        {
+          questionId: "concept-unit-rates-core-010",
+          isCorrect: false,
+          submittedAnswer: "Divide 14 by 7",
+          correctAnswer: "Divide 14 by 7",
+          feedbackTip: null,
+        },
+        {
+          questionId: "concept-unit-rates-core-021",
+          isCorrect: false,
+          submittedAnswer: "Store B",
+          correctAnswer: "Store B",
+          feedbackTip: null,
+        },
+      ],
+      summary: {
+        totalQuestions: 2,
+        correctCount: 0,
+        incorrectCount: 2,
+        unansweredCount: 0,
+        percentage: 0,
+      },
+      submittedAt: "2026-04-25T19:21:40.170Z",
+    };
+
+    await attemptRepository.append(attempt);
+
+    const repairedAttempt = await progressService.getAttempt(attempt.attemptId);
+    const progress = await progressService.getConceptProgress("concept-unit-rates");
+
+    expect(repairedAttempt?.summary.percentage).toBe(100);
+    expect(repairedAttempt?.results.every((result) => result.isCorrect)).toBe(true);
+    expect(progress?.latestScore).toBe(100);
+    expect(progress?.attemptCount).toBe(1);
   });
 });

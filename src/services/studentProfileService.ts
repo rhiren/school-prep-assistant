@@ -5,7 +5,10 @@ import type {
   StudentProfile,
   StudentProfileType,
 } from "../domain/models";
-import type { StudentProfileService } from "./contracts";
+import type {
+  StudentProfileDeletionSummary,
+  StudentProfileService,
+} from "./contracts";
 import { createId } from "../utils/id";
 import { getStudentScopedKey, STORE_NAMES, StudentProfileRepository } from "../storage/repositories";
 import type { StorageService } from "../storage/storageService";
@@ -286,6 +289,86 @@ export class LocalStudentProfileService implements StudentProfileService {
     return normalizedProfile;
   }
 
+  async getProfileDeletionSummary(studentId: string): Promise<StudentProfileDeletionSummary> {
+    await this.ensureInitialized();
+
+    const profile = (await this.listSortedProfiles()).find((item) => item.studentId === studentId);
+    if (!profile) {
+      throw new Error(`Unknown student profile: ${studentId}`);
+    }
+
+    const sessions = await this.listStudentScopedRecords<{
+      studentId: string;
+      status?: string;
+      currentQuestionIndex?: number;
+      answers?: Record<string, { response?: string | null }>;
+    }>(STORE_NAMES.sessions, studentId);
+    const attempts = await this.listStudentScopedRecords<{ studentId: string }>(
+      STORE_NAMES.attempts,
+      studentId,
+    );
+    const progressRecords = await this.listStudentScopedRecords<{ studentId: string }>(
+      STORE_NAMES.progress,
+      studentId,
+    );
+    const inProgressSessionCount = sessions.filter((session) => {
+      if (session.status !== "in_progress") {
+        return false;
+      }
+
+      const answeredCount = Object.values(session.answers ?? {}).filter(
+        (answer) => typeof answer?.response === "string" && answer.response.trim() !== "",
+      ).length;
+      return answeredCount > 0 || (session.currentQuestionIndex ?? 0) > 0;
+    }).length;
+
+    return {
+      studentId: profile.studentId,
+      displayName: profile.displayName,
+      isActive: profile.isActive,
+      hasSavedWork:
+        attempts.length > 0 || progressRecords.length > 0 || inProgressSessionCount > 0,
+      inProgressSessionCount,
+      submittedAttemptCount: attempts.length,
+      progressRecordCount: progressRecords.length,
+    };
+  }
+
+  async deleteProfile(studentId: string): Promise<void> {
+    await this.ensureInitialized();
+
+    if (!this.storage) {
+      throw new Error("Student profile deletion requires writable storage.");
+    }
+
+    const profiles = await this.listSortedProfiles();
+    const profile = profiles.find((item) => item.studentId === studentId);
+
+    if (!profile) {
+      throw new Error(`Unknown student profile: ${studentId}`);
+    }
+
+    const remainingProfiles = profiles.filter((item) => item.studentId !== studentId);
+    const nextActiveProfile =
+      profile.isActive
+        ? remainingProfiles.find((item) => item.profileType !== "test") ?? remainingProfiles[0] ?? null
+        : null;
+
+    await this.deleteStudentScopedRecords(STORE_NAMES.sessions, studentId);
+    await this.deleteStudentScopedRecords(STORE_NAMES.attempts, studentId);
+    await this.deleteStudentScopedRecords(STORE_NAMES.progress, studentId);
+    await this.repository.delete(studentId);
+
+    if (remainingProfiles.length === 0) {
+      await this.repository.save(buildDefaultStudentProfile());
+      return;
+    }
+
+    if (profile.isActive && nextActiveProfile) {
+      await this.setActiveStudent(nextActiveProfile.studentId);
+    }
+  }
+
   async deleteTestProfile(studentId: string): Promise<void> {
     await this.ensureInitialized();
 
@@ -303,22 +386,7 @@ export class LocalStudentProfileService implements StudentProfileService {
     if (profile.profileType !== "test") {
       throw new Error("Only test student profiles can be deleted.");
     }
-
-    const nextActiveProfile =
-      profile.isActive
-        ? profiles.find(
-            (item) => item.studentId !== studentId && item.profileType !== "test",
-          ) ?? profiles.find((item) => item.studentId !== studentId)
-        : null;
-
-    await this.deleteStudentScopedRecords(STORE_NAMES.sessions, studentId);
-    await this.deleteStudentScopedRecords(STORE_NAMES.attempts, studentId);
-    await this.deleteStudentScopedRecords(STORE_NAMES.progress, studentId);
-    await this.repository.delete(studentId);
-
-    if (profile.isActive && nextActiveProfile) {
-      await this.setActiveStudent(nextActiveProfile.studentId);
-    }
+    await this.deleteProfile(studentId);
   }
 
   private async ensureInitialized(): Promise<void> {
@@ -393,5 +461,16 @@ export class LocalStudentProfileService implements StudentProfileService {
 
       await this.storage.delete(storeName, getStudentScopedKey(studentId, recordId));
     }
+  }
+
+  private async listStudentScopedRecords<T extends { studentId: string }>(
+    storeName: typeof STORE_NAMES.sessions | typeof STORE_NAMES.attempts | typeof STORE_NAMES.progress,
+    studentId: string,
+  ): Promise<T[]> {
+    if (!this.storage) {
+      return [];
+    }
+
+    return (await this.storage.getAll<T>(storeName)).filter((record) => record.studentId === studentId);
   }
 }

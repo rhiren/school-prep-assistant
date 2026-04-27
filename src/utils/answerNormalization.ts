@@ -179,6 +179,10 @@ export function compareQuestionAnswer(
     return exactMatchComparison;
   }
 
+  if (question.questionType === "multiple_choice") {
+    return exactMatchComparison;
+  }
+
   return compareAnswers(submittedValue, question.correctAnswer, question.answerType);
 }
 

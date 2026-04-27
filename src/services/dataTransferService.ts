@@ -8,9 +8,13 @@ import type {
   TestAttempt,
   TestSession,
 } from "../domain/models";
-import type { StudentProfileService } from "./contracts";
+import type { ContentRepository, StudentProfileService } from "./contracts";
 import { getStudentScopedKey, STORE_NAMES } from "../storage/repositories";
 import type { StorageService } from "../storage/storageService";
+import {
+  buildProgressRecordFromAttempts,
+  rebuildAttemptResults,
+} from "./attemptRepair";
 
 interface ProgressSnapshotStudentSummary {
   studentId: string;
@@ -195,6 +199,7 @@ export class DataTransferService {
       }),
       getActiveStudentId: async () => "student-1",
     },
+    private readonly contentRepository: ContentRepository | null = null,
   ) {}
 
   async exportProgress(): Promise<ProgressSnapshot> {
@@ -205,7 +210,7 @@ export class DataTransferService {
       this.storage.getAll<ProgressRecord>(STORE_NAMES.progress),
     ]);
 
-    return {
+    const snapshot = {
       appVersion: APP_VERSION,
       exportedAt: new Date().toISOString(),
       student: {
@@ -223,10 +228,12 @@ export class DataTransferService {
         progress: progress.filter((record) => record.studentId === activeProfile.studentId),
       },
     };
+
+    return this.repairSnapshot(snapshot);
   }
 
   async importProgress(value: unknown): Promise<ProgressSnapshot> {
-    const snapshot = validateProgressSnapshot(value);
+    const snapshot = await this.repairSnapshot(validateProgressSnapshot(value));
     const activeStudentId = await this.studentProfileService.getActiveStudentId();
     const [existingSessions, existingAttempts, existingProgress] = await Promise.all([
       this.storage.getAll<TestSession>(STORE_NAMES.sessions),
@@ -308,6 +315,48 @@ export class DataTransferService {
           ...record,
           studentId: activeStudentId,
         })),
+      },
+    };
+  }
+
+  private async repairSnapshot(snapshot: ProgressSnapshot): Promise<ProgressSnapshot> {
+    if (!this.contentRepository) {
+      return snapshot;
+    }
+
+    const repairedAttempts = await Promise.all(
+      snapshot.data.attempts.map((attempt) => rebuildAttemptResults(this.contentRepository!, attempt)),
+    );
+    const conceptIds = new Set<string>();
+    for (const attempt of repairedAttempts) {
+      if (attempt.conceptId) {
+        conceptIds.add(attempt.conceptId);
+      }
+    }
+    for (const progress of snapshot.data.progress) {
+      conceptIds.add(progress.conceptId);
+    }
+
+    const repairedProgress: ProgressRecord[] = [];
+    for (const conceptId of conceptIds) {
+      const rebuilt = buildProgressRecordFromAttempts(conceptId, repairedAttempts);
+      if (rebuilt) {
+        repairedProgress.push(rebuilt);
+        continue;
+      }
+
+      const existing = snapshot.data.progress.find((record) => record.conceptId === conceptId);
+      if (existing) {
+        repairedProgress.push(existing);
+      }
+    }
+
+    return {
+      ...snapshot,
+      data: {
+        ...snapshot.data,
+        attempts: repairedAttempts,
+        progress: repairedProgress,
       },
     };
   }

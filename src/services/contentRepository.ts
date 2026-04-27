@@ -14,6 +14,7 @@ import type {
 } from "../domain/models";
 import { normalizeConceptId } from "../utils/conceptIds";
 import type { ContentRepository } from "./contracts";
+import { compareQuestionAnswer } from "../utils/answerNormalization";
 
 const bundledManifestModules = import.meta.glob("../../public/content/**/manifest/*.json", {
   eager: true,
@@ -62,6 +63,36 @@ export function hasValidMultipleChoiceChoices(
   }
 
   return new Set(normalizedChoiceValues).size === normalizedChoiceValues.length;
+}
+
+export function hasConsistentMultipleChoiceScoring(
+  question: Pick<Question, "questionType" | "answerType" | "correctAnswer" | "choices">,
+): boolean {
+  if (question.questionType !== "multiple_choice") {
+    return true;
+  }
+
+  const normalizedCorrectAnswer = question.correctAnswer.trim();
+  if (!normalizedCorrectAnswer) {
+    return false;
+  }
+
+  const correctChoice = question.choices?.find(
+    (choice) => choice.value.trim() === normalizedCorrectAnswer,
+  );
+  if (!correctChoice) {
+    return false;
+  }
+
+  if (!compareQuestionAnswer(question, correctChoice.value).isCorrect) {
+    return false;
+  }
+
+  return (
+    question.choices
+      ?.filter((choice) => choice.value.trim() !== normalizedCorrectAnswer)
+      .every((choice) => !compareQuestionAnswer(question, choice.value).isCorrect) ?? true
+  );
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -997,6 +1028,23 @@ export async function createDefaultContentRepository(): Promise<StaticContentRep
               testSetId,
               questionId,
               choiceCount: normalizedQuestion.choices?.length ?? 0,
+              choiceValues:
+                normalizedQuestion.choices?.map((choice) => choice.value.trim()) ?? [],
+            },
+          );
+          return [];
+        }
+
+        if (!hasConsistentMultipleChoiceScoring(normalizedQuestion)) {
+          skippedTestSets += 1;
+          logContentValidationError(
+            "Skipping test set with ambiguous multiple-choice scoring.",
+            {
+              path,
+              testSetId,
+              questionId,
+              answerType: normalizedQuestion.answerType,
+              correctAnswer: normalizedQuestion.correctAnswer,
               choiceValues:
                 normalizedQuestion.choices?.map((choice) => choice.value.trim()) ?? [],
             },

@@ -18,7 +18,7 @@ describe("admin console", () => {
     window.localStorage.clear();
   });
 
-  it("opens from the hidden title gesture and manages only test students", async () => {
+  it("opens from the hidden title gesture and supports profile cleanup", async () => {
     const user = userEvent.setup();
     const router = createMemoryRouter(routes, {
       initialEntries: ["/"],
@@ -54,17 +54,17 @@ describe("admin console", () => {
     expect(screen.getAllByText(testProfile.studentId).length).toBeGreaterThan(0);
     expect(screen.getAllByText("smartRetry").length).toBeGreaterThan(0);
     expect(screen.getAllByText("enabled").length).toBeGreaterThan(0);
-    expect(screen.getAllByRole("button", { name: "Delete test profile" })).toHaveLength(1);
+    expect(screen.getAllByRole("button", { name: "Delete profile" }).length).toBeGreaterThan(0);
 
     const confirmSpy = vi.spyOn(window, "confirm").mockReturnValue(true);
-    await user.click(screen.getByRole("button", { name: "Delete test profile" }));
+    await user.click(screen.getAllByRole("button", { name: "Delete profile" })[0]);
 
     await waitFor(() => {
       expect(screen.queryByText("Test Student")).not.toBeInTheDocument();
     });
 
     expect(confirmSpy).toHaveBeenCalledOnce();
-    expect(screen.queryByRole("button", { name: "Delete test profile" })).not.toBeInTheDocument();
+    expect(confirmSpy.mock.calls[0]?.[0]).toContain("No saved work was found for this profile.");
     confirmSpy.mockRestore();
   }, 10000);
 
@@ -106,7 +106,7 @@ describe("admin console", () => {
       const testStudentsSection = screen.getByText("Test Students").closest("section");
       expect(testStudentsSection).not.toBeNull();
       expect(within(testStudentsSection as HTMLElement).getByText("test1")).toBeInTheDocument();
-      expect(screen.getByRole("button", { name: "Delete test profile" })).toBeInTheDocument();
+      expect(screen.getAllByRole("button", { name: "Delete profile" }).length).toBeGreaterThan(0);
     });
 
     expect(confirmSpy).toHaveBeenCalledOnce();
@@ -148,6 +148,57 @@ describe("admin console", () => {
       expect(toggle).toBeChecked();
       expect(screen.getByText("enabled")).toBeInTheDocument();
     });
+  });
+
+  it("includes saved-work details before deleting a profile", async () => {
+    const user = userEvent.setup();
+    const router = createMemoryRouter(routes, {
+      initialEntries: ["/"],
+    });
+    const services = await createAppServices(new MemoryStorageService());
+    const profile = await services.studentProfileService.createProfile("Kashish", "6");
+    await services.studentProfileService.setActiveStudent(profile.studentId);
+
+    const session = await services.testGenerationService.createConceptSession("concept-unit-rates");
+    const question = await services.contentRepository.getQuestionById(session.questionIds[0] ?? "");
+    if (!question) {
+      throw new Error("Expected question for delete-confirmation test.");
+    }
+
+    await services.sessionService.saveAnswer(session.id, {
+      questionId: question.id,
+      response: question.correctAnswer,
+      answeredAt: "2026-04-24T10:02:00.000Z",
+    });
+
+    render(
+      <AppServicesProvider services={services}>
+        <TestModeProvider>
+          <RouterProvider router={router} />
+        </TestModeProvider>
+      </AppServicesProvider>,
+    );
+
+    const titleButton = await screen.findByRole("button", { name: "School Prep Assistant" });
+    for (let count = 0; count < 5; count += 1) {
+      await user.click(titleButton);
+    }
+
+    const confirmSpy = vi.spyOn(window, "confirm").mockReturnValue(false);
+    const featureFlagsSection = screen.getByText("Feature Flags").closest("section");
+    expect(featureFlagsSection).not.toBeNull();
+    const card = within(featureFlagsSection as HTMLElement)
+      .getAllByText("Kashish")
+      .find((element) => element.tagName.toLowerCase() === "div")
+      ?.closest("div.rounded-2xl");
+    expect(card).not.toBeNull();
+
+    await user.click(within(card as HTMLElement).getByRole("button", { name: "Delete profile" }));
+
+    expect(confirmSpy).toHaveBeenCalledOnce();
+    expect(confirmSpy.mock.calls[0]?.[0]).toContain("1 in-progress session(s)");
+    expect(confirmSpy.mock.calls[0]?.[0]).toContain("Delete profile Kashish");
+    confirmSpy.mockRestore();
   });
 
   it("shows captured sync diagnostics in hidden admin", async () => {

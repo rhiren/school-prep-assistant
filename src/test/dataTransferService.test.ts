@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { APP_VERSION } from "../app/version";
 import type { ProgressRecord, TestAttempt, TestSession } from "../domain/models";
+import { createDefaultContentRepository } from "../services/contentRepository";
 import { DataTransferService } from "../services/dataTransferService";
 import { DEFAULT_STUDENT_ID } from "../services/studentProfileService";
 import { getStudentScopedKey, STORE_NAMES } from "../storage/repositories";
@@ -185,5 +186,56 @@ describe("DataTransferService", () => {
         smartRetry: true,
       },
     });
+  });
+
+  it("repairs stale multiple-choice attempt scoring while exporting snapshots", async () => {
+    const storage = new MemoryStorageService();
+    const repository = await createDefaultContentRepository();
+    const service = new DataTransferService(storage, undefined, repository);
+
+    await storage.set(
+      STORE_NAMES.attempts,
+      getStudentScopedKey(DEFAULT_STUDENT_ID, "attempt-stale"),
+      {
+        attemptId: "attempt-stale",
+        studentId: DEFAULT_STUDENT_ID,
+        sessionId: "session-1",
+        mode: "concept",
+        courseId: "course-2",
+        conceptId: "concept-unit-rates",
+        conceptIds: ["concept-unit-rates"],
+        questionIds: ["concept-unit-rates-core-010"],
+        answers: {
+          "concept-unit-rates-core-010": {
+            questionId: "concept-unit-rates-core-010",
+            response: "Divide 14 by 7",
+            answeredAt: "2026-04-25T18:50:56.849Z",
+          },
+        },
+        results: [
+          {
+            questionId: "concept-unit-rates-core-010",
+            isCorrect: false,
+            submittedAnswer: "Divide 14 by 7",
+            correctAnswer: "Divide 14 by 7",
+            feedbackTip: null,
+          },
+        ],
+        summary: {
+          totalQuestions: 1,
+          correctCount: 0,
+          incorrectCount: 1,
+          unansweredCount: 0,
+          percentage: 0,
+        },
+        submittedAt: "2026-04-25T19:21:40.170Z",
+      } satisfies TestAttempt,
+    );
+
+    const snapshot = await service.exportProgress();
+
+    expect(snapshot.data.attempts[0]?.summary.percentage).toBe(100);
+    expect(snapshot.data.attempts[0]?.results[0]?.isCorrect).toBe(true);
+    expect(snapshot.data.progress[0]?.latestScore).toBe(100);
   });
 });

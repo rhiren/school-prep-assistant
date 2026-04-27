@@ -55,6 +55,7 @@ import type {
   MixedTestService,
   ProgressService,
   SessionService,
+  StudentProfileDeletionSummary,
   StudentProfileService,
   TestGenerationService,
 } from "../services/contracts";
@@ -95,6 +96,8 @@ interface StudentProfilesContextValue {
   ) => Promise<void>;
   convertStudentProfileToTest: (studentId: string) => Promise<void>;
   setTestStudentFeatureFlag: (studentId: string, featureName: string, enabled: boolean) => Promise<void>;
+  getStudentProfileDeletionSummary: (studentId: string) => Promise<StudentProfileDeletionSummary>;
+  deleteStudentProfile: (studentId: string) => Promise<void>;
   deleteTestStudentProfile: (studentId: string) => Promise<void>;
 }
 
@@ -123,7 +126,11 @@ export async function createAppServices(
   const sessionRepository = new SessionRepository(store, studentProfileService);
   const attemptRepository = new AttemptRepository(store, studentProfileService);
   const progressRepository = new ProgressRepository(store, studentProfileService);
-  const localProgressService = new LocalProgressService(attemptRepository, progressRepository);
+  const localProgressService = new LocalProgressService(
+    contentRepository,
+    attemptRepository,
+    progressRepository,
+  );
   const progressService = options.progressSyncManager
     ? new SyncingProgressService(localProgressService, options.progressSyncManager)
     : localProgressService;
@@ -145,7 +152,11 @@ export async function createAppServices(
     studentProfileService,
   );
   const mixedTestService = new MixedTestEligibilityEngine(progressService);
-  const localDataTransferService = new DataTransferService(store, studentProfileService);
+  const localDataTransferService = new DataTransferService(
+    store,
+    studentProfileService,
+    contentRepository,
+  );
   const dataTransferService = options.progressSyncManager
     ? new SyncingDataTransferService(localDataTransferService, options.progressSyncManager)
     : localDataTransferService;
@@ -165,6 +176,7 @@ export async function createAppServices(
 
 async function createDefaultAppServices(): Promise<AppServices> {
   const store = await IndexedDBStorageService.create();
+  const contentRepository = await createDefaultContentRepository();
   const localStudentProfileService = new LocalStudentProfileService(
     new StudentProfileRepository(store),
     store,
@@ -172,10 +184,11 @@ async function createDefaultAppServices(): Promise<AppServices> {
   const studentProfileServiceWithStorage = new SyncingStudentProfileService(
     localStudentProfileService,
     new FirestoreStudentProfileSyncClient(),
+    new FirestoreProgressSyncClient(),
   );
   const progressSyncManager = new ProgressSyncManager(
     new FirestoreProgressSyncClient(),
-    new DataTransferService(store, studentProfileServiceWithStorage),
+    new DataTransferService(store, studentProfileServiceWithStorage, contentRepository),
     () => studentProfileServiceWithStorage.getActiveStudentId(),
   );
   const remoteDiagnosticsManager = new RemoteDiagnosticsManager(
@@ -331,6 +344,15 @@ export function AppServicesProvider({
         if (updatedProfile.isActive) {
           setActiveProfile(updatedProfile);
         }
+      },
+      getStudentProfileDeletionSummary: (studentId: string) =>
+        resolvedServices.studentProfileService.getProfileDeletionSummary(studentId),
+      deleteStudentProfile: async (studentId: string) => {
+        await resolvedServices.studentProfileService.deleteProfile(studentId);
+        const refreshedProfiles = await resolvedServices.studentProfileService.listProfiles();
+        setProfiles(refreshedProfiles);
+        setActiveProfile(await resolvedServices.studentProfileService.getActiveProfile());
+        await resolvedServices.progressSyncManager?.initialize();
       },
       deleteTestStudentProfile: async (studentId: string) => {
         await resolvedServices.studentProfileService.deleteTestProfile(studentId);

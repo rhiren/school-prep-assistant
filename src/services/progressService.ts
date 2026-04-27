@@ -1,30 +1,57 @@
 import type { ProgressRecord, TestAttempt } from "../domain/models";
-import type { ProgressService } from "./contracts";
+import type { ContentRepository, ProgressService } from "./contracts";
 import type { AttemptRepository, ProgressRepository } from "../storage/repositories";
-import { getMasteryStatus } from "../utils/mastery";
+import {
+  attemptsEqual,
+  buildProgressRecordFromAttempts,
+  rebuildAttemptResults,
+} from "./attemptRepair";
 
 export class LocalProgressService implements ProgressService {
   constructor(
+    private readonly contentRepository: ContentRepository,
     private readonly attemptRepository: AttemptRepository,
     private readonly progressRepository: ProgressRepository,
   ) {}
 
   async getProgress(): Promise<ProgressRecord[]> {
-    return Object.values(await this.progressRepository.list()).sort((left, right) =>
-      left.conceptId.localeCompare(right.conceptId),
-    );
+    const repairedAttempts = await this.getAllRepairedAttempts();
+    const conceptIds = [...new Set(repairedAttempts.flatMap((attempt) => attempt.conceptId ? [attempt.conceptId] : []))];
+    const records = (
+      await Promise.all(conceptIds.map(async (conceptId) => this.getConceptProgress(conceptId)))
+    ).filter((record): record is ProgressRecord => record !== null);
+
+    return records.sort((left, right) => left.conceptId.localeCompare(right.conceptId));
   }
 
   async getConceptProgress(conceptId: string): Promise<ProgressRecord | null> {
-    return this.progressRepository.get(conceptId);
+    const attempts = await this.getConceptAttempts(conceptId);
+    const derivedProgress = buildProgressRecordFromAttempts(conceptId, attempts);
+    const storedProgress = await this.progressRepository.get(conceptId);
+
+    if (!derivedProgress) {
+      return storedProgress;
+    }
+
+    if (!storedProgress || JSON.stringify(storedProgress) !== JSON.stringify(derivedProgress)) {
+      await this.progressRepository.save(derivedProgress);
+    }
+
+    return derivedProgress;
   }
 
   async getConceptAttempts(conceptId: string): Promise<TestAttempt[]> {
-    return this.attemptRepository.listByConcept(conceptId);
+    const attempts = await this.attemptRepository.listByConcept(conceptId);
+    return this.repairAttempts(attempts);
   }
 
   async getAttempt(attemptId: string): Promise<TestAttempt | null> {
-    return this.attemptRepository.get(attemptId);
+    const attempt = await this.attemptRepository.get(attemptId);
+    if (!attempt) {
+      return null;
+    }
+
+    return this.repairAttempt(attempt);
   }
 
   async updateFromAttempt(attempt: TestAttempt): Promise<void> {
@@ -33,24 +60,29 @@ export class LocalProgressService implements ProgressService {
     }
 
     const attempts = await this.attemptRepository.listByConcept(attempt.conceptId);
-    const bestScore = attempts.reduce(
-      (currentBest, item) =>
-        currentBest === null ? item.summary.percentage : Math.max(currentBest, item.summary.percentage),
-      null as number | null,
-    );
+    const repairedAttempts = await this.repairAttempts(attempts);
+    const progress = buildProgressRecordFromAttempts(attempt.conceptId, repairedAttempts);
 
-    const progress: ProgressRecord = {
-      studentId: attempt.studentId,
-      conceptId: attempt.conceptId,
-      courseId: attempt.courseId,
-      attemptCount: attempts.length,
-      latestScore: attempt.summary.percentage,
-      bestScore,
-      masteryStatus: getMasteryStatus(attempt.summary.percentage, attempts.length),
-      lastAttemptedAt: attempt.submittedAt,
-      lastModified: attempt.submittedAt,
-    };
+    if (progress) {
+      await this.progressRepository.save(progress);
+    }
+  }
 
-    await this.progressRepository.save(progress);
+  private async getAllRepairedAttempts(): Promise<TestAttempt[]> {
+    const attempts = await this.attemptRepository.list();
+    return this.repairAttempts(attempts);
+  }
+
+  private async repairAttempts(attempts: TestAttempt[]): Promise<TestAttempt[]> {
+    return Promise.all(attempts.map((attempt) => this.repairAttempt(attempt)));
+  }
+
+  private async repairAttempt(attempt: TestAttempt): Promise<TestAttempt> {
+    const repairedAttempt = await rebuildAttemptResults(this.contentRepository, attempt);
+    if (!attemptsEqual(attempt, repairedAttempt)) {
+      await this.attemptRepository.append(repairedAttempt);
+    }
+
+    return repairedAttempt;
   }
 }

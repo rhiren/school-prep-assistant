@@ -90,6 +90,16 @@ export interface DataTransferServiceContract {
   }>;
 }
 
+export interface StudentProfileDeletionSummary {
+  studentId: string;
+  displayName: string;
+  isActive: boolean;
+  hasSavedWork: boolean;
+  inProgressSessionCount: number;
+  submittedAttemptCount: number;
+  progressRecordCount: number;
+}
+
 export interface SessionService {
   getSession(sessionId: string): Promise<TestSession | null>;
   getLatestInProgressSession(): Promise<TestSession | null>;
@@ -123,5 +133,7 @@ export interface StudentProfileService {
     featureName: string,
     enabled: boolean,
   ): Promise<StudentProfile>;
+  getProfileDeletionSummary(studentId: string): Promise<StudentProfileDeletionSummary>;
+  deleteProfile(studentId: string): Promise<void>;
   deleteTestProfile(studentId: string): Promise<void>;
 }

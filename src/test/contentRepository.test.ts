@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { CourseManifestDocument, QuestionBankDocument } from "../domain/models";
 import {
   buildContentIndex,
+  hasConsistentMultipleChoiceScoring,
   createDefaultContentRepository,
   hasMatchingMultipleChoiceCorrectAnswer,
   hasValidMultipleChoiceChoices,
@@ -255,5 +256,53 @@ describe("content repository", () => {
         ],
       }),
     ).toBe(false);
+  });
+
+  it("requires multiple-choice scoring to accept only the authored correct option", () => {
+    expect(
+      hasConsistentMultipleChoiceScoring({
+        questionType: "multiple_choice",
+        answerType: "decimal",
+        correctAnswer: "Store B",
+        choices: [
+          { id: "a", label: "A", value: "Store A" },
+          { id: "b", label: "B", value: "Store B" },
+        ],
+      }),
+    ).toBe(true);
+
+    expect(
+      hasConsistentMultipleChoiceScoring({
+        questionType: "multiple_choice",
+        answerType: "decimal",
+        correctAnswer: "0.5",
+        choices: [
+          { id: "a", label: "A", value: "0.5" },
+          { id: "b", label: "B", value: "0.50" },
+        ],
+      }),
+    ).toBe(true);
+  });
+
+  it("verifies all authored multiple-choice correct answers score correctly", async () => {
+    const repository = await createDefaultContentRepository();
+    const courses = await repository.listCourses();
+    const concepts = courses.flatMap((course) => course.units.flatMap((unit) => unit.concepts));
+
+    for (const concept of concepts) {
+      const questions = await repository.getQuestionsForConcept(concept.id);
+      const multipleChoiceQuestions = questions.filter((question) => question.questionType === "multiple_choice");
+
+      for (const question of multipleChoiceQuestions) {
+        expect(
+          hasConsistentMultipleChoiceScoring({
+            questionType: question.questionType,
+            answerType: question.answerType,
+            correctAnswer: question.correctAnswer,
+            choices: question.choices,
+          }),
+        ).toBe(true);
+      }
+    }
   });
 });

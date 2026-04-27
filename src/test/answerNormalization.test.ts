@@ -70,4 +70,17 @@ describe("normalizeAnswer", () => {
     expect(comparison.isCorrect).toBe(true);
     expect(comparison.feedbackTip).toBeNull();
   });
+
+  it("scores multiple-choice questions by exact option identity instead of numeric equivalence", () => {
+    const comparison = compareQuestionAnswer(
+      {
+        questionType: "multiple_choice",
+        answerType: "decimal",
+        correctAnswer: "0.5",
+      },
+      "0.50",
+    );
+
+    expect(comparison.isCorrect).toBe(false);
+  });
 });

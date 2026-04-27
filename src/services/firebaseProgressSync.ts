@@ -13,6 +13,7 @@ import type {
   DataTransferServiceContract,
   ProgressService,
   SessionService,
+  StudentProfileDeletionSummary,
   StudentProfileService,
 } from "./contracts";
 import {
@@ -735,6 +736,7 @@ export class SyncingStudentProfileService implements StudentProfileService {
       upsertProfileFromCloud(profile: StudentProfile): Promise<StudentProfile>;
     },
     private readonly syncClient: StudentProfileSyncClient,
+    private readonly progressSyncClient?: ProgressSyncClient,
   ) {}
 
   async listProfiles(): Promise<StudentProfile[]> {
@@ -799,6 +801,62 @@ export class SyncingStudentProfileService implements StudentProfileService {
     const profile = await this.delegate.setTestProfileFeatureFlag(studentId, featureName, enabled);
     this.queueProfileSync(profile);
     return profile;
+  }
+
+  async getProfileDeletionSummary(studentId: string): Promise<StudentProfileDeletionSummary> {
+    await this.ensureCloudProfilesMerged();
+    const localSummary = await this.delegate.getProfileDeletionSummary(studentId);
+
+    if (!this.progressSyncClient?.isReady()) {
+      return localSummary;
+    }
+
+    try {
+      const cloudDocument = await this.progressSyncClient.loadProgressFromCloud(studentId);
+      if (!cloudDocument) {
+        return localSummary;
+      }
+
+      const inProgressSessionCount = cloudDocument.snapshot.data.sessions.filter((session) => {
+        if (session.status !== "in_progress") {
+          return false;
+        }
+
+        const answeredCount = Object.values(session.answers ?? {}).filter(
+          (answer) => typeof answer?.response === "string" && answer.response.trim() !== "",
+        ).length;
+        return answeredCount > 0 || session.currentQuestionIndex > 0;
+      }).length;
+
+      return {
+        ...localSummary,
+        hasSavedWork:
+          localSummary.hasSavedWork ||
+          cloudDocument.snapshot.data.attempts.length > 0 ||
+          cloudDocument.snapshot.data.progress.length > 0 ||
+          inProgressSessionCount > 0,
+        inProgressSessionCount: Math.max(localSummary.inProgressSessionCount, inProgressSessionCount),
+        submittedAttemptCount: Math.max(
+          localSummary.submittedAttemptCount,
+          cloudDocument.snapshot.data.attempts.length,
+        ),
+        progressRecordCount: Math.max(
+          localSummary.progressRecordCount,
+          cloudDocument.snapshot.data.progress.length,
+        ),
+      };
+    } catch (error) {
+      recordProfileSyncError("Cloud profile deletion summary lookup failed.", error, {
+        studentId,
+      });
+      return localSummary;
+    }
+  }
+
+  async deleteProfile(studentId: string): Promise<void> {
+    await this.ensureCloudProfilesMerged();
+    await this.delegate.deleteProfile(studentId);
+    this.queueDeleteProfile(studentId);
   }
 
   async deleteTestProfile(studentId: string): Promise<void> {
