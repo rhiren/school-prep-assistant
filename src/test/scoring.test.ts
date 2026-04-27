@@ -326,6 +326,58 @@ describe("BasicScoringEngine", () => {
     expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
   });
 
+  it("scores integer operations text-valued multiple-choice answers correctly", async () => {
+    const repository = await createDefaultContentRepository();
+    const engine = new BasicScoringEngine(repository);
+    const session: TestSession = {
+      id: "session-3d",
+      studentId: DEFAULT_STUDENT_ID,
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-integer-operations",
+      conceptIds: ["concept-integer-operations"],
+      questionIds: [
+        "concept-integer-operations-core-009",
+        "concept-integer-operations-core-015",
+        "concept-integer-operations-review-009",
+        "concept-integer-operations-review-015",
+      ],
+      answers: {
+        "concept-integer-operations-core-009": {
+          questionId: "concept-integer-operations-core-009",
+          response: "You moved 3 units right from -8",
+          answeredAt: "2026-04-27T05:00:00.000Z",
+        },
+        "concept-integer-operations-core-015": {
+          questionId: "concept-integer-operations-core-015",
+          response: "Two negatives multiply to a positive",
+          answeredAt: "2026-04-27T05:00:00.000Z",
+        },
+        "concept-integer-operations-review-009": {
+          questionId: "concept-integer-operations-review-009",
+          response: "You move 8 units left from 5",
+          answeredAt: "2026-04-27T05:00:00.000Z",
+        },
+        "concept-integer-operations-review-015": {
+          questionId: "concept-integer-operations-review-015",
+          response: "Two negatives multiply to a positive",
+          answeredAt: "2026-04-27T05:00:00.000Z",
+        },
+      },
+      currentQuestionIndex: 0,
+      status: "in_progress",
+      createdAt: "2026-04-27T05:00:00.000Z",
+      updatedAt: "2026-04-27T05:00:00.000Z",
+    };
+
+    const attempt = await engine.scoreSession(session);
+
+    expect(attempt.summary.correctCount).toBe(4);
+    expect(attempt.summary.incorrectCount).toBe(0);
+    expect(attempt.summary.percentage).toBe(100);
+    expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
+  });
+
   it("captures hidden duration metadata at submit time", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-04-24T16:05:30.000Z"));

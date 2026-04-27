@@ -1,0 +1,182 @@
+{
+  "testId": "concept-integer-operations-review",
+  "conceptId": "concept-integer-operations",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-integer-operations-review-001",
+      "type": "multiple_choice",
+      "questionText": "What is -2 + 9?",
+      "options": ["7", "-7", "11", "-11"],
+      "correctAnswer": "7",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Starting at -2 and moving 9 units right lands on 7. A common mistake is subtracting 2 from 9 without thinking about the starting point."
+    },
+    {
+      "id": "concept-integer-operations-review-002",
+      "type": "multiple_choice",
+      "questionText": "What is 7 - (-5)?",
+      "options": ["2", "12", "-12", "-2"],
+      "correctAnswer": "12",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Subtracting a negative becomes addition. So 7 - (-5) = 7 + 5 = 12. A common mistake is leaving the subtraction sign in place and getting 2."
+    },
+    {
+      "id": "concept-integer-operations-review-003",
+      "type": "multiple_choice",
+      "questionText": "What is -6 + (-4)?",
+      "options": ["-10", "-2", "2", "10"],
+      "correctAnswer": "-10",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Adding two negative numbers keeps the answer negative. Add the distances: 6 + 4 = 10, so the result is -10. A common mistake is ignoring the signs and answering 10."
+    },
+    {
+      "id": "concept-integer-operations-review-004",
+      "type": "multiple_choice",
+      "questionText": "What is -8 - 1?",
+      "options": ["-9", "-7", "7", "9"],
+      "correctAnswer": "-9",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Subtracting 1 from -8 means moving one more unit left on the number line. That lands on -9. A common mistake is moving right instead of left."
+    },
+    {
+      "id": "concept-integer-operations-review-005",
+      "type": "multiple_choice",
+      "questionText": "What is -5 × 2?",
+      "options": ["-10", "10", "-7", "7"],
+      "correctAnswer": "-10",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A negative times a positive gives a negative answer. Since 5 × 2 = 10, the result is -10. A common mistake is giving a positive answer because the multiplication fact is positive."
+    },
+    {
+      "id": "concept-integer-operations-review-006",
+      "type": "multiple_choice",
+      "questionText": "What is -7 × -3?",
+      "options": ["-21", "21", "-10", "10"],
+      "correctAnswer": "21",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Two negatives multiply to a positive. Since 7 × 3 = 21, the answer is 21. A common mistake is keeping the negative sign even though both factors are negative."
+    },
+    {
+      "id": "concept-integer-operations-review-007",
+      "type": "multiple_choice",
+      "questionText": "What is -16 ÷ 4?",
+      "options": ["-4", "4", "-12", "12"],
+      "correctAnswer": "-4",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A negative divided by a positive gives a negative answer. Since 16 ÷ 4 = 4, the result is -4. A common mistake is answering 4 because the division fact is positive."
+    },
+    {
+      "id": "concept-integer-operations-review-008",
+      "type": "multiple_choice",
+      "questionText": "What is -18 ÷ -6?",
+      "options": ["-3", "3", "-12", "12"],
+      "correctAnswer": "3",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A negative divided by a negative gives a positive answer. Since 18 ÷ 6 = 3, the result is 3. A common mistake is keeping the answer negative."
+    },
+    {
+      "id": "concept-integer-operations-review-009",
+      "type": "multiple_choice",
+      "questionText": "Which statement explains why 5 + (-8) = -3?",
+      "options": [
+        "You move 8 units left from 5",
+        "You always add the digits and keep the negative sign",
+        "Five is smaller than eight",
+        "A positive plus a negative is always zero"
+      ],
+      "correctAnswer": "You move 8 units left from 5",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Adding a negative means move left on the number line. Starting at 5 and moving 8 units left lands on -3. A common mistake is memorizing a rule without connecting it to movement on the number line."
+    },
+    {
+      "id": "concept-integer-operations-review-010",
+      "type": "multiple_choice",
+      "questionText": "Which operation matches the phrase “owe 6 dollars and then lose 3 more dollars”?",
+      "options": ["-6 + (-3)", "-6 - (-3)", "6 + 3", "6 - 3"],
+      "correctAnswer": "-6 + (-3)",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Owing 6 dollars is -6, and losing 3 more dollars means add another negative 3. So the situation is -6 + (-3). A common mistake is turning the second change positive."
+    },
+    {
+      "id": "concept-integer-operations-review-011",
+      "type": "multiple_choice",
+      "questionText": "What is -10 - (-7)?",
+      "options": ["-17", "-3", "3", "17"],
+      "correctAnswer": "-3",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Subtracting a negative becomes addition, so -10 - (-7) = -10 + 7 = -3. A common mistake is changing both signs and answering 17."
+    },
+    {
+      "id": "concept-integer-operations-review-012",
+      "type": "multiple_choice",
+      "questionText": "What is 3 × (-9)?",
+      "options": ["-27", "27", "-12", "12"],
+      "correctAnswer": "-27",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A positive times a negative gives a negative answer. Since 3 × 9 = 27, the result is -27. A common mistake is answering 27 because the multiplication fact itself is positive."
+    },
+    {
+      "id": "concept-integer-operations-review-013",
+      "type": "multiple_choice",
+      "questionText": "Which sign rule is correct for division?",
+      "options": [
+        "Different signs give a negative quotient",
+        "Different signs give a positive quotient",
+        "All quotients with negatives are zero",
+        "Division ignores signs"
+      ],
+      "correctAnswer": "Different signs give a negative quotient",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "For division, same signs give a positive quotient and different signs give a negative quotient. A common mistake is reversing those two rules."
+    },
+    {
+      "id": "concept-integer-operations-review-014",
+      "type": "multiple_choice",
+      "questionText": "What is -27 ÷ 9?",
+      "options": ["-3", "3", "-18", "18"],
+      "correctAnswer": "-3",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A negative divided by a positive gives a negative answer. Since 27 ÷ 9 = 3, the result is -3. A common mistake is ignoring the sign rule and answering 3."
+    },
+    {
+      "id": "concept-integer-operations-review-015",
+      "type": "multiple_choice",
+      "questionText": "A student says -4 × -5 = -20 because each factor is negative. What is the mistake?",
+      "options": [
+        "Two negatives multiply to a positive",
+        "The answer should be -9",
+        "Negative factors cannot be multiplied",
+        "Multiplication keeps the first sign only"
+      ],
+      "correctAnswer": "Two negatives multiply to a positive",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "When both factors are negative, the product is positive. Since 4 × 5 = 20, the correct result is positive 20. A common mistake is ignoring the same-sign rule."
+    },
+    {
+      "id": "concept-integer-operations-review-016",
+      "type": "multiple_choice",
+      "questionText": "What is -14 + 6?",
+      "options": ["-8", "8", "-20", "20"],
+      "correctAnswer": "-8",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Starting at -14 and moving 6 units right lands on -8. A common mistake is subtracting 6 from 14 and giving a positive answer."
+    }
+  ]
+}

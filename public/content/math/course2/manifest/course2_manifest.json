@@ -299,7 +299,18 @@
               "description": "Add, subtract, multiply, and divide integers with confidence.",
               "order": 10,
               "tutorial": "./content/tutorials/concept-integer-operations.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-integer-operations-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-integer-operations-core.json"
+                },
+                {
+                  "id": "concept-integer-operations-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-integer-operations-review.json"
+                }
+              ]
             }
           ]
         },
