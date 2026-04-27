@@ -1,0 +1,182 @@
+{
+  "testId": "concept-integer-operations-core",
+  "conceptId": "concept-integer-operations",
+  "type": "concept",
+  "questions": [
+    {
+      "id": "concept-integer-operations-core-001",
+      "type": "multiple_choice",
+      "questionText": "What is -3 + 8?",
+      "options": ["3", "5", "-5", "-11"],
+      "correctAnswer": "5",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Start at -3 and move 8 units to the right on the number line. You land on 5. A common mistake is subtracting 3 from 8 without thinking about the starting value."
+    },
+    {
+      "id": "concept-integer-operations-core-002",
+      "type": "multiple_choice",
+      "questionText": "What is 6 - (-4)?",
+      "options": ["2", "10", "-10", "-2"],
+      "correctAnswer": "10",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Subtracting a negative is the same as adding the opposite. So 6 - (-4) becomes 6 + 4 = 10. A common mistake is keeping the subtraction sign and getting 2."
+    },
+    {
+      "id": "concept-integer-operations-core-003",
+      "type": "multiple_choice",
+      "questionText": "What is -7 + (-2)?",
+      "options": ["-9", "-5", "5", "9"],
+      "correctAnswer": "-9",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Adding two negative numbers keeps the answer negative. Add the distances: 7 + 2 = 9, so the sum is -9. A common mistake is ignoring the sign and answering 9."
+    },
+    {
+      "id": "concept-integer-operations-core-004",
+      "type": "multiple_choice",
+      "questionText": "What is -5 - 3?",
+      "options": ["-8", "-2", "2", "8"],
+      "correctAnswer": "-8",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Starting at -5 and subtracting 3 means moving 3 more units left. That lands on -8. A common mistake is thinking subtract always makes the number closer to zero."
+    },
+    {
+      "id": "concept-integer-operations-core-005",
+      "type": "multiple_choice",
+      "questionText": "What is -4 × 3?",
+      "options": ["12", "-12", "-7", "7"],
+      "correctAnswer": "-12",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A negative times a positive gives a negative answer. Since 4 × 3 = 12, the result is -12. A common mistake is giving a positive answer because the product of 4 and 3 is positive."
+    },
+    {
+      "id": "concept-integer-operations-core-006",
+      "type": "multiple_choice",
+      "questionText": "What is -6 × -5?",
+      "options": ["-30", "30", "11", "-11"],
+      "correctAnswer": "30",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Two negatives multiply to a positive. Since 6 × 5 = 30, the answer is 30. A common mistake is keeping the negative sign even though both factors are negative."
+    },
+    {
+      "id": "concept-integer-operations-core-007",
+      "type": "multiple_choice",
+      "questionText": "What is 18 ÷ (-3)?",
+      "options": ["-6", "6", "-15", "15"],
+      "correctAnswer": "-6",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A positive divided by a negative gives a negative answer. Since 18 ÷ 3 = 6, the result is -6. A common mistake is ignoring the sign rule and answering 6."
+    },
+    {
+      "id": "concept-integer-operations-core-008",
+      "type": "multiple_choice",
+      "questionText": "What is -20 ÷ -4?",
+      "options": ["-5", "5", "-16", "16"],
+      "correctAnswer": "5",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A negative divided by a negative gives a positive answer. Since 20 ÷ 4 = 5, the answer is 5. A common mistake is keeping the answer negative."
+    },
+    {
+      "id": "concept-integer-operations-core-009",
+      "type": "multiple_choice",
+      "questionText": "Which statement explains why -8 + 3 = -5?",
+      "options": [
+        "You moved 3 units right from -8",
+        "You always add the digits and keep the negative sign",
+        "Three is larger than eight",
+        "Adding a positive always makes the answer positive"
+      ],
+      "correctAnswer": "You moved 3 units right from -8",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Starting at -8 and adding 3 means moving 3 units right, which lands on -5. A common mistake is memorizing a rule without connecting it to the number line."
+    },
+    {
+      "id": "concept-integer-operations-core-010",
+      "type": "multiple_choice",
+      "questionText": "Which operation matches the phrase “gain 7 dollars after owing 2 dollars”?",
+      "options": ["-2 + 7", "-2 - 7", "2 + 7", "7 - 2 only"],
+      "correctAnswer": "-2 + 7",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Owing 2 dollars is represented by -2, and a gain of 7 dollars means add 7. So the situation is -2 + 7. A common mistake is starting with positive 2 instead of negative 2."
+    },
+    {
+      "id": "concept-integer-operations-core-011",
+      "type": "multiple_choice",
+      "questionText": "What is -9 - (-6)?",
+      "options": ["-15", "-3", "3", "15"],
+      "correctAnswer": "-3",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Subtracting a negative becomes addition: -9 - (-6) = -9 + 6 = -3. A common mistake is turning it into -9 - 6 and getting -15."
+    },
+    {
+      "id": "concept-integer-operations-core-012",
+      "type": "multiple_choice",
+      "questionText": "What is 4 × (-7)?",
+      "options": ["-28", "28", "-11", "11"],
+      "correctAnswer": "-28",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A positive times a negative gives a negative answer. Since 4 × 7 = 28, the result is -28. A common mistake is answering 28 because the digits multiply to a positive value."
+    },
+    {
+      "id": "concept-integer-operations-core-013",
+      "type": "multiple_choice",
+      "questionText": "Which sign rule is correct?",
+      "options": [
+        "Same signs give a positive product",
+        "Same signs always give a negative sum",
+        "Different signs always give a positive quotient",
+        "Negative numbers cannot be divided"
+      ],
+      "correctAnswer": "Same signs give a positive product",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "For multiplication and division, same signs give a positive result and different signs give a negative result. A common mistake is mixing the sign rules for addition with the ones for multiplication."
+    },
+    {
+      "id": "concept-integer-operations-core-014",
+      "type": "multiple_choice",
+      "questionText": "What is -24 ÷ 6?",
+      "options": ["-4", "4", "-18", "18"],
+      "correctAnswer": "-4",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A negative divided by a positive is negative. Since 24 ÷ 6 = 4, the answer is -4. A common mistake is forgetting the sign rule and answering 4."
+    },
+    {
+      "id": "concept-integer-operations-core-015",
+      "type": "multiple_choice",
+      "questionText": "A student says -3 × -2 = -6 because there are two negative signs. What is the mistake?",
+      "options": [
+        "Two negatives multiply to a positive",
+        "Negative numbers cannot be multiplied",
+        "The answer should be -5",
+        "Multiplication ignores signs"
+      ],
+      "correctAnswer": "Two negatives multiply to a positive",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "When both factors are negative, the product is positive. Since 3 × 2 = 6, the correct result is positive 6. A common mistake is counting the negative signs without using the sign rule."
+    },
+    {
+      "id": "concept-integer-operations-core-016",
+      "type": "multiple_choice",
+      "questionText": "What is 15 + (-19)?",
+      "options": ["-4", "4", "-34", "34"],
+      "correctAnswer": "-4",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Adding a negative is like moving left on the number line. Starting at 15 and moving 19 units left lands on -4. A common mistake is adding 15 and 19 and ignoring that one value is negative."
+    }
+  ]
+}
