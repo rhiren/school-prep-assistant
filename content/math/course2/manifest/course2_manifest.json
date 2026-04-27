@@ -146,7 +146,18 @@
               "description": "Solve for missing values in proportion problems using clear steps.",
               "order": 11,
               "tutorial": "./content/tutorials/concept-solving-proportions.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-solving-proportions-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-solving-proportions-core.json"
+                },
+                {
+                  "id": "concept-solving-proportions-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-solving-proportions-review.json"
+                }
+              ]
             },
             {
               "id": "concept-percent-basics",
