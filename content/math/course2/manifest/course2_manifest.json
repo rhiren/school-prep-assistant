@@ -224,7 +224,18 @@
               "description": "Use number lines and reasoning to compare positive and negative numbers.",
               "order": 2,
               "tutorial": "./content/tutorials/concept-compare-integers.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-compare-integers-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-compare-integers-core.json"
+                },
+                {
+                  "id": "concept-compare-integers-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-compare-integers-review.json"
+                }
+              ]
             },
             {
               "id": "concept-absolute-value",
