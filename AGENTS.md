@@ -35,6 +35,7 @@ For significant changes, also read:
 
 - [docs/math_prep_assistant_chat_context.md](/Users/hiren/projects/school-prep-assistant/docs/math_prep_assistant_chat_context.md)
 - [docs/future_feature_backlog.md](/Users/hiren/projects/school-prep-assistant/docs/future_feature_backlog.md) for captured future ideas that are not yet active implementation work
+- [docs/course2_concept_rollout_plan.md](/Users/hiren/projects/school-prep-assistant/docs/course2_concept_rollout_plan.md) when work touches `Coming soon` Course 2 concepts or concept-pack rollout sequencing
 
 Use the files this way:
 
@@ -45,7 +46,8 @@ Before making significant changes:
 
 1. Read this file first.
 2. Read the history doc if the work touches architecture, storage, sync, content structure, routing, deployment, or migrations.
-3. If a request conflicts with this constitution, call that out before changing code.
+3. Read the concept rollout plan if the work unlocks or expands Course 2 concepts.
+4. If a request conflicts with this constitution, call that out before changing code.
 
 Do not duplicate evolving project rules across multiple files unless there is a strong reason.
 
@@ -187,6 +189,84 @@ system.
 
 Preserve protection for normal student flow so hidden admin tools do not create
 day-to-day learner complexity.
+
+Parent/admin reporting may exist inside hidden admin, but it should remain:
+
+- supportive
+- local-first friendly
+- non-intrusive to the learner flow
+- simple enough for one parent/operator to use without introducing a broad
+  settings or analytics platform
+
+Progress/time reporting should remain parent-facing and should not create
+student-facing pressure by default.
+
+Operational diagnostics may also exist in hidden admin, including local sync
+diagnostics and optional remote diagnostics upload for debugging, but they must
+remain:
+
+- minimal
+- explicit / admin-controlled
+- narrow in scope
+- non-essential to normal learner flow
+
+---
+
+### Scoring integrity guardrails
+
+Scoring correctness is a top-level product requirement.
+
+Preserve the expectation that:
+
+- correct student answers must never be marked incorrect because of formatting
+  or authoring ambiguity
+- multiple-choice questions score by exact authored option identity
+- numeric / normalized equivalence remains available for true numeric entry
+  questions, not for multiple-choice distractors
+- stale saved attempts may be repaired against current scoring rules when
+  loaded so old incorrect scoring does not keep propagating
+- import/export/sync boundaries must not preserve stale incorrect scoring when
+  it can be safely repaired
+
+When adding or editing content, preserve:
+
+- multiple-choice correct answer must exactly match an authored option value
+- invalid or ambiguous multiple-choice scoring should be rejected before
+  content reaches students
+- repository-wide scoring validation and known-correct regression tests for new
+  concept packs
+
+Do not weaken these safeguards casually.
+
+---
+
+### Course 2 rollout discipline
+
+Current Course 2 concept rollout should remain phased and deliberate.
+
+Do not mass-enable `Coming soon` concepts without the minimum learner-ready
+assets in place.
+
+Concept readiness should continue to follow this order:
+
+1. tutorial exists
+2. core test exists
+3. review test exists
+4. scoring / answer-key validation passes
+5. concept becomes `Practice ready`
+
+Preserve the current Phase 1 unlock sequence that has already been completed:
+
+- `Solving Proportions`
+- `Compare Integers`
+- `Integer Operations`
+
+For future concept unlocks, prefer:
+
+- smallest safe concept-pack diffs
+- concept-specific scoring regressions
+- known-correct answer spot checks
+- preserving the current learner flow and labels
 
 ---
 
