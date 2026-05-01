@@ -378,6 +378,58 @@ describe("BasicScoringEngine", () => {
     expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
   });
 
+  it("scores constant of proportionality text-valued multiple-choice answers correctly", async () => {
+    const repository = await createDefaultContentRepository();
+    const engine = new BasicScoringEngine(repository);
+    const session: TestSession = {
+      id: "session-3f",
+      studentId: DEFAULT_STUDENT_ID,
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-constant-of-proportionality",
+      conceptIds: ["concept-constant-of-proportionality"],
+      questionIds: [
+        "concept-constant-of-proportionality-core-009",
+        "concept-constant-of-proportionality-core-019",
+        "concept-constant-of-proportionality-review-007",
+        "concept-constant-of-proportionality-review-018",
+      ],
+      answers: {
+        "concept-constant-of-proportionality-core-009": {
+          questionId: "concept-constant-of-proportionality-core-009",
+          response: "Each output is 5 times the input",
+          answeredAt: "2026-04-30T22:00:00.000Z",
+        },
+        "concept-constant-of-proportionality-core-019": {
+          questionId: "concept-constant-of-proportionality-core-019",
+          response: "The student should divide y by x instead of subtracting",
+          answeredAt: "2026-04-30T22:00:00.000Z",
+        },
+        "concept-constant-of-proportionality-review-007": {
+          questionId: "concept-constant-of-proportionality-review-007",
+          response: "Every output is 3.5 times the input",
+          answeredAt: "2026-04-30T22:00:00.000Z",
+        },
+        "concept-constant-of-proportionality-review-018": {
+          questionId: "concept-constant-of-proportionality-review-018",
+          response: "Because both describe cost for one unit",
+          answeredAt: "2026-04-30T22:00:00.000Z",
+        },
+      },
+      currentQuestionIndex: 0,
+      status: "in_progress",
+      createdAt: "2026-04-30T22:00:00.000Z",
+      updatedAt: "2026-04-30T22:00:00.000Z",
+    };
+
+    const attempt = await engine.scoreSession(session);
+
+    expect(attempt.summary.correctCount).toBe(4);
+    expect(attempt.summary.incorrectCount).toBe(0);
+    expect(attempt.summary.percentage).toBe(100);
+    expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
+  });
+
   it("scores compare integers text-valued multiple-choice answers correctly", async () => {
     const repository = await createDefaultContentRepository();
     const engine = new BasicScoringEngine(repository);

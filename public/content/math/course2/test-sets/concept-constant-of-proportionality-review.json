@@ -1,0 +1,307 @@
+{
+  "testId": "concept-constant-of-proportionality-review",
+  "conceptId": "concept-constant-of-proportionality",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-constant-of-proportionality-review-001",
+      "type": "multiple_choice",
+      "questionText": "A proportional relationship has the point (6, 27). What is k?",
+      "options": [
+        "3.5",
+        "4",
+        "4.5",
+        "6"
+      ],
+      "correctAnswer": "4.5",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Divide 27 by 6."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-002",
+      "type": "multiple_choice",
+      "questionText": "If y = 1.8x, what is the constant of proportionality?",
+      "options": [
+        "0.8",
+        "1.8",
+        "18",
+        "x"
+      ],
+      "correctAnswer": "1.8",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The coefficient of x is the constant."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-003",
+      "type": "multiple_choice",
+      "questionText": "A table shows x = 2, 7, 10 and y = 3, 10.5, 15. What is k?",
+      "options": [
+        "1.2",
+        "1.5",
+        "2",
+        "2.5"
+      ],
+      "correctAnswer": "1.5",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Each y-value divided by x equals 1.5."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-004",
+      "type": "multiple_choice",
+      "questionText": "Which statement explains why k = 2 in y = 2x?",
+      "options": [
+        "The output is always 2 more than the input",
+        "The output is always 2 times the input",
+        "The input is always half the output plus 2",
+        "The graph starts at 2"
+      ],
+      "correctAnswer": "The output is always 2 times the input",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant of proportionality is multiplicative."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-005",
+      "type": "multiple_choice",
+      "questionText": "A bike moves 36 miles in 3 hours. What is the constant of proportionality in miles per hour?",
+      "options": [
+        "9",
+        "12",
+        "18",
+        "33"
+      ],
+      "correctAnswer": "12",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Divide 36 by 3."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-006",
+      "type": "multiple_choice",
+      "questionText": "A student says the constant of proportionality in (5, 14) is 9 because 14 - 5 = 9. Why is that wrong?",
+      "options": [
+        "The constant of proportionality comes from division, not subtraction",
+        "The point is not on a graph",
+        "14 is too large",
+        "5 should be bigger than 14"
+      ],
+      "correctAnswer": "The constant of proportionality comes from division, not subtraction",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "You need y/x, not y - x."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-007",
+      "type": "multiple_choice",
+      "questionText": "Why is k = 3.5 in the table (2, 7), (4, 14), (8, 28)?",
+      "options": [
+        "Every output is 3.5 times the input",
+        "Every output is 3.5 more than the input",
+        "Every input is 3.5 less than the output",
+        "All outputs are multiples of 7"
+      ],
+      "correctAnswer": "Every output is 3.5 times the input",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio y/x is 3.5 for every row."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-008",
+      "type": "multiple_choice",
+      "questionText": "If k = 0.4 and x = 35, what is y?",
+      "options": [
+        "12",
+        "14",
+        "18",
+        "20"
+      ],
+      "correctAnswer": "14",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Multiply 0.4 by 35."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-009",
+      "type": "multiple_choice",
+      "questionText": "Which point shows a constant of proportionality of 2.25?",
+      "options": [
+        "(4, 9)",
+        "(4, 8)",
+        "(8, 9)",
+        "(9, 4)"
+      ],
+      "correctAnswer": "(4, 9)",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Divide 9 by 4 to get 2.25."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-010",
+      "type": "multiple_choice",
+      "questionText": "A proportional graph passes through the origin and (12, 30). What is k?",
+      "options": [
+        "2",
+        "2.5",
+        "3",
+        "18"
+      ],
+      "correctAnswer": "2.5",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Divide 30 by 12."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-011",
+      "type": "multiple_choice",
+      "questionText": "A bottle fills 15 cups using 2.5 liters. What is the constant of proportionality in cups per liter?",
+      "options": [
+        "5",
+        "6",
+        "7.5",
+        "12.5"
+      ],
+      "correctAnswer": "6",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Divide 15 by 2.5."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-012",
+      "type": "multiple_choice",
+      "questionText": "Which equation has a constant of proportionality of 5/2?",
+      "options": [
+        "y = 2.5x",
+        "y = x + 2.5",
+        "y = 5x + 2",
+        "y = x/2.5 + 1"
+      ],
+      "correctAnswer": "y = 2.5x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "5/2 is the same as 2.5."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-013",
+      "type": "multiple_choice",
+      "questionText": "A student is finding k from the table (3, 12), (6, 24). What should they do?",
+      "options": [
+        "Subtract 3 from 12",
+        "Divide each y-value by the matching x-value",
+        "Add all the x-values first",
+        "Multiply the two rows together"
+      ],
+      "correctAnswer": "Divide each y-value by the matching x-value",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "That is how you find the constant ratio."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-014",
+      "type": "multiple_choice",
+      "questionText": "What is the constant of proportionality in the point (0.8, 2)?",
+      "options": [
+        "0.25",
+        "0.4",
+        "2.5",
+        "4"
+      ],
+      "correctAnswer": "2.5",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Divide 2 by 0.8."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-015",
+      "type": "multiple_choice",
+      "questionText": "A worker earns $52.50 in 7 hours. What is k in dollars per hour?",
+      "options": [
+        "6.5",
+        "7.5",
+        "8.5",
+        "9.5"
+      ],
+      "correctAnswer": "7.5",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Divide 52.5 by 7."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-016",
+      "type": "multiple_choice",
+      "questionText": "Which table has a constant of proportionality less than 1?",
+      "options": [
+        "(4, 2), (8, 4)",
+        "(3, 6), (6, 12)",
+        "(5, 15), (10, 30)",
+        "(2, 10), (4, 20)"
+      ],
+      "correctAnswer": "(4, 2), (8, 4)",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The ratio y/x is 0.5 in the first table."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-017",
+      "type": "multiple_choice",
+      "questionText": "If k = 11/4 and x = 20, what is y?",
+      "options": [
+        "44",
+        "55",
+        "60",
+        "75"
+      ],
+      "correctAnswer": "55",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Multiply 20 by 11/4."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-018",
+      "type": "multiple_choice",
+      "questionText": "Why is the constant of proportionality in a pricing problem the same as the unit price?",
+      "options": [
+        "Because both describe cost for one unit",
+        "Because both are always integers",
+        "Because both are found by subtraction",
+        "Because both only appear in graphs"
+      ],
+      "correctAnswer": "Because both describe cost for one unit",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The constant tells how much output goes with one unit of input."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-019",
+      "type": "multiple_choice",
+      "questionText": "A graph passes through (18, 63). What is k?",
+      "options": [
+        "3",
+        "3.5",
+        "4",
+        "4.5"
+      ],
+      "correctAnswer": "3.5",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Divide 63 by 18."
+    },
+    {
+      "id": "concept-constant-of-proportionality-review-020",
+      "type": "multiple_choice",
+      "questionText": "Which explanation best describes the role of the constant of proportionality?",
+      "options": [
+        "It tells the common multiplicative rate in the relationship",
+        "It tells the constant difference in the relationship",
+        "It replaces the need for tables and graphs",
+        "It only matters when x = 1"
+      ],
+      "correctAnswer": "It tells the common multiplicative rate in the relationship",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The constant of proportionality is the shared multiplicative rate that defines the proportional relationship."
+    }
+  ]
+}
