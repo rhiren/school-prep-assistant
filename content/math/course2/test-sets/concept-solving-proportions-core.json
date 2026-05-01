@@ -7,7 +7,12 @@
       "id": "concept-solving-proportions-core-001",
       "type": "multiple_choice",
       "questionText": "Solve the proportion 3/4 = x/20.",
-      "options": ["12", "15", "16", "17"],
+      "options": [
+        "12",
+        "15",
+        "16",
+        "17"
+      ],
       "correctAnswer": "15",
       "difficulty": "easy",
       "answerType": "number",
@@ -17,7 +22,12 @@
       "id": "concept-solving-proportions-core-002",
       "type": "multiple_choice",
       "questionText": "Solve the proportion x/9 = 4/12.",
-      "options": ["2", "3", "4", "6"],
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
       "correctAnswer": "3",
       "difficulty": "easy",
       "answerType": "number",
@@ -27,7 +37,12 @@
       "id": "concept-solving-proportions-core-003",
       "type": "multiple_choice",
       "questionText": "If 5 notebooks cost 15 dollars, how much do 7 notebooks cost at the same rate?",
-      "options": ["18", "20", "21", "24"],
+      "options": [
+        "18",
+        "20",
+        "21",
+        "24"
+      ],
       "correctAnswer": "21",
       "difficulty": "easy",
       "answerType": "number",
@@ -37,7 +52,12 @@
       "id": "concept-solving-proportions-core-004",
       "type": "multiple_choice",
       "questionText": "Which proportion correctly matches 6 cups of juice for 8 people and x cups of juice for 20 people?",
-      "options": ["6/8 = x/20", "6/20 = 8/x", "8/6 = x/20", "6/x = 8/20"],
+      "options": [
+        "6/8 = x/20",
+        "6/20 = 8/x",
+        "8/6 = x/20",
+        "6/x = 8/20"
+      ],
       "correctAnswer": "6/8 = x/20",
       "difficulty": "easy",
       "answerType": "number",
@@ -47,7 +67,12 @@
       "id": "concept-solving-proportions-core-005",
       "type": "multiple_choice",
       "questionText": "Solve the proportion 8/12 = 10/x.",
-      "options": ["12", "15", "18", "20"],
+      "options": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
       "correctAnswer": "15",
       "difficulty": "easy",
       "answerType": "number",
@@ -57,7 +82,12 @@
       "id": "concept-solving-proportions-core-006",
       "type": "multiple_choice",
       "questionText": "A map uses the scale 2 inches : 5 miles. If a road measures 8 inches on the map, how many miles is the real road?",
-      "options": ["16", "18", "20", "25"],
+      "options": [
+        "16",
+        "18",
+        "20",
+        "25"
+      ],
       "correctAnswer": "20",
       "difficulty": "easy",
       "answerType": "number",
@@ -68,7 +98,12 @@
       "id": "concept-solving-proportions-core-007",
       "type": "multiple_choice",
       "questionText": "Solve the proportion 7/x = 14/18.",
-      "options": ["7", "8", "9", "11"],
+      "options": [
+        "7",
+        "8",
+        "9",
+        "11"
+      ],
       "correctAnswer": "9",
       "difficulty": "easy",
       "answerType": "number",
@@ -78,7 +113,12 @@
       "id": "concept-solving-proportions-core-008",
       "type": "multiple_choice",
       "questionText": "A classroom recipe uses 3 cups of paint for 4 posters. How many cups of paint are needed for 12 posters?",
-      "options": ["8", "9", "10", "12"],
+      "options": [
+        "8",
+        "9",
+        "10",
+        "12"
+      ],
       "correctAnswer": "9",
       "difficulty": "easy",
       "answerType": "number",
@@ -103,7 +143,12 @@
       "id": "concept-solving-proportions-core-010",
       "type": "multiple_choice",
       "questionText": "Solve the proportion x/14 = 9/21.",
-      "options": ["4", "5", "6", "7"],
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
       "correctAnswer": "6",
       "difficulty": "easy",
       "answerType": "number",
@@ -113,7 +158,12 @@
       "id": "concept-solving-proportions-core-011",
       "type": "multiple_choice",
       "questionText": "If 4 pencils cost 6 dollars, how many pencils can you buy for 21 dollars at the same rate?",
-      "options": ["12", "14", "15", "18"],
+      "options": [
+        "12",
+        "14",
+        "15",
+        "18"
+      ],
       "correctAnswer": "14",
       "difficulty": "medium",
       "answerType": "number",
@@ -124,7 +174,12 @@
       "id": "concept-solving-proportions-core-012",
       "type": "multiple_choice",
       "questionText": "Which value of x makes the proportion 9/15 = x/25 true?",
-      "options": ["12", "15", "18", "20"],
+      "options": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
       "correctAnswer": "15",
       "difficulty": "medium",
       "answerType": "number",
@@ -134,7 +189,12 @@
       "id": "concept-solving-proportions-core-013",
       "type": "multiple_choice",
       "questionText": "A 6-foot pole casts an 8-foot shadow. At the same time, a tree casts a 20-foot shadow. How tall is the tree?",
-      "options": ["12", "14", "15", "18"],
+      "options": [
+        "12",
+        "14",
+        "15",
+        "18"
+      ],
       "correctAnswer": "15",
       "difficulty": "medium",
       "answerType": "number",
@@ -160,7 +220,12 @@
       "id": "concept-solving-proportions-core-015",
       "type": "multiple_choice",
       "questionText": "Solve the proportion 5/6 = 20/x.",
-      "options": ["22", "24", "25", "30"],
+      "options": [
+        "22",
+        "24",
+        "25",
+        "30"
+      ],
       "correctAnswer": "24",
       "difficulty": "medium",
       "answerType": "number",
@@ -170,7 +235,12 @@
       "id": "concept-solving-proportions-core-016",
       "type": "multiple_choice",
       "questionText": "A bike travels 18 miles in 2 hours. At the same rate, how far does it travel in 5 hours?",
-      "options": ["36", "40", "45", "50"],
+      "options": [
+        "36",
+        "40",
+        "45",
+        "50"
+      ],
       "correctAnswer": "45",
       "difficulty": "medium",
       "answerType": "number",
@@ -181,7 +251,12 @@
       "id": "concept-solving-proportions-core-017",
       "type": "multiple_choice",
       "questionText": "Which equation should you solve to find x if 5 apples cost 12 dollars and 8 apples cost x dollars?",
-      "options": ["5/12 = 8/x", "5/8 = 12/x", "12/5 = 8/x", "5/x = 12/8"],
+      "options": [
+        "5/12 = 8/x",
+        "5/8 = 12/x",
+        "12/5 = 8/x",
+        "5/x = 12/8"
+      ],
       "correctAnswer": "5/12 = 8/x",
       "difficulty": "medium",
       "answerType": "number",
@@ -191,12 +266,504 @@
       "id": "concept-solving-proportions-core-018",
       "type": "multiple_choice",
       "questionText": "A 4-inch drawing matches a 10-foot real bench. How long should a drawing be for a bench that is 25 feet long?",
-      "options": ["8", "10", "12", "15"],
+      "options": [
+        "8",
+        "10",
+        "12",
+        "15"
+      ],
       "correctAnswer": "10",
       "difficulty": "medium",
       "answerType": "number",
       "explanation": "Twenty-five feet is 2.5 times 10 feet, so multiply the drawing length by 2.5 too: 4 times 2.5 = 10 inches. A common mistake is adding 25 and 4 instead of using the scale factor.",
       "unit": "inches"
+    },
+    {
+      "id": "concept-solving-proportions-core-019",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion x/7 = 6/14.",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correctAnswer": "3",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Six fourteenths simplifies to 3/7, so x/7 must be 3/7. That means x = 3. A common mistake is multiplying 6 and 14 instead of comparing equivalent ratios."
+    },
+    {
+      "id": "concept-solving-proportions-core-020",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 9/15 = x/25.",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "18"
+      ],
+      "correctAnswer": "15",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The denominator went from 15 to 25, which is multiplying by 5/3. Apply the same factor to the numerator: 9 times 5/3 = 15. A common mistake is adding 10 because the denominator increased by 10."
+    },
+    {
+      "id": "concept-solving-proportions-core-021",
+      "type": "multiple_choice",
+      "questionText": "If 4 pens cost 6 dollars, how much do 10 pens cost at the same rate?",
+      "options": [
+        "12",
+        "15",
+        "16",
+        "18"
+      ],
+      "correctAnswer": "15",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Each pen costs 6 divided by 4, or 1.5 dollars. Ten pens cost 10 times 1.5, which is 15 dollars. A common mistake is doubling 6 instead of scaling from 4 pens to 10 pens."
+    },
+    {
+      "id": "concept-solving-proportions-core-022",
+      "type": "multiple_choice",
+      "questionText": "Which proportion correctly matches 3 tickets for 18 dollars and 5 tickets for x dollars?",
+      "options": [
+        "3/18 = 5/x",
+        "3/5 = 18/x",
+        "18/3 = 5/x",
+        "3/x = 18/5"
+      ],
+      "correctAnswer": "3/18 = 5/x",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Keep the units in the same order: tickets over dollars equals tickets over dollars. That gives 3/18 = 5/x. A common mistake is flipping one ratio so the units no longer match."
+    },
+    {
+      "id": "concept-solving-proportions-core-023",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 14/x = 7/9.",
+      "options": [
+        "16",
+        "18",
+        "21",
+        "23"
+      ],
+      "correctAnswer": "18",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The numerator 14 is 2 times 7, so the denominator must be 2 times 9. That makes x = 18. A common mistake is dividing 14 by 9 instead of matching the scale factor."
+    },
+    {
+      "id": "concept-solving-proportions-core-024",
+      "type": "multiple_choice",
+      "questionText": "A map uses the scale 3 inches : 12 miles. If a trip is 24 miles, how many inches should it be on the map?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correctAnswer": "6",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Twenty-four miles is 2 times 12 miles, so the map distance must also double from 3 inches to 6 inches. A common mistake is adding 24 and 3 instead of using the scale factor.",
+      "unit": "inches"
+    },
+    {
+      "id": "concept-solving-proportions-core-025",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion x/18 = 5/6.",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
+      "correctAnswer": "15",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The denominator went from 6 to 18, which is multiplying by 3. Multiply the numerator by 3 too: 5 times 3 = 15. A common mistake is dividing 18 by 5 instead of scaling both parts equally."
+    },
+    {
+      "id": "concept-solving-proportions-core-026",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 8/20 = 12/x.",
+      "options": [
+        "24",
+        "30",
+        "32",
+        "36"
+      ],
+      "correctAnswer": "30",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Eight twentieths simplifies to 2/5. So 12/x must equal 2/5, which makes x = 30. A common mistake is multiplying 20 and 12 without comparing equivalent fractions."
+    },
+    {
+      "id": "concept-solving-proportions-core-027",
+      "type": "multiple_choice",
+      "questionText": "Why does the proportion 4/6 = 10/15 make sense?",
+      "options": [
+        "Both ratios simplify to 2/3",
+        "The numerators add to 14",
+        "The denominators are both multiples of 5",
+        "Both ratios are greater than 1"
+      ],
+      "correctAnswer": "Both ratios simplify to 2/3",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Four sixths and ten fifteenths both simplify to 2/3, so they are equivalent ratios. A common mistake is focusing on separate numbers instead of whether the whole ratios match."
+    },
+    {
+      "id": "concept-solving-proportions-core-028",
+      "type": "multiple_choice",
+      "questionText": "If 7 notebooks cost 21 dollars, how many notebooks can you buy for 33 dollars at the same rate?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": "11",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Each notebook costs 3 dollars. Thirty-three dollars buys 33 divided by 3, which is 11 notebooks. A common mistake is subtracting 21 from 33 instead of finding the unit rate."
+    },
+    {
+      "id": "concept-solving-proportions-core-029",
+      "type": "multiple_choice",
+      "questionText": "Which equation should you solve if 6 cups of flour make 8 batches and 15 cups of flour make x batches?",
+      "options": [
+        "6/8 = 15/x",
+        "6/15 = 8/x",
+        "8/6 = 15/x",
+        "6/x = 8/15"
+      ],
+      "correctAnswer": "6/8 = 15/x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Keep the order as cups of flour over batches for both ratios. That gives 6/8 = 15/x. A common mistake is switching the order in only one ratio."
+    },
+    {
+      "id": "concept-solving-proportions-core-030",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 5/9 = x/27.",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "21"
+      ],
+      "correctAnswer": "15",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The denominator went from 9 to 27, which is multiplying by 3. Multiply the numerator by 3 too: 5 times 3 = 15. A common mistake is adding 18 because 27 is 18 more than 9."
+    },
+    {
+      "id": "concept-solving-proportions-core-031",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 16/x = 4/9.",
+      "options": [
+        "24",
+        "32",
+        "36",
+        "40"
+      ],
+      "correctAnswer": "36",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Sixteen is 4 times as much as 4, so x must be 4 times as much as 9. That gives x = 36. A common mistake is dividing 16 by 9 instead of matching the scale factor."
+    },
+    {
+      "id": "concept-solving-proportions-core-032",
+      "type": "multiple_choice",
+      "questionText": "If a machine stamps 3 labels in 12 seconds, how many seconds will it take to stamp 8 labels at the same rate?",
+      "options": [
+        "24",
+        "28",
+        "30",
+        "32"
+      ],
+      "correctAnswer": "32",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Three labels in 12 seconds means 4 seconds per label. Eight labels take 8 times 4, which is 32 seconds. A common mistake is dividing 12 by 8 instead of using the constant rate.",
+      "unit": "seconds"
+    },
+    {
+      "id": "concept-solving-proportions-core-033",
+      "type": "multiple_choice",
+      "questionText": "A drawing uses 6 centimeters for a 9-meter wall. How long should the drawing be for an 18-meter wall?",
+      "options": [
+        "9",
+        "10",
+        "12",
+        "15"
+      ],
+      "correctAnswer": "12",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Eighteen meters is 2 times 9 meters, so the drawing length should also double from 6 centimeters to 12 centimeters. A common mistake is adding 18 and 6 instead of using the scale factor.",
+      "unit": "centimeters"
+    },
+    {
+      "id": "concept-solving-proportions-core-034",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 2/5 = 14/x.",
+      "options": [
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      "correctAnswer": "35",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Fourteen is 7 times 2, so x must be 7 times 5. That makes x = 35. A common mistake is multiplying 14 and 5 without comparing the matching parts."
+    },
+    {
+      "id": "concept-solving-proportions-core-035",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 12/x = 3/11.",
+      "options": [
+        "33",
+        "40",
+        "44",
+        "48"
+      ],
+      "correctAnswer": "44",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Twelve is 4 times 3, so x must be 4 times 11. That gives x = 44. A common mistake is adding 12 and 11 instead of scaling the full ratio."
+    },
+    {
+      "id": "concept-solving-proportions-core-036",
+      "type": "multiple_choice",
+      "questionText": "A student solves 4/7 = x/21 and says x = 17 because 4 + 7 + 6 = 17. What is the mistake?",
+      "options": [
+        "The denominator was tripled, so the numerator should also be tripled",
+        "You should add all four numbers in the proportion",
+        "The ratio should always be reversed first",
+        "x must always be larger than 21"
+      ],
+      "correctAnswer": "The denominator was tripled, so the numerator should also be tripled",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Going from 7 to 21 means multiplying by 3, so x should be 4 times 3, which is 12. A common mistake is adding parts of the proportion instead of using equivalent scaling."
+    },
+    {
+      "id": "concept-solving-proportions-core-037",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 9/12 = 15/x.",
+      "options": [
+        "18",
+        "20",
+        "24",
+        "27"
+      ],
+      "correctAnswer": "20",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Nine twelfths simplifies to 3/4. So 15/x must equal 3/4, which makes x = 20. A common mistake is matching 15 with 12 because both are larger numbers."
+    },
+    {
+      "id": "concept-solving-proportions-core-038",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion x/16 = 7/8.",
+      "options": [
+        "12",
+        "14",
+        "15",
+        "16"
+      ],
+      "correctAnswer": "14",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The denominator went from 8 to 16, which is multiplying by 2. Multiply the numerator by 2 too: 7 times 2 = 14. A common mistake is dividing 16 by 7 instead of scaling the ratio."
+    },
+    {
+      "id": "concept-solving-proportions-core-039",
+      "type": "multiple_choice",
+      "questionText": "If 6 books fit on 4 shelves, how many shelves are needed for 15 books at the same rate?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correctAnswer": "10",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Set up 6/4 = 15/x. Since 15 is 2.5 times 6, x must be 2.5 times 4, which is 10 shelves. A common mistake is dividing 15 by 4 without comparing equivalent ratios.",
+      "unit": "shelves"
+    },
+    {
+      "id": "concept-solving-proportions-core-040",
+      "type": "multiple_choice",
+      "questionText": "Which proportion correctly matches 2 inches on a map for 7 miles in real life and 10 inches on the map for x miles in real life?",
+      "options": [
+        "2/7 = 10/x",
+        "2/10 = 7/x",
+        "7/2 = 10/x",
+        "2/x = 7/10"
+      ],
+      "correctAnswer": "2/7 = 10/x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Keep the order as map inches over real miles for both ratios. That gives 2/7 = 10/x. A common mistake is switching the order for only one ratio."
+    },
+    {
+      "id": "concept-solving-proportions-core-041",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 11/x = 1/4.",
+      "options": [
+        "22",
+        "33",
+        "40",
+        "44"
+      ],
+      "correctAnswer": "44",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Eleven is 11 times as much as 1, so x must be 11 times as much as 4. That makes x = 44. A common mistake is adding 11 and 4 instead of using the scale factor."
+    },
+    {
+      "id": "concept-solving-proportions-core-042",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 18/24 = x/8.",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctAnswer": "6",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Eighteen twenty-fourths simplifies to 3/4. So x/8 must equal 3/4, and x = 6. A common mistake is choosing 8 because it matches the denominator on the second ratio."
+    },
+    {
+      "id": "concept-solving-proportions-core-043",
+      "type": "multiple_choice",
+      "questionText": "If 5 oranges fill 2 bags, how many oranges fill 6 bags at the same rate?",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "18"
+      ],
+      "correctAnswer": "15",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Six bags is 3 times as many as 2 bags, so multiply the oranges by 3 too: 5 times 3 = 15. A common mistake is adding 6 and 5 instead of using equivalent ratios."
+    },
+    {
+      "id": "concept-solving-proportions-core-044",
+      "type": "multiple_choice",
+      "questionText": "Which statement is true when solving 3/8 = x/40?",
+      "options": [
+        "Since 8 is multiplied by 5 to get 40, 3 must also be multiplied by 5",
+        "You should add 8 and 40 first",
+        "x is always 40 minus 8",
+        "The numerator stays 3 because only denominators change"
+      ],
+      "correctAnswer": "Since 8 is multiplied by 5 to get 40, 3 must also be multiplied by 5",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Equivalent ratios use the same scale factor on both parts. Since 8 becomes 40 by multiplying by 5, 3 must also be multiplied by 5 to get x = 15. A common mistake is changing only one part of the ratio."
+    },
+    {
+      "id": "concept-solving-proportions-core-045",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 14/21 = x/9.",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctAnswer": "6",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Fourteen twenty-firsts simplifies to 2/3. So x/9 must equal 2/3, giving x = 6. A common mistake is comparing 14 with 9 directly instead of simplifying the ratio."
+    },
+    {
+      "id": "concept-solving-proportions-core-046",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 10/x = 5/14.",
+      "options": [
+        "24",
+        "26",
+        "28",
+        "30"
+      ],
+      "correctAnswer": "28",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Ten is 2 times 5, so x must be 2 times 14. That means x = 28. A common mistake is dividing 10 by 14 instead of matching the scale factor."
+    },
+    {
+      "id": "concept-solving-proportions-core-047",
+      "type": "multiple_choice",
+      "questionText": "If 4 cups of paint cover 12 chairs, how many cups are needed to cover 9 chairs at the same rate?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correctAnswer": "3",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Twelve chairs to 9 chairs is multiplying by 3/4, so multiply 4 cups by 3/4 too. That gives 3 cups. A common mistake is subtracting 3 from 4 because there are 3 fewer chairs.",
+      "unit": "cups"
+    },
+    {
+      "id": "concept-solving-proportions-core-048",
+      "type": "multiple_choice",
+      "questionText": "Solve the proportion 7/x = 21/36.",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "14"
+      ],
+      "correctAnswer": "12",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Twenty-one is 3 times 7, so 36 must be 3 times x. That means x = 12. A common mistake is dividing 36 by 7 instead of comparing corresponding parts."
+    },
+    {
+      "id": "concept-solving-proportions-core-049",
+      "type": "multiple_choice",
+      "questionText": "A car travels 12 miles in 3 hours. At the same rate, how many hours does it take to travel 28 miles?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctAnswer": "7",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Twelve miles in 3 hours is 4 miles per hour. Twenty-eight miles at 4 miles per hour takes 7 hours. A common mistake is multiplying 28 by 3 instead of using the unit rate.",
+      "unit": "hours"
+    },
+    {
+      "id": "concept-solving-proportions-core-050",
+      "type": "multiple_choice",
+      "questionText": "A recipe uses 4 cups of flour for 10 servings. How many cups of flour are needed for 25 servings?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "12"
+      ],
+      "correctAnswer": "10",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Twenty-five servings is 2.5 times 10 servings, so multiply 4 cups by 2.5. That gives 10 cups. A common mistake is adding 25 and 4 instead of scaling the ratio.",
+      "unit": "cups"
     }
   ]
 }
