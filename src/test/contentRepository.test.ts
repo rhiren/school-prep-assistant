@@ -52,6 +52,19 @@ describe("content repository", () => {
     expect(tutorialContent).toContain("#");
   });
 
+  it("keeps unlocked core concept packs at 50 questions", async () => {
+    const repository = await createDefaultContentRepository();
+    const compareIntegersCoreQuestions = await repository.getQuestionsForTestSet(
+      "concept-compare-integers-core",
+    );
+    const integerOperationsCoreQuestions = await repository.getQuestionsForTestSet(
+      "concept-integer-operations-core",
+    );
+
+    expect(compareIntegersCoreQuestions).toHaveLength(50);
+    expect(integerOperationsCoreQuestions).toHaveLength(50);
+  });
+
   it("fails fast when duplicate global question ids are present", () => {
     const manifest: CourseManifestDocument = {
       courses: [
