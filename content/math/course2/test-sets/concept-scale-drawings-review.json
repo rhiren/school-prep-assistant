@@ -1,0 +1,217 @@
+{
+  "testId": "concept-scale-drawings-review",
+  "conceptId": "concept-scale-drawings",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-scale-drawings-review-001",
+      "type": "multiple_choice",
+      "questionText": "A scale uses 3 inches = 15 feet. How many feet does 11 inches represent?",
+      "options": ["45 feet", "50 feet", "55 feet", "60 feet"],
+      "correctAnswer": "55 feet",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 5 feet per inch. Eleven inches represents 11 times 5 feet, which is 55 feet."
+    },
+    {
+      "id": "concept-scale-drawings-review-002",
+      "type": "multiple_choice",
+      "questionText": "If 4 cm = 18 m, what drawing length matches 63 m?",
+      "options": ["12 cm", "13 cm", "14 cm", "15 cm"],
+      "correctAnswer": "14 cm",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Sixty-three meters is 3.5 times 18 m, so the drawing length is 3.5 times 4 cm, which is 14 cm."
+    },
+    {
+      "id": "concept-scale-drawings-review-003",
+      "type": "multiple_choice",
+      "questionText": "Which proportion matches 5 mm = 2 km and x mm = 18 km?",
+      "options": ["5/2 = x/18", "5/18 = 2/x", "2/5 = x/18", "5/x = 2/18"],
+      "correctAnswer": "5/2 = x/18",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Keep the order drawing over real on both sides: 5/2 = x/18."
+    },
+    {
+      "id": "concept-scale-drawings-review-004",
+      "type": "multiple_choice",
+      "questionText": "A model uses 6 cm to represent 21 m. What real distance matches 16 cm?",
+      "options": ["49 m", "52 m", "56 m", "64 m"],
+      "correctAnswer": "56 m",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 3.5 meters per centimeter. Sixteen centimeters represents 16 times 3.5 meters, which is 56 m."
+    },
+    {
+      "id": "concept-scale-drawings-review-005",
+      "type": "multiple_choice",
+      "questionText": "Which pair is NOT consistent with the scale 2 inches = 14 feet?",
+      "options": ["1 inch and 7 feet", "3 inches and 21 feet", "5 inches and 30 feet", "8 inches and 56 feet"],
+      "correctAnswer": "5 inches and 30 feet",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 7 feet per inch. Five inches should represent 35 feet, not 30 feet."
+    },
+    {
+      "id": "concept-scale-drawings-review-006",
+      "type": "multiple_choice",
+      "questionText": "A floor plan uses 1.5 cm = 6 m. How long should the drawing be for a 26 m room?",
+      "options": ["5.5 cm", "6 cm", "6.5 cm", "7 cm"],
+      "correctAnswer": "6.5 cm",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 4 meters per centimeter. Twenty-six meters divided by 4 meters per centimeter gives 6.5 cm."
+    },
+    {
+      "id": "concept-scale-drawings-review-007",
+      "type": "multiple_choice",
+      "questionText": "Why is 4 cm : 24 m and 7 cm : 42 m a correct scale drawing comparison?",
+      "options": [
+        "Both lengths were multiplied by the same factor",
+        "Both real lengths are even numbers",
+        "The drawing lengths differ by 3",
+        "The totals on both sides are equal"
+      ],
+      "correctAnswer": "Both lengths were multiplied by the same factor",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Going from 4 cm to 7 cm multiplies by 1.75, and going from 24 m to 42 m also multiplies by 1.75. That keeps the scale consistent."
+    },
+    {
+      "id": "concept-scale-drawings-review-008",
+      "type": "multiple_choice",
+      "questionText": "If 9 cm = 45 m, what map distance matches 32 m?",
+      "options": ["6.2 cm", "6.4 cm", "6.8 cm", "7.2 cm"],
+      "correctAnswer": "6.4 cm",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The scale is 5 meters per centimeter. Thirty-two meters divided by 5 meters per centimeter gives 6.4 cm."
+    },
+    {
+      "id": "concept-scale-drawings-review-009",
+      "type": "multiple_choice",
+      "questionText": "A blueprint uses 7 mm = 28 cm. What real length matches 18 mm?",
+      "options": ["60 cm", "64 cm", "68 cm", "72 cm"],
+      "correctAnswer": "72 cm",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 4 centimeters per millimeter. Eighteen millimeters represents 18 times 4 centimeters, which is 72 cm."
+    },
+    {
+      "id": "concept-scale-drawings-review-010",
+      "type": "multiple_choice",
+      "questionText": "Which equation correctly compares drawing length d and real length r for a scale of 6 cm = 15 m?",
+      "options": ["d/r = 6/15", "d/r = 15/6", "r/d = 6/15", "d - r = 9"],
+      "correctAnswer": "d/r = 6/15",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio of drawing length to real length must stay equal to the original scale, so d/r = 6/15."
+    },
+    {
+      "id": "concept-scale-drawings-review-011",
+      "type": "multiple_choice",
+      "questionText": "A map uses 8 cm = 36 km. How many kilometers does 13 cm represent?",
+      "options": ["54 km", "58.5 km", "62 km", "65 km"],
+      "correctAnswer": "58.5 km",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The scale is 4.5 kilometers per centimeter. Thirteen centimeters represents 13 times 4.5 kilometers, which is 58.5 km."
+    },
+    {
+      "id": "concept-scale-drawings-review-012",
+      "type": "multiple_choice",
+      "questionText": "If 5 cm = 22 m, which drawing length matches 48.4 m?",
+      "options": ["10 cm", "11 cm", "12 cm", "13 cm"],
+      "correctAnswer": "11 cm",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Forty-eight point four meters is 2.2 times 22 m, so the drawing length is 2.2 times 5 cm, which is 11 cm."
+    },
+    {
+      "id": "concept-scale-drawings-review-013",
+      "type": "multiple_choice",
+      "questionText": "A toy car drawing is 3.2 cm long. If the scale is 1 cm = 0.5 m, how long is the real car?",
+      "options": ["1.4 m", "1.6 m", "1.8 m", "2.0 m"],
+      "correctAnswer": "1.6 m",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Multiply 3.2 centimeters by 0.5 meters per centimeter to get 1.6 meters."
+    },
+    {
+      "id": "concept-scale-drawings-review-014",
+      "type": "multiple_choice",
+      "questionText": "A student claims 2 inches = 10 feet and 9 inches = 40 feet keep the same scale. What is the mistake?",
+      "options": [
+        "Nine inches should match 45 feet to keep the scale",
+        "The drawing length should stay 2 inches",
+        "Forty feet is too large for a scale drawing",
+        "Scale drawings only work with metric units"
+      ],
+      "correctAnswer": "Nine inches should match 45 feet to keep the scale",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 5 feet per inch. At that rate, 9 inches should represent 45 feet, not 40 feet."
+    },
+    {
+      "id": "concept-scale-drawings-review-015",
+      "type": "multiple_choice",
+      "questionText": "If 12 mm = 30 cm, what drawing length matches 82.5 cm?",
+      "options": ["30 mm", "33 mm", "36 mm", "39 mm"],
+      "correctAnswer": "33 mm",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The scale is 2.5 centimeters per millimeter. Eighty-two point five centimeters divided by 2.5 gives 33 mm."
+    },
+    {
+      "id": "concept-scale-drawings-review-016",
+      "type": "multiple_choice",
+      "questionText": "A scale model uses 9 inches = 27 feet. How many inches should represent 52.5 feet?",
+      "options": ["15.5 inches", "16 inches", "16.5 inches", "17.5 inches"],
+      "correctAnswer": "17.5 inches",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The scale is 3 feet per inch. Fifty-two point five feet divided by 3 gives 17.5 inches."
+    },
+    {
+      "id": "concept-scale-drawings-review-017",
+      "type": "multiple_choice",
+      "questionText": "Which pair keeps the same scale as 3 cm = 7.5 m?",
+      "options": ["4 cm and 9 m", "6 cm and 15 m", "8 cm and 18 m", "10 cm and 20 m"],
+      "correctAnswer": "6 cm and 15 m",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Doubling 3 cm gives 6 cm, so the real length must also double from 7.5 m to 15 m."
+    },
+    {
+      "id": "concept-scale-drawings-review-018",
+      "type": "multiple_choice",
+      "questionText": "A map uses 2.4 cm = 18 km. What real distance matches 7.2 cm?",
+      "options": ["45 km", "48 km", "51 km", "54 km"],
+      "correctAnswer": "54 km",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Seven point two centimeters is 3 times 2.4 cm, so the real distance is 3 times 18 km, which is 54 km."
+    },
+    {
+      "id": "concept-scale-drawings-review-019",
+      "type": "multiple_choice",
+      "questionText": "If 7 cm = 24.5 m, what drawing length should represent 56 m?",
+      "options": ["14 cm", "15 cm", "16 cm", "17 cm"],
+      "correctAnswer": "16 cm",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Fifty-six meters is 56 divided by 24.5, or 16/7 times the original real length. Multiply 7 cm by 16/7 to get 16 cm."
+    },
+    {
+      "id": "concept-scale-drawings-review-020",
+      "type": "multiple_choice",
+      "questionText": "A blueprint uses the scale 2 inches = 7 feet. What real distance matches 13.5 inches?",
+      "options": ["40.5 feet", "45 feet", "47.25 feet", "49.5 feet"],
+      "correctAnswer": "47.25 feet",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The scale is 3.5 feet per inch. Thirteen point five inches represents 13.5 times 3.5 feet, which is 47.25 feet."
+    }
+  ]
+}

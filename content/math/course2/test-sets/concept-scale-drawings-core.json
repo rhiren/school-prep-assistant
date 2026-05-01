@@ -1,0 +1,537 @@
+{
+  "testId": "concept-scale-drawings-core",
+  "conceptId": "concept-scale-drawings",
+  "type": "concept",
+  "questions": [
+    {
+      "id": "concept-scale-drawings-core-001",
+      "type": "multiple_choice",
+      "questionText": "A scale says 1 inch = 4 feet. If a drawing length is 3 inches, how long is the real object?",
+      "options": ["7 feet", "12 feet", "16 feet", "24 feet"],
+      "correctAnswer": "12 feet",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Three inches is 3 times 1 inch, so the real length is 3 times 4 feet, which is 12 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-002",
+      "type": "multiple_choice",
+      "questionText": "A scale says 2 cm = 6 m. If the real object is 18 m long, how long should the drawing be?",
+      "options": ["4 cm", "5 cm", "6 cm", "8 cm"],
+      "correctAnswer": "6 cm",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Eighteen meters is 3 times 6 meters, so the drawing length is 3 times 2 centimeters, which is 6 cm."
+    },
+    {
+      "id": "concept-scale-drawings-core-003",
+      "type": "multiple_choice",
+      "questionText": "Which proportion matches the scale 3 inches = 9 feet and x inches = 24 feet?",
+      "options": ["3/9 = x/24", "3/x = 9/24", "9/3 = x/24", "3/24 = 9/x"],
+      "correctAnswer": "3/9 = x/24",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A correct scale drawing proportion keeps the order drawing over real on both sides: 3/9 = x/24."
+    },
+    {
+      "id": "concept-scale-drawings-core-004",
+      "type": "multiple_choice",
+      "questionText": "A blueprint uses the scale 1 cm = 5 m. What real distance does 7 cm represent?",
+      "options": ["12 m", "30 m", "35 m", "40 m"],
+      "correctAnswer": "35 m",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Seven centimeters is 7 times the scale drawing length of 1 cm, so the real distance is 7 times 5 m, which is 35 m."
+    },
+    {
+      "id": "concept-scale-drawings-core-005",
+      "type": "multiple_choice",
+      "questionText": "A map uses the scale 2 inches = 10 miles. If two cities are 25 miles apart, how far apart should they be on the map?",
+      "options": ["4 inches", "5 inches", "6 inches", "8 inches"],
+      "correctAnswer": "5 inches",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Twenty-five miles is 2.5 times 10 miles, so the map distance is 2.5 times 2 inches, which is 5 inches."
+    },
+    {
+      "id": "concept-scale-drawings-core-006",
+      "type": "multiple_choice",
+      "questionText": "If a scale drawing shows 4 cm for every 12 m, how many meters does 9 cm represent?",
+      "options": ["18 m", "24 m", "27 m", "36 m"],
+      "correctAnswer": "27 m",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Nine centimeters is 9/4 times 4 cm, so the real distance is 9/4 times 12 m, which is 27 m."
+    },
+    {
+      "id": "concept-scale-drawings-core-007",
+      "type": "multiple_choice",
+      "questionText": "A floor plan scale says 1 inch = 6 feet. What drawing length matches a hallway that is 24 feet long?",
+      "options": ["3 inches", "4 inches", "5 inches", "6 inches"],
+      "correctAnswer": "4 inches",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Twenty-four feet is 4 times 6 feet, so the drawing length must be 4 times 1 inch, which is 4 inches."
+    },
+    {
+      "id": "concept-scale-drawings-core-008",
+      "type": "multiple_choice",
+      "questionText": "Which pair could be from a correct scale drawing with scale 1 inch = 3 feet?",
+      "options": ["2 inches and 5 feet", "3 inches and 9 feet", "4 inches and 10 feet", "5 inches and 12 feet"],
+      "correctAnswer": "3 inches and 9 feet",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A correct pair must keep the same scale. Since 3 inches is 3 times 1 inch, the real length must be 3 times 3 feet, which is 9 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-009",
+      "type": "multiple_choice",
+      "questionText": "Why is 2 cm : 10 m and 6 cm : 30 m a correct scale drawing comparison?",
+      "options": [
+        "Both lengths use the same scale factor",
+        "The real lengths are both multiples of 10",
+        "The drawing lengths are both even numbers",
+        "Both totals equal 40"
+      ],
+      "correctAnswer": "Both lengths use the same scale factor",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Going from 2 cm to 6 cm multiplies by 3, and going from 10 m to 30 m also multiplies by 3. That keeps the scale consistent."
+    },
+    {
+      "id": "concept-scale-drawings-core-010",
+      "type": "multiple_choice",
+      "questionText": "A drawing of a garden is 8 cm long. If the scale is 1 cm = 2 m, how long is the real garden?",
+      "options": ["10 m", "12 m", "16 m", "20 m"],
+      "correctAnswer": "16 m",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Eight centimeters is 8 times the drawing scale length, so the real length is 8 times 2 m, which is 16 m."
+    },
+    {
+      "id": "concept-scale-drawings-core-011",
+      "type": "multiple_choice",
+      "questionText": "A scale is 5 cm = 20 km. Which proportion can you use to find x kilometers for a map distance of 9 cm?",
+      "options": ["5/20 = 9/x", "5/9 = 20/x", "20/5 = 9/x", "5/x = 20/9"],
+      "correctAnswer": "5/20 = 9/x",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "To keep the same order, compare map distance over real distance on both sides: 5/20 = 9/x."
+    },
+    {
+      "id": "concept-scale-drawings-core-012",
+      "type": "multiple_choice",
+      "questionText": "If 3 inches on a map represent 18 miles, what does 7 inches represent?",
+      "options": ["28 miles", "36 miles", "42 miles", "48 miles"],
+      "correctAnswer": "42 miles",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The scale is 6 miles for every inch. Seven inches represents 7 times 6 miles, which is 42 miles."
+    },
+    {
+      "id": "concept-scale-drawings-core-013",
+      "type": "multiple_choice",
+      "questionText": "A classroom drawing uses the scale 2 inches = 8 feet. How many feet does 11 inches represent?",
+      "options": ["22 feet", "33 feet", "40 feet", "44 feet"],
+      "correctAnswer": "44 feet",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The scale is 4 feet per inch. Eleven inches represents 11 times 4 feet, which is 44 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-014",
+      "type": "multiple_choice",
+      "questionText": "A real bridge is 30 meters long. If the scale is 1 cm = 5 m, how long should the bridge be in the drawing?",
+      "options": ["5 cm", "6 cm", "7 cm", "10 cm"],
+      "correctAnswer": "6 cm",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Thirty meters is 6 times 5 m, so the drawing should be 6 times 1 cm, which is 6 cm."
+    },
+    {
+      "id": "concept-scale-drawings-core-015",
+      "type": "multiple_choice",
+      "questionText": "A student says 1 inch = 4 feet means 3 inches = 7 feet. What is the mistake?",
+      "options": [
+        "The same scale factor was not used on both sides",
+        "The drawing length should always stay 1 inch",
+        "The real length should be smaller than the drawing",
+        "Scale drawings never use proportions"
+      ],
+      "correctAnswer": "The same scale factor was not used on both sides",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "If the drawing length changes from 1 inch to 3 inches, the real length must also be multiplied by 3. That would give 12 feet, not 7 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-016",
+      "type": "multiple_choice",
+      "questionText": "A scale model uses 4 inches for every 10 feet. If the real wall is 35 feet, how many inches should the model use?",
+      "options": ["10 inches", "12 inches", "14 inches", "16 inches"],
+      "correctAnswer": "14 inches",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Thirty-five feet is 3.5 times 10 feet, so the model length is 3.5 times 4 inches, which is 14 inches."
+    },
+    {
+      "id": "concept-scale-drawings-core-017",
+      "type": "multiple_choice",
+      "questionText": "If 6 cm on a drawing represents 15 m in real life, how many meters does 14 cm represent?",
+      "options": ["28 m", "30 m", "35 m", "42 m"],
+      "correctAnswer": "35 m",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The scale is 15 divided by 6, or 2.5 meters per centimeter. Fourteen centimeters represents 14 times 2.5 meters, which is 35 m."
+    },
+    {
+      "id": "concept-scale-drawings-core-018",
+      "type": "multiple_choice",
+      "questionText": "Which pair does NOT keep the same scale as 2 inches = 12 feet?",
+      "options": ["1 inch and 6 feet", "3 inches and 18 feet", "4 inches and 20 feet", "5 inches and 30 feet"],
+      "correctAnswer": "4 inches and 20 feet",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A scale of 2 inches = 12 feet means 1 inch = 6 feet. Four inches should represent 24 feet, not 20 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-019",
+      "type": "multiple_choice",
+      "questionText": "A blueprint scale is 1 inch = 8 feet. What real length matches 2.5 inches?",
+      "options": ["16 feet", "18 feet", "20 feet", "24 feet"],
+      "correctAnswer": "20 feet",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Two and a half inches is 2.5 times 1 inch, so the real length is 2.5 times 8 feet, which is 20 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-020",
+      "type": "multiple_choice",
+      "questionText": "A scale says 3 cm = 12 km. If the real distance is 52 km, how many centimeters should it be on the map?",
+      "options": ["11 cm", "12 cm", "13 cm", "15 cm"],
+      "correctAnswer": "13 cm",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 4 km per centimeter. Fifty-two kilometers divided by 4 km per centimeter gives 13 cm."
+    },
+    {
+      "id": "concept-scale-drawings-core-021",
+      "type": "multiple_choice",
+      "questionText": "Which scale matches a drawing where 5 cm represents 25 m?",
+      "options": ["1 cm = 3 m", "1 cm = 4 m", "1 cm = 5 m", "1 cm = 6 m"],
+      "correctAnswer": "1 cm = 5 m",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Twenty-five meters divided by 5 centimeters gives 5 meters per centimeter."
+    },
+    {
+      "id": "concept-scale-drawings-core-022",
+      "type": "multiple_choice",
+      "questionText": "A model train uses the scale 2 inches = 9 feet. If the model track is 12 inches long, how long is the real track?",
+      "options": ["36 feet", "45 feet", "48 feet", "54 feet"],
+      "correctAnswer": "54 feet",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Twelve inches is 6 times 2 inches, so the real track is 6 times 9 feet, which is 54 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-023",
+      "type": "multiple_choice",
+      "questionText": "If 4 cm = 14 m, what drawing length matches 49 m?",
+      "options": ["12 cm", "13 cm", "14 cm", "16 cm"],
+      "correctAnswer": "14 cm",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Forty-nine meters is 3.5 times 14 m, so the drawing length is 3.5 times 4 cm, which is 14 cm."
+    },
+    {
+      "id": "concept-scale-drawings-core-024",
+      "type": "multiple_choice",
+      "questionText": "A floor plan uses 6 inches to represent 24 feet. How many feet does 15 inches represent?",
+      "options": ["45 feet", "50 feet", "54 feet", "60 feet"],
+      "correctAnswer": "60 feet",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The scale is 4 feet per inch. Fifteen inches represents 15 times 4 feet, which is 60 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-025",
+      "type": "multiple_choice",
+      "questionText": "Which statement must be true for a picture to be a scale drawing?",
+      "options": [
+        "Every matching side uses the same proportional relationship",
+        "All side lengths must be whole numbers",
+        "The drawing must be smaller than the real object",
+        "Only one side needs to match the scale"
+      ],
+      "correctAnswer": "Every matching side uses the same proportional relationship",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A scale drawing stays accurate only when all corresponding lengths use the same scale factor."
+    },
+    {
+      "id": "concept-scale-drawings-core-026",
+      "type": "multiple_choice",
+      "questionText": "A map scale is 1 cm = 12 km. If two towns are 8.5 cm apart on the map, how far apart are they in real life?",
+      "options": ["90 km", "96 km", "102 km", "108 km"],
+      "correctAnswer": "102 km",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Eight and a half centimeters times 12 kilometers per centimeter equals 102 km."
+    },
+    {
+      "id": "concept-scale-drawings-core-027",
+      "type": "multiple_choice",
+      "questionText": "If 9 cm on a map stands for 27 km, how many kilometers does 13 cm stand for?",
+      "options": ["36 km", "39 km", "42 km", "45 km"],
+      "correctAnswer": "39 km",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The scale is 3 kilometers per centimeter. Thirteen centimeters represents 13 times 3 kilometers, which is 39 km."
+    },
+    {
+      "id": "concept-scale-drawings-core-028",
+      "type": "multiple_choice",
+      "questionText": "A model building uses 5 inches = 25 feet. How many inches should represent 60 feet?",
+      "options": ["10 inches", "11 inches", "12 inches", "15 inches"],
+      "correctAnswer": "12 inches",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 5 feet per inch. Sixty feet divided by 5 feet per inch gives 12 inches."
+    },
+    {
+      "id": "concept-scale-drawings-core-029",
+      "type": "multiple_choice",
+      "questionText": "Which proportion can be used for 7 cm = 21 m and x cm = 45 m?",
+      "options": ["7/21 = x/45", "7/x = 21/45", "21/7 = x/45", "7/45 = 21/x"],
+      "correctAnswer": "7/21 = x/45",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Keep the order drawing over real on both sides: 7/21 = x/45."
+    },
+    {
+      "id": "concept-scale-drawings-core-030",
+      "type": "multiple_choice",
+      "questionText": "A picture uses the scale 4 mm = 2 m. How many millimeters should a 9 m object be in the picture?",
+      "options": ["14 mm", "16 mm", "18 mm", "20 mm"],
+      "correctAnswer": "18 mm",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 2 mm for every 1 meter. Nine meters should be 9 times 2 mm, which is 18 mm."
+    },
+    {
+      "id": "concept-scale-drawings-core-031",
+      "type": "multiple_choice",
+      "questionText": "If a map uses 3 inches for 15 miles, how many inches should represent 40 miles?",
+      "options": ["6 inches", "7 inches", "8 inches", "9 inches"],
+      "correctAnswer": "8 inches",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 5 miles per inch. Forty miles divided by 5 miles per inch gives 8 inches."
+    },
+    {
+      "id": "concept-scale-drawings-core-032",
+      "type": "multiple_choice",
+      "questionText": "A room is drawn with the scale 2 inches = 7 feet. If the drawing width is 9 inches, what is the real width?",
+      "options": ["28 feet", "31.5 feet", "36 feet", "42 feet"],
+      "correctAnswer": "31.5 feet",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Nine inches is 4.5 times 2 inches, so the real width is 4.5 times 7 feet, which is 31.5 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-033",
+      "type": "multiple_choice",
+      "questionText": "Which pair could come from the scale 3 cm = 18 m?",
+      "options": ["5 cm and 24 m", "7 cm and 36 m", "8 cm and 48 m", "10 cm and 72 m"],
+      "correctAnswer": "8 cm and 48 m",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 6 meters per centimeter. Eight centimeters would represent 48 meters."
+    },
+    {
+      "id": "concept-scale-drawings-core-034",
+      "type": "multiple_choice",
+      "questionText": "A student matches 2 cm = 8 m and 5 cm = 18 m. Why is this not a correct scale drawing?",
+      "options": [
+        "The real length should be 20 m, not 18 m",
+        "The drawing length should stay 2 cm",
+        "Scale drawings cannot use centimeters",
+        "The second drawing length is odd"
+      ],
+      "correctAnswer": "The real length should be 20 m, not 18 m",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "If the drawing length is multiplied by 2.5 from 2 cm to 5 cm, the real length must also be multiplied by 2.5 from 8 m to 20 m."
+    },
+    {
+      "id": "concept-scale-drawings-core-035",
+      "type": "multiple_choice",
+      "questionText": "A blueprint scale is 1 inch = 12 feet. What drawing length matches a 54-foot wall?",
+      "options": ["4 inches", "4.5 inches", "5 inches", "6 inches"],
+      "correctAnswer": "4.5 inches",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Fifty-four feet divided by 12 feet per inch gives 4.5 inches."
+    },
+    {
+      "id": "concept-scale-drawings-core-036",
+      "type": "multiple_choice",
+      "questionText": "If 5 cm = 16 m, how many meters does 12.5 cm represent?",
+      "options": ["32 m", "36 m", "40 m", "48 m"],
+      "correctAnswer": "40 m",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Twelve and a half centimeters is 2.5 times 5 cm, so the real distance is 2.5 times 16 m, which is 40 m."
+    },
+    {
+      "id": "concept-scale-drawings-core-037",
+      "type": "multiple_choice",
+      "questionText": "Which equation correctly compares drawing length d to real length r for a scale of 4 cm = 10 m?",
+      "options": ["d/r = 4/10", "d/r = 10/4", "r/d = 4/10", "d + r = 14"],
+      "correctAnswer": "d/r = 4/10",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio of drawing length to real length must stay the same, so d/r = 4/10."
+    },
+    {
+      "id": "concept-scale-drawings-core-038",
+      "type": "multiple_choice",
+      "questionText": "A map scale is 2 cm = 14 km. Which real distance matches 11 cm?",
+      "options": ["66 km", "70 km", "77 km", "84 km"],
+      "correctAnswer": "77 km",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The scale is 7 kilometers per centimeter. Eleven centimeters represents 11 times 7 kilometers, which is 77 km."
+    },
+    {
+      "id": "concept-scale-drawings-core-039",
+      "type": "multiple_choice",
+      "questionText": "A drawing side is 3.6 cm long. If the scale is 1 cm = 2.5 m, how long is the real side?",
+      "options": ["7 m", "8 m", "9 m", "10 m"],
+      "correctAnswer": "9 m",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Multiply 3.6 centimeters by 2.5 meters per centimeter to get 9 meters."
+    },
+    {
+      "id": "concept-scale-drawings-core-040",
+      "type": "multiple_choice",
+      "questionText": "If 6 inches = 18 feet, what should 2 inches represent?",
+      "options": ["4 feet", "6 feet", "8 feet", "10 feet"],
+      "correctAnswer": "6 feet",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The scale is 3 feet per inch. Two inches represents 2 times 3 feet, which is 6 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-041",
+      "type": "multiple_choice",
+      "questionText": "A student says 3 inches = 18 feet and 7 inches = 40 feet keep the same scale. Which statement is true?",
+      "options": [
+        "The scale is not the same because 7 inches should represent 42 feet",
+        "The scale is correct because both real lengths are even",
+        "The scale is correct because 40 is close to 42",
+        "The scale is correct because both drawing lengths are whole numbers"
+      ],
+      "correctAnswer": "The scale is not the same because 7 inches should represent 42 feet",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Three inches to 18 feet means 6 feet per inch. At that scale, 7 inches should represent 42 feet, not 40 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-042",
+      "type": "multiple_choice",
+      "questionText": "A toy model uses 3 cm for every 24 cm in real life. How long should the model be for a real object that is 96 cm long?",
+      "options": ["9 cm", "10 cm", "11 cm", "12 cm"],
+      "correctAnswer": "12 cm",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Ninety-six centimeters is 4 times 24 cm, so the model length is 4 times 3 cm, which is 12 cm."
+    },
+    {
+      "id": "concept-scale-drawings-core-043",
+      "type": "multiple_choice",
+      "questionText": "A city map uses 4 cm = 18 km. How many kilometers does 22 cm represent?",
+      "options": ["88 km", "96 km", "99 km", "104 km"],
+      "correctAnswer": "99 km",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The scale is 4.5 kilometers per centimeter. Twenty-two centimeters represents 22 times 4.5 kilometers, which is 99 km."
+    },
+    {
+      "id": "concept-scale-drawings-core-044",
+      "type": "multiple_choice",
+      "questionText": "Which scale is equivalent to 2 inches = 8 feet?",
+      "options": ["1 inch = 2 feet", "1 inch = 3 feet", "1 inch = 4 feet", "1 inch = 6 feet"],
+      "correctAnswer": "1 inch = 4 feet",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Divide both parts by 2. That gives 1 inch = 4 feet."
+    },
+    {
+      "id": "concept-scale-drawings-core-045",
+      "type": "multiple_choice",
+      "questionText": "If a hallway is drawn as 7.5 cm and the scale is 1 cm = 4 m, what is the real hallway length?",
+      "options": ["26 m", "28 m", "30 m", "32 m"],
+      "correctAnswer": "30 m",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Multiply 7.5 centimeters by 4 meters per centimeter to get 30 meters."
+    },
+    {
+      "id": "concept-scale-drawings-core-046",
+      "type": "multiple_choice",
+      "questionText": "A map uses the scale 5 mm = 3 km. Which map length matches 15 km?",
+      "options": ["15 mm", "20 mm", "25 mm", "30 mm"],
+      "correctAnswer": "25 mm",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Fifteen kilometers is 5 times 3 km, so the map length is 5 times 5 mm, which is 25 mm."
+    },
+    {
+      "id": "concept-scale-drawings-core-047",
+      "type": "multiple_choice",
+      "questionText": "Which pair is consistent with the scale 4 cm = 30 m?",
+      "options": ["6 cm and 40 m", "8 cm and 60 m", "10 cm and 70 m", "12 cm and 80 m"],
+      "correctAnswer": "8 cm and 60 m",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Doubling 4 cm gives 8 cm, so the real length must also double from 30 m to 60 m."
+    },
+    {
+      "id": "concept-scale-drawings-core-048",
+      "type": "multiple_choice",
+      "questionText": "If 3 mm = 9 cm, what real length matches 14 mm?",
+      "options": ["36 cm", "39 cm", "42 cm", "45 cm"],
+      "correctAnswer": "42 cm",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The scale is 3 centimeters per millimeter. Fourteen millimeters represents 14 times 3 centimeters, which is 42 cm."
+    },
+    {
+      "id": "concept-scale-drawings-core-049",
+      "type": "multiple_choice",
+      "questionText": "A student sets up 2/10 = 5/x for the scale 2 inches = 10 feet and 5 inches = x feet. Why is this correct?",
+      "options": [
+        "It keeps drawing length over real length in the same order",
+        "It adds the drawing and real lengths correctly",
+        "It only works because 10 is a multiple of 2",
+        "It makes x equal to 7"
+      ],
+      "correctAnswer": "It keeps drawing length over real length in the same order",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A scale drawing proportion must compare matching quantities in the same order on both sides. Here both ratios are drawing length over real length."
+    },
+    {
+      "id": "concept-scale-drawings-core-050",
+      "type": "multiple_choice",
+      "questionText": "A blueprint uses 8 cm to represent 28 m. How many centimeters should represent 49 m?",
+      "options": ["12 cm", "13 cm", "14 cm", "16 cm"],
+      "correctAnswer": "14 cm",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Forty-nine meters is 49/28, or 1.75 times 28 m. Multiply 8 cm by 1.75 to get 14 cm."
+    }
+  ]
+}
