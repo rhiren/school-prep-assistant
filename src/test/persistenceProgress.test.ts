@@ -75,6 +75,69 @@ describe("session persistence and progress", () => {
     expect(progress?.masteryStatus).toBe("mastered");
   });
 
+  it("ignores empty stale in-progress sessions when choosing what to resume", async () => {
+    const repository = await createDefaultContentRepository();
+    const store = new MemoryStorageService();
+    const sessionRepository = new SessionRepository(store);
+    const attemptRepository = new AttemptRepository(store);
+    const progressRepository = new ProgressRepository(store);
+    const progressService = new LocalProgressService(
+      repository,
+      attemptRepository,
+      progressRepository,
+    );
+    const scoringService = new BasicScoringEngine(repository);
+    const sessionService = new LocalSessionService(
+      sessionRepository,
+      attemptRepository,
+      scoringService,
+      progressService,
+    );
+
+    await sessionRepository.save({
+      id: "session-empty-newer",
+      studentId: "student-1",
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-integer-operations",
+      conceptIds: ["concept-integer-operations"],
+      questionIds: ["concept-integer-operations-core-001"],
+      answers: {},
+      currentQuestionIndex: 0,
+      status: "in_progress",
+      createdAt: "2026-04-30T22:51:00.000Z",
+      updatedAt: "2026-04-30T22:51:00.000Z",
+    });
+
+    await sessionRepository.save({
+      id: "session-meaningful-older",
+      studentId: "student-1",
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-compare-integers",
+      conceptIds: ["concept-compare-integers"],
+      questionIds: [
+        "concept-compare-integers-core-001",
+        "concept-compare-integers-core-002",
+      ],
+      answers: {
+        "concept-compare-integers-core-001": {
+          questionId: "concept-compare-integers-core-001",
+          response: "4 > -3",
+          answeredAt: "2026-04-29T23:08:00.000Z",
+        },
+      },
+      currentQuestionIndex: 1,
+      status: "in_progress",
+      createdAt: "2026-04-29T23:07:00.000Z",
+      updatedAt: "2026-04-29T23:08:30.000Z",
+    });
+
+    const latestInProgress = await sessionService.getLatestInProgressSession();
+
+    expect(latestInProgress?.id).toBe("session-meaningful-older");
+  });
+
   it("repairs persisted multiple-choice attempts that were scored incorrectly", async () => {
     const repository = await createDefaultContentRepository();
     const store = new MemoryStorageService();

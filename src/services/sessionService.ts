@@ -2,6 +2,14 @@ import type { AnswerRecord, TestAttempt, TestSession } from "../domain/models";
 import type { ProgressService, ScoringService, SessionService } from "./contracts";
 import type { AttemptRepository, SessionRepository } from "../storage/repositories";
 
+function hasMeaningfulInProgressWork(session: TestSession): boolean {
+  const answeredCount = Object.values(session.answers ?? {}).filter(
+    (answer) => answer.response.trim() !== "",
+  ).length;
+
+  return answeredCount > 0 || session.currentQuestionIndex > 0;
+}
+
 export class LocalSessionService implements SessionService {
   constructor(
     private readonly sessionRepository: SessionRepository,
@@ -16,7 +24,9 @@ export class LocalSessionService implements SessionService {
 
   async getLatestInProgressSession(): Promise<TestSession | null> {
     const sessions = Object.values(await this.sessionRepository.list())
-      .filter((session) => session.status === "in_progress")
+      .filter(
+        (session) => session.status === "in_progress" && hasMeaningfulInProgressWork(session),
+      )
       .sort((left, right) => right.updatedAt.localeCompare(left.updatedAt));
 
     return sessions[0] ?? null;
