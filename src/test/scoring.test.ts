@@ -326,6 +326,58 @@ describe("BasicScoringEngine", () => {
     expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
   });
 
+  it("scores proportional relationships text-valued multiple-choice answers correctly", async () => {
+    const repository = await createDefaultContentRepository();
+    const engine = new BasicScoringEngine(repository);
+    const session: TestSession = {
+      id: "session-3e",
+      studentId: DEFAULT_STUDENT_ID,
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-proportional-relationships",
+      conceptIds: ["concept-proportional-relationships"],
+      questionIds: [
+        "concept-proportional-relationships-core-009",
+        "concept-proportional-relationships-core-019",
+        "concept-proportional-relationships-review-013",
+        "concept-proportional-relationships-review-020",
+      ],
+      answers: {
+        "concept-proportional-relationships-core-009": {
+          questionId: "concept-proportional-relationships-core-009",
+          response: "Each output is 4 times the input",
+          answeredAt: "2026-04-30T20:00:00.000Z",
+        },
+        "concept-proportional-relationships-core-019": {
+          questionId: "concept-proportional-relationships-core-019",
+          response: "The graph would not pass through the origin",
+          answeredAt: "2026-04-30T20:00:00.000Z",
+        },
+        "concept-proportional-relationships-review-013": {
+          questionId: "concept-proportional-relationships-review-013",
+          response: "Check ratios, not just differences",
+          answeredAt: "2026-04-30T20:00:00.000Z",
+        },
+        "concept-proportional-relationships-review-020": {
+          questionId: "concept-proportional-relationships-review-020",
+          response: "Only the first equation keeps the form y = kx and goes through the origin",
+          answeredAt: "2026-04-30T20:00:00.000Z",
+        },
+      },
+      currentQuestionIndex: 0,
+      status: "in_progress",
+      createdAt: "2026-04-30T20:00:00.000Z",
+      updatedAt: "2026-04-30T20:00:00.000Z",
+    };
+
+    const attempt = await engine.scoreSession(session);
+
+    expect(attempt.summary.correctCount).toBe(4);
+    expect(attempt.summary.incorrectCount).toBe(0);
+    expect(attempt.summary.percentage).toBe(100);
+    expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
+  });
+
   it("scores compare integers text-valued multiple-choice answers correctly", async () => {
     const repository = await createDefaultContentRepository();
     const engine = new BasicScoringEngine(repository);

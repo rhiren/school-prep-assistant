@@ -15,12 +15,18 @@ describe("content repository", () => {
     const question = await repository.getQuestionById("concept-unit-rates-core-001");
     const testConcept = await repository.getConcept("concept-unit-rates");
     const scaleDrawingsConcept = await repository.getConcept("concept-scale-drawings");
+    const proportionalRelationshipsConcept = await repository.getConcept(
+      "concept-proportional-relationships",
+    );
     const compareIntegersConcept = await repository.getConcept("concept-compare-integers");
     const integerOperationsConcept = await repository.getConcept("concept-integer-operations");
     const solvingProportionsConcept = await repository.getConcept("concept-solving-proportions");
     const tutorialContent = await repository.getTutorialContent("concept-compare-integers");
     const testSets = await repository.getTestSetsForConcept("concept-unit-rates");
     const scaleDrawingsTestSets = await repository.getTestSetsForConcept("concept-scale-drawings");
+    const proportionalRelationshipsTestSets = await repository.getTestSetsForConcept(
+      "concept-proportional-relationships",
+    );
     const compareIntegersTestSets = await repository.getTestSetsForConcept("concept-compare-integers");
     const integerOperationsTestSets = await repository.getTestSetsForConcept("concept-integer-operations");
     const solvingProportionsTestSets = await repository.getTestSetsForConcept("concept-solving-proportions");
@@ -32,6 +38,7 @@ describe("content repository", () => {
     );
     expect(testConcept?.hasTest).toBe(true);
     expect(scaleDrawingsConcept?.hasTest).toBe(true);
+    expect(proportionalRelationshipsConcept?.hasTest).toBe(true);
     expect(compareIntegersConcept?.hasTest).toBe(true);
     expect(integerOperationsConcept?.hasTest).toBe(true);
     expect(solvingProportionsConcept?.hasTest).toBe(true);
@@ -42,6 +49,10 @@ describe("content repository", () => {
     expect(scaleDrawingsTestSets.map((testSet) => testSet.id)).toEqual([
       "concept-scale-drawings-core",
       "concept-scale-drawings-review",
+    ]);
+    expect(proportionalRelationshipsTestSets.map((testSet) => testSet.id)).toEqual([
+      "concept-proportional-relationships-core",
+      "concept-proportional-relationships-review",
     ]);
     expect(compareIntegersTestSets.map((testSet) => testSet.id)).toEqual([
       "concept-compare-integers-core",
@@ -64,6 +75,9 @@ describe("content repository", () => {
     const scaleDrawingsCoreQuestions = await repository.getQuestionsForTestSet(
       "concept-scale-drawings-core",
     );
+    const proportionalRelationshipsCoreQuestions = await repository.getQuestionsForTestSet(
+      "concept-proportional-relationships-core",
+    );
     const compareIntegersCoreQuestions = await repository.getQuestionsForTestSet(
       "concept-compare-integers-core",
     );
@@ -75,6 +89,7 @@ describe("content repository", () => {
     );
 
     expect(scaleDrawingsCoreQuestions).toHaveLength(50);
+    expect(proportionalRelationshipsCoreQuestions).toHaveLength(50);
     expect(compareIntegersCoreQuestions).toHaveLength(50);
     expect(integerOperationsCoreQuestions).toHaveLength(50);
     expect(solvingProportionsCoreQuestions).toHaveLength(50);
