@@ -52,7 +52,7 @@ describe("content repository", () => {
     expect(tutorialContent).toContain("#");
   });
 
-  it("keeps unlocked core concept packs at 50 questions", async () => {
+  it("keeps unlocked Phase 1 core concept packs at 50 questions", async () => {
     const repository = await createDefaultContentRepository();
     const compareIntegersCoreQuestions = await repository.getQuestionsForTestSet(
       "concept-compare-integers-core",
@@ -60,9 +60,13 @@ describe("content repository", () => {
     const integerOperationsCoreQuestions = await repository.getQuestionsForTestSet(
       "concept-integer-operations-core",
     );
+    const solvingProportionsCoreQuestions = await repository.getQuestionsForTestSet(
+      "concept-solving-proportions-core",
+    );
 
     expect(compareIntegersCoreQuestions).toHaveLength(50);
     expect(integerOperationsCoreQuestions).toHaveLength(50);
+    expect(solvingProportionsCoreQuestions).toHaveLength(50);
   });
 
   it("fails fast when duplicate global question ids are present", () => {
