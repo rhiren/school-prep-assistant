@@ -1,0 +1,307 @@
+{
+  "testId": "concept-proportional-tables-review",
+  "conceptId": "concept-proportional-tables",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-proportional-tables-review-001",
+      "type": "multiple_choice",
+      "questionText": "A table has rows (4, 14), (8, 28), (12, 42). Is it proportional?",
+      "options": [
+        "Yes",
+        "No",
+        "Only for the first two rows",
+        "Only if there is a graph"
+      ],
+      "correctAnswer": "Yes",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio y/x is 3.5 in every row."
+    },
+    {
+      "id": "concept-proportional-tables-review-002",
+      "type": "multiple_choice",
+      "questionText": "If the unit rate is 2.4, what is y when x = 25?",
+      "options": [
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "correctAnswer": "60",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Multiply 25 by 2.4."
+    },
+    {
+      "id": "concept-proportional-tables-review-003",
+      "type": "multiple_choice",
+      "questionText": "Which row belongs with the proportional table (3, 12), (5, 20)?",
+      "options": [
+        "(7, 24)",
+        "(7, 28)",
+        "(7, 30)",
+        "(7, 32)"
+      ],
+      "correctAnswer": "(7, 28)",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio is 4, so 7 should match 28."
+    },
+    {
+      "id": "concept-proportional-tables-review-004",
+      "type": "multiple_choice",
+      "questionText": "A table shows x = 2.5, 4, 10 and y = 5, 8, 20. What is the unit rate?",
+      "options": [
+        "1.5",
+        "2",
+        "2.5",
+        "4"
+      ],
+      "correctAnswer": "2",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Each y-value is 2 times x."
+    },
+    {
+      "id": "concept-proportional-tables-review-005",
+      "type": "multiple_choice",
+      "questionText": "Why is the table (6, 15), (14, 35), (20, 50) proportional?",
+      "options": [
+        "Each output is 2.5 times the input",
+        "Each output is 9 more than the input",
+        "The inputs are even",
+        "The outputs end in 5 or 0"
+      ],
+      "correctAnswer": "Each output is 2.5 times the input",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio y/x is constant at 2.5."
+    },
+    {
+      "id": "concept-proportional-tables-review-006",
+      "type": "multiple_choice",
+      "questionText": "A row in a proportional table is (9, 31.5). What is y when x = 4?",
+      "options": [
+        "12",
+        "13.5",
+        "14",
+        "18"
+      ],
+      "correctAnswer": "14",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio is 31.5/9 = 3.5, so 4 x 3.5 = 14."
+    },
+    {
+      "id": "concept-proportional-tables-review-007",
+      "type": "multiple_choice",
+      "questionText": "Why does the table (2, 7), (4, 14), (9, 31.5) fit together?",
+      "options": [
+        "Each output is 3.5 times the input",
+        "Each output is 5 more than the input",
+        "Each input is doubled each time",
+        "The outputs all have decimals"
+      ],
+      "correctAnswer": "Each output is 3.5 times the input",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio y/x is 3.5 in every row."
+    },
+    {
+      "id": "concept-proportional-tables-review-008",
+      "type": "multiple_choice",
+      "questionText": "Which table is not proportional?",
+      "options": [
+        "(5, 11), (10, 22), (15, 33)",
+        "(4, 9), (8, 18), (12, 26)",
+        "(2, 1), (6, 3), (10, 5)",
+        "(3, 7.5), (6, 15), (9, 22.5)"
+      ],
+      "correctAnswer": "(4, 9), (8, 18), (12, 26)",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "If the ratio were 2.25, then 12 should match 27, not 26."
+    },
+    {
+      "id": "concept-proportional-tables-review-009",
+      "type": "multiple_choice",
+      "questionText": "A proportional table has rows (8, 6), (16, 12), (24, ?). What is the missing value?",
+      "options": [
+        "16",
+        "18",
+        "20",
+        "24"
+      ],
+      "correctAnswer": "18",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratio is 0.75, so 24 x 0.75 = 18."
+    },
+    {
+      "id": "concept-proportional-tables-review-010",
+      "type": "multiple_choice",
+      "questionText": "What is the best way to test whether a table is proportional?",
+      "options": [
+        "Check whether the ratio is the same in every row",
+        "Check whether the difference is the same in every row",
+        "Check whether x increases each time",
+        "Check whether y is larger than x"
+      ],
+      "correctAnswer": "Check whether the ratio is the same in every row",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Equal ratios prove proportionality."
+    },
+    {
+      "id": "concept-proportional-tables-review-011",
+      "type": "multiple_choice",
+      "questionText": "A table has x = 7, 14, 28 and y = 10.5, 21, 42. What is the unit rate?",
+      "options": [
+        "0.75",
+        "1.5",
+        "2",
+        "3"
+      ],
+      "correctAnswer": "1.5",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Divide y by x: 10.5/7 = 1.5."
+    },
+    {
+      "id": "concept-proportional-tables-review-012",
+      "type": "multiple_choice",
+      "questionText": "Which row belongs if the table has ratio 4.5 and x = 18?",
+      "options": [
+        "(18, 72)",
+        "(18, 78)",
+        "(18, 81)",
+        "(18, 90)"
+      ],
+      "correctAnswer": "(18, 81)",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Multiply 18 by 4.5."
+    },
+    {
+      "id": "concept-proportional-tables-review-013",
+      "type": "multiple_choice",
+      "questionText": "A student wants to fill in a missing value in a proportional table. What should they use after finding the ratio?",
+      "options": [
+        "The same multiplicative relationship on the missing row",
+        "A constant difference between rows",
+        "Only the first row of the table",
+        "A graph with random points"
+      ],
+      "correctAnswer": "The same multiplicative relationship on the missing row",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The constant ratio must be applied consistently to the new row."
+    },
+    {
+      "id": "concept-proportional-tables-review-014",
+      "type": "multiple_choice",
+      "questionText": "A table has rows (10, 4.5), (20, 9), and (30, ?). What is the missing value?",
+      "options": [
+        "11.5",
+        "12",
+        "13.5",
+        "15"
+      ],
+      "correctAnswer": "13.5",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The ratio is 0.45, so 30 x 0.45 = 13.5."
+    },
+    {
+      "id": "concept-proportional-tables-review-015",
+      "type": "multiple_choice",
+      "questionText": "Which statement is true about a proportional table with row (12, 54)?",
+      "options": [
+        "The unit rate could be 4.5",
+        "The unit rate must be 54",
+        "The table cannot be proportional",
+        "The input is larger than the output in every row"
+      ],
+      "correctAnswer": "The unit rate could be 4.5",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Divide 54 by 12 to get the unit rate."
+    },
+    {
+      "id": "concept-proportional-tables-review-016",
+      "type": "multiple_choice",
+      "questionText": "A table has rows (2, 3.4), (5, 8.5), (11, ?). What is the missing value?",
+      "options": [
+        "16.5",
+        "17.7",
+        "18.7",
+        "19.2"
+      ],
+      "correctAnswer": "18.7",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The ratio is 1.7, so 11 x 1.7 = 18.7."
+    },
+    {
+      "id": "concept-proportional-tables-review-017",
+      "type": "multiple_choice",
+      "questionText": "Why is the table (3, 4.8), (10, 16), (15, 24) proportional?",
+      "options": [
+        "Each output is 1.6 times the input",
+        "Each output is 1.6 more than the input",
+        "The differences match",
+        "The table includes decimals"
+      ],
+      "correctAnswer": "Each output is 1.6 times the input",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The ratio y/x is 1.6 each time."
+    },
+    {
+      "id": "concept-proportional-tables-review-018",
+      "type": "multiple_choice",
+      "questionText": "If the unit rate is 11/4, what is y when x = 20?",
+      "options": [
+        "44",
+        "50",
+        "55",
+        "60"
+      ],
+      "correctAnswer": "55",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Multiply 20 by 11/4."
+    },
+    {
+      "id": "concept-proportional-tables-review-019",
+      "type": "multiple_choice",
+      "questionText": "Which row breaks the proportional table (4, 18), (8, 36), (15, 67.5), (20, 88)",
+      "options": [
+        "(4, 18)",
+        "(8, 36)",
+        "(15, 67.5)",
+        "(20, 88)"
+      ],
+      "correctAnswer": "(20, 88)",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "If the ratio were 4.5, then 20 should match 90, not 88."
+    },
+    {
+      "id": "concept-proportional-tables-review-020",
+      "type": "multiple_choice",
+      "questionText": "What is the best summary of how to use a proportional table?",
+      "options": [
+        "Use the constant ratio to test, complete, and predict values",
+        "Use constant differences to build every row",
+        "Use only rows with whole numbers",
+        "Use a graph instead of the table"
+      ],
+      "correctAnswer": "Use the constant ratio to test, complete, and predict values",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "A proportional table is useful because one constant ratio controls all the rows."
+    }
+  ]
+}

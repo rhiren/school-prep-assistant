@@ -430,6 +430,58 @@ describe("BasicScoringEngine", () => {
     expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
   });
 
+  it("scores proportional tables text-valued multiple-choice answers correctly", async () => {
+    const repository = await createDefaultContentRepository();
+    const engine = new BasicScoringEngine(repository);
+    const session: TestSession = {
+      id: "session-3g",
+      studentId: DEFAULT_STUDENT_ID,
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-proportional-tables",
+      conceptIds: ["concept-proportional-tables"],
+      questionIds: [
+        "concept-proportional-tables-core-009",
+        "concept-proportional-tables-core-015",
+        "concept-proportional-tables-review-007",
+        "concept-proportional-tables-review-013",
+      ],
+      answers: {
+        "concept-proportional-tables-core-009": {
+          questionId: "concept-proportional-tables-core-009",
+          response: "Each output is 7 times the input",
+          answeredAt: "2026-04-30T23:30:00.000Z",
+        },
+        "concept-proportional-tables-core-015": {
+          questionId: "concept-proportional-tables-core-015",
+          response: "Check whether y/x stays the same",
+          answeredAt: "2026-04-30T23:30:00.000Z",
+        },
+        "concept-proportional-tables-review-007": {
+          questionId: "concept-proportional-tables-review-007",
+          response: "Each output is 3.5 times the input",
+          answeredAt: "2026-04-30T23:30:00.000Z",
+        },
+        "concept-proportional-tables-review-013": {
+          questionId: "concept-proportional-tables-review-013",
+          response: "The same multiplicative relationship on the missing row",
+          answeredAt: "2026-04-30T23:30:00.000Z",
+        },
+      },
+      currentQuestionIndex: 0,
+      status: "in_progress",
+      createdAt: "2026-04-30T23:30:00.000Z",
+      updatedAt: "2026-04-30T23:30:00.000Z",
+    };
+
+    const attempt = await engine.scoreSession(session);
+
+    expect(attempt.summary.correctCount).toBe(4);
+    expect(attempt.summary.incorrectCount).toBe(0);
+    expect(attempt.summary.percentage).toBe(100);
+    expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
+  });
+
   it("scores compare integers text-valued multiple-choice answers correctly", async () => {
     const repository = await createDefaultContentRepository();
     const engine = new BasicScoringEngine(repository);

@@ -136,7 +136,18 @@
               "description": "Use tables to spot and complete proportional relationships.",
               "order": 7,
               "tutorial": "./content/tutorials/concept-proportional-tables.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-proportional-tables-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-proportional-tables-core.json"
+                },
+                {
+                  "id": "concept-proportional-tables-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-proportional-tables-review.json"
+                }
+              ]
             },
             {
               "id": "concept-proportional-graphs",
