@@ -1,0 +1,307 @@
+{
+  "testId": "concept-proportional-relationships-review",
+  "conceptId": "concept-proportional-relationships",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-proportional-relationships-review-001",
+      "type": "multiple_choice",
+      "questionText": "A table shows x = 4, 10, 16 and y = 9, 22.5, 36. Is the relationship proportional?",
+      "options": [
+        "Yes, with k = 2.25",
+        "Yes, with k = 4",
+        "No, because the outputs are decimals",
+        "No, because x does not start at 1"
+      ],
+      "correctAnswer": "Yes, with k = 2.25",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Each y-value is 2.25 times x."
+    },
+    {
+      "id": "concept-proportional-relationships-review-002",
+      "type": "multiple_choice",
+      "questionText": "If y = 3.6x, what is y when x = 2.5?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correctAnswer": "9",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Multiply 3.6 by 2.5."
+    },
+    {
+      "id": "concept-proportional-relationships-review-003",
+      "type": "multiple_choice",
+      "questionText": "Which graph would represent a proportional relationship?",
+      "options": [
+        "A straight line through the origin",
+        "A straight line crossing the y-axis at 4",
+        "A curved graph through the origin",
+        "A horizontal line at y = 5"
+      ],
+      "correctAnswer": "A straight line through the origin",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A proportional relationship must be linear and pass through the origin."
+    },
+    {
+      "id": "concept-proportional-relationships-review-004",
+      "type": "multiple_choice",
+      "questionText": "A table has pairs (6, 15), (14, 35), and (20, 50). What is the constant of proportionality?",
+      "options": [
+        "2",
+        "2.5",
+        "3",
+        "5"
+      ],
+      "correctAnswer": "2.5",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Divide y by x: 15/6 = 2.5, and the others match."
+    },
+    {
+      "id": "concept-proportional-relationships-review-005",
+      "type": "multiple_choice",
+      "questionText": "Which equation is proportional and matches the point (8, 14)?",
+      "options": [
+        "y = 1.75x",
+        "y = 14x",
+        "y = x + 6",
+        "y = 8x - 50"
+      ],
+      "correctAnswer": "y = 1.75x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant is 14/8 = 1.75."
+    },
+    {
+      "id": "concept-proportional-relationships-review-006",
+      "type": "multiple_choice",
+      "questionText": "Why is the table (2, 5), (4, 10), (7, 17) not proportional?",
+      "options": [
+        "The ratio y/x changes in the last row",
+        "The differences are not equal",
+        "The outputs are too large",
+        "The table has three rows"
+      ],
+      "correctAnswer": "The ratio y/x changes in the last row",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The ratios are 2.5, 2.5, and about 2.43."
+    },
+    {
+      "id": "concept-proportional-relationships-review-007",
+      "type": "multiple_choice",
+      "questionText": "A relationship goes through (0, 0), (3, 18), and (9, 54). Which statement is true?",
+      "options": [
+        "The constant of proportionality is 6",
+        "The constant of proportionality is 3",
+        "The relationship is not proportional",
+        "The graph must be curved"
+      ],
+      "correctAnswer": "The constant of proportionality is 6",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "For the nonzero points, y/x = 6."
+    },
+    {
+      "id": "concept-proportional-relationships-review-008",
+      "type": "multiple_choice",
+      "questionText": "If a jogger runs 2.4 miles in 0.4 hour, how many miles would that be in 2.5 hours if the relationship is proportional?",
+      "options": [
+        "12",
+        "13",
+        "15",
+        "18"
+      ],
+      "correctAnswer": "15",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The rate is 2.4/0.4 = 6 miles per hour. Multiply 6 by 2.5."
+    },
+    {
+      "id": "concept-proportional-relationships-review-009",
+      "type": "multiple_choice",
+      "questionText": "Which sentence best describes y = 4.2x?",
+      "options": [
+        "The output is 4.2 times the input",
+        "The output is 4.2 more than the input",
+        "The input is 4.2 more than the output",
+        "The relationship is not proportional"
+      ],
+      "correctAnswer": "The output is 4.2 times the input",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "In y = kx, the constant k tells how many times the input gives the output."
+    },
+    {
+      "id": "concept-proportional-relationships-review-010",
+      "type": "multiple_choice",
+      "questionText": "A graph includes the points (5, 11) and (10, 22) but not (0, 0). What should you conclude?",
+      "options": [
+        "It is proportional because the slope is consistent",
+        "It may not be proportional because the graph must include the origin",
+        "It is proportional with k = 11",
+        "It is impossible to compare without a table"
+      ],
+      "correctAnswer": "It may not be proportional because the graph must include the origin",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Even if the slope looks constant, a proportional relationship must pass through the origin."
+    },
+    {
+      "id": "concept-proportional-relationships-review-011",
+      "type": "multiple_choice",
+      "questionText": "If y is proportional to x and y = 31.5 when x = 9, what is y when x = 12?",
+      "options": [
+        "36",
+        "39",
+        "42",
+        "45"
+      ],
+      "correctAnswer": "42",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The constant is 31.5/9 = 3.5, so y = 3.5 times 12."
+    },
+    {
+      "id": "concept-proportional-relationships-review-012",
+      "type": "multiple_choice",
+      "questionText": "Which table shows a proportional relationship with k = 0.8?",
+      "options": [
+        "(5, 4), (10, 8), (15, 12)",
+        "(5, 8), (10, 16), (15, 24)",
+        "(4, 5), (8, 10), (12, 15)",
+        "(2, 6), (4, 12), (6, 18)"
+      ],
+      "correctAnswer": "(5, 4), (10, 8), (15, 12)",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Each y-value is 0.8 times x."
+    },
+    {
+      "id": "concept-proportional-relationships-review-013",
+      "type": "multiple_choice",
+      "questionText": "A student says the relationship is proportional because the differences in y are all 7. Which response is best?",
+      "options": [
+        "Check ratios, not just differences",
+        "Constant differences prove proportionality",
+        "Differences matter more than graphs",
+        "If y increases, it is proportional"
+      ],
+      "correctAnswer": "Check ratios, not just differences",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Proportional relationships require a constant ratio."
+    },
+    {
+      "id": "concept-proportional-relationships-review-014",
+      "type": "multiple_choice",
+      "questionText": "Why is (3, 12), (6, 24), and (9, 37) not proportional?",
+      "options": [
+        "The last point breaks the constant ratio",
+        "The first point is too small",
+        "The x-values are all multiples of 3",
+        "The graph would pass through the origin"
+      ],
+      "correctAnswer": "The last point breaks the constant ratio",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The first two points have ratio 4, but 37/9 is not 4."
+    },
+    {
+      "id": "concept-proportional-relationships-review-015",
+      "type": "multiple_choice",
+      "questionText": "A candle costs $1.75 each. Which equation gives total cost y for x candles?",
+      "options": [
+        "y = 1.75x",
+        "y = x + 1.75",
+        "y = 1.75 + x/2",
+        "y = 0.75x"
+      ],
+      "correctAnswer": "y = 1.75x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Constant price per item gives a proportional equation."
+    },
+    {
+      "id": "concept-proportional-relationships-review-016",
+      "type": "multiple_choice",
+      "questionText": "If y = 5/4 x, what is y when x = 28?",
+      "options": [
+        "30",
+        "32",
+        "35",
+        "40"
+      ],
+      "correctAnswer": "35",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Multiply 28 by 5/4."
+    },
+    {
+      "id": "concept-proportional-relationships-review-017",
+      "type": "multiple_choice",
+      "questionText": "Which set of points could lie on the graph of y = 2.2x?",
+      "options": [
+        "(5, 10), (10, 22), (15, 33)",
+        "(5, 11), (10, 22), (15, 33)",
+        "(5, 12), (10, 22), (15, 35)",
+        "(5, 9), (10, 18), (15, 30)"
+      ],
+      "correctAnswer": "(5, 11), (10, 22), (15, 33)",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Each y-value must equal 2.2 times x."
+    },
+    {
+      "id": "concept-proportional-relationships-review-018",
+      "type": "multiple_choice",
+      "questionText": "A proportional relationship has k = 7.5. What does that mean?",
+      "options": [
+        "Each output is 7.5 times the input",
+        "Each output is 7.5 more than the input",
+        "Each input is 7.5 less than the output",
+        "The graph cannot use decimals"
+      ],
+      "correctAnswer": "Each output is 7.5 times the input",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant of proportionality multiplies x to get y."
+    },
+    {
+      "id": "concept-proportional-relationships-review-019",
+      "type": "multiple_choice",
+      "questionText": "A recipe uses 3.5 cups of juice for 2 pitchers. How many cups are needed for 9 pitchers if proportional?",
+      "options": [
+        "14",
+        "15.75",
+        "16.5",
+        "18"
+      ],
+      "correctAnswer": "15.75",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The rate is 1.75 cups per pitcher. Multiply 1.75 by 9."
+    },
+    {
+      "id": "concept-proportional-relationships-review-020",
+      "type": "multiple_choice",
+      "questionText": "Which explanation best proves that y = 6x + 0 is proportional but y = 6x + 1 is not?",
+      "options": [
+        "Only the first equation keeps the form y = kx and goes through the origin",
+        "Both equations are proportional because they are linear",
+        "Only the second equation has a constant ratio",
+        "The first equation is not proportional because 6 is too large"
+      ],
+      "correctAnswer": "Only the first equation keeps the form y = kx and goes through the origin",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Adding 0 keeps the equation in proportional form, but adding 1 shifts it away from the origin."
+    }
+  ]
+}

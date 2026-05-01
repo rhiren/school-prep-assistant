@@ -98,7 +98,18 @@
               "description": "Recognize when two quantities change together at a constant rate.",
               "order": 5,
               "tutorial": "./content/tutorials/concept-proportional-relationships.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-proportional-relationships-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-proportional-relationships-core.json"
+                },
+                {
+                  "id": "concept-proportional-relationships-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-proportional-relationships-review.json"
+                }
+              ]
             },
             {
               "id": "concept-constant-of-proportionality",
