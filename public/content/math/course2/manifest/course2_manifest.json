@@ -79,7 +79,18 @@
               "description": "Use scale drawings to compare real sizes and drawing sizes accurately.",
               "order": 4,
               "tutorial": "./content/tutorials/concept-scale-drawings.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-scale-drawings-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-scale-drawings-core.json"
+                },
+                {
+                  "id": "concept-scale-drawings-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-scale-drawings-review.json"
+                }
+              ]
             },
             {
               "id": "concept-proportional-relationships",

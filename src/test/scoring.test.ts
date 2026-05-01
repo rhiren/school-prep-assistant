@@ -274,6 +274,58 @@ describe("BasicScoringEngine", () => {
     expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
   });
 
+  it("scores scale drawings text-valued multiple-choice answers correctly", async () => {
+    const repository = await createDefaultContentRepository();
+    const engine = new BasicScoringEngine(repository);
+    const session: TestSession = {
+      id: "session-3ba",
+      studentId: DEFAULT_STUDENT_ID,
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-scale-drawings",
+      conceptIds: ["concept-scale-drawings"],
+      questionIds: [
+        "concept-scale-drawings-core-009",
+        "concept-scale-drawings-core-015",
+        "concept-scale-drawings-review-007",
+        "concept-scale-drawings-review-014",
+      ],
+      answers: {
+        "concept-scale-drawings-core-009": {
+          questionId: "concept-scale-drawings-core-009",
+          response: "Both lengths use the same scale factor",
+          answeredAt: "2026-04-30T06:00:00.000Z",
+        },
+        "concept-scale-drawings-core-015": {
+          questionId: "concept-scale-drawings-core-015",
+          response: "The same scale factor was not used on both sides",
+          answeredAt: "2026-04-30T06:00:00.000Z",
+        },
+        "concept-scale-drawings-review-007": {
+          questionId: "concept-scale-drawings-review-007",
+          response: "Both lengths were multiplied by the same factor",
+          answeredAt: "2026-04-30T06:00:00.000Z",
+        },
+        "concept-scale-drawings-review-014": {
+          questionId: "concept-scale-drawings-review-014",
+          response: "Nine inches should match 45 feet to keep the scale",
+          answeredAt: "2026-04-30T06:00:00.000Z",
+        },
+      },
+      currentQuestionIndex: 0,
+      status: "in_progress",
+      createdAt: "2026-04-30T06:00:00.000Z",
+      updatedAt: "2026-04-30T06:00:00.000Z",
+    };
+
+    const attempt = await engine.scoreSession(session);
+
+    expect(attempt.summary.correctCount).toBe(4);
+    expect(attempt.summary.incorrectCount).toBe(0);
+    expect(attempt.summary.percentage).toBe(100);
+    expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
+  });
+
   it("scores compare integers text-valued multiple-choice answers correctly", async () => {
     const repository = await createDefaultContentRepository();
     const engine = new BasicScoringEngine(repository);

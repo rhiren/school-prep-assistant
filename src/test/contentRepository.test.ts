@@ -14,11 +14,13 @@ describe("content repository", () => {
     const repository = await createDefaultContentRepository();
     const question = await repository.getQuestionById("concept-unit-rates-core-001");
     const testConcept = await repository.getConcept("concept-unit-rates");
+    const scaleDrawingsConcept = await repository.getConcept("concept-scale-drawings");
     const compareIntegersConcept = await repository.getConcept("concept-compare-integers");
     const integerOperationsConcept = await repository.getConcept("concept-integer-operations");
     const solvingProportionsConcept = await repository.getConcept("concept-solving-proportions");
     const tutorialContent = await repository.getTutorialContent("concept-compare-integers");
     const testSets = await repository.getTestSetsForConcept("concept-unit-rates");
+    const scaleDrawingsTestSets = await repository.getTestSetsForConcept("concept-scale-drawings");
     const compareIntegersTestSets = await repository.getTestSetsForConcept("concept-compare-integers");
     const integerOperationsTestSets = await repository.getTestSetsForConcept("concept-integer-operations");
     const solvingProportionsTestSets = await repository.getTestSetsForConcept("concept-solving-proportions");
@@ -29,12 +31,17 @@ describe("content repository", () => {
       "concept-unit-rates",
     );
     expect(testConcept?.hasTest).toBe(true);
+    expect(scaleDrawingsConcept?.hasTest).toBe(true);
     expect(compareIntegersConcept?.hasTest).toBe(true);
     expect(integerOperationsConcept?.hasTest).toBe(true);
     expect(solvingProportionsConcept?.hasTest).toBe(true);
     expect(testSets.map((testSet) => testSet.id)).toEqual([
       "concept-unit-rates-core",
       "concept-unit-rates-review",
+    ]);
+    expect(scaleDrawingsTestSets.map((testSet) => testSet.id)).toEqual([
+      "concept-scale-drawings-core",
+      "concept-scale-drawings-review",
     ]);
     expect(compareIntegersTestSets.map((testSet) => testSet.id)).toEqual([
       "concept-compare-integers-core",
@@ -52,8 +59,11 @@ describe("content repository", () => {
     expect(tutorialContent).toContain("#");
   });
 
-  it("keeps unlocked Phase 1 core concept packs at 50 questions", async () => {
+  it("keeps unlocked concept core packs at 50 questions", async () => {
     const repository = await createDefaultContentRepository();
+    const scaleDrawingsCoreQuestions = await repository.getQuestionsForTestSet(
+      "concept-scale-drawings-core",
+    );
     const compareIntegersCoreQuestions = await repository.getQuestionsForTestSet(
       "concept-compare-integers-core",
     );
@@ -64,6 +74,7 @@ describe("content repository", () => {
       "concept-solving-proportions-core",
     );
 
+    expect(scaleDrawingsCoreQuestions).toHaveLength(50);
     expect(compareIntegersCoreQuestions).toHaveLength(50);
     expect(integerOperationsCoreQuestions).toHaveLength(50);
     expect(solvingProportionsCoreQuestions).toHaveLength(50);
