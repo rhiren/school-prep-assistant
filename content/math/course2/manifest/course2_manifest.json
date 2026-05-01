@@ -117,7 +117,18 @@
               "description": "Find the constant rate that connects one quantity to another.",
               "order": 6,
               "tutorial": "./content/tutorials/concept-constant-of-proportionality.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-constant-of-proportionality-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-constant-of-proportionality-core.json"
+                },
+                {
+                  "id": "concept-constant-of-proportionality-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-constant-of-proportionality-review.json"
+                }
+              ]
             },
             {
               "id": "concept-proportional-tables",
