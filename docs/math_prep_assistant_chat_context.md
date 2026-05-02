@@ -125,7 +125,7 @@ The project evolved from a web scaffold into multiple delivery modes:
 
 - local launcher script
 - Electron desktop support
-- packaged `Math-App` bundle and user guide
+- packaged local launcher flow and user guide
 - support for local file packaging
 - GitHub Pages deployment using `gh-pages`
 
@@ -173,7 +173,7 @@ Recent meaningful commits in current `master` history:
 - `e4cefe3` Support local file packaging
 - `88d28f8` Add distribution bundle and user guide
 - `ed5f5ff` Expand and refine Course 2 manifest
-- `9f3c728` Refresh packaged Math-App bundle
+- `9f3c728` Refresh packaged local distribution bundle
 - `fc7fa17` Add repo launcher script
 - `8e097e0` Add Electron desktop app support
 - `381491f` Add fullscreen launch and focus mode
@@ -191,7 +191,7 @@ As of this capture:
 - `README.md` already reflects `School Prep Assistant`.
 - The repo folder and GitHub remote have already been renamed to `school-prep-assistant`.
 - The app keeps the old IndexedDB database name intentionally so existing saved progress is preserved.
-- Distribution artifacts still use older naming such as `Math-App/` and `Start Math Practice.command`.
+- Some older historical notes refer to the removed `Math-App/` bundle and `Start Math Practice.command`.
 
 ## Current Uncommitted Change
 
@@ -212,8 +212,8 @@ This change was validated in the prior chat with `npm run build`, but it is not 
 These were explicitly left alone on purpose:
 
 - `src/storage/indexedDbStorageService.ts` still uses the old DB name for migration compatibility
-- `Math-App/` bundle name remains unchanged
-- `Start Math Practice.command` remains unchanged
+- Legacy packaged `Math-App/` bundle was later removed from the repo as redundant
+- Current local launcher is `Open Math Practice.command`
 
 ## Known Caveats Mentioned In Chat
 
@@ -226,8 +226,7 @@ These were explicitly left alone on purpose:
 Likely next steps implied by the prior chat:
 
 - commit the final `vite.config.ts` rename change
-- optionally rename `Math-App/` to a `School Prep Assistant` branded distribution folder
-- optionally rename `Start Math Practice.command`
+- keep local launcher and distribution guidance aligned with `dist/` + `public/content/`
 - verify GitHub Pages after the new base path is committed and deployed
 - add real Firebase project credentials if cloud sync should become active
 - continue expanding subjects later without disturbing current math/course flow
@@ -236,4 +235,4 @@ Likely next steps implied by the prior chat:
 
 If you need a compact prompt for future work, this is the essence:
 
-`school-prep-assistant` started as `Math-Prep-Assistant`, a local-first Course 2 math mastery app built in React/Vite/TypeScript. It now supports IndexedDB persistence, deterministic concept testing, richer answer normalization, student-friendly test/results/dashboard UX, GitHub Pages deployment, optional Firebase sync, multi-subject-ready content structure, and multi-student profiles. The current repo path and remote are already renamed to `school-prep-assistant`. One uncommitted rename-related fix remains in `vite.config.ts`, changing the Vite base path to `/school-prep-assistant/`. Preserve saved-progress compatibility and avoid broad rewrites.
+`school-prep-assistant` started as `Math-Prep-Assistant`, a local-first Course 2 math mastery app built in React/Vite/TypeScript. It now supports IndexedDB persistence, deterministic concept testing, richer answer normalization, student-friendly test/results/dashboard UX, GitHub Pages deployment, optional Firebase sync, multi-subject-ready content structure, and multi-student profiles. The current repo path and remote are already renamed to `school-prep-assistant`. Preserve saved-progress compatibility and avoid broad rewrites.

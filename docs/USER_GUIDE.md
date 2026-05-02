@@ -11,16 +11,17 @@ The app is a local learning system. Right now it opens directly into math practi
 
 How it works:
 
-- The app runs on the child computer in a web browser
-- The lessons, tutorials, and tests come from the `content/` folder
+- The app runs in a web browser
+- The built app is served from the repo `dist/` output
+- Lessons, tutorials, and tests come from `public/content/`
 - Student progress is saved in the browser using IndexedDB
-- The app does not need a cloud account or online backend
+- The app can also use Firebase as a sync/recovery layer, but local storage remains primary
 
 Important:
 
-- `app/` contains the built web app
-- `content/` contains manifests, tutorials, and test files
-- Progress is stored in the browser, not inside the `content/` folder
+- `dist/` contains the built web app
+- `public/content/` contains manifests, tutorials, and test files
+- Progress is stored in the browser, not inside the content files
 
 ## 2. Parent Flow
 
@@ -33,9 +34,12 @@ Important:
 npm install -g serve
 ```
 
-3. Copy the full `Math-App/` folder to the child computer.
-4. Place `Start Math Practice.command` somewhere easy to find, such as the Desktop.
-5. Double-click `Start Math Practice.command`.
+3. Copy the full project folder to the child computer, including:
+   - `dist/`
+   - `public/content/`
+   - `Open Math Practice.command`
+4. Place `Open Math Practice.command` somewhere easy to find, such as the Desktop.
+5. Double-click `Open Math Practice.command`.
 
 Expected result:
 
@@ -53,7 +57,7 @@ If the app does not open:
 ### 2.2 Daily Usage (Parent Perspective)
 
 - No daily setup is needed after the first-time install
-- The child only needs to double-click `Start Math Practice.command`
+- The child only needs to double-click `Open Math Practice.command`
 - Parent help is optional unless there is a problem or a new update to install
 
 ### 2.3 Delivering New Concept Tests
@@ -62,14 +66,14 @@ To add more practice without changing the app itself:
 
 1. Generate new test JSON files
 2. Place them in:
-   - `content/test-sets/`
+   - `public/content/math/course2/test-sets/`
 3. Update the relevant manifest file so the new test sets are listed
-4. Copy the updated `content/` folder to the child computer
-5. Replace the existing `content/` folder with the new one
+4. Rebuild if needed and copy the updated project folder to the child computer
+5. Replace the existing `public/content/` files with the new ones
 
 Important:
 
-- Do **not** modify `app/` for content-only updates
+- Do **not** modify `dist/` for content-only updates
 - Do **not** delete browser data
 - Do **not** clear site storage in the browser
 
@@ -84,9 +88,9 @@ npm run build
 ```
 
 2. Replace only:
-   - `Math-App/app/`
+   - `dist/`
 3. Keep the existing:
-   - `Math-App/content/`
+   - `public/content/`
 4. Do **not** clear browser data
 
 Important:
@@ -102,7 +106,7 @@ To add a new concept:
 1. Add the concept to the manifest
 2. Add its tutorial markdown file
 3. Add one or more test-set JSON files
-4. Copy the updated `content/` folder to the child computer
+4. Copy the updated `public/content/` files to the child computer
 
 The app will detect the new concept automatically and show it in the course roadmap.
 
@@ -149,15 +153,15 @@ Follow these rules every time:
 - Never clear site storage unless you intend to erase progress
 - Never modify IndexedDB manually
 - Always test updates on your own machine before sending them to the child computer
-- Always replace `content/` carefully for content updates
-- Always replace only `app/` for app-code updates
+- Always replace `public/content/` carefully for content updates
+- Always replace only `dist/` for app-code updates
 - Always create a progress backup before a major update
 
 ## 3. Student Flow
 
 ### 3.1 Starting the App
 
-- Double-click `Start Math Practice`
+- Double-click `Open Math Practice.command`
 - Wait for the app to open in the browser
 
 ### 3.2 How to Use the App
@@ -207,13 +211,13 @@ This means you can come back later and keep building from where you left off.
 ### Blank screen
 
 - Close the browser window
-- Run `Start Math Practice.command` again
-- If the problem continues, replace `Math-App/app/` with a fresh copy
+- Run `Open Math Practice.command` again
+- If the problem continues, replace `dist/` with a fresh copy
 
 ### Content is missing
 
-- Check that `Math-App/content/manifest/` exists
-- Check that the needed tutorial and test files exist in `Math-App/content/`
+- Check that `public/content/manifest/` exists
+- Check that the needed tutorial and test files exist in `public/content/`
 - Make sure the manifest paths match the real filenames
 
 ### Progress seems missing
@@ -227,9 +231,9 @@ This means you can come back later and keep building from where you left off.
 The system has three simple parts:
 
 - App layer:
-  - The student interface in `app/`
+  - The student interface in `dist/`
 - Content layer:
-  - JSON manifests, test sets, and markdown tutorials in `content/`
+  - JSON manifests, test sets, and markdown tutorials in `public/content/`
 - Storage layer:
   - IndexedDB in the browser for sessions, attempts, and progress
 
