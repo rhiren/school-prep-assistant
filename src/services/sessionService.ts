@@ -1,6 +1,7 @@
 import type { AnswerRecord, TestAttempt, TestSession } from "../domain/models";
 import type { ProgressService, ScoringService, SessionService } from "./contracts";
 import type { AttemptRepository, SessionRepository } from "../storage/repositories";
+import { buildRetryOutcome } from "./smartRetry";
 
 function hasMeaningfulInProgressWork(session: TestSession): boolean {
   const answeredCount = Object.values(session.answers ?? {}).filter(
@@ -50,7 +51,21 @@ export class LocalSessionService implements SessionService {
 
   async submitSession(sessionId: string): Promise<TestAttempt> {
     const session = await this.requireMutableSession(sessionId);
-    const attempt = await this.scoringService.scoreSession(session);
+    let attempt = await this.scoringService.scoreSession(session);
+
+    if (attempt.conceptId && attempt.smartRetry?.kind === "targeted") {
+      const previousAttempts = await this.progressService.getConceptAttempts(attempt.conceptId);
+      const outcome = buildRetryOutcome(attempt, previousAttempts);
+      if (outcome) {
+        attempt = {
+          ...attempt,
+          smartRetry: {
+            ...attempt.smartRetry,
+            outcome,
+          },
+        };
+      }
+    }
 
     session.status = "submitted";
     session.updatedAt = new Date().toISOString();

@@ -10,9 +10,33 @@ export type DifficultyLevel = "easy" | "medium" | "hard" | "challenge";
 export type SessionMode = "concept" | "mixed";
 export type SessionStatus = "in_progress" | "submitted";
 export type AnswerType = "ratio" | "fraction" | "decimal" | "number";
+export type ConceptType = "core" | "overview" | "application" | "mixed-review";
+export type SkillTag =
+  | "computation"
+  | "conceptual"
+  | "word-problem"
+  | "multi-step"
+  | "graph"
+  | "visual";
 export type StudentProfileType = "production" | "test";
 export type StudentFeatureFlags = Record<string, boolean>;
 export type SmartRetryKind = "targeted";
+
+export interface SmartRetryStartState {
+  conceptId: string;
+  weakSkillsBefore: SkillTag[];
+  attemptCountBefore: number;
+}
+
+export interface SmartRetryOutcome {
+  conceptId: string;
+  retryScore: number;
+  weakSkillsBefore: SkillTag[];
+  weakSkillsAfter: SkillTag[];
+  attemptCountBefore: number;
+  attemptCountAfter: number;
+  improved: boolean;
+}
 
 export interface PlacementLevel {
   instructionalGrade?: string;
@@ -61,6 +85,11 @@ export interface Unit {
   concepts: Concept[];
 }
 
+export interface ConceptMeta {
+  type: ConceptType;
+  assessable: boolean;
+}
+
 export interface Concept {
   id: string;
   courseId: string;
@@ -68,6 +97,8 @@ export interface Concept {
   title: string;
   description: string;
   tags: string[];
+  skillTags?: SkillTag[];
+  meta?: ConceptMeta;
   instructionalGrades?: string[];
   programPathways?: string[];
   standardsFrameworks?: string[];
@@ -77,12 +108,21 @@ export interface Concept {
   hasTest: boolean;
 }
 
+export interface DifficultyProfile {
+  scaffold: boolean;
+  standard: boolean;
+  challenge: boolean;
+}
+
 export interface TestSet {
   id: string;
   conceptId: string;
   title: string;
   description: string;
   questionCount: number;
+  type?: "concept" | "review" | "practice";
+  path?: string;
+  difficultyProfile?: DifficultyProfile;
 }
 
 export interface QuestionOption {
@@ -97,6 +137,7 @@ export interface Question {
   unitId: string;
   conceptId: string;
   tags: string[];
+  skillTags?: SkillTag[];
   difficulty: DifficultyLevel;
   questionType: QuestionType;
   answerType: AnswerType;
@@ -117,13 +158,18 @@ export interface AnswerRecord {
 export interface SmartRetryMetadata {
   kind: SmartRetryKind;
   cycle: number;
+  startState?: SmartRetryStartState;
+  outcome?: SmartRetryOutcome;
 }
 
 export interface ScoredQuestionResult {
   questionId: string;
+  conceptId?: string;
   isCorrect: boolean;
   submittedAnswer: string | null;
   correctAnswer: string;
+  skillTags?: SkillTag[];
+  difficulty?: DifficultyLevel;
   feedbackTip?: string | null;
 }
 

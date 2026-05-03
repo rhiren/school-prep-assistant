@@ -26,13 +26,31 @@
                 {
                   "id": "concept-ratios-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-ratios-core.json"
+                  "path": "./content/test-sets/concept-ratios-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-ratios-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-ratios-review.json"
+                  "path": "./content/test-sets/concept-ratios-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "word-problem"
               ]
             },
             {
@@ -45,13 +63,31 @@
                 {
                   "id": "concept-equivalent-ratios-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-equivalent-ratios-core.json"
+                  "path": "./content/test-sets/concept-equivalent-ratios-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-equivalent-ratios-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-equivalent-ratios-review.json"
+                  "path": "./content/test-sets/concept-equivalent-ratios-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation"
               ]
             },
             {
@@ -64,13 +100,31 @@
                 {
                   "id": "concept-unit-rates-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-unit-rates-core.json"
+                  "path": "./content/test-sets/concept-unit-rates-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-unit-rates-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-unit-rates-review.json"
+                  "path": "./content/test-sets/concept-unit-rates-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "word-problem"
               ]
             },
             {
@@ -83,13 +137,32 @@
                 {
                   "id": "concept-scale-drawings-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-scale-drawings-core.json"
+                  "path": "./content/test-sets/concept-scale-drawings-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-scale-drawings-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-scale-drawings-review.json"
+                  "path": "./content/test-sets/concept-scale-drawings-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "computation",
+                "word-problem"
               ]
             },
             {
@@ -102,13 +175,31 @@
                 {
                   "id": "concept-proportional-relationships-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-proportional-relationships-core.json"
+                  "path": "./content/test-sets/concept-proportional-relationships-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-proportional-relationships-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-proportional-relationships-review.json"
+                  "path": "./content/test-sets/concept-proportional-relationships-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "graph"
               ]
             },
             {
@@ -121,13 +212,31 @@
                 {
                   "id": "concept-constant-of-proportionality-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-constant-of-proportionality-core.json"
+                  "path": "./content/test-sets/concept-constant-of-proportionality-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-constant-of-proportionality-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-constant-of-proportionality-review.json"
+                  "path": "./content/test-sets/concept-constant-of-proportionality-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation"
               ]
             },
             {
@@ -140,13 +249,31 @@
                 {
                   "id": "concept-proportional-tables-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-proportional-tables-core.json"
+                  "path": "./content/test-sets/concept-proportional-tables-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-proportional-tables-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-proportional-tables-review.json"
+                  "path": "./content/test-sets/concept-proportional-tables-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "graph"
               ]
             },
             {
@@ -155,7 +282,36 @@
               "description": "Read and interpret graphs that show proportional relationships.",
               "order": 8,
               "tutorial": "./content/tutorials/concept-proportional-graphs.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-proportional-graphs-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-proportional-graphs-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-proportional-graphs-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-proportional-graphs-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "graph",
+                "conceptual"
+              ]
             },
             {
               "id": "concept-proportional-equations",
@@ -163,7 +319,36 @@
               "description": "Write equations that model proportional relationships clearly.",
               "order": 9,
               "tutorial": "./content/tutorials/concept-proportional-equations.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-proportional-equations-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-proportional-equations-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-proportional-equations-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-proportional-equations-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "multi-step"
+              ]
             },
             {
               "id": "concept-proportions",
@@ -175,13 +360,31 @@
                 {
                   "id": "concept-proportions-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-proportions-core.json"
+                  "path": "./content/test-sets/concept-proportions-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-proportions-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-proportions-review.json"
+                  "path": "./content/test-sets/concept-proportions-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation"
               ]
             },
             {
@@ -194,13 +397,31 @@
                 {
                   "id": "concept-solving-proportions-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-solving-proportions-core.json"
+                  "path": "./content/test-sets/concept-solving-proportions-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-solving-proportions-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-solving-proportions-review.json"
+                  "path": "./content/test-sets/concept-solving-proportions-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "multi-step",
+                "computation"
               ]
             },
             {
@@ -209,7 +430,36 @@
               "description": "Understand percent as a part out of 100 and what that means in simple situations.",
               "order": 12,
               "tutorial": "./content/tutorials/concept-percent-basics.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-percent-basics-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-percent-basics-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-percent-basics-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-percent-basics-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation"
+              ]
             },
             {
               "id": "concept-percent-increase-decrease",
@@ -217,7 +467,36 @@
               "description": "Calculate how much an amount increases or decreases using percent change.",
               "order": 13,
               "tutorial": "./content/tutorials/concept-percent-increase-decrease.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-percent-increase-decrease-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-percent-increase-decrease-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-percent-increase-decrease-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-percent-increase-decrease-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "word-problem"
+              ]
             },
             {
               "id": "concept-multi-step-percent",
@@ -225,7 +504,36 @@
               "description": "Solve percent problems that need multiple steps and careful problem solving.",
               "order": 14,
               "tutorial": "./content/tutorials/concept-multi-step-percent.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-multi-step-percent-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-multi-step-percent-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-multi-step-percent-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-multi-step-percent-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "multi-step",
+                "word-problem"
+              ]
             },
             {
               "id": "concept-percent-relationships",
@@ -237,13 +545,108 @@
                 {
                   "id": "concept-percent-relationships-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-percent-relationships-core.json"
+                  "path": "./content/test-sets/concept-percent-relationships-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-percent-relationships-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-percent-relationships-review.json"
+                  "path": "./content/test-sets/concept-percent-relationships-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "word-problem",
+                "multi-step"
+              ]
+            },
+            {
+              "id": "concept-ratio-word-problems-multi-step",
+              "title": "Ratio Word Problems: Multi-Step",
+              "description": "Solve multi-step ratio and rate word problems by organizing quantities and reasoning through each step.",
+              "tutorial": "./content/tutorials/concept-ratio-word-problems-multi-step.md",
+              "tests": [
+                {
+                  "id": "concept-ratio-word-problems-multi-step-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-ratio-word-problems-multi-step-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-ratio-word-problems-multi-step-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-ratio-word-problems-multi-step-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 16,
+              "meta": {
+                "type": "application",
+                "assessable": true
+              },
+              "skillTags": [
+                "word-problem",
+                "multi-step",
+                "computation"
+              ]
+            },
+            {
+              "id": "concept-unit1-mixed-review",
+              "title": "Unit 1 Mixed Review",
+              "description": "Review the major ratio, rate, proportion, and percent ideas from Unit 1 in one mixed practice set.",
+              "tutorial": "./content/tutorials/concept-unit1-mixed-review.md",
+              "tests": [
+                {
+                  "id": "concept-unit1-mixed-review-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-unit1-mixed-review-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-unit1-mixed-review-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-unit1-mixed-review-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 17,
+              "meta": {
+                "type": "mixed-review",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual",
+                "word-problem",
+                "multi-step"
               ]
             }
           ]
@@ -260,7 +663,36 @@
               "description": "Learn what integers are and how they represent positive and negative values.",
               "order": 1,
               "tutorial": "./content/tutorials/concept-integers.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-integers-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-integers-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-integers-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-integers-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "visual"
+              ]
             },
             {
               "id": "concept-compare-integers",
@@ -272,13 +704,31 @@
                 {
                   "id": "concept-compare-integers-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-compare-integers-core.json"
+                  "path": "./content/test-sets/concept-compare-integers-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-compare-integers-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-compare-integers-review.json"
+                  "path": "./content/test-sets/concept-compare-integers-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "visual"
               ]
             },
             {
@@ -287,7 +737,36 @@
               "description": "Understand absolute value as a number's distance from zero.",
               "order": 3,
               "tutorial": "./content/tutorials/concept-absolute-value.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-absolute-value-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-absolute-value-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-absolute-value-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-absolute-value-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "visual"
+              ]
             },
             {
               "id": "concept-add-subtract-integers",
@@ -295,7 +774,36 @@
               "description": "Practice adding and subtracting positive and negative numbers.",
               "order": 4,
               "tutorial": "./content/tutorials/concept-add-subtract-integers.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-add-subtract-integers-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-add-subtract-integers-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-add-subtract-integers-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-add-subtract-integers-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual"
+              ]
             },
             {
               "id": "concept-multiply-divide-integers",
@@ -303,7 +811,36 @@
               "description": "Use sign rules to multiply and divide integers correctly.",
               "order": 5,
               "tutorial": "./content/tutorials/concept-multiply-divide-integers.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-multiply-divide-integers-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-multiply-divide-integers-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-multiply-divide-integers-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-multiply-divide-integers-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual"
+              ]
             },
             {
               "id": "concept-rational-numbers",
@@ -311,7 +848,36 @@
               "description": "Recognize fractions, decimals, and integers as rational numbers.",
               "order": 6,
               "tutorial": "./content/tutorials/concept-rational-numbers.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-rational-numbers-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-rational-numbers-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-rational-numbers-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-rational-numbers-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "visual"
+              ]
             },
             {
               "id": "concept-add-subtract-rationals",
@@ -319,7 +885,36 @@
               "description": "Add and subtract fractions and decimals in clear, organized steps.",
               "order": 7,
               "tutorial": "./content/tutorials/concept-add-subtract-rationals.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-add-subtract-rationals-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-add-subtract-rationals-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-add-subtract-rationals-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-add-subtract-rationals-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "multi-step"
+              ]
             },
             {
               "id": "concept-multiply-divide-rationals",
@@ -327,7 +922,36 @@
               "description": "Multiply and divide rational numbers with attention to signs and form.",
               "order": 8,
               "tutorial": "./content/tutorials/concept-multiply-divide-rationals.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-multiply-divide-rationals-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-multiply-divide-rationals-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-multiply-divide-rationals-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-multiply-divide-rationals-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "multi-step"
+              ]
             },
             {
               "id": "concept-rational-number-applications",
@@ -335,7 +959,37 @@
               "description": "Apply rational numbers to real-world situations like money, temperature, and distance.",
               "order": 9,
               "tutorial": "./content/tutorials/concept-rational-number-applications.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-rational-number-applications-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-rational-number-applications-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-rational-number-applications-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-rational-number-applications-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "word-problem",
+                "multi-step",
+                "computation"
+              ]
             },
             {
               "id": "concept-integer-operations",
@@ -347,12 +1001,146 @@
                 {
                   "id": "concept-integer-operations-core",
                   "type": "concept",
-                  "path": "./content/test-sets/concept-integer-operations-core.json"
+                  "path": "./content/test-sets/concept-integer-operations-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 },
                 {
                   "id": "concept-integer-operations-review",
                   "type": "review",
-                  "path": "./content/test-sets/concept-integer-operations-review.json"
+                  "path": "./content/test-sets/concept-integer-operations-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "multi-step"
+              ]
+            },
+            {
+              "id": "concept-integer-word-problems",
+              "title": "Integer Word Problems",
+              "description": "Apply integer reasoning to real-world situations involving gains, losses, elevation, and temperature.",
+              "tutorial": "./content/tutorials/concept-integer-word-problems.md",
+              "tests": [
+                {
+                  "id": "concept-integer-word-problems-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-integer-word-problems-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-integer-word-problems-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-integer-word-problems-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 11,
+              "meta": {
+                "type": "application",
+                "assessable": true
+              },
+              "skillTags": [
+                "word-problem",
+                "multi-step",
+                "conceptual"
+              ]
+            },
+            {
+              "id": "concept-unit2-mixed-review",
+              "title": "Unit 2 Mixed Review",
+              "description": "Review the major integer and rational number ideas from Unit 2 in one mixed practice set.",
+              "tutorial": "./content/tutorials/concept-unit2-mixed-review.md",
+              "tests": [
+                {
+                  "id": "concept-unit2-mixed-review-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-unit2-mixed-review-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-unit2-mixed-review-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-unit2-mixed-review-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 12,
+              "meta": {
+                "type": "mixed-review",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual",
+                "word-problem",
+                "multi-step"
+              ]
+            },
+            {
+              "id": "concept-course2-cumulative-review-1",
+              "title": "Course 2 Cumulative Review 1",
+              "description": "Review the major ideas from Units 1 and 2 in a cumulative mixed practice set.",
+              "tutorial": "./content/tutorials/concept-course2-cumulative-review-1.md",
+              "order": 13,
+              "meta": {
+                "type": "mixed-review",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual",
+                "word-problem",
+                "multi-step"
+              ],
+              "tests": [
+                {
+                  "id": "concept-course2-cumulative-review-1-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-course2-cumulative-review-1-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-course2-cumulative-review-1-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-course2-cumulative-review-1-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
               ]
             }
@@ -368,89 +1156,675 @@
               "id": "concept-expressions",
               "title": "Expressions",
               "description": "Write and read expressions that show mathematical situations.",
-              "order": 1,
               "tutorial": "./content/tutorials/concept-expressions.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-expressions-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-expressions-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-expressions-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-expressions-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 1,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation"
+              ]
             },
             {
               "id": "concept-properties-of-operations",
               "title": "Properties of Operations",
               "description": "Use operation properties to reason about expressions more efficiently.",
-              "order": 2,
               "tutorial": "./content/tutorials/concept-properties-of-operations.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-properties-of-operations-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-properties-of-operations-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-properties-of-operations-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-properties-of-operations-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 2,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation"
+              ]
             },
             {
               "id": "concept-equivalent-expressions",
               "title": "Equivalent Expressions",
               "description": "Recognize when two expressions have the same value.",
-              "order": 3,
               "tutorial": "./content/tutorials/concept-equivalent-expressions.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-equivalent-expressions-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-equivalent-expressions-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-equivalent-expressions-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-equivalent-expressions-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 3,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation"
+              ]
             },
             {
               "id": "concept-distributive-property",
               "title": "Distributive Property",
               "description": "Use the distributive property to expand or simplify expressions.",
-              "order": 4,
               "tutorial": "./content/tutorials/concept-distributive-property.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-distributive-property-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-distributive-property-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-distributive-property-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-distributive-property-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 4,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation"
+              ]
+            },
+            {
+              "id": "concept-combining-like-terms",
+              "title": "Combining Like Terms",
+              "description": "Simplify algebraic expressions by combining terms with the same variable parts.",
+              "tutorial": "./content/tutorials/concept-combining-like-terms.md",
+              "tests": [
+                {
+                  "id": "concept-combining-like-terms-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-combining-like-terms-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-combining-like-terms-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-combining-like-terms-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 5,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual"
+              ]
             },
             {
               "id": "concept-evaluate-expressions",
               "title": "Evaluate Expressions",
               "description": "Substitute values and find the value of an expression correctly.",
-              "order": 5,
               "tutorial": "./content/tutorials/concept-evaluate-expressions.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-evaluate-expressions-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-evaluate-expressions-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-evaluate-expressions-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-evaluate-expressions-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 6,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "multi-step"
+              ]
+            },
+            {
+              "id": "concept-order-of-operations-variables",
+              "title": "Order of Operations with Variables",
+              "description": "Evaluate variable expressions carefully by following the order of operations step by step.",
+              "tutorial": "./content/tutorials/concept-order-of-operations-variables.md",
+              "tests": [
+                {
+                  "id": "concept-order-of-operations-variables-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-order-of-operations-variables-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-order-of-operations-variables-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-order-of-operations-variables-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 7,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "multi-step"
+              ]
             },
             {
               "id": "concept-one-step-equations",
               "title": "One-Step Equations",
               "description": "Solve simple equations by undoing one operation at a time.",
-              "order": 6,
               "tutorial": "./content/tutorials/concept-one-step-equations.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-one-step-equations-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-one-step-equations-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-one-step-equations-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-one-step-equations-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 8,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation"
+              ]
             },
             {
               "id": "concept-two-step-equations",
               "title": "Two-Step Equations",
               "description": "Solve equations that need two operations to find the unknown.",
-              "order": 7,
               "tutorial": "./content/tutorials/concept-two-step-equations.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-two-step-equations-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-two-step-equations-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-two-step-equations-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-two-step-equations-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 9,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "multi-step"
+              ]
+            },
+            {
+              "id": "concept-equations-variables-both-sides",
+              "title": "Equations with Variables on Both Sides",
+              "description": "Solve equations by collecting variable terms and constant terms before isolating the unknown.",
+              "tutorial": "./content/tutorials/concept-equations-variables-both-sides.md",
+              "tests": [
+                {
+                  "id": "concept-equations-variables-both-sides-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-equations-variables-both-sides-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-equations-variables-both-sides-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-equations-variables-both-sides-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 10,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "multi-step"
+              ]
             },
             {
               "id": "concept-multi-step-equations",
               "title": "Multi-Step Equations",
               "description": "Solve more complex equations by working through each step carefully.",
-              "order": 8,
               "tutorial": "./content/tutorials/concept-multi-step-equations.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-multi-step-equations-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-multi-step-equations-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-multi-step-equations-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-multi-step-equations-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 11,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "multi-step"
+              ]
             },
             {
               "id": "concept-inequalities",
               "title": "Inequalities",
               "description": "Compare values using inequality symbols and reasoning.",
-              "order": 9,
               "tutorial": "./content/tutorials/concept-inequalities.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-inequalities-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-inequalities-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-inequalities-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-inequalities-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 12,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "visual"
+              ]
             },
             {
               "id": "concept-graph-inequalities",
               "title": "Graph Inequalities",
               "description": "Show inequality solutions clearly on a number line.",
-              "order": 10,
               "tutorial": "./content/tutorials/concept-graph-inequalities.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-graph-inequalities-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-graph-inequalities-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-graph-inequalities-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-graph-inequalities-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 13,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "graph",
+                "visual",
+                "conceptual"
+              ]
+            },
+            {
+              "id": "concept-inequality-word-problems",
+              "title": "Inequality Word Problems",
+              "description": "Translate word problems into inequalities and interpret the solutions in context.",
+              "tutorial": "./content/tutorials/concept-inequality-word-problems.md",
+              "tests": [
+                {
+                  "id": "concept-inequality-word-problems-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-inequality-word-problems-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-inequality-word-problems-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-inequality-word-problems-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 14,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "word-problem",
+                "multi-step",
+                "conceptual"
+              ]
             },
             {
               "id": "concept-equation-word-problems",
               "title": "Equation Word Problems",
               "description": "Turn word problems into equations and solve them step by step.",
-              "order": 11,
               "tutorial": "./content/tutorials/concept-equation-word-problems.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-equation-word-problems-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-equation-word-problems-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-equation-word-problems-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-equation-word-problems-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 15,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "word-problem",
+                "multi-step",
+                "conceptual"
+              ]
+            },
+            {
+              "id": "concept-equation-modeling",
+              "title": "Equation Modeling",
+              "description": "Model real situations with expressions and equations, then use the model to answer questions.",
+              "tutorial": "./content/tutorials/concept-equation-modeling.md",
+              "tests": [
+                {
+                  "id": "concept-equation-modeling-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-equation-modeling-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-equation-modeling-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-equation-modeling-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 16,
+              "meta": {
+                "type": "application",
+                "assessable": true
+              },
+              "skillTags": [
+                "word-problem",
+                "multi-step",
+                "conceptual"
+              ]
+            },
+            {
+              "id": "concept-unit3-mixed-review",
+              "title": "Unit 3 Mixed Review",
+              "description": "Review the major expressions and equations ideas from Unit 3 in one mixed practice set.",
+              "tutorial": "./content/tutorials/concept-unit3-mixed-review.md",
+              "tests": [
+                {
+                  "id": "concept-unit3-mixed-review-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-unit3-mixed-review-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-unit3-mixed-review-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-unit3-mixed-review-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 17,
+              "meta": {
+                "type": "mixed-review",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual",
+                "word-problem",
+                "multi-step"
+              ]
+            },
+            {
+              "id": "concept-course2-cumulative-review-2",
+              "title": "Course 2 Cumulative Review 2",
+              "description": "Review the major ideas from Units 1 through 3 in a cumulative mixed practice set.",
+              "tutorial": "./content/tutorials/concept-course2-cumulative-review-2.md",
+              "order": 18,
+              "meta": {
+                "type": "mixed-review",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual",
+                "word-problem",
+                "multi-step"
+              ],
+              "tests": [
+                {
+                  "id": "concept-course2-cumulative-review-2-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-course2-cumulative-review-2-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-course2-cumulative-review-2-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-course2-cumulative-review-2-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ]
             }
           ]
         },
@@ -464,65 +1838,787 @@
               "id": "concept-scale-geometry",
               "title": "Scale Geometry",
               "description": "Use scale ideas to compare lengths and drawings in geometry problems.",
-              "order": 1,
               "tutorial": "./content/tutorials/concept-scale-geometry.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-scale-geometry-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-scale-geometry-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-scale-geometry-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-scale-geometry-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 1,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "computation"
+              ]
             },
             {
               "id": "concept-circles",
               "title": "Circles",
-              "description": "Learn the important parts of circles and how they are measured.",
-              "order": 2,
+              "description": "Build an overview of circle parts, measurements, and common formulas.",
               "tutorial": "./content/tutorials/concept-circles.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-circles-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-circles-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-circles-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-circles-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 2,
+              "meta": {
+                "type": "overview",
+                "assessable": false
+              },
+              "skillTags": [
+                "conceptual",
+                "visual"
+              ]
+            },
+            {
+              "id": "concept-circle-parts",
+              "title": "Circle Parts",
+              "description": "Identify radii, diameters, chords, arcs, and related parts of circles.",
+              "tutorial": "./content/tutorials/concept-circle-parts.md",
+              "tests": [
+                {
+                  "id": "concept-circle-parts-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-circle-parts-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-circle-parts-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-circle-parts-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 3,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "conceptual"
+              ]
+            },
+            {
+              "id": "concept-circumference",
+              "title": "Circumference",
+              "description": "Find and compare the distance around circles using radius or diameter.",
+              "tutorial": "./content/tutorials/concept-circumference.md",
+              "tests": [
+                {
+                  "id": "concept-circumference-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-circumference-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-circumference-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-circumference-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 4,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "visual"
+              ]
+            },
+            {
+              "id": "concept-area-of-circles",
+              "title": "Area of Circles",
+              "description": "Use formulas and reasoning to find the area inside a circle.",
+              "tutorial": "./content/tutorials/concept-area-of-circles.md",
+              "tests": [
+                {
+                  "id": "concept-area-of-circles-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-area-of-circles-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-area-of-circles-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-area-of-circles-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 5,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "visual"
+              ]
             },
             {
               "id": "concept-angle-relationships",
               "title": "Angle Relationships",
               "description": "Use angle relationships to solve for missing angle measures.",
-              "order": 3,
               "tutorial": "./content/tutorials/concept-angle-relationships.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-angle-relationships-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-angle-relationships-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-angle-relationships-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-angle-relationships-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 6,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "conceptual",
+                "multi-step"
+              ]
             },
             {
               "id": "concept-triangles",
               "title": "Triangles",
-              "description": "Study triangle properties, side lengths, and angle relationships.",
-              "order": 4,
+              "description": "Build an overview of triangle types, angle relationships, and problem-solving strategies.",
               "tutorial": "./content/tutorials/concept-triangles.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-triangles-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-triangles-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-triangles-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-triangles-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 7,
+              "meta": {
+                "type": "overview",
+                "assessable": false
+              },
+              "skillTags": [
+                "conceptual",
+                "visual"
+              ]
+            },
+            {
+              "id": "concept-triangle-classification",
+              "title": "Triangle Classification",
+              "description": "Classify triangles by side lengths and angle measures.",
+              "tutorial": "./content/tutorials/concept-triangle-classification.md",
+              "tests": [
+                {
+                  "id": "concept-triangle-classification-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-triangle-classification-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-triangle-classification-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-triangle-classification-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 8,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "conceptual"
+              ]
+            },
+            {
+              "id": "concept-triangle-angle-sum",
+              "title": "Triangle Angle Sum",
+              "description": "Use the triangle angle-sum relationship to reason about angle measures.",
+              "tutorial": "./content/tutorials/concept-triangle-angle-sum.md",
+              "tests": [
+                {
+                  "id": "concept-triangle-angle-sum-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-triangle-angle-sum-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-triangle-angle-sum-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-triangle-angle-sum-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 9,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "conceptual"
+              ]
+            },
+            {
+              "id": "concept-triangle-missing-angles",
+              "title": "Triangle Missing Angles",
+              "description": "Find missing triangle angles using angle-sum reasoning and diagram clues.",
+              "tutorial": "./content/tutorials/concept-triangle-missing-angles.md",
+              "tests": [
+                {
+                  "id": "concept-triangle-missing-angles-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-triangle-missing-angles-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-triangle-missing-angles-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-triangle-missing-angles-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 10,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "multi-step",
+                "conceptual"
+              ]
             },
             {
               "id": "concept-area",
               "title": "Area",
-              "description": "Find the area of common shapes using formulas and reasoning.",
-              "order": 5,
+              "description": "Build an overview of area strategies before applying formulas to specific polygons.",
               "tutorial": "./content/tutorials/concept-area.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-area-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-area-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-area-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-area-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 11,
+              "meta": {
+                "type": "overview",
+                "assessable": false
+              },
+              "skillTags": [
+                "conceptual",
+                "visual"
+              ]
+            },
+            {
+              "id": "concept-area-rectangles",
+              "title": "Area of Rectangles",
+              "description": "Find the area of rectangles and related quadrilaterals using dimensions and units.",
+              "tutorial": "./content/tutorials/concept-area-rectangles.md",
+              "tests": [
+                {
+                  "id": "concept-area-rectangles-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-area-rectangles-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-area-rectangles-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-area-rectangles-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 12,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "visual"
+              ]
+            },
+            {
+              "id": "concept-area-triangles",
+              "title": "Area of Triangles",
+              "description": "Use base-height reasoning and formulas to find triangle area.",
+              "tutorial": "./content/tutorials/concept-area-triangles.md",
+              "tests": [
+                {
+                  "id": "concept-area-triangles-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-area-triangles-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-area-triangles-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-area-triangles-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 13,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "visual"
+              ]
+            },
+            {
+              "id": "concept-area-polygons",
+              "title": "Area of Polygons",
+              "description": "Decompose polygons and apply area formulas to find total area.",
+              "tutorial": "./content/tutorials/concept-area-polygons.md",
+              "tests": [
+                {
+                  "id": "concept-area-polygons-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-area-polygons-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-area-polygons-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-area-polygons-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 14,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "visual",
+                "multi-step"
+              ]
             },
             {
               "id": "concept-composite-area",
               "title": "Composite Area",
               "description": "Break complex shapes into simpler parts to find total area.",
-              "order": 6,
               "tutorial": "./content/tutorials/concept-composite-area.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-composite-area-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-composite-area-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-composite-area-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-composite-area-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 15,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "multi-step",
+                "computation"
+              ]
             },
             {
               "id": "concept-surface-area",
               "title": "Surface Area",
               "description": "Find the total area covering the outside of a three-dimensional figure.",
-              "order": 7,
               "tutorial": "./content/tutorials/concept-surface-area.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-surface-area-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-surface-area-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-surface-area-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-surface-area-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 16,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "multi-step",
+                "computation"
+              ]
             },
             {
               "id": "concept-volume",
               "title": "Volume",
-              "description": "Measure how much space is inside a three-dimensional figure.",
-              "order": 8,
+              "description": "Build an overview of volume as the amount of space inside three-dimensional figures.",
               "tutorial": "./content/tutorials/concept-volume.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-volume-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-volume-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-volume-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-volume-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 17,
+              "meta": {
+                "type": "overview",
+                "assessable": false
+              },
+              "skillTags": [
+                "conceptual",
+                "visual"
+              ]
+            },
+            {
+              "id": "concept-volume-rectangular-prisms",
+              "title": "Volume of Rectangular Prisms",
+              "description": "Find the volume of rectangular prisms using dimensions and unit cubes.",
+              "tutorial": "./content/tutorials/concept-volume-rectangular-prisms.md",
+              "tests": [
+                {
+                  "id": "concept-volume-rectangular-prisms-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-volume-rectangular-prisms-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-volume-rectangular-prisms-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-volume-rectangular-prisms-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 18,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "computation"
+              ]
+            },
+            {
+              "id": "concept-volume-composite",
+              "title": "Volume of Composite Figures",
+              "description": "Break composite solids into simpler parts to find total volume.",
+              "tutorial": "./content/tutorials/concept-volume-composite.md",
+              "tests": [
+                {
+                  "id": "concept-volume-composite-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-volume-composite-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-volume-composite-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-volume-composite-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 19,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "visual",
+                "multi-step",
+                "computation"
+              ]
+            },
+            {
+              "id": "concept-geometry-word-problems",
+              "title": "Geometry Word Problems",
+              "description": "Apply geometry ideas in multi-step measurement and reasoning problems.",
+              "tutorial": "./content/tutorials/concept-geometry-word-problems.md",
+              "tests": [
+                {
+                  "id": "concept-geometry-word-problems-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-geometry-word-problems-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-geometry-word-problems-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-geometry-word-problems-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 20,
+              "meta": {
+                "type": "application",
+                "assessable": true
+              },
+              "skillTags": [
+                "word-problem",
+                "multi-step",
+                "visual"
+              ]
+            },
+            {
+              "id": "concept-unit4-mixed-review",
+              "title": "Unit 4 Mixed Review",
+              "description": "Review the major geometry ideas from Unit 4 in one mixed practice set.",
+              "tutorial": "./content/tutorials/concept-unit4-mixed-review.md",
+              "tests": [
+                {
+                  "id": "concept-unit4-mixed-review-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-unit4-mixed-review-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-unit4-mixed-review-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-unit4-mixed-review-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 21,
+              "meta": {
+                "type": "mixed-review",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual",
+                "visual",
+                "multi-step"
+              ]
             }
           ]
         },
@@ -538,7 +2634,36 @@
               "description": "Learn how to tell whether a question is statistical.",
               "order": 1,
               "tutorial": "./content/tutorials/concept-statistical-questions.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-statistical-questions-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-statistical-questions-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-statistical-questions-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-statistical-questions-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "word-problem"
+              ]
             },
             {
               "id": "concept-sampling",
@@ -546,7 +2671,36 @@
               "description": "Understand how samples can be used to learn about a larger group.",
               "order": 2,
               "tutorial": "./content/tutorials/concept-sampling.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-sampling-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-sampling-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-sampling-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-sampling-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "word-problem"
+              ]
             },
             {
               "id": "concept-compare-data",
@@ -554,7 +2708,37 @@
               "description": "Compare data sets and describe what the data shows.",
               "order": 3,
               "tutorial": "./content/tutorials/concept-compare-data.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-compare-data-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-compare-data-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-compare-data-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-compare-data-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "graph",
+                "visual",
+                "conceptual"
+              ]
             },
             {
               "id": "concept-measures-of-center",
@@ -562,7 +2746,36 @@
               "description": "Use mean, median, mode, and range to understand data.",
               "order": 4,
               "tutorial": "./content/tutorials/concept-measures-of-center.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-measures-of-center-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-measures-of-center-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-measures-of-center-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-measures-of-center-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual"
+              ]
             },
             {
               "id": "concept-distributions",
@@ -570,7 +2783,37 @@
               "description": "Describe how data is spread out and where it clusters.",
               "order": 5,
               "tutorial": "./content/tutorials/concept-distributions.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-distributions-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-distributions-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-distributions-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-distributions-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "graph",
+                "visual",
+                "conceptual"
+              ]
             },
             {
               "id": "concept-probability",
@@ -578,7 +2821,36 @@
               "description": "Use probability to describe how likely an event is.",
               "order": 6,
               "tutorial": "./content/tutorials/concept-probability.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-probability-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-probability-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-probability-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-probability-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation"
+              ]
             },
             {
               "id": "concept-probability-models",
@@ -586,7 +2858,37 @@
               "description": "Use organized models to predict outcomes and chances.",
               "order": 7,
               "tutorial": "./content/tutorials/concept-probability-models.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-probability-models-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-probability-models-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-probability-models-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-probability-models-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "visual",
+                "computation"
+              ]
             },
             {
               "id": "concept-experimental-probability",
@@ -594,7 +2896,36 @@
               "description": "Use results from experiments to estimate probability.",
               "order": 8,
               "tutorial": "./content/tutorials/concept-experimental-probability.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-experimental-probability-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-experimental-probability-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-experimental-probability-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-experimental-probability-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "word-problem"
+              ]
             },
             {
               "id": "concept-compound-probability",
@@ -602,7 +2933,153 @@
               "description": "Find probabilities for situations with more than one event.",
               "order": 9,
               "tutorial": "./content/tutorials/concept-compound-probability.md",
-              "tests": []
+              "tests": [
+                {
+                  "id": "concept-compound-probability-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-compound-probability-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-compound-probability-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-compound-probability-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "multi-step",
+                "computation",
+                "conceptual"
+              ]
+            },
+            {
+              "id": "concept-probability-word-problems",
+              "title": "Probability Word Problems",
+              "description": "Apply probability ideas to multi-step real-world questions and justify each conclusion.",
+              "tutorial": "./content/tutorials/concept-probability-word-problems.md",
+              "tests": [
+                {
+                  "id": "concept-probability-word-problems-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-probability-word-problems-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-probability-word-problems-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-probability-word-problems-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 10,
+              "meta": {
+                "type": "application",
+                "assessable": true
+              },
+              "skillTags": [
+                "word-problem",
+                "multi-step",
+                "conceptual"
+              ]
+            },
+            {
+              "id": "concept-unit5-mixed-review",
+              "title": "Unit 5 Mixed Review",
+              "description": "Review the major statistics and probability ideas from Unit 5 in one mixed practice set.",
+              "tutorial": "./content/tutorials/concept-unit5-mixed-review.md",
+              "tests": [
+                {
+                  "id": "concept-unit5-mixed-review-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-unit5-mixed-review-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-unit5-mixed-review-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-unit5-mixed-review-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 11,
+              "meta": {
+                "type": "mixed-review",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual",
+                "word-problem",
+                "multi-step"
+              ]
+            },
+            {
+              "id": "concept-course2-final-review",
+              "title": "Course 2 Final Review",
+              "description": "Review the major ideas from all Course 2 units in a full cumulative mixed practice set.",
+              "tutorial": "./content/tutorials/concept-course2-final-review.md",
+              "order": 12,
+              "meta": {
+                "type": "mixed-review",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual",
+                "word-problem",
+                "multi-step"
+              ],
+              "tests": [
+                {
+                  "id": "concept-course2-final-review-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-course2-final-review-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-course2-final-review-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-course2-final-review-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ]
             }
           ]
         }

@@ -1,14 +1,17 @@
 import type {
   AnswerType,
   Concept,
+  ConceptType,
   ContentIndex,
   Course,
   CourseManifestDocument,
+  DifficultyProfile,
   DifficultyLevel,
   Question,
   QuestionBankDocument,
   QuestionOption,
   QuestionType,
+  SkillTag,
   TestSet,
   Unit,
 } from "../domain/models";
@@ -145,6 +148,39 @@ function toMasteryStatus(value: unknown): Concept["masteryStatus"] {
     value === "mastered"
     ? value
     : "not_started";
+}
+
+function toConceptType(value: unknown): ConceptType {
+  return value === "core" ||
+    value === "overview" ||
+    value === "application" ||
+    value === "mixed-review"
+    ? value
+    : "core";
+}
+
+function toSkillTags(value: unknown): SkillTag[] {
+  return toStringArray(value).filter(
+    (tag): tag is SkillTag =>
+      tag === "computation" ||
+      tag === "conceptual" ||
+      tag === "word-problem" ||
+      tag === "multi-step" ||
+      tag === "graph" ||
+      tag === "visual",
+  );
+}
+
+function toDifficultyProfile(value: unknown): DifficultyProfile | undefined {
+  if (!isRecord(value)) {
+    return undefined;
+  }
+
+  return {
+    scaffold: value.scaffold !== false,
+    standard: value.standard !== false,
+    challenge: value.challenge !== false,
+  };
 }
 
 function getTutorialConceptId(tutorialPath: string): string | null {
@@ -327,6 +363,13 @@ function normalizeManifestDocument(rawManifest: unknown): CourseManifestDocument
                   title: toStringValue(concept.title, `Concept ${conceptIndex + 1}`),
                   description: toStringValue(concept.description),
                   tags: toStringArray(concept.tags),
+                  skillTags: toSkillTags(conceptRecord.skillTags),
+                  meta: isRecord(conceptRecord.meta)
+                    ? {
+                        type: toConceptType(conceptRecord.meta.type),
+                        assessable: conceptRecord.meta.assessable !== false,
+                      }
+                    : undefined,
                   instructionalGrades: toMetadataArray(conceptRecord.instructionalGrades),
                   programPathways: toMetadataArray(conceptRecord.programPathways),
                   standardsFrameworks: toMetadataArray(
@@ -347,14 +390,20 @@ function normalizeManifestDocument(rawManifest: unknown): CourseManifestDocument
                     courseDirectoryId,
                   ),
                   tests: Array.isArray(conceptRecord.tests)
-                    ? conceptRecord.tests.filter(isRecord).map((test) => ({
-                        ...test,
-                        path: resolveCourseContentPath(
-                          toStringValue(test.path),
-                          subjectId,
-                          courseDirectoryId,
-                        ),
-                      }))
+                    ? conceptRecord.tests.filter(isRecord).map((test) => {
+                        const rawType = toStringValue(test.type, "concept");
+                        return {
+                          ...test,
+                          type:
+                            rawType === "review" || rawType === "practice" ? rawType : "concept",
+                          path: resolveCourseContentPath(
+                            toStringValue(test.path),
+                            subjectId,
+                            courseDirectoryId,
+                          ),
+                          difficultyProfile: toDifficultyProfile(test.difficultyProfile),
+                        };
+                      })
                     : [],
                   hasTest: false,
                 } as Concept;
@@ -543,6 +592,29 @@ export function buildContentIndex(
   const testSetsById: Record<string, TestSet> = {};
   const testSetsByConceptId: Record<string, TestSet[]> = {};
   const testSetQuestionIds: Record<string, string[]> = {};
+  const manifestTestMetadataById = Object.fromEntries(
+    manifest.courses.flatMap((course) =>
+      course.units.flatMap((unit) =>
+        unit.concepts.flatMap((concept) =>
+          (concept as Concept & {
+            tests?: Array<{
+              id?: string;
+              type?: "concept" | "review" | "practice";
+              path?: string;
+              difficultyProfile?: DifficultyProfile;
+            }>;
+          }).tests?.map((test) => [
+            test.id ?? "",
+            {
+              type: test.type,
+              path: test.path,
+              difficultyProfile: test.difficultyProfile,
+            },
+          ]) ?? [],
+        ),
+      ),
+    ),
+  );
 
   const courses = manifest.courses.map((course) => {
     const units = course.units.map((unit) => {
@@ -554,6 +626,8 @@ export function buildContentIndex(
           unitId: unit.id,
           description: typeof concept.description === "string" ? concept.description : "",
           tags: Array.isArray(concept.tags) ? concept.tags : [],
+          skillTags: Array.isArray(concept.skillTags) ? concept.skillTags : [],
+          meta: concept.meta,
           masteryStatus: toMasteryStatus(concept.masteryStatus),
           testQuestionCount:
             typeof concept.testQuestionCount === "number"
@@ -598,6 +672,9 @@ export function buildContentIndex(
       title: bank.title,
       description: bank.description,
       questionCount: bank.questions.length,
+      type: manifestTestMetadataById[bank.id]?.type,
+      path: manifestTestMetadataById[bank.id]?.path,
+      difficultyProfile: manifestTestMetadataById[bank.id]?.difficultyProfile,
     };
     testSetsById[testSet.id] = testSet;
     testSetsByConceptId[bank.conceptId].push(testSet);
@@ -991,6 +1068,7 @@ export async function createDefaultContentRepository(): Promise<StaticContentRep
           unitId: location.unitId,
           conceptId: normalizedConceptId,
           tags: toStringArray(rawQuestion.tags),
+          skillTags: toSkillTags(rawQuestion.skillTags),
           difficulty: toDifficulty(rawQuestion.difficulty),
           questionType: toQuestionType(rawQuestion.type ?? rawQuestion.questionType),
           answerType: toAnswerType(rawQuestion.answerType),

@@ -1,6 +1,7 @@
 import type {
   AttemptDurationSignal,
   AnswerRecord,
+  Concept,
   Question,
   ScoredQuestionResult,
   TestAttempt,
@@ -10,7 +11,11 @@ import type { ContentRepository, ScoringService } from "../services/contracts";
 import { createId } from "../utils/id";
 import { compareQuestionAnswer } from "../utils/answerNormalization";
 
-function toScoredResult(question: Question, answer?: AnswerRecord): ScoredQuestionResult {
+function toScoredResult(
+  question: Question,
+  concept: Concept | null,
+  answer?: AnswerRecord,
+): ScoredQuestionResult {
   const submittedAnswer = answer?.response?.trim() ? answer.response : null;
   const comparison = answer
     ? compareQuestionAnswer(question, answer.response)
@@ -23,9 +28,12 @@ function toScoredResult(question: Question, answer?: AnswerRecord): ScoredQuesti
 
   return {
     questionId: question.id,
+    conceptId: question.conceptId,
     isCorrect: submittedAnswer !== null && comparison.isCorrect,
     submittedAnswer,
     correctAnswer: question.correctAnswer,
+    skillTags: question.skillTags?.length ? question.skillTags : concept?.skillTags ?? [],
+    difficulty: question.difficulty,
     feedbackTip: comparison.feedbackTip,
   };
 }
@@ -60,7 +68,8 @@ export class BasicScoringEngine implements ScoringService {
         throw new Error(`Unknown question: ${questionId}`);
       }
 
-      results.push(toScoredResult(question, session.answers[questionId]));
+      const concept = await this.contentRepository.getConcept(question.conceptId);
+      results.push(toScoredResult(question, concept, session.answers[questionId]));
     }
 
     const totalQuestions = results.length;

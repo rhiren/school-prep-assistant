@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { type ReactNode, useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import type {
   Concept,
@@ -40,6 +40,25 @@ function getEncouragement(completed: number, total: number): string {
   return "Great work. You finished this set.";
 }
 
+function formatWeakSkillLabel(skill: string): string {
+  switch (skill) {
+    case "word-problem":
+      return "word problems";
+    case "multi-step":
+      return "multi-step problems";
+    case "graph":
+      return "graph questions";
+    case "visual":
+      return "visual questions";
+    case "conceptual":
+      return "conceptual questions";
+    case "computation":
+      return "computation";
+    default:
+      return skill;
+  }
+}
+
 function sortConceptsForDisplay(concepts: Concept[]): Concept[] {
   return [...concepts].sort((left, right) => {
     if (left.hasTest !== right.hasTest) {
@@ -72,6 +91,9 @@ export function HomePage() {
     concept: Concept;
     explanation: string;
     shortDescription: string;
+    recentAttemptCount: number;
+    missedAttemptCount: number;
+    weakSkills: string[];
     questionIds: string[];
     smartRetry: SmartRetryMetadata;
   } | null>(null);
@@ -129,6 +151,12 @@ export function HomePage() {
           return [concept.id, conceptQuestions] as const;
         }),
       );
+      const testSetsByConceptEntries = await Promise.all(
+        loadedConcepts.map(async (concept) => {
+          const conceptTestSets = await contentRepository.getTestSetsForConcept(concept.id);
+          return [concept.id, conceptTestSets] as const;
+        }),
+      );
 
       if (!isMounted) {
         return;
@@ -136,6 +164,7 @@ export function HomePage() {
 
       const attemptsByConcept = Object.fromEntries(attemptsByConceptEntries);
       const questionsByConcept = Object.fromEntries(questionsByConceptEntries);
+      const testSetsByConcept = Object.fromEntries(testSetsByConceptEntries);
       setLatestAttemptsByConcept(
         Object.fromEntries(
           attemptsByConceptEntries.map(([conceptId, conceptAttempts]) => [
@@ -156,6 +185,8 @@ export function HomePage() {
             const recommendation = getSmartRetryRecommendation(
               attemptsByConcept[concept.id] ?? [],
               questionsByConcept[concept.id] ?? [],
+              concept,
+              testSetsByConcept[concept.id]?.[0]?.difficultyProfile,
             );
             return recommendation;
           })
@@ -177,10 +208,14 @@ export function HomePage() {
               concept,
               explanation: recommendation.explanation,
               shortDescription: recommendation.shortDescription,
+              recentAttemptCount: recommendation.recentAttemptCount,
+              missedAttemptCount: recommendation.missedAttemptCount,
+              weakSkills: recommendation.weakSkills,
               questionIds: recommendation.retrySet.questionIds,
               smartRetry: {
                 kind: "targeted" as const,
                 cycle: recommendation.retryCycle,
+                startState: recommendation.startState,
               },
             };
           })
@@ -231,7 +266,7 @@ export function HomePage() {
         title: "Continue Practice",
         concept: resumeConcept,
         actionLabel: "Resume Practice",
-        helper: "You already started this concept. Finishing it is the best next step.",
+        helper: "You already started this concept. Finishing it is the best next step." as ReactNode,
         onClick: () => navigate(`/test/${lastSession.id}`),
       };
     }
@@ -243,9 +278,30 @@ export function HomePage() {
         actionLabel: smartRetryRecommendation.concept.hasTest
           ? "Retry Practice"
           : "View Tutorial",
-        helper: smartRetryRecommendation.concept.hasTest
-          ? `${smartRetryRecommendation.shortDescription}. ${smartRetryRecommendation.explanation}`
-          : `${smartRetryRecommendation.explanation} Practice is coming soon, so start with the tutorial.`,
+        helper: smartRetryRecommendation.concept.hasTest ? (
+          <>
+            <span>
+              {smartRetryRecommendation.shortDescription}. Recommended because this concept was
+              missed in {smartRetryRecommendation.missedAttemptCount} of your last{" "}
+              {smartRetryRecommendation.recentAttemptCount} attempts.
+            </span>
+            {smartRetryRecommendation.weakSkills.length > 0 ? (
+              <span className="mt-2 block">
+                You may need more practice with:
+                {smartRetryRecommendation.weakSkills.map((skill) => (
+                  <span className="mt-1 block" key={skill}>
+                    - {formatWeakSkillLabel(skill)}
+                  </span>
+                ))}
+              </span>
+            ) : null}
+            <span className="mt-2 block">
+              This is a short focused retry, and then you will return to your normal next step.
+            </span>
+          </>
+        ) : (
+          `${smartRetryRecommendation.explanation} Practice is coming soon, so start with the tutorial.`
+        ),
         onClick: () =>
           smartRetryRecommendation.concept.hasTest
             ? void handleStartConcept(
@@ -267,7 +323,7 @@ export function HomePage() {
         title: "Continue Practice",
         concept: firstInProgress,
         actionLabel: firstInProgress.hasTest ? "Continue Working" : "View Tutorial",
-        helper: "Keep building confidence by finishing this concept next.",
+        helper: "Keep building confidence by finishing this concept next." as ReactNode,
         onClick: () =>
           firstInProgress.hasTest
             ? void handleStartConcept(firstInProgress.id)

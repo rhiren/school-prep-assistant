@@ -22,6 +22,7 @@ describe("content repository", () => {
       "concept-constant-of-proportionality",
     );
     const proportionalTablesConcept = await repository.getConcept("concept-proportional-tables");
+    const proportionalGraphsConcept = await repository.getConcept("concept-proportional-graphs");
     const compareIntegersConcept = await repository.getConcept("concept-compare-integers");
     const integerOperationsConcept = await repository.getConcept("concept-integer-operations");
     const solvingProportionsConcept = await repository.getConcept("concept-solving-proportions");
@@ -37,6 +38,9 @@ describe("content repository", () => {
     const proportionalTablesTestSets = await repository.getTestSetsForConcept(
       "concept-proportional-tables",
     );
+    const proportionalGraphsTestSets = await repository.getTestSetsForConcept(
+      "concept-proportional-graphs",
+    );
     const compareIntegersTestSets = await repository.getTestSetsForConcept("concept-compare-integers");
     const integerOperationsTestSets = await repository.getTestSetsForConcept("concept-integer-operations");
     const solvingProportionsTestSets = await repository.getTestSetsForConcept("concept-solving-proportions");
@@ -51,6 +55,7 @@ describe("content repository", () => {
     expect(proportionalRelationshipsConcept?.hasTest).toBe(true);
     expect(constantOfProportionalityConcept?.hasTest).toBe(true);
     expect(proportionalTablesConcept?.hasTest).toBe(true);
+    expect(proportionalGraphsConcept?.hasTest).toBe(true);
     expect(compareIntegersConcept?.hasTest).toBe(true);
     expect(integerOperationsConcept?.hasTest).toBe(true);
     expect(solvingProportionsConcept?.hasTest).toBe(true);
@@ -74,6 +79,10 @@ describe("content repository", () => {
       "concept-proportional-tables-core",
       "concept-proportional-tables-review",
     ]);
+    expect(proportionalGraphsTestSets.map((testSet) => testSet.id)).toEqual([
+      "concept-proportional-graphs-core",
+      "concept-proportional-graphs-review",
+    ]);
     expect(compareIntegersTestSets.map((testSet) => testSet.id)).toEqual([
       "concept-compare-integers-core",
       "concept-compare-integers-review",
@@ -86,6 +95,16 @@ describe("content repository", () => {
       "concept-solving-proportions-core",
       "concept-solving-proportions-review",
     ]);
+    expect(testConcept?.skillTags).toContain("word-problem");
+    expect(testConcept?.meta).toEqual({
+      type: "core",
+      assessable: true,
+    });
+    expect(testSets[0]?.difficultyProfile).toEqual({
+      scaffold: true,
+      standard: true,
+      challenge: true,
+    });
     expect(reviewQuestions).toHaveLength(20);
     expect(tutorialContent).toContain("#");
   });
@@ -104,6 +123,9 @@ describe("content repository", () => {
     const proportionalTablesCoreQuestions = await repository.getQuestionsForTestSet(
       "concept-proportional-tables-core",
     );
+    const proportionalGraphsCoreQuestions = await repository.getQuestionsForTestSet(
+      "concept-proportional-graphs-core",
+    );
     const compareIntegersCoreQuestions = await repository.getQuestionsForTestSet(
       "concept-compare-integers-core",
     );
@@ -118,6 +140,7 @@ describe("content repository", () => {
     expect(proportionalRelationshipsCoreQuestions).toHaveLength(50);
     expect(constantOfProportionalityCoreQuestions).toHaveLength(50);
     expect(proportionalTablesCoreQuestions).toHaveLength(50);
+    expect(proportionalGraphsCoreQuestions).toHaveLength(50);
     expect(compareIntegersCoreQuestions).toHaveLength(50);
     expect(integerOperationsCoreQuestions).toHaveLength(50);
     expect(solvingProportionsCoreQuestions).toHaveLength(50);

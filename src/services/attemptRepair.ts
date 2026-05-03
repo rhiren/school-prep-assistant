@@ -1,4 +1,5 @@
 import type {
+  Concept,
   ProgressRecord,
   Question,
   ScoredQuestionResult,
@@ -8,7 +9,11 @@ import type { ContentRepository } from "./contracts";
 import { compareQuestionAnswer } from "../utils/answerNormalization";
 import { getMasteryStatus } from "../utils/mastery";
 
-function buildScoredResult(question: Question, submittedAnswer: string | null): ScoredQuestionResult {
+function buildScoredResult(
+  question: Question,
+  concept: Concept | null,
+  submittedAnswer: string | null,
+): ScoredQuestionResult {
   const comparison =
     submittedAnswer === null
       ? {
@@ -21,9 +26,12 @@ function buildScoredResult(question: Question, submittedAnswer: string | null): 
 
   return {
     questionId: question.id,
+    conceptId: question.conceptId,
     isCorrect: submittedAnswer !== null && comparison.isCorrect,
     submittedAnswer,
     correctAnswer: question.correctAnswer,
+    skillTags: question.skillTags?.length ? question.skillTags : concept?.skillTags ?? [],
+    difficulty: question.difficulty,
     feedbackTip: comparison.feedbackTip,
   };
 }
@@ -39,11 +47,12 @@ export async function rebuildAttemptResults(
     if (!question) {
       throw new Error(`Unknown question: ${questionId}`);
     }
+    const concept = await contentRepository.getConcept(question.conceptId);
 
     const submittedAnswer = attempt.answers[questionId]?.response?.trim()
       ? attempt.answers[questionId]?.response ?? null
       : null;
-    repairedResults.push(buildScoredResult(question, submittedAnswer));
+    repairedResults.push(buildScoredResult(question, concept, submittedAnswer));
   }
 
   const totalQuestions = repairedResults.length;

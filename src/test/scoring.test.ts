@@ -220,6 +220,9 @@ describe("BasicScoringEngine", () => {
     expect(attempt.summary.incorrectCount).toBe(0);
     expect(attempt.summary.percentage).toBe(100);
     expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
+    expect(attempt.results[0]?.conceptId).toBe("concept-unit-rates");
+    expect(attempt.results[0]?.skillTags).toContain("word-problem");
+    expect(attempt.results[0]?.difficulty).toBe("easy");
   });
 
   it("scores solving proportions text-valued multiple-choice answers correctly", async () => {
@@ -264,6 +267,58 @@ describe("BasicScoringEngine", () => {
       status: "in_progress",
       createdAt: "2026-04-26T05:00:00.000Z",
       updatedAt: "2026-04-26T05:00:00.000Z",
+    };
+
+    const attempt = await engine.scoreSession(session);
+
+    expect(attempt.summary.correctCount).toBe(4);
+    expect(attempt.summary.incorrectCount).toBe(0);
+    expect(attempt.summary.percentage).toBe(100);
+    expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
+  });
+
+  it("scores proportional graphs text-valued multiple-choice answers correctly", async () => {
+    const repository = await createDefaultContentRepository();
+    const engine = new BasicScoringEngine(repository);
+    const session: TestSession = {
+      id: "session-3c",
+      studentId: DEFAULT_STUDENT_ID,
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-proportional-graphs",
+      conceptIds: ["concept-proportional-graphs"],
+      questionIds: [
+        "concept-proportional-graphs-core-009",
+        "concept-proportional-graphs-core-025",
+        "concept-proportional-graphs-core-045",
+        "concept-proportional-graphs-review-014",
+      ],
+      answers: {
+        "concept-proportional-graphs-core-009": {
+          questionId: "concept-proportional-graphs-core-009",
+          response: "It goes through the origin and keeps a constant ratio",
+          answeredAt: "2026-05-02T05:00:00.000Z",
+        },
+        "concept-proportional-graphs-core-025": {
+          questionId: "concept-proportional-graphs-core-025",
+          response: "A straight line through the origin that rises 4 for every 1 across",
+          answeredAt: "2026-05-02T05:00:00.000Z",
+        },
+        "concept-proportional-graphs-core-045": {
+          questionId: "concept-proportional-graphs-core-045",
+          response: "It does not begin at the origin, so it has a starting amount",
+          answeredAt: "2026-05-02T05:00:00.000Z",
+        },
+        "concept-proportional-graphs-review-014": {
+          questionId: "concept-proportional-graphs-review-014",
+          response: "The graph starts at the origin and both labeled points have ratio 2.5",
+          answeredAt: "2026-05-02T05:00:00.000Z",
+        },
+      },
+      currentQuestionIndex: 0,
+      status: "in_progress",
+      createdAt: "2026-05-02T05:00:00.000Z",
+      updatedAt: "2026-05-02T05:00:00.000Z",
     };
 
     const attempt = await engine.scoreSession(session);
