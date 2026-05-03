@@ -1,0 +1,307 @@
+{
+  "testId": "concept-proportional-graphs-review",
+  "conceptId": "concept-proportional-graphs",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-proportional-graphs-review-001",
+      "type": "multiple_choice",
+      "questionText": "A proportional graph goes through (0, 0) and (4, 18). What is the constant of proportionality?",
+      "options": [
+        "3.5",
+        "4",
+        "4.5",
+        "18"
+      ],
+      "correctAnswer": "4.5",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Divide y by x: 18/4 = 4.5."
+    },
+    {
+      "id": "concept-proportional-graphs-review-002",
+      "type": "multiple_choice",
+      "questionText": "Which point is on the graph of y = 3.5x?",
+      "options": [
+        "(2, 6)",
+        "(2, 7)",
+        "(4, 10)",
+        "(6, 18)"
+      ],
+      "correctAnswer": "(2, 7)",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "When x = 2, y = 3.5 x 2 = 7."
+    },
+    {
+      "id": "concept-proportional-graphs-review-003",
+      "type": "multiple_choice",
+      "questionText": "Why is a line through (0, 2) and (5, 12) not proportional?",
+      "options": [
+        "It does not pass through the origin",
+        "Its slope is too large",
+        "Its x-values are too far apart",
+        "Its y-values are both even"
+      ],
+      "correctAnswer": "It does not pass through the origin",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A proportional graph must include (0, 0)."
+    },
+    {
+      "id": "concept-proportional-graphs-review-004",
+      "type": "multiple_choice",
+      "questionText": "A graph through the origin also passes through (3, 10.5). What is y when x = 8?",
+      "options": [
+        "24",
+        "26",
+        "28",
+        "30"
+      ],
+      "correctAnswer": "28",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant is 10.5/3 = 3.5, so y = 8 x 3.5 = 28."
+    },
+    {
+      "id": "concept-proportional-graphs-review-005",
+      "type": "multiple_choice",
+      "questionText": "Graph A goes through (5, 10). Graph B goes through (5, 17.5). Which graph is steeper?",
+      "options": [
+        "Graph A",
+        "Graph B",
+        "They are equally steep",
+        "Not enough information"
+      ],
+      "correctAnswer": "Graph B",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "At the same x-value, the graph with the larger y-value has the larger constant."
+    },
+    {
+      "id": "concept-proportional-graphs-review-006",
+      "type": "multiple_choice",
+      "questionText": "A proportional graph includes (0, 0), (2, 3), and (10, ?). What is the missing y-value?",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "30"
+      ],
+      "correctAnswer": "15",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The unit rate is 3/2 = 1.5, so y = 10 x 1.5 = 15."
+    },
+    {
+      "id": "concept-proportional-graphs-review-007",
+      "type": "multiple_choice",
+      "questionText": "Which explanation shows that a graph through (0, 0), (4, 20), and (7, 35) is proportional?",
+      "options": [
+        "Both labeled points have the same ratio of 5",
+        "Both y-values are multiples of 5",
+        "Both x-values are positive",
+        "The graph uses whole numbers"
+      ],
+      "correctAnswer": "Both labeled points have the same ratio of 5",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "20/4 = 5 and 35/7 = 5."
+    },
+    {
+      "id": "concept-proportional-graphs-review-008",
+      "type": "multiple_choice",
+      "questionText": "Which equation matches a proportional graph through (0, 0) and (8, 6)?",
+      "options": [
+        "y = 0.75x",
+        "y = 1.25x",
+        "y = 6x",
+        "y = 8x"
+      ],
+      "correctAnswer": "y = 0.75x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant is 6/8 = 0.75."
+    },
+    {
+      "id": "concept-proportional-graphs-review-009",
+      "type": "multiple_choice",
+      "questionText": "A graph is straight but crosses the y-axis at 4. What is the best conclusion?",
+      "options": [
+        "It is not proportional because it has a starting value",
+        "It is proportional because all straight lines are proportional",
+        "It is proportional only for large x-values",
+        "It cannot be graphed on a coordinate plane"
+      ],
+      "correctAnswer": "It is not proportional because it has a starting value",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A nonzero y-intercept means the graph does not pass through the origin."
+    },
+    {
+      "id": "concept-proportional-graphs-review-010",
+      "type": "multiple_choice",
+      "questionText": "What does the point (1, 2.25) tell you about a proportional graph?",
+      "options": [
+        "The unit rate is 2.25",
+        "The x-intercept is 2.25",
+        "The graph is not proportional",
+        "The graph must be horizontal"
+      ],
+      "correctAnswer": "The unit rate is 2.25",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "When x = 1 on a proportional graph, y equals the constant of proportionality."
+    },
+    {
+      "id": "concept-proportional-graphs-review-011",
+      "type": "multiple_choice",
+      "questionText": "A graph through the origin has a unit rate of 4.2. What point is on the graph?",
+      "options": [
+        "(5, 18)",
+        "(5, 20)",
+        "(5, 21)",
+        "(5, 24)"
+      ],
+      "correctAnswer": "(5, 21)",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Multiply 5 by 4.2."
+    },
+    {
+      "id": "concept-proportional-graphs-review-012",
+      "type": "multiple_choice",
+      "questionText": "Graph A goes through (3, 9). Graph B goes through (3, 12). How much greater is Graph B's constant of proportionality?",
+      "options": [
+        "1",
+        "1.5",
+        "2",
+        "3"
+      ],
+      "correctAnswer": "1",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Graph A has constant 3 and Graph B has constant 4, so the difference is 1."
+    },
+    {
+      "id": "concept-proportional-graphs-review-013",
+      "type": "multiple_choice",
+      "questionText": "A proportional graph goes through (0, 0), (2.5, 8.75), and (6, ?). What is the missing y-value?",
+      "options": [
+        "18",
+        "19.5",
+        "21",
+        "24"
+      ],
+      "correctAnswer": "21",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The constant is 8.75/2.5 = 3.5, so y = 6 x 3.5 = 21."
+    },
+    {
+      "id": "concept-proportional-graphs-review-014",
+      "type": "multiple_choice",
+      "questionText": "Which explanation best proves that a graph through (0, 0), (6, 15), and (12, 30) is proportional?",
+      "options": [
+        "The graph starts at the origin and both labeled points have ratio 2.5",
+        "The graph uses multiples of 6",
+        "The y-values are both divisible by 15",
+        "The graph has three labeled points"
+      ],
+      "correctAnswer": "The graph starts at the origin and both labeled points have ratio 2.5",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Both conditions are required: passing through the origin and having one constant ratio."
+    },
+    {
+      "id": "concept-proportional-graphs-review-015",
+      "type": "multiple_choice",
+      "questionText": "A graph models gallons of water poured at a constant rate and goes through (4, 11). How many gallons does it show after 12 minutes?",
+      "options": [
+        "22",
+        "27",
+        "33",
+        "44"
+      ],
+      "correctAnswer": "33",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The unit rate is 11/4 = 2.75 gallons per minute, so after 12 minutes there are 33 gallons."
+    },
+    {
+      "id": "concept-proportional-graphs-review-016",
+      "type": "multiple_choice",
+      "questionText": "Which point would break a proportional graph that already includes (0, 0), (2, 8), and (5, 20)?",
+      "options": [
+        "(1, 4)",
+        "(3, 12)",
+        "(4, 18)",
+        "(6, 24)"
+      ],
+      "correctAnswer": "(4, 18)",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The constant should be 4, so x = 4 should match y = 16, not 18."
+    },
+    {
+      "id": "concept-proportional-graphs-review-017",
+      "type": "multiple_choice",
+      "questionText": "A graph through the origin passes through (9, 13.5). What is the equation?",
+      "options": [
+        "y = 1.5x",
+        "y = 2x",
+        "y = 4.5x",
+        "y = 13.5x"
+      ],
+      "correctAnswer": "y = 1.5x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Divide y by x: 13.5/9 = 1.5."
+    },
+    {
+      "id": "concept-proportional-graphs-review-018",
+      "type": "multiple_choice",
+      "questionText": "Why is Graph A more efficient than Graph B if both are proportional and Graph A has the smaller constant of proportionality in a cost-versus-items graph?",
+      "options": [
+        "Because a smaller constant means a lower cost per item",
+        "Because a smaller constant always means more items",
+        "Because the graph is less steep",
+        "Because the y-intercept is smaller"
+      ],
+      "correctAnswer": "Because a smaller constant means a lower cost per item",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "In a cost graph, the constant of proportionality is the unit price."
+    },
+    {
+      "id": "concept-proportional-graphs-review-019",
+      "type": "multiple_choice",
+      "questionText": "A proportional graph goes through (4, 7) and the origin. Which point must lie halfway between the origin and (4, 7) on the same line?",
+      "options": [
+        "(1, 1.75)",
+        "(2, 3.5)",
+        "(3, 5.5)",
+        "(4, 3.5)"
+      ],
+      "correctAnswer": "(2, 3.5)",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Halving both coordinates preserves the same ratio on the proportional graph."
+    },
+    {
+      "id": "concept-proportional-graphs-review-020",
+      "type": "multiple_choice",
+      "questionText": "A student says Graph C is proportional because it passes through the origin, but the graph also shows points (3, 12) and (5, 18). What is the best conclusion?",
+      "options": [
+        "Graph C is not proportional because the ratios 12/3 and 18/5 are different",
+        "Graph C is proportional because the origin is included",
+        "Graph C is proportional because both y-values are positive",
+        "Graph C must be proportional if the line is rising"
+      ],
+      "correctAnswer": "Graph C is not proportional because the ratios 12/3 and 18/5 are different",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Passing through the origin is necessary, but the graph also needs one constant ratio."
+    }
+  ]
+}
