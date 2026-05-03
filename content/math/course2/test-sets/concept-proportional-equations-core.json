@@ -1,0 +1,757 @@
+{
+  "testId": "concept-proportional-equations-core",
+  "conceptId": "concept-proportional-equations",
+  "type": "concept",
+  "questions": [
+    {
+      "id": "concept-proportional-equations-core-001",
+      "type": "multiple_choice",
+      "questionText": "Which equation is proportional?",
+      "options": [
+        "y = 4x",
+        "y = 4x + 1",
+        "y = x + 4",
+        "y = 4 + x/2"
+      ],
+      "correctAnswer": "y = 4x",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "A proportional equation has the form y = kx with no added constant."
+    },
+    {
+      "id": "concept-proportional-equations-core-002",
+      "type": "multiple_choice",
+      "questionText": "In the equation y = 3x, what is the constant of proportionality?",
+      "options": [
+        "1",
+        "3",
+        "x",
+        "y"
+      ],
+      "correctAnswer": "3",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The coefficient of x is the constant of proportionality."
+    },
+    {
+      "id": "concept-proportional-equations-core-003",
+      "type": "multiple_choice",
+      "questionText": "If y = 5x, what is y when x = 4?",
+      "options": [
+        "9",
+        "15",
+        "20",
+        "25"
+      ],
+      "correctAnswer": "20",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Multiply 5 by 4."
+    },
+    {
+      "id": "concept-proportional-equations-core-004",
+      "type": "multiple_choice",
+      "questionText": "A proportional relationship has constant of proportionality 2.5. Which equation matches?",
+      "options": [
+        "y = 2.5x",
+        "y = x + 2.5",
+        "y = 2.5 + x",
+        "y = x/2.5"
+      ],
+      "correctAnswer": "y = 2.5x",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The constant multiplies x in a proportional equation."
+    },
+    {
+      "id": "concept-proportional-equations-core-005",
+      "type": "multiple_choice",
+      "questionText": "A table shows (2, 8), (4, 16), and (6, 24). Which equation matches?",
+      "options": [
+        "y = 2x",
+        "y = 3x",
+        "y = 4x",
+        "y = 8x"
+      ],
+      "correctAnswer": "y = 4x",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Divide y by x: 8/2 = 4, so the equation is y = 4x."
+    },
+    {
+      "id": "concept-proportional-equations-core-006",
+      "type": "multiple_choice",
+      "questionText": "Which equation is NOT proportional?",
+      "options": [
+        "y = 7x",
+        "y = 0.5x",
+        "y = x/4",
+        "y = 6x + 2"
+      ],
+      "correctAnswer": "y = 6x + 2",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The added 2 means it is not of the form y = kx."
+    },
+    {
+      "id": "concept-proportional-equations-core-007",
+      "type": "multiple_choice",
+      "questionText": "If y = 1.5x, what is y when x = 8?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "16"
+      ],
+      "correctAnswer": "12",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Multiply 1.5 by 8."
+    },
+    {
+      "id": "concept-proportional-equations-core-008",
+      "type": "multiple_choice",
+      "questionText": "A bike rental costs $6 per hour. Which equation shows the total cost y for x hours?",
+      "options": [
+        "y = x + 6",
+        "y = 6x",
+        "y = 6 + x/2",
+        "y = x - 6"
+      ],
+      "correctAnswer": "y = 6x",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The total cost is 6 times the number of hours."
+    },
+    {
+      "id": "concept-proportional-equations-core-009",
+      "type": "multiple_choice",
+      "questionText": "Why does the table (1, 3), (4, 12), (7, 21) match y = 3x?",
+      "options": [
+        "Each output is 3 times the input",
+        "Each output is 3 more than the input",
+        "Each input increases by 3",
+        "The outputs are all odd"
+      ],
+      "correctAnswer": "Each output is 3 times the input",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "For every pair, y/x = 3."
+    },
+    {
+      "id": "concept-proportional-equations-core-010",
+      "type": "multiple_choice",
+      "questionText": "If y = 9x, which ordered pair belongs to the relationship?",
+      "options": [
+        "(2, 11)",
+        "(2, 18)",
+        "(9, 2)",
+        "(3, 21)"
+      ],
+      "correctAnswer": "(2, 18)",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "If x = 2, then y = 18."
+    },
+    {
+      "id": "concept-proportional-equations-core-011",
+      "type": "multiple_choice",
+      "questionText": "What is the constant of proportionality in y = 0.75x?",
+      "options": [
+        "0.25",
+        "0.5",
+        "0.75",
+        "1.75"
+      ],
+      "correctAnswer": "0.75",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The coefficient of x is the constant."
+    },
+    {
+      "id": "concept-proportional-equations-core-012",
+      "type": "multiple_choice",
+      "questionText": "A graph goes through (0, 0) and (5, 20). Which equation matches?",
+      "options": [
+        "y = 2x",
+        "y = 4x",
+        "y = 5x",
+        "y = 20x"
+      ],
+      "correctAnswer": "y = 4x",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "The constant is 20/5 = 4."
+    },
+    {
+      "id": "concept-proportional-equations-core-013",
+      "type": "multiple_choice",
+      "questionText": "If x = 10 and y = 35 in a proportional relationship, what is the equation?",
+      "options": [
+        "y = 2.5x",
+        "y = 3x",
+        "y = 3.5x",
+        "y = 35x"
+      ],
+      "correctAnswer": "y = 3.5x",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Divide 35 by 10 to get 3.5."
+    },
+    {
+      "id": "concept-proportional-equations-core-014",
+      "type": "multiple_choice",
+      "questionText": "Which sentence best describes y = 8x?",
+      "options": [
+        "The output is 8 times the input",
+        "The output is 8 more than the input",
+        "The input is 8 more than the output",
+        "The output always starts at 8"
+      ],
+      "correctAnswer": "The output is 8 times the input",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Multiplying x by 8 gives y."
+    },
+    {
+      "id": "concept-proportional-equations-core-015",
+      "type": "multiple_choice",
+      "questionText": "A student writes y = x + 5 for a proportional relationship. What is the best correction?",
+      "options": [
+        "Use multiplication by the constant, not addition",
+        "Switch x and y",
+        "Replace y with 5",
+        "Keep the equation because all equations are proportional"
+      ],
+      "correctAnswer": "Use multiplication by the constant, not addition",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "Proportional equations use y = kx, not y = x + k."
+    },
+    {
+      "id": "concept-proportional-equations-core-016",
+      "type": "multiple_choice",
+      "questionText": "If y = 2x, what is x when y = 18?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "16"
+      ],
+      "correctAnswer": "9",
+      "difficulty": "easy",
+      "answerType": "number",
+      "explanation": "18 = 2x, so x = 9."
+    },
+    {
+      "id": "concept-proportional-equations-core-017",
+      "type": "multiple_choice",
+      "questionText": "Which equation matches a unit rate of 4.5?",
+      "options": [
+        "y = 4.5x",
+        "y = x + 4.5",
+        "y = x/4.5",
+        "y = 45x"
+      ],
+      "correctAnswer": "y = 4.5x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A proportional equation uses the unit rate as the coefficient of x."
+    },
+    {
+      "id": "concept-proportional-equations-core-018",
+      "type": "multiple_choice",
+      "questionText": "A proportional equation is y = 2.5x. What is y when x = 14?",
+      "options": [
+        "28",
+        "30",
+        "35",
+        "40"
+      ],
+      "correctAnswer": "35",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Multiply 14 by 2.5."
+    },
+    {
+      "id": "concept-proportional-equations-core-019",
+      "type": "multiple_choice",
+      "questionText": "A graph goes through (0, 0) and (8, 12). Which equation matches?",
+      "options": [
+        "y = 0.5x",
+        "y = 1.5x",
+        "y = 2x",
+        "y = 12x"
+      ],
+      "correctAnswer": "y = 1.5x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant is 12/8 = 1.5."
+    },
+    {
+      "id": "concept-proportional-equations-core-020",
+      "type": "multiple_choice",
+      "questionText": "Which point does NOT belong to y = 3x?",
+      "options": [
+        "(2, 6)",
+        "(4, 12)",
+        "(5, 14)",
+        "(7, 21)"
+      ],
+      "correctAnswer": "(5, 14)",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "If x = 5, then y should be 15."
+    },
+    {
+      "id": "concept-proportional-equations-core-021",
+      "type": "multiple_choice",
+      "questionText": "A taxi company with no starting fee charges $2.25 per mile. Which equation models cost y for x miles?",
+      "options": [
+        "y = 2.25x",
+        "y = x + 2.25",
+        "y = 2.25 + x",
+        "y = x/2.25"
+      ],
+      "correctAnswer": "y = 2.25x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "With no starting fee, cost is a constant times miles."
+    },
+    {
+      "id": "concept-proportional-equations-core-022",
+      "type": "multiple_choice",
+      "questionText": "How do you find k in the proportional equation y = kx if you know a point (x, y)?",
+      "options": [
+        "Divide y by x",
+        "Add y and x",
+        "Subtract x from y",
+        "Multiply x and y"
+      ],
+      "correctAnswer": "Divide y by x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Because k = y/x in a proportional relationship."
+    },
+    {
+      "id": "concept-proportional-equations-core-023",
+      "type": "multiple_choice",
+      "questionText": "A student buys bracelets for $3 each. Which explanation matches the equation y = 3x?",
+      "options": [
+        "The total cost is 3 times the number of bracelets",
+        "The total cost is 3 more than the number of bracelets",
+        "The number of bracelets is 3 more than the cost",
+        "The starting cost is $3 before any bracelets are bought"
+      ],
+      "correctAnswer": "The total cost is 3 times the number of bracelets",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Each bracelet adds the same constant amount to the total through multiplication."
+    },
+    {
+      "id": "concept-proportional-equations-core-024",
+      "type": "multiple_choice",
+      "questionText": "Which table matches y = 0.5x?",
+      "options": [
+        "(2, 1), (4, 2), (10, 5)",
+        "(2, 2), (4, 4), (10, 10)",
+        "(2, 3), (4, 5), (10, 11)",
+        "(2, 4), (4, 8), (10, 20)"
+      ],
+      "correctAnswer": "(2, 1), (4, 2), (10, 5)",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Each output is half of the input."
+    },
+    {
+      "id": "concept-proportional-equations-core-025",
+      "type": "multiple_choice",
+      "questionText": "A graph has points (0, 0), (2, 7), and (6, 21). Which equation matches?",
+      "options": [
+        "y = 2.5x",
+        "y = 3x",
+        "y = 3.5x",
+        "y = 7x"
+      ],
+      "correctAnswer": "y = 3.5x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant is 7/2 = 3.5 and also 21/6 = 3.5."
+    },
+    {
+      "id": "concept-proportional-equations-core-026",
+      "type": "multiple_choice",
+      "questionText": "Why is y = 5x + 4 not a proportional equation?",
+      "options": [
+        "It has an added constant",
+        "It uses the variable x",
+        "It has a coefficient",
+        "It can make large outputs"
+      ],
+      "correctAnswer": "It has an added constant",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Proportional equations must be exactly y = kx."
+    },
+    {
+      "id": "concept-proportional-equations-core-027",
+      "type": "multiple_choice",
+      "questionText": "If y = 0.8x, what is x when y = 12?",
+      "options": [
+        "9",
+        "10",
+        "12",
+        "15"
+      ],
+      "correctAnswer": "15",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "12 = 0.8x, so x = 15."
+    },
+    {
+      "id": "concept-proportional-equations-core-028",
+      "type": "multiple_choice",
+      "questionText": "A graph and a table both show the same proportional relationship with unit rate 6. Which equation should represent both?",
+      "options": [
+        "y = 6x",
+        "y = x + 6",
+        "y = 6 + x",
+        "y = x/6"
+      ],
+      "correctAnswer": "y = 6x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The same constant of proportionality should appear in the equation."
+    },
+    {
+      "id": "concept-proportional-equations-core-029",
+      "type": "multiple_choice",
+      "questionText": "A proportional relationship goes through (12, 54). Which equation matches?",
+      "options": [
+        "y = 3x",
+        "y = 4x",
+        "y = 4.5x",
+        "y = 5x"
+      ],
+      "correctAnswer": "y = 4.5x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant is 54/12 = 4.5."
+    },
+    {
+      "id": "concept-proportional-equations-core-030",
+      "type": "multiple_choice",
+      "questionText": "Which sentence best explains why y = 2x models the graph through the origin and the point (5, 10)?",
+      "options": [
+        "Because the output is always double the input",
+        "Because the output is always 2 more than the input",
+        "Because the graph contains positive numbers",
+        "Because 10 is a multiple of 5"
+      ],
+      "correctAnswer": "Because the output is always double the input",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant of proportionality is 10/5 = 2."
+    },
+    {
+      "id": "concept-proportional-equations-core-031",
+      "type": "multiple_choice",
+      "questionText": "A relationship has equation y = 1.25x. What is y when x = 16?",
+      "options": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "correctAnswer": "20",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Multiply 16 by 1.25."
+    },
+    {
+      "id": "concept-proportional-equations-core-032",
+      "type": "multiple_choice",
+      "questionText": "A proportional relationship goes through (3, 4.5). Which point must also fit?",
+      "options": [
+        "(6, 7.5)",
+        "(6, 9)",
+        "(6, 10.5)",
+        "(6, 12)"
+      ],
+      "correctAnswer": "(6, 9)",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant is 4.5/3 = 1.5, so y = 6 x 1.5 = 9."
+    },
+    {
+      "id": "concept-proportional-equations-core-033",
+      "type": "multiple_choice",
+      "questionText": "A graph goes through (0, 0) and (9, 13.5). Which equation matches?",
+      "options": [
+        "y = 1.5x",
+        "y = 2x",
+        "y = 4.5x",
+        "y = 13.5x"
+      ],
+      "correctAnswer": "y = 1.5x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Divide 13.5 by 9 to get 1.5."
+    },
+    {
+      "id": "concept-proportional-equations-core-034",
+      "type": "multiple_choice",
+      "questionText": "Which expression describes the constant of proportionality in y = kx?",
+      "options": [
+        "The number multiplied by x",
+        "The number added to x",
+        "The output variable",
+        "The input variable"
+      ],
+      "correctAnswer": "The number multiplied by x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "In y = kx, k is the multiplier."
+    },
+    {
+      "id": "concept-proportional-equations-core-035",
+      "type": "multiple_choice",
+      "questionText": "A student says y = 12x means the input is 12 times the output. What is the best correction?",
+      "options": [
+        "The output is 12 times the input",
+        "The input is 12 more than the output",
+        "The equation is not proportional",
+        "The variables should be switched"
+      ],
+      "correctAnswer": "The output is 12 times the input",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The equation tells how to compute y from x."
+    },
+    {
+      "id": "concept-proportional-equations-core-036",
+      "type": "multiple_choice",
+      "questionText": "Which explanation best shows that y = 2.5x matches the table (2, 5), (6, 15), (10, 25)?",
+      "options": [
+        "Every output is 2.5 times the input",
+        "Every output is 2.5 more than the input",
+        "Every input increases by 4",
+        "Every output ends in 5"
+      ],
+      "correctAnswer": "Every output is 2.5 times the input",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Each pair has the same ratio y/x = 2.5."
+    },
+    {
+      "id": "concept-proportional-equations-core-037",
+      "type": "multiple_choice",
+      "questionText": "A proportional relationship has equation y = 3.2x. What is x when y = 25.6?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correctAnswer": "8",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "25.6 = 3.2x, so x = 8."
+    },
+    {
+      "id": "concept-proportional-equations-core-038",
+      "type": "multiple_choice",
+      "questionText": "A graph passes through the origin and (4, 18). A student writes y = 18x. What is the best correction?",
+      "options": [
+        "Use y = 4.5x because 18 divided by 4 is 4.5",
+        "Use y = x + 18 because the graph rises",
+        "Use y = 18 + x because the graph is positive",
+        "Keep y = 18x because the point contains 18"
+      ],
+      "correctAnswer": "Use y = 4.5x because 18 divided by 4 is 4.5",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The coefficient must be the unit rate, not just the y-value."
+    },
+    {
+      "id": "concept-proportional-equations-core-039",
+      "type": "multiple_choice",
+      "questionText": "Which equation could model 7.5 pounds of apples for each basket x?",
+      "options": [
+        "y = 7.5x",
+        "y = x + 7.5",
+        "y = 7.5 + x/2",
+        "y = x - 7.5"
+      ],
+      "correctAnswer": "y = 7.5x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "A constant number of pounds per basket means a proportional equation."
+    },
+    {
+      "id": "concept-proportional-equations-core-040",
+      "type": "multiple_choice",
+      "questionText": "A relationship goes through (0, 0), (8, 14), and (12, 21). Which equation matches?",
+      "options": [
+        "y = 1.5x",
+        "y = 1.75x",
+        "y = 2x",
+        "y = 2.5x"
+      ],
+      "correctAnswer": "y = 1.75x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Both points give y/x = 1.75."
+    },
+    {
+      "id": "concept-proportional-equations-core-041",
+      "type": "multiple_choice",
+      "questionText": "Why is y = 0.6x a better model than y = x + 0.6 for a constant-rate relationship?",
+      "options": [
+        "Because proportional equations use multiplication by the unit rate",
+        "Because 0.6 is too small to add",
+        "Because x cannot be added",
+        "Because proportional relationships never use decimals"
+      ],
+      "correctAnswer": "Because proportional equations use multiplication by the unit rate",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The constant of proportionality multiplies x."
+    },
+    {
+      "id": "concept-proportional-equations-core-042",
+      "type": "multiple_choice",
+      "questionText": "A table shows (5, 11.25), (8, 18), and (12, 27). Which equation matches?",
+      "options": [
+        "y = 1.25x",
+        "y = 2x",
+        "y = 2.25x",
+        "y = 3x"
+      ],
+      "correctAnswer": "y = 2.25x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "11.25/5 = 2.25 and the same ratio fits the other points."
+    },
+    {
+      "id": "concept-proportional-equations-core-043",
+      "type": "multiple_choice",
+      "questionText": "A student says the equation y = 4x + 0 describes a proportional relationship. What is the best response?",
+      "options": [
+        "Yes, because adding 0 does not change the equation",
+        "No, because any plus sign breaks proportionality",
+        "No, because 4 is too large",
+        "Yes, but only when x = 0"
+      ],
+      "correctAnswer": "Yes, because adding 0 does not change the equation",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "y = 4x + 0 is equivalent to y = 4x."
+    },
+    {
+      "id": "concept-proportional-equations-core-044",
+      "type": "multiple_choice",
+      "questionText": "Which explanation best justifies the equation y = 0.75x for a graph through (0, 0) and (12, 9)?",
+      "options": [
+        "The constant is 9/12, which simplifies to 0.75",
+        "The constant is 12/9, which simplifies to 0.75",
+        "The equation needs the larger number first",
+        "The graph is proportional only because it has two points"
+      ],
+      "correctAnswer": "The constant is 9/12, which simplifies to 0.75",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "In y = kx, k = y/x."
+    },
+    {
+      "id": "concept-proportional-equations-core-045",
+      "type": "multiple_choice",
+      "questionText": "A machine fills 2.4 liters each minute. Which equation models liters y after x minutes?",
+      "options": [
+        "y = 2.4x",
+        "y = x + 2.4",
+        "y = 2.4 + x",
+        "y = x/2.4"
+      ],
+      "correctAnswer": "y = 2.4x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The amount filled is a constant multiple of time."
+    },
+    {
+      "id": "concept-proportional-equations-core-046",
+      "type": "multiple_choice",
+      "questionText": "What is the best way to check whether y = 5x matches the point (7, 35)?",
+      "options": [
+        "Substitute x = 7 and see whether y becomes 35",
+        "Add 5 and 7",
+        "Compare 35 to 5 only",
+        "Check whether 7 is greater than 5"
+      ],
+      "correctAnswer": "Substitute x = 7 and see whether y becomes 35",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Substitution is a direct way to verify a point."
+    },
+    {
+      "id": "concept-proportional-equations-core-047",
+      "type": "multiple_choice",
+      "questionText": "Which statement best explains why y = x + 8 cannot model a graph through the origin as a proportional relationship?",
+      "options": [
+        "At x = 0, y would be 8 instead of 0",
+        "The coefficient of x is too small",
+        "The graph would be horizontal",
+        "The equation would never produce positive values"
+      ],
+      "correctAnswer": "At x = 0, y would be 8 instead of 0",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "A proportional relationship must include the origin."
+    },
+    {
+      "id": "concept-proportional-equations-core-048",
+      "type": "multiple_choice",
+      "questionText": "A relationship goes through (16, 12). Which equation matches?",
+      "options": [
+        "y = 0.5x",
+        "y = 0.75x",
+        "y = 1.25x",
+        "y = 1.5x"
+      ],
+      "correctAnswer": "y = 0.75x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The constant is 12/16 = 0.75."
+    },
+    {
+      "id": "concept-proportional-equations-core-049",
+      "type": "multiple_choice",
+      "questionText": "A student compares y = 2x and y = 2x + 3. Which statement is correct?",
+      "options": [
+        "Only y = 2x is proportional because it has no added amount",
+        "Both are proportional because both use multiplication",
+        "Only y = 2x + 3 is proportional because it is larger",
+        "Neither is proportional because both use x"
+      ],
+      "correctAnswer": "Only y = 2x is proportional because it has no added amount",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "A proportional equation cannot include a nonzero added constant."
+    },
+    {
+      "id": "concept-proportional-equations-core-050",
+      "type": "multiple_choice",
+      "questionText": "Which explanation best proves that y = 3.5x models the table (2, 7), (4, 14), (10, 35)?",
+      "options": [
+        "Every output is 3.5 times the input, so one constant fits every row",
+        "Every output is 3.5 more than the input, so the equation is proportional",
+        "The outputs are all multiples of 7, so any equation works",
+        "The inputs are all even except one, so the equation must be correct"
+      ],
+      "correctAnswer": "Every output is 3.5 times the input, so one constant fits every row",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "A proportional equation is justified when one constant ratio fits all rows."
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "testId": "concept-proportional-equations-review",
+  "conceptId": "concept-proportional-equations",
+  "type": "review",
+  "questions": [
+    {
+      "id": "concept-proportional-equations-review-001",
+      "type": "multiple_choice",
+      "questionText": "A graph through the origin passes through (4, 14). Which equation matches?",
+      "options": [
+        "y = 2.5x",
+        "y = 3x",
+        "y = 3.5x",
+        "y = 4x"
+      ],
+      "correctAnswer": "y = 3.5x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The constant is 14/4 = 3.5."
+    },
+    {
+      "id": "concept-proportional-equations-review-002",
+      "type": "multiple_choice",
+      "questionText": "If y = 2.4x, what is y when x = 15?",
+      "options": [
+        "30",
+        "32",
+        "36",
+        "40"
+      ],
+      "correctAnswer": "36",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Multiply 15 by 2.4."
+    },
+    {
+      "id": "concept-proportional-equations-review-003",
+      "type": "multiple_choice",
+      "questionText": "Which table matches y = 1.5x?",
+      "options": [
+        "(2, 3), (6, 9), (10, 15)",
+        "(2, 4), (6, 10), (10, 16)",
+        "(2, 1.5), (6, 4.5), (10, 6)",
+        "(2, 5), (6, 15), (10, 25)"
+      ],
+      "correctAnswer": "(2, 3), (6, 9), (10, 15)",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Each output is 1.5 times the input."
+    },
+    {
+      "id": "concept-proportional-equations-review-004",
+      "type": "multiple_choice",
+      "questionText": "Why is y = 7x + 1 not proportional?",
+      "options": [
+        "It adds 1 instead of using only multiplication",
+        "It uses the variable y",
+        "It has a large constant",
+        "It can make odd outputs"
+      ],
+      "correctAnswer": "It adds 1 instead of using only multiplication",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A proportional equation must be exactly y = kx."
+    },
+    {
+      "id": "concept-proportional-equations-review-005",
+      "type": "multiple_choice",
+      "questionText": "A relationship goes through (5, 11.25). Which equation matches?",
+      "options": [
+        "y = 2x",
+        "y = 2.25x",
+        "y = 2.5x",
+        "y = 11.25x"
+      ],
+      "correctAnswer": "y = 2.25x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "11.25 divided by 5 is 2.25."
+    },
+    {
+      "id": "concept-proportional-equations-review-006",
+      "type": "multiple_choice",
+      "questionText": "A machine prints 18 pages in 3 minutes at a constant rate. Which equation models pages y after x minutes?",
+      "options": [
+        "y = 3x",
+        "y = 6x",
+        "y = 9x",
+        "y = 18x"
+      ],
+      "correctAnswer": "y = 6x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "The unit rate is 18/3 = 6 pages per minute."
+    },
+    {
+      "id": "concept-proportional-equations-review-007",
+      "type": "multiple_choice",
+      "questionText": "Which explanation best matches y = 4.5x in a word problem?",
+      "options": [
+        "The total is 4.5 times the number of units",
+        "The total is 4.5 more than the number of units",
+        "The starting amount is 4.5",
+        "The output is always 4 or 5"
+      ],
+      "correctAnswer": "The total is 4.5 times the number of units",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "A proportional equation uses multiplication by one constant rate."
+    },
+    {
+      "id": "concept-proportional-equations-review-008",
+      "type": "multiple_choice",
+      "questionText": "If y = 0.6x, what is x when y = 18?",
+      "options": [
+        "24",
+        "28",
+        "30",
+        "36"
+      ],
+      "correctAnswer": "30",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "18 = 0.6x, so x = 30."
+    },
+    {
+      "id": "concept-proportional-equations-review-009",
+      "type": "multiple_choice",
+      "questionText": "A graph goes through (0, 0), (8, 20), and (12, 30). Which equation matches?",
+      "options": [
+        "y = 2x",
+        "y = 2.5x",
+        "y = 3x",
+        "y = 4x"
+      ],
+      "correctAnswer": "y = 2.5x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Both points give the same ratio of 2.5."
+    },
+    {
+      "id": "concept-proportional-equations-review-010",
+      "type": "multiple_choice",
+      "questionText": "Which equation is equivalent to y = 3x + 0?",
+      "options": [
+        "y = 0x",
+        "y = 3x",
+        "y = x + 3",
+        "y = 3 + x"
+      ],
+      "correctAnswer": "y = 3x",
+      "difficulty": "medium",
+      "answerType": "number",
+      "explanation": "Adding 0 does not change the equation."
+    },
+    {
+      "id": "concept-proportional-equations-review-011",
+      "type": "multiple_choice",
+      "questionText": "A relationship goes through (16, 22). Which equation matches?",
+      "options": [
+        "y = 1.25x",
+        "y = 1.375x",
+        "y = 1.5x",
+        "y = 2x"
+      ],
+      "correctAnswer": "y = 1.375x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "22 divided by 16 is 1.375."
+    },
+    {
+      "id": "concept-proportional-equations-review-012",
+      "type": "multiple_choice",
+      "questionText": "A student uses y = x + 12 for a graph through the origin and (4, 12). What is the best correction?",
+      "options": [
+        "Use y = 3x because 12 divided by 4 is 3",
+        "Use y = 12x because the point contains 12",
+        "Keep y = x + 12 because the graph rises",
+        "Use y = x/3 because 4 is smaller than 12"
+      ],
+      "correctAnswer": "Use y = 3x because 12 divided by 4 is 3",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The coefficient should be the unit rate."
+    },
+    {
+      "id": "concept-proportional-equations-review-013",
+      "type": "multiple_choice",
+      "questionText": "A relationship has equation y = 2.75x. What is y when x = 12?",
+      "options": [
+        "27",
+        "30",
+        "33",
+        "36"
+      ],
+      "correctAnswer": "33",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "Multiply 12 by 2.75."
+    },
+    {
+      "id": "concept-proportional-equations-review-014",
+      "type": "multiple_choice",
+      "questionText": "Which explanation best proves that y = 1.25x models the table (4, 5), (8, 10), (20, 25)?",
+      "options": [
+        "Each output is 1.25 times the input",
+        "Each output is 1.25 more than the input",
+        "Each input increases by 4",
+        "Each output ends in 5"
+      ],
+      "correctAnswer": "Each output is 1.25 times the input",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The same multiplicative relationship fits every row."
+    },
+    {
+      "id": "concept-proportional-equations-review-015",
+      "type": "multiple_choice",
+      "questionText": "A recipe uses 2.5 cups of flour per batch. Which equation models total flour y for x batches?",
+      "options": [
+        "y = 2.5x",
+        "y = x + 2.5",
+        "y = 2.5 + x",
+        "y = x/2.5"
+      ],
+      "correctAnswer": "y = 2.5x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The amount of flour is a constant multiple of the number of batches."
+    },
+    {
+      "id": "concept-proportional-equations-review-016",
+      "type": "multiple_choice",
+      "questionText": "If y = 3.2x, what is x when y = 48?",
+      "options": [
+        "12",
+        "15",
+        "16",
+        "18"
+      ],
+      "correctAnswer": "15",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "48 = 3.2x, so x = 15."
+    },
+    {
+      "id": "concept-proportional-equations-review-017",
+      "type": "multiple_choice",
+      "questionText": "A proportional equation models 9 miles for every 2 hours. Which equation matches?",
+      "options": [
+        "y = 3.5x",
+        "y = 4x",
+        "y = 4.5x",
+        "y = 9x"
+      ],
+      "correctAnswer": "y = 4.5x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The unit rate is 9/2 = 4.5."
+    },
+    {
+      "id": "concept-proportional-equations-review-018",
+      "type": "multiple_choice",
+      "questionText": "Why is y = 5x the correct equation for the graph through (0, 0), (1, 5), and (7, 35)?",
+      "options": [
+        "Every point keeps the same ratio of 5",
+        "Every point has y-values ending in 5",
+        "The graph rises by 5 every time x increases",
+        "The graph includes the number 35"
+      ],
+      "correctAnswer": "Every point keeps the same ratio of 5",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "The same constant ratio supports the equation."
+    },
+    {
+      "id": "concept-proportional-equations-review-019",
+      "type": "multiple_choice",
+      "questionText": "A relationship goes through (7, 24.5). Which equation matches?",
+      "options": [
+        "y = 2.5x",
+        "y = 3x",
+        "y = 3.5x",
+        "y = 4x"
+      ],
+      "correctAnswer": "y = 3.5x",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "24.5 divided by 7 is 3.5."
+    },
+    {
+      "id": "concept-proportional-equations-review-020",
+      "type": "multiple_choice",
+      "questionText": "Which statement best compares y = 2x and y = 2x + 5?",
+      "options": [
+        "Only y = 2x is proportional because it has no starting amount",
+        "Both are proportional because they share the same coefficient",
+        "Only y = 2x + 5 is proportional because it is larger",
+        "Neither is proportional because both use x"
+      ],
+      "correctAnswer": "Only y = 2x is proportional because it has no starting amount",
+      "difficulty": "hard",
+      "answerType": "number",
+      "explanation": "A nonzero starting amount breaks proportionality."
+    }
+  ]
+}
