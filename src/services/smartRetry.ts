@@ -108,7 +108,7 @@ function toDifficultyBucket(
     return "challenge";
   }
 
-  if (difficulty === "medium" || difficulty === "hard") {
+  if (difficulty === "standard" || difficulty === "medium" || difficulty === "hard") {
     return "standard";
   }
 
@@ -131,6 +131,9 @@ export function getQuestionSkillTags(
     (tag): tag is SkillTag =>
       tag === "computation" ||
       tag === "conceptual" ||
+      tag === "vocabulary" ||
+      tag === "application" ||
+      tag === "reasoning" ||
       tag === "word-problem" ||
       tag === "multi-step" ||
       tag === "graph" ||
@@ -299,52 +302,52 @@ function getDifficultyPreference(
   if (bucket === "challenge") {
     if (!adjustment?.allowChallenge) {
       if (normalizedProfile.standard) {
-        return ["medium", "hard", "easy", "challenge"];
+        return ["standard", "medium", "hard", "scaffold", "easy", "challenge"];
       }
 
-      return ["easy", "medium", "hard", "challenge"];
+      return ["scaffold", "easy", "standard", "medium", "hard", "challenge"];
     }
 
     if (normalizedProfile.challenge) {
-      return ["challenge", "hard", "medium", "easy"];
+      return ["challenge", "hard", "standard", "medium", "scaffold", "easy"];
     }
 
     if (normalizedProfile.standard) {
-      return ["hard", "medium", "easy"];
+      return ["hard", "standard", "medium", "scaffold", "easy"];
     }
 
-    return ["easy", "medium", "hard", "challenge"];
+    return ["scaffold", "easy", "standard", "medium", "hard", "challenge"];
   }
 
   if (bucket === "standard") {
     if (normalizedProfile.standard) {
-      return ["medium", "hard", "easy", "challenge"];
+      return ["standard", "medium", "hard", "scaffold", "easy", "challenge"];
     }
 
     if (normalizedProfile.scaffold) {
-      return ["easy", "medium", "hard", "challenge"];
+      return ["scaffold", "easy", "standard", "medium", "hard", "challenge"];
     }
 
-    return ["challenge", "hard", "medium", "easy"];
+    return ["challenge", "hard", "standard", "medium", "scaffold", "easy"];
   }
 
   if (bucket === "scaffold") {
     if (adjustment?.scaffoldMode === "balanced" && normalizedProfile.standard) {
-      return ["medium", "easy", "hard", "challenge"];
+      return ["standard", "medium", "scaffold", "easy", "hard", "challenge"];
     }
 
-    return ["easy", "medium", "hard", "challenge"];
+    return ["scaffold", "easy", "standard", "medium", "hard", "challenge"];
   }
 
   if (normalizedProfile.scaffold && normalizedProfile.standard) {
-    return ["easy", "medium", "hard", "challenge"];
+    return ["scaffold", "easy", "standard", "medium", "hard", "challenge"];
   }
 
   if (normalizedProfile.standard) {
-    return ["medium", "hard", "easy", "challenge"];
+    return ["standard", "medium", "hard", "scaffold", "easy", "challenge"];
   }
 
-  return ["easy", "medium", "hard", "challenge"];
+  return ["scaffold", "easy", "standard", "medium", "hard", "challenge"];
 }
 
 function pickByDifficulty(

@@ -1,0 +1,559 @@
+{
+  "id": "science-genetics-behavior-test-1",
+  "testId": "science-genetics-behavior-test-1",
+  "conceptId": "concept-genetics-reproduction-behavior",
+  "title": "Genetics, Reproduction, and Behavior Practice Test 1",
+  "description": "Mixed practice across inheritance, reproduction, and behavior.",
+  "questions": [
+    {
+      "id": "science-genetics-behavior-test-1-q1",
+      "type": "multiple_choice",
+      "prompt": "What is the best definition of genotype?",
+      "questionText": "What is the best definition of genotype?",
+      "choices": [
+        "An organism's allele combination",
+        "An organism's physical appearance",
+        "The habitat an organism lives in",
+        "A learned behavior an organism shows"
+      ],
+      "options": [
+        "An organism's allele combination",
+        "An organism's physical appearance",
+        "The habitat an organism lives in",
+        "A learned behavior an organism shows"
+      ],
+      "correctAnswer": "An organism's allele combination",
+      "skillTags": ["vocabulary"],
+      "difficulty": "scaffold",
+      "explanation": "Genotype means the allele combination an organism carries. Physical appearance describes phenotype, habitat is the environment, and learned behavior is not part of genotype."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q2",
+      "type": "multiple_choice",
+      "prompt": "Which organism is reproducing asexually?",
+      "questionText": "Which organism is reproducing asexually?",
+      "choices": [
+        "A bacterium splitting into two cells",
+        "A kitten receiving genes from two parents",
+        "A flowering plant making seeds after pollination",
+        "A bird laying fertilized eggs"
+      ],
+      "options": [
+        "A bacterium splitting into two cells",
+        "A kitten receiving genes from two parents",
+        "A flowering plant making seeds after pollination",
+        "A bird laying fertilized eggs"
+      ],
+      "correctAnswer": "A bacterium splitting into two cells",
+      "skillTags": ["conceptual"],
+      "difficulty": "scaffold",
+      "explanation": "Binary fission is asexual reproduction because one parent cell splits into two. The other choices describe sexual reproduction involving genetic material from two parents."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q3",
+      "type": "multiple_choice",
+      "prompt": "A trait that can be seen, such as purple flowers, is called a:",
+      "questionText": "A trait that can be seen, such as purple flowers, is called a:",
+      "choices": [
+        "phenotype",
+        "genotype",
+        "Punnett square",
+        "recessive allele"
+      ],
+      "options": [
+        "phenotype",
+        "genotype",
+        "Punnett square",
+        "recessive allele"
+      ],
+      "correctAnswer": "phenotype",
+      "skillTags": ["vocabulary"],
+      "difficulty": "scaffold",
+      "explanation": "Phenotype is the observable trait. Genotype is the allele combination, a Punnett square is a prediction tool, and a recessive allele is only one part of inheritance."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q4",
+      "type": "multiple_choice",
+      "prompt": "Which behavior is most likely instinctive?",
+      "questionText": "Which behavior is most likely instinctive?",
+      "choices": [
+        "A spider spinning a web",
+        "A dog learning to sit after training",
+        "A student memorizing a song",
+        "A dolphin copying a trainer's signal"
+      ],
+      "options": [
+        "A spider spinning a web",
+        "A dog learning to sit after training",
+        "A student memorizing a song",
+        "A dolphin copying a trainer's signal"
+      ],
+      "correctAnswer": "A spider spinning a web",
+      "skillTags": ["conceptual"],
+      "difficulty": "scaffold",
+      "explanation": "Web-spinning is an inherited instinct in spiders. The other choices involve learning through practice, memory, or observation."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q5",
+      "type": "multiple_choice",
+      "prompt": "What does homozygous mean?",
+      "questionText": "What does homozygous mean?",
+      "choices": [
+        "The organism has two identical alleles",
+        "The organism has two different alleles",
+        "The organism shows both a dominant and recessive trait at once",
+        "The organism inherited a trait from only one parent"
+      ],
+      "options": [
+        "The organism has two identical alleles",
+        "The organism has two different alleles",
+        "The organism shows both a dominant and recessive trait at once",
+        "The organism inherited a trait from only one parent"
+      ],
+      "correctAnswer": "The organism has two identical alleles",
+      "skillTags": ["vocabulary"],
+      "difficulty": "scaffold",
+      "explanation": "Homozygous means both alleles are the same. Two different alleles is heterozygous, and the other choices do not define allele combinations correctly."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q6",
+      "type": "multiple_choice",
+      "prompt": "A rabbit becomes less likely to run away after hearing the same harmless sprinkler sound every day. This is:",
+      "questionText": "A rabbit becomes less likely to run away after hearing the same harmless sprinkler sound every day. This is:",
+      "choices": [
+        "habituation",
+        "conditioning",
+        "courtship",
+        "regeneration"
+      ],
+      "options": [
+        "habituation",
+        "conditioning",
+        "courtship",
+        "regeneration"
+      ],
+      "correctAnswer": "habituation",
+      "skillTags": ["application"],
+      "difficulty": "scaffold",
+      "explanation": "Habituation is learning to ignore a repeated harmless stimulus. Conditioning involves linking signals and results, courtship attracts mates, and regeneration is a reproduction-related process."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q7",
+      "type": "multiple_choice",
+      "prompt": "Which example is an acquired trait?",
+      "questionText": "Which example is an acquired trait?",
+      "choices": [
+        "A scar from falling off a bike",
+        "Attached earlobes",
+        "A widow's peak",
+        "A naturally curly tail"
+      ],
+      "options": [
+        "A scar from falling off a bike",
+        "Attached earlobes",
+        "A widow's peak",
+        "A naturally curly tail"
+      ],
+      "correctAnswer": "A scar from falling off a bike",
+      "skillTags": ["conceptual"],
+      "difficulty": "scaffold",
+      "explanation": "An acquired trait comes from life experience, like a scar. The other choices describe inherited traits controlled mainly by genes."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q8",
+      "type": "multiple_choice",
+      "prompt": "Which seed dispersal method matches burrs that stick to animal fur?",
+      "questionText": "Which seed dispersal method matches burrs that stick to animal fur?",
+      "choices": [
+        "Animals carry the seeds to new places",
+        "Wind blows the seeds through the air",
+        "Water floats the seeds downstream",
+        "The plant only drops the seeds under itself"
+      ],
+      "options": [
+        "Animals carry the seeds to new places",
+        "Wind blows the seeds through the air",
+        "Water floats the seeds downstream",
+        "The plant only drops the seeds under itself"
+      ],
+      "correctAnswer": "Animals carry the seeds to new places",
+      "skillTags": ["application"],
+      "difficulty": "scaffold",
+      "explanation": "Burrs cling to fur so animals transport them away from the parent plant. The other choices describe different dispersal methods or limited dispersal."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q9",
+      "type": "multiple_choice",
+      "prompt": "If a tall pea plant is Tt and a short pea plant is tt, what is the probability of short offspring?",
+      "questionText": "If a tall pea plant is Tt and a short pea plant is tt, what is the probability of short offspring?",
+      "choices": [
+        "50%",
+        "25%",
+        "75%",
+        "100%"
+      ],
+      "options": [
+        "50%",
+        "25%",
+        "75%",
+        "100%"
+      ],
+      "correctAnswer": "50%",
+      "skillTags": ["reasoning"],
+      "difficulty": "standard",
+      "explanation": "A Tt parent can pass T or t, while a tt parent always passes t, so half the offspring are tt and short. The other percentages do not match the Punnett square outcomes."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q10",
+      "type": "multiple_choice",
+      "prompt": "Why can sexual reproduction help a species survive environmental change?",
+      "questionText": "Why can sexual reproduction help a species survive environmental change?",
+      "choices": [
+        "It creates more genetic variation among offspring",
+        "It always produces offspring faster than asexual reproduction",
+        "It guarantees every offspring gets the best traits",
+        "It prevents mutations from happening"
+      ],
+      "options": [
+        "It creates more genetic variation among offspring",
+        "It always produces offspring faster than asexual reproduction",
+        "It guarantees every offspring gets the best traits",
+        "It prevents mutations from happening"
+      ],
+      "correctAnswer": "It creates more genetic variation among offspring",
+      "skillTags": ["conceptual"],
+      "difficulty": "standard",
+      "explanation": "Sexual reproduction mixes genes from two parents, increasing variation. It is not always faster, it cannot guarantee the best traits, and it does not stop mutations."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q11",
+      "type": "multiple_choice",
+      "prompt": "A hydra grows a small new hydra on its side, and the new hydra later breaks off. This is:",
+      "questionText": "A hydra grows a small new hydra on its side, and the new hydra later breaks off. This is:",
+      "choices": [
+        "budding",
+        "binary fission",
+        "vegetative reproduction",
+        "courtship"
+      ],
+      "options": [
+        "budding",
+        "binary fission",
+        "vegetative reproduction",
+        "courtship"
+      ],
+      "correctAnswer": "budding",
+      "skillTags": ["vocabulary"],
+      "difficulty": "standard",
+      "explanation": "Budding happens when a smaller organism grows off the parent and separates. Binary fission is cell splitting, vegetative reproduction is a plant process, and courtship is mating behavior."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q12",
+      "type": "multiple_choice",
+      "prompt": "Two black-fur guinea pigs both have genotype Bb. What fraction of their offspring are expected to have white fur if white is recessive?",
+      "questionText": "Two black-fur guinea pigs both have genotype Bb. What fraction of their offspring are expected to have white fur if white is recessive?",
+      "choices": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "options": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "correctAnswer": "1/4",
+      "skillTags": ["reasoning"],
+      "difficulty": "standard",
+      "explanation": "A Bb × Bb cross gives BB, Bb, Bb, and bb, so one out of four offspring is bb and white. The other fractions do not match the four equally likely combinations."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q13",
+      "type": "multiple_choice",
+      "prompt": "A young chimp watches an older chimp use a stick to reach termites, then copies the method. This is:",
+      "questionText": "A young chimp watches an older chimp use a stick to reach termites, then copies the method. This is:",
+      "choices": [
+        "observational learning",
+        "instinct",
+        "regeneration",
+        "seed dispersal"
+      ],
+      "options": [
+        "observational learning",
+        "instinct",
+        "regeneration",
+        "seed dispersal"
+      ],
+      "correctAnswer": "observational learning",
+      "skillTags": ["application"],
+      "difficulty": "standard",
+      "explanation": "Observational learning happens when an organism learns by watching another. Instinct is inherited, and the other choices are unrelated processes."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q14",
+      "type": "multiple_choice",
+      "prompt": "Which statement correctly compares inherited and acquired traits?",
+      "questionText": "Which statement correctly compares inherited and acquired traits?",
+      "choices": [
+        "Inherited traits come from genes, while acquired traits result from life experiences",
+        "Inherited traits appear only in animals, while acquired traits appear only in plants",
+        "Inherited traits are always helpful, while acquired traits are always harmful",
+        "Inherited traits can be learned, while acquired traits are passed to offspring"
+      ],
+      "options": [
+        "Inherited traits come from genes, while acquired traits result from life experiences",
+        "Inherited traits appear only in animals, while acquired traits appear only in plants",
+        "Inherited traits are always helpful, while acquired traits are always harmful",
+        "Inherited traits can be learned, while acquired traits are passed to offspring"
+      ],
+      "correctAnswer": "Inherited traits come from genes, while acquired traits result from life experiences",
+      "skillTags": ["conceptual"],
+      "difficulty": "standard",
+      "explanation": "Inherited traits are genetic, while acquired traits develop during life. The other choices wrongly limit where traits appear or confuse inheritance with learning."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q15",
+      "type": "multiple_choice",
+      "prompt": "Which example best shows conditioning?",
+      "questionText": "Which example best shows conditioning?",
+      "choices": [
+        "A dog comes when it hears a bell because the bell has been paired with food",
+        "A goose follows its parents soon after hatching",
+        "A spider spins a web without being taught",
+        "A kitten wrestles with its littermates for fun"
+      ],
+      "options": [
+        "A dog comes when it hears a bell because the bell has been paired with food",
+        "A goose follows its parents soon after hatching",
+        "A spider spins a web without being taught",
+        "A kitten wrestles with its littermates for fun"
+      ],
+      "correctAnswer": "A dog comes when it hears a bell because the bell has been paired with food",
+      "skillTags": ["application"],
+      "difficulty": "standard",
+      "explanation": "Conditioning links a signal or action with a result, like a bell with food. The goose example is instinctive following, the spider shows instinct, and the kitten shows play."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q16",
+      "type": "multiple_choice",
+      "prompt": "Which statement is an advantage of asexual reproduction?",
+      "questionText": "Which statement is an advantage of asexual reproduction?",
+      "choices": [
+        "One parent can reproduce quickly without finding a mate",
+        "Offspring always have more genetic variation than the parent generation",
+        "Each offspring receives half its genes from each parent",
+        "It always produces stronger offspring than sexual reproduction"
+      ],
+      "options": [
+        "One parent can reproduce quickly without finding a mate",
+        "Offspring always have more genetic variation than the parent generation",
+        "Each offspring receives half its genes from each parent",
+        "It always produces stronger offspring than sexual reproduction"
+      ],
+      "correctAnswer": "One parent can reproduce quickly without finding a mate",
+      "skillTags": ["conceptual"],
+      "difficulty": "standard",
+      "explanation": "Asexual reproduction can be fast and needs only one parent. The other choices incorrectly describe genetic variation, sexual reproduction, or make unsupported claims about strength."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q17",
+      "type": "multiple_choice",
+      "prompt": "Why do many birds perform courtship dances or songs?",
+      "questionText": "Why do many birds perform courtship dances or songs?",
+      "choices": [
+        "To attract mates and improve chances of reproduction",
+        "To warn predators that they are poisonous",
+        "To spread seeds farther from the parent plant",
+        "To teach their offspring how to migrate"
+      ],
+      "options": [
+        "To attract mates and improve chances of reproduction",
+        "To warn predators that they are poisonous",
+        "To spread seeds farther from the parent plant",
+        "To teach their offspring how to migrate"
+      ],
+      "correctAnswer": "To attract mates and improve chances of reproduction",
+      "skillTags": ["conceptual"],
+      "difficulty": "standard",
+      "explanation": "Courtship behaviors help attract mates and support reproduction. The other choices describe defense, plant reproduction, or a different type of learning."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q18",
+      "type": "multiple_choice",
+      "prompt": "A sea star regrows a lost arm. Which term names this regrowing process?",
+      "questionText": "A sea star regrows a lost arm. Which term names this regrowing process?",
+      "choices": [
+        "regeneration",
+        "budding",
+        "fertilization",
+        "pollination"
+      ],
+      "options": [
+        "regeneration",
+        "budding",
+        "fertilization",
+        "pollination"
+      ],
+      "correctAnswer": "regeneration",
+      "skillTags": ["vocabulary"],
+      "difficulty": "standard",
+      "explanation": "Regeneration is the regrowth of a lost body part, so it fits a sea star growing back an arm. Budding means a new organism grows from the parent, while fertilization and pollination are parts of sexual reproduction, not body-part regrowth."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q19",
+      "type": "multiple_choice",
+      "prompt": "Which action most directly helps protect offspring?",
+      "questionText": "Which action most directly helps protect offspring?",
+      "choices": [
+        "A penguin parent taking turns keeping an egg warm",
+        "A squirrel forgetting where it buried some nuts",
+        "A rabbit becoming used to a harmless sound",
+        "A dandelion releasing seeds into the wind"
+      ],
+      "options": [
+        "A penguin parent taking turns keeping an egg warm",
+        "A squirrel forgetting where it buried some nuts",
+        "A rabbit becoming used to a harmless sound",
+        "A dandelion releasing seeds into the wind"
+      ],
+      "correctAnswer": "A penguin parent taking turns keeping an egg warm",
+      "skillTags": ["application"],
+      "difficulty": "standard",
+      "explanation": "Keeping the egg warm directly protects the developing offspring. The other choices involve food storage, habituation, or plant seed dispersal instead."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q20",
+      "type": "multiple_choice",
+      "prompt": "A plant with genotype Rr has red flowers because R is dominant. What is the phenotype?",
+      "questionText": "A plant with genotype Rr has red flowers because R is dominant. What is the phenotype?",
+      "choices": [
+        "red flowers",
+        "Rr",
+        "one dominant and one recessive allele",
+        "a 50% chance of red flowers"
+      ],
+      "options": [
+        "red flowers",
+        "Rr",
+        "one dominant and one recessive allele",
+        "a 50% chance of red flowers"
+      ],
+      "correctAnswer": "red flowers",
+      "skillTags": ["reasoning"],
+      "difficulty": "standard",
+      "explanation": "Phenotype is the observable trait, which here is red flowers. Rr and the allele description are genotype information, and 50% is a probability statement, not the trait itself."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q21",
+      "type": "multiple_choice",
+      "prompt": "In rabbits, black fur (B) is dominant to white fur (b). A black rabbit of unknown genotype is crossed with a white rabbit (bb), and two white offspring are born. What must be true about the black rabbit?",
+      "questionText": "In rabbits, black fur (B) is dominant to white fur (b). A black rabbit of unknown genotype is crossed with a white rabbit (bb), and two white offspring are born. What must be true about the black rabbit?",
+      "choices": [
+        "It is heterozygous, Bb",
+        "It is homozygous dominant, BB",
+        "It is homozygous recessive, bb",
+        "Its genotype cannot be narrowed down at all"
+      ],
+      "options": [
+        "It is heterozygous, Bb",
+        "It is homozygous dominant, BB",
+        "It is homozygous recessive, bb",
+        "Its genotype cannot be narrowed down at all"
+      ],
+      "correctAnswer": "It is heterozygous, Bb",
+      "skillTags": ["reasoning"],
+      "difficulty": "challenge",
+      "explanation": "White offspring must receive a recessive b from each parent, so the black parent must carry b and be Bb. BB could not produce white offspring, bb would not be black, and the evidence does narrow the genotype."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q22",
+      "type": "multiple_choice",
+      "prompt": "A farmer wants many identical strawberry plants quickly. Which method best fits that goal, and why?",
+      "questionText": "A farmer wants many identical strawberry plants quickly. Which method best fits that goal, and why?",
+      "choices": [
+        "Vegetative reproduction, because runners can produce genetically similar plants fast",
+        "Sexual reproduction, because seeds always produce identical plants fast",
+        "Courtship behavior, because pollinators choose the strongest plants",
+        "Conditioning, because plants can learn to grow in rows"
+      ],
+      "options": [
+        "Vegetative reproduction, because runners can produce genetically similar plants fast",
+        "Sexual reproduction, because seeds always produce identical plants fast",
+        "Courtship behavior, because pollinators choose the strongest plants",
+        "Conditioning, because plants can learn to grow in rows"
+      ],
+      "correctAnswer": "Vegetative reproduction, because runners can produce genetically similar plants fast",
+      "skillTags": ["application", "reasoning"],
+      "difficulty": "challenge",
+      "explanation": "Vegetative reproduction lets plants like strawberries make many genetically similar offspring through runners. Sexual reproduction increases variation, and the other options misuse behavior terms that do not apply to plant reproduction here."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q23",
+      "type": "multiple_choice",
+      "prompt": "Two heterozygous parents for dimples (Dd × Dd) have four children. Which outcome is most likely overall?",
+      "questionText": "Two heterozygous parents for dimples (Dd × Dd) have four children. Which outcome is most likely overall?",
+      "choices": [
+        "About three children with dimples and one without",
+        "All four children without dimples",
+        "Exactly two children with dimples every time",
+        "No child can have the recessive trait"
+      ],
+      "options": [
+        "About three children with dimples and one without",
+        "All four children without dimples",
+        "Exactly two children with dimples every time",
+        "No child can have the recessive trait"
+      ],
+      "correctAnswer": "About three children with dimples and one without",
+      "skillTags": ["reasoning"],
+      "difficulty": "challenge",
+      "explanation": "A Dd × Dd cross predicts a 3:1 phenotype ratio on average, so about three out of four children are expected to show dimples. The other choices either ignore probability or describe unlikely or incorrect outcomes."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q24",
+      "type": "multiple_choice",
+      "prompt": "A young sea turtle crawls toward the ocean right after hatching, but later learns to avoid a beach area with bright artificial lights. Which pairing best describes these behaviors?",
+      "questionText": "A young sea turtle crawls toward the ocean right after hatching, but later learns to avoid a beach area with bright artificial lights. Which pairing best describes these behaviors?",
+      "choices": [
+        "Instinct first, learned behavior second",
+        "Learned behavior first, instinct second",
+        "Conditioning first, seed dispersal second",
+        "Courtship first, habituation second"
+      ],
+      "options": [
+        "Instinct first, learned behavior second",
+        "Learned behavior first, instinct second",
+        "Conditioning first, seed dispersal second",
+        "Courtship first, habituation second"
+      ],
+      "correctAnswer": "Instinct first, learned behavior second",
+      "skillTags": ["application", "reasoning"],
+      "difficulty": "challenge",
+      "explanation": "Crawling toward the ocean right after hatching is instinctive, while later avoiding bright lights is learned from experience. The other choices reverse the order or use unrelated terms."
+    },
+    {
+      "id": "science-genetics-behavior-test-1-q25",
+      "type": "multiple_choice",
+      "prompt": "Which statement best explains why seed dispersal and animal care of offspring both improve survival, even though they happen in different ways?",
+      "questionText": "Which statement best explains why seed dispersal and animal care of offspring both improve survival, even though they happen in different ways?",
+      "choices": [
+        "Both reduce competition or danger by helping offspring develop in better conditions",
+        "Both guarantee every offspring reaches adulthood",
+        "Both are forms of asexual reproduction",
+        "Both happen only in mammals"
+      ],
+      "options": [
+        "Both reduce competition or danger by helping offspring develop in better conditions",
+        "Both guarantee every offspring reaches adulthood",
+        "Both are forms of asexual reproduction",
+        "Both happen only in mammals"
+      ],
+      "correctAnswer": "Both reduce competition or danger by helping offspring develop in better conditions",
+      "skillTags": ["conceptual", "reasoning"],
+      "difficulty": "challenge",
+      "explanation": "Seed dispersal can move young plants away from crowding, and parental care can protect young animals from danger. The other choices overstate certainty or incorrectly describe where or how these processes occur."
+    }
+  ]
+}

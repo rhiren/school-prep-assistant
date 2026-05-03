@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { RouterProvider, createMemoryRouter } from "react-router-dom";
 import { describe, expect, it } from "vitest";
 import { routes } from "../app/router";
-import type { Question, TestAttempt } from "../domain/models";
+import type { Question, SkillTag, TestAttempt } from "../domain/models";
 import { createDefaultContentRepository } from "../services/contentRepository";
 import {
   buildRetryOutcome,
@@ -107,9 +107,7 @@ async function submitTargetedRetryPass(
     cycle: number;
     startState?: {
       conceptId: string;
-      weakSkillsBefore: Array<
-        "computation" | "conceptual" | "word-problem" | "multi-step" | "graph" | "visual"
-      >;
+      weakSkillsBefore: SkillTag[];
       attemptCountBefore: number;
     };
   },

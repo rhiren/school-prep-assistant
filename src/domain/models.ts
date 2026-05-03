@@ -6,7 +6,13 @@ export type MasteryStatus =
   | "mastered";
 
 export type QuestionType = "multiple_choice" | "numeric" | "short_text";
-export type DifficultyLevel = "easy" | "medium" | "hard" | "challenge";
+export type DifficultyLevel =
+  | "scaffold"
+  | "standard"
+  | "easy"
+  | "medium"
+  | "hard"
+  | "challenge";
 export type SessionMode = "concept" | "mixed";
 export type SessionStatus = "in_progress" | "submitted";
 export type AnswerType = "ratio" | "fraction" | "decimal" | "number";
@@ -14,6 +20,9 @@ export type ConceptType = "core" | "overview" | "application" | "mixed-review";
 export type SkillTag =
   | "computation"
   | "conceptual"
+  | "vocabulary"
+  | "application"
+  | "reasoning"
   | "word-problem"
   | "multi-step"
   | "graph"

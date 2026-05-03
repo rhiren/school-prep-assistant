@@ -129,9 +129,14 @@ function toQuestionType(value: unknown): QuestionType {
 }
 
 function toDifficulty(value: unknown): DifficultyLevel {
-  return value === "easy" || value === "medium" || value === "hard" || value === "challenge"
+  return value === "scaffold" ||
+    value === "standard" ||
+    value === "easy" ||
+    value === "medium" ||
+    value === "hard" ||
+    value === "challenge"
     ? value
-    : "easy";
+    : "scaffold";
 }
 
 function toAnswerType(value: unknown): AnswerType {
@@ -164,6 +169,9 @@ function toSkillTags(value: unknown): SkillTag[] {
     (tag): tag is SkillTag =>
       tag === "computation" ||
       tag === "conceptual" ||
+      tag === "vocabulary" ||
+      tag === "application" ||
+      tag === "reasoning" ||
       tag === "word-problem" ||
       tag === "multi-step" ||
       tag === "graph" ||

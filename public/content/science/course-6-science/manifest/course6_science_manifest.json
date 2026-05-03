@@ -1,0 +1,80 @@
+{
+  "courses": [
+    {
+      "id": "course-6-science",
+      "subjectId": "science",
+      "subjectTitle": "Science",
+      "courseId": "course-6-science",
+      "courseTitle": "Grade 6 Science",
+      "title": "Grade 6 Science",
+      "description": "Build science understanding through focused practice in genetics, reproduction, and behavior.",
+      "order": 2,
+      "units": [
+        {
+          "id": "unit-genetics-behavior",
+          "title": "Genetics, Reproduction, and Behavior",
+          "description": "Practice how traits are inherited, how organisms reproduce, and how behaviors help living things survive.",
+          "order": 1,
+          "concepts": [
+            {
+              "id": "concept-genetics-reproduction-behavior",
+              "title": "Genetics, Reproduction, and Behavior",
+              "description": "Connect inheritance, reproduction, plant and animal survival, and behavior through mixed science practice.",
+              "tags": [
+                "science",
+                "genetics",
+                "reproduction",
+                "behavior"
+              ],
+              "skillTags": [
+                "conceptual",
+                "vocabulary",
+                "application",
+                "reasoning"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "order": 1,
+              "testQuestionCount": 25,
+              "tutorial": "./content/tutorials/concept-genetics-reproduction-behavior.md",
+              "tests": [
+                {
+                  "id": "science-genetics-behavior-test-1",
+                  "type": "practice",
+                  "path": "./content/test-sets/science-genetics-behavior-test-1.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "science-genetics-behavior-test-2",
+                  "type": "practice",
+                  "path": "./content/test-sets/science-genetics-behavior-test-2.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "science-genetics-behavior-test-3",
+                  "type": "practice",
+                  "path": "./content/test-sets/science-genetics-behavior-test-3.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

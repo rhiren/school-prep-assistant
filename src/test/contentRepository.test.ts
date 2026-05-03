@@ -161,6 +161,53 @@ describe("content repository", () => {
     expect(solvingProportionsCoreQuestions).toHaveLength(50);
   });
 
+  it("loads the new Grade 6 Science course with three 25-question practice sets", async () => {
+    const repository = await createDefaultContentRepository();
+    const scienceCourse = await repository.getCourse("course-6-science");
+    const scienceConcept = await repository.getConcept("concept-genetics-reproduction-behavior");
+    const scienceTutorial = await repository.getTutorialContent(
+      "concept-genetics-reproduction-behavior",
+    );
+    const scienceTestSets = await repository.getTestSetsForConcept(
+      "concept-genetics-reproduction-behavior",
+    );
+    const testOneQuestions = await repository.getQuestionsForTestSet(
+      "science-genetics-behavior-test-1",
+    );
+    const testTwoQuestions = await repository.getQuestionsForTestSet(
+      "science-genetics-behavior-test-2",
+    );
+    const testThreeQuestions = await repository.getQuestionsForTestSet(
+      "science-genetics-behavior-test-3",
+    );
+
+    expect(scienceCourse?.subjectTitle).toBe("Science");
+    expect(scienceCourse?.courseTitle).toBe("Grade 6 Science");
+    expect(scienceCourse?.units[0]?.id).toBe("unit-genetics-behavior");
+    expect(scienceConcept?.hasTest).toBe(true);
+    expect(scienceConcept?.skillTags).toEqual([
+      "conceptual",
+      "vocabulary",
+      "application",
+      "reasoning",
+    ]);
+    expect(scienceTutorial).toContain("# Genetics, Reproduction, and Behavior");
+    expect(scienceTestSets.map((testSet) => testSet.id)).toEqual([
+      "science-genetics-behavior-test-1",
+      "science-genetics-behavior-test-2",
+      "science-genetics-behavior-test-3",
+    ]);
+
+    for (const questions of [testOneQuestions, testTwoQuestions, testThreeQuestions]) {
+      expect(questions).toHaveLength(25);
+      expect(questions.filter((question) => question.difficulty === "scaffold")).toHaveLength(8);
+      expect(questions.filter((question) => question.difficulty === "standard")).toHaveLength(12);
+      expect(questions.filter((question) => question.difficulty === "challenge")).toHaveLength(5);
+      expect(questions.every((question) => question.questionType === "multiple_choice")).toBe(true);
+      expect(questions.every((question) => (question.choices?.length ?? 0) === 4)).toBe(true);
+    }
+  });
+
   it("fails fast when duplicate global question ids are present", () => {
     const manifest: CourseManifestDocument = {
       courses: [

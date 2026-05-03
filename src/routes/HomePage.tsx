@@ -81,6 +81,7 @@ export function HomePage() {
   const { activeProfile } = useStudentProfiles();
   const [subjectTitle, setSubjectTitle] = useState("Mathematics");
   const [courseTitle, setCourseTitle] = useState("Course 2");
+  const [scienceCourse, setScienceCourse] = useState<{ id: string; title: string } | null>(null);
   const [unitTitles, setUnitTitles] = useState<Record<string, string>>({});
   const [concepts, setConcepts] = useState<Concept[]>([]);
   const [progressByConcept, setProgressByConcept] = useState<Record<string, ProgressRecord>>({});
@@ -105,8 +106,9 @@ export function HomePage() {
     let isMounted = true;
 
     void (async () => {
-      const [course, loadedConcepts, records, session, smartRetryEnabled] = await Promise.all([
+      const [course, science, loadedConcepts, records, session, smartRetryEnabled] = await Promise.all([
         contentRepository.getCourse("course-2"),
+        contentRepository.getCourse("course-6-science"),
         contentRepository.getCourseConcepts("course-2"),
         progressService.getProgress(),
         sessionService.getLatestInProgressSession(),
@@ -126,6 +128,7 @@ export function HomePage() {
           Object.fromEntries(course.units.map((unit) => [unit.id, unit.title])),
         );
       }
+      setScienceCourse(science ? { id: science.id, title: science.title } : null);
 
       setConcepts(loadedConcepts);
       setProgressByConcept(
@@ -429,15 +432,16 @@ export function HomePage() {
           tracking, and mastery over time.
         </p>
         <p className="mt-3 text-sm text-stone-600">
-          Mathematics is the active subject today, with Course 2 ready inside the
-          Subjects flow and more subjects planned over time.
+          Mathematics stays as the primary day-to-day path, with additional
+          subjects available through the Subjects flow as they are added.
         </p>
       </div>
 
       <section className="panel panel-padding">
         <h3 className="text-xl font-semibold text-ink">Subjects</h3>
         <p className="mt-2 text-sm text-stone-600">
-          Mathematics is active now, and Science is planned as the next subject area.
+          Mathematics is active now, and other subjects can be opened here when
+          their first course is ready.
         </p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <Link
@@ -458,20 +462,31 @@ export function HomePage() {
             </div>
           </Link>
 
-          <div className="rounded-2xl border border-stone-200 bg-stone-50 px-4 py-4">
+          <Link
+            className="rounded-2xl border border-stone-200 bg-stone-50 px-4 py-4 transition hover:border-sky-400 hover:bg-sky-50/60"
+            to={scienceCourse ? `/course/${scienceCourse.id}` : "/subjects"}
+          >
             <div className="flex items-start justify-between gap-3">
               <div>
                 <div className="text-2xl">🧪</div>
                 <h4 className="mt-3 text-lg font-semibold text-ink">Science</h4>
                 <p className="mt-1 text-sm text-stone-600">
-                  Coming soon. This subject will be added in a future update.
+                  {scienceCourse
+                    ? `${scienceCourse.title} is now available inside the Subjects flow.`
+                    : "This subject will appear here when the first science course is ready."}
                 </p>
               </div>
-              <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-amber-700">
-                Coming Soon
+              <span
+                className={`rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] ${
+                  scienceCourse
+                    ? "bg-sky-100 text-sky-700"
+                    : "bg-amber-100 text-amber-700"
+                }`}
+              >
+                {scienceCourse ? "Available" : "Coming Soon"}
               </span>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 
