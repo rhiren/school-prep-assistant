@@ -1597,6 +1597,43 @@
               ]
             },
             {
+              "id": "concept-solving-inequalities",
+              "title": "Solving Inequalities",
+              "description": "Solve one-step and two-step inequalities and interpret the solution set.",
+              "tutorial": "./content/tutorials/concept-solving-inequalities.md",
+              "tests": [
+                {
+                  "id": "concept-solving-inequalities-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-solving-inequalities-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-solving-inequalities-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-solving-inequalities-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "order": 13,
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "multi-step"
+              ]
+            },
+            {
               "id": "concept-graph-inequalities",
               "title": "Graph Inequalities",
               "description": "Show inequality solutions clearly on a number line.",
@@ -1623,7 +1660,7 @@
                   }
                 }
               ],
-              "order": 13,
+              "order": 14,
               "meta": {
                 "type": "core",
                 "assessable": true
@@ -1661,7 +1698,7 @@
                   }
                 }
               ],
-              "order": 14,
+              "order": 15,
               "meta": {
                 "type": "core",
                 "assessable": true
@@ -1699,7 +1736,7 @@
                   }
                 }
               ],
-              "order": 15,
+              "order": 16,
               "meta": {
                 "type": "core",
                 "assessable": true
@@ -1737,7 +1774,7 @@
                   }
                 }
               ],
-              "order": 16,
+              "order": 17,
               "meta": {
                 "type": "application",
                 "assessable": true
@@ -1775,7 +1812,7 @@
                   }
                 }
               ],
-              "order": 17,
+              "order": 18,
               "meta": {
                 "type": "mixed-review",
                 "assessable": true
@@ -1792,7 +1829,7 @@
               "title": "Course 2 Cumulative Review 2",
               "description": "Review the major ideas from Units 1 through 3 in a cumulative mixed practice set.",
               "tutorial": "./content/tutorials/concept-course2-cumulative-review-2.md",
-              "order": 18,
+              "order": 19,
               "meta": {
                 "type": "mixed-review",
                 "assessable": true
@@ -2703,10 +2740,48 @@
               ]
             },
             {
+              "id": "concept-population-inferences",
+              "title": "Population Inferences",
+              "description": "Use samples to make reasonable inferences about larger populations.",
+              "order": 3,
+              "tutorial": "./content/tutorials/concept-population-inferences.md",
+              "tests": [
+                {
+                  "id": "concept-population-inferences-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-population-inferences-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-population-inferences-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-population-inferences-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "word-problem",
+                "multi-step"
+              ]
+            },
+            {
               "id": "concept-compare-data",
               "title": "Compare Data",
               "description": "Compare data sets and describe what the data shows.",
-              "order": 3,
+              "order": 4,
               "tutorial": "./content/tutorials/concept-compare-data.md",
               "tests": [
                 {
@@ -2744,7 +2819,7 @@
               "id": "concept-measures-of-center",
               "title": "Measures of Center",
               "description": "Use mean, median, mode, and range to understand data.",
-              "order": 4,
+              "order": 5,
               "tutorial": "./content/tutorials/concept-measures-of-center.md",
               "tests": [
                 {
@@ -2778,10 +2853,48 @@
               ]
             },
             {
+              "id": "concept-measures-of-variability",
+              "title": "Measures of Variability",
+              "description": "Use range, interquartile range, and mean absolute deviation to describe how data varies.",
+              "order": 6,
+              "tutorial": "./content/tutorials/concept-measures-of-variability.md",
+              "tests": [
+                {
+                  "id": "concept-measures-of-variability-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-measures-of-variability-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-measures-of-variability-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-measures-of-variability-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "computation",
+                "conceptual",
+                "visual"
+              ]
+            },
+            {
               "id": "concept-distributions",
               "title": "Distributions",
               "description": "Describe how data is spread out and where it clusters.",
-              "order": 5,
+              "order": 7,
               "tutorial": "./content/tutorials/concept-distributions.md",
               "tests": [
                 {
@@ -2819,7 +2932,7 @@
               "id": "concept-probability",
               "title": "Probability",
               "description": "Use probability to describe how likely an event is.",
-              "order": 6,
+              "order": 8,
               "tutorial": "./content/tutorials/concept-probability.md",
               "tests": [
                 {
@@ -2856,7 +2969,7 @@
               "id": "concept-probability-models",
               "title": "Probability Models",
               "description": "Use organized models to predict outcomes and chances.",
-              "order": 7,
+              "order": 9,
               "tutorial": "./content/tutorials/concept-probability-models.md",
               "tests": [
                 {
@@ -2894,7 +3007,7 @@
               "id": "concept-experimental-probability",
               "title": "Experimental Probability",
               "description": "Use results from experiments to estimate probability.",
-              "order": 8,
+              "order": 10,
               "tutorial": "./content/tutorials/concept-experimental-probability.md",
               "tests": [
                 {
@@ -2928,10 +3041,48 @@
               ]
             },
             {
+              "id": "concept-probability-simulations",
+              "title": "Probability Simulations",
+              "description": "Use simulations to model chance events and estimate probabilities.",
+              "order": 11,
+              "tutorial": "./content/tutorials/concept-probability-simulations.md",
+              "tests": [
+                {
+                  "id": "concept-probability-simulations-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/concept-probability-simulations-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "concept-probability-simulations-review",
+                  "type": "review",
+                  "path": "./content/test-sets/concept-probability-simulations-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "skillTags": [
+                "conceptual",
+                "computation",
+                "multi-step"
+              ]
+            },
+            {
               "id": "concept-compound-probability",
               "title": "Compound Probability",
               "description": "Find probabilities for situations with more than one event.",
-              "order": 9,
+              "order": 12,
               "tutorial": "./content/tutorials/concept-compound-probability.md",
               "tests": [
                 {
@@ -2992,7 +3143,7 @@
                   }
                 }
               ],
-              "order": 10,
+              "order": 13,
               "meta": {
                 "type": "application",
                 "assessable": true
@@ -3030,7 +3181,7 @@
                   }
                 }
               ],
-              "order": 11,
+              "order": 14,
               "meta": {
                 "type": "mixed-review",
                 "assessable": true
@@ -3047,7 +3198,7 @@
               "title": "Course 2 Final Review",
               "description": "Review the major ideas from all Course 2 units in a full cumulative mixed practice set.",
               "tutorial": "./content/tutorials/concept-course2-final-review.md",
-              "order": 12,
+              "order": 15,
               "meta": {
                 "type": "mixed-review",
                 "assessable": true
