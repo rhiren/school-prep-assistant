@@ -329,6 +329,58 @@ describe("BasicScoringEngine", () => {
     expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
   });
 
+  it("scores proportional equations text-valued multiple-choice answers correctly", async () => {
+    const repository = await createDefaultContentRepository();
+    const engine = new BasicScoringEngine(repository);
+    const session: TestSession = {
+      id: "session-3d",
+      studentId: DEFAULT_STUDENT_ID,
+      mode: "concept",
+      courseId: "course-2",
+      conceptId: "concept-proportional-equations",
+      conceptIds: ["concept-proportional-equations"],
+      questionIds: [
+        "concept-proportional-equations-core-009",
+        "concept-proportional-equations-core-015",
+        "concept-proportional-equations-core-030",
+        "concept-proportional-equations-review-018",
+      ],
+      answers: {
+        "concept-proportional-equations-core-009": {
+          questionId: "concept-proportional-equations-core-009",
+          response: "Each output is 3 times the input",
+          answeredAt: "2026-05-03T05:00:00.000Z",
+        },
+        "concept-proportional-equations-core-015": {
+          questionId: "concept-proportional-equations-core-015",
+          response: "Use multiplication by the constant, not addition",
+          answeredAt: "2026-05-03T05:00:00.000Z",
+        },
+        "concept-proportional-equations-core-030": {
+          questionId: "concept-proportional-equations-core-030",
+          response: "Because the output is always double the input",
+          answeredAt: "2026-05-03T05:00:00.000Z",
+        },
+        "concept-proportional-equations-review-018": {
+          questionId: "concept-proportional-equations-review-018",
+          response: "Every point keeps the same ratio of 5",
+          answeredAt: "2026-05-03T05:00:00.000Z",
+        },
+      },
+      currentQuestionIndex: 0,
+      status: "in_progress",
+      createdAt: "2026-05-03T05:00:00.000Z",
+      updatedAt: "2026-05-03T05:00:00.000Z",
+    };
+
+    const attempt = await engine.scoreSession(session);
+
+    expect(attempt.summary.correctCount).toBe(4);
+    expect(attempt.summary.incorrectCount).toBe(0);
+    expect(attempt.summary.percentage).toBe(100);
+    expect(attempt.results.every((result) => result.isCorrect)).toBe(true);
+  });
+
   it("scores scale drawings text-valued multiple-choice answers correctly", async () => {
     const repository = await createDefaultContentRepository();
     const engine = new BasicScoringEngine(repository);
