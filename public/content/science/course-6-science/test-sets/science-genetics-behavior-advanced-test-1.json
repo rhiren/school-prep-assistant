@@ -1,0 +1,559 @@
+{
+  "id": "science-genetics-behavior-advanced-test-1",
+  "testId": "science-genetics-behavior-advanced-test-1",
+  "conceptId": "concept-genetics-reproduction-behavior",
+  "title": "Genetics, Reproduction, and Behavior Advanced Practice Test 1",
+  "description": "Advanced mixed science practice with deeper genetics, behavior, and reproduction reasoning.",
+  "questions": [
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q1",
+      "type": "multiple_choice",
+      "prompt": "In a Punnett square, what does each box represent?",
+      "questionText": "In a Punnett square, what does each box represent?",
+      "choices": [
+        "One possible allele combination in an offspring",
+        "One trait the parents have already shown",
+        "A learned behavior the offspring might develop",
+        "The environment the offspring will grow up in"
+      ],
+      "options": [
+        "One possible allele combination in an offspring",
+        "One trait the parents have already shown",
+        "A learned behavior the offspring might develop",
+        "The environment the offspring will grow up in"
+      ],
+      "correctAnswer": "One possible allele combination in an offspring",
+      "skillTags": ["vocabulary"],
+      "difficulty": "scaffold",
+      "explanation": "Each box in a Punnett square shows one possible allele pairing the offspring could receive. The other options describe phenotype, behavior, or environment rather than the purpose of the boxes."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q2",
+      "type": "multiple_choice",
+      "prompt": "Which pair correctly matches the term to its meaning?",
+      "questionText": "Which pair correctly matches the term to its meaning?",
+      "choices": [
+        "Phenotype: observable trait",
+        "Genotype: learned behavior",
+        "Heterozygous: two identical alleles",
+        "Recessive: always shows when present"
+      ],
+      "options": [
+        "Phenotype: observable trait",
+        "Genotype: learned behavior",
+        "Heterozygous: two identical alleles",
+        "Recessive: always shows when present"
+      ],
+      "correctAnswer": "Phenotype: observable trait",
+      "skillTags": ["vocabulary"],
+      "difficulty": "scaffold",
+      "explanation": "Phenotype means the observable trait. Genotype is an allele combination, heterozygous means two different alleles, and a recessive trait does not always show when present."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q3",
+      "type": "multiple_choice",
+      "prompt": "Which example best shows observational learning?",
+      "questionText": "Which example best shows observational learning?",
+      "choices": [
+        "A young otter watches its parent crack shells with a rock and then copies the method",
+        "A turtle crawls toward water soon after hatching",
+        "A hydra grows a bud that breaks off",
+        "A plant spreads seeds by wind"
+      ],
+      "options": [
+        "A young otter watches its parent crack shells with a rock and then copies the method",
+        "A turtle crawls toward water soon after hatching",
+        "A hydra grows a bud that breaks off",
+        "A plant spreads seeds by wind"
+      ],
+      "correctAnswer": "A young otter watches its parent crack shells with a rock and then copies the method",
+      "skillTags": ["application"],
+      "difficulty": "scaffold",
+      "explanation": "Observational learning happens when an organism learns by watching another. The turtle shows instinct, the hydra shows budding, and the plant example is seed dispersal."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q4",
+      "type": "multiple_choice",
+      "prompt": "Which option is an advantage of sexual reproduction?",
+      "questionText": "Which option is an advantage of sexual reproduction?",
+      "choices": [
+        "It increases genetic variation in offspring",
+        "It always produces offspring faster than asexual reproduction",
+        "It creates identical offspring each time",
+        "It requires only one parent"
+      ],
+      "options": [
+        "It increases genetic variation in offspring",
+        "It always produces offspring faster than asexual reproduction",
+        "It creates identical offspring each time",
+        "It requires only one parent"
+      ],
+      "correctAnswer": "It increases genetic variation in offspring",
+      "skillTags": ["conceptual"],
+      "difficulty": "scaffold",
+      "explanation": "Sexual reproduction mixes genes from two parents, increasing variation. The other answers describe asexual reproduction or make false statements."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q5",
+      "type": "multiple_choice",
+      "prompt": "Which type of asexual reproduction is correctly matched with its example?",
+      "questionText": "Which type of asexual reproduction is correctly matched with its example?",
+      "choices": [
+        "Binary fission: one bacterium splits into two cells",
+        "Budding: a potato grows from a tuber",
+        "Vegetative reproduction: a hydra forms a side bud",
+        "Regeneration: a bird attracts a mate with a dance"
+      ],
+      "options": [
+        "Binary fission: one bacterium splits into two cells",
+        "Budding: a potato grows from a tuber",
+        "Vegetative reproduction: a hydra forms a side bud",
+        "Regeneration: a bird attracts a mate with a dance"
+      ],
+      "correctAnswer": "Binary fission: one bacterium splits into two cells",
+      "skillTags": ["vocabulary"],
+      "difficulty": "scaffold",
+      "explanation": "Binary fission is when one cell splits into two cells. Potatoes show vegetative reproduction, hydra show budding, and a mating dance is courtship behavior."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q6",
+      "type": "multiple_choice",
+      "prompt": "Tall stems (T) are dominant to short stems (t). Two plants with genotype Tt are crossed. What percentage of offspring are expected to be short?",
+      "questionText": "Tall stems (T) are dominant to short stems (t). Two plants with genotype Tt are crossed. What percentage of offspring are expected to be short?",
+      "choices": [
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "correctAnswer": "25%",
+      "skillTags": ["reasoning"],
+      "difficulty": "standard",
+      "explanation": "A Tt × Tt cross gives TT, Tt, Tt, and tt. Only tt is short, so 1 out of 4 offspring, or 25%, are expected to be short. The other percentages do not match the Punnett square."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q7",
+      "type": "multiple_choice",
+      "prompt": "In mice, black fur (B) is dominant to white fur (b). A black mouse and a white mouse have some white offspring. What must be true about the black mouse?",
+      "questionText": "In mice, black fur (B) is dominant to white fur (b). A black mouse and a white mouse have some white offspring. What must be true about the black mouse?",
+      "choices": [
+        "It is heterozygous, Bb",
+        "It is homozygous dominant, BB",
+        "It is homozygous recessive, bb",
+        "Its genotype cannot be inferred at all"
+      ],
+      "options": [
+        "It is heterozygous, Bb",
+        "It is homozygous dominant, BB",
+        "It is homozygous recessive, bb",
+        "Its genotype cannot be inferred at all"
+      ],
+      "correctAnswer": "It is heterozygous, Bb",
+      "skillTags": ["reasoning"],
+      "difficulty": "standard",
+      "explanation": "White offspring must be bb, so the black parent must contribute a recessive b allele. That means the black parent is Bb. BB could not produce white offspring with a white mouse."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q8",
+      "type": "multiple_choice",
+      "prompt": "A plant with genotype Rr is crossed with a plant with genotype rr. Which statement is correct about the offspring?",
+      "questionText": "A plant with genotype Rr is crossed with a plant with genotype rr. Which statement is correct about the offspring?",
+      "choices": [
+        "Half are expected to be Rr and half rr",
+        "All are expected to be Rr",
+        "Three-fourths are expected to be red",
+        "None can show the recessive trait"
+      ],
+      "options": [
+        "Half are expected to be Rr and half rr",
+        "All are expected to be Rr",
+        "Three-fourths are expected to be red",
+        "None can show the recessive trait"
+      ],
+      "correctAnswer": "Half are expected to be Rr and half rr",
+      "skillTags": ["reasoning"],
+      "difficulty": "standard",
+      "explanation": "The Rr parent can pass R or r, while the rr parent can only pass r, giving Rr and rr in equal numbers. The other choices describe different crosses."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q9",
+      "type": "multiple_choice",
+      "prompt": "A bird stops sounding an alarm call when a harmless lawn mower passes every day. Which behavior classification fits best?",
+      "questionText": "A bird stops sounding an alarm call when a harmless lawn mower passes every day. Which behavior classification fits best?",
+      "choices": [
+        "habituation",
+        "conditioning",
+        "instinct",
+        "courtship"
+      ],
+      "options": [
+        "habituation",
+        "conditioning",
+        "instinct",
+        "courtship"
+      ],
+      "correctAnswer": "habituation",
+      "skillTags": ["application"],
+      "difficulty": "standard",
+      "explanation": "The bird is learning to ignore a repeated harmless stimulus, which is habituation. Conditioning links a signal to a result, instinct is inherited, and courtship attracts mates."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q10",
+      "type": "multiple_choice",
+      "prompt": "Why is a strawberry patch started from runners likely to have plants that look very similar to one another?",
+      "questionText": "Why is a strawberry patch started from runners likely to have plants that look very similar to one another?",
+      "choices": [
+        "Runners are a form of vegetative reproduction that usually makes genetically similar offspring",
+        "Runners are a type of courtship behavior that attracts similar mates",
+        "Runners create more genetic variation than seeds do",
+        "Runners change acquired traits into inherited traits"
+      ],
+      "options": [
+        "Runners are a form of vegetative reproduction that usually makes genetically similar offspring",
+        "Runners are a type of courtship behavior that attracts similar mates",
+        "Runners create more genetic variation than seeds do",
+        "Runners change acquired traits into inherited traits"
+      ],
+      "correctAnswer": "Runners are a form of vegetative reproduction that usually makes genetically similar offspring",
+      "skillTags": ["application"],
+      "difficulty": "standard",
+      "explanation": "Runners are vegetative reproduction, so the new plants are usually genetically similar to the parent. The other choices confuse reproduction with behavior or make incorrect claims about variation."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q11",
+      "type": "multiple_choice",
+      "prompt": "A mother bear teaches cubs where to find salmon by leading them to the river and cubs copy her actions. Which combination best describes the cubs' learning?",
+      "questionText": "A mother bear teaches cubs where to find salmon by leading them to the river and cubs copy her actions. Which combination best describes the cubs' learning?",
+      "choices": [
+        "observational learning",
+        "binary fission",
+        "instinct only",
+        "seed dispersal"
+      ],
+      "options": [
+        "observational learning",
+        "binary fission",
+        "instinct only",
+        "seed dispersal"
+      ],
+      "correctAnswer": "observational learning",
+      "skillTags": ["application"],
+      "difficulty": "standard",
+      "explanation": "The cubs are learning by watching and copying their mother, which is observational learning. The other choices refer to unrelated processes or ignore the evidence that the behavior was learned."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q12",
+      "type": "multiple_choice",
+      "prompt": "A dandelion seed has a light body and parachute-like hairs. Which explanation best connects structure to function?",
+      "questionText": "A dandelion seed has a light body and parachute-like hairs. Which explanation best connects structure to function?",
+      "choices": [
+        "The seed can be carried by wind to reduce crowding near the parent plant",
+        "The seed can attract mates for the flower",
+        "The seed will always grow into a genetically different plant",
+        "The hairs prove the seed was produced asexually"
+      ],
+      "options": [
+        "The seed can be carried by wind to reduce crowding near the parent plant",
+        "The seed can attract mates for the flower",
+        "The seed will always grow into a genetically different plant",
+        "The hairs prove the seed was produced asexually"
+      ],
+      "correctAnswer": "The seed can be carried by wind to reduce crowding near the parent plant",
+      "skillTags": ["application", "reasoning"],
+      "difficulty": "standard",
+      "explanation": "The light body and hairs help the seed travel on air currents, spreading offspring away from the parent. The other options confuse seed dispersal with courtship, genetics, or asexual reproduction."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q13",
+      "type": "multiple_choice",
+      "prompt": "A red-flowered snapdragon with unknown genotype is crossed with a white-flowered snapdragon (rr). All 18 offspring are red. Which parent genotype is best supported by the results?",
+      "questionText": "A red-flowered snapdragon with unknown genotype is crossed with a white-flowered snapdragon (rr). All 18 offspring are red. Which parent genotype is best supported by the results?",
+      "choices": [
+        "RR",
+        "Rr",
+        "rr",
+        "The red parent must be recessive"
+      ],
+      "options": [
+        "RR",
+        "Rr",
+        "rr",
+        "The red parent must be recessive"
+      ],
+      "correctAnswer": "RR",
+      "skillTags": ["reasoning"],
+      "difficulty": "standard",
+      "explanation": "If the red parent were Rr, a cross with rr should produce some white offspring. Because all observed offspring are red, the best-supported genotype is RR. rr would not be red."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q14",
+      "type": "multiple_choice",
+      "prompt": "Freckles (F) are dominant to no freckles (f). Two parents both have freckles, but one child has no freckles. Which pair of parent genotypes is possible?",
+      "questionText": "Freckles (F) are dominant to no freckles (f). Two parents both have freckles, but one child has no freckles. Which pair of parent genotypes is possible?",
+      "choices": [
+        "Ff and Ff",
+        "FF and FF",
+        "FF and Ff only",
+        "ff and ff"
+      ],
+      "options": [
+        "Ff and Ff",
+        "FF and FF",
+        "FF and Ff only",
+        "ff and ff"
+      ],
+      "correctAnswer": "Ff and Ff",
+      "skillTags": ["reasoning"],
+      "difficulty": "standard",
+      "explanation": "A child with no freckles must be ff, so each parent must contribute a recessive f allele. That means both parents can be Ff. Any parent with FF could not contribute f."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q15",
+      "type": "multiple_choice",
+      "prompt": "A biologist crosses two smooth-seeded pea plants and gets 30 smooth offspring and 10 wrinkled offspring. Which explanation best fits the data?",
+      "questionText": "A biologist crosses two smooth-seeded pea plants and gets 30 smooth offspring and 10 wrinkled offspring. Which explanation best fits the data?",
+      "choices": [
+        "Both smooth-seeded parents were probably heterozygous",
+        "Both smooth-seeded parents were definitely homozygous dominant",
+        "Wrinkled seeds must be the dominant trait",
+        "The results prove traits are acquired instead of inherited"
+      ],
+      "options": [
+        "Both smooth-seeded parents were probably heterozygous",
+        "Both smooth-seeded parents were definitely homozygous dominant",
+        "Wrinkled seeds must be the dominant trait",
+        "The results prove traits are acquired instead of inherited"
+      ],
+      "correctAnswer": "Both smooth-seeded parents were probably heterozygous",
+      "skillTags": ["reasoning"],
+      "difficulty": "standard",
+      "explanation": "A roughly 3:1 smooth-to-wrinkled pattern fits a heterozygous × heterozygous cross when smooth is dominant. Homozygous dominant parents would not produce wrinkled offspring."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q16",
+      "type": "multiple_choice",
+      "prompt": "Which statement best compares instinct and learned behavior using a real-life example?",
+      "questionText": "Which statement best compares instinct and learned behavior using a real-life example?",
+      "choices": [
+        "A goose migrating is mostly instinctive, while a dog learning to respond to a whistle is learned",
+        "Both goose migration and whistle response are inherited instincts",
+        "Both are examples of vegetative reproduction",
+        "The whistle response is instinctive because it happens quickly"
+      ],
+      "options": [
+        "A goose migrating is mostly instinctive, while a dog learning to respond to a whistle is learned",
+        "Both goose migration and whistle response are inherited instincts",
+        "Both are examples of vegetative reproduction",
+        "The whistle response is instinctive because it happens quickly"
+      ],
+      "correctAnswer": "A goose migrating is mostly instinctive, while a dog learning to respond to a whistle is learned",
+      "skillTags": ["conceptual", "reasoning"],
+      "difficulty": "challenge",
+      "explanation": "Migration is an inherited behavior pattern, while whistle response is learned through experience or training. The other answers confuse instinct with learning or misuse reproduction terms."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q17",
+      "type": "multiple_choice",
+      "prompt": "A certain fish species lays eggs and the male guards the nest until the eggs hatch. Which explanation best shows why this behavior matters?",
+      "questionText": "A certain fish species lays eggs and the male guards the nest until the eggs hatch. Which explanation best shows why this behavior matters?",
+      "choices": [
+        "Guarding increases the chance that offspring survive to hatching",
+        "Guarding changes the genotype of the eggs",
+        "Guarding proves the eggs were made asexually",
+        "Guarding means the offspring will all be dominant"
+      ],
+      "options": [
+        "Guarding increases the chance that offspring survive to hatching",
+        "Guarding changes the genotype of the eggs",
+        "Guarding proves the eggs were made asexually",
+        "Guarding means the offspring will all be dominant"
+      ],
+      "correctAnswer": "Guarding increases the chance that offspring survive to hatching",
+      "skillTags": ["application", "reasoning"],
+      "difficulty": "challenge",
+      "explanation": "Protective behavior helps more offspring survive by reducing danger from predators or disturbance. It does not change genetics or determine dominance."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q18",
+      "type": "multiple_choice",
+      "prompt": "A farmer wants to predict whether crossing two horned cattle could ever produce a hornless calf. Hornless (h) is recessive. Which parent pair would make a hornless calf impossible?",
+      "questionText": "A farmer wants to predict whether crossing two horned cattle could ever produce a hornless calf. Hornless (h) is recessive. Which parent pair would make a hornless calf impossible?",
+      "choices": [
+        "HH × Hh",
+        "Hh × Hh",
+        "Hh × hh",
+        "HH × hh"
+      ],
+      "options": [
+        "HH × Hh",
+        "Hh × Hh",
+        "Hh × hh",
+        "HH × hh"
+      ],
+      "correctAnswer": "HH × Hh",
+      "skillTags": ["reasoning"],
+      "difficulty": "challenge",
+      "explanation": "A hornless calf would need genotype hh. In an HH × Hh cross, at least one H always appears, so hh is impossible. The other crosses can produce hh or include a recessive parent."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q19",
+      "type": "multiple_choice",
+      "prompt": "A student says, 'If two parents show the dominant trait, all their children will too.' Which example best proves this statement is not always true?",
+      "questionText": "A student says, 'If two parents show the dominant trait, all their children will too.' Which example best proves this statement is not always true?",
+      "choices": [
+        "Two heterozygous parents can have an offspring with the recessive phenotype",
+        "A homozygous dominant parent always passes on a dominant allele",
+        "Some acquired traits appear after birth",
+        "Habitual behaviors can change over time"
+      ],
+      "options": [
+        "Two heterozygous parents can have an offspring with the recessive phenotype",
+        "A homozygous dominant parent always passes on a dominant allele",
+        "Some acquired traits appear after birth",
+        "Habitual behaviors can change over time"
+      ],
+      "correctAnswer": "Two heterozygous parents can have an offspring with the recessive phenotype",
+      "skillTags": ["reasoning"],
+      "difficulty": "challenge",
+      "explanation": "If both parents are heterozygous, a recessive offspring is still possible. That directly shows dominant-looking parents do not guarantee all dominant-looking children."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q20",
+      "type": "multiple_choice",
+      "prompt": "Which comparison best explains why seed dispersal and parental care are both survival strategies?",
+      "questionText": "Which comparison best explains why seed dispersal and parental care are both survival strategies?",
+      "choices": [
+        "Both improve offspring survival, but one moves offspring to safer places while the other directly protects them",
+        "Both are learned behaviors used only by animals",
+        "Both happen only during asexual reproduction",
+        "Both guarantee every offspring lives to adulthood"
+      ],
+      "options": [
+        "Both improve offspring survival, but one moves offspring to safer places while the other directly protects them",
+        "Both are learned behaviors used only by animals",
+        "Both happen only during asexual reproduction",
+        "Both guarantee every offspring lives to adulthood"
+      ],
+      "correctAnswer": "Both improve offspring survival, but one moves offspring to safer places while the other directly protects them",
+      "skillTags": ["conceptual", "reasoning"],
+      "difficulty": "challenge",
+      "explanation": "Seed dispersal can reduce crowding and competition, while parental care can defend or support young directly. The other choices incorrectly limit where these strategies occur or overstate their results."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q21",
+      "type": "multiple_choice",
+      "prompt": "A red flower plant crossed with a white flower plant produces 50% red and 50% white offspring. If red is dominant, which genotype must the red parent have?",
+      "questionText": "A red flower plant crossed with a white flower plant produces 50% red and 50% white offspring. If red is dominant, which genotype must the red parent have?",
+      "choices": [
+        "Rr",
+        "RR",
+        "rr",
+        "The genotype cannot be narrowed down"
+      ],
+      "options": [
+        "Rr",
+        "RR",
+        "rr",
+        "The genotype cannot be narrowed down"
+      ],
+      "correctAnswer": "Rr",
+      "skillTags": ["reasoning"],
+      "difficulty": "challenge",
+      "explanation": "A 1:1 red-to-white outcome from a cross with a white plant (rr) fits Rr × rr. RR × rr would give all red offspring, so the red parent must be heterozygous."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q22",
+      "type": "multiple_choice",
+      "prompt": "A puppy first ignores the vacuum after hearing it safely many times, then later learns to sit when it hears a clicker for treats. Which sequence correctly names the two learned behaviors?",
+      "questionText": "A puppy first ignores the vacuum after hearing it safely many times, then later learns to sit when it hears a clicker for treats. Which sequence correctly names the two learned behaviors?",
+      "choices": [
+        "habituation, then conditioning",
+        "conditioning, then habituation",
+        "instinct, then courtship",
+        "playing, then vegetative reproduction"
+      ],
+      "options": [
+        "habituation, then conditioning",
+        "conditioning, then habituation",
+        "instinct, then courtship",
+        "playing, then vegetative reproduction"
+      ],
+      "correctAnswer": "habituation, then conditioning",
+      "skillTags": ["application", "reasoning"],
+      "difficulty": "challenge",
+      "explanation": "Ignoring a repeated harmless vacuum is habituation. Learning that a clicker signal leads to treats is conditioning. The other sequences reverse or misuse the terms."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q23",
+      "type": "multiple_choice",
+      "prompt": "A plant breeder wants more genetic variation to help develop disease-resistant crops. Which strategy best fits that goal?",
+      "questionText": "A plant breeder wants more genetic variation to help develop disease-resistant crops. Which strategy best fits that goal?",
+      "choices": [
+        "Use sexual reproduction by crossing different parent plants",
+        "Use only runners from one parent plant",
+        "Use only tubers from one parent plant",
+        "Use only cuttings from one parent plant"
+      ],
+      "options": [
+        "Use sexual reproduction by crossing different parent plants",
+        "Use only runners from one parent plant",
+        "Use only tubers from one parent plant",
+        "Use only cuttings from one parent plant"
+      ],
+      "correctAnswer": "Use sexual reproduction by crossing different parent plants",
+      "skillTags": ["application", "reasoning"],
+      "difficulty": "challenge",
+      "explanation": "Sexual reproduction mixes genes from two parents, increasing variation. Runners, tubers, and cuttings are asexual methods that usually keep offspring more genetically similar."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q24",
+      "type": "multiple_choice",
+      "prompt": "Why is the statement 'all traits are either inherited or acquired, never both influenced' too simple?",
+      "questionText": "Why is the statement 'all traits are either inherited or acquired, never both influenced' too simple?",
+      "choices": [
+        "Some traits are inherited, but the environment can still affect how strongly they appear",
+        "All traits are completely learned after birth",
+        "Inherited traits never depend on genes",
+        "Acquired traits are always passed directly to offspring"
+      ],
+      "options": [
+        "Some traits are inherited, but the environment can still affect how strongly they appear",
+        "All traits are completely learned after birth",
+        "Inherited traits never depend on genes",
+        "Acquired traits are always passed directly to offspring"
+      ],
+      "correctAnswer": "Some traits are inherited, but the environment can still affect how strongly they appear",
+      "skillTags": ["conceptual", "reasoning"],
+      "difficulty": "challenge",
+      "explanation": "Genes set up many traits, but environment can affect expression, size, or health. The other choices wrongly deny genetics or claim acquired traits are inherited."
+    },
+    {
+      "id": "science-genetics-behavior-advanced-test-1-q25",
+      "type": "multiple_choice",
+      "prompt": "Two tall plants produce only tall offspring in repeated crosses. Which conclusion is best supported, though not absolutely guaranteed forever?",
+      "questionText": "Two tall plants produce only tall offspring in repeated crosses. Which conclusion is best supported, though not absolutely guaranteed forever?",
+      "choices": [
+        "At least one parent is likely homozygous dominant for height",
+        "Both parents must be heterozygous",
+        "Height must be a recessive trait",
+        "The offspring have no genotype"
+      ],
+      "options": [
+        "At least one parent is likely homozygous dominant for height",
+        "Both parents must be heterozygous",
+        "Height must be a recessive trait",
+        "The offspring have no genotype"
+      ],
+      "correctAnswer": "At least one parent is likely homozygous dominant for height",
+      "skillTags": ["reasoning"],
+      "difficulty": "challenge",
+      "explanation": "Repeatedly seeing only tall offspring suggests the cross may include a homozygous dominant parent, making recessive outcomes unlikely or impossible. Two heterozygous parents should eventually produce some short offspring."
+    }
+  ]
+}

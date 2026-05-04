@@ -161,7 +161,7 @@ describe("content repository", () => {
     expect(solvingProportionsCoreQuestions).toHaveLength(50);
   });
 
-  it("loads the new Grade 6 Science course with three 25-question practice sets", async () => {
+  it("loads the new Grade 6 Science course with its standard and advanced practice sets", async () => {
     const repository = await createDefaultContentRepository();
     const scienceCourse = await repository.getCourse("course-6-science");
     const scienceConcept = await repository.getConcept("concept-genetics-reproduction-behavior");
@@ -180,6 +180,12 @@ describe("content repository", () => {
     const testThreeQuestions = await repository.getQuestionsForTestSet(
       "science-genetics-behavior-test-3",
     );
+    const advancedTestOneQuestions = await repository.getQuestionsForTestSet(
+      "science-genetics-behavior-advanced-test-1",
+    );
+    const advancedTestTwoQuestions = await repository.getQuestionsForTestSet(
+      "science-genetics-behavior-advanced-test-2",
+    );
 
     expect(scienceCourse?.subjectTitle).toBe("Science");
     expect(scienceCourse?.courseTitle).toBe("Grade 6 Science");
@@ -192,7 +198,9 @@ describe("content repository", () => {
       "reasoning",
     ]);
     expect(scienceTutorial).toContain("# Genetics, Reproduction, and Behavior");
-    expect(scienceTestSets.map((testSet) => testSet.id)).toEqual([
+    expect(scienceTestSets.map((testSet) => testSet.id).sort()).toEqual([
+      "science-genetics-behavior-advanced-test-1",
+      "science-genetics-behavior-advanced-test-2",
       "science-genetics-behavior-test-1",
       "science-genetics-behavior-test-2",
       "science-genetics-behavior-test-3",
@@ -203,6 +211,15 @@ describe("content repository", () => {
       expect(questions.filter((question) => question.difficulty === "scaffold")).toHaveLength(8);
       expect(questions.filter((question) => question.difficulty === "standard")).toHaveLength(12);
       expect(questions.filter((question) => question.difficulty === "challenge")).toHaveLength(5);
+      expect(questions.every((question) => question.questionType === "multiple_choice")).toBe(true);
+      expect(questions.every((question) => (question.choices?.length ?? 0) === 4)).toBe(true);
+    }
+
+    for (const questions of [advancedTestOneQuestions, advancedTestTwoQuestions]) {
+      expect(questions).toHaveLength(25);
+      expect(questions.filter((question) => question.difficulty === "scaffold")).toHaveLength(5);
+      expect(questions.filter((question) => question.difficulty === "standard")).toHaveLength(10);
+      expect(questions.filter((question) => question.difficulty === "challenge")).toHaveLength(10);
       expect(questions.every((question) => question.questionType === "multiple_choice")).toBe(true);
       expect(questions.every((question) => (question.choices?.length ?? 0) === 4)).toBe(true);
     }
