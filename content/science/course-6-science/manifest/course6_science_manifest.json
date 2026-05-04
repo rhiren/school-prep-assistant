@@ -69,6 +69,26 @@
                     "standard": true,
                     "challenge": true
                   }
+                },
+                {
+                  "id": "science-genetics-behavior-advanced-test-1",
+                  "type": "practice",
+                  "path": "./content/test-sets/science-genetics-behavior-advanced-test-1.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "science-genetics-behavior-advanced-test-2",
+                  "type": "practice",
+                  "path": "./content/test-sets/science-genetics-behavior-advanced-test-2.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
                 }
               ]
             }
