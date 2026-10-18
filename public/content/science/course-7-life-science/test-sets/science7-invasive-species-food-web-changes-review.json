@@ -1,0 +1,330 @@
+{
+  "id": "science7-invasive-species-food-web-changes-review",
+  "testId": "science7-invasive-species-food-web-changes-review",
+  "conceptId": "concept-invasive-species-food-web-changes",
+  "title": "Invasive Species and Food-Web Changes Review Test",
+  "description": "Distinguish introduced species from harmful invaders, trace direct and indirect food-web effects, and evaluate evidence for management choices.",
+  "questions": [
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q1",
+      "type": "multiple_choice",
+      "prompt": "A non-native garden plant remains confined and has no documented or likely harm in that setting. Which claim is justified from these facts?",
+      "questionText": "A non-native garden plant remains confined and has no documented or likely harm in that setting. Which claim is justified from these facts?",
+      "options": [
+        "Every non-native plant must be invasive in every habitat.",
+        "Being attractive proves the plant cannot ever cause harm.",
+        "No further evidence could ever change its classification.",
+        "Non-native status alone does not establish that it is invasive there."
+      ],
+      "correctAnswer": "Non-native status alone does not establish that it is invasive there.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Classification depends on context and impact evidence, not appearance or origin alone."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q2",
+      "type": "multiple_choice",
+      "prompt": "A new grazing animal removes a native shrub used by insects. What indirect effect could reach insect-eating birds?",
+      "questionText": "A new grazing animal removes a native shrub used by insects. What indirect effect could reach insect-eating birds?",
+      "options": [
+        "Birds receive more food because shrubs are fewer.",
+        "The animal directly consumes birds in this model.",
+        "All birds must immediately leave the region.",
+        "Reduced insect food may reduce food available to birds."
+      ],
+      "correctAnswer": "Reduced insect food may reduce food available to birds.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "A chain through host plants and insects connects the change to birds."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q3",
+      "type": "multiple_choice",
+      "prompt": "A species appears in 12 of 60 equally sampled ponds. What share of the ponds contains it?",
+      "questionText": "A species appears in 12 of 60 equally sampled ponds. What share of the ponds contains it?",
+      "options": [
+        "20%.",
+        "12%.",
+        "60%.",
+        "72%."
+      ],
+      "correctAnswer": "20%.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "12 divided by 60 is 0.2, or 20%; this describes observed occupancy."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q4",
+      "type": "multiple_choice",
+      "prompt": "Native plants decline near an introduced species and also near uninvaded dry sites. What should investigators consider?",
+      "questionText": "Native plants decline near an introduced species and also near uninvaded dry sites. What should investigators consider?",
+      "options": [
+        "Only the introduced species can influence plants.",
+        "Dry sites provide no useful comparison.",
+        "Water shortage as an alternative or contributing cause.",
+        "Native decline proves the species eats plants."
+      ],
+      "correctAnswer": "Water shortage as an alternative or contributing cause.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "A similar decline elsewhere points to additional factors that need testing."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q5",
+      "type": "multiple_choice",
+      "prompt": "Why can a dense introduced vine affect a tree without eating its leaves?",
+      "questionText": "Why can a dense introduced vine affect a tree without eating its leaves?",
+      "options": [
+        "Only leaf-eating can harm a tree.",
+        "It may block light or otherwise change access to resources.",
+        "All vines supply trees with unlimited sugar.",
+        "Origin alone determines exactly how much light a tree receives."
+      ],
+      "correctAnswer": "It may block light or otherwise change access to resources.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Competition and habitat modification can affect plants without predation."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q6",
+      "type": "multiple_choice",
+      "prompt": "A food web shows algae -> small grazers -> fish. An introduced organism consumes much of the algae. Which prediction is plausible if algae become limiting?",
+      "questionText": "A food web shows algae -> small grazers -> fish. An introduced organism consumes much of the algae. Which prediction is plausible if algae become limiting?",
+      "options": [
+        "Fish necessarily gain more energy immediately.",
+        "Small grazers may lose food, with possible later effects on fish.",
+        "Small grazers no longer need algae.",
+        "All algae matter becomes heat without passing through organisms."
+      ],
+      "correctAnswer": "Small grazers may lose food, with possible later effects on fish.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "A shared food reduction can propagate indirectly through feeding links."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q7",
+      "type": "multiple_choice",
+      "prompt": "A native population falls from 75 to 48 individuals. How large is the decline?",
+      "questionText": "A native population falls from 75 to 48 individuals. How large is the decline?",
+      "options": [
+        "48 individuals.",
+        "75 individuals.",
+        "27 individuals.",
+        "123 individuals."
+      ],
+      "correctAnswer": "27 individuals.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "The difference is 75 - 48 = 27; cause requires separate evidence."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q8",
+      "type": "multiple_choice",
+      "prompt": "An invasive removal method also removes native ground cover and increases erosion. What should evaluation include?",
+      "questionText": "An invasive removal method also removes native ground cover and increases erosion. What should evaluation include?",
+      "options": [
+        "Only the number of target plants removed.",
+        "Only how quickly workers finished.",
+        "Target reduction, native damage, and soil effects together.",
+        "Only whether the target's common name is correct."
+      ],
+      "correctAnswer": "Target reduction, native damage, and soil effects together.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Effective management considers ecosystem outcomes and tradeoffs, not one target count."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q9",
+      "type": "multiple_choice",
+      "prompt": "An introduced fish persists in one lake but fails in another. Which explanation is plausible?",
+      "questionText": "An introduced fish persists in one lake but fails in another. Which explanation is plausible?",
+      "options": [
+        "Introduction guarantees identical outcomes.",
+        "Every lake provides the same resources.",
+        "Failure proves it was never introduced.",
+        "Different temperatures, resources, or interactions affect its success."
+      ],
+      "correctAnswer": "Different temperatures, resources, or interactions affect its success.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Conditions and interactions vary across ecosystems."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q10",
+      "type": "multiple_choice",
+      "prompt": "A treatment plot loses 40 target plants; an untreated matched plot loses 15 during a cold period. What is the difference in losses?",
+      "questionText": "A treatment plot loses 40 target plants; an untreated matched plot loses 15 during a cold period. What is the difference in losses?",
+      "options": [
+        "55 plants.",
+        "25 plants.",
+        "40 plants.",
+        "15 plants."
+      ],
+      "correctAnswer": "25 plants.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "40 - 15 = 25; the reference helps account for shared change without proving every cause."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q11",
+      "type": "multiple_choice",
+      "prompt": "Which evidence most helps test a proposed competition mechanism between native and introduced fish?",
+      "questionText": "Which evidence most helps test a proposed competition mechanism between native and introduced fish?",
+      "options": [
+        "Both use the same limited food, and native growth improves when access by the introduced fish is reduced under matched conditions.",
+        "Both fish have scales.",
+        "Both names occur in a report.",
+        "The introduced fish was photographed first."
+      ],
+      "correctAnswer": "Both use the same limited food, and native growth improves when access by the introduced fish is reduced under matched conditions.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "A shared limiting resource plus a measured response tests competition more directly than co-occurrence."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q12",
+      "type": "multiple_choice",
+      "prompt": "An introduced plant benefits one insect species but reduces several native host plants. Which conclusion is careful?",
+      "questionText": "An introduced plant benefits one insect species but reduces several native host plants. Which conclusion is careful?",
+      "options": [
+        "Some organisms may benefit even when the overall ecological effect includes harm.",
+        "Any benefit means the plant cannot be invasive.",
+        "Every organism must respond identically.",
+        "Host-plant loss cannot affect other insects."
+      ],
+      "correctAnswer": "Some organisms may benefit even when the overall ecological effect includes harm.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Mixed effects require looking across the community rather than choosing a single beneficiary."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q13",
+      "type": "multiple_choice",
+      "prompt": "A control model assumes no new invaders enter a treated wetland. Boats continue arriving from infested waters. Which assumption needs review?",
+      "questionText": "A control model assumes no new invaders enter a treated wetland. Boats continue arriving from infested waters. Which assumption needs review?",
+      "options": [
+        "Plants can no longer use light.",
+        "The site may receive new introductions across its boundary.",
+        "Native fish stop needing food.",
+        "The treatment date must change the laws of conservation."
+      ],
+      "correctAnswer": "The site may receive new introductions across its boundary.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Continued transport can undermine a closed-site assumption and influence reinvasion."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q14",
+      "type": "multiple_choice",
+      "prompt": "Invasive cover falls from 80% to 35%; native cover rises from 10% to 30%. Which comparison is correct?",
+      "questionText": "Invasive cover falls from 80% to 35%; native cover rises from 10% to 30%. Which comparison is correct?",
+      "options": [
+        "Invasive cover fell 45 percentage points; native cover rose 20 percentage points.",
+        "Both changed by 45 percentage points.",
+        "Native cover rose 30 percentage points.",
+        "Invasive cover is now zero."
+      ],
+      "correctAnswer": "Invasive cover fell 45 percentage points; native cover rose 20 percentage points.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Subtract initial and final values separately; neither target reduction nor native recovery is complete."
+    },
+    {
+      "id": "science7-invasive-species-food-web-changes-review-q15",
+      "type": "multiple_choice",
+      "prompt": "One survey finds no target organisms after treatment. Which follow-up best checks lasting success?",
+      "questionText": "One survey finds no target organisms after treatment. Which follow-up best checks lasting success?",
+      "options": [
+        "Assume permanent eradication from one survey.",
+        "Stop recording non-target effects.",
+        "Repeat standardized surveys over time and track native recovery and possible new arrivals.",
+        "Move surviving organisms to another habitat for comparison."
+      ],
+      "correctAnswer": "Repeat standardized surveys over time and track native recovery and possible new arrivals.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Detection can be imperfect, and persistence, reinvasion, and ecosystem recovery require monitoring."
+    }
+  ]
+}

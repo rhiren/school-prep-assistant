@@ -157,6 +157,7 @@ Target mix for a full review test:
 | Ecosystems | Limiting Factors and Carrying Capacity | yes | yes | yes | yes | Practice ready |
 | Ecosystems | Decomposers and Matter Cycling | yes | yes | yes | yes | Practice ready |
 | Ecosystems | Ecosystem Disturbance and Recovery | yes | yes | yes | yes | Practice ready |
+| Ecosystems | Competition and Resource Partitioning | yes | yes | yes | yes | Practice ready |
 | Genetics and Inheritance | Genetics, Inheritance, and Variation | yes | yes | yes | yes | Practice ready |
 | Genetics and Inheritance | DNA, Genes, Chromosomes, and Traits | yes | yes | yes | yes | Practice ready |
 | Evolution and Earth/Life History | Evolution Evidence and Life History | yes | yes | yes | yes | Practice ready |
@@ -165,8 +166,20 @@ Target mix for a full review test:
 | Evolution and Earth/Life History | Comparative Anatomy and Evolutionary Relationships | yes | yes | yes | yes | Practice ready |
 | Biodiversity and Human Impact | Biodiversity and Human Impact | yes | yes | yes | yes | Practice ready |
 | Biodiversity and Human Impact | Biodiversity Solutions and Tradeoffs | yes | yes | yes | yes | Practice ready |
+| Biodiversity and Human Impact | Invasive Species and Food-Web Changes | yes | yes | yes | yes | Practice ready |
 
 ## Recommended Build Order
+
+The next completed enrichment pair is Competition and Resource Partitioning,
+then Invasive Species and Food-Web Changes. Each has 30 core and 15 distinct
+review questions, a worked comparison table, and an optional paper-model
+investigation. The pair extends limiting factors, recovery, and biodiversity
+design reasoning. It does not establish the school's current teaching order.
+
+Competition questions distinguish shared use from demonstrated limitation and
+test alternative explanations for growth differences. Invasion questions
+distinguish non-native origin from harm, trace indirect effects, and evaluate
+native recovery and non-target impacts alongside target removal.
 
 The October enrichment pair builds on energy pyramids and limiting factors:
 Decomposers and Matter Cycling, followed by Ecosystem Disturbance and Recovery.
@@ -182,8 +195,15 @@ an explanation; do not fill banks with generic questions about study habits.
 Preserve these requirements in the new-pack regression test as packs are added.
 
 Standards references:
+- [MS-LS2-1: resources and populations](https://www.nextgenscience.org/pe/ms-ls2-1-ecosystems-interactions-energy-and-dynamics)
+- [MS-LS2-2: interaction patterns](https://www.nextgenscience.org/pe/ms-ls2-2-ecosystems-interactions-energy-and-dynamics)
+- [MS-LS2-5: biodiversity design solutions](https://www.nextgenscience.org/pe/ms-ls2-5-ecosystems-interactions-energy-and-dynamics)
 - [MS-LS2-3: matter cycling and energy flow](https://www.nextgenscience.org/pe/ms-ls2-3-ecosystems-interactions-energy-and-dynamics)
 - [MS-LS2-4: ecosystem changes and populations](https://www.nextgenscience.org/pe/ms-ls2-4-ecosystems-interactions-energy-and-dynamics)
+
+Definition reference: [USDA National Invasive Species Information Center](https://www.invasivespeciesinfo.gov/what-are-invasive-species).
+The non-native versus invasive distinction is intentional. Home activities
+model interactions on paper; they do not involve releasing or moving organisms.
 
 All currently scaffolded Grade 7 Science concepts are now practice-ready.
 Future build work should add complete concept packs only when there is a clear

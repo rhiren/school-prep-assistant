@@ -841,7 +841,7 @@ describe("content repository", () => {
       {
         conceptId: "concept-unit-2-mixed-review",
         standards: ["8.EE.7"],
-        tutorialHeading: "# Unit 2 Mixed Review",
+        tutorialHeading: "# Linear Equations Checkpoint",
         coreTestId: "course3-unit-2-mixed-review-core",
         reviewTestId: "course3-unit-2-mixed-review-review",
       },
@@ -943,6 +943,18 @@ describe("content repository", () => {
         coreTestId: "course3-systems-no-solution-core",
         reviewTestId: "course3-systems-no-solution-review",
       },
+      ...[
+        ["systems-infinitely-many-solutions", "Systems with Infinitely Many Solutions"],
+        ["choose-efficient-system-method", "Choose an Efficient System-Solving Method"],
+        ["systems-equations-word-problems", "Systems of Equations Word Problems"],
+        ["unit4-equations-systems-mixed-review", "Unit 4 Mixed Review"],
+      ].map(([slug, title]) => ({
+        conceptId: `concept-${slug}`,
+        standards: slug.startsWith("unit4") ? ["8.EE.7", "8.EE.8"] : ["8.EE.8"],
+        tutorialHeading: `# ${title}`,
+        coreTestId: `course3-${slug}-core`,
+        reviewTestId: `course3-${slug}-review`,
+      })),
     ];
 
     expect(course?.subjectId).toBe("math");
@@ -969,11 +981,22 @@ describe("content repository", () => {
       "concept-unit-3-mixed-review",
     ]);
     expect(course?.units[3]?.id).toBe("course3-unit-linear-equations");
-    expect(course?.units[3]?.concepts).toHaveLength(10);
-    expect(course?.units[4]?.id).toBe("course3-unit-systems-linear-equations");
-    expect(course?.units[4]?.concepts).toHaveLength(5);
-    expect(course?.units[5]?.id).toBe("course3-unit-real-numbers-exponents");
-    expect(course?.units[5]?.concepts).toHaveLength(12);
+    expect(course?.units[3]?.title).toBe("Linear Equations and Linear Systems");
+    expect(course?.units[3]?.concepts).toHaveLength(19);
+    expect(course?.units[3]?.concepts.slice(9).map((concept) => concept.id)).toEqual([
+      "concept-unit-2-mixed-review",
+      "concept-understand-solutions-systems",
+      "concept-solve-systems-graphing",
+      "concept-solve-systems-substitution",
+      "concept-solve-systems-elimination",
+      "concept-systems-no-solution",
+      "concept-systems-infinitely-many-solutions",
+      "concept-choose-efficient-system-method",
+      "concept-systems-equations-word-problems",
+      "concept-unit4-equations-systems-mixed-review",
+    ]);
+    expect(course?.units[4]?.id).toBe("course3-unit-real-numbers-exponents");
+    expect(course?.units[4]?.concepts).toHaveLength(12);
 
     for (const pack of conceptPacks) {
       const concept = await repository.getConcept(pack.conceptId);

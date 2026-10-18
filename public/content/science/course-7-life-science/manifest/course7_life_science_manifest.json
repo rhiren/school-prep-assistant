@@ -868,6 +868,62 @@
                 }
               ],
               "testQuestionCount": 30
+            },
+            {
+              "id": "concept-competition-resource-partitioning",
+              "title": "Competition and Resource Partitioning",
+              "description": "Use resource-use models and controlled comparisons to explain competition and how differences in resource use can reduce overlap.",
+              "tags": [
+                "science",
+                "life-science",
+                "ecosystems",
+                "MS-LS2-1",
+                "MS-LS2-2"
+              ],
+              "skillTags": [
+                "conceptual",
+                "visual",
+                "application",
+                "reasoning"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "7"
+              ],
+              "programPathways": [
+                "SRVUSD"
+              ],
+              "standardsFrameworks": [
+                "CA NGSS"
+              ],
+              "order": 7,
+              "tutorial": "./content/tutorials/concept-competition-resource-partitioning.md",
+              "tests": [
+                {
+                  "id": "science7-competition-resource-partitioning-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/science7-competition-resource-partitioning-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "science7-competition-resource-partitioning-review",
+                  "type": "review",
+                  "path": "./content/test-sets/science7-competition-resource-partitioning-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "testQuestionCount": 30
             }
           ]
         },
@@ -1355,6 +1411,63 @@
                   "id": "science7-biodiversity-solutions-tradeoffs-review",
                   "type": "review",
                   "path": "./content/test-sets/science7-biodiversity-solutions-tradeoffs-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "testQuestionCount": 30
+            },
+            {
+              "id": "concept-invasive-species-food-web-changes",
+              "title": "Invasive Species and Food-Web Changes",
+              "description": "Distinguish introduced species from harmful invaders, trace direct and indirect food-web effects, and evaluate evidence for management choices.",
+              "tags": [
+                "science",
+                "life-science",
+                "ecosystems",
+                "MS-LS2-2",
+                "MS-LS2-4",
+                "MS-LS2-5"
+              ],
+              "skillTags": [
+                "conceptual",
+                "visual",
+                "application",
+                "reasoning"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "7"
+              ],
+              "programPathways": [
+                "SRVUSD"
+              ],
+              "standardsFrameworks": [
+                "CA NGSS"
+              ],
+              "order": 3,
+              "tutorial": "./content/tutorials/concept-invasive-species-food-web-changes.md",
+              "tests": [
+                {
+                  "id": "science7-invasive-species-food-web-changes-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/science7-invasive-species-food-web-changes-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "science7-invasive-species-food-web-changes-review",
+                  "type": "review",
+                  "path": "./content/test-sets/science7-invasive-species-food-web-changes-review.json",
                   "difficultyProfile": {
                     "scaffold": true,
                     "standard": true,

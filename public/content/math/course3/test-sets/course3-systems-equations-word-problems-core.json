@@ -1,0 +1,1009 @@
+{
+  "testId": "course3-systems-equations-word-problems-core",
+  "conceptId": "concept-systems-equations-word-problems",
+  "type": "concept",
+  "title": "Systems of Equations Word Problems Core Test",
+  "description": "Practice and explain systems of equations word problems.",
+  "questions": [
+    {
+      "id": "course3-systems-equations-word-problems-core-001",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A club sells 14 tickets. Let a count adult tickets and c count child tickets. Which equation represents the ticket count?",
+      "correctAnswer": "a + c = 14",
+      "explanation": "Adding the counts of the two disjoint ticket types gives the total number sold.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "a + c = 14",
+        "ac = 14",
+        "a - c = 14",
+        "2a + c = 14"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-002",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Adult tickets cost $6 and child tickets cost $3. With a adults and c children, which expression gives revenue?",
+      "correctAnswer": "6a + 3c",
+      "explanation": "Multiply each ticket price by its own count, then add the two dollar amounts.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3a + 6c",
+        "6a + 3c",
+        "9(a + c)",
+        "a + c"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-003",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For x notebooks and y pens, the system is x + y = 8, 4x + 2y = 24. What does the second equation measure?",
+      "correctAnswer": "Total cost in dollars",
+      "explanation": "The coefficients are prices per item, so each product is a dollar cost.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Total number of items",
+        "Difference between the item counts",
+        "Price of one notebook",
+        "Total cost in dollars"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-004",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "There are 11 bicycles and tricycles altogether. If 5 are bicycles, how many are tricycles?",
+      "correctAnswer": "6",
+      "explanation": "Subtract the bicycle count: 11 - 5 = 6.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "7",
+        "6",
+        "5",
+        "9"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-005",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A model uses x for hours and y for dollars. The solution is (2, 16). How should it be read?",
+      "correctAnswer": "At 2 hours, both modeled costs are $16.",
+      "explanation": "An ordered pair must be interpreted using the defined variables and units.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "At 16 hours, both costs are $2.",
+        "The hourly rate is $16.",
+        "At 2 hours, both modeled costs are $16.",
+        "There is no shared cost."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-006",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A club sells 15 tickets. Let a count adult tickets and c count child tickets. Which equation represents the ticket count?",
+      "correctAnswer": "a + c = 15",
+      "explanation": "Adding the counts of the two disjoint ticket types gives the total number sold.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "a + c = 15",
+        "ac = 15",
+        "a - c = 15",
+        "2a + c = 15"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-007",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Adult tickets cost $7 and child tickets cost $3. With a adults and c children, which expression gives revenue?",
+      "correctAnswer": "7a + 3c",
+      "explanation": "Multiply each ticket price by its own count, then add the two dollar amounts.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "7a + 3c",
+        "3a + 7c",
+        "10(a + c)",
+        "a + c"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-008",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For x notebooks and y pens, the system is x + y = 9, 4x + 2y = 28. What does the second equation measure?",
+      "correctAnswer": "Total cost in dollars",
+      "explanation": "The coefficients are prices per item, so each product is a dollar cost.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Total number of items",
+        "Total cost in dollars",
+        "Difference between the item counts",
+        "Price of one notebook"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-009",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "There are 12 bicycles and tricycles altogether. If 6 are bicycles, how many are tricycles?",
+      "correctAnswer": "6",
+      "explanation": "Subtract the bicycle count: 12 - 6 = 6.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "7",
+        "5",
+        "9",
+        "6"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-010",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A model uses x for hours and y for dollars. The solution is (3, 20). How should it be read?",
+      "correctAnswer": "At 3 hours, both modeled costs are $20.",
+      "explanation": "An ordered pair must be interpreted using the defined variables and units.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "At 20 hours, both costs are $3.",
+        "The hourly rate is $20.",
+        "At 3 hours, both modeled costs are $20.",
+        "There is no shared cost."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-011",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A show sells 12 tickets: adults pay $8 and children pay $5. Revenue is $66. How many adult tickets were sold?",
+      "correctAnswer": "2",
+      "explanation": "Let a + c = 12. Subtract 5(a + c) from 8a + 5c = 66: 3a = 6, so a = 2.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "2",
+        "3",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-012",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rack holds 10 bicycles and tricycles with 24 wheels in total. How many tricycles are there?",
+      "correctAnswer": "4",
+      "explanation": "If all were bicycles there would be 20 wheels. Each tricycle adds one extra wheel, so there are 4.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "3",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-013",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A costs $6 plus $2 per visit. Plan B costs $5 per visit. After how many visits are the costs equal?",
+      "correctAnswer": "2",
+      "explanation": "Set 6 + 2v = 5v. Then 3v = 6, so v = 2.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3",
+        "2",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-014",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two numbers sum to 12. The larger exceeds the smaller by 6. What is the smaller number?",
+      "correctAnswer": "3",
+      "explanation": "If s is smaller, s + (s + 6) = 12. Thus 2s = 6 and s = 3.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "4",
+        "2",
+        "6",
+        "3"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-015",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student models 12 tickets at $7 for adults and $4 for children using a + c = 12 and 4a + 7c = 54. What must be corrected?",
+      "correctAnswer": "Use 7a + 4c for the revenue expression.",
+      "explanation": "The ticket-price coefficients must correspond to the variables defined for adult and child counts.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Replace the count equation with ac.",
+        "Use 7 + 4 for all ticket revenue.",
+        "There is no error.",
+        "Use 7a + 4c for the revenue expression."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-016",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A show sells 13 tickets: adults pay $8 and children pay $5. Revenue is $74. How many adult tickets were sold?",
+      "correctAnswer": "3",
+      "explanation": "Let a + c = 13. Subtract 5(a + c) from 8a + 5c = 74: 3a = 9, so a = 3.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3",
+        "4",
+        "2",
+        "6"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-017",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rack holds 11 bicycles and tricycles with 26 wheels in total. How many tricycles are there?",
+      "correctAnswer": "4",
+      "explanation": "If all were bicycles there would be 22 wheels. Each tricycle adds one extra wheel, so there are 4.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "3",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-018",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A costs $9 plus $2 per visit. Plan B costs $5 per visit. After how many visits are the costs equal?",
+      "correctAnswer": "3",
+      "explanation": "Set 9 + 2v = 5v. Then 3v = 9, so v = 3.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "4",
+        "3",
+        "2",
+        "6"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-019",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two numbers sum to 14. The larger exceeds the smaller by 6. What is the smaller number?",
+      "correctAnswer": "4",
+      "explanation": "If s is smaller, s + (s + 6) = 14. Thus 2s = 8 and s = 4.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "3",
+        "7",
+        "4"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-020",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student models 13 tickets at $7 for adults and $4 for children using a + c = 13 and 4a + 7c = 61. What must be corrected?",
+      "correctAnswer": "Use 7a + 4c for the revenue expression.",
+      "explanation": "The ticket-price coefficients must correspond to the variables defined for adult and child counts.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Replace the count equation with ac.",
+        "Use 7a + 4c for the revenue expression.",
+        "Use 7 + 4 for all ticket revenue.",
+        "There is no error."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-021",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A show sells 14 tickets: adults pay $8 and children pay $5. Revenue is $82. How many adult tickets were sold?",
+      "correctAnswer": "4",
+      "explanation": "Let a + c = 14. Subtract 5(a + c) from 8a + 5c = 82: 3a = 12, so a = 4.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "3",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-022",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rack holds 12 bicycles and tricycles with 28 wheels in total. How many tricycles are there?",
+      "correctAnswer": "4",
+      "explanation": "If all were bicycles there would be 24 wheels. Each tricycle adds one extra wheel, so there are 4.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "4",
+        "5",
+        "3",
+        "7"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-023",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A costs $12 plus $2 per visit. Plan B costs $5 per visit. After how many visits are the costs equal?",
+      "correctAnswer": "4",
+      "explanation": "Set 12 + 2v = 5v. Then 3v = 12, so v = 4.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "3",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-024",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two numbers sum to 16. The larger exceeds the smaller by 6. What is the smaller number?",
+      "correctAnswer": "5",
+      "explanation": "If s is smaller, s + (s + 6) = 16. Thus 2s = 10 and s = 5.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "6",
+        "4",
+        "8",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-025",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student models 14 tickets at $7 for adults and $4 for children using a + c = 14 and 4a + 7c = 68. What must be corrected?",
+      "correctAnswer": "Use 7a + 4c for the revenue expression.",
+      "explanation": "The ticket-price coefficients must correspond to the variables defined for adult and child counts.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Replace the count equation with ac.",
+        "Use 7a + 4c for the revenue expression.",
+        "Use 7 + 4 for all ticket revenue.",
+        "There is no error."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-026",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A show sells 15 tickets: adults pay $8 and children pay $5. Revenue is $90. How many adult tickets were sold?",
+      "correctAnswer": "5",
+      "explanation": "Let a + c = 15. Subtract 5(a + c) from 8a + 5c = 90: 3a = 15, so a = 5.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "6",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-027",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rack holds 13 bicycles and tricycles with 30 wheels in total. How many tricycles are there?",
+      "correctAnswer": "4",
+      "explanation": "If all were bicycles there would be 26 wheels. Each tricycle adds one extra wheel, so there are 4.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "3",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-028",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A costs $15 plus $2 per visit. Plan B costs $5 per visit. After how many visits are the costs equal?",
+      "correctAnswer": "5",
+      "explanation": "Set 15 + 2v = 5v. Then 3v = 15, so v = 5.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "6",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-029",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two numbers sum to 18. The larger exceeds the smaller by 6. What is the smaller number?",
+      "correctAnswer": "6",
+      "explanation": "If s is smaller, s + (s + 6) = 18. Thus 2s = 12 and s = 6.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "7",
+        "5",
+        "9",
+        "6"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-030",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student models 15 tickets at $7 for adults and $4 for children using a + c = 15 and 4a + 7c = 75. What must be corrected?",
+      "correctAnswer": "Use 7a + 4c for the revenue expression.",
+      "explanation": "The ticket-price coefficients must correspond to the variables defined for adult and child counts.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Replace the count equation with ac.",
+        "Use 7a + 4c for the revenue expression.",
+        "Use 7 + 4 for all ticket revenue.",
+        "There is no error."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-031",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A show sells 16 tickets: adults pay $8 and children pay $5. Revenue is $98. How many adult tickets were sold?",
+      "correctAnswer": "6",
+      "explanation": "Let a + c = 16. Subtract 5(a + c) from 8a + 5c = 98: 3a = 18, so a = 6.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "7",
+        "5",
+        "6",
+        "9"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-032",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rack holds 14 bicycles and tricycles with 32 wheels in total. How many tricycles are there?",
+      "correctAnswer": "4",
+      "explanation": "If all were bicycles there would be 28 wheels. Each tricycle adds one extra wheel, so there are 4.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "4",
+        "3",
+        "7"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-033",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A costs $18 plus $2 per visit. Plan B costs $5 per visit. After how many visits are the costs equal?",
+      "correctAnswer": "6",
+      "explanation": "Set 18 + 2v = 5v. Then 3v = 18, so v = 6.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "6",
+        "7",
+        "5",
+        "9"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-034",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two numbers sum to 20. The larger exceeds the smaller by 6. What is the smaller number?",
+      "correctAnswer": "7",
+      "explanation": "If s is smaller, s + (s + 6) = 20. Thus 2s = 14 and s = 7.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "8",
+        "6",
+        "10",
+        "7"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-035",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student models 16 tickets at $7 for adults and $4 for children using a + c = 16 and 4a + 7c = 82. What must be corrected?",
+      "correctAnswer": "Use 7a + 4c for the revenue expression.",
+      "explanation": "The ticket-price coefficients must correspond to the variables defined for adult and child counts.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Replace the count equation with ac.",
+        "Use 7 + 4 for all ticket revenue.",
+        "Use 7a + 4c for the revenue expression.",
+        "There is no error."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-036",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A club reports 12 tickets at $8 and $5, with revenue $61. What does the real-number solution imply about the report?",
+      "correctAnswer": "It is impossible with whole tickets: the adult count would be 1/3.",
+      "explanation": "Revenue above the all-child baseline is $1. Each adult adds $3, so 3a = 1; a ticket count cannot be 1/3.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "It is valid because fractional tickets are allowed by default.",
+        "It is impossible with whole tickets: the adult count would be 1/3.",
+        "All tickets were adult tickets.",
+        "The equations have infinitely many solutions."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-037",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A school needs 14 kg of a $6/kg snack mix. Nuts cost $9/kg and cereal $3/kg. How many kg of nuts are needed?",
+      "correctAnswer": "7",
+      "explanation": "Let u + c = 14 and 9u + 3c = 84. Subtract 3 times the mass equation to get 6u = 42.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "7",
+        "8",
+        "6",
+        "10"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-038",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A is $8 plus $3 per hour; Plan B is $5 per hour. For whole hours greater than 4, which is cheaper and why?",
+      "correctAnswer": "Plan A; after equality its cost grows $2 less per additional hour.",
+      "explanation": "The equality time is 4 hours. Beyond that point Plan B's larger hourly rate makes it more expensive.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Plan A; after equality its cost grows $2 less per additional hour.",
+        "Plan B; it has no initial fee.",
+        "They remain equal for all later hours.",
+        "Plan A only before the equality time."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-039",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A receipt says 10 items cost $40. Every item costs $4, but labels distinguish pens and cards. Can you find the number of each from these totals alone?",
+      "correctAnswer": "No; both equations provide the same constraint.",
+      "explanation": "p + c = total and 4p + 4c = 4 times total are dependent. More independent information is needed.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Yes; exactly half must be pens.",
+        "No; the two totals are contradictory.",
+        "Yes; all must be cards.",
+        "No; both equations provide the same constraint."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-040",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A fundraiser has x $6 tickets and y $2 tickets. Total sales are 11 tickets and $38. Find (x, y) and check the revenue.",
+      "correctAnswer": "(4, 7)",
+      "explanation": "Subtracting 2(x+y) from the revenue equation gives 4x = 16. Thus x = 4, y = 7, and the revenue is $38.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(5, 7)",
+        "(4, 7)",
+        "(4, 8)",
+        "(3, 6)"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-041",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A club reports 13 tickets at $8 and $5, with revenue $66. What does the real-number solution imply about the report?",
+      "correctAnswer": "It is impossible with whole tickets: the adult count would be 1/3.",
+      "explanation": "Revenue above the all-child baseline is $1. Each adult adds $3, so 3a = 1; a ticket count cannot be 1/3.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "It is valid because fractional tickets are allowed by default.",
+        "All tickets were adult tickets.",
+        "The equations have infinitely many solutions.",
+        "It is impossible with whole tickets: the adult count would be 1/3."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-042",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A school needs 15 kg of a $6/kg snack mix. Nuts cost $9/kg and cereal $3/kg. How many kg of nuts are needed?",
+      "correctAnswer": "7.5",
+      "explanation": "Let u + c = 15 and 9u + 3c = 90. Subtract 3 times the mass equation to get 6u = 45.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "8.5",
+        "6.5",
+        "7.5",
+        "10.5"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-043",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A is $12 plus $3 per hour; Plan B is $5 per hour. For whole hours greater than 6, which is cheaper and why?",
+      "correctAnswer": "Plan A; after equality its cost grows $2 less per additional hour.",
+      "explanation": "The equality time is 6 hours. Beyond that point Plan B's larger hourly rate makes it more expensive.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Plan A; after equality its cost grows $2 less per additional hour.",
+        "Plan B; it has no initial fee.",
+        "They remain equal for all later hours.",
+        "Plan A only before the equality time."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-044",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A receipt says 11 items cost $44. Every item costs $4, but labels distinguish pens and cards. Can you find the number of each from these totals alone?",
+      "correctAnswer": "No; both equations provide the same constraint.",
+      "explanation": "p + c = total and 4p + 4c = 4 times total are dependent. More independent information is needed.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Yes; exactly half must be pens.",
+        "No; the two totals are contradictory.",
+        "Yes; all must be cards.",
+        "No; both equations provide the same constraint."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-045",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A fundraiser has x $6 tickets and y $2 tickets. Total sales are 12 tickets and $44. Find (x, y) and check the revenue.",
+      "correctAnswer": "(5, 7)",
+      "explanation": "Subtracting 2(x+y) from the revenue equation gives 4x = 20. Thus x = 5, y = 7, and the revenue is $44.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(6, 7)",
+        "(5, 8)",
+        "(5, 7)",
+        "(4, 6)"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-046",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A club reports 14 tickets at $8 and $5, with revenue $71. What does the real-number solution imply about the report?",
+      "correctAnswer": "It is impossible with whole tickets: the adult count would be 1/3.",
+      "explanation": "Revenue above the all-child baseline is $1. Each adult adds $3, so 3a = 1; a ticket count cannot be 1/3.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "It is valid because fractional tickets are allowed by default.",
+        "It is impossible with whole tickets: the adult count would be 1/3.",
+        "All tickets were adult tickets.",
+        "The equations have infinitely many solutions."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-047",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A school needs 16 kg of a $6/kg snack mix. Nuts cost $9/kg and cereal $3/kg. How many kg of nuts are needed?",
+      "correctAnswer": "8",
+      "explanation": "Let u + c = 16 and 9u + 3c = 96. Subtract 3 times the mass equation to get 6u = 48.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "9",
+        "7",
+        "11",
+        "8"
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-048",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A is $16 plus $3 per hour; Plan B is $5 per hour. For whole hours greater than 8, which is cheaper and why?",
+      "correctAnswer": "Plan A; after equality its cost grows $2 less per additional hour.",
+      "explanation": "The equality time is 8 hours. Beyond that point Plan B's larger hourly rate makes it more expensive.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Plan B; it has no initial fee.",
+        "Plan A; after equality its cost grows $2 less per additional hour.",
+        "They remain equal for all later hours.",
+        "Plan A only before the equality time."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-049",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A receipt says 12 items cost $48. Every item costs $4, but labels distinguish pens and cards. Can you find the number of each from these totals alone?",
+      "correctAnswer": "No; both equations provide the same constraint.",
+      "explanation": "p + c = total and 4p + 4c = 4 times total are dependent. More independent information is needed.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "No; both equations provide the same constraint.",
+        "Yes; exactly half must be pens.",
+        "No; the two totals are contradictory.",
+        "Yes; all must be cards."
+      ]
+    },
+    {
+      "id": "course3-systems-equations-word-problems-core-050",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A fundraiser has x $6 tickets and y $2 tickets. Total sales are 13 tickets and $50. Find (x, y) and check the revenue.",
+      "correctAnswer": "(6, 7)",
+      "explanation": "Subtracting 2(x+y) from the revenue equation gives 4x = 24. Thus x = 6, y = 7, and the revenue is $50.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(7, 7)",
+        "(6, 8)",
+        "(6, 7)",
+        "(5, 6)"
+      ]
+    }
+  ]
+}

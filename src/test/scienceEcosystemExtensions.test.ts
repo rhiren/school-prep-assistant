@@ -3,7 +3,12 @@ import { createDefaultContentRepository } from "../services/contentRepository";
 import { compareQuestionAnswer } from "../utils/answerNormalization";
 
 // Add future complete packs here so the stricter authoring checks follow rollout.
-const PACKS = ["decomposers-matter-cycling", "ecosystem-disturbance-recovery"];
+const PACKS = [
+  "decomposers-matter-cycling",
+  "ecosystem-disturbance-recovery",
+  "competition-resource-partitioning",
+  "invasive-species-food-web-changes",
+];
 
 describe("science ecosystem extensions", () => {
   it("loads distinct core and review scenarios with valid, balanced answer choices", async () => {
@@ -67,6 +72,14 @@ describe("science ecosystem extensions", () => {
       ["decomposers-matter-cycling", "review", 8, "15 units."],
       ["ecosystem-disturbance-recovery", "core", 21, "B retained more plants initially; A gained more plants during the following year."],
       ["ecosystem-disturbance-recovery", "review", 8, "5 plants."],
+      ["competition-resource-partitioning", "core", 7, "Seedlings alone gained 3 cm more."],
+      ["competition-resource-partitioning", "core", 22, "At most 5 tokens remain for B."],
+      ["competition-resource-partitioning", "review", 9, "12 pieces."],
+      ["competition-resource-partitioning", "core", 28, "Extra water reduced the growth gap, supporting water as one contributor."],
+      ["invasive-species-food-web-changes", "core", 11, "It decreased by two."],
+      ["invasive-species-food-web-changes", "core", 28, "Invasive cover fell 50 percentage points; native cover rose 10 percentage points."],
+      ["invasive-species-food-web-changes", "review", 3, "20%."],
+      ["invasive-species-food-web-changes", "review", 10, "25 plants."],
     ] as const;
     for (const [slug, kind, number, expected] of checks) {
       const id = `science7-${slug}-${kind}`;

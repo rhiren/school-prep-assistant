@@ -1,0 +1,1009 @@
+{
+  "testId": "course3-systems-infinitely-many-solutions-core",
+  "conceptId": "concept-systems-infinitely-many-solutions",
+  "type": "concept",
+  "title": "Systems with Infinitely Many Solutions Core Test",
+  "description": "Practice and explain systems with infinitely many solutions.",
+  "questions": [
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-001",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The equations y = 2x + 2 and 2y = 4x + 4 describe which graphs?",
+      "correctAnswer": "The same line",
+      "explanation": "Dividing the second equation by 2 gives the first equation, so every point on the line is shared.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Distinct parallel lines",
+        "The same line",
+        "Two lines crossing once",
+        "Two perpendicular lines"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-002",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Subtracting equivalent equations 2x + y = 8 and 2x + y = 8 gives 0 = 0. What does this mean?",
+      "correctAnswer": "Infinitely many shared ordered pairs",
+      "explanation": "The identity shows that the two equations impose the same condition, not that both coordinates must be zero.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Infinitely many shared ordered pairs",
+        "Only the point (0, 0)",
+        "No shared ordered pairs",
+        "Exactly one shared ordered pair"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-003",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Complete a copy of x + y = 7: 3x + 3y = __.",
+      "correctAnswer": "21",
+      "explanation": "Multiplying an equation by 3 requires multiplying both sides, including the constant, by 3.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "22",
+        "21",
+        "20",
+        "24"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-004",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Both equations of a system reduce to y = x + 2. Must (0, 0) solve the system?",
+      "correctAnswer": "No; the line does not pass through (0, 0).",
+      "explanation": "At x = 0 the shared line has y = 2, not zero. Infinite solutions are restricted to the shared line.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Yes; infinitely many solutions includes every point.",
+        "Yes; all lines pass through the origin.",
+        "No; the system has no solutions.",
+        "No; the line does not pass through (0, 0)."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-005",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A system has two copies of y = 2x. Which describes its solution set?",
+      "correctAnswer": "All pairs (t, 2t) for real t",
+      "explanation": "Choose any real x-value t; y must still equal the slope times t.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Every point in the plane",
+        "Only (0, 0)",
+        "All pairs (t, 2t) for real t",
+        "Only points with positive coordinates"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-006",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The equations y = 3x + 2 and 2y = 6x + 4 describe which graphs?",
+      "correctAnswer": "The same line",
+      "explanation": "Dividing the second equation by 2 gives the first equation, so every point on the line is shared.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "The same line",
+        "Distinct parallel lines",
+        "Two lines crossing once",
+        "Two perpendicular lines"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-007",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Subtracting equivalent equations 3x + y = 8 and 3x + y = 8 gives 0 = 0. What does this mean?",
+      "correctAnswer": "Infinitely many shared ordered pairs",
+      "explanation": "The identity shows that the two equations impose the same condition, not that both coordinates must be zero.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Only the point (0, 0)",
+        "Infinitely many shared ordered pairs",
+        "No shared ordered pairs",
+        "Exactly one shared ordered pair"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-008",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Complete a copy of x + y = 8: 3x + 3y = __.",
+      "correctAnswer": "24",
+      "explanation": "Multiplying an equation by 3 requires multiplying both sides, including the constant, by 3.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "25",
+        "23",
+        "27",
+        "24"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-009",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Both equations of a system reduce to y = x + 3. Must (0, 0) solve the system?",
+      "correctAnswer": "No; the line does not pass through (0, 0).",
+      "explanation": "At x = 0 the shared line has y = 3, not zero. Infinite solutions are restricted to the shared line.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "No; the line does not pass through (0, 0).",
+        "Yes; infinitely many solutions includes every point.",
+        "Yes; all lines pass through the origin.",
+        "No; the system has no solutions."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-010",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A system has two copies of y = 3x. Which describes its solution set?",
+      "correctAnswer": "All pairs (t, 3t) for real t",
+      "explanation": "Choose any real x-value t; y must still equal the slope times t.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Every point in the plane",
+        "Only (0, 0)",
+        "All pairs (t, 3t) for real t",
+        "Only points with positive coordinates"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-011",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For infinitely many solutions, what must k be in 2x + 3y = 8 and 6x + 9y = k?",
+      "correctAnswer": "24",
+      "explanation": "The coefficients are tripled, so the right side must be tripled too.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "25",
+        "23",
+        "27",
+        "24"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-012",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Compare 2y = 4x + 6 with y = 2x + 4. Why are there not infinitely many solutions?",
+      "correctAnswer": "Their slopes match but their intercepts differ.",
+      "explanation": "The first equation is y = 2x + 3; the second has intercept 4. They are distinct parallel lines.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "The slopes differ.",
+        "Multiplying by 2 changes the solution set.",
+        "Their slopes match but their intercepts differ.",
+        "The two equations describe the same line."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-013",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The system is x + y = 12 and 4x + 4y = 48. Which listed pair is a solution?",
+      "correctAnswer": "(4, 8)",
+      "explanation": "The pair sums to 12; multiplying that sum by 4 satisfies the second equation as well.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(4, 8)",
+        "(5, 8)",
+        "(4, 9)",
+        "(3, 7)"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-014",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student doubles x + 2y = 7 and writes 2x + 4y = 7. What is the error?",
+      "correctAnswer": "The constant must also be doubled to 14.",
+      "explanation": "Equivalent equations require applying the nonzero multiplier to every term on both sides.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Only x should be doubled.",
+        "The constant must also be doubled to 14.",
+        "Only y should be doubled.",
+        "There is no error."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-015",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A system has infinitely many solutions: y = 2x + 2 and y = ax + 2. Find a.",
+      "correctAnswer": "2",
+      "explanation": "Both slope and intercept must match. The shared intercept is already correct; the slope must be 2.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3",
+        "1",
+        "5",
+        "2"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-016",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For infinitely many solutions, what must k be in 2x + 3y = 9 and 6x + 9y = k?",
+      "correctAnswer": "27",
+      "explanation": "The coefficients are tripled, so the right side must be tripled too.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "28",
+        "27",
+        "26",
+        "30"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-017",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Compare 2y = 6x + 6 with y = 3x + 4. Why are there not infinitely many solutions?",
+      "correctAnswer": "Their slopes match but their intercepts differ.",
+      "explanation": "The first equation is y = 3x + 3; the second has intercept 4. They are distinct parallel lines.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "The slopes differ.",
+        "Multiplying by 2 changes the solution set.",
+        "Their slopes match but their intercepts differ.",
+        "The two equations describe the same line."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-018",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The system is x + y = 13 and 4x + 4y = 52. Which listed pair is a solution?",
+      "correctAnswer": "(5, 8)",
+      "explanation": "The pair sums to 13; multiplying that sum by 4 satisfies the second equation as well.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(5, 8)",
+        "(6, 8)",
+        "(5, 9)",
+        "(4, 7)"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-019",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student doubles x + 3y = 7 and writes 2x + 6y = 7. What is the error?",
+      "correctAnswer": "The constant must also be doubled to 14.",
+      "explanation": "Equivalent equations require applying the nonzero multiplier to every term on both sides.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Only x should be doubled.",
+        "The constant must also be doubled to 14.",
+        "Only y should be doubled.",
+        "There is no error."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-020",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A system has infinitely many solutions: y = 2x + 3 and y = ax + 3. Find a.",
+      "correctAnswer": "2",
+      "explanation": "Both slope and intercept must match. The shared intercept is already correct; the slope must be 2.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "2",
+        "3",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-021",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For infinitely many solutions, what must k be in 2x + 3y = 10 and 6x + 9y = k?",
+      "correctAnswer": "30",
+      "explanation": "The coefficients are tripled, so the right side must be tripled too.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "31",
+        "29",
+        "33",
+        "30"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-022",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Compare 2y = 8x + 6 with y = 4x + 4. Why are there not infinitely many solutions?",
+      "correctAnswer": "Their slopes match but their intercepts differ.",
+      "explanation": "The first equation is y = 4x + 3; the second has intercept 4. They are distinct parallel lines.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "The slopes differ.",
+        "Multiplying by 2 changes the solution set.",
+        "Their slopes match but their intercepts differ.",
+        "The two equations describe the same line."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-023",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The system is x + y = 14 and 4x + 4y = 56. Which listed pair is a solution?",
+      "correctAnswer": "(6, 8)",
+      "explanation": "The pair sums to 14; multiplying that sum by 4 satisfies the second equation as well.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(7, 8)",
+        "(6, 8)",
+        "(6, 9)",
+        "(5, 7)"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-024",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student doubles x + 4y = 7 and writes 2x + 8y = 7. What is the error?",
+      "correctAnswer": "The constant must also be doubled to 14.",
+      "explanation": "Equivalent equations require applying the nonzero multiplier to every term on both sides.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Only x should be doubled.",
+        "Only y should be doubled.",
+        "There is no error.",
+        "The constant must also be doubled to 14."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-025",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A system has infinitely many solutions: y = 2x + 4 and y = ax + 4. Find a.",
+      "correctAnswer": "2",
+      "explanation": "Both slope and intercept must match. The shared intercept is already correct; the slope must be 2.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3",
+        "1",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-026",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For infinitely many solutions, what must k be in 2x + 3y = 11 and 6x + 9y = k?",
+      "correctAnswer": "33",
+      "explanation": "The coefficients are tripled, so the right side must be tripled too.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "33",
+        "34",
+        "32",
+        "36"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-027",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Compare 2y = 10x + 6 with y = 5x + 4. Why are there not infinitely many solutions?",
+      "correctAnswer": "Their slopes match but their intercepts differ.",
+      "explanation": "The first equation is y = 5x + 3; the second has intercept 4. They are distinct parallel lines.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "The slopes differ.",
+        "Their slopes match but their intercepts differ.",
+        "Multiplying by 2 changes the solution set.",
+        "The two equations describe the same line."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-028",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The system is x + y = 15 and 4x + 4y = 60. Which listed pair is a solution?",
+      "correctAnswer": "(7, 8)",
+      "explanation": "The pair sums to 15; multiplying that sum by 4 satisfies the second equation as well.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(7, 8)",
+        "(8, 8)",
+        "(7, 9)",
+        "(6, 7)"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-029",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student doubles x + 5y = 7 and writes 2x + 10y = 7. What is the error?",
+      "correctAnswer": "The constant must also be doubled to 14.",
+      "explanation": "Equivalent equations require applying the nonzero multiplier to every term on both sides.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Only x should be doubled.",
+        "Only y should be doubled.",
+        "The constant must also be doubled to 14.",
+        "There is no error."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-030",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A system has infinitely many solutions: y = 2x + 5 and y = ax + 5. Find a.",
+      "correctAnswer": "2",
+      "explanation": "Both slope and intercept must match. The shared intercept is already correct; the slope must be 2.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3",
+        "1",
+        "5",
+        "2"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-031",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For infinitely many solutions, what must k be in 2x + 3y = 12 and 6x + 9y = k?",
+      "correctAnswer": "36",
+      "explanation": "The coefficients are tripled, so the right side must be tripled too.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "37",
+        "36",
+        "35",
+        "39"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-032",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Compare 2y = 12x + 6 with y = 6x + 4. Why are there not infinitely many solutions?",
+      "correctAnswer": "Their slopes match but their intercepts differ.",
+      "explanation": "The first equation is y = 6x + 3; the second has intercept 4. They are distinct parallel lines.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Their slopes match but their intercepts differ.",
+        "The slopes differ.",
+        "Multiplying by 2 changes the solution set.",
+        "The two equations describe the same line."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-033",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The system is x + y = 16 and 4x + 4y = 64. Which listed pair is a solution?",
+      "correctAnswer": "(8, 8)",
+      "explanation": "The pair sums to 16; multiplying that sum by 4 satisfies the second equation as well.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(9, 8)",
+        "(8, 9)",
+        "(7, 7)",
+        "(8, 8)"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-034",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student doubles x + 6y = 7 and writes 2x + 12y = 7. What is the error?",
+      "correctAnswer": "The constant must also be doubled to 14.",
+      "explanation": "Equivalent equations require applying the nonzero multiplier to every term on both sides.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Only x should be doubled.",
+        "Only y should be doubled.",
+        "The constant must also be doubled to 14.",
+        "There is no error."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-035",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A system has infinitely many solutions: y = 2x + 6 and y = ax + 6. Find a.",
+      "correctAnswer": "2",
+      "explanation": "Both slope and intercept must match. The shared intercept is already correct; the slope must be 2.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3",
+        "1",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-036",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "After simplifying 2(x + y) + 2 = 14 and 3x + 3y = 18, a student says any pair is a solution. Which correction is complete?",
+      "correctAnswer": "There are infinitely many solutions, but only pairs with x + y = 6.",
+      "explanation": "The equations both reduce to x + y = 6. An identity after elimination leaves this original constraint in force.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Only (0, 0) works.",
+        "There are no solutions because the constants differ.",
+        "Every pair really does work.",
+        "There are infinitely many solutions, but only pairs with x + y = 6."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-037",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For which (a, b) does the system 2x + 2y = 8 and ax + 6y = b have infinitely many solutions?",
+      "correctAnswer": "(6, 24)",
+      "explanation": "The y coefficient forces a scale factor of 3. Both the x coefficient and constant must use that factor.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(6, 8)",
+        "(6, 24)",
+        "(2, 24)",
+        "(7, 24)"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-038",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The system x + y = 12, 2x + 2y = 24 has infinitely many real solutions. If x and y count objects and must be nonnegative integers, how many pairs are possible?",
+      "correctAnswer": "13",
+      "explanation": "Choose x from 0 through 12, inclusive; each gives one y. Context restricts the infinite real line to 13 pairs.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "13",
+        "12",
+        "Infinitely many",
+        "11"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-039",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A learner tests x = 0 in y = 2x + 5 and y = 3x + 5. Both give y = 5. Does this prove infinitely many solutions?",
+      "correctAnswer": "No; their different slopes mean they share only (0, 5).",
+      "explanation": "A shared point alone is insufficient. Subtracting the two expressions gives x = 0, so the only shared point is (0, 5).",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Yes; one matching point proves equivalent equations.",
+        "No; their different slopes mean they share only (0, 5).",
+        "No; the system has no solutions.",
+        "Yes; equal intercepts always imply equal lines."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-040",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two real variables satisfy y = 2x + 2. A second rule is y - 2 = 2x. Which additional rule would select exactly one of the existing solutions?",
+      "correctAnswer": "x = 3",
+      "explanation": "The original rules describe one line. Fixing x = 3 fixes y = 8; the other choices merely repeat the line.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "2y = 4x + 4",
+        "y = 2x + 2",
+        "3y - 6 = 6x",
+        "x = 3"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-041",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "After simplifying 2(x + y) + 3 = 15 and 3x + 3y = 18, a student says any pair is a solution. Which correction is complete?",
+      "correctAnswer": "There are infinitely many solutions, but only pairs with x + y = 6.",
+      "explanation": "The equations both reduce to x + y = 6. An identity after elimination leaves this original constraint in force.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Only (0, 0) works.",
+        "There are no solutions because the constants differ.",
+        "There are infinitely many solutions, but only pairs with x + y = 6.",
+        "Every pair really does work."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-042",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For which (a, b) does the system 3x + 2y = 8 and ax + 6y = b have infinitely many solutions?",
+      "correctAnswer": "(9, 24)",
+      "explanation": "The y coefficient forces a scale factor of 3. Both the x coefficient and constant must use that factor.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(9, 24)",
+        "(9, 8)",
+        "(3, 24)",
+        "(10, 24)"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-043",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The system x + y = 13, 2x + 2y = 26 has infinitely many real solutions. If x and y count objects and must be nonnegative integers, how many pairs are possible?",
+      "correctAnswer": "14",
+      "explanation": "Choose x from 0 through 13, inclusive; each gives one y. Context restricts the infinite real line to 14 pairs.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "13",
+        "Infinitely many",
+        "14",
+        "12"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-044",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A learner tests x = 0 in y = 3x + 5 and y = 4x + 5. Both give y = 5. Does this prove infinitely many solutions?",
+      "correctAnswer": "No; their different slopes mean they share only (0, 5).",
+      "explanation": "A shared point alone is insufficient. Subtracting the two expressions gives x = 0, so the only shared point is (0, 5).",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Yes; one matching point proves equivalent equations.",
+        "No; their different slopes mean they share only (0, 5).",
+        "No; the system has no solutions.",
+        "Yes; equal intercepts always imply equal lines."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-045",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two real variables satisfy y = 3x + 2. A second rule is y - 2 = 3x. Which additional rule would select exactly one of the existing solutions?",
+      "correctAnswer": "x = 3",
+      "explanation": "The original rules describe one line. Fixing x = 3 fixes y = 11; the other choices merely repeat the line.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "x = 3",
+        "2y = 6x + 4",
+        "y = 3x + 2",
+        "3y - 6 = 9x"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-046",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "After simplifying 2(x + y) + 4 = 16 and 3x + 3y = 18, a student says any pair is a solution. Which correction is complete?",
+      "correctAnswer": "There are infinitely many solutions, but only pairs with x + y = 6.",
+      "explanation": "The equations both reduce to x + y = 6. An identity after elimination leaves this original constraint in force.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Only (0, 0) works.",
+        "There are no solutions because the constants differ.",
+        "Every pair really does work.",
+        "There are infinitely many solutions, but only pairs with x + y = 6."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-047",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For which (a, b) does the system 4x + 2y = 8 and ax + 6y = b have infinitely many solutions?",
+      "correctAnswer": "(12, 24)",
+      "explanation": "The y coefficient forces a scale factor of 3. Both the x coefficient and constant must use that factor.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(12, 8)",
+        "(12, 24)",
+        "(4, 24)",
+        "(13, 24)"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-048",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The system x + y = 14, 2x + 2y = 28 has infinitely many real solutions. If x and y count objects and must be nonnegative integers, how many pairs are possible?",
+      "correctAnswer": "15",
+      "explanation": "Choose x from 0 through 14, inclusive; each gives one y. Context restricts the infinite real line to 15 pairs.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "15",
+        "14",
+        "Infinitely many",
+        "13"
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-049",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A learner tests x = 0 in y = 4x + 5 and y = 5x + 5. Both give y = 5. Does this prove infinitely many solutions?",
+      "correctAnswer": "No; their different slopes mean they share only (0, 5).",
+      "explanation": "A shared point alone is insufficient. Subtracting the two expressions gives x = 0, so the only shared point is (0, 5).",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Yes; one matching point proves equivalent equations.",
+        "No; the system has no solutions.",
+        "No; their different slopes mean they share only (0, 5).",
+        "Yes; equal intercepts always imply equal lines."
+      ]
+    },
+    {
+      "id": "course3-systems-infinitely-many-solutions-core-050",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two real variables satisfy y = 4x + 2. A second rule is y - 2 = 4x. Which additional rule would select exactly one of the existing solutions?",
+      "correctAnswer": "x = 3",
+      "explanation": "The original rules describe one line. Fixing x = 3 fixes y = 14; the other choices merely repeat the line.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "2y = 8x + 4",
+        "y = 4x + 2",
+        "3y - 6 = 12x",
+        "x = 3"
+      ]
+    }
+  ]
+}

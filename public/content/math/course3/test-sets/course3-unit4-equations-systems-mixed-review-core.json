@@ -1,0 +1,1009 @@
+{
+  "testId": "course3-unit4-equations-systems-mixed-review-core",
+  "conceptId": "concept-unit4-equations-systems-mixed-review",
+  "type": "concept",
+  "title": "Unit 4 Mixed Review Core Test",
+  "description": "Practice and explain unit 4 mixed review.",
+  "questions": [
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-001",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3x + 5 = 11.",
+      "correctAnswer": "2",
+      "explanation": "Subtract 5 from both sides, then divide 6 by 3.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "2",
+        "3",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-002",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Which expression is equivalent to 2(x + 2) + x?",
+      "correctAnswer": "3x + 4",
+      "explanation": "Distribute 2 to both terms, then combine 2x and x.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3x + 2",
+        "3x + 4",
+        "2x + 4",
+        "3x + 5"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-003",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Check (2, 4) in y = x + 2 and x + y = 6. Which statement is true?",
+      "correctAnswer": "The pair satisfies both equations.",
+      "explanation": "The first gives 4; the sum in the second is 6. Both checks work.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "The pair satisfies both equations.",
+        "The pair satisfies only the first equation.",
+        "The pair satisfies only the second equation.",
+        "The pair satisfies neither equation."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-004",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The equation 2x + 2 = 2x + 3 has how many solutions?",
+      "correctAnswer": "No solutions",
+      "explanation": "Subtracting 2x gives 2 = 3, a false statement.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Exactly one solution",
+        "Infinitely many solutions",
+        "No solutions",
+        "Exactly two solutions"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-005",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "What does the intersection (2, 4) of two line graphs represent?",
+      "correctAnswer": "An ordered pair satisfying both equations",
+      "explanation": "At the intersection the same x and y coordinates lie on both lines simultaneously.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Only the slope of the first line",
+        "Only the intercept of the second line",
+        "A point satisfying neither equation",
+        "An ordered pair satisfying both equations"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-006",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3x + 5 = 14.",
+      "correctAnswer": "3",
+      "explanation": "Subtract 5 from both sides, then divide 9 by 3.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "4",
+        "3",
+        "2",
+        "6"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-007",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Which expression is equivalent to 2(x + 3) + x?",
+      "correctAnswer": "3x + 6",
+      "explanation": "Distribute 2 to both terms, then combine 2x and x.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3x + 3",
+        "2x + 6",
+        "3x + 7",
+        "3x + 6"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-008",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Check (3, 5) in y = x + 2 and x + y = 8. Which statement is true?",
+      "correctAnswer": "The pair satisfies both equations.",
+      "explanation": "The first gives 5; the sum in the second is 8. Both checks work.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "The pair satisfies only the first equation.",
+        "The pair satisfies only the second equation.",
+        "The pair satisfies both equations.",
+        "The pair satisfies neither equation."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-009",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The equation 2x + 3 = 2x + 4 has how many solutions?",
+      "correctAnswer": "No solutions",
+      "explanation": "Subtracting 2x gives 3 = 4, a false statement.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "No solutions",
+        "Exactly one solution",
+        "Infinitely many solutions",
+        "Exactly two solutions"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-010",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "What does the intersection (3, 4) of two line graphs represent?",
+      "correctAnswer": "An ordered pair satisfying both equations",
+      "explanation": "At the intersection the same x and y coordinates lie on both lines simultaneously.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Only the slope of the first line",
+        "An ordered pair satisfying both equations",
+        "Only the intercept of the second line",
+        "A point satisfying neither equation"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-011",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3(x + 2) = x + 10.",
+      "correctAnswer": "2",
+      "explanation": "Distribute, subtract x and subtract 6 to get 2x = 4.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3",
+        "2",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-012",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve x/2 + 3 = x/4 + 5.",
+      "correctAnswer": "8",
+      "explanation": "Multiply every term by 4: 2x + 12 = x + 20. Subtract x and 12.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "9",
+        "7",
+        "11",
+        "8"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-013",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve y = 2x + 1 and x + y = 7.",
+      "correctAnswer": "(2, 5)",
+      "explanation": "Substitute to get 3x + 1 = 7; then x = 2 and y = 5.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(2, 5)",
+        "(3, 5)",
+        "(2, 6)",
+        "(1, 4)"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-014",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Classify y = 3x + 2 and 2y = 6x + 4.",
+      "correctAnswer": "Infinitely many solutions on the same line",
+      "explanation": "Dividing every term of the second equation by 2 produces the first equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "No solutions on parallel lines",
+        "Exactly one solution at the origin",
+        "Infinitely many solutions on the same line",
+        "Exactly two solutions"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-015",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A museum charges $6 admission plus $3 per activity. A visitor spends $21. How many activities did they pay for?",
+      "correctAnswer": "5",
+      "explanation": "Write 6 + 3a = 21. Subtract admission to get 3a = 15.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "6",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-016",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3(x + 2) = x + 12.",
+      "correctAnswer": "3",
+      "explanation": "Distribute, subtract x and subtract 6 to get 2x = 6.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "4",
+        "2",
+        "6",
+        "3"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-017",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve x/2 + 3 = x/4 + 6.",
+      "correctAnswer": "12",
+      "explanation": "Multiply every term by 4: 2x + 12 = x + 24. Subtract x and 12.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "13",
+        "12",
+        "11",
+        "15"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-018",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve y = 2x + 1 and x + y = 10.",
+      "correctAnswer": "(3, 7)",
+      "explanation": "Substitute to get 3x + 1 = 10; then x = 3 and y = 7.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(4, 7)",
+        "(3, 8)",
+        "(3, 7)",
+        "(2, 6)"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-019",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Classify y = 3x + 3 and 2y = 6x + 6.",
+      "correctAnswer": "Infinitely many solutions on the same line",
+      "explanation": "Dividing every term of the second equation by 2 produces the first equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Infinitely many solutions on the same line",
+        "No solutions on parallel lines",
+        "Exactly one solution at the origin",
+        "Exactly two solutions"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-020",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A museum charges $7 admission plus $3 per activity. A visitor spends $22. How many activities did they pay for?",
+      "correctAnswer": "5",
+      "explanation": "Write 7 + 3a = 22. Subtract admission to get 3a = 15.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "6",
+        "4",
+        "5",
+        "8"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-021",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3(x + 2) = x + 14.",
+      "correctAnswer": "4",
+      "explanation": "Distribute, subtract x and subtract 6 to get 2x = 8.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "4",
+        "3",
+        "7"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-022",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve x/2 + 3 = x/4 + 7.",
+      "correctAnswer": "16",
+      "explanation": "Multiply every term by 4: 2x + 12 = x + 28. Subtract x and 12.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "17",
+        "15",
+        "19",
+        "16"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-023",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve y = 2x + 1 and x + y = 13.",
+      "correctAnswer": "(4, 9)",
+      "explanation": "Substitute to get 3x + 1 = 13; then x = 4 and y = 9.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(5, 9)",
+        "(4, 9)",
+        "(4, 10)",
+        "(3, 8)"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-024",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Classify y = 3x + 4 and 2y = 6x + 8.",
+      "correctAnswer": "Infinitely many solutions on the same line",
+      "explanation": "Dividing every term of the second equation by 2 produces the first equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "No solutions on parallel lines",
+        "Exactly one solution at the origin",
+        "Infinitely many solutions on the same line",
+        "Exactly two solutions"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-025",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A museum charges $8 admission plus $3 per activity. A visitor spends $23. How many activities did they pay for?",
+      "correctAnswer": "5",
+      "explanation": "Write 8 + 3a = 23. Subtract admission to get 3a = 15.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "6",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-026",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3(x + 2) = x + 16.",
+      "correctAnswer": "5",
+      "explanation": "Distribute, subtract x and subtract 6 to get 2x = 10.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "6",
+        "4",
+        "8",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-027",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve x/2 + 3 = x/4 + 8.",
+      "correctAnswer": "20",
+      "explanation": "Multiply every term by 4: 2x + 12 = x + 32. Subtract x and 12.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "21",
+        "19",
+        "20",
+        "23"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-028",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve y = 2x + 1 and x + y = 16.",
+      "correctAnswer": "(5, 11)",
+      "explanation": "Substitute to get 3x + 1 = 16; then x = 5 and y = 11.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(6, 11)",
+        "(5, 11)",
+        "(5, 12)",
+        "(4, 10)"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-029",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Classify y = 3x + 5 and 2y = 6x + 10.",
+      "correctAnswer": "Infinitely many solutions on the same line",
+      "explanation": "Dividing every term of the second equation by 2 produces the first equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Infinitely many solutions on the same line",
+        "No solutions on parallel lines",
+        "Exactly one solution at the origin",
+        "Exactly two solutions"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-030",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A museum charges $9 admission plus $3 per activity. A visitor spends $24. How many activities did they pay for?",
+      "correctAnswer": "5",
+      "explanation": "Write 9 + 3a = 24. Subtract admission to get 3a = 15.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "6",
+        "4",
+        "8",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-031",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3(x + 2) = x + 18.",
+      "correctAnswer": "6",
+      "explanation": "Distribute, subtract x and subtract 6 to get 2x = 12.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "6",
+        "7",
+        "5",
+        "9"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-032",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve x/2 + 3 = x/4 + 9.",
+      "correctAnswer": "24",
+      "explanation": "Multiply every term by 4: 2x + 12 = x + 36. Subtract x and 12.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "25",
+        "23",
+        "24",
+        "27"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-033",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve y = 2x + 1 and x + y = 19.",
+      "correctAnswer": "(6, 13)",
+      "explanation": "Substitute to get 3x + 1 = 19; then x = 6 and y = 13.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(7, 13)",
+        "(6, 14)",
+        "(5, 12)",
+        "(6, 13)"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-034",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Classify y = 3x + 6 and 2y = 6x + 12.",
+      "correctAnswer": "Infinitely many solutions on the same line",
+      "explanation": "Dividing every term of the second equation by 2 produces the first equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "No solutions on parallel lines",
+        "Infinitely many solutions on the same line",
+        "Exactly one solution at the origin",
+        "Exactly two solutions"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-035",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A museum charges $10 admission plus $3 per activity. A visitor spends $25. How many activities did they pay for?",
+      "correctAnswer": "5",
+      "explanation": "Write 10 + 3a = 25. Subtract admission to get 3a = 15.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "6",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-036",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student expands -2(x - 2) as -2x - 4, then solves -2(x - 2) = 6. Which correction and solution are right?",
+      "correctAnswer": "The constant should be +4; x = -1.",
+      "explanation": "The product of two negatives is positive. Then -2x + 4 = 6 gives x = -1.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "The expansion is correct; x = -5.",
+        "Only the x sign should change; x = 5.",
+        "The equation has no solution.",
+        "The constant should be +4; x = -1."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-037",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For which k does 3(x + 2) = 3x + k have infinitely many solutions, and what happens if k is one greater?",
+      "correctAnswer": "k = 6; one greater gives no solution.",
+      "explanation": "Expansion gives 3x + 6 = 3x + k. Equal constants give an identity; unequal constants give a contradiction.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "k = 2; one greater gives one solution.",
+        "k = 6; one greater gives one solution.",
+        "k = 6; one greater gives no solution.",
+        "k = 7; one greater gives infinitely many solutions."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-038",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 2x + 3y = 20 and 3x - 2y = 4. Verify your pair in both equations.",
+      "correctAnswer": "(4, 4)",
+      "explanation": "Multiply the equations by 2 and 3 and add: 13x = 52. Then x = 4 and y = 4; both original totals match.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(5, 4)",
+        "(4, 4)",
+        "(4, 5)",
+        "(3, 3)"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-039",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two taxi fares are A = 6 + 2d and B = 5d. A learner says equality occurs at d = 6. What is the correct distance and a check?",
+      "correctAnswer": "d = 2; both fares are $10.",
+      "explanation": "Set 6 + 2d = 5d, so 3d = 6. Substitution gives equal fares at d = 2.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "d = 2; both fares are $10.",
+        "d = 6; both fares are $6.",
+        "d = 0; both fares are zero.",
+        "The fares never agree."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-040",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A system is x + y = 11, 2x + 2y = 24. A learner divides the second equation by 2 and claims infinitely many solutions. What was missed?",
+      "correctAnswer": "Its right side becomes 12, contradicting x + y = 11.",
+      "explanation": "Matching variable coefficients are not enough. The right sides must match too; these equations give distinct parallel lines.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "The equations actually have exactly one solution.",
+        "Its right side becomes 12, contradicting x + y = 11.",
+        "Dividing an equation by 2 is never allowed.",
+        "Only the origin solves the system."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-041",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student expands -2(x - 3) as -2x - 6, then solves -2(x - 3) = 6. Which correction and solution are right?",
+      "correctAnswer": "The constant should be +6; x = 0.",
+      "explanation": "The product of two negatives is positive. Then -2x + 6 = 6 gives x = 0.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "The expansion is correct; x = -6.",
+        "Only the x sign should change; x = 6.",
+        "The equation has no solution.",
+        "The constant should be +6; x = 0."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-042",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For which k does 3(x + 3) = 3x + k have infinitely many solutions, and what happens if k is one greater?",
+      "correctAnswer": "k = 9; one greater gives no solution.",
+      "explanation": "Expansion gives 3x + 9 = 3x + k. Equal constants give an identity; unequal constants give a contradiction.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "k = 3; one greater gives one solution.",
+        "k = 9; one greater gives one solution.",
+        "k = 9; one greater gives no solution.",
+        "k = 10; one greater gives infinitely many solutions."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-043",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 2x + 3y = 22 and 3x - 2y = 7. Verify your pair in both equations.",
+      "correctAnswer": "(5, 4)",
+      "explanation": "Multiply the equations by 2 and 3 and add: 13x = 65. Then x = 5 and y = 4; both original totals match.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(6, 4)",
+        "(5, 5)",
+        "(5, 4)",
+        "(4, 3)"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-044",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two taxi fares are A = 9 + 2d and B = 5d. A learner says equality occurs at d = 9. What is the correct distance and a check?",
+      "correctAnswer": "d = 3; both fares are $15.",
+      "explanation": "Set 9 + 2d = 5d, so 3d = 9. Substitution gives equal fares at d = 3.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "d = 9; both fares are $9.",
+        "d = 3; both fares are $15.",
+        "d = 0; both fares are zero.",
+        "The fares never agree."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-045",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A system is x + y = 12, 2x + 2y = 26. A learner divides the second equation by 2 and claims infinitely many solutions. What was missed?",
+      "correctAnswer": "Its right side becomes 13, contradicting x + y = 12.",
+      "explanation": "Matching variable coefficients are not enough. The right sides must match too; these equations give distinct parallel lines.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Its right side becomes 13, contradicting x + y = 12.",
+        "The equations actually have exactly one solution.",
+        "Dividing an equation by 2 is never allowed.",
+        "Only the origin solves the system."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-046",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student expands -2(x - 4) as -2x - 8, then solves -2(x - 4) = 6. Which correction and solution are right?",
+      "correctAnswer": "The constant should be +8; x = 1.",
+      "explanation": "The product of two negatives is positive. Then -2x + 8 = 6 gives x = 1.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "The expansion is correct; x = -7.",
+        "Only the x sign should change; x = 7.",
+        "The equation has no solution.",
+        "The constant should be +8; x = 1."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-047",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For which k does 3(x + 4) = 3x + k have infinitely many solutions, and what happens if k is one greater?",
+      "correctAnswer": "k = 12; one greater gives no solution.",
+      "explanation": "Expansion gives 3x + 12 = 3x + k. Equal constants give an identity; unequal constants give a contradiction.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "k = 4; one greater gives one solution.",
+        "k = 12; one greater gives one solution.",
+        "k = 12; one greater gives no solution.",
+        "k = 13; one greater gives infinitely many solutions."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-048",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 2x + 3y = 24 and 3x - 2y = 10. Verify your pair in both equations.",
+      "correctAnswer": "(6, 4)",
+      "explanation": "Multiply the equations by 2 and 3 and add: 13x = 78. Then x = 6 and y = 4; both original totals match.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(6, 4)",
+        "(7, 4)",
+        "(6, 5)",
+        "(5, 3)"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-049",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two taxi fares are A = 12 + 2d and B = 5d. A learner says equality occurs at d = 12. What is the correct distance and a check?",
+      "correctAnswer": "d = 4; both fares are $20.",
+      "explanation": "Set 12 + 2d = 5d, so 3d = 12. Substitution gives equal fares at d = 4.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "d = 12; both fares are $12.",
+        "d = 4; both fares are $20.",
+        "d = 0; both fares are zero.",
+        "The fares never agree."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-core-050",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A system is x + y = 13, 2x + 2y = 28. A learner divides the second equation by 2 and claims infinitely many solutions. What was missed?",
+      "correctAnswer": "Its right side becomes 14, contradicting x + y = 13.",
+      "explanation": "Matching variable coefficients are not enough. The right sides must match too; these equations give distinct parallel lines.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "The equations actually have exactly one solution.",
+        "Dividing an equation by 2 is never allowed.",
+        "Only the origin solves the system.",
+        "Its right side becomes 14, contradicting x + y = 13."
+      ]
+    }
+  ]
+}

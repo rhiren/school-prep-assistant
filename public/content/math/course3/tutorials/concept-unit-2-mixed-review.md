@@ -1,8 +1,8 @@
-# Unit 2 Mixed Review
+# Linear Equations Checkpoint
 
 ## Big Idea
 
-Unit 2 is about solving and interpreting linear equations in one variable. The same balance rule appears in every problem, but different equations require different first moves.
+This checkpoint reviews solving and interpreting linear equations in one variable before moving to systems in Unit 4. The same balance rule appears in every problem, but different equations require different first moves.
 
 ## What To Review
 

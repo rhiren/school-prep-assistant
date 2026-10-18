@@ -1,6 +1,6 @@
 # Math Course 3 Concept Rollout Plan
 
-Last updated: 2026-09-07
+Last updated: 2026-10-17
 
 ## Purpose
 
@@ -221,6 +221,11 @@ existing reusable packs.
 
 ### Unit 4 — Linear Equations and Linear Systems
 
+Status: complete. All 18 planned concepts are active, plus a retained
+Linear Equations Checkpoint immediately before systems (19 entries total).
+The checkpoint preserves the old `concept-unit-2-mixed-review` identity and
+its saved attempts; it is not the new comprehensive Unit 4 review.
+
 Amplify focus: single-variable equations with parentheses and systems solved
 by graphing. The app may include substitution and elimination as extension
 practice after graphing, because those packs are already built and useful for
@@ -247,7 +252,7 @@ Standards: `8.EE.7-8`
 17. Systems of Equations Word Problems
 18. Unit 4 Mixed Review
 
-Current reusable packs:
+Current learner-ready packs:
 
 - Review Equivalent Expressions
 - Solve Multi-Step Equations
@@ -258,12 +263,29 @@ Current reusable packs:
 - Build Equations from Context
 - Linear Equation Word Problems
 - Check and Explain Equation Solutions
-- Unit 2 Mixed Review
+- Linear Equations Checkpoint
 - Understand Solutions to Systems
 - Solve Systems by Graphing
 - Solve Systems by Substitution
 - Solve Systems by Elimination
 - Systems with No Solution
+- Systems with Infinitely Many Solutions
+- Choose an Efficient System-Solving Method
+- Systems of Equations Word Problems
+- Unit 4 Mixed Review
+
+The four new packs contain 280 questions, with 50 core and 20 review per pack.
+Core stages are 10 scaffold, 25 standard, and 15 challenge; review stages are
+8 scaffold and 12 standard. Challenge forms include parameter constraints,
+error analysis, model validity, method justification, and multi-step transfer.
+Review banks use fresh numerical instances rather than copying core questions.
+
+Release verification includes existing repository gates plus
+`src/test/unit4ContentQuality.test.ts`: arbitrary repeated answer blocks of
+length 2-4, duplicate prompts/options, independently calculated answer checks,
+and substitution into ticket, wheel, mixture, and fundraiser constraints.
+No new template-variety exceptions were added. Existing legacy exceptions
+remain explicit debt; this release does not claim to remove them.
 
 ### Unit 5 — Functions and Volume
 
@@ -386,26 +408,25 @@ Use this sequence:
 
 As of this update, the active Course 3 manifest presents the complete
 ten-concept book-aligned Unit 1, the complete nine-concept book Unit 2,
-the complete nine-concept book Unit 3, and the remaining previously built
-units that remain reusable assets:
+the complete nine-concept book Unit 3, the complete book Unit 4 including its
+retained checkpoint, and the remaining reusable number/exponent assets:
 
 - Rigid Transformations and Congruence: 10 learner-ready concepts
 - Dilations, Similarity, and Slope: 9 learner-ready concepts
 - Proportional and Linear Relationships: 9 learner-ready concepts
-- Linear Equations in One Variable: 10 learner-ready concepts
-- Systems of Linear Equations: 5 learner-ready concepts
+- Linear Equations and Linear Systems: 19 learner-ready concepts
 - Real Numbers and Exponents: 12 learner-ready concepts
 
-Total active Course 3 concepts: 55.
+Total active Course 3 concepts: 59.
 
 These should be treated as reusable content assets during the transition, not
 as discarded work.
 
 ## Next Build Target
 
-The next Course 3 build target is book Unit 4:
+The next Course 3 build target is book Unit 5:
 
-- Linear Equations and Linear Systems
+- Understand Functions
 
 ## Definition of Ready
 
