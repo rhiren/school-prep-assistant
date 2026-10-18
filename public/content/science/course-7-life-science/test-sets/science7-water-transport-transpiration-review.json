@@ -1,0 +1,331 @@
+{
+  "id": "science7-water-transport-transpiration-review",
+  "testId": "science7-water-transport-transpiration-review",
+  "conceptId": "concept-water-transport-transpiration",
+  "title": "Water Transport and Transpiration Review Test",
+  "description": "Connect roots, xylem, and leaves to water movement and evaluate evidence about plant water loss.",
+  "questions": [
+    {
+      "id": "science7-water-transport-transpiration-review-q1",
+      "type": "multiple_choice",
+      "prompt": "Which pathway connects a wet root zone to water vapor in the air?",
+      "questionText": "Which pathway connects a wet root zone to water vapor in the air?",
+      "options": [
+        "Roots -> sunlight -> air.",
+        "Roots -> xylem -> leaves -> air.",
+        "Leaves -> soil minerals -> sunlight.",
+        "Air -> roots -> dry rock."
+      ],
+      "correctAnswer": "Roots -> xylem -> leaves -> air.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "The pathway links uptake, transport, and loss from leaves."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q2",
+      "type": "multiple_choice",
+      "prompt": "Why might a broad-leaved plant lose more total water than a smaller one without having a greater rate per unit area?",
+      "questionText": "Why might a broad-leaved plant lose more total water than a smaller one without having a greater rate per unit area?",
+      "options": [
+        "Its leaves must contain no stomata.",
+        "A larger plant always loses less per area.",
+        "It has more leaf surface contributing to total loss.",
+        "Water loss is unrelated to leaf area."
+      ],
+      "correctAnswer": "It has more leaf surface contributing to total loss.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Total amount and area-normalized rate answer different questions."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q3",
+      "type": "multiple_choice",
+      "prompt": "A plant setup loses 18 g in six hours. What is the average rate?",
+      "questionText": "A plant setup loses 18 g in six hours. What is the average rate?",
+      "options": [
+        "3 g per hour.",
+        "6 g per hour.",
+        "12 g per hour.",
+        "108 g per hour."
+      ],
+      "correctAnswer": "3 g per hour.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "18 divided by 6 is 3."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q4",
+      "type": "multiple_choice",
+      "prompt": "A water-loss experiment leaves one pot's soil uncovered and covers the other. Why is a leaf-only comparison uncertain?",
+      "questionText": "A water-loss experiment leaves one pot's soil uncovered and covers the other. Why is a leaf-only comparison uncertain?",
+      "options": [
+        "Covered soil cannot contain roots.",
+        "Uncovered soil has no water.",
+        "Leaves must be identical if pots match.",
+        "Soil evaporation differs between setups."
+      ],
+      "correctAnswer": "Soil evaporation differs between setups.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Different soil evaporation can contribute to measured mass differences."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q5",
+      "type": "multiple_choice",
+      "prompt": "A plant closes many stomata during a dry afternoon. What paired effect is plausible?",
+      "questionText": "A plant closes many stomata during a dry afternoon. What paired effect is plausible?",
+      "options": [
+        "Less water-vapor loss and less carbon dioxide entry.",
+        "More water loss and unlimited carbon dioxide entry.",
+        "No change to any gas exchange.",
+        "Immediate production of extra minerals."
+      ],
+      "correctAnswer": "Less water-vapor loss and less carbon dioxide entry.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "The same pores participate in both water loss and gas exchange."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q6",
+      "type": "multiple_choice",
+      "prompt": "Which observation supports transport without proving photosynthesis?",
+      "questionText": "Which observation supports transport without proving photosynthesis?",
+      "options": [
+        "Sugar measurements rise in matched light-grown leaves.",
+        "Carbon dioxide is taken up by illuminated green leaves.",
+        "Dye travels upward through a cut leafy stem.",
+        "Light energy is stored in newly formed sugar."
+      ],
+      "correctAnswer": "Dye travels upward through a cut leafy stem.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Dye traces liquid movement; it is not evidence of sugar manufacture."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q7",
+      "type": "multiple_choice",
+      "prompt": "Leaf area is 200 square centimeters and loss is 20 g; another plant has 100 square centimeters and loses 15 g over equal times. Which loses more per unit area?",
+      "questionText": "Leaf area is 200 square centimeters and loss is 20 g; another plant has 100 square centimeters and loses 15 g over equal times. Which loses more per unit area?",
+      "options": [
+        "The first plant because 20 exceeds 15.",
+        "Both because they contain leaves.",
+        "The second plant, at 0.15 versus 0.10 g per square centimeter.",
+        "The first plant, at 10 g per square centimeter."
+      ],
+      "correctAnswer": "The second plant, at 0.15 versus 0.10 g per square centimeter.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Normalize by area: 20/200 = 0.10 and 15/100 = 0.15."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q8",
+      "type": "multiple_choice",
+      "prompt": "What must be added to a model predicting water loss solely from wind speed?",
+      "questionText": "What must be added to a model predicting water loss solely from wind speed?",
+      "options": [
+        "A rule that all species behave identically.",
+        "Humidity, water supply, and stomatal responses can also affect loss.",
+        "A guarantee that roots supply unlimited water.",
+        "An assumption that leaves cannot regulate exchange."
+      ],
+      "correctAnswer": "Humidity, water supply, and stomatal responses can also affect loss.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "Water loss results from interacting environmental and biological factors."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q9",
+      "type": "multiple_choice",
+      "prompt": "A plant's leaves stay firm after watering. Which claim goes beyond this evidence?",
+      "questionText": "A plant's leaves stay firm after watering. Which claim goes beyond this evidence?",
+      "options": [
+        "Leaf firmness increased after watering.",
+        "Water balance may have improved.",
+        "Further observation could check whether recovery persists.",
+        "Watering restored every damaged root and proved the plant is fully healthy."
+      ],
+      "correctAnswer": "Watering restored every damaged root and proved the plant is fully healthy.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Firmness is one indicator, not proof that every structure or process is restored."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q10",
+      "type": "multiple_choice",
+      "prompt": "Why can humid air slow transpiration under similar conditions?",
+      "questionText": "Why can humid air slow transpiration under similar conditions?",
+      "options": [
+        "Humidity eliminates all plant water.",
+        "Humid air turns stomata into roots.",
+        "Humidity supplies all food directly.",
+        "The water-vapor difference between leaf air spaces and surrounding air can be smaller."
+      ],
+      "correctAnswer": "The water-vapor difference between leaf air spaces and surrounding air can be smaller.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "A smaller vapor gradient can reduce outward movement."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q11",
+      "type": "multiple_choice",
+      "prompt": "An experiment records a 16 g loss, but 5 g of water was collected from drainage. How much loss remains after subtracting known drainage?",
+      "questionText": "An experiment records a 16 g loss, but 5 g of water was collected from drainage. How much loss remains after subtracting known drainage?",
+      "options": [
+        "11 g, which still may include other pathways.",
+        "21 g, all transpiration.",
+        "5 g, all photosynthesis.",
+        "16 g, since drainage has no mass."
+      ],
+      "correctAnswer": "11 g, which still may include other pathways.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "16 - 5 = 11; remaining loss is not automatically all transpiration."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q12",
+      "type": "multiple_choice",
+      "prompt": "A model identifies xylem as the main sugar-distribution tissue. What correction is needed?",
+      "questionText": "A model identifies xylem as the main sugar-distribution tissue. What correction is needed?",
+      "options": [
+        "Xylem carries only sunlight.",
+        "All transport occurs outside the stem.",
+        "Xylem carries water and dissolved minerals; sugar transport involves phloem.",
+        "Roots make every sugar before leaves receive light."
+      ],
+      "correctAnswer": "Xylem carries water and dissolved minerals; sugar transport involves phloem.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Different conducting tissues have different major transport roles."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q13",
+      "type": "multiple_choice",
+      "prompt": "A dry leaf surface is enclosed in a bag and droplets later appear. What strengthens the water-loss interpretation?",
+      "questionText": "A dry leaf surface is enclosed in a bag and droplets later appear. What strengthens the water-loss interpretation?",
+      "options": [
+        "Only the leaf bag is observed once.",
+        "A matched empty bag has much less condensation and other moisture sources are considered.",
+        "The bag color is changed halfway through.",
+        "The soil is also enclosed without accounting for its evaporation."
+      ],
+      "correctAnswer": "A matched empty bag has much less condensation and other moisture sources are considered.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "A suitable comparison helps distinguish leaf-associated moisture from background sources."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q14",
+      "type": "multiple_choice",
+      "prompt": "Why is wilting compatible with living cells?",
+      "questionText": "Why is wilting compatible with living cells?",
+      "options": [
+        "Wilting necessarily removes every cell membrane.",
+        "Cells can lose enough water pressure to reduce firmness without all dying.",
+        "A wilted plant contains only dead minerals.",
+        "Living cells cannot change water content."
+      ],
+      "correctAnswer": "Cells can lose enough water pressure to reduce firmness without all dying.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Turgor changes can affect shape before irreversible injury occurs."
+    },
+    {
+      "id": "science7-water-transport-transpiration-review-q15",
+      "type": "multiple_choice",
+      "prompt": "How does transpiration connect a plant to the water cycle?",
+      "questionText": "How does transpiration connect a plant to the water cycle?",
+      "options": [
+        "Water taken up from soil can return to air as vapor.",
+        "Water atoms disappear when leaves dry.",
+        "All absorbed water stays permanently in roots.",
+        "Plants create all atmospheric water from minerals."
+      ],
+      "correctAnswer": "Water taken up from soil can return to air as vapor.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Plants provide a pathway for water transfer between soil and atmosphere."
+    }
+  ]
+}

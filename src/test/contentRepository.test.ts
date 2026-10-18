@@ -476,6 +476,8 @@ describe("content repository", () => {
       "concept-digestion-molecules-cell-fuel",
       "concept-growth-photosynthesis-cellular-respiration",
       "concept-matter-energy-transfer-organisms",
+      "concept-water-transport-transpiration",
+      "concept-investigating-photosynthesis",
       "concept-ecosystem-interactions-dynamics",
       "concept-population-data-ecosystem-stability",
       "concept-energy-pyramids-food-web-efficiency",

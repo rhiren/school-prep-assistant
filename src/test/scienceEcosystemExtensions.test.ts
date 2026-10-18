@@ -8,9 +8,11 @@ const PACKS = [
   "ecosystem-disturbance-recovery",
   "competition-resource-partitioning",
   "invasive-species-food-web-changes",
+  "water-transport-transpiration",
+  "investigating-photosynthesis",
 ];
 
-describe("science ecosystem extensions", () => {
+describe("science enrichment extensions", () => {
   it("loads distinct core and review scenarios with valid, balanced answer choices", async () => {
     const repository = await createDefaultContentRepository();
     const allPrompts = new Set<string>();
@@ -80,6 +82,19 @@ describe("science ecosystem extensions", () => {
       ["invasive-species-food-web-changes", "core", 28, "Invasive cover fell 50 percentage points; native cover rose 10 percentage points."],
       ["invasive-species-food-web-changes", "review", 3, "20%."],
       ["invasive-species-food-web-changes", "review", 10, "25 plants."],
+      ["water-transport-transpiration", "core", 7, "4 g per hour."],
+      ["water-transport-transpiration", "core", 15, "A, at 0.10 g per square centimeter compared with B's 0.05."],
+      ["water-transport-transpiration", "core", 22, "Both average 3 g per hour."],
+      ["water-transport-transpiration", "core", 28, "12 g, associated with the plant under these conditions."],
+      ["water-transport-transpiration", "review", 7, "The second plant, at 0.15 versus 0.10 g per square centimeter."],
+      ["water-transport-transpiration", "review", 11, "11 g, which still may include other pathways."],
+      ["investigating-photosynthesis", "core", 11, "An increase of 5 units."],
+      ["investigating-photosynthesis", "core", 18, "The second, at 7 rather than 6 bubbles per minute."],
+      ["investigating-photosynthesis", "core", 23, "8 oxygen units per hour."],
+      ["investigating-photosynthesis", "core", 27, "The 2 g sample: 3 rather than 1.5 units per gram per hour."],
+      ["investigating-photosynthesis", "review", 6, "An increase of 8 units."],
+      ["investigating-photosynthesis", "review", 11, "The second: 8 rather than 6 units per hour."],
+      ["investigating-photosynthesis", "review", 14, "7 oxygen units per hour."],
     ] as const;
     for (const [slug, kind, number, expected] of checks) {
       const id = `science7-${slug}-${kind}`;

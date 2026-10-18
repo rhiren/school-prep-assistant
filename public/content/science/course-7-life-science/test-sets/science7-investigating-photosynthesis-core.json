@@ -1,0 +1,651 @@
+{
+  "id": "science7-investigating-photosynthesis-core",
+  "testId": "science7-investigating-photosynthesis-core",
+  "conceptId": "concept-investigating-photosynthesis",
+  "title": "Investigating Photosynthesis Core Test",
+  "description": "Use controlled comparisons, matter models, and rate data to investigate photosynthesis and distinguish oxygen production from net change.",
+  "questions": [
+    {
+      "id": "science7-investigating-photosynthesis-core-q1",
+      "type": "multiple_choice",
+      "prompt": "A green plant makes sugars during photosynthesis. Which pair supplies the matter used in this process?",
+      "questionText": "A green plant makes sugars during photosynthesis. Which pair supplies the matter used in this process?",
+      "options": [
+        "Light and heat.",
+        "Oxygen and light.",
+        "Carbon dioxide and water.",
+        "Soil minerals and heat."
+      ],
+      "correctAnswer": "Carbon dioxide and water.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Carbon dioxide and water supply matter; light supplies energy."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q2",
+      "type": "multiple_choice",
+      "prompt": "Where does the carbon in newly made plant sugar mainly come from?",
+      "questionText": "Where does the carbon in newly made plant sugar mainly come from?",
+      "options": [
+        "Carbon dioxide taken in from the surroundings.",
+        "Sunlight absorbed by the leaf.",
+        "Water taken up by roots.",
+        "Minerals dissolved in soil."
+      ],
+      "correctAnswer": "Carbon dioxide taken in from the surroundings.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Carbon dioxide supplies carbon atoms; light is not matter."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q3",
+      "type": "multiple_choice",
+      "prompt": "Which description correctly connects light and sugar?",
+      "questionText": "Which description correctly connects light and sugar?",
+      "options": [
+        "Light becomes the carbon atoms in sugar.",
+        "Light energy can be transferred into chemical energy stored in sugar.",
+        "Sugar contains no stored energy.",
+        "Photosynthesis creates energy from nothing."
+      ],
+      "correctAnswer": "Light energy can be transferred into chemical energy stored in sugar.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Photosynthesis transforms energy rather than creating it."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q4",
+      "type": "multiple_choice",
+      "prompt": "A student says a green plant respires only at night. What correction is needed?",
+      "questionText": "A student says a green plant respires only at night. What correction is needed?",
+      "options": [
+        "Living plant cells respire in light and darkness.",
+        "Plant cells never respire.",
+        "Respiration occurs only when leaves turn brown.",
+        "Light causes respiration to become photosynthesis."
+      ],
+      "correctAnswer": "Living plant cells respire in light and darkness.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Photosynthesis and cellular respiration are distinct processes; respiration continues in light."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q5",
+      "type": "multiple_choice",
+      "prompt": "An aquatic plant releases bubbles in light. What should a student avoid assuming from bubble count alone?",
+      "questionText": "An aquatic plant releases bubbles in light. What should a student avoid assuming from bubble count alone?",
+      "options": [
+        "That every bubble has the same volume and the count is an exact oxygen-production rate.",
+        "That bubbles are observations worth recording.",
+        "That time matters when comparing counts.",
+        "That repeated measurements could help."
+      ],
+      "correctAnswer": "That every bubble has the same volume and the count is an exact oxygen-production rate.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Bubble size and gas exchange affect interpretation; counts are a rough proxy."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q6",
+      "type": "multiple_choice",
+      "prompt": "Why might a healthy plant survive a short dark period without making new sugar by photosynthesis?",
+      "questionText": "Why might a healthy plant survive a short dark period without making new sugar by photosynthesis?",
+      "options": [
+        "Darkness becomes food in its roots.",
+        "Respiration stops whenever light is absent.",
+        "It can use stored sugars in cellular respiration.",
+        "It makes sugar from oxygen alone."
+      ],
+      "correctAnswer": "It can use stored sugars in cellular respiration.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Stored organic matter can support respiration when photosynthesis is not occurring."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q7",
+      "type": "multiple_choice",
+      "prompt": "A plant produces 24 bubbles in four minutes. What average bubble-count rate was observed?",
+      "questionText": "A plant produces 24 bubbles in four minutes. What average bubble-count rate was observed?",
+      "options": [
+        "6 bubbles per minute.",
+        "24 bubbles per minute.",
+        "96 bubbles per minute.",
+        "4 bubbles per minute."
+      ],
+      "correctAnswer": "6 bubbles per minute.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Divide the count by the elapsed time: 24/4 = 6."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q8",
+      "type": "multiple_choice",
+      "prompt": "To test the effect of light level, which design is strongest?",
+      "questionText": "To test the effect of light level, which design is strongest?",
+      "options": [
+        "Change light, temperature, and plant species together.",
+        "Compare matched plants at different light levels while keeping temperature and carbon dioxide availability similar.",
+        "Compare one large sunny plant with one small shaded plant without recording size.",
+        "Change the counting time whenever bubbles slow down."
+      ],
+      "correctAnswer": "Compare matched plants at different light levels while keeping temperature and carbon dioxide availability similar.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "A fair comparison changes the factor of interest while controlling other relevant factors."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q9",
+      "type": "multiple_choice",
+      "prompt": "A model shows carbon dioxide + water --light energy--> sugars + oxygen. What does it represent?",
+      "questionText": "A model shows carbon dioxide + water --light energy--> sugars + oxygen. What does it represent?",
+      "options": [
+        "Carbon atoms disappear and energy atoms appear.",
+        "Oxygen supplies all of the carbon in sugar.",
+        "Water turns into minerals before photosynthesis begins.",
+        "Matter is rearranged while energy is transferred."
+      ],
+      "correctAnswer": "Matter is rearranged while energy is transferred.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "The model separates matter inputs and outputs from the energy input."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q10",
+      "type": "multiple_choice",
+      "prompt": "Two plants have the same bubble count per minute, but one makes much larger bubbles. What follows?",
+      "questionText": "Two plants have the same bubble count per minute, but one makes much larger bubbles. What follows?",
+      "options": [
+        "Their released gas volumes must be identical.",
+        "The plant with smaller bubbles must release more gas.",
+        "The gas volumes released may differ despite equal counts.",
+        "Neither plant can be photosynthesizing."
+      ],
+      "correctAnswer": "The gas volumes released may differ despite equal counts.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Counts do not measure volume unless bubble sizes are accounted for."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q11",
+      "type": "multiple_choice",
+      "prompt": "In a simplified closed-system model, photosynthesis produces 8 oxygen units while respiration uses 3 in one hour. What is the net oxygen change?",
+      "questionText": "In a simplified closed-system model, photosynthesis produces 8 oxygen units while respiration uses 3 in one hour. What is the net oxygen change?",
+      "options": [
+        "An increase of 11 units.",
+        "A decrease of 3 units.",
+        "An increase of 5 units.",
+        "An increase of 8 units."
+      ],
+      "correctAnswer": "An increase of 5 units.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Net change is production minus use: 8 - 3 = 5."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q12",
+      "type": "multiple_choice",
+      "prompt": "A teacher keeps one aquatic-plant container in darkness as a comparison. What can this help reveal?",
+      "questionText": "A teacher keeps one aquatic-plant container in darkness as a comparison. What can this help reveal?",
+      "options": [
+        "The exact photosynthesis rate in all light levels without other measurements.",
+        "Whether water molecules contain carbon.",
+        "That respiration happens only in darkness.",
+        "Oxygen changes when light-driven photosynthesis is absent."
+      ],
+      "correctAnswer": "Oxygen changes when light-driven photosynthesis is absent.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "A dark comparison can help interpret respiration, but extrapolating its rate requires assumptions."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q13",
+      "type": "multiple_choice",
+      "prompt": "A leaf takes in less carbon dioxide after many stomata close. Why might photosynthesis slow?",
+      "questionText": "A leaf takes in less carbon dioxide after many stomata close. Why might photosynthesis slow?",
+      "options": [
+        "Closed stomata directly remove all chlorophyll.",
+        "Less of a required matter input may reach photosynthesizing cells.",
+        "Carbon dioxide is only a waste product of photosynthesis.",
+        "The leaf no longer needs light."
+      ],
+      "correctAnswer": "Less of a required matter input may reach photosynthesizing cells.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Gas entry can limit photosynthesis even when light is available."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q14",
+      "type": "multiple_choice",
+      "prompt": "Equal-sized plants yield 5, 6, and 7 bubbles per minute in dim light and 11, 12, and 13 in brighter light under matched conditions. Which claim fits?",
+      "questionText": "Equal-sized plants yield 5, 6, and 7 bubbles per minute in dim light and 11, 12, and 13 in brighter light under matched conditions. Which claim fits?",
+      "options": [
+        "Every plant everywhere doubles its photosynthesis in brighter light.",
+        "The dim-light plants did not photosynthesize.",
+        "Temperature must have caused the difference despite being held similar.",
+        "Brighter light was associated with higher counts in these trials."
+      ],
+      "correctAnswer": "Brighter light was associated with higher counts in these trials.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "The repeated groups support a limited treatment comparison, not a universal rule."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q15",
+      "type": "multiple_choice",
+      "prompt": "What is the main value of repeating a photosynthesis measurement with several matched plants?",
+      "questionText": "What is the main value of repeating a photosynthesis measurement with several matched plants?",
+      "options": [
+        "It guarantees every uncontrolled variable disappears.",
+        "It makes a comparison group unnecessary.",
+        "It proves the hypothesis before the data are collected.",
+        "It reveals variation and reduces reliance on one unusual plant."
+      ],
+      "correctAnswer": "It reveals variation and reduces reliance on one unusual plant.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Replication helps assess consistency; it does not automatically remove bias."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q16",
+      "type": "multiple_choice",
+      "prompt": "A plant grows taller in weak light than in moderate light. Does height alone prove faster photosynthesis?",
+      "questionText": "A plant grows taller in weak light than in moderate light. Does height alone prove faster photosynthesis?",
+      "options": [
+        "No; stem elongation can change without greater sugar production.",
+        "Yes; height is always a direct oxygen-production measurement.",
+        "Yes; all growth patterns have only one possible cause.",
+        "No; plants cannot grow in weak light."
+      ],
+      "correctAnswer": "No; stem elongation can change without greater sugar production.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Height is an indirect indicator and can reflect responses to light rather than greater production."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q17",
+      "type": "multiple_choice",
+      "prompt": "Which revision improves a model that shows sunlight as matter added to a plant's dry mass?",
+      "questionText": "Which revision improves a model that shows sunlight as matter added to a plant's dry mass?",
+      "options": [
+        "Show light supplying carbon and water supplying energy.",
+        "Replace carbon dioxide with oxygen as the only sugar input.",
+        "Show carbon dioxide supplying carbon and light supplying energy.",
+        "Remove matter inputs because plants make matter from energy."
+      ],
+      "correctAnswer": "Show carbon dioxide supplying carbon and light supplying energy.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "Energy flow and matter flow should be represented separately."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q18",
+      "type": "multiple_choice",
+      "prompt": "One trial releases 36 bubbles in six minutes; another releases 28 in four minutes. Which count rate is greater?",
+      "questionText": "One trial releases 36 bubbles in six minutes; another releases 28 in four minutes. Which count rate is greater?",
+      "options": [
+        "The first, because 36 exceeds 28.",
+        "The second, at 7 rather than 6 bubbles per minute.",
+        "They are equal because both lasted several minutes.",
+        "The second, at 112 bubbles per minute."
+      ],
+      "correctAnswer": "The second, at 7 rather than 6 bubbles per minute.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Compare count divided by time: 36/6 = 6 and 28/4 = 7."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q19",
+      "type": "multiple_choice",
+      "prompt": "Why are mineral nutrients still important even though they are not the main source of sugar's carbon?",
+      "questionText": "Why are mineral nutrients still important even though they are not the main source of sugar's carbon?",
+      "options": [
+        "They replace all carbon dioxide in photosynthesis.",
+        "They supply all plant energy without light.",
+        "They support structures and processes needed for healthy growth.",
+        "They are the only material in plant dry mass."
+      ],
+      "correctAnswer": "They support structures and processes needed for healthy growth.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "standard",
+      "explanation": "Plants need mineral nutrients, but their role differs from carbon dioxide and light."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q20",
+      "type": "multiple_choice",
+      "prompt": "A lamp is moved closer and both water temperature and bubble count rise. What should be checked before attributing the change only to light?",
+      "questionText": "A lamp is moved closer and both water temperature and bubble count rise. What should be checked before attributing the change only to light?",
+      "options": [
+        "Whether the ruler was labeled in centimeters.",
+        "Whether the plant was named before the trial.",
+        "Whether temperature also affected the measured rate.",
+        "Whether the same notebook page was used."
+      ],
+      "correctAnswer": "Whether temperature also affected the measured rate.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Lamp heating can confound an intended light-only comparison."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q21",
+      "type": "multiple_choice",
+      "prompt": "In matched trials, count rates at low, medium, and high light are 4, 9, and 9 bubbles per minute. Which follow-up is most useful?",
+      "questionText": "In matched trials, count rates at low, medium, and high light are 4, 9, and 9 bubbles per minute. Which follow-up is most useful?",
+      "options": [
+        "Conclude that light never affects photosynthesis.",
+        "Test whether carbon dioxide availability limits the rate at high light while controlling other factors.",
+        "Assume the high-light plant stopped respiring.",
+        "Discard the medium-light result because rates must always rise."
+      ],
+      "correctAnswer": "Test whether carbon dioxide availability limits the rate at high light while controlling other factors.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "A plateau suggests testing another possible limiting factor; it does not identify that factor by itself."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q22",
+      "type": "multiple_choice",
+      "prompt": "A closed system's oxygen stays constant in light. Which explanation is possible?",
+      "questionText": "A closed system's oxygen stays constant in light. Which explanation is possible?",
+      "options": [
+        "Photosynthesis must be absent.",
+        "Oxygen production and oxygen use are balanced.",
+        "Respiration must be absent.",
+        "Oxygen is never involved in plant processes."
+      ],
+      "correctAnswer": "Oxygen production and oxygen use are balanced.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Zero net change can hide simultaneous opposing processes."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q23",
+      "type": "multiple_choice",
+      "prompt": "A dark trial uses 2 oxygen units per hour. A light trial gains 6 per hour. Assuming equal respiration in both and no other oxygen exchanges, what is estimated photosynthetic production in light?",
+      "questionText": "A dark trial uses 2 oxygen units per hour. A light trial gains 6 per hour. Assuming equal respiration in both and no other oxygen exchanges, what is estimated photosynthetic production in light?",
+      "options": [
+        "4 oxygen units per hour.",
+        "6 oxygen units per hour.",
+        "12 oxygen units per hour.",
+        "8 oxygen units per hour."
+      ],
+      "correctAnswer": "8 oxygen units per hour.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Net gain = production - use, so production = 6 + 2 = 8 under the stated assumptions."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q24",
+      "type": "multiple_choice",
+      "prompt": "Why is the estimate from a dark respiration rate uncertain if the light trial is much warmer?",
+      "questionText": "Why is the estimate from a dark respiration rate uncertain if the light trial is much warmer?",
+      "options": [
+        "Respiration may differ with temperature, so equal use cannot be assumed.",
+        "Oxygen has no mass when warmed.",
+        "Photosynthesis always stops in warmer water.",
+        "Dark measurements never contain useful information."
+      ],
+      "correctAnswer": "Respiration may differ with temperature, so equal use cannot be assumed.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "An estimate is only as sound as its assumptions and measurement conditions."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q25",
+      "type": "multiple_choice",
+      "prompt": "A no-plant water container also changes dissolved oxygen during an experiment. What does this show?",
+      "questionText": "A no-plant water container also changes dissolved oxygen during an experiment. What does this show?",
+      "options": [
+        "Background exchange or other non-plant effects must be considered.",
+        "Every oxygen change in the plant container must be photosynthesis.",
+        "Plants cannot produce oxygen.",
+        "The comparison should be ignored because it lacks leaves."
+      ],
+      "correctAnswer": "Background exchange or other non-plant effects must be considered.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Dissolved oxygen can change through exchange with air and other background processes."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q26",
+      "type": "multiple_choice",
+      "prompt": "A class claims that adding carbon dioxide always speeds photosynthesis. Which result challenges the word 'always'?",
+      "questionText": "A class claims that adding carbon dioxide always speeds photosynthesis. Which result challenges the word 'always'?",
+      "options": [
+        "With adequate light, one plant shows an increase.",
+        "Two plants receive the same water volume.",
+        "The class uses three measuring containers.",
+        "With very little light, added carbon dioxide produces no measurable increase."
+      ],
+      "correctAnswer": "With very little light, added carbon dioxide produces no measurable increase.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Another limiting factor can prevent a response to more carbon dioxide."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q27",
+      "type": "multiple_choice",
+      "prompt": "Two illuminated samples gain 12 oxygen units in two hours. One has 2 g of plant material; the other has 4 g. Which has the larger net gain per gram per hour?",
+      "questionText": "Two illuminated samples gain 12 oxygen units in two hours. One has 2 g of plant material; the other has 4 g. Which has the larger net gain per gram per hour?",
+      "options": [
+        "The 4 g sample: 6 rather than 3 units per gram per hour.",
+        "They are equal because total gains match.",
+        "The 2 g sample: 12 rather than 6 units per gram per hour.",
+        "The 2 g sample: 3 rather than 1.5 units per gram per hour."
+      ],
+      "correctAnswer": "The 2 g sample: 3 rather than 1.5 units per gram per hour.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Normalize by both duration and plant mass: 12/(2 x 2) = 3; 12/(4 x 2) = 1.5."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q28",
+      "type": "multiple_choice",
+      "prompt": "A plant container loses oxygen slowly in dim light. What can be concluded without assuming photosynthesis is zero?",
+      "questionText": "A plant container loses oxygen slowly in dim light. What can be concluded without assuming photosynthesis is zero?",
+      "options": [
+        "Photosynthesis cannot happen at any dim light level.",
+        "Oxygen use exceeds oxygen production plus any other net inputs.",
+        "Every plant cell has died.",
+        "The plant has stopped using sugar."
+      ],
+      "correctAnswer": "Oxygen use exceeds oxygen production plus any other net inputs.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "A negative net change does not rule out a smaller simultaneous production rate."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q29",
+      "type": "multiple_choice",
+      "prompt": "Which evidence most directly supports the claim that carbon dioxide contributes carbon to new sugar?",
+      "questionText": "Which evidence most directly supports the claim that carbon dioxide contributes carbon to new sugar?",
+      "options": [
+        "A carbon tracer from supplied carbon dioxide is later detected in newly made sugars.",
+        "The plant's pot becomes warmer in sunlight.",
+        "Water moves up a colored stem.",
+        "The plant's leaves point toward a window."
+      ],
+      "correctAnswer": "A carbon tracer from supplied carbon dioxide is later detected in newly made sugars.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Tracing atoms links a matter source to a product more directly than appearance or warmth."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-core-q30",
+      "type": "multiple_choice",
+      "prompt": "A report combines higher bubble counts, repeated matched trials, and a temperature check. What conclusion is appropriately cautious?",
+      "questionText": "A report combines higher bubble counts, repeated matched trials, and a temperature check. What conclusion is appropriately cautious?",
+      "options": [
+        "Light is the only factor controlling photosynthesis for every species.",
+        "The tested light increase raised the bubble-count proxy under these conditions; an exact oxygen rate needs additional measurements.",
+        "The experiment proves respiration stopped in bright light.",
+        "Bubble counts equal sugar mass without calibration."
+      ],
+      "correctAnswer": "The tested light increase raised the bubble-count proxy under these conditions; an exact oxygen rate needs additional measurements.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Conclusions should match the treatment range, controls, and limits of the measurement."
+    }
+  ]
+}

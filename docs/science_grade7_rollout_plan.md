@@ -151,6 +151,8 @@ Target mix for a full review test:
 | Body Systems and Information Processing | Digestion, Molecules, and Cell Fuel | yes | yes | yes | yes | Practice ready |
 | Growth and Energy Flow | Growth, Photosynthesis, and Cellular Respiration | yes | yes | yes | yes | Practice ready |
 | Growth and Energy Flow | Matter and Energy Transfer in Organisms | yes | yes | yes | yes | Practice ready |
+| Growth and Energy Flow | Water Transport and Transpiration | yes | yes | yes | yes | Practice ready |
+| Growth and Energy Flow | Investigating Photosynthesis | yes | yes | yes | yes | Practice ready |
 | Ecosystems | Ecosystem Interactions and Dynamics | yes | yes | yes | yes | Practice ready |
 | Ecosystems | Population Data and Ecosystem Stability | yes | yes | yes | yes | Practice ready |
 | Ecosystems | Energy Pyramids and Food Web Efficiency | yes | yes | yes | yes | Practice ready |
@@ -170,7 +172,27 @@ Target mix for a full review test:
 
 ## Recommended Build Order
 
-The next completed enrichment pair is Competition and Resource Partitioning,
+The latest completed enrichment pair is Water Transport and Transpiration,
+followed by Investigating Photosynthesis. Each includes 30 core questions,
+15 distinct review questions, a worked data model, retrieval prompts, and a
+safe home activity. Together they connect plant water balance to carbon dioxide
+entry and distinguish transport, photosynthesis, respiration, and net oxygen
+change. These are deeper investigations of existing course ideas, not a claim
+about the school's current teaching order.
+
+The water pack's MS-LS1-2 tag connects to cell structure/function and turgor;
+xylem transport and transpiration are supporting enrichment, not a claim of
+complete coverage of that performance expectation. The photosynthesis pack
+connects MS-LS1-6 and MS-LS1-7 through matter/energy models and oxygen accounting.
+The celery activity requires adult cutting and does not measure exact
+transpiration. The paper oxygen-budget activity uses invented data and must
+not be presented as a measurement of living plants.
+
+Plant investigation references:
+- [NGSS MS-LS1 models and matter/energy processes](https://www.nextgenscience.org/dci-arrangement/ms-ls1-molecules-organisms-structures-and-processes)
+- [USGS: evapotranspiration and the water cycle](https://www.usgs.gov/water-science-school/science/evapotranspiration-and-water-cycle)
+
+The preceding completed enrichment pair is Competition and Resource Partitioning,
 then Invasive Species and Food-Web Changes. Each has 30 core and 15 distinct
 review questions, a worked comparison table, and an optional paper-model
 investigation. The pair extends limiting factors, recovery, and biodiversity
