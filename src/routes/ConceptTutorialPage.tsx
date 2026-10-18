@@ -54,6 +54,20 @@ function getTableRows(block: string): string[][] {
 }
 
 function renderTutorialSection(section: string, index: number): ReactNode {
+  const image = section.match(/^!\[([^\]]+)\]\((content\/[a-zA-Z0-9_/-]+\.(?:svg|png|webp))\)$/);
+  if (image) {
+    return (
+      <figure className="mx-auto w-full max-w-lg" key={index}>
+        <img
+          src={`${import.meta.env.BASE_URL}${image[2]}`}
+          alt={image[1]}
+          className="block h-auto w-full"
+          loading="lazy"
+        />
+      </figure>
+    );
+  }
+
   if (section.startsWith("### ")) {
     return (
       <h5 className="pt-2 text-lg font-semibold text-ink" key={index}>

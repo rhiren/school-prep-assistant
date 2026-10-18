@@ -350,13 +350,13 @@ function graphLinearBuilders(kind) {
               point(0, { n: b - 1, d: 1 }),
             ]);
     const questionText = [
-      `To graph ${equation(m, b)}, start at the y-intercept and use the slope. Which second point can you plot?`,
+      `To graph ${equation(m, b)}, start at the y-intercept and move right ${run} units. Which point do you reach?`,
       `Which graphing description matches ${equation(m, b)}?`,
       `What is the first point to plot when graphing ${equation(m, b)} from the y-intercept?`,
-      `A line has equation ${equation(m, b)}. Starting at ${start}, which point follows from the slope?`,
+      `A line has equation ${equation(m, b)}. Starting at ${start}, move right ${run} units. Which point do you reach?`,
       `A student wants to graph ${equation(m, b)}. Which steps should they use?`,
       `For ${equation(m, b)}, which y-axis point belongs on the graph before using slope?`,
-      `Use slope ${frac(m.n, m.d)} from y-intercept ${b}. Which point is on the line?`,
+      `Use slope ${frac(m.n, m.d)} from y-intercept ${b}. Move right ${run} units. Which point do you reach?`,
       `Which description correctly graphs a line with slope ${frac(m.n, m.d)} and y-intercept ${b}?`,
       `When graphing ${equation(m, b)}, what point shows where the line crosses the y-axis?`,
     ][template];
@@ -496,7 +496,10 @@ After plotting two points, check that both points satisfy the equation.
 ];
 
 for (const pack of packs) {
-  await writeTutorial(pack.slug, pack.title, pack.tutorial);
+  // The illustrated graphing tutorial is maintained directly in public/content.
+  if (pack.slug !== "graph-linear-equations") {
+    await writeTutorial(pack.slug, pack.title, pack.tutorial);
+  }
   for (const kind of ["core", "review"]) {
     await writeBank({
       slug: pack.slug,

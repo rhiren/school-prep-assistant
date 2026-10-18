@@ -11,6 +11,25 @@ import { TestModeProvider } from "../state/TestModeProvider";
 import { MemoryStorageService } from "../storage/memoryStorageService";
 
 describe("app smoke flow", () => {
+  it("renders graphing tutorial figures with accessible descriptions and the deployment base path", async () => {
+    const router = createMemoryRouter(routes, {
+      initialEntries: ["/concept/concept-graph-linear-equations/tutorial"],
+    });
+    const services = await createAppServices(new MemoryStorageService());
+    render(
+      <AppServicesProvider services={services}>
+        <TestModeProvider><RouterProvider router={router} /></TestModeProvider>
+      </AppServicesProvider>,
+    );
+    const images = await screen.findAllByRole("img", { name: /^Graph of y =/ });
+    expect(images).toHaveLength(2);
+    for (const [i, name] of ["positive", "negative"].entries()) {
+      expect(images[i]).toHaveAttribute("src", `${import.meta.env.BASE_URL}content/math/course3/images/graph-linear-${name}.svg`);
+    }
+    expect(screen.getByRole("heading", { name: "When you are unsure, make a table" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Check your reasoning" })).toBeInTheDocument();
+  });
+
   it("navigates from subjects to concept test start", async () => {
     const user = userEvent.setup();
     const router = createMemoryRouter(routes, {
