@@ -1,0 +1,1009 @@
+{
+  "testId": "course3-understand-functions-core",
+  "conceptId": "concept-understand-functions",
+  "type": "concept",
+  "title": "Understand Functions Core Test",
+  "description": "Identify inputs, reason about unique outputs, and explain representations and counterexamples.",
+  "questions": [
+    {
+      "id": "course3-understand-functions-core-001",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A machine assigns input 11 to output 15. Under the same rule, can that same input also have output 16?",
+      "correctAnswer": "No; one input cannot have two different outputs.",
+      "explanation": "A function assigns exactly one output to each input in its domain. Changing the output for the same input would violate that rule.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; one input cannot have two different outputs.",
+        "Yes; functions allow any number of outputs per input.",
+        "Yes; both outputs are positive.",
+        "No; outputs must equal inputs."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-002",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The complete relation is (11, 7), (12, 7), (13, 7). Is it a function of the first coordinate?",
+      "correctAnswer": "Yes; each input has one output.",
+      "explanation": "Different inputs may share an output. Check each first coordinate separately; none has conflicting outputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; the output 7 repeats.",
+        "Yes; each input has one output.",
+        "No; a function must increase.",
+        "Yes; any three pairs form a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-003",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The function rule is: add 5 to the input. What is the output for input 11?",
+      "correctAnswer": "16",
+      "explanation": "Apply the rule to the input: 11 + 5 = 16. The result is the output.",
+      "difficulty": "scaffold",
+      "options": [
+        "15",
+        "17",
+        "19",
+        "16"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-004",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rule sends 11 to 20. Which number is the input?",
+      "correctAnswer": "11",
+      "explanation": "In an input-to-output statement, the starting number is the input. The number it is sent to is the output.",
+      "difficulty": "scaffold",
+      "options": [
+        "20",
+        "12",
+        "11",
+        "9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-005",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The complete list is (11, 3), (11, 8). Which fact prevents it from being a function of x?",
+      "correctAnswer": "Input 11 has outputs 3 and 8.",
+      "explanation": "The conflict is two different outputs for one input. Different outputs at different inputs would be allowed.",
+      "difficulty": "scaffold",
+      "options": [
+        "There are only two pairs.",
+        "Input 11 has outputs 3 and 8.",
+        "The outputs are different numbers.",
+        "The numbers are all positive."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-006",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A machine assigns input 12 to output 16. Under the same rule, can that same input also have output 17?",
+      "correctAnswer": "No; one input cannot have two different outputs.",
+      "explanation": "A function assigns exactly one output to each input in its domain. Changing the output for the same input would violate that rule.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; one input cannot have two different outputs.",
+        "Yes; functions allow any number of outputs per input.",
+        "Yes; both outputs are positive.",
+        "No; outputs must equal inputs."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-007",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The complete relation is (12, 7), (13, 7), (14, 7). Is it a function of the first coordinate?",
+      "correctAnswer": "Yes; each input has one output.",
+      "explanation": "Different inputs may share an output. Check each first coordinate separately; none has conflicting outputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; the output 7 repeats.",
+        "No; a function must increase.",
+        "Yes; any three pairs form a function.",
+        "Yes; each input has one output."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-008",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The function rule is: add 5 to the input. What is the output for input 12?",
+      "correctAnswer": "17",
+      "explanation": "Apply the rule to the input: 12 + 5 = 17. The result is the output.",
+      "difficulty": "scaffold",
+      "options": [
+        "16",
+        "17",
+        "18",
+        "20"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-009",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rule sends 12 to 21. Which number is the input?",
+      "correctAnswer": "12",
+      "explanation": "In an input-to-output statement, the starting number is the input. The number it is sent to is the output.",
+      "difficulty": "scaffold",
+      "options": [
+        "12",
+        "21",
+        "13",
+        "9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-010",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The complete list is (12, 3), (12, 8). Which fact prevents it from being a function of x?",
+      "correctAnswer": "Input 12 has outputs 3 and 8.",
+      "explanation": "The conflict is two different outputs for one input. Different outputs at different inputs would be allowed.",
+      "difficulty": "scaffold",
+      "options": [
+        "There are only two pairs.",
+        "The outputs are different numbers.",
+        "Input 12 has outputs 3 and 8.",
+        "The numbers are all positive."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-011",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function already contains (11, 4) and (12, 6). Which new pair would create a conflict?",
+      "correctAnswer": "(11, 9)",
+      "explanation": "The existing input 11 already has output 4. Assigning it 9 would give two outputs; the other options introduce new inputs.",
+      "difficulty": "standard",
+      "options": [
+        "(13, 4)",
+        "(11, 9)",
+        "(14, 6)",
+        "(15, 9)"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-012",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A relation records (11, 5), (11, 5), (12, 8). Does the repeated identical record break the function rule?",
+      "correctAnswer": "No; the repeated input still has only one distinct output.",
+      "explanation": "Recording the same pair twice adds no new assignment. A repeated input breaks the rule only when its outputs disagree.",
+      "difficulty": "standard",
+      "options": [
+        "No; the repeated input still has only one distinct output.",
+        "Yes; an input may never be recorded twice.",
+        "Yes; outputs must be unique.",
+        "No; duplicate inputs can have any outputs."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-013",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function doubles its input, then subtracts 3. Which input produces output 23?",
+      "correctAnswer": "13",
+      "explanation": "Work backward: add 3 to 23, then divide by 2. Check: 2(13) - 3 = 23.",
+      "difficulty": "standard",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "13"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-014",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "At a school with 21 students, each student is assigned exactly one homeroom. Several students share a room. Is student-to-homeroom a function?",
+      "correctAnswer": "Yes; each student has exactly one assigned room.",
+      "explanation": "Inputs and outputs need not be numbers. Shared outputs are allowed; the unique room assigned to each student is what matters.",
+      "difficulty": "standard",
+      "options": [
+        "No; a room cannot be shared.",
+        "No; the inputs are not numbers.",
+        "Yes; each student has exactly one assigned room.",
+        "Yes; every relation involving students is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-015",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Only inputs 11 and 12 are allowed. Both are assigned output 0. How many distinct output values does this function have?",
+      "correctAnswer": "1",
+      "explanation": "There are two inputs but only one distinct output value, zero. A constant function is still a function.",
+      "difficulty": "standard",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "It is not a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-016",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function already contains (12, 4) and (13, 6). Which new pair would create a conflict?",
+      "correctAnswer": "(12, 9)",
+      "explanation": "The existing input 12 already has output 4. Assigning it 9 would give two outputs; the other options introduce new inputs.",
+      "difficulty": "standard",
+      "options": [
+        "(14, 4)",
+        "(12, 9)",
+        "(15, 6)",
+        "(16, 9)"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-017",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A relation records (12, 5), (12, 5), (13, 8). Does the repeated identical record break the function rule?",
+      "correctAnswer": "No; the repeated input still has only one distinct output.",
+      "explanation": "Recording the same pair twice adds no new assignment. A repeated input breaks the rule only when its outputs disagree.",
+      "difficulty": "standard",
+      "options": [
+        "Yes; an input may never be recorded twice.",
+        "Yes; outputs must be unique.",
+        "No; duplicate inputs can have any outputs.",
+        "No; the repeated input still has only one distinct output."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-018",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function doubles its input, then subtracts 3. Which input produces output 25?",
+      "correctAnswer": "14",
+      "explanation": "Work backward: add 3 to 25, then divide by 2. Check: 2(14) - 3 = 25.",
+      "difficulty": "standard",
+      "options": [
+        "13",
+        "15",
+        "14",
+        "17"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-019",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "At a school with 22 students, each student is assigned exactly one homeroom. Several students share a room. Is student-to-homeroom a function?",
+      "correctAnswer": "Yes; each student has exactly one assigned room.",
+      "explanation": "Inputs and outputs need not be numbers. Shared outputs are allowed; the unique room assigned to each student is what matters.",
+      "difficulty": "standard",
+      "options": [
+        "No; a room cannot be shared.",
+        "Yes; each student has exactly one assigned room.",
+        "No; the inputs are not numbers.",
+        "Yes; every relation involving students is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-020",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Only inputs 12 and 13 are allowed. Both are assigned output 0. How many distinct output values does this function have?",
+      "correctAnswer": "1",
+      "explanation": "There are two inputs but only one distinct output value, zero. A constant function is still a function.",
+      "difficulty": "standard",
+      "options": [
+        "0",
+        "2",
+        "It is not a function.",
+        "1"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-021",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function already contains (13, 4) and (14, 6). Which new pair would create a conflict?",
+      "correctAnswer": "(13, 9)",
+      "explanation": "The existing input 13 already has output 4. Assigning it 9 would give two outputs; the other options introduce new inputs.",
+      "difficulty": "standard",
+      "options": [
+        "(13, 9)",
+        "(15, 4)",
+        "(16, 6)",
+        "(17, 9)"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-022",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A relation records (13, 5), (13, 5), (14, 8). Does the repeated identical record break the function rule?",
+      "correctAnswer": "No; the repeated input still has only one distinct output.",
+      "explanation": "Recording the same pair twice adds no new assignment. A repeated input breaks the rule only when its outputs disagree.",
+      "difficulty": "standard",
+      "options": [
+        "Yes; an input may never be recorded twice.",
+        "Yes; outputs must be unique.",
+        "No; the repeated input still has only one distinct output.",
+        "No; duplicate inputs can have any outputs."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-023",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function doubles its input, then subtracts 3. Which input produces output 27?",
+      "correctAnswer": "15",
+      "explanation": "Work backward: add 3 to 27, then divide by 2. Check: 2(15) - 3 = 27.",
+      "difficulty": "standard",
+      "options": [
+        "15",
+        "14",
+        "16",
+        "18"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-024",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "At a school with 23 students, each student is assigned exactly one homeroom. Several students share a room. Is student-to-homeroom a function?",
+      "correctAnswer": "Yes; each student has exactly one assigned room.",
+      "explanation": "Inputs and outputs need not be numbers. Shared outputs are allowed; the unique room assigned to each student is what matters.",
+      "difficulty": "standard",
+      "options": [
+        "No; a room cannot be shared.",
+        "Yes; each student has exactly one assigned room.",
+        "No; the inputs are not numbers.",
+        "Yes; every relation involving students is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-025",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Only inputs 13 and 14 are allowed. Both are assigned output 0. How many distinct output values does this function have?",
+      "correctAnswer": "1",
+      "explanation": "There are two inputs but only one distinct output value, zero. A constant function is still a function.",
+      "difficulty": "standard",
+      "options": [
+        "0",
+        "2",
+        "It is not a function.",
+        "1"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-026",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function already contains (14, 4) and (15, 6). Which new pair would create a conflict?",
+      "correctAnswer": "(14, 9)",
+      "explanation": "The existing input 14 already has output 4. Assigning it 9 would give two outputs; the other options introduce new inputs.",
+      "difficulty": "standard",
+      "options": [
+        "(16, 4)",
+        "(17, 6)",
+        "(14, 9)",
+        "(18, 9)"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-027",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A relation records (14, 5), (14, 5), (15, 8). Does the repeated identical record break the function rule?",
+      "correctAnswer": "No; the repeated input still has only one distinct output.",
+      "explanation": "Recording the same pair twice adds no new assignment. A repeated input breaks the rule only when its outputs disagree.",
+      "difficulty": "standard",
+      "options": [
+        "No; the repeated input still has only one distinct output.",
+        "Yes; an input may never be recorded twice.",
+        "Yes; outputs must be unique.",
+        "No; duplicate inputs can have any outputs."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-028",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function doubles its input, then subtracts 3. Which input produces output 29?",
+      "correctAnswer": "16",
+      "explanation": "Work backward: add 3 to 29, then divide by 2. Check: 2(16) - 3 = 29.",
+      "difficulty": "standard",
+      "options": [
+        "15",
+        "17",
+        "19",
+        "16"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-029",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "At a school with 24 students, each student is assigned exactly one homeroom. Several students share a room. Is student-to-homeroom a function?",
+      "correctAnswer": "Yes; each student has exactly one assigned room.",
+      "explanation": "Inputs and outputs need not be numbers. Shared outputs are allowed; the unique room assigned to each student is what matters.",
+      "difficulty": "standard",
+      "options": [
+        "No; a room cannot be shared.",
+        "Yes; each student has exactly one assigned room.",
+        "No; the inputs are not numbers.",
+        "Yes; every relation involving students is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-030",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Only inputs 14 and 15 are allowed. Both are assigned output 0. How many distinct output values does this function have?",
+      "correctAnswer": "1",
+      "explanation": "There are two inputs but only one distinct output value, zero. A constant function is still a function.",
+      "difficulty": "standard",
+      "options": [
+        "0",
+        "2",
+        "1",
+        "It is not a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-031",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function already contains (15, 4) and (16, 6). Which new pair would create a conflict?",
+      "correctAnswer": "(15, 9)",
+      "explanation": "The existing input 15 already has output 4. Assigning it 9 would give two outputs; the other options introduce new inputs.",
+      "difficulty": "standard",
+      "options": [
+        "(17, 4)",
+        "(18, 6)",
+        "(15, 9)",
+        "(19, 9)"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-032",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A relation records (15, 5), (15, 5), (16, 8). Does the repeated identical record break the function rule?",
+      "correctAnswer": "No; the repeated input still has only one distinct output.",
+      "explanation": "Recording the same pair twice adds no new assignment. A repeated input breaks the rule only when its outputs disagree.",
+      "difficulty": "standard",
+      "options": [
+        "No; the repeated input still has only one distinct output.",
+        "Yes; an input may never be recorded twice.",
+        "Yes; outputs must be unique.",
+        "No; duplicate inputs can have any outputs."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-033",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function doubles its input, then subtracts 3. Which input produces output 31?",
+      "correctAnswer": "17",
+      "explanation": "Work backward: add 3 to 31, then divide by 2. Check: 2(17) - 3 = 31.",
+      "difficulty": "standard",
+      "options": [
+        "16",
+        "18",
+        "20",
+        "17"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-034",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "At a school with 25 students, each student is assigned exactly one homeroom. Several students share a room. Is student-to-homeroom a function?",
+      "correctAnswer": "Yes; each student has exactly one assigned room.",
+      "explanation": "Inputs and outputs need not be numbers. Shared outputs are allowed; the unique room assigned to each student is what matters.",
+      "difficulty": "standard",
+      "options": [
+        "No; a room cannot be shared.",
+        "Yes; each student has exactly one assigned room.",
+        "No; the inputs are not numbers.",
+        "Yes; every relation involving students is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-035",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Only inputs 15 and 16 are allowed. Both are assigned output 0. How many distinct output values does this function have?",
+      "correctAnswer": "1",
+      "explanation": "There are two inputs but only one distinct output value, zero. A constant function is still a function.",
+      "difficulty": "standard",
+      "options": [
+        "0",
+        "2",
+        "1",
+        "It is not a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-036",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A machine is tested at inputs 11, 12, and 13, with one output observed each time. What can you conclude about untested inputs?",
+      "correctAnswer": "The observations show no conflict, but do not prove the machine follows a function rule for every allowed input.",
+      "explanation": "A finite sample can reveal a violation, but cannot establish unspecified behavior outside that sample. A complete rule or specification is needed.",
+      "difficulty": "challenge",
+      "options": [
+        "Every untested input must give the same output.",
+        "The observations show no conflict, but do not prove the machine follows a function rule for every allowed input.",
+        "Three tests prove the entire machine is a function.",
+        "The machine cannot be a function unless every output differs."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-037",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function sends 11 to 4 and 12 to 4. Reverse these assignments. Is the reverse relation a function of its input?",
+      "correctAnswer": "No; input 4 now has two different outputs.",
+      "explanation": "Reversing produces (4, 11) and (4, 12). The shared original output becomes one input with two outputs.",
+      "difficulty": "challenge",
+      "options": [
+        "No; input 4 now has two different outputs.",
+        "Yes; reversing any function preserves the function rule.",
+        "No; reversing a relation removes all inputs.",
+        "Yes; the original inputs were different."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-038",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For each real input x, a relation allows every y with y squared = x squared. At x = 11, what shows this is not a function of x?",
+      "correctAnswer": "Both y = 11 and y = -11 are allowed.",
+      "explanation": "Both 11 and -11 have square 121. Since this nonzero input has two allowed outputs, the relation fails the function rule.",
+      "difficulty": "challenge",
+      "options": [
+        "Only y = 11 is allowed.",
+        "Only y = 0 is allowed.",
+        "There are no allowed outputs.",
+        "Both y = 11 and y = -11 are allowed."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-039",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For whole-number inputs, a rule outputs x + 2 when x is even, and x - 1 when x is odd. Is this a function, and what is its output at 23?",
+      "correctAnswer": "Yes; the output is 22, using the odd-input rule.",
+      "explanation": "Every whole number is either even or odd, never both. Exactly one instruction applies to each input, so the rule assigns one output.",
+      "difficulty": "challenge",
+      "options": [
+        "No; having two instructions always makes two outputs.",
+        "Yes; the output is 25, using the even-input rule.",
+        "No; odd inputs cannot belong to functions.",
+        "Yes; the output is 22, using the odd-input rule."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-040",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A temperature app uses only the day number as input. On day 11, it reports 12 degrees at noon and 17 degrees at 3 p.m. Which change makes the input specific enough for one recorded output?",
+      "correctAnswer": "Use the pair (day, time) as the input, with one reading for each pair.",
+      "explanation": "The day alone does not distinguish the two readings. Including time makes the input identify the particular measurement.",
+      "difficulty": "challenge",
+      "options": [
+        "Keep only the day as input and assign both outputs.",
+        "Use the pair (day, time) as the input, with one reading for each pair.",
+        "Replace both readings with their sum without changing the task.",
+        "Require different days to have different temperatures."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-041",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A machine is tested at inputs 12, 13, and 14, with one output observed each time. What can you conclude about untested inputs?",
+      "correctAnswer": "The observations show no conflict, but do not prove the machine follows a function rule for every allowed input.",
+      "explanation": "A finite sample can reveal a violation, but cannot establish unspecified behavior outside that sample. A complete rule or specification is needed.",
+      "difficulty": "challenge",
+      "options": [
+        "Every untested input must give the same output.",
+        "Three tests prove the entire machine is a function.",
+        "The observations show no conflict, but do not prove the machine follows a function rule for every allowed input.",
+        "The machine cannot be a function unless every output differs."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-042",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function sends 12 to 4 and 13 to 4. Reverse these assignments. Is the reverse relation a function of its input?",
+      "correctAnswer": "No; input 4 now has two different outputs.",
+      "explanation": "Reversing produces (4, 12) and (4, 13). The shared original output becomes one input with two outputs.",
+      "difficulty": "challenge",
+      "options": [
+        "No; input 4 now has two different outputs.",
+        "Yes; reversing any function preserves the function rule.",
+        "No; reversing a relation removes all inputs.",
+        "Yes; the original inputs were different."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-043",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For each real input x, a relation allows every y with y squared = x squared. At x = 12, what shows this is not a function of x?",
+      "correctAnswer": "Both y = 12 and y = -12 are allowed.",
+      "explanation": "Both 12 and -12 have square 144. Since this nonzero input has two allowed outputs, the relation fails the function rule.",
+      "difficulty": "challenge",
+      "options": [
+        "Both y = 12 and y = -12 are allowed.",
+        "Only y = 12 is allowed.",
+        "Only y = 0 is allowed.",
+        "There are no allowed outputs."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-044",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For whole-number inputs, a rule outputs x + 2 when x is even, and x - 1 when x is odd. Is this a function, and what is its output at 25?",
+      "correctAnswer": "Yes; the output is 24, using the odd-input rule.",
+      "explanation": "Every whole number is either even or odd, never both. Exactly one instruction applies to each input, so the rule assigns one output.",
+      "difficulty": "challenge",
+      "options": [
+        "No; having two instructions always makes two outputs.",
+        "Yes; the output is 27, using the even-input rule.",
+        "Yes; the output is 24, using the odd-input rule.",
+        "No; odd inputs cannot belong to functions."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-045",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A temperature app uses only the day number as input. On day 12, it reports 12 degrees at noon and 17 degrees at 3 p.m. Which change makes the input specific enough for one recorded output?",
+      "correctAnswer": "Use the pair (day, time) as the input, with one reading for each pair.",
+      "explanation": "The day alone does not distinguish the two readings. Including time makes the input identify the particular measurement.",
+      "difficulty": "challenge",
+      "options": [
+        "Keep only the day as input and assign both outputs.",
+        "Use the pair (day, time) as the input, with one reading for each pair.",
+        "Replace both readings with their sum without changing the task.",
+        "Require different days to have different temperatures."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-046",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A machine is tested at inputs 13, 14, and 15, with one output observed each time. What can you conclude about untested inputs?",
+      "correctAnswer": "The observations show no conflict, but do not prove the machine follows a function rule for every allowed input.",
+      "explanation": "A finite sample can reveal a violation, but cannot establish unspecified behavior outside that sample. A complete rule or specification is needed.",
+      "difficulty": "challenge",
+      "options": [
+        "Every untested input must give the same output.",
+        "Three tests prove the entire machine is a function.",
+        "The machine cannot be a function unless every output differs.",
+        "The observations show no conflict, but do not prove the machine follows a function rule for every allowed input."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-047",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function sends 13 to 4 and 14 to 4. Reverse these assignments. Is the reverse relation a function of its input?",
+      "correctAnswer": "No; input 4 now has two different outputs.",
+      "explanation": "Reversing produces (4, 13) and (4, 14). The shared original output becomes one input with two outputs.",
+      "difficulty": "challenge",
+      "options": [
+        "Yes; reversing any function preserves the function rule.",
+        "No; input 4 now has two different outputs.",
+        "No; reversing a relation removes all inputs.",
+        "Yes; the original inputs were different."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-048",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For each real input x, a relation allows every y with y squared = x squared. At x = 13, what shows this is not a function of x?",
+      "correctAnswer": "Both y = 13 and y = -13 are allowed.",
+      "explanation": "Both 13 and -13 have square 169. Since this nonzero input has two allowed outputs, the relation fails the function rule.",
+      "difficulty": "challenge",
+      "options": [
+        "Both y = 13 and y = -13 are allowed.",
+        "Only y = 13 is allowed.",
+        "Only y = 0 is allowed.",
+        "There are no allowed outputs."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-049",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For whole-number inputs, a rule outputs x + 2 when x is even, and x - 1 when x is odd. Is this a function, and what is its output at 27?",
+      "correctAnswer": "Yes; the output is 26, using the odd-input rule.",
+      "explanation": "Every whole number is either even or odd, never both. Exactly one instruction applies to each input, so the rule assigns one output.",
+      "difficulty": "challenge",
+      "options": [
+        "No; having two instructions always makes two outputs.",
+        "Yes; the output is 29, using the even-input rule.",
+        "Yes; the output is 26, using the odd-input rule.",
+        "No; odd inputs cannot belong to functions."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-understand-functions-core-050",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A temperature app uses only the day number as input. On day 13, it reports 12 degrees at noon and 17 degrees at 3 p.m. Which change makes the input specific enough for one recorded output?",
+      "correctAnswer": "Use the pair (day, time) as the input, with one reading for each pair.",
+      "explanation": "The day alone does not distinguish the two readings. Including time makes the input identify the particular measurement.",
+      "difficulty": "challenge",
+      "options": [
+        "Keep only the day as input and assign both outputs.",
+        "Replace both readings with their sum without changing the task.",
+        "Require different days to have different temperatures.",
+        "Use the pair (day, time) as the input, with one reading for each pair."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1009 @@
+{
+  "testId": "course3-functions-tables-mapping-diagrams-core",
+  "conceptId": "concept-functions-tables-mapping-diagrams",
+  "type": "concept",
+  "title": "Functions in Tables and Mapping Diagrams Core Test",
+  "description": "Identify inputs, reason about unique outputs, and explain representations and counterexamples.",
+  "questions": [
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-001",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table lists x -> y as 11 -> 2, 12 -> 4, 13 -> 6. Is the displayed relation a function?",
+      "correctAnswer": "Yes; every listed x has one y.",
+      "explanation": "Read the input column first. Each listed input has one assignment, so these rows define a function on the listed inputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "Yes; every listed x has one y.",
+        "No; the y-values are different.",
+        "No; x does not start at zero.",
+        "Yes; every table is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-002",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping shows arrows 11 -> 5 and 11 -> 9. Which input has conflicting outputs?",
+      "correctAnswer": "11",
+      "explanation": "Follow the arrows from 11: one goes to 5 and one to 9. One input with two different outputs fails the test.",
+      "difficulty": "scaffold",
+      "options": [
+        "5",
+        "11",
+        "9",
+        "12"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-003",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Three arrows are 11 -> 8, 12 -> 8, 13 -> 8. Do converging arrows break the function rule?",
+      "correctAnswer": "No; each input still has just one outgoing assignment.",
+      "explanation": "Several arrows may end at the same output. The test concerns arrows leaving each input, not arriving at each output.",
+      "difficulty": "scaffold",
+      "options": [
+        "Yes; an output can receive only one arrow.",
+        "No; each input still has just one outgoing assignment.",
+        "Yes; the output must increase.",
+        "No; every arrow diagram is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-004",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Read the table: input 11 gives 3; input 12 gives 6; input 13 gives 9. What is the output for input 12?",
+      "correctAnswer": "6",
+      "explanation": "Find the specified input row and read its paired output. Do not use the input number itself as the answer.",
+      "difficulty": "scaffold",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-005",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The stated input set is {11, 12, 13}. Arrows are shown only from 11 and 12. What is missing for a function on that entire input set?",
+      "correctAnswer": "One output assignment for 13.",
+      "explanation": "A function must assign an output to every input in its stated domain, as well as avoiding conflicting outputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "A different output for every input.",
+        "A second arrow from every input.",
+        "One output assignment for 13.",
+        "An arrow from every output back to an input."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-006",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table lists x -> y as 12 -> 2, 13 -> 4, 14 -> 6. Is the displayed relation a function?",
+      "correctAnswer": "Yes; every listed x has one y.",
+      "explanation": "Read the input column first. Each listed input has one assignment, so these rows define a function on the listed inputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; the y-values are different.",
+        "No; x does not start at zero.",
+        "Yes; every table is a function.",
+        "Yes; every listed x has one y."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-007",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping shows arrows 12 -> 5 and 12 -> 9. Which input has conflicting outputs?",
+      "correctAnswer": "12",
+      "explanation": "Follow the arrows from 12: one goes to 5 and one to 9. One input with two different outputs fails the test.",
+      "difficulty": "scaffold",
+      "options": [
+        "5",
+        "12",
+        "9",
+        "13"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-008",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Three arrows are 12 -> 8, 13 -> 8, 14 -> 8. Do converging arrows break the function rule?",
+      "correctAnswer": "No; each input still has just one outgoing assignment.",
+      "explanation": "Several arrows may end at the same output. The test concerns arrows leaving each input, not arriving at each output.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; each input still has just one outgoing assignment.",
+        "Yes; an output can receive only one arrow.",
+        "Yes; the output must increase.",
+        "No; every arrow diagram is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-009",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Read the table: input 12 gives 3; input 13 gives 6; input 14 gives 9. What is the output for input 13?",
+      "correctAnswer": "6",
+      "explanation": "Find the specified input row and read its paired output. Do not use the input number itself as the answer.",
+      "difficulty": "scaffold",
+      "options": [
+        "5",
+        "7",
+        "6",
+        "9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-010",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The stated input set is {12, 13, 14}. Arrows are shown only from 12 and 13. What is missing for a function on that entire input set?",
+      "correctAnswer": "One output assignment for 14.",
+      "explanation": "A function must assign an output to every input in its stated domain, as well as avoiding conflicting outputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "One output assignment for 14.",
+        "A different output for every input.",
+        "A second arrow from every input.",
+        "An arrow from every output back to an input."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-011",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (11, 2), (12, 5), (11, 2). A student rejects it because x repeats. What is the correction?",
+      "correctAnswer": "The repeated x has the same y both times, so the displayed relation is a function.",
+      "explanation": "Identical rows repeat the same assignment. Only different outputs for the same input create a conflict.",
+      "difficulty": "standard",
+      "options": [
+        "The repeated x must be deleted even when its output agrees.",
+        "It is not a function because every y must be different.",
+        "It is a function only if the inputs are sorted.",
+        "The repeated x has the same y both times, so the displayed relation is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-012",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function table has (11, 3), (12, 7), (11, k). What value of k avoids a conflict?",
+      "correctAnswer": "3",
+      "explanation": "Input 11 already gives 3. Its second row must agree with that output.",
+      "difficulty": "standard",
+      "options": [
+        "7",
+        "0",
+        "4",
+        "3"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-013",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping has 11 -> 4 and 12 -> 6. Which additional arrow would make the relation fail the function test?",
+      "correctAnswer": "12 -> 9",
+      "explanation": "Input 12 would have outputs 6 and 9. The other arrows have new inputs and create no conflict.",
+      "difficulty": "standard",
+      "options": [
+        "13 -> 4",
+        "14 -> 6",
+        "12 -> 9",
+        "15 -> 9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-014",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table is shown in this order: (13, 8), (11, 4), (12, 6). Which mapping represents exactly the same relation?",
+      "correctAnswer": "11 -> 4; 12 -> 6; 13 -> 8",
+      "explanation": "The order of rows can change, but each input-output pairing must stay intact. Reversing arrows changes the relation.",
+      "difficulty": "standard",
+      "options": [
+        "11 -> 8; 12 -> 6; 13 -> 4",
+        "11 -> 4; 12 -> 6; 13 -> 8",
+        "4 -> 11; 6 -> 12; 8 -> 13",
+        "11 -> 4; 12 -> 8; 13 -> 6"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-015",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The table follows the stated rule y = 2x + 1. Its rows include (11, 23) and (13, ?). What fills the missing output?",
+      "correctAnswer": "27",
+      "explanation": "Use the supplied rule, not a guessed pattern: 2(13) + 1 = 27.",
+      "difficulty": "standard",
+      "options": [
+        "27",
+        "26",
+        "28",
+        "30"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-016",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (12, 2), (13, 5), (12, 2). A student rejects it because x repeats. What is the correction?",
+      "correctAnswer": "The repeated x has the same y both times, so the displayed relation is a function.",
+      "explanation": "Identical rows repeat the same assignment. Only different outputs for the same input create a conflict.",
+      "difficulty": "standard",
+      "options": [
+        "The repeated x must be deleted even when its output agrees.",
+        "It is not a function because every y must be different.",
+        "It is a function only if the inputs are sorted.",
+        "The repeated x has the same y both times, so the displayed relation is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-017",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function table has (12, 3), (13, 7), (12, k). What value of k avoids a conflict?",
+      "correctAnswer": "3",
+      "explanation": "Input 12 already gives 3. Its second row must agree with that output.",
+      "difficulty": "standard",
+      "options": [
+        "7",
+        "3",
+        "0",
+        "4"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-018",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping has 12 -> 4 and 13 -> 6. Which additional arrow would make the relation fail the function test?",
+      "correctAnswer": "13 -> 9",
+      "explanation": "Input 13 would have outputs 6 and 9. The other arrows have new inputs and create no conflict.",
+      "difficulty": "standard",
+      "options": [
+        "14 -> 4",
+        "15 -> 6",
+        "13 -> 9",
+        "16 -> 9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-019",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table is shown in this order: (14, 8), (12, 4), (13, 6). Which mapping represents exactly the same relation?",
+      "correctAnswer": "12 -> 4; 13 -> 6; 14 -> 8",
+      "explanation": "The order of rows can change, but each input-output pairing must stay intact. Reversing arrows changes the relation.",
+      "difficulty": "standard",
+      "options": [
+        "12 -> 4; 13 -> 6; 14 -> 8",
+        "12 -> 8; 13 -> 6; 14 -> 4",
+        "4 -> 12; 6 -> 13; 8 -> 14",
+        "12 -> 4; 13 -> 8; 14 -> 6"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-020",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The table follows the stated rule y = 2x + 1. Its rows include (12, 25) and (14, ?). What fills the missing output?",
+      "correctAnswer": "29",
+      "explanation": "Use the supplied rule, not a guessed pattern: 2(14) + 1 = 29.",
+      "difficulty": "standard",
+      "options": [
+        "28",
+        "30",
+        "32",
+        "29"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-021",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (13, 2), (14, 5), (13, 2). A student rejects it because x repeats. What is the correction?",
+      "correctAnswer": "The repeated x has the same y both times, so the displayed relation is a function.",
+      "explanation": "Identical rows repeat the same assignment. Only different outputs for the same input create a conflict.",
+      "difficulty": "standard",
+      "options": [
+        "The repeated x must be deleted even when its output agrees.",
+        "It is not a function because every y must be different.",
+        "The repeated x has the same y both times, so the displayed relation is a function.",
+        "It is a function only if the inputs are sorted."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-022",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function table has (13, 3), (14, 7), (13, k). What value of k avoids a conflict?",
+      "correctAnswer": "3",
+      "explanation": "Input 13 already gives 3. Its second row must agree with that output.",
+      "difficulty": "standard",
+      "options": [
+        "7",
+        "3",
+        "0",
+        "4"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-023",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping has 13 -> 4 and 14 -> 6. Which additional arrow would make the relation fail the function test?",
+      "correctAnswer": "14 -> 9",
+      "explanation": "Input 14 would have outputs 6 and 9. The other arrows have new inputs and create no conflict.",
+      "difficulty": "standard",
+      "options": [
+        "15 -> 4",
+        "16 -> 6",
+        "17 -> 9",
+        "14 -> 9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-024",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table is shown in this order: (15, 8), (13, 4), (14, 6). Which mapping represents exactly the same relation?",
+      "correctAnswer": "13 -> 4; 14 -> 6; 15 -> 8",
+      "explanation": "The order of rows can change, but each input-output pairing must stay intact. Reversing arrows changes the relation.",
+      "difficulty": "standard",
+      "options": [
+        "13 -> 8; 14 -> 6; 15 -> 4",
+        "4 -> 13; 6 -> 14; 8 -> 15",
+        "13 -> 4; 14 -> 6; 15 -> 8",
+        "13 -> 4; 14 -> 8; 15 -> 6"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-025",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The table follows the stated rule y = 2x + 1. Its rows include (13, 27) and (15, ?). What fills the missing output?",
+      "correctAnswer": "31",
+      "explanation": "Use the supplied rule, not a guessed pattern: 2(15) + 1 = 31.",
+      "difficulty": "standard",
+      "options": [
+        "31",
+        "30",
+        "32",
+        "34"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-026",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (14, 2), (15, 5), (14, 2). A student rejects it because x repeats. What is the correction?",
+      "correctAnswer": "The repeated x has the same y both times, so the displayed relation is a function.",
+      "explanation": "Identical rows repeat the same assignment. Only different outputs for the same input create a conflict.",
+      "difficulty": "standard",
+      "options": [
+        "The repeated x must be deleted even when its output agrees.",
+        "The repeated x has the same y both times, so the displayed relation is a function.",
+        "It is not a function because every y must be different.",
+        "It is a function only if the inputs are sorted."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-027",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function table has (14, 3), (15, 7), (14, k). What value of k avoids a conflict?",
+      "correctAnswer": "3",
+      "explanation": "Input 14 already gives 3. Its second row must agree with that output.",
+      "difficulty": "standard",
+      "options": [
+        "7",
+        "0",
+        "4",
+        "3"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-028",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping has 14 -> 4 and 15 -> 6. Which additional arrow would make the relation fail the function test?",
+      "correctAnswer": "15 -> 9",
+      "explanation": "Input 15 would have outputs 6 and 9. The other arrows have new inputs and create no conflict.",
+      "difficulty": "standard",
+      "options": [
+        "16 -> 4",
+        "17 -> 6",
+        "15 -> 9",
+        "18 -> 9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-029",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table is shown in this order: (16, 8), (14, 4), (15, 6). Which mapping represents exactly the same relation?",
+      "correctAnswer": "14 -> 4; 15 -> 6; 16 -> 8",
+      "explanation": "The order of rows can change, but each input-output pairing must stay intact. Reversing arrows changes the relation.",
+      "difficulty": "standard",
+      "options": [
+        "14 -> 8; 15 -> 6; 16 -> 4",
+        "14 -> 4; 15 -> 6; 16 -> 8",
+        "4 -> 14; 6 -> 15; 8 -> 16",
+        "14 -> 4; 15 -> 8; 16 -> 6"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-030",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The table follows the stated rule y = 2x + 1. Its rows include (14, 29) and (16, ?). What fills the missing output?",
+      "correctAnswer": "33",
+      "explanation": "Use the supplied rule, not a guessed pattern: 2(16) + 1 = 33.",
+      "difficulty": "standard",
+      "options": [
+        "33",
+        "32",
+        "34",
+        "36"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-031",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (15, 2), (16, 5), (15, 2). A student rejects it because x repeats. What is the correction?",
+      "correctAnswer": "The repeated x has the same y both times, so the displayed relation is a function.",
+      "explanation": "Identical rows repeat the same assignment. Only different outputs for the same input create a conflict.",
+      "difficulty": "standard",
+      "options": [
+        "The repeated x must be deleted even when its output agrees.",
+        "The repeated x has the same y both times, so the displayed relation is a function.",
+        "It is not a function because every y must be different.",
+        "It is a function only if the inputs are sorted."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-032",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function table has (15, 3), (16, 7), (15, k). What value of k avoids a conflict?",
+      "correctAnswer": "3",
+      "explanation": "Input 15 already gives 3. Its second row must agree with that output.",
+      "difficulty": "standard",
+      "options": [
+        "7",
+        "0",
+        "4",
+        "3"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-033",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping has 15 -> 4 and 16 -> 6. Which additional arrow would make the relation fail the function test?",
+      "correctAnswer": "16 -> 9",
+      "explanation": "Input 16 would have outputs 6 and 9. The other arrows have new inputs and create no conflict.",
+      "difficulty": "standard",
+      "options": [
+        "16 -> 9",
+        "17 -> 4",
+        "18 -> 6",
+        "19 -> 9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-034",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table is shown in this order: (17, 8), (15, 4), (16, 6). Which mapping represents exactly the same relation?",
+      "correctAnswer": "15 -> 4; 16 -> 6; 17 -> 8",
+      "explanation": "The order of rows can change, but each input-output pairing must stay intact. Reversing arrows changes the relation.",
+      "difficulty": "standard",
+      "options": [
+        "15 -> 8; 16 -> 6; 17 -> 4",
+        "4 -> 15; 6 -> 16; 8 -> 17",
+        "15 -> 4; 16 -> 6; 17 -> 8",
+        "15 -> 4; 16 -> 8; 17 -> 6"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-035",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The table follows the stated rule y = 2x + 1. Its rows include (15, 31) and (17, ?). What fills the missing output?",
+      "correctAnswer": "35",
+      "explanation": "Use the supplied rule, not a guessed pattern: 2(17) + 1 = 35.",
+      "difficulty": "standard",
+      "options": [
+        "34",
+        "36",
+        "38",
+        "35"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-036",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table has rows (11, 4), (11, 9), (12, 9), (13, 7). Which single deletion leaves a function on all three original inputs?",
+      "correctAnswer": "Delete (11, 9).",
+      "explanation": "Deleting the conflicting row for 11 leaves one assignment for each original input. Removing a different input would not resolve the conflict.",
+      "difficulty": "challenge",
+      "options": [
+        "Delete (12, 9).",
+        "Delete (13, 7).",
+        "Delete (11, 9).",
+        "No deletion can repair it."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-037",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (11, 2), (12, 2), (13, 5). What happens if the input and output columns are exchanged?",
+      "correctAnswer": "The reverse is not a function because input 2 has two different outputs.",
+      "explanation": "After exchange, (2, 11) and (2, 12) conflict. The original relation allows a shared output; the reverse does not allow conflicting outputs.",
+      "difficulty": "challenge",
+      "options": [
+        "The reverse must be a function because the original was.",
+        "The reverse is not a function because input 2 has two different outputs.",
+        "The reverse is not a function because it has three rows.",
+        "Both directions are functions because all entries are numbers."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-038",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Only the rows (11, 4) and (12, 6) are given, with no formula. Can you determine the output for input 13 uniquely?",
+      "correctAnswer": "No; many function rules can agree with the shown rows and differ at the new input.",
+      "explanation": "The displayed rows define a function on their listed inputs. Extending beyond them requires a stated rule; a plausible pattern is not uniquely determined.",
+      "difficulty": "challenge",
+      "options": [
+        "No; many function rules can agree with the shown rows and differ at the new input.",
+        "Yes; it must be 8 because the previous increase was 2.",
+        "Yes; it must be 6 because outputs cannot change.",
+        "No; two-row tables can never represent functions."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-039",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (k, 3), (11, 8), (12, 3). Which listed k makes it fail to be a function?",
+      "correctAnswer": "11",
+      "explanation": "If k = 11, that input receives both 3 and 8. If k = 12, the duplicate has the same output 3 and remains valid.",
+      "difficulty": "challenge",
+      "options": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-040",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A complete relation pairs each of 15 inputs with one output. Exactly two inputs share an output; all other outputs are distinct. How many distinct outputs are there, and is it a function?",
+      "correctAnswer": "14 distinct outputs; yes.",
+      "explanation": "One shared pair reduces the number of distinct outputs by one. Every input still has exactly one output, so the relation is a function.",
+      "difficulty": "challenge",
+      "options": [
+        "15 distinct outputs; yes.",
+        "14 distinct outputs; no.",
+        "13 distinct outputs; no.",
+        "14 distinct outputs; yes."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-041",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table has rows (12, 4), (12, 9), (13, 9), (14, 7). Which single deletion leaves a function on all three original inputs?",
+      "correctAnswer": "Delete (12, 9).",
+      "explanation": "Deleting the conflicting row for 12 leaves one assignment for each original input. Removing a different input would not resolve the conflict.",
+      "difficulty": "challenge",
+      "options": [
+        "Delete (13, 9).",
+        "Delete (12, 9).",
+        "Delete (14, 7).",
+        "No deletion can repair it."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-042",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (12, 2), (13, 2), (14, 5). What happens if the input and output columns are exchanged?",
+      "correctAnswer": "The reverse is not a function because input 2 has two different outputs.",
+      "explanation": "After exchange, (2, 12) and (2, 13) conflict. The original relation allows a shared output; the reverse does not allow conflicting outputs.",
+      "difficulty": "challenge",
+      "options": [
+        "The reverse must be a function because the original was.",
+        "The reverse is not a function because it has three rows.",
+        "The reverse is not a function because input 2 has two different outputs.",
+        "Both directions are functions because all entries are numbers."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-043",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Only the rows (12, 4) and (13, 6) are given, with no formula. Can you determine the output for input 14 uniquely?",
+      "correctAnswer": "No; many function rules can agree with the shown rows and differ at the new input.",
+      "explanation": "The displayed rows define a function on their listed inputs. Extending beyond them requires a stated rule; a plausible pattern is not uniquely determined.",
+      "difficulty": "challenge",
+      "options": [
+        "Yes; it must be 8 because the previous increase was 2.",
+        "Yes; it must be 6 because outputs cannot change.",
+        "No; many function rules can agree with the shown rows and differ at the new input.",
+        "No; two-row tables can never represent functions."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-044",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (k, 3), (12, 8), (13, 3). Which listed k makes it fail to be a function?",
+      "correctAnswer": "12",
+      "explanation": "If k = 12, that input receives both 3 and 8. If k = 13, the duplicate has the same output 3 and remains valid.",
+      "difficulty": "challenge",
+      "options": [
+        "13",
+        "14",
+        "15",
+        "12"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-045",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A complete relation pairs each of 16 inputs with one output. Exactly two inputs share an output; all other outputs are distinct. How many distinct outputs are there, and is it a function?",
+      "correctAnswer": "15 distinct outputs; yes.",
+      "explanation": "One shared pair reduces the number of distinct outputs by one. Every input still has exactly one output, so the relation is a function.",
+      "difficulty": "challenge",
+      "options": [
+        "16 distinct outputs; yes.",
+        "15 distinct outputs; yes.",
+        "15 distinct outputs; no.",
+        "14 distinct outputs; no."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-046",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table has rows (13, 4), (13, 9), (14, 9), (15, 7). Which single deletion leaves a function on all three original inputs?",
+      "correctAnswer": "Delete (13, 9).",
+      "explanation": "Deleting the conflicting row for 13 leaves one assignment for each original input. Removing a different input would not resolve the conflict.",
+      "difficulty": "challenge",
+      "options": [
+        "Delete (13, 9).",
+        "Delete (14, 9).",
+        "Delete (15, 7).",
+        "No deletion can repair it."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-047",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (13, 2), (14, 2), (15, 5). What happens if the input and output columns are exchanged?",
+      "correctAnswer": "The reverse is not a function because input 2 has two different outputs.",
+      "explanation": "After exchange, (2, 13) and (2, 14) conflict. The original relation allows a shared output; the reverse does not allow conflicting outputs.",
+      "difficulty": "challenge",
+      "options": [
+        "The reverse must be a function because the original was.",
+        "The reverse is not a function because input 2 has two different outputs.",
+        "The reverse is not a function because it has three rows.",
+        "Both directions are functions because all entries are numbers."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-048",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Only the rows (13, 4) and (14, 6) are given, with no formula. Can you determine the output for input 15 uniquely?",
+      "correctAnswer": "No; many function rules can agree with the shown rows and differ at the new input.",
+      "explanation": "The displayed rows define a function on their listed inputs. Extending beyond them requires a stated rule; a plausible pattern is not uniquely determined.",
+      "difficulty": "challenge",
+      "options": [
+        "Yes; it must be 8 because the previous increase was 2.",
+        "Yes; it must be 6 because outputs cannot change.",
+        "No; two-row tables can never represent functions.",
+        "No; many function rules can agree with the shown rows and differ at the new input."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-049",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (k, 3), (13, 8), (14, 3). Which listed k makes it fail to be a function?",
+      "correctAnswer": "13",
+      "explanation": "If k = 13, that input receives both 3 and 8. If k = 14, the duplicate has the same output 3 and remains valid.",
+      "difficulty": "challenge",
+      "options": [
+        "14",
+        "15",
+        "13",
+        "16"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-core-050",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A complete relation pairs each of 17 inputs with one output. Exactly two inputs share an output; all other outputs are distinct. How many distinct outputs are there, and is it a function?",
+      "correctAnswer": "16 distinct outputs; yes.",
+      "explanation": "One shared pair reduces the number of distinct outputs by one. Every input still has exactly one output, so the relation is a function.",
+      "difficulty": "challenge",
+      "options": [
+        "16 distinct outputs; yes.",
+        "17 distinct outputs; yes.",
+        "16 distinct outputs; no.",
+        "15 distinct outputs; no."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "transfer"
+      ]
+    }
+  ]
+}
