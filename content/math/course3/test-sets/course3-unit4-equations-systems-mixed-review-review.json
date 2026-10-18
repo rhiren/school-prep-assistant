@@ -1,0 +1,409 @@
+{
+  "testId": "course3-unit4-equations-systems-mixed-review-review",
+  "conceptId": "concept-unit4-equations-systems-mixed-review",
+  "type": "review",
+  "title": "Unit 4 Mixed Review Review Test",
+  "description": "Practice and explain unit 4 mixed review.",
+  "questions": [
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-001",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3x + 5 = 38.",
+      "correctAnswer": "11",
+      "explanation": "Subtract 5 from both sides, then divide 33 by 3.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "11",
+        "12",
+        "10",
+        "14"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-002",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Which expression is equivalent to 2(x + 11) + x?",
+      "correctAnswer": "3x + 22",
+      "explanation": "Distribute 2 to both terms, then combine 2x and x.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3x + 11",
+        "2x + 22",
+        "3x + 22",
+        "3x + 23"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-003",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Check (11, 13) in y = x + 2 and x + y = 24. Which statement is true?",
+      "correctAnswer": "The pair satisfies both equations.",
+      "explanation": "The first gives 13; the sum in the second is 24. Both checks work.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "The pair satisfies only the first equation.",
+        "The pair satisfies only the second equation.",
+        "The pair satisfies neither equation.",
+        "The pair satisfies both equations."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-004",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The equation 2x + 11 = 2x + 12 has how many solutions?",
+      "correctAnswer": "No solutions",
+      "explanation": "Subtracting 2x gives 11 = 12, a false statement.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Exactly one solution",
+        "No solutions",
+        "Infinitely many solutions",
+        "Exactly two solutions"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-005",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "What does the intersection (11, 4) of two line graphs represent?",
+      "correctAnswer": "An ordered pair satisfying both equations",
+      "explanation": "At the intersection the same x and y coordinates lie on both lines simultaneously.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Only the slope of the first line",
+        "Only the intercept of the second line",
+        "A point satisfying neither equation",
+        "An ordered pair satisfying both equations"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-006",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3x + 5 = 41.",
+      "correctAnswer": "12",
+      "explanation": "Subtract 5 from both sides, then divide 36 by 3.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "12",
+        "13",
+        "11",
+        "15"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-007",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Which expression is equivalent to 2(x + 12) + x?",
+      "correctAnswer": "3x + 24",
+      "explanation": "Distribute 2 to both terms, then combine 2x and x.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3x + 12",
+        "2x + 24",
+        "3x + 24",
+        "3x + 25"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-008",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Check (12, 14) in y = x + 2 and x + y = 26. Which statement is true?",
+      "correctAnswer": "The pair satisfies both equations.",
+      "explanation": "The first gives 14; the sum in the second is 26. Both checks work.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "The pair satisfies only the first equation.",
+        "The pair satisfies both equations.",
+        "The pair satisfies only the second equation.",
+        "The pair satisfies neither equation."
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-009",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3(x + 2) = x + 28.",
+      "correctAnswer": "11",
+      "explanation": "Distribute, subtract x and subtract 6 to get 2x = 22.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "11",
+        "12",
+        "10",
+        "14"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-010",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve x/2 + 3 = x/4 + 14.",
+      "correctAnswer": "44",
+      "explanation": "Multiply every term by 4: 2x + 12 = x + 56. Subtract x and 12.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "45",
+        "43",
+        "44",
+        "47"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-011",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve y = 2x + 1 and x + y = 34.",
+      "correctAnswer": "(11, 23)",
+      "explanation": "Substitute to get 3x + 1 = 34; then x = 11 and y = 23.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(12, 23)",
+        "(11, 24)",
+        "(10, 22)",
+        "(11, 23)"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-012",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Classify y = 3x + 11 and 2y = 6x + 22.",
+      "correctAnswer": "Infinitely many solutions on the same line",
+      "explanation": "Dividing every term of the second equation by 2 produces the first equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "No solutions on parallel lines",
+        "Infinitely many solutions on the same line",
+        "Exactly one solution at the origin",
+        "Exactly two solutions"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-013",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A museum charges $15 admission plus $3 per activity. A visitor spends $30. How many activities did they pay for?",
+      "correctAnswer": "5",
+      "explanation": "Write 15 + 3a = 30. Subtract admission to get 3a = 15.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "5",
+        "6",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-014",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3(x + 2) = x + 30.",
+      "correctAnswer": "12",
+      "explanation": "Distribute, subtract x and subtract 6 to get 2x = 24.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "13",
+        "11",
+        "15",
+        "12"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-015",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve x/2 + 3 = x/4 + 15.",
+      "correctAnswer": "48",
+      "explanation": "Multiply every term by 4: 2x + 12 = x + 60. Subtract x and 12.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "49",
+        "48",
+        "47",
+        "51"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-016",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve y = 2x + 1 and x + y = 37.",
+      "correctAnswer": "(12, 25)",
+      "explanation": "Substitute to get 3x + 1 = 37; then x = 12 and y = 25.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "(13, 25)",
+        "(12, 26)",
+        "(12, 25)",
+        "(11, 24)"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-017",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Classify y = 3x + 12 and 2y = 6x + 24.",
+      "correctAnswer": "Infinitely many solutions on the same line",
+      "explanation": "Dividing every term of the second equation by 2 produces the first equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "No solutions on parallel lines",
+        "Infinitely many solutions on the same line",
+        "Exactly one solution at the origin",
+        "Exactly two solutions"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-018",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A museum charges $16 admission plus $3 per activity. A visitor spends $31. How many activities did they pay for?",
+      "correctAnswer": "5",
+      "explanation": "Write 16 + 3a = 31. Subtract admission to get 3a = 15.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "6",
+        "4",
+        "8",
+        "5"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-019",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve 3(x + 2) = x + 32.",
+      "correctAnswer": "13",
+      "explanation": "Distribute, subtract x and subtract 6 to get 2x = 26.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "14",
+        "12",
+        "13",
+        "16"
+      ]
+    },
+    {
+      "id": "course3-unit4-equations-systems-mixed-review-review-020",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve x/2 + 3 = x/4 + 16.",
+      "correctAnswer": "52",
+      "explanation": "Multiply every term by 4: 2x + 12 = x + 64. Subtract x and 12.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "52",
+        "53",
+        "51",
+        "55"
+      ]
+    }
+  ]
+}

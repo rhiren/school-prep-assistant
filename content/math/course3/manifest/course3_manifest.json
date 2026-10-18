@@ -1607,8 +1607,8 @@
         },
         {
           "id": "course3-unit-linear-equations",
-          "title": "Linear Equations in One Variable",
-          "description": "Build from equivalent expressions into multi-step linear equations, special solution cases, and equation modeling.",
+          "title": "Linear Equations and Linear Systems",
+          "description": "Solve, model, and explain one-variable equations and systems, including a linear-equations checkpoint and a full unit review.",
           "order": 4,
           "concepts": [
             {
@@ -2097,7 +2097,7 @@
             },
             {
               "id": "concept-unit-2-mixed-review",
-              "title": "Unit 2 Mixed Review",
+              "title": "Linear Equations Checkpoint",
               "description": "Review equivalent expressions, multi-step equations, distributive property equations, rational coefficients, solution types, modeling, and checking solutions.",
               "tags": [
                 "linear-equations",
@@ -2149,16 +2149,7 @@
                   }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "id": "course3-unit-systems-linear-equations",
-          "courseId": "course-3",
-          "title": "Systems of Linear Equations",
-          "description": "Use graphs, substitution, and elimination to reason about solutions to systems of linear equations.",
-          "order": 5,
-          "concepts": [
+            },
             {
               "id": "concept-understand-solutions-systems",
               "title": "Understand Solutions to Systems",
@@ -2186,7 +2177,7 @@
               "standardsFrameworks": [
                 "8.EE.8"
               ],
-              "order": 1,
+              "order": 11,
               "testQuestionCount": 50,
               "tutorial": "./content/tutorials/concept-understand-solutions-systems.md",
               "tests": [
@@ -2239,7 +2230,7 @@
               "standardsFrameworks": [
                 "8.EE.8"
               ],
-              "order": 2,
+              "order": 12,
               "testQuestionCount": 50,
               "tutorial": "./content/tutorials/concept-solve-systems-graphing.md",
               "tests": [
@@ -2292,7 +2283,7 @@
               "standardsFrameworks": [
                 "8.EE.8"
               ],
-              "order": 3,
+              "order": 13,
               "testQuestionCount": 50,
               "tutorial": "./content/tutorials/concept-solve-systems-substitution.md",
               "tests": [
@@ -2345,7 +2336,7 @@
               "standardsFrameworks": [
                 "8.EE.8"
               ],
-              "order": 4,
+              "order": 14,
               "testQuestionCount": 50,
               "tutorial": "./content/tutorials/concept-solve-systems-elimination.md",
               "tests": [
@@ -2398,7 +2389,7 @@
               "standardsFrameworks": [
                 "8.EE.8"
               ],
-              "order": 5,
+              "order": 15,
               "testQuestionCount": 50,
               "tutorial": "./content/tutorials/concept-systems-no-solution.md",
               "tests": [
@@ -2423,14 +2414,231 @@
                   }
                 }
               ]
+            },
+            {
+              "id": "concept-systems-infinitely-many-solutions",
+              "title": "Systems with Infinitely Many Solutions",
+              "description": "Reason about systems with infinitely many solutions through worked examples, varied practice, and transfer problems.",
+              "tags": [
+                "linear-equations",
+                "systems"
+              ],
+              "skillTags": [
+                "conceptual",
+                "computation",
+                "reasoning",
+                "application"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "8"
+              ],
+              "programPathways": [
+                "accelerated"
+              ],
+              "standardsFrameworks": [
+                "8.EE.8"
+              ],
+              "order": 16,
+              "testQuestionCount": 50,
+              "tutorial": "./content/tutorials/concept-systems-infinitely-many-solutions.md",
+              "tests": [
+                {
+                  "id": "course3-systems-infinitely-many-solutions-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/course3-systems-infinitely-many-solutions-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "course3-systems-infinitely-many-solutions-review",
+                  "type": "review",
+                  "path": "./content/test-sets/course3-systems-infinitely-many-solutions-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "concept-choose-efficient-system-method",
+              "title": "Choose an Efficient System-Solving Method",
+              "description": "Reason about choose an efficient system-solving method through worked examples, varied practice, and transfer problems.",
+              "tags": [
+                "linear-equations",
+                "systems"
+              ],
+              "skillTags": [
+                "conceptual",
+                "computation",
+                "reasoning",
+                "application"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "8"
+              ],
+              "programPathways": [
+                "accelerated"
+              ],
+              "standardsFrameworks": [
+                "8.EE.8"
+              ],
+              "order": 17,
+              "testQuestionCount": 50,
+              "tutorial": "./content/tutorials/concept-choose-efficient-system-method.md",
+              "tests": [
+                {
+                  "id": "course3-choose-efficient-system-method-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/course3-choose-efficient-system-method-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "course3-choose-efficient-system-method-review",
+                  "type": "review",
+                  "path": "./content/test-sets/course3-choose-efficient-system-method-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "concept-systems-equations-word-problems",
+              "title": "Systems of Equations Word Problems",
+              "description": "Reason about systems of equations word problems through worked examples, varied practice, and transfer problems.",
+              "tags": [
+                "linear-equations",
+                "systems"
+              ],
+              "skillTags": [
+                "conceptual",
+                "computation",
+                "reasoning",
+                "application"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "8"
+              ],
+              "programPathways": [
+                "accelerated"
+              ],
+              "standardsFrameworks": [
+                "8.EE.8"
+              ],
+              "order": 18,
+              "testQuestionCount": 50,
+              "tutorial": "./content/tutorials/concept-systems-equations-word-problems.md",
+              "tests": [
+                {
+                  "id": "course3-systems-equations-word-problems-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/course3-systems-equations-word-problems-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "course3-systems-equations-word-problems-review",
+                  "type": "review",
+                  "path": "./content/test-sets/course3-systems-equations-word-problems-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "concept-unit4-equations-systems-mixed-review",
+              "title": "Unit 4 Mixed Review",
+              "description": "Reason about unit 4 mixed review through worked examples, varied practice, and transfer problems.",
+              "tags": [
+                "linear-equations",
+                "systems"
+              ],
+              "skillTags": [
+                "conceptual",
+                "computation",
+                "reasoning",
+                "application"
+              ],
+              "meta": {
+                "type": "mixed-review",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "8"
+              ],
+              "programPathways": [
+                "accelerated"
+              ],
+              "standardsFrameworks": [
+                "8.EE.7",
+                "8.EE.8"
+              ],
+              "order": 19,
+              "testQuestionCount": 50,
+              "tutorial": "./content/tutorials/concept-unit4-equations-systems-mixed-review.md",
+              "tests": [
+                {
+                  "id": "course3-unit4-equations-systems-mixed-review-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/course3-unit4-equations-systems-mixed-review-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "course3-unit4-equations-systems-mixed-review-review",
+                  "type": "review",
+                  "path": "./content/test-sets/course3-unit4-equations-systems-mixed-review-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": false
+                  }
+                }
+              ]
             }
+          ],
+          "standardsFrameworks": [
+            "8.EE.7",
+            "8.EE.8"
           ]
         },
         {
           "id": "course3-unit-real-numbers-exponents",
           "title": "Real Numbers and Exponents",
           "description": "Build a strong foundation with rational and irrational numbers before moving into radicals, exponents, and scientific notation.",
-          "order": 6,
+          "order": 5,
           "concepts": [
             {
               "id": "concept-rational-irrational-numbers",

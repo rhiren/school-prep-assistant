@@ -1,0 +1,1009 @@
+{
+  "testId": "course3-choose-efficient-system-method-core",
+  "conceptId": "concept-choose-efficient-system-method",
+  "type": "concept",
+  "title": "Choose an Efficient System-Solving Method Core Test",
+  "description": "Practice and explain choose an efficient system-solving method.",
+  "questions": [
+    {
+      "id": "course3-choose-efficient-system-method-core-001",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "In y = x + 2 and 2x + y = 12, which step uses the already isolated variable?",
+      "correctAnswer": "Substitute x + 2 for y in the second equation.",
+      "explanation": "The first equation supplies an expression equal to y, so substitution avoids rearranging either equation.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Substitute x + 2 for y in the second equation.",
+        "Add 12 to both equations.",
+        "Replace x with y without changing anything else.",
+        "Set x equal to 12."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-002",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For 2x + 2y = 8 and -2x + 3y = 12, which operation eliminates x immediately?",
+      "correctAnswer": "Add the equations.",
+      "explanation": "Opposite coefficients add to zero; adding the entire equations leaves 5y = 20.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Subtract the second from the first.",
+        "Add the equations.",
+        "Multiply only the constants.",
+        "Set both constants to zero."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-003",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The system 2x + 2y = 9 and 5x + 2y = 15 has matching y coefficients. How can y be eliminated immediately?",
+      "correctAnswer": "Subtract one equation from the other.",
+      "explanation": "Subtracting equal y terms cancels them; all terms and both right sides must be subtracted.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Subtract one equation from the other.",
+        "Add the equations.",
+        "Divide only the y terms by the coefficient.",
+        "Ignore the second equation."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-004",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A graph of two lines has an intersection near (2.4, 2.7). You need an exact solution. What should you do?",
+      "correctAnswer": "Use substitution or elimination, then check both equations.",
+      "explanation": "A graph can suggest a solution, but an approximate reading does not establish exact values.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Round both coordinates and call them exact.",
+        "Use only the first line.",
+        "Assume the coordinates are integers.",
+        "Use substitution or elimination, then check both equations."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-005",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Both equations isolate y: y = 2x + 2 and y = 5x + 1. What one-variable equation follows?",
+      "correctAnswer": "2x + 2 = 5x + 1",
+      "explanation": "At a shared point, both expressions equal the same y-value, so they equal each other.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "2x + 2 = 1",
+        "2x + 2 = 5x + 1",
+        "2x = 5x",
+        "2x + 5x = 3"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-006",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "In y = x + 3 and 2x + y = 12, which step uses the already isolated variable?",
+      "correctAnswer": "Substitute x + 3 for y in the second equation.",
+      "explanation": "The first equation supplies an expression equal to y, so substitution avoids rearranging either equation.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Add 12 to both equations.",
+        "Replace x with y without changing anything else.",
+        "Substitute x + 3 for y in the second equation.",
+        "Set x equal to 12."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-007",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For 3x + 2y = 8 and -3x + 3y = 12, which operation eliminates x immediately?",
+      "correctAnswer": "Add the equations.",
+      "explanation": "Opposite coefficients add to zero; adding the entire equations leaves 5y = 20.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Subtract the second from the first.",
+        "Multiply only the constants.",
+        "Add the equations.",
+        "Set both constants to zero."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-008",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The system 2x + 3y = 9 and 5x + 3y = 15 has matching y coefficients. How can y be eliminated immediately?",
+      "correctAnswer": "Subtract one equation from the other.",
+      "explanation": "Subtracting equal y terms cancels them; all terms and both right sides must be subtracted.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Subtract one equation from the other.",
+        "Add the equations.",
+        "Divide only the y terms by the coefficient.",
+        "Ignore the second equation."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-009",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A graph of two lines has an intersection near (3.4, 2.7). You need an exact solution. What should you do?",
+      "correctAnswer": "Use substitution or elimination, then check both equations.",
+      "explanation": "A graph can suggest a solution, but an approximate reading does not establish exact values.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Round both coordinates and call them exact.",
+        "Use substitution or elimination, then check both equations.",
+        "Use only the first line.",
+        "Assume the coordinates are integers."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-010",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Both equations isolate y: y = 2x + 3 and y = 5x + 1. What one-variable equation follows?",
+      "correctAnswer": "2x + 3 = 5x + 1",
+      "explanation": "At a shared point, both expressions equal the same y-value, so they equal each other.",
+      "difficulty": "scaffold",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "2x + 3 = 1",
+        "2x = 5x",
+        "2x + 5x = 4",
+        "2x + 3 = 5x + 1"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-011",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "To eliminate y from 3x + 2y = 10 and 5x + 4y = 14, what is a valid plan?",
+      "correctAnswer": "Double the first equation, then subtract the second.",
+      "explanation": "Doubling every term in the first equation creates 4y, matching the second equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Double only the first constant, then subtract.",
+        "Double the first equation, then subtract the second.",
+        "Add the original equations.",
+        "Subtract the original equations without scaling."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-012",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Use substitution for x = 2y + 2 and 3x - y = 10. Which equation should you solve?",
+      "correctAnswer": "3(2y + 2) - y = 10",
+      "explanation": "Replace the entire x expression inside parentheses; the factor 3 multiplies both terms.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3(2y) + 2 - y = 10",
+        "3x - (2y + 2) = 10",
+        "3(2y + 2) - y = 10",
+        "2y + 2 - y = 10"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-013",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For y = 3x + 2 and y = 3x + 4, which observation settles the solution count without plotting?",
+      "correctAnswer": "Equal slopes and different intercepts imply no solution.",
+      "explanation": "The two lines stay a fixed vertical distance apart, so an exact algebraic observation is enough.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Equal slopes and different intercepts imply no solution.",
+        "Equal slopes imply exactly one solution.",
+        "Different intercepts imply infinitely many solutions.",
+        "Positive slopes always intersect."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-014",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve efficiently: x + y = 11 and x - y = 3. What is x?",
+      "correctAnswer": "7",
+      "explanation": "Adding eliminates y: 2x = 14, so x = 7.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "8",
+        "6",
+        "10",
+        "7"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-015",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student multiplies 2x - 3y = 6 by -2. Which equation is equivalent?",
+      "correctAnswer": "-4x + 6y = -12",
+      "explanation": "Every term changes by the factor -2; the negative y coefficient becomes positive.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "-4x - 6y = -12",
+        "-4x + 6y = 6",
+        "4x - 6y = -12",
+        "-4x + 6y = -12"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-016",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "To eliminate y from 3x + 2y = 11 and 5x + 4y = 15, what is a valid plan?",
+      "correctAnswer": "Double the first equation, then subtract the second.",
+      "explanation": "Doubling every term in the first equation creates 4y, matching the second equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Double only the first constant, then subtract.",
+        "Double the first equation, then subtract the second.",
+        "Add the original equations.",
+        "Subtract the original equations without scaling."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-017",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Use substitution for x = 2y + 3 and 3x - y = 10. Which equation should you solve?",
+      "correctAnswer": "3(2y + 3) - y = 10",
+      "explanation": "Replace the entire x expression inside parentheses; the factor 3 multiplies both terms.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3(2y + 3) - y = 10",
+        "3(2y) + 3 - y = 10",
+        "3x - (2y + 3) = 10",
+        "2y + 3 - y = 10"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-018",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For y = 3x + 3 and y = 3x + 5, which observation settles the solution count without plotting?",
+      "correctAnswer": "Equal slopes and different intercepts imply no solution.",
+      "explanation": "The two lines stay a fixed vertical distance apart, so an exact algebraic observation is enough.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Equal slopes imply exactly one solution.",
+        "Different intercepts imply infinitely many solutions.",
+        "Equal slopes and different intercepts imply no solution.",
+        "Positive slopes always intersect."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-019",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve efficiently: x + y = 12 and x - y = 4. What is x?",
+      "correctAnswer": "8",
+      "explanation": "Adding eliminates y: 2x = 16, so x = 8.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "9",
+        "7",
+        "11",
+        "8"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-020",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student multiplies 2x - 3y = 7 by -2. Which equation is equivalent?",
+      "correctAnswer": "-4x + 6y = -14",
+      "explanation": "Every term changes by the factor -2; the negative y coefficient becomes positive.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "-4x - 6y = -14",
+        "-4x + 6y = -14",
+        "-4x + 6y = 7",
+        "4x - 6y = -14"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-021",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "To eliminate y from 3x + 2y = 12 and 5x + 4y = 16, what is a valid plan?",
+      "correctAnswer": "Double the first equation, then subtract the second.",
+      "explanation": "Doubling every term in the first equation creates 4y, matching the second equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Double only the first constant, then subtract.",
+        "Add the original equations.",
+        "Double the first equation, then subtract the second.",
+        "Subtract the original equations without scaling."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-022",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Use substitution for x = 2y + 4 and 3x - y = 10. Which equation should you solve?",
+      "correctAnswer": "3(2y + 4) - y = 10",
+      "explanation": "Replace the entire x expression inside parentheses; the factor 3 multiplies both terms.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3(2y + 4) - y = 10",
+        "3(2y) + 4 - y = 10",
+        "3x - (2y + 4) = 10",
+        "2y + 4 - y = 10"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-023",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For y = 3x + 4 and y = 3x + 6, which observation settles the solution count without plotting?",
+      "correctAnswer": "Equal slopes and different intercepts imply no solution.",
+      "explanation": "The two lines stay a fixed vertical distance apart, so an exact algebraic observation is enough.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Equal slopes imply exactly one solution.",
+        "Different intercepts imply infinitely many solutions.",
+        "Equal slopes and different intercepts imply no solution.",
+        "Positive slopes always intersect."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-024",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve efficiently: x + y = 13 and x - y = 5. What is x?",
+      "correctAnswer": "9",
+      "explanation": "Adding eliminates y: 2x = 18, so x = 9.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "10",
+        "8",
+        "12",
+        "9"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-025",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student multiplies 2x - 3y = 8 by -2. Which equation is equivalent?",
+      "correctAnswer": "-4x + 6y = -16",
+      "explanation": "Every term changes by the factor -2; the negative y coefficient becomes positive.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "-4x - 6y = -16",
+        "-4x + 6y = -16",
+        "-4x + 6y = 8",
+        "4x - 6y = -16"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-026",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "To eliminate y from 3x + 2y = 13 and 5x + 4y = 17, what is a valid plan?",
+      "correctAnswer": "Double the first equation, then subtract the second.",
+      "explanation": "Doubling every term in the first equation creates 4y, matching the second equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Double the first equation, then subtract the second.",
+        "Double only the first constant, then subtract.",
+        "Add the original equations.",
+        "Subtract the original equations without scaling."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-027",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Use substitution for x = 2y + 5 and 3x - y = 10. Which equation should you solve?",
+      "correctAnswer": "3(2y + 5) - y = 10",
+      "explanation": "Replace the entire x expression inside parentheses; the factor 3 multiplies both terms.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3(2y + 5) - y = 10",
+        "3(2y) + 5 - y = 10",
+        "3x - (2y + 5) = 10",
+        "2y + 5 - y = 10"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-028",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For y = 3x + 5 and y = 3x + 7, which observation settles the solution count without plotting?",
+      "correctAnswer": "Equal slopes and different intercepts imply no solution.",
+      "explanation": "The two lines stay a fixed vertical distance apart, so an exact algebraic observation is enough.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Equal slopes imply exactly one solution.",
+        "Different intercepts imply infinitely many solutions.",
+        "Positive slopes always intersect.",
+        "Equal slopes and different intercepts imply no solution."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-029",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve efficiently: x + y = 14 and x - y = 6. What is x?",
+      "correctAnswer": "10",
+      "explanation": "Adding eliminates y: 2x = 20, so x = 10.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "11",
+        "10",
+        "9",
+        "13"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-030",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student multiplies 2x - 3y = 9 by -2. Which equation is equivalent?",
+      "correctAnswer": "-4x + 6y = -18",
+      "explanation": "Every term changes by the factor -2; the negative y coefficient becomes positive.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "-4x - 6y = -18",
+        "-4x + 6y = 9",
+        "-4x + 6y = -18",
+        "4x - 6y = -18"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-031",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "To eliminate y from 3x + 2y = 14 and 5x + 4y = 18, what is a valid plan?",
+      "correctAnswer": "Double the first equation, then subtract the second.",
+      "explanation": "Doubling every term in the first equation creates 4y, matching the second equation.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Double only the first constant, then subtract.",
+        "Double the first equation, then subtract the second.",
+        "Add the original equations.",
+        "Subtract the original equations without scaling."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-032",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Use substitution for x = 2y + 6 and 3x - y = 10. Which equation should you solve?",
+      "correctAnswer": "3(2y + 6) - y = 10",
+      "explanation": "Replace the entire x expression inside parentheses; the factor 3 multiplies both terms.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "3(2y) + 6 - y = 10",
+        "3x - (2y + 6) = 10",
+        "2y + 6 - y = 10",
+        "3(2y + 6) - y = 10"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-033",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "For y = 3x + 6 and y = 3x + 8, which observation settles the solution count without plotting?",
+      "correctAnswer": "Equal slopes and different intercepts imply no solution.",
+      "explanation": "The two lines stay a fixed vertical distance apart, so an exact algebraic observation is enough.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "Equal slopes and different intercepts imply no solution.",
+        "Equal slopes imply exactly one solution.",
+        "Different intercepts imply infinitely many solutions.",
+        "Positive slopes always intersect."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-034",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Solve efficiently: x + y = 15 and x - y = 7. What is x?",
+      "correctAnswer": "11",
+      "explanation": "Adding eliminates y: 2x = 22, so x = 11.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "12",
+        "10",
+        "11",
+        "14"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-035",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student multiplies 2x - 3y = 10 by -2. Which equation is equivalent?",
+      "correctAnswer": "-4x + 6y = -20",
+      "explanation": "Every term changes by the factor -2; the negative y coefficient becomes positive.",
+      "difficulty": "standard",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "practice"
+      ],
+      "options": [
+        "-4x + 6y = -20",
+        "-4x - 6y = -20",
+        "-4x + 6y = 10",
+        "4x - 6y = -20"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-036",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "To eliminate x from 2x + 3y = 9 and 3x - 2y = 3, which plan uses the smallest positive integer multipliers?",
+      "correctAnswer": "Multiply the first by 3 and the second by 2, then subtract.",
+      "explanation": "The least common multiple of 2 and 3 is 6. Matching 6x terms cancel by subtraction, not addition.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Multiply the first by 2 and the second by 3, then subtract.",
+        "Multiply both by 2, then subtract.",
+        "Multiply the first by 3 and the second by 2, then add.",
+        "Multiply the first by 3 and the second by 2, then subtract."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-037",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Choose a method and solve x = 2y + 2 and 3x - y = 26. Which pair satisfies both original equations?",
+      "correctAnswer": "(10, 4)",
+      "explanation": "Substitution gives 5y + 6 = 26, so y = 4 and x = 10. Check both equations.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(11, 4)",
+        "(10, 4)",
+        "(10, 5)",
+        "(9, 3)"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-038",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student adds 2x + 3y = 7 and 4x + 6y = 14 and obtains a third equation. What would reveal the solution type most directly?",
+      "correctAnswer": "Double the first equation and subtract the second; the result is 0 = 0.",
+      "explanation": "A proportional pair is best classified by elimination to an identity. The original line still constrains the solutions.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "The sum proves there is one solution.",
+        "The different coefficients prove there is no solution.",
+        "Double the first equation and subtract the second; the result is 0 = 0.",
+        "Set x and y to zero because subtraction cancels them."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-039",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "You need the exact intersection of y = 0.5x + 2 and y = -1.5x + 5. Which result and justification are correct?",
+      "correctAnswer": "x = 1.5, y = 2.75; equate the expressions for y.",
+      "explanation": "Equating gives 2x = 3, hence x = 1.5. Substitute into either equation to get the exact y-value.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "x = 1.5, y = 2.75; equate the expressions for y.",
+        "x = 2, y = 3; round x before checking.",
+        "x = 3, y = 3.5; ignore the negative slope.",
+        "x = 0, y = 2; use the first intercept."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-040",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A learner says substitution is impossible for 2x + 3y = 8 and 4x - y = 2. Which response is accurate?",
+      "correctAnswer": "Substitution works using y = 4x - 2; elimination also works.",
+      "explanation": "Method choice concerns convenience, not validity. Rearranging the second equation isolates y without fractions.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Only graphing is mathematically valid.",
+        "No method can solve a system with negative coefficients.",
+        "Substitution is valid only when y is isolated at the start.",
+        "Substitution works using y = 4x - 2; elimination also works."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-041",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "To eliminate x from 2x + 3y = 10 and 3x - 2y = 4, which plan uses the smallest positive integer multipliers?",
+      "correctAnswer": "Multiply the first by 3 and the second by 2, then subtract.",
+      "explanation": "The least common multiple of 2 and 3 is 6. Matching 6x terms cancel by subtraction, not addition.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Multiply the first by 2 and the second by 3, then subtract.",
+        "Multiply both by 2, then subtract.",
+        "Multiply the first by 3 and the second by 2, then subtract.",
+        "Multiply the first by 3 and the second by 2, then add."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-042",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Choose a method and solve x = 2y + 3 and 3x - y = 29. Which pair satisfies both original equations?",
+      "correctAnswer": "(11, 4)",
+      "explanation": "Substitution gives 5y + 9 = 29, so y = 4 and x = 11. Check both equations.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(12, 4)",
+        "(11, 4)",
+        "(11, 5)",
+        "(10, 3)"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-043",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student adds 2x + 3y = 8 and 4x + 6y = 16 and obtains a third equation. What would reveal the solution type most directly?",
+      "correctAnswer": "Double the first equation and subtract the second; the result is 0 = 0.",
+      "explanation": "A proportional pair is best classified by elimination to an identity. The original line still constrains the solutions.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "The sum proves there is one solution.",
+        "The different coefficients prove there is no solution.",
+        "Set x and y to zero because subtraction cancels them.",
+        "Double the first equation and subtract the second; the result is 0 = 0."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-044",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "You need the exact intersection of y = 0.5x + 3 and y = -1.5x + 6. Which result and justification are correct?",
+      "correctAnswer": "x = 1.5, y = 3.75; equate the expressions for y.",
+      "explanation": "Equating gives 2x = 3, hence x = 1.5. Substitute into either equation to get the exact y-value.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "x = 2, y = 4; round x before checking.",
+        "x = 1.5, y = 3.75; equate the expressions for y.",
+        "x = 3, y = 4.5; ignore the negative slope.",
+        "x = 0, y = 3; use the first intercept."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-045",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A learner says substitution is impossible for 2x + 3y = 9 and 4x - y = 3. Which response is accurate?",
+      "correctAnswer": "Substitution works using y = 4x - 3; elimination also works.",
+      "explanation": "Method choice concerns convenience, not validity. Rearranging the second equation isolates y without fractions.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Substitution works using y = 4x - 3; elimination also works.",
+        "Only graphing is mathematically valid.",
+        "No method can solve a system with negative coefficients.",
+        "Substitution is valid only when y is isolated at the start."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-046",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "To eliminate x from 2x + 3y = 11 and 3x - 2y = 5, which plan uses the smallest positive integer multipliers?",
+      "correctAnswer": "Multiply the first by 3 and the second by 2, then subtract.",
+      "explanation": "The least common multiple of 2 and 3 is 6. Matching 6x terms cancel by subtraction, not addition.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Multiply the first by 2 and the second by 3, then subtract.",
+        "Multiply both by 2, then subtract.",
+        "Multiply the first by 3 and the second by 2, then subtract.",
+        "Multiply the first by 3 and the second by 2, then add."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-047",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Choose a method and solve x = 2y + 4 and 3x - y = 32. Which pair satisfies both original equations?",
+      "correctAnswer": "(12, 4)",
+      "explanation": "Substitution gives 5y + 12 = 32, so y = 4 and x = 12. Check both equations.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "(13, 4)",
+        "(12, 4)",
+        "(12, 5)",
+        "(11, 3)"
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-048",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A student adds 2x + 3y = 9 and 4x + 6y = 18 and obtains a third equation. What would reveal the solution type most directly?",
+      "correctAnswer": "Double the first equation and subtract the second; the result is 0 = 0.",
+      "explanation": "A proportional pair is best classified by elimination to an identity. The original line still constrains the solutions.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Double the first equation and subtract the second; the result is 0 = 0.",
+        "The sum proves there is one solution.",
+        "The different coefficients prove there is no solution.",
+        "Set x and y to zero because subtraction cancels them."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-049",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "You need the exact intersection of y = 0.5x + 4 and y = -1.5x + 7. Which result and justification are correct?",
+      "correctAnswer": "x = 1.5, y = 4.75; equate the expressions for y.",
+      "explanation": "Equating gives 2x = 3, hence x = 1.5. Substitute into either equation to get the exact y-value.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "x = 2, y = 5; round x before checking.",
+        "x = 3, y = 5.5; ignore the negative slope.",
+        "x = 0, y = 4; use the first intercept.",
+        "x = 1.5, y = 4.75; equate the expressions for y."
+      ]
+    },
+    {
+      "id": "course3-choose-efficient-system-method-core-050",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A learner says substitution is impossible for 2x + 3y = 10 and 4x - y = 4. Which response is accurate?",
+      "correctAnswer": "Substitution works using y = 4x - 4; elimination also works.",
+      "explanation": "Method choice concerns convenience, not validity. Rearranging the second equation isolates y without fractions.",
+      "difficulty": "challenge",
+      "skillTags": [
+        "reasoning",
+        "linear-equations",
+        "transfer"
+      ],
+      "options": [
+        "Only graphing is mathematically valid.",
+        "No method can solve a system with negative coefficients.",
+        "Substitution works using y = 4x - 4; elimination also works.",
+        "Substitution is valid only when y is isolated at the start."
+      ]
+    }
+  ]
+}

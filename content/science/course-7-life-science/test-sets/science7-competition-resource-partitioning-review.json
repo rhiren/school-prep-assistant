@@ -1,0 +1,332 @@
+{
+  "id": "science7-competition-resource-partitioning-review",
+  "testId": "science7-competition-resource-partitioning-review",
+  "conceptId": "concept-competition-resource-partitioning",
+  "title": "Competition and Resource Partitioning Review Test",
+  "description": "Use resource-use models and controlled comparisons to explain competition and how differences in resource use can reduce overlap.",
+  "questions": [
+    {
+      "id": "science7-competition-resource-partitioning-review-q1",
+      "type": "multiple_choice",
+      "prompt": "Two fungi use sugars in the same fallen log. Could they compete even though neither chases the other?",
+      "questionText": "Two fungi use sugars in the same fallen log. Could they compete even though neither chases the other?",
+      "options": [
+        "No; competition happens only among moving animals.",
+        "Yes; both may use a limited supply of organic material.",
+        "Only if they are different colors.",
+        "No; dead material is always unlimited."
+      ],
+      "correctAnswer": "Yes; both may use a limited supply of organic material.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Competition can occur through depletion of shared material without direct fighting."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q2",
+      "type": "multiple_choice",
+      "prompt": "A diagram shows A using rocky crevices and B using sandy burrows. What kind of separation is represented?",
+      "questionText": "A diagram shows A using rocky crevices and B using sandy burrows. What kind of separation is represented?",
+      "options": [
+        "Use of different feeding times.",
+        "One organism eating another.",
+        "Use of different shelter locations.",
+        "Equal access to every resource."
+      ],
+      "correctAnswer": "Use of different shelter locations.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "The model separates shelter use, not necessarily diet or timing."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q3",
+      "type": "multiple_choice",
+      "prompt": "Plants with nearby neighbors gain 5 cm; matched plants alone gain 9 cm. What is the growth gap?",
+      "questionText": "Plants with nearby neighbors gain 5 cm; matched plants alone gain 9 cm. What is the growth gap?",
+      "options": [
+        "4 cm.",
+        "14 cm.",
+        "5 cm.",
+        "9 cm."
+      ],
+      "correctAnswer": "4 cm.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Subtract the two growth measurements: 9 - 5 = 4."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q4",
+      "type": "multiple_choice",
+      "prompt": "Both fish species eat insect larvae. What evidence would best support actual competition for food?",
+      "questionText": "Both fish species eat insect larvae. What evidence would best support actual competition for food?",
+      "options": [
+        "Both species were photographed underwater.",
+        "Larvae become scarce and each species grows better when the other's access is reduced under matched conditions.",
+        "Both have fins and live in the same lake.",
+        "Their names appear beside the same food in a book."
+      ],
+      "correctAnswer": "Larvae become scarce and each species grows better when the other's access is reduced under matched conditions.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Shared use plus a measurable effect under resource limitation supports competition more strongly than diet overlap alone."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q5",
+      "type": "multiple_choice",
+      "prompt": "One pollinator visits flowers in the morning and another later. Why might competition still occur?",
+      "questionText": "One pollinator visits flowers in the morning and another later. Why might competition still occur?",
+      "options": [
+        "Different times always eliminate shared-resource effects.",
+        "The early visitor may deplete nectar faster than flowers replenish it.",
+        "Nectar cannot be a resource.",
+        "Both visitors must cooperate because they arrive separately."
+      ],
+      "correctAnswer": "The early visitor may deplete nectar faster than flowers replenish it.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Time separation matters only in relation to resource availability and renewal."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q6",
+      "type": "multiple_choice",
+      "prompt": "A resource-use table lists A: 15 bark insects, 5 ground insects; B: 6 bark insects, 14 ground insects. What does it show?",
+      "questionText": "A resource-use table lists A: 15 bark insects, 5 ground insects; B: 6 bark insects, 14 ground insects. What does it show?",
+      "options": [
+        "Complete separation with no overlap.",
+        "Identical feeding patterns.",
+        "Different preferences with overlap in both food locations.",
+        "More total insects consumed by A."
+      ],
+      "correctAnswer": "Different preferences with overlap in both food locations.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Each consumes 20 insects, but the distributions differ and both use both locations."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q7",
+      "type": "multiple_choice",
+      "prompt": "Why is 'same habitat' insufficient to establish 'same niche'?",
+      "questionText": "Why is 'same habitat' insufficient to establish 'same niche'?",
+      "options": [
+        "Every organism in a habitat has identical needs.",
+        "A niche describes only geographic coordinates.",
+        "Organisms in one place can use different foods, shelters, or times.",
+        "Habitats contain only one species."
+      ],
+      "correctAnswer": "Organisms in one place can use different foods, shelters, or times.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "standard",
+      "explanation": "A shared location does not establish identical resource use or interactions."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q8",
+      "type": "multiple_choice",
+      "prompt": "A study compares crowded plants in small pots with isolated plants in large pots. Which factor complicates the claim about crowding?",
+      "questionText": "A study compares crowded plants in small pots with isolated plants in large pots. Which factor complicates the claim about crowding?",
+      "options": [
+        "Plants have roots in both treatments.",
+        "Both groups can be measured in centimeters.",
+        "The experiment uses more than one plant.",
+        "Pot volume also changes soil and resource availability."
+      ],
+      "correctAnswer": "Pot volume also changes soil and resource availability.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Crowding and pot volume vary together, so their effects are not separated."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q9",
+      "type": "multiple_choice",
+      "prompt": "A finite token model contains 30 food pieces. A takes 18 and no food is added. What is the maximum left for B?",
+      "questionText": "A finite token model contains 30 food pieces. A takes 18 and no food is added. What is the maximum left for B?",
+      "options": [
+        "18 pieces.",
+        "12 pieces.",
+        "30 pieces.",
+        "48 pieces."
+      ],
+      "correctAnswer": "12 pieces.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "The shared remainder is 30 - 18 = 12; it is not an independent supply."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q10",
+      "type": "multiple_choice",
+      "prompt": "A shallow-rooted plant shares dry ground with a deep-rooted one. Which measurement best tests the proposed water partitioning?",
+      "questionText": "A shallow-rooted plant shares dry ground with a deep-rooted one. Which measurement best tests the proposed water partitioning?",
+      "options": [
+        "Leaf color alone at one moment.",
+        "The length of each plant's common name.",
+        "Only the distance to the nearest road.",
+        "Water availability and root uptake at different soil depths."
+      ],
+      "correctAnswer": "Water availability and root uptake at different soil depths.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "The proposed mechanism concerns access at different depths, so measurements should address that access."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q11",
+      "type": "multiple_choice",
+      "prompt": "Several species switch to the same remaining food during a shortage. What may happen?",
+      "questionText": "Several species switch to the same remaining food during a shortage. What may happen?",
+      "options": [
+        "Partitioning must increase because foods are fewer.",
+        "Food becomes unlimited as diets converge.",
+        "All species stop using the shared food.",
+        "Resource overlap and competition may increase."
+      ],
+      "correctAnswer": "Resource overlap and competition may increase.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "A reduced range of foods can concentrate use of the same limited resource."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q12",
+      "type": "multiple_choice",
+      "prompt": "A model shows one species using small seeds and another large seeds, but gives no seed quantities. What is a limitation?",
+      "questionText": "A model shows one species using small seeds and another large seeds, but gives no seed quantities. What is a limitation?",
+      "options": [
+        "It describes separation but cannot establish how strongly either food supply limits growth.",
+        "It proves both species have equal populations.",
+        "It proves the two species never compete for any resource.",
+        "It establishes exact growth rates for both species."
+      ],
+      "correctAnswer": "It describes separation but cannot establish how strongly either food supply limits growth.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Resource types alone do not provide availability, demand, or growth measurements."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q13",
+      "type": "multiple_choice",
+      "prompt": "Plants alone gain 10 cm; with neighbors they gain 4 cm. After added minerals, plants alone gain 10 cm and neighbor-grown plants 8 cm. Which claim fits?",
+      "questionText": "Plants alone gain 10 cm; with neighbors they gain 4 cm. After added minerals, plants alone gain 10 cm and neighbor-grown plants 8 cm. Which claim fits?",
+      "options": [
+        "Mineral addition reduced the neighbor-associated gap, but a difference remains.",
+        "Minerals had no possible effect.",
+        "Minerals eliminated the entire growth difference.",
+        "Neighbors became beneficial because 8 is greater than 4."
+      ],
+      "correctAnswer": "Mineral addition reduced the neighbor-associated gap, but a difference remains.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "The gap falls from 6 to 2 cm; that supports a contribution without proving a complete explanation."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q14",
+      "type": "multiple_choice",
+      "prompt": "A seedling beneath a larger plant grows slowly even with moist soil. What other resource should be checked?",
+      "questionText": "A seedling beneath a larger plant grows slowly even with moist soil. What other resource should be checked?",
+      "options": [
+        "The number of observers.",
+        "The label material.",
+        "Light reaching its leaves.",
+        "The species' alphabetical order."
+      ],
+      "correctAnswer": "Light reaching its leaves.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Adequate water does not exclude light limitation from shading."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-review-q15",
+      "type": "multiple_choice",
+      "prompt": "A report says partitioning guarantees coexistence forever. What correction is best?",
+      "questionText": "A report says partitioning guarantees coexistence forever. What correction is best?",
+      "options": [
+        "It can reduce competition, but changing conditions and other shared resources still matter.",
+        "Partitioning prevents every kind of disturbance.",
+        "Partitioning makes populations independent of all resources.",
+        "Partitioning proves organisms intentionally cooperate."
+      ],
+      "correctAnswer": "It can reduce competition, but changing conditions and other shared resources still matter.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Reduced overlap can support coexistence without guaranteeing permanence."
+    }
+  ]
+}

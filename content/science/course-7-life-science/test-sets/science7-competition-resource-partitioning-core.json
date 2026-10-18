@@ -1,0 +1,651 @@
+{
+  "id": "science7-competition-resource-partitioning-core",
+  "testId": "science7-competition-resource-partitioning-core",
+  "conceptId": "concept-competition-resource-partitioning",
+  "title": "Competition and Resource Partitioning Core Test",
+  "description": "Use resource-use models and controlled comparisons to explain competition and how differences in resource use can reduce overlap.",
+  "questions": [
+    {
+      "id": "science7-competition-resource-partitioning-core-q1",
+      "type": "multiple_choice",
+      "prompt": "Two seedlings use water from the same small pot during a dry week. What makes competition for water possible?",
+      "questionText": "Two seedlings use water from the same small pot during a dry week. What makes competition for water possible?",
+      "options": [
+        "They must belong to different species.",
+        "They must touch each other above ground.",
+        "Both need a shared supply that may be insufficient.",
+        "They must actively choose to fight."
+      ],
+      "correctAnswer": "Both need a shared supply that may be insufficient.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Competition can occur when use by one organism reduces a resource available to another."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q2",
+      "type": "multiple_choice",
+      "prompt": "Which is a resource plants can compete for?",
+      "questionText": "Which is a resource plants can compete for?",
+      "options": [
+        "The name assigned to their habitat.",
+        "The age of the measuring ruler.",
+        "The number of observations in a notebook.",
+        "Light reaching their leaves."
+      ],
+      "correctAnswer": "Light reaching their leaves.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Light is a resource used in photosynthesis, and shading can reduce its availability."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q3",
+      "type": "multiple_choice",
+      "prompt": "Two birds of the same species use the few remaining nesting cavities. Can they compete?",
+      "questionText": "Two birds of the same species use the few remaining nesting cavities. Can they compete?",
+      "options": [
+        "No; competition requires different species.",
+        "Yes; competition can occur within a species.",
+        "Only if they eat different foods.",
+        "Only if one bird eats the other."
+      ],
+      "correctAnswer": "Yes; competition can occur within a species.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Organisms of the same species can share limited requirements."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q4",
+      "type": "multiple_choice",
+      "prompt": "A model shows shrub roots -> water uptake -> less soil water for nearby grass. Which interaction does it represent?",
+      "questionText": "A model shows shrub roots -> water uptake -> less soil water for nearby grass. Which interaction does it represent?",
+      "options": [
+        "Competition through use of a shared resource.",
+        "Predation by the shrub on the grass.",
+        "Cooperation that necessarily benefits both plants.",
+        "Conversion of grass into shrub tissue."
+      ],
+      "correctAnswer": "Competition through use of a shared resource.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "One plant can affect another indirectly by reducing available water."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q5",
+      "type": "multiple_choice",
+      "prompt": "Bird A feeds mostly high in trees; Bird B feeds mostly near the ground. How could this help them coexist?",
+      "questionText": "Bird A feeds mostly high in trees; Bird B feeds mostly near the ground. How could this help them coexist?",
+      "options": [
+        "Different locations create unlimited food for both.",
+        "Different feeding locations may reduce overlap in resource use.",
+        "Both birds stop needing food.",
+        "They must now belong to the same species."
+      ],
+      "correctAnswer": "Different feeding locations may reduce overlap in resource use.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Using different parts of a habitat can reduce, but need not eliminate, competition."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q6",
+      "type": "multiple_choice",
+      "prompt": "What does resource partitioning describe?",
+      "questionText": "What does resource partitioning describe?",
+      "options": [
+        "Organisms agreeing verbally to divide food fairly.",
+        "One organism consuming another.",
+        "Every organism receiving equal amounts of food.",
+        "Organisms using different portions, places, or times of resource availability."
+      ],
+      "correctAnswer": "Organisms using different portions, places, or times of resource availability.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Partitioning is a pattern of resource use, not a conscious agreement or a guarantee of equal shares."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q7",
+      "type": "multiple_choice",
+      "prompt": "In matched pots, seedlings grown with neighbors gain 4 cm; those grown alone gain 7 cm. What is the measured difference?",
+      "questionText": "In matched pots, seedlings grown with neighbors gain 4 cm; those grown alone gain 7 cm. What is the measured difference?",
+      "options": [
+        "Seedlings alone gained 11 cm more.",
+        "Seedlings alone gained 3 cm more.",
+        "Seedlings with neighbors gained 3 cm more.",
+        "Both groups gained 4 cm."
+      ],
+      "correctAnswer": "Seedlings alone gained 3 cm more.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "The difference is 7 - 4 = 3 cm; the mechanism still needs investigation."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q8",
+      "type": "multiple_choice",
+      "prompt": "Which setup best tests whether neighbors reduce water available to a plant?",
+      "questionText": "Which setup best tests whether neighbors reduce water available to a plant?",
+      "options": [
+        "Compare crowded plants in shade with isolated plants in sun.",
+        "Compare different species in different pot sizes without measuring water.",
+        "Compare matched plants with and without neighbors, measuring soil water and growth under otherwise similar conditions.",
+        "Observe only one crowded pot after a storm."
+      ],
+      "correctAnswer": "Compare matched plants with and without neighbors, measuring soil water and growth under otherwise similar conditions.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "A matched comparison and water measurements help test the proposed resource pathway."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q9",
+      "type": "multiple_choice",
+      "prompt": "Two species eat the same seed type, but seeds are abundant. What can be inferred?",
+      "questionText": "Two species eat the same seed type, but seeds are abundant. What can be inferred?",
+      "options": [
+        "Their diets overlap, but strong competition has not been demonstrated.",
+        "Sharing a food always proves severe competition.",
+        "One species must disappear immediately.",
+        "They cannot compete under any future condition."
+      ],
+      "correctAnswer": "Their diets overlap, but strong competition has not been demonstrated.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Overlap alone does not show that the resource currently limits either species."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q10",
+      "type": "multiple_choice",
+      "prompt": "A tall plant shades a shorter plant. Which chain explains a possible growth effect?",
+      "questionText": "A tall plant shades a shorter plant. Which chain explains a possible growth effect?",
+      "options": [
+        "Less light -> more photosynthesis -> guaranteed faster growth.",
+        "Less light -> less photosynthesis -> less material available for growth.",
+        "Shade -> roots stop absorbing every mineral immediately.",
+        "Shade -> the shorter plant loses all inherited information."
+      ],
+      "correctAnswer": "Less light -> less photosynthesis -> less material available for growth.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Light limitation can reduce photosynthesis and growth; the effect depends on conditions."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q11",
+      "type": "multiple_choice",
+      "prompt": "A table shows A uses mostly large seeds and B mostly small seeds. Which model matches?",
+      "questionText": "A table shows A uses mostly large seeds and B mostly small seeds. Which model matches?",
+      "options": [
+        "Partial separation by food size.",
+        "Complete separation by time of day.",
+        "Predation of A on B.",
+        "Identical use of every food size."
+      ],
+      "correctAnswer": "Partial separation by food size.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "Different food-size use is one kind of partitioning; the table says nothing about timing."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q12",
+      "type": "multiple_choice",
+      "prompt": "Why might two species compete without meeting?",
+      "questionText": "Why might two species compete without meeting?",
+      "options": [
+        "One can use a resource before the other reaches it.",
+        "Competition always requires direct contact.",
+        "Only animals can compete indirectly.",
+        "They must exchange signals first."
+      ],
+      "correctAnswer": "One can use a resource before the other reaches it.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Using a shared resource at different times can still reduce what remains."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q13",
+      "type": "multiple_choice",
+      "prompt": "A pond species feeds at dawn and another at dusk. What additional evidence is needed before claiming timing reduces competition?",
+      "questionText": "A pond species feeds at dawn and another at dusk. What additional evidence is needed before claiming timing reduces competition?",
+      "options": [
+        "Whether the species names have different lengths.",
+        "Whether both were seen on the same calendar date.",
+        "Whether the pond has a single shoreline.",
+        "Whether enough food remains or is renewed between feeding periods."
+      ],
+      "correctAnswer": "Whether enough food remains or is renewed between feeding periods.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Different times do not guarantee reduced competition if both exhaust the same food supply."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q14",
+      "type": "multiple_choice",
+      "prompt": "A diagram shows two partly overlapping circles for food use. What does the overlap mean?",
+      "questionText": "A diagram shows two partly overlapping circles for food use. What does the overlap mean?",
+      "options": [
+        "Some food types are used by both species.",
+        "The species have identical needs in every respect.",
+        "One species is necessarily eating the other.",
+        "All food outside the overlap is unusable."
+      ],
+      "correctAnswer": "Some food types are used by both species.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "Overlap represents shared resource use, not automatically competition intensity."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q15",
+      "type": "multiple_choice",
+      "prompt": "In three matched pairs, plants alone gain 8, 7, and 9 cm; plants with neighbors gain 5, 4, and 6 cm. What supports a consistent neighbor effect?",
+      "questionText": "In three matched pairs, plants alone gain 8, 7, and 9 cm; plants with neighbors gain 5, 4, and 6 cm. What supports a consistent neighbor effect?",
+      "options": [
+        "Only the tallest plant provides evidence.",
+        "The two groups have the same average growth.",
+        "Each pair differs by 3 cm in the same direction.",
+        "The pattern identifies water as the sole cause."
+      ],
+      "correctAnswer": "Each pair differs by 3 cm in the same direction.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "The repeated difference supports an effect, but resource measurements are needed to identify its cause."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q16",
+      "type": "multiple_choice",
+      "prompt": "Shallow-rooted plants and deep-rooted plants share a field. Why might competition for water be reduced?",
+      "questionText": "Shallow-rooted plants and deep-rooted plants share a field. Why might competition for water be reduced?",
+      "options": [
+        "Deep roots make the upper soil permanently wet.",
+        "Different root depths mean water is no longer limiting anywhere.",
+        "They may draw more water from different soil depths.",
+        "Plants with deep roots do not use water."
+      ],
+      "correctAnswer": "They may draw more water from different soil depths.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Different access to a resource can reduce overlap, depending on where water is available."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q17",
+      "type": "multiple_choice",
+      "prompt": "A student claims neighboring plants grew poorly because they competed for minerals. Which alternative should be checked?",
+      "questionText": "A student claims neighboring plants grew poorly because they competed for minerals. Which alternative should be checked?",
+      "options": [
+        "The neighbors also shaded the measured plants.",
+        "All rulers used centimeters.",
+        "The samples were labeled before measurement.",
+        "The same notebook recorded both groups."
+      ],
+      "correctAnswer": "The neighbors also shaded the measured plants.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Neighbor effects may involve light as well as minerals; measurements should distinguish causes."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q18",
+      "type": "multiple_choice",
+      "prompt": "Both species use the same shelter and food. Food is added, but competition for shelter persists. What does this show?",
+      "questionText": "Both species use the same shelter and food. Food is added, but competition for shelter persists. What does this show?",
+      "options": [
+        "More food must eliminate all competition.",
+        "Reducing one limitation does not remove every shared limitation.",
+        "Shelter cannot be a resource.",
+        "Adding food necessarily creates more shelter."
+      ],
+      "correctAnswer": "Reducing one limitation does not remove every shared limitation.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Competition can involve multiple resources, so one improvement may leave another constraint."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q19",
+      "type": "multiple_choice",
+      "prompt": "A bird's food-use counts are 18 small seeds and 2 large seeds; another's are 3 small and 17 large. What is the best description?",
+      "questionText": "A bird's food-use counts are 18 small seeds and 2 large seeds; another's are 3 small and 17 large. What is the best description?",
+      "options": [
+        "Their seed use is identical.",
+        "Neither ever uses the other's common food.",
+        "The first bird consumes fewer total seeds.",
+        "Their use is mostly separated by seed size, with some overlap."
+      ],
+      "correctAnswer": "Their use is mostly separated by seed size, with some overlap.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Both take 20 seeds, but their distributions differ; neither shows absolute separation."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q20",
+      "type": "multiple_choice",
+      "prompt": "Which statement about an ecological niche is most accurate here?",
+      "questionText": "Which statement about an ecological niche is most accurate here?",
+      "options": [
+        "It is only the map location where an organism was seen.",
+        "It is only the organism's body size.",
+        "It means every species uses a completely unique resource.",
+        "It includes how an organism uses resources and interacts with its environment."
+      ],
+      "correctAnswer": "It includes how an organism uses resources and interacts with its environment.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "standard",
+      "explanation": "Habitat is where an organism lives; niche includes resource use and interactions."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q21",
+      "type": "multiple_choice",
+      "prompt": "Two species both grow poorly when together. Does that alone show which resource is limiting?",
+      "questionText": "Two species both grow poorly when together. Does that alone show which resource is limiting?",
+      "options": [
+        "No; water, light, minerals, or other factors need investigation.",
+        "Yes; it must be water in every case.",
+        "Yes; it must be light because plants are green.",
+        "No; plant growth can never be measured scientifically."
+      ],
+      "correctAnswer": "No; water, light, minerals, or other factors need investigation.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "An interaction pattern does not by itself identify the mechanism."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q22",
+      "type": "multiple_choice",
+      "prompt": "In a model, both species collect from the same 20 food tokens. Species A collects 12 and B collects 8. What happens if A takes 3 more before B, with no new tokens added?",
+      "questionText": "In a model, both species collect from the same 20 food tokens. Species A collects 12 and B collects 8. What happens if A takes 3 more before B, with no new tokens added?",
+      "options": [
+        "At most 11 tokens remain for B.",
+        "B still has 8 because supplies are independent.",
+        "At most 5 tokens remain for B.",
+        "The total resource rises to 23."
+      ],
+      "correctAnswer": "At most 5 tokens remain for B.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "A would take 15 of 20, leaving 5; the finite shared supply links the outcomes."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q23",
+      "type": "multiple_choice",
+      "prompt": "After a drought, shallow soil dries but deeper soil stays moist. Which prediction uses root-depth partitioning carefully?",
+      "questionText": "After a drought, shallow soil dries but deeper soil stays moist. Which prediction uses root-depth partitioning carefully?",
+      "options": [
+        "Both groups must have identical access because they share a field.",
+        "Deep-rooted plants may retain access to water unavailable to shallow roots.",
+        "Shallow roots gain the advantage solely because they are shorter.",
+        "Deep roots guarantee survival regardless of other conditions."
+      ],
+      "correctAnswer": "Deep-rooted plants may retain access to water unavailable to shallow roots.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Resource location affects access, while other limiting factors can still matter."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q24",
+      "type": "multiple_choice",
+      "prompt": "A study removes neighboring shrubs, and grass grows faster. Why is a sham-treated comparison useful?",
+      "questionText": "A study removes neighboring shrubs, and grass grows faster. Why is a sham-treated comparison useful?",
+      "options": [
+        "It proves grass cannot grow without shrubs.",
+        "It helps separate shrub removal from effects of soil disturbance during removal.",
+        "It removes the need for repeated sites.",
+        "It ensures every site has identical weather forever."
+      ],
+      "correctAnswer": "It helps separate shrub removal from effects of soil disturbance during removal.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Handling or digging can affect growth, so comparable disturbance helps isolate the neighbor effect."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q25",
+      "type": "multiple_choice",
+      "prompt": "Species A uses the upper canopy and B the lower canopy. After lower branches are removed, B feeds higher. What new interaction is plausible?",
+      "questionText": "Species A uses the upper canopy and B the lower canopy. After lower branches are removed, B feeds higher. What new interaction is plausible?",
+      "options": [
+        "Overlap must decrease because there are fewer branches.",
+        "A and B stop sharing any food.",
+        "Greater feeding overlap may increase competition if food is limited.",
+        "B automatically becomes a predator of A."
+      ],
+      "correctAnswer": "Greater feeding overlap may increase competition if food is limited.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Habitat changes can compress resource use into the same space."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q26",
+      "type": "multiple_choice",
+      "prompt": "Crowded seedlings are smaller on average, but the pot has more total plant mass than a single-seedling pot. Is that contradictory?",
+      "questionText": "Crowded seedlings are smaller on average, but the pot has more total plant mass than a single-seedling pot. Is that contradictory?",
+      "options": [
+        "No; more individuals can yield greater total mass while each is smaller.",
+        "Yes; lower individual growth always means lower total mass.",
+        "Yes; competition requires the total mass to be zero.",
+        "No; it proves the plants did not compete."
+      ],
+      "correctAnswer": "No; more individuals can yield greater total mass while each is smaller.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Per-individual growth and group total are different quantities."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q27",
+      "type": "multiple_choice",
+      "prompt": "A field study finds two species feeding in different areas. Which claim goes beyond the evidence?",
+      "questionText": "A field study finds two species feeding in different areas. Which claim goes beyond the evidence?",
+      "options": [
+        "Their feeding locations differ.",
+        "The species consciously decided to share the field fairly.",
+        "Their use of space may reduce resource overlap.",
+        "Additional observations could test whether the pattern persists."
+      ],
+      "correctAnswer": "The species consciously decided to share the field fairly.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Observed separation does not establish intention or agreement."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q28",
+      "type": "multiple_choice",
+      "prompt": "Matched plants with neighbors gain 3 cm under low water and 6 cm under high water; plants alone gain 7 cm under both. What is the strongest interpretation?",
+      "questionText": "Matched plants with neighbors gain 3 cm under low water and 6 cm under high water; plants alone gain 7 cm under both. What is the strongest interpretation?",
+      "options": [
+        "Water fully explains every difference because both groups are now equal.",
+        "Water has no possible role because plants alone did not change.",
+        "Neighbors necessarily improve growth under every watering level.",
+        "Extra water reduced the growth gap, supporting water as one contributor."
+      ],
+      "correctAnswer": "Extra water reduced the growth gap, supporting water as one contributor.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "The gap shrinks from 4 to 1 cm but does not disappear, so other effects may remain."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q29",
+      "type": "multiple_choice",
+      "prompt": "A model predicts coexistence because two species eat different foods. A new study finds both depend on very scarce shelter. How should the model change?",
+      "questionText": "A model predicts coexistence because two species eat different foods. A new study finds both depend on very scarce shelter. How should the model change?",
+      "options": [
+        "Keep only diet because one partitioned resource settles the issue.",
+        "Assume shelter becomes unlimited when diets differ.",
+        "Include the shared shelter limitation alongside diet differences.",
+        "Remove all resource information because the prediction is uncertain."
+      ],
+      "correctAnswer": "Include the shared shelter limitation alongside diet differences.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "A model must include important shared requirements beyond the first resource examined."
+    },
+    {
+      "id": "science7-competition-resource-partitioning-core-q30",
+      "type": "multiple_choice",
+      "prompt": "A drought-year survey finds fewer plants where shrubs are dense. Which conclusion is most defensible without an experiment?",
+      "questionText": "A drought-year survey finds fewer plants where shrubs are dense. Which conclusion is most defensible without an experiment?",
+      "options": [
+        "Shrubs certainly caused every missing plant through water uptake.",
+        "Competition is impossible because no plants were moved.",
+        "The survey proves the same effect in every climate.",
+        "The pattern is consistent with competition, but soil and other site differences could also explain it."
+      ],
+      "correctAnswer": "The pattern is consistent with competition, but soil and other site differences could also explain it.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Observational association can guide a hypothesis without isolating cause."
+    }
+  ]
+}
