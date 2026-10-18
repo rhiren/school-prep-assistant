@@ -155,6 +155,8 @@ Target mix for a full review test:
 | Ecosystems | Population Data and Ecosystem Stability | yes | yes | yes | yes | Practice ready |
 | Ecosystems | Energy Pyramids and Food Web Efficiency | yes | yes | yes | yes | Practice ready |
 | Ecosystems | Limiting Factors and Carrying Capacity | yes | yes | yes | yes | Practice ready |
+| Ecosystems | Decomposers and Matter Cycling | yes | yes | yes | yes | Practice ready |
+| Ecosystems | Ecosystem Disturbance and Recovery | yes | yes | yes | yes | Practice ready |
 | Genetics and Inheritance | Genetics, Inheritance, and Variation | yes | yes | yes | yes | Practice ready |
 | Genetics and Inheritance | DNA, Genes, Chromosomes, and Traits | yes | yes | yes | yes | Practice ready |
 | Evolution and Earth/Life History | Evolution Evidence and Life History | yes | yes | yes | yes | Practice ready |
@@ -165,6 +167,23 @@ Target mix for a full review test:
 | Biodiversity and Human Impact | Biodiversity Solutions and Tradeoffs | yes | yes | yes | yes | Practice ready |
 
 ## Recommended Build Order
+
+The October enrichment pair builds on energy pyramids and limiting factors:
+Decomposers and Matter Cycling, followed by Ecosystem Disturbance and Recovery.
+Each includes 30 core questions, 15 separately authored review questions, worked
+data examples, and an optional outdoor observation with explicit limits on
+what it can establish. These are course extensions, not a claim about the
+school's current teaching order.
+
+For this pair and future packs, use plausible concept-specific distractors,
+balanced answer positions without repeating cycles, and distinct review
+scenarios. Challenge items should require interpreting evidence or evaluating
+an explanation; do not fill banks with generic questions about study habits.
+Preserve these requirements in the new-pack regression test as packs are added.
+
+Standards references:
+- [MS-LS2-3: matter cycling and energy flow](https://www.nextgenscience.org/pe/ms-ls2-3-ecosystems-interactions-energy-and-dynamics)
+- [MS-LS2-4: ecosystem changes and populations](https://www.nextgenscience.org/pe/ms-ls2-4-ecosystems-interactions-energy-and-dynamics)
 
 All currently scaffolded Grade 7 Science concepts are now practice-ready.
 Future build work should add complete concept packs only when there is a clear

@@ -1,0 +1,330 @@
+{
+  "id": "science7-decomposers-matter-cycling-review",
+  "testId": "science7-decomposers-matter-cycling-review",
+  "conceptId": "concept-decomposers-matter-cycling",
+  "title": "Decomposers and Matter Cycling Review Test",
+  "description": "Trace matter through dead material, decomposers, air, soil, and plants using evidence and system boundaries.",
+  "questions": [
+    {
+      "id": "science7-decomposers-matter-cycling-review-q1",
+      "type": "multiple_choice",
+      "prompt": "A fallen apple loses visible tissue. Where could its carbon be a month later?",
+      "questionText": "A fallen apple loses visible tissue. Where could its carbon be a month later?",
+      "options": [
+        "In decomposer biomass and carbon dioxide as well as remaining tissue.",
+        "Only in the original apple shape.",
+        "Only in mineral nitrogen.",
+        "In heat with no remaining carbon atoms."
+      ],
+      "correctAnswer": "In decomposer biomass and carbon dioxide as well as remaining tissue.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Carbon can move among several material pools without becoming heat or nitrogen."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q2",
+      "type": "multiple_choice",
+      "prompt": "An aquarium model shows fish waste -> microbes. Which added route shows matter returning to producers?",
+      "questionText": "An aquarium model shows fish waste -> microbes. Which added route shows matter returning to producers?",
+      "options": [
+        "Microbial breakdown -> dissolved mineral nutrients -> algae.",
+        "Microbial heat -> algae as carbon atoms.",
+        "Microbes -> destroyed waste atoms -> algae.",
+        "Waste -> sunlight -> algae."
+      ],
+      "correctAnswer": "Microbial breakdown -> dissolved mineral nutrients -> algae.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Mineral nutrients can return to producers; energy and atoms must be distinguished."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q3",
+      "type": "multiple_choice",
+      "prompt": "A dry sample shrinks from 24 g to 18 g. A matched second sample shrinks from 24 g to 21 g. Which statement compares the losses?",
+      "questionText": "A dry sample shrinks from 24 g to 18 g. A matched second sample shrinks from 24 g to 21 g. Which statement compares the losses?",
+      "options": [
+        "The first lost three times as much dry mass.",
+        "The second lost more dry mass.",
+        "Both lost one quarter of their initial mass.",
+        "The first lost twice as much dry mass."
+      ],
+      "correctAnswer": "The first lost twice as much dry mass.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Losses are 6 g and 3 g, so the first loss is twice the second."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q4",
+      "type": "multiple_choice",
+      "prompt": "A leaf's wet mass increases after rain although its tissue is breaking down. What would improve the comparison?",
+      "questionText": "A leaf's wet mass increases after rain although its tissue is breaking down. What would improve the comparison?",
+      "options": [
+        "Conclude decomposition reversed.",
+        "Use comparable dry-mass measurements to separate water from tissue change.",
+        "Use rainwater mass as new leaf tissue.",
+        "Measure only surface color."
+      ],
+      "correctAnswer": "Use comparable dry-mass measurements to separate water from tissue change.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Water uptake can hide organic-material loss in wet-mass measurements."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q5",
+      "type": "multiple_choice",
+      "prompt": "Why might nutrient cycling slow in a very dry habitat?",
+      "questionText": "Why might nutrient cycling slow in a very dry habitat?",
+      "options": [
+        "Low moisture can reduce decomposer activity and nutrient release.",
+        "Dryness removes all mineral elements from existence.",
+        "Decomposers obtain their food only from rain.",
+        "Dead matter changes directly into sunlight."
+      ],
+      "correctAnswer": "Low moisture can reduce decomposer activity and nutrient release.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Moisture can limit biological activity; atoms still exist."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q6",
+      "type": "multiple_choice",
+      "prompt": "A garden model says plants get all their body carbon from compost through roots. What revision is needed?",
+      "questionText": "A garden model says plants get all their body carbon from compost through roots. What revision is needed?",
+      "options": [
+        "Show heat entering roots as carbon.",
+        "Show carbon dioxide entering leaves for photosynthesis and minerals entering roots.",
+        "Remove compost because minerals never matter.",
+        "Show water entering roots as the main source of carbon."
+      ],
+      "correctAnswer": "Show carbon dioxide entering leaves for photosynthesis and minerals entering roots.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "Plant carbon and mineral nutrients enter by different routes."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q7",
+      "type": "multiple_choice",
+      "prompt": "Dry leaves vanish from an exposed plot but gather against a nearby fence. Which process is directly supported?",
+      "questionText": "Dry leaves vanish from an exposed plot but gather against a nearby fence. Which process is directly supported?",
+      "options": [
+        "All missing leaves were respired.",
+        "Wind transported leaf matter out of the plot.",
+        "The plot's atoms were converted to light.",
+        "The fence increased photosynthesis in dead leaves."
+      ],
+      "correctAnswer": "Wind transported leaf matter out of the plot.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "The relocated leaves provide direct evidence of transport across the boundary."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q8",
+      "type": "multiple_choice",
+      "prompt": "A theoretical system has 80 tracked carbon units. Remaining litter has 30 and gas has 35; organisms hold the rest. What is the organism pool?",
+      "questionText": "A theoretical system has 80 tracked carbon units. Remaining litter has 30 and gas has 35; organisms hold the rest. What is the organism pool?",
+      "options": [
+        "15 units.",
+        "45 units.",
+        "50 units.",
+        "65 units."
+      ],
+      "correctAnswer": "15 units.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Conservation gives 80 - 30 - 35 = 15 units."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q9",
+      "type": "multiple_choice",
+      "prompt": "Which evidence would challenge a claim that colder conditions caused slower leaf breakdown?",
+      "questionText": "Which evidence would challenge a claim that colder conditions caused slower leaf breakdown?",
+      "options": [
+        "Cold samples were repeated three times.",
+        "All samples used the same leaf type.",
+        "The colder samples also had much less moisture.",
+        "All results were measured after the same time."
+      ],
+      "correctAnswer": "The colder samples also had much less moisture.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Different moisture offers a competing cause; repetition alone does not remove that confound."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q10",
+      "type": "multiple_choice",
+      "prompt": "A decomposer releases heat while using a dead leaf. Why is this consistent with energy conservation?",
+      "questionText": "A decomposer releases heat while using a dead leaf. Why is this consistent with energy conservation?",
+      "options": [
+        "Energy has stopped existing.",
+        "Carbon atoms have become temperature.",
+        "The decomposer has created energy from nothing.",
+        "Energy has transferred to the surroundings and is less available to the food web."
+      ],
+      "correctAnswer": "Energy has transferred to the surroundings and is less available to the food web.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "standard",
+      "explanation": "Heat leaving an organism is energy transfer, not energy destruction."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q11",
+      "type": "multiple_choice",
+      "prompt": "A model has soil minerals -> roots -> leaf -> dead litter. Which link completes this nutrient cycle?",
+      "questionText": "A model has soil minerals -> roots -> leaf -> dead litter. Which link completes this nutrient cycle?",
+      "options": [
+        "Dead litter -> sunlight -> soil minerals.",
+        "Dead litter -> heat -> roots.",
+        "Dead litter -> disappearing atoms -> minerals.",
+        "Dead litter -> decomposer activity -> soil minerals."
+      ],
+      "correctAnswer": "Dead litter -> decomposer activity -> soil minerals.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Decomposition helps return nutrients to the nonliving environment."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q12",
+      "type": "multiple_choice",
+      "prompt": "A soil-only comparison releases 4 units of gas and matched soil-plus-leaf samples release 9. What is the measured increase associated with added leaves?",
+      "questionText": "A soil-only comparison releases 4 units of gas and matched soil-plus-leaf samples release 9. What is the measured increase associated with added leaves?",
+      "options": [
+        "9 units because soil respiration does not count.",
+        "13 units because the comparison must be added.",
+        "5 units, with replication needed to check consistency.",
+        "4 units because only the comparison is evidence."
+      ],
+      "correctAnswer": "5 units, with replication needed to check consistency.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "The difference is 9 - 4 = 5, and replication helps assess reliability."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q13",
+      "type": "multiple_choice",
+      "prompt": "A forest loses decomposers but still receives sunlight. Why might plant growth eventually slow?",
+      "questionText": "A forest loses decomposers but still receives sunlight. Why might plant growth eventually slow?",
+      "options": [
+        "Sunlight can no longer contain carbon.",
+        "Plants must eat decomposers directly to photosynthesize.",
+        "Mineral recycling can decline even while light remains available.",
+        "All carbon dioxide disappears immediately."
+      ],
+      "correctAnswer": "Mineral recycling can decline even while light remains available.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Light alone does not supply every needed material; nutrients can become limiting."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q14",
+      "type": "multiple_choice",
+      "prompt": "A decay study measures leaves, gas, and microbes, but water drains away unmeasured. What limitation remains?",
+      "questionText": "A decay study measures leaves, gas, and microbes, but water drains away unmeasured. What limitation remains?",
+      "options": [
+        "The measured pools necessarily contain every atom.",
+        "Dissolved or suspended matter may leave in the drainage.",
+        "Water cannot transport any leaf-derived matter.",
+        "Drainage changes only energy, never matter."
+      ],
+      "correctAnswer": "Dissolved or suspended matter may leave in the drainage.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "A system accounting must include material crossing every relevant boundary."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-review-q15",
+      "type": "multiple_choice",
+      "prompt": "A student argues that matter cycling means no new energy is needed. Which reply uses both ecosystem models?",
+      "questionText": "A student argues that matter cycling means no new energy is needed. Which reply uses both ecosystem models?",
+      "options": [
+        "Reused atoms create unlimited usable energy.",
+        "Decomposers turn all dispersed heat back into sunlight.",
+        "Atoms can be reused while energy disperses, so continued energy input is needed.",
+        "Recycling minerals stops respiration from using energy."
+      ],
+      "correctAnswer": "Atoms can be reused while energy disperses, so continued energy input is needed.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Matter cycling and energy flow are distinct; recycling atoms does not recover all dispersed energy."
+    }
+  ]
+}

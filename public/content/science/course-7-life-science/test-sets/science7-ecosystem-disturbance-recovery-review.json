@@ -1,0 +1,331 @@
+{
+  "id": "science7-ecosystem-disturbance-recovery-review",
+  "testId": "science7-ecosystem-disturbance-recovery-review",
+  "conceptId": "concept-ecosystem-disturbance-recovery",
+  "title": "Ecosystem Disturbance and Recovery Review Test",
+  "description": "Use before-and-after data, food webs, and comparison sites to explain ecosystem responses to disturbance and evaluate recovery.",
+  "questions": [
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q1",
+      "type": "multiple_choice",
+      "prompt": "A windstorm opens gaps while leaving soil intact. Which first prediction is most reasonable?",
+      "questionText": "A windstorm opens gaps while leaving soil intact. Which first prediction is most reasonable?",
+      "options": [
+        "Every gap must begin as bare rock.",
+        "All original tree species return before any small plants.",
+        "Light and surviving plant material may support a changed mix of seedlings.",
+        "The soil has no effect on what establishes."
+      ],
+      "correctAnswer": "Light and surviving plant material may support a changed mix of seedlings.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Canopy gaps change conditions while leaving biological resources that influence regrowth."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q2",
+      "type": "multiple_choice",
+      "prompt": "An abandoned paved area has almost no soil; a nearby unmown lawn retains soil. Why might their recovery differ?",
+      "questionText": "An abandoned paved area has almost no soil; a nearby unmown lawn retains soil. Why might their recovery differ?",
+      "options": [
+        "They must follow an identical timeline because both are unused.",
+        "The paved area needs no water because it has no soil.",
+        "They begin with different substrates and surviving organisms.",
+        "The lawn's plants must all become trees."
+      ],
+      "correctAnswer": "They begin with different substrates and surviving organisms.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Starting conditions shape pathways and rates of community change."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q3",
+      "type": "multiple_choice",
+      "prompt": "After a spill, plant counts are 50 before, 15 after one week, and 35 after one year. How many plants below baseline is the final count?",
+      "questionText": "After a spill, plant counts are 50 before, 15 after one week, and 35 after one year. How many plants below baseline is the final count?",
+      "options": [
+        "15 plants.",
+        "20 plants.",
+        "35 plants.",
+        "50 plants."
+      ],
+      "correctAnswer": "15 plants.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "The final count is 50 - 35 = 15 below baseline; the gain since week one is a different quantity."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q4",
+      "type": "multiple_choice",
+      "prompt": "A mowed field stays dominated by short grasses. What change could permit taller plants to establish, if seeds and resources are available?",
+      "questionText": "A mowed field stays dominated by short grasses. What change could permit taller plants to establish, if seeds and resources are available?",
+      "options": [
+        "Mowing more often at the same height.",
+        "Removing every nearby seed source.",
+        "Longer intervals between mowing.",
+        "Reducing water below the plants' needs."
+      ],
+      "correctAnswer": "Longer intervals between mowing.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Less frequent disturbance gives taller plants time to establish under suitable conditions."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q5",
+      "type": "multiple_choice",
+      "prompt": "Two recovering sites both have 60% plant cover. What additional result would show they are biologically different?",
+      "questionText": "Two recovering sites both have 60% plant cover. What additional result would show they are biologically different?",
+      "options": [
+        "Both have the same sampled area.",
+        "One has six native species; the other is dominated by one introduced species.",
+        "Both were measured on the same date.",
+        "Both used the same cover method."
+      ],
+      "correctAnswer": "One has six native species; the other is dominated by one introduced species.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Equal cover can hide important differences in species composition."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q6",
+      "type": "multiple_choice",
+      "prompt": "A restored stream's plants return before fish counts recover. Which explanation is plausible?",
+      "questionText": "A restored stream's plants return before fish counts recover. Which explanation is plausible?",
+      "options": [
+        "Returning plants guarantee instant fish recovery.",
+        "Fish abundance must always recover before plant cover.",
+        "Delayed fish recovery proves the plant measurements false.",
+        "Food, shelter, access, or water conditions may still limit fish."
+      ],
+      "correctAnswer": "Food, shelter, access, or water conditions may still limit fish.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Interacting populations can respond at different rates and have different limiting factors."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q7",
+      "type": "multiple_choice",
+      "prompt": "A diagram says fewer flowers -> fewer insects -> fewer insect-eating birds. Which arrow describes an indirect effect of flower loss?",
+      "questionText": "A diagram says fewer flowers -> fewer insects -> fewer insect-eating birds. Which arrow describes an indirect effect of flower loss?",
+      "options": [
+        "The immediate loss of flowers itself.",
+        "A bird directly eating a flower in this model.",
+        "The pathway from flowers through insects to birds.",
+        "A flower turning into a bird."
+      ],
+      "correctAnswer": "The pathway from flowers through insects to birds.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "The bird effect is mediated through the insect food supply."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q8",
+      "type": "multiple_choice",
+      "prompt": "A protected site increases from 20 to 45 plants; a matched open site increases from 20 to 40. What is the difference between their increases?",
+      "questionText": "A protected site increases from 20 to 45 plants; a matched open site increases from 20 to 40. What is the difference between their increases?",
+      "options": [
+        "25 plants.",
+        "40 plants.",
+        "65 plants.",
+        "5 plants."
+      ],
+      "correctAnswer": "5 plants.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "The gains are 25 and 20, a difference of 5; this is smaller than the protected site's total gain."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q9",
+      "type": "multiple_choice",
+      "prompt": "What would weaken a claim that planting caused all observed recovery?",
+      "questionText": "What would weaken a claim that planting caused all observed recovery?",
+      "options": [
+        "Several planted sites were monitored.",
+        "The same measurement method was used each month.",
+        "Plant survival was recorded as well as cover.",
+        "Unplanted reference sites recovered similarly during the same period."
+      ],
+      "correctAnswer": "Unplanted reference sites recovered similarly during the same period.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Similar change without the treatment offers an alternative explanation."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q10",
+      "type": "multiple_choice",
+      "prompt": "A forest's tree cover returns but nesting cavities remain scarce. Which claim is best supported?",
+      "questionText": "A forest's tree cover returns but nesting cavities remain scarce. Which claim is best supported?",
+      "options": [
+        "Canopy cover guarantees every former nesting resource.",
+        "One habitat feature recovered while another remains limited.",
+        "The tree-cover data must be wrong.",
+        "Cavities cannot affect habitat recovery."
+      ],
+      "correctAnswer": "One habitat feature recovered while another remains limited.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Structural habitat features can take different times to return."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q11",
+      "type": "multiple_choice",
+      "prompt": "Site X retains 80 of 100 plants after a flood and reaches 85 after a year. Site Y retains 30 and reaches 90. Which statement matches the records?",
+      "questionText": "Site X retains 80 of 100 plants after a flood and reaches 85 after a year. Site Y retains 30 and reaches 90. Which statement matches the records?",
+      "options": [
+        "X retained more initially; Y made the larger later gain.",
+        "Y retained more initially; X made the larger later gain.",
+        "Both had the same initial loss.",
+        "Both returned to their original counts."
+      ],
+      "correctAnswer": "X retained more initially; Y made the larger later gain.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Initial retention is 80 versus 30; subsequent gains are 5 versus 60."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q12",
+      "type": "multiple_choice",
+      "prompt": "A claim says recovery must end with the exact original species. Which evidence challenges it most directly?",
+      "questionText": "A claim says recovery must end with the exact original species. Which evidence challenges it most directly?",
+      "options": [
+        "A single photo shows bare soil immediately afterward.",
+        "Long-term monitoring shows a different stable community under a changed water regime.",
+        "A few plants grow during the first month.",
+        "The baseline included several species."
+      ],
+      "correctAnswer": "Long-term monitoring shows a different stable community under a changed water regime.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Persistent changed conditions can support a different community rather than exact return."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q13",
+      "type": "multiple_choice",
+      "prompt": "A class doubles observation time after restoration and reports twice as many birds. What must be checked?",
+      "questionText": "A class doubles observation time after restoration and reports twice as many birds. What must be checked?",
+      "options": [
+        "Whether bird names have changed.",
+        "Whether counts per equal observation time actually increased.",
+        "Whether total counts alone prove the habitat improved.",
+        "Whether observation time is irrelevant to sightings."
+      ],
+      "correctAnswer": "Whether counts per equal observation time actually increased.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "More effort can produce more sightings without a population change."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q14",
+      "type": "multiple_choice",
+      "prompt": "A restoration plan includes native plants but overlooks continuing foot traffic. What model link should be added?",
+      "questionText": "A restoration plan includes native plants but overlooks continuing foot traffic. What model link should be added?",
+      "options": [
+        "Repeated trampling -> damage to new growth -> slower establishment.",
+        "More trampling -> more photosynthesis in every seedling.",
+        "New plants -> no further need for soil.",
+        "Foot traffic -> guaranteed replacement of all missing species."
+      ],
+      "correctAnswer": "Repeated trampling -> damage to new growth -> slower establishment.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "An ongoing disturbance can counteract planting, so it belongs in the causal model."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-review-q15",
+      "type": "multiple_choice",
+      "prompt": "A site has regained plant cover and reduced erosion, but monitoring spans only one wet season. Which conclusion is most defensible?",
+      "questionText": "A site has regained plant cover and reduced erosion, but monitoring spans only one wet season. Which conclusion is most defensible?",
+      "options": [
+        "Early recovery is promising; longer monitoring can test persistence through other conditions.",
+        "Every future dry season will show the same result.",
+        "The ecosystem is permanently restored in all respects.",
+        "Short-term improvements provide no useful information."
+      ],
+      "correctAnswer": "Early recovery is promising; longer monitoring can test persistence through other conditions.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Evidence supports measured early gains, while long-term persistence remains untested."
+    }
+  ]
+}

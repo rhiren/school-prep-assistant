@@ -1,0 +1,650 @@
+{
+  "id": "science7-decomposers-matter-cycling-core",
+  "testId": "science7-decomposers-matter-cycling-core",
+  "conceptId": "concept-decomposers-matter-cycling",
+  "title": "Decomposers and Matter Cycling Core Test",
+  "description": "Trace matter through dead material, decomposers, air, soil, and plants using evidence and system boundaries.",
+  "questions": [
+    {
+      "id": "science7-decomposers-matter-cycling-core-q1",
+      "type": "multiple_choice",
+      "prompt": "A fallen leaf becomes smaller over months. Which account best conserves its matter?",
+      "questionText": "A fallen leaf becomes smaller over months. Which account best conserves its matter?",
+      "options": [
+        "Its atoms are mostly converted into sunlight.",
+        "Its atoms stop existing once the leaf is invisible.",
+        "Its atoms move into organisms, gases, water, and soil substances.",
+        "All its atoms stay in the same recognizable leaf shape."
+      ],
+      "correctAnswer": "Its atoms move into organisms, gases, water, and soil substances.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Matter changes form and location; disappearance from view is not destruction."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q2",
+      "type": "multiple_choice",
+      "prompt": "Which observation best identifies a decomposer's role?",
+      "questionText": "Which observation best identifies a decomposer's role?",
+      "options": [
+        "A plant captures light to build sugars.",
+        "A hawk catches a living mouse.",
+        "A fungus obtains nutrients by breaking down dead wood.",
+        "A rock breaks into smaller pieces after freezing."
+      ],
+      "correctAnswer": "A fungus obtains nutrients by breaking down dead wood.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Decomposers obtain matter and energy from dead material or waste; weathering alone is not biological decomposition."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q3",
+      "type": "multiple_choice",
+      "prompt": "In dead leaves -> fungus -> carbon dioxide, what does the last arrow represent?",
+      "questionText": "In dead leaves -> fungus -> carbon dioxide, what does the last arrow represent?",
+      "options": [
+        "Carbon leaving the fungus during cellular respiration.",
+        "Light energy turning into carbon atoms.",
+        "The fungus performing photosynthesis.",
+        "All leaf minerals evaporating into air."
+      ],
+      "correctAnswer": "Carbon leaving the fungus during cellular respiration.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Respiration releases some carbon from food molecules as carbon dioxide."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q4",
+      "type": "multiple_choice",
+      "prompt": "Which pair correctly separates matter from energy during decomposition?",
+      "questionText": "Which pair correctly separates matter from energy during decomposition?",
+      "options": [
+        "Carbon atoms can cycle; energy is transferred and some leaves as heat.",
+        "Carbon atoms become heat; energy becomes soil minerals.",
+        "Carbon and energy both return to plants as sunlight.",
+        "Carbon and energy both disappear when leaves decay."
+      ],
+      "correctAnswer": "Carbon atoms can cycle; energy is transferred and some leaves as heat.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Matter is conserved while energy is transferred, with heat dispersing to the surroundings."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q5",
+      "type": "multiple_choice",
+      "prompt": "A leaf breaks into tiny pieces when rubbed. What has this observation established?",
+      "questionText": "A leaf breaks into tiny pieces when rubbed. What has this observation established?",
+      "options": [
+        "All carbon in the leaf has become carbon dioxide.",
+        "Decomposers must have caused the breakage.",
+        "Fragmentation occurred; biological decomposition has not been demonstrated.",
+        "The leaf's mineral nutrients are all ready for roots."
+      ],
+      "correctAnswer": "Fragmentation occurred; biological decomposition has not been demonstrated.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Smaller pieces are evidence of physical breakage, not proof of microbial chemical changes."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q6",
+      "type": "multiple_choice",
+      "prompt": "A plant obtains mineral nutrients released during decomposition. Where does most carbon for its new sugars come from?",
+      "questionText": "A plant obtains mineral nutrients released during decomposition. Where does most carbon for its new sugars come from?",
+      "options": [
+        "Mineral particles absorbed through roots.",
+        "Heat from decomposing leaves.",
+        "Water molecules taken up by roots.",
+        "Carbon dioxide taken in during photosynthesis."
+      ],
+      "correctAnswer": "Carbon dioxide taken in during photosynthesis.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Minerals are important, but carbon in plant sugars comes primarily from carbon dioxide."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q7",
+      "type": "multiple_choice",
+      "prompt": "Equal dry leaf samples begin at 20 g. After four weeks, moist-site samples average 12 g and dry-site samples 18 g, measured dry again. Which comparison is supported?",
+      "questionText": "Equal dry leaf samples begin at 20 g. After four weeks, moist-site samples average 12 g and dry-site samples 18 g, measured dry again. Which comparison is supported?",
+      "options": [
+        "The moist-site samples lost 12 g more dry mass.",
+        "The moist-site samples lost 6 g more dry mass.",
+        "The dry-site samples lost 18 g of dry mass.",
+        "Both treatments lost the same dry mass."
+      ],
+      "correctAnswer": "The moist-site samples lost 6 g more dry mass.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Losses are 8 g and 2 g; the difference is 6 g. Dry measurements reduce water-content confusion."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q8",
+      "type": "multiple_choice",
+      "prompt": "A fresh leaf weighs 5 g and weighs 2 g after drying overnight. Why is this weak evidence for decomposition?",
+      "questionText": "A fresh leaf weighs 5 g and weighs 2 g after drying overnight. Why is this weak evidence for decomposition?",
+      "options": [
+        "Much of the decrease could be water evaporating.",
+        "Drying must have destroyed the leaf's atoms.",
+        "A lighter leaf necessarily has more decomposers.",
+        "A mass measurement cannot detect any change."
+      ],
+      "correctAnswer": "Much of the decrease could be water evaporating.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Water loss can reduce mass without biological breakdown, so the mechanism is not established."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q9",
+      "type": "multiple_choice",
+      "prompt": "To test moisture effects on leaf decomposition, which comparison is strongest?",
+      "questionText": "To test moisture effects on leaf decomposition, which comparison is strongest?",
+      "options": [
+        "Different leaf types and moisture; same container color.",
+        "Same leaf type, dry starting mass, temperature, and time; different moisture.",
+        "Same leaf type but different temperature, time, and moisture.",
+        "Same wet mass but different leaf types, moisture, and duration."
+      ],
+      "correctAnswer": "Same leaf type, dry starting mass, temperature, and time; different moisture.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Keeping other relevant variables similar helps isolate moisture's effect."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q10",
+      "type": "multiple_choice",
+      "prompt": "A model ends at dead plants -> decomposers. Which addition helps show matter cycling back into living plants?",
+      "questionText": "A model ends at dead plants -> decomposers. Which addition helps show matter cycling back into living plants?",
+      "options": [
+        "Decomposers -> heat -> plant roots as food.",
+        "Decomposers -> sunlight -> green leaves.",
+        "Decomposers -> disappearance of all atoms.",
+        "Decomposers -> mineral nutrients in soil -> plant roots."
+      ],
+      "correctAnswer": "Decomposers -> mineral nutrients in soil -> plant roots.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "Mineral release and root uptake close one matter pathway; heat is not a material nutrient."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q11",
+      "type": "multiple_choice",
+      "prompt": "Leaf litter builds up faster during a cold season. Which explanation is consistent with slower decomposition?",
+      "questionText": "Leaf litter builds up faster during a cold season. Which explanation is consistent with slower decomposition?",
+      "options": [
+        "Cold changes leaf carbon into a different element.",
+        "Lower temperature can slow decomposer activity.",
+        "Fallen leaves stop containing chemical energy.",
+        "Cold prevents any physical movement of matter."
+      ],
+      "correctAnswer": "Lower temperature can slow decomposer activity.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Temperature can affect biological reaction rates; it does not change carbon into another element."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q12",
+      "type": "multiple_choice",
+      "prompt": "In a classroom dataset, a shaded soil sample releases carbon dioxide with no green plants present. What process could account for it?",
+      "questionText": "In a classroom dataset, a shaded soil sample releases carbon dioxide with no green plants present. What process could account for it?",
+      "options": [
+        "Photosynthesis by the soil minerals.",
+        "Respiration by organisms using organic matter.",
+        "Conversion of shade directly into carbon.",
+        "Root uptake producing carbon from water."
+      ],
+      "correctAnswer": "Respiration by organisms using organic matter.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Soil organisms can respire and release carbon dioxide even without green plants."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q13",
+      "type": "multiple_choice",
+      "prompt": "Why should a food-web model include arrows from dead material at several feeding levels to decomposers?",
+      "questionText": "Why should a food-web model include arrows from dead material at several feeding levels to decomposers?",
+      "options": [
+        "Decomposers receive matter only from top predators.",
+        "Decomposers create new energy for every feeding level.",
+        "Waste and remains from many organisms supply decomposers.",
+        "Every organism must be eaten alive before its matter can cycle."
+      ],
+      "correctAnswer": "Waste and remains from many organisms supply decomposers.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "Decomposition connects multiple parts of a food web, not just its top."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q14",
+      "type": "multiple_choice",
+      "prompt": "A forest has less leaf litter after a windy week. Which measurement most helps distinguish transport from decomposition?",
+      "questionText": "A forest has less leaf litter after a windy week. Which measurement most helps distinguish transport from decomposition?",
+      "options": [
+        "Measuring only the remaining litter's color.",
+        "Collecting and measuring leaves blown outside the study area.",
+        "Counting trees once after the wind.",
+        "Measuring the study area's sunlight once."
+      ],
+      "correctAnswer": "Collecting and measuring leaves blown outside the study area.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Wind can move leaves across the system boundary; tracking that export tests an alternative explanation."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q15",
+      "type": "multiple_choice",
+      "prompt": "A model ecosystem receives light but exchanges no matter with its surroundings. What can still leave it?",
+      "questionText": "A model ecosystem receives light but exchanges no matter with its surroundings. What can still leave it?",
+      "options": [
+        "Carbon atoms carried by escaping gas.",
+        "Mineral nutrients through runoff.",
+        "Water vapor escaping through an opening.",
+        "Energy as heat."
+      ],
+      "correctAnswer": "Energy as heat.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "A boundary closed to matter need not be closed to energy. This is a model, not an instruction to seal living organisms."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q16",
+      "type": "multiple_choice",
+      "prompt": "Decomposer activity drops while leaf fall stays the same. Which short-term change is most likely, assuming other conditions stay similar?",
+      "questionText": "Decomposer activity drops while leaf fall stays the same. Which short-term change is most likely, assuming other conditions stay similar?",
+      "options": [
+        "More dead material accumulates and nutrient release slows.",
+        "Less dead material accumulates because fewer organisms use it.",
+        "All plants immediately stop photosynthesis.",
+        "Mineral supply necessarily increases at the same rate as before."
+      ],
+      "correctAnswer": "More dead material accumulates and nutrient release slows.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "With the input unchanged and breakdown slower, litter tends to accumulate; plant responses need not be immediate."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q17",
+      "type": "multiple_choice",
+      "prompt": "Two sites lose equal leaf mass, but one loses leaves to runoff. Which conclusion is justified?",
+      "questionText": "Two sites lose equal leaf mass, but one loses leaves to runoff. Which conclusion is justified?",
+      "options": [
+        "Equal mass loss does not prove equal decomposition rates.",
+        "The sites must have identical decomposer activity.",
+        "Runoff is a form of cellular respiration.",
+        "All loss at both sites must be biological."
+      ],
+      "correctAnswer": "Equal mass loss does not prove equal decomposition rates.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Mass loss can have several pathways; transport must be separated from breakdown."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q18",
+      "type": "multiple_choice",
+      "prompt": "Three moist samples lose 7, 8, and 9 g; three dry samples lose 1, 2, and 3 g under otherwise matched conditions. What strengthens the moisture claim?",
+      "questionText": "Three moist samples lose 7, 8, and 9 g; three dry samples lose 1, 2, and 3 g under otherwise matched conditions. What strengthens the moisture claim?",
+      "options": [
+        "Only the largest moist loss matters.",
+        "The number 9 proves all moist habitats behave identically.",
+        "The averages remove the need to consider any other variable.",
+        "The treatment difference repeats across independent samples."
+      ],
+      "correctAnswer": "The treatment difference repeats across independent samples.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Consistent differences across replicates support the result, while generalization still has limits."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q19",
+      "type": "multiple_choice",
+      "prompt": "A labeled carbon atom starts in a dead leaf and later appears in a new plant's sugar. Which route is plausible?",
+      "questionText": "A labeled carbon atom starts in a dead leaf and later appears in a new plant's sugar. Which route is plausible?",
+      "options": [
+        "Leaf -> heat -> plant root -> sugar.",
+        "Leaf -> decomposer -> carbon dioxide -> photosynthesis -> sugar.",
+        "Leaf -> mineral nitrogen -> photosynthesis -> sugar.",
+        "Leaf -> water molecule -> sugar without any carbon input."
+      ],
+      "correctAnswer": "Leaf -> decomposer -> carbon dioxide -> photosynthesis -> sugar.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "The carbon atom can return through respiration and photosynthesis without becoming energy or a different element."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q20",
+      "type": "multiple_choice",
+      "prompt": "A student measures only the leaf pile and says its mass loss violates conservation. What is missing?",
+      "questionText": "A student measures only the leaf pile and says its mass loss violates conservation. What is missing?",
+      "options": [
+        "An assumption that every leaf atom remains in the pile.",
+        "A rule that conservation applies only to rocks.",
+        "Matter transferred to gases, organisms, water, or outside the pile.",
+        "A way to convert missing grams directly into heat."
+      ],
+      "correctAnswer": "Matter transferred to gases, organisms, water, or outside the pile.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Conservation applies to the whole tracked system; measuring one compartment misses transfers."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q21",
+      "type": "multiple_choice",
+      "prompt": "An airtight theoretical system has 100 units of tracked carbon: 60 in leaves, 20 in organisms, 20 in gas. Later leaves contain 35 and organisms 25. How many units must be in gas if these are the only pools?",
+      "questionText": "An airtight theoretical system has 100 units of tracked carbon: 60 in leaves, 20 in organisms, 20 in gas. Later leaves contain 35 and organisms 25. How many units must be in gas if these are the only pools?",
+      "options": [
+        "40 units.",
+        "65 units.",
+        "20 units.",
+        "35 units."
+      ],
+      "correctAnswer": "40 units.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Total tracked carbon stays 100; 100 - 35 - 25 = 40."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q22",
+      "type": "multiple_choice",
+      "prompt": "A model returns both mineral nutrients and heat from decomposers to plant roots as building materials. Which correction is needed?",
+      "questionText": "A model returns both mineral nutrients and heat from decomposers to plant roots as building materials. Which correction is needed?",
+      "options": [
+        "Keep both arrows because heat contains mineral atoms.",
+        "Remove both arrows because decomposers release nothing.",
+        "Keep the mineral arrow; show heat dispersing as energy rather than root building material.",
+        "Keep only the heat arrow because roots absorb energy instead of minerals."
+      ],
+      "correctAnswer": "Keep the mineral arrow; show heat dispersing as energy rather than root building material.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Minerals supply matter. Heat is energy, not a substance that roots build into tissue."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q23",
+      "type": "multiple_choice",
+      "prompt": "Warm, moist leaves lose mass faster than cold, dry leaves. Can this test establish the effect of temperature alone?",
+      "questionText": "Warm, moist leaves lose mass faster than cold, dry leaves. Can this test establish the effect of temperature alone?",
+      "options": [
+        "Yes; the warmer group always isolates temperature.",
+        "No; moisture also changed and could affect the result.",
+        "No; decomposition cannot be measured by any experiment.",
+        "Yes; temperature and moisture are the same variable."
+      ],
+      "correctAnswer": "No; moisture also changed and could affect the result.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Two changed factors make their individual contributions unclear."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q24",
+      "type": "multiple_choice",
+      "prompt": "A stream gains much dead organic material. Oxygen falls as microbial respiration increases. Which chain best explains this?",
+      "questionText": "A stream gains much dead organic material. Oxygen falls as microbial respiration increases. Which chain best explains this?",
+      "options": [
+        "More organic food -> more photosynthesis in all microbes -> oxygen loss.",
+        "More dead material -> oxygen atoms destroyed -> lower oxygen.",
+        "More decomposition -> less microbial activity -> lower oxygen.",
+        "More organic food -> more aerobic respiration -> more oxygen use."
+      ],
+      "correctAnswer": "More organic food -> more aerobic respiration -> more oxygen use.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Aerobic decomposers use oxygen; this can link a material input to oxygen availability for other organisms."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q25",
+      "type": "multiple_choice",
+      "prompt": "A mesh bag loses 10 g of leaf dry mass. Fragments collected beneath it total 6 g. What can be said about the 10 g loss?",
+      "questionText": "A mesh bag loses 10 g of leaf dry mass. Fragments collected beneath it total 6 g. What can be said about the 10 g loss?",
+      "options": [
+        "Exactly 10 g was chemically decomposed.",
+        "Exactly 6 g became carbon dioxide.",
+        "At least 6 g left as fragments; the full 10 g cannot be assigned to decomposition.",
+        "No matter crossed the bag boundary."
+      ],
+      "correctAnswer": "At least 6 g left as fragments; the full 10 g cannot be assigned to decomposition.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Collected fragments demonstrate physical export; remaining loss needs further evidence."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q26",
+      "type": "multiple_choice",
+      "prompt": "Two models both show leaves disappearing. Model A sends all matter to soil; Model B includes soil, organisms, and gases. Why prefer B?",
+      "questionText": "Two models both show leaves disappearing. Model A sends all matter to soil; Model B includes soil, organisms, and gases. Why prefer B?",
+      "options": [
+        "It proves every atom follows the same route.",
+        "It shows that decomposition creates carbon atoms.",
+        "It requires no measurements because it has more arrows.",
+        "It accounts for several plausible destinations of leaf atoms."
+      ],
+      "correctAnswer": "It accounts for several plausible destinations of leaf atoms.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "A more complete accounting includes gaseous products and decomposer biomass, while still requiring testing."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q27",
+      "type": "multiple_choice",
+      "prompt": "Carbon dioxide rises in both a leaf-and-soil treatment and a soil-only comparison. What would strengthen a claim that added leaves increase respiration?",
+      "questionText": "Carbon dioxide rises in both a leaf-and-soil treatment and a soil-only comparison. What would strengthen a claim that added leaves increase respiration?",
+      "options": [
+        "Any rise in either container.",
+        "Using only the leaf treatment's final value.",
+        "Comparing different container volumes without adjustment.",
+        "A consistently greater rise in replicated leaf-and-soil treatments."
+      ],
+      "correctAnswer": "A consistently greater rise in replicated leaf-and-soil treatments.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Soil alone can respire; the additional effect needs a matched comparison."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q28",
+      "type": "multiple_choice",
+      "prompt": "A decomposer becomes food for another organism. Which explanation joins decomposition to energy pyramids?",
+      "questionText": "A decomposer becomes food for another organism. Which explanation joins decomposition to energy pyramids?",
+      "options": [
+        "Chemical energy in decomposer biomass can transfer, with some energy dispersed as heat at each step.",
+        "Decomposers restart all lost heat as sunlight.",
+        "All energy in the dead leaf reaches the next consumer.",
+        "Energy transfer stops once matter enters decomposers."
+      ],
+      "correctAnswer": "Chemical energy in decomposer biomass can transfer, with some energy dispersed as heat at each step.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Decomposers are part of energy flow, but they do not recycle dispersed heat back into sunlight."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q29",
+      "type": "multiple_choice",
+      "prompt": "A fallen log remains recognizable for years. Does that disprove decomposition?",
+      "questionText": "A fallen log remains recognizable for years. Does that disprove decomposition?",
+      "options": [
+        "No; decomposition rates vary and can be slow while material still remains.",
+        "Yes; decomposition must remove all material in a week.",
+        "Yes; recognizable objects cannot exchange matter.",
+        "No; all logs decay at exactly the same rate."
+      ],
+      "correctAnswer": "No; decomposition rates vary and can be slow while material still remains.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Durable material and local conditions affect rates; persistence does not mean zero breakdown."
+    },
+    {
+      "id": "science7-decomposers-matter-cycling-core-q30",
+      "type": "multiple_choice",
+      "prompt": "A study finds less litter after adding a treatment, but it did not track runoff, fragments, or gases. Which conclusion best fits the evidence?",
+      "questionText": "A study finds less litter after adding a treatment, but it did not track runoff, fragments, or gases. Which conclusion best fits the evidence?",
+      "options": [
+        "The treatment proved that atoms were destroyed.",
+        "The treatment reduced measured litter; the pathways of loss remain uncertain.",
+        "Every missing gram became soil minerals.",
+        "The treatment certainly increased biological decomposition by the full loss."
+      ],
+      "correctAnswer": "The treatment reduced measured litter; the pathways of loss remain uncertain.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "The measured outcome is clear, but the mechanism requires additional evidence."
+    }
+  ]
+}

@@ -480,6 +480,8 @@ describe("content repository", () => {
       "concept-population-data-ecosystem-stability",
       "concept-energy-pyramids-food-web-efficiency",
       "concept-limiting-factors-carrying-capacity",
+      "concept-decomposers-matter-cycling",
+      "concept-ecosystem-disturbance-recovery",
       "concept-genetics-inheritance-variation",
       "concept-dna-genes-chromosomes-traits",
       "concept-evolution-life-history",
