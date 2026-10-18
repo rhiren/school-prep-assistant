@@ -482,6 +482,7 @@ describe("content repository", () => {
       "concept-limiting-factors-carrying-capacity",
       "concept-decomposers-matter-cycling",
       "concept-ecosystem-disturbance-recovery",
+      "concept-competition-resource-partitioning",
       "concept-genetics-inheritance-variation",
       "concept-dna-genes-chromosomes-traits",
       "concept-evolution-life-history",
@@ -490,6 +491,7 @@ describe("content repository", () => {
       "concept-comparative-anatomy-evolution-relationships",
       "concept-biodiversity-human-impact",
       "concept-biodiversity-solutions-tradeoffs",
+      "concept-invasive-species-food-web-changes",
     ]);
 
     for (const concept of readyConcepts) {
