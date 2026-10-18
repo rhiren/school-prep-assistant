@@ -305,7 +305,11 @@ Standards: `8.F.1-5`, `8.G.9`
 9. Volume of Cylinders
 10. Unit 5 Mixed Review
 
-Current status: not yet built in active Course 3.
+Current status: the first two concepts are practice ready, each with a visual
+tutorial, 50-question core test, and 20-question review. Eight concepts remain.
+Regression coverage checks answer-position blocks, fresh review prompts,
+function misconceptions, and independently calculated answers alongside the
+repository-wide difficulty, scoring, tutorial uniqueness, and variety gates.
 
 ### Unit 6 — Associations in Data
 
@@ -415,9 +419,10 @@ retained checkpoint, and the remaining reusable number/exponent assets:
 - Dilations, Similarity, and Slope: 9 learner-ready concepts
 - Proportional and Linear Relationships: 9 learner-ready concepts
 - Linear Equations and Linear Systems: 19 learner-ready concepts
+- Functions and Volume: 2 learner-ready concepts (Understand Functions; Functions in Tables and Mapping Diagrams)
 - Real Numbers and Exponents: 12 learner-ready concepts
 
-Total active Course 3 concepts: 59.
+Total active Course 3 concepts: 61.
 
 These should be treated as reusable content assets during the transition, not
 as discarded work.
@@ -426,7 +431,7 @@ as discarded work.
 
 The next Course 3 build target is book Unit 5:
 
-- Understand Functions
+- Functions on Graphs
 
 ## Definition of Ready
 

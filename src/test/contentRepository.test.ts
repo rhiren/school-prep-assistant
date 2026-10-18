@@ -997,8 +997,21 @@ describe("content repository", () => {
       "concept-systems-equations-word-problems",
       "concept-unit4-equations-systems-mixed-review",
     ]);
-    expect(course?.units[4]?.id).toBe("course3-unit-real-numbers-exponents");
-    expect(course?.units[4]?.concepts).toHaveLength(12);
+    expect(course?.units[4]?.id).toBe("course3-unit-functions-volume");
+    expect(course?.units[4]?.concepts.map(concept => concept.id)).toEqual([
+      "concept-understand-functions", "concept-functions-tables-mapping-diagrams",
+    ]);
+    expect(course?.units[5]?.id).toBe("course3-unit-real-numbers-exponents");
+    expect(course?.units[5]?.concepts).toHaveLength(12);
+
+    for (const [slug, title] of [
+      ["understand-functions", "Understand Functions"],
+      ["functions-tables-mapping-diagrams", "Functions in Tables and Mapping Diagrams"],
+    ]) conceptPacks.push({
+      conceptId: `concept-${slug}`, standards: ["8.F.1"],
+      tutorialHeading: `# ${title}`, coreTestId: `course3-${slug}-core`,
+      reviewTestId: `course3-${slug}-review`,
+    });
 
     for (const pack of conceptPacks) {
       const concept = await repository.getConcept(pack.conceptId);

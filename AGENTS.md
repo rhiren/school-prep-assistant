@@ -345,13 +345,14 @@ and tutorial paths when moving them into book-aligned units so existing local
 progress, Firebase sync, export/import, and parent reporting continue to attach
 to the same skills.
 
-The current active Course 3 manifest contains 59 learner-ready concepts:
+The current active Course 3 manifest contains 61 learner-ready concepts:
 
 - Rigid Transformations and Congruence: 10 concepts
 - Dilations, Similarity, and Slope: 9 concepts
 - Proportional and Linear Relationships: 9 concepts
 - Linear Equations and Linear Systems: 19 concepts (18 planned plus the retained
   Linear Equations Checkpoint)
+- Functions and Volume: 2 concepts (Understand Functions; Functions in Tables and Mapping Diagrams)
 - Real Numbers and Exponents: 12 concepts
 
 The current book-aligned learner-ready sequence begins with:
@@ -393,7 +394,7 @@ word problems, and the full Unit 4 mixed review.
 
 The next Course 3 build target is:
 
-- `Understand Functions` in Unit 5, `Functions and Volume`
+- `Functions on Graphs` in Unit 5, `Functions and Volume`
 
 Course 3 multiple-choice answer choices must remain position-balanced. Do not
 author or generate test banks where the correct answer repeatedly appears in

@@ -1,0 +1,409 @@
+{
+  "testId": "course3-functions-tables-mapping-diagrams-review",
+  "conceptId": "concept-functions-tables-mapping-diagrams",
+  "type": "review",
+  "title": "Functions in Tables and Mapping Diagrams Review Test",
+  "description": "Identify inputs, reason about unique outputs, and explain representations and counterexamples.",
+  "questions": [
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-001",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table lists x -> y as 21 -> 2, 22 -> 4, 23 -> 6. Is the displayed relation a function?",
+      "correctAnswer": "Yes; every listed x has one y.",
+      "explanation": "Read the input column first. Each listed input has one assignment, so these rows define a function on the listed inputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; the y-values are different.",
+        "Yes; every listed x has one y.",
+        "No; x does not start at zero.",
+        "Yes; every table is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-002",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping shows arrows 21 -> 5 and 21 -> 9. Which input has conflicting outputs?",
+      "correctAnswer": "21",
+      "explanation": "Follow the arrows from 21: one goes to 5 and one to 9. One input with two different outputs fails the test.",
+      "difficulty": "scaffold",
+      "options": [
+        "5",
+        "9",
+        "22",
+        "21"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-003",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Three arrows are 21 -> 8, 22 -> 8, 23 -> 8. Do converging arrows break the function rule?",
+      "correctAnswer": "No; each input still has just one outgoing assignment.",
+      "explanation": "Several arrows may end at the same output. The test concerns arrows leaving each input, not arriving at each output.",
+      "difficulty": "scaffold",
+      "options": [
+        "Yes; an output can receive only one arrow.",
+        "Yes; the output must increase.",
+        "No; each input still has just one outgoing assignment.",
+        "No; every arrow diagram is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-004",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Read the table: input 21 gives 3; input 22 gives 6; input 23 gives 9. What is the output for input 22?",
+      "correctAnswer": "6",
+      "explanation": "Find the specified input row and read its paired output. Do not use the input number itself as the answer.",
+      "difficulty": "scaffold",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-005",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The stated input set is {21, 22, 23}. Arrows are shown only from 21 and 22. What is missing for a function on that entire input set?",
+      "correctAnswer": "One output assignment for 23.",
+      "explanation": "A function must assign an output to every input in its stated domain, as well as avoiding conflicting outputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "One output assignment for 23.",
+        "A different output for every input.",
+        "A second arrow from every input.",
+        "An arrow from every output back to an input."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-006",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table lists x -> y as 22 -> 2, 23 -> 4, 24 -> 6. Is the displayed relation a function?",
+      "correctAnswer": "Yes; every listed x has one y.",
+      "explanation": "Read the input column first. Each listed input has one assignment, so these rows define a function on the listed inputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; the y-values are different.",
+        "No; x does not start at zero.",
+        "Yes; every listed x has one y.",
+        "Yes; every table is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-007",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping shows arrows 22 -> 5 and 22 -> 9. Which input has conflicting outputs?",
+      "correctAnswer": "22",
+      "explanation": "Follow the arrows from 22: one goes to 5 and one to 9. One input with two different outputs fails the test.",
+      "difficulty": "scaffold",
+      "options": [
+        "5",
+        "22",
+        "9",
+        "23"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-008",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Three arrows are 22 -> 8, 23 -> 8, 24 -> 8. Do converging arrows break the function rule?",
+      "correctAnswer": "No; each input still has just one outgoing assignment.",
+      "explanation": "Several arrows may end at the same output. The test concerns arrows leaving each input, not arriving at each output.",
+      "difficulty": "scaffold",
+      "options": [
+        "Yes; an output can receive only one arrow.",
+        "Yes; the output must increase.",
+        "No; every arrow diagram is a function.",
+        "No; each input still has just one outgoing assignment."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-009",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (21, 2), (22, 5), (21, 2). A student rejects it because x repeats. What is the correction?",
+      "correctAnswer": "The repeated x has the same y both times, so the displayed relation is a function.",
+      "explanation": "Identical rows repeat the same assignment. Only different outputs for the same input create a conflict.",
+      "difficulty": "standard",
+      "options": [
+        "The repeated x must be deleted even when its output agrees.",
+        "The repeated x has the same y both times, so the displayed relation is a function.",
+        "It is not a function because every y must be different.",
+        "It is a function only if the inputs are sorted."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-010",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function table has (21, 3), (22, 7), (21, k). What value of k avoids a conflict?",
+      "correctAnswer": "3",
+      "explanation": "Input 21 already gives 3. Its second row must agree with that output.",
+      "difficulty": "standard",
+      "options": [
+        "7",
+        "0",
+        "3",
+        "4"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-011",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping has 21 -> 4 and 22 -> 6. Which additional arrow would make the relation fail the function test?",
+      "correctAnswer": "22 -> 9",
+      "explanation": "Input 22 would have outputs 6 and 9. The other arrows have new inputs and create no conflict.",
+      "difficulty": "standard",
+      "options": [
+        "22 -> 9",
+        "23 -> 4",
+        "24 -> 6",
+        "25 -> 9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-012",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table is shown in this order: (23, 8), (21, 4), (22, 6). Which mapping represents exactly the same relation?",
+      "correctAnswer": "21 -> 4; 22 -> 6; 23 -> 8",
+      "explanation": "The order of rows can change, but each input-output pairing must stay intact. Reversing arrows changes the relation.",
+      "difficulty": "standard",
+      "options": [
+        "21 -> 8; 22 -> 6; 23 -> 4",
+        "4 -> 21; 6 -> 22; 8 -> 23",
+        "21 -> 4; 22 -> 8; 23 -> 6",
+        "21 -> 4; 22 -> 6; 23 -> 8"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-013",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The table follows the stated rule y = 2x + 1. Its rows include (21, 43) and (23, ?). What fills the missing output?",
+      "correctAnswer": "47",
+      "explanation": "Use the supplied rule, not a guessed pattern: 2(23) + 1 = 47.",
+      "difficulty": "standard",
+      "options": [
+        "46",
+        "47",
+        "48",
+        "50"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-014",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (22, 2), (23, 5), (22, 2). A student rejects it because x repeats. What is the correction?",
+      "correctAnswer": "The repeated x has the same y both times, so the displayed relation is a function.",
+      "explanation": "Identical rows repeat the same assignment. Only different outputs for the same input create a conflict.",
+      "difficulty": "standard",
+      "options": [
+        "The repeated x has the same y both times, so the displayed relation is a function.",
+        "The repeated x must be deleted even when its output agrees.",
+        "It is not a function because every y must be different.",
+        "It is a function only if the inputs are sorted."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-015",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function table has (22, 3), (23, 7), (22, k). What value of k avoids a conflict?",
+      "correctAnswer": "3",
+      "explanation": "Input 22 already gives 3. Its second row must agree with that output.",
+      "difficulty": "standard",
+      "options": [
+        "7",
+        "0",
+        "3",
+        "4"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-016",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A mapping has 22 -> 4 and 23 -> 6. Which additional arrow would make the relation fail the function test?",
+      "correctAnswer": "23 -> 9",
+      "explanation": "Input 23 would have outputs 6 and 9. The other arrows have new inputs and create no conflict.",
+      "difficulty": "standard",
+      "options": [
+        "24 -> 4",
+        "25 -> 6",
+        "26 -> 9",
+        "23 -> 9"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-017",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table is shown in this order: (24, 8), (22, 4), (23, 6). Which mapping represents exactly the same relation?",
+      "correctAnswer": "22 -> 4; 23 -> 6; 24 -> 8",
+      "explanation": "The order of rows can change, but each input-output pairing must stay intact. Reversing arrows changes the relation.",
+      "difficulty": "standard",
+      "options": [
+        "22 -> 8; 23 -> 6; 24 -> 4",
+        "22 -> 4; 23 -> 6; 24 -> 8",
+        "4 -> 22; 6 -> 23; 8 -> 24",
+        "22 -> 4; 23 -> 8; 24 -> 6"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-018",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The table follows the stated rule y = 2x + 1. Its rows include (22, 45) and (24, ?). What fills the missing output?",
+      "correctAnswer": "49",
+      "explanation": "Use the supplied rule, not a guessed pattern: 2(24) + 1 = 49.",
+      "difficulty": "standard",
+      "options": [
+        "49",
+        "48",
+        "50",
+        "52"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-019",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A table contains (23, 2), (24, 5), (23, 2). A student rejects it because x repeats. What is the correction?",
+      "correctAnswer": "The repeated x has the same y both times, so the displayed relation is a function.",
+      "explanation": "Identical rows repeat the same assignment. Only different outputs for the same input create a conflict.",
+      "difficulty": "standard",
+      "options": [
+        "The repeated x must be deleted even when its output agrees.",
+        "It is not a function because every y must be different.",
+        "It is a function only if the inputs are sorted.",
+        "The repeated x has the same y both times, so the displayed relation is a function."
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    },
+    {
+      "id": "course3-functions-tables-mapping-diagrams-review-020",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function table has (23, 3), (24, 7), (23, k). What value of k avoids a conflict?",
+      "correctAnswer": "3",
+      "explanation": "Input 23 already gives 3. Its second row must agree with that output.",
+      "difficulty": "standard",
+      "options": [
+        "7",
+        "0",
+        "3",
+        "4"
+      ],
+      "skillTags": [
+        "functions",
+        "reasoning",
+        "conceptual"
+      ]
+    }
+  ]
+}

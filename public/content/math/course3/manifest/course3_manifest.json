@@ -2635,10 +2635,120 @@
           ]
         },
         {
+          "id": "course3-unit-functions-volume",
+          "title": "Functions and Volume",
+          "description": "Connect function rules and representations before applying relationships to volume.",
+          "order": 5,
+          "concepts": [
+            {
+              "id": "concept-understand-functions",
+              "title": "Understand Functions",
+              "description": "Distinguish inputs and outputs and explain when an assignment defines a function.",
+              "tags": [
+                "functions"
+              ],
+              "skillTags": [
+                "conceptual",
+                "reasoning",
+                "application"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "8"
+              ],
+              "programPathways": [
+                "accelerated"
+              ],
+              "standardsFrameworks": [
+                "8.F.1"
+              ],
+              "order": 1,
+              "testQuestionCount": 50,
+              "tutorial": "./content/tutorials/concept-understand-functions.md",
+              "tests": [
+                {
+                  "id": "course3-understand-functions-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/course3-understand-functions-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "course3-understand-functions-review",
+                  "type": "review",
+                  "path": "./content/test-sets/course3-understand-functions-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "concept-functions-tables-mapping-diagrams",
+              "title": "Functions in Tables and Mapping Diagrams",
+              "description": "Interpret, compare, and repair tables and mapping diagrams using unique outputs.",
+              "tags": [
+                "functions"
+              ],
+              "skillTags": [
+                "conceptual",
+                "reasoning",
+                "application"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "8"
+              ],
+              "programPathways": [
+                "accelerated"
+              ],
+              "standardsFrameworks": [
+                "8.F.1"
+              ],
+              "order": 2,
+              "testQuestionCount": 50,
+              "tutorial": "./content/tutorials/concept-functions-tables-mapping-diagrams.md",
+              "tests": [
+                {
+                  "id": "course3-functions-tables-mapping-diagrams-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/course3-functions-tables-mapping-diagrams-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "course3-functions-tables-mapping-diagrams-review",
+                  "type": "review",
+                  "path": "./content/test-sets/course3-functions-tables-mapping-diagrams-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": false
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "course3-unit-real-numbers-exponents",
           "title": "Real Numbers and Exponents",
           "description": "Build a strong foundation with rational and irrational numbers before moving into radicals, exponents, and scientific notation.",
-          "order": 5,
+          "order": 6,
           "concepts": [
             {
               "id": "concept-rational-irrational-numbers",
