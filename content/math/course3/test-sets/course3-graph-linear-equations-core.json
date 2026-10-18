@@ -8,7 +8,7 @@
     {
       "id": "course3-graph-linear-equations-core-001",
       "type": "multiple_choice",
-      "questionText": "To graph y = -1/2x - 2, start at the y-intercept and use the slope. Which second point can you plot?",
+      "questionText": "To graph y = -1/2x - 2, start at the y-intercept and move right 2 units. Which point do you reach?",
       "options": [
         "(0, -2)",
         "(2, -3)",
@@ -23,7 +23,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 2, then add that vertical change to the starting y-value. This gives (2, -3). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-002",
@@ -68,7 +68,7 @@
     {
       "id": "course3-graph-linear-equations-core-004",
       "type": "multiple_choice",
-      "questionText": "A line has equation y = 3/2x - 5. Starting at (0, -5), which point follows from the slope?",
+      "questionText": "A line has equation y = 3/2x - 5. Starting at (0, -5), move right 8 units. Which point do you reach?",
       "options": [
         "(8, -17)",
         "(8, 7)",
@@ -83,7 +83,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 8, then add that vertical change to the starting y-value. This gives (8, 7). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-005",
@@ -128,7 +128,7 @@
     {
       "id": "course3-graph-linear-equations-core-007",
       "type": "multiple_choice",
-      "questionText": "Use slope -2/3 from y-intercept -9. Which point is on the line?",
+      "questionText": "Use slope -2/3 from y-intercept -9. Move right 6 units. Which point do you reach?",
       "options": [
         "(6, -13)",
         "(3, -11)",
@@ -143,7 +143,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 6, then add that vertical change to the starting y-value. This gives (6, -13). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-008",
@@ -188,7 +188,7 @@
     {
       "id": "course3-graph-linear-equations-core-010",
       "type": "multiple_choice",
-      "questionText": "To graph y = 4/3x - 1, start at the y-intercept and use the slope. Which second point can you plot?",
+      "questionText": "To graph y = 4/3x - 1, start at the y-intercept and move right 15 units. Which point do you reach?",
       "options": [
         "(3, 3)",
         "(15, 19)",
@@ -203,7 +203,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 15, then add that vertical change to the starting y-value. This gives (15, 19). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-011",
@@ -248,7 +248,7 @@
     {
       "id": "course3-graph-linear-equations-core-013",
       "type": "multiple_choice",
-      "questionText": "A line has equation y = -3/4x - 8. Starting at (0, -8), which point follows from the slope?",
+      "questionText": "A line has equation y = -3/4x - 8. Starting at (0, -8), move right 12 units. Which point do you reach?",
       "options": [
         "(4, -11)",
         "(12, -1)",
@@ -263,7 +263,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 12, then add that vertical change to the starting y-value. This gives (12, -17). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-014",
@@ -308,7 +308,7 @@
     {
       "id": "course3-graph-linear-equations-core-016",
       "type": "multiple_choice",
-      "questionText": "Use slope 5/2 from y-intercept -6. Which point is on the line?",
+      "questionText": "Use slope 5/2 from y-intercept -6. Move right 2 units. Which point do you reach?",
       "options": [
         "(2, -1)",
         "(2, 11)",
@@ -323,7 +323,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 2, then add that vertical change to the starting y-value. This gives (2, -1). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-017",
@@ -368,7 +368,7 @@
     {
       "id": "course3-graph-linear-equations-core-019",
       "type": "multiple_choice",
-      "questionText": "To graph y = -4x - 7, start at the y-intercept and use the slope. Which second point can you plot?",
+      "questionText": "To graph y = -4x - 7, start at the y-intercept and move right 4 units. Which point do you reach?",
       "options": [
         "(4, -9)",
         "(4, 9)",
@@ -383,7 +383,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 4, then add that vertical change to the starting y-value. This gives (4, -23). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-020",
@@ -428,7 +428,7 @@
     {
       "id": "course3-graph-linear-equations-core-022",
       "type": "multiple_choice",
-      "questionText": "A line has equation y = 2/5x. Starting at (0, 0), which point follows from the slope?",
+      "questionText": "A line has equation y = 2/5x. Starting at (0, 0), move right 10 units. Which point do you reach?",
       "options": [
         "(0, 0)",
         "(10, -4)",
@@ -443,7 +443,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 10, then add that vertical change to the starting y-value. This gives (10, 4). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-023",
@@ -488,7 +488,7 @@
     {
       "id": "course3-graph-linear-equations-core-025",
       "type": "multiple_choice",
-      "questionText": "Use slope 0 from y-intercept -3. Which point is on the line?",
+      "questionText": "Use slope 0 from y-intercept -3. Move right 5 units. Which point do you reach?",
       "options": [
         "(5, 3)",
         "(1, -3)",
@@ -503,7 +503,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 5, then add that vertical change to the starting y-value. This gives (5, -3). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-026",
@@ -548,7 +548,7 @@
     {
       "id": "course3-graph-linear-equations-core-028",
       "type": "multiple_choice",
-      "questionText": "To graph y = -5/3x + 5, start at the y-intercept and use the slope. Which second point can you plot?",
+      "questionText": "To graph y = -5/3x + 5, start at the y-intercept and move right 9 units. Which point do you reach?",
       "options": [
         "(9, 20)",
         "(9, -10)",
@@ -563,7 +563,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 9, then add that vertical change to the starting y-value. This gives (9, -10). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-029",
@@ -608,7 +608,7 @@
     {
       "id": "course3-graph-linear-equations-core-031",
       "type": "multiple_choice",
-      "questionText": "A line has equation y = 3/5x + 2. Starting at (0, 2), which point follows from the slope?",
+      "questionText": "A line has equation y = 3/5x + 2. Starting at (0, 2), move right 5 units. Which point do you reach?",
       "options": [
         "(5, -1)",
         "(0, 2)",
@@ -623,7 +623,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 5, then add that vertical change to the starting y-value. This gives (5, 5). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-032",
@@ -668,7 +668,7 @@
     {
       "id": "course3-graph-linear-equations-core-034",
       "type": "multiple_choice",
-      "questionText": "Use slope 7/4 from y-intercept 3. Which point is on the line?",
+      "questionText": "Use slope 7/4 from y-intercept 3. Move right 16 units. Which point do you reach?",
       "options": [
         "(16, 31)",
         "(4, 10)",
@@ -683,7 +683,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 16, then add that vertical change to the starting y-value. This gives (16, 31). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-035",
@@ -728,7 +728,7 @@
     {
       "id": "course3-graph-linear-equations-core-037",
       "type": "multiple_choice",
-      "questionText": "To graph y = -7/5x + 4, start at the y-intercept and use the slope. Which second point can you plot?",
+      "questionText": "To graph y = -7/5x + 4, start at the y-intercept and move right 10 units. Which point do you reach?",
       "options": [
         "(10, -18)",
         "(5, -3)",
@@ -743,7 +743,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 10, then add that vertical change to the starting y-value. This gives (10, -10). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-038",
@@ -788,7 +788,7 @@
     {
       "id": "course3-graph-linear-equations-core-040",
       "type": "multiple_choice",
-      "questionText": "A line has equation y = 5/6x + 10. Starting at (0, 10), which point follows from the slope?",
+      "questionText": "A line has equation y = 5/6x + 10. Starting at (0, 10), move right 30 units. Which point do you reach?",
       "options": [
         "(6, 15)",
         "(30, 35)",
@@ -803,7 +803,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 30, then add that vertical change to the starting y-value. This gives (30, 35). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-041",
@@ -848,7 +848,7 @@
     {
       "id": "course3-graph-linear-equations-core-043",
       "type": "multiple_choice",
-      "questionText": "Use slope -3/2 from y-intercept 7. Which point is on the line?",
+      "questionText": "Use slope -3/2 from y-intercept 7. Move right 6 units. Which point do you reach?",
       "options": [
         "(6, -16)",
         "(2, 4)",
@@ -863,7 +863,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 6, then add that vertical change to the starting y-value. This gives (6, -2). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-044",
@@ -908,7 +908,7 @@
     {
       "id": "course3-graph-linear-equations-core-046",
       "type": "multiple_choice",
-      "questionText": "To graph y = 6/5x + 9, start at the y-intercept and use the slope. Which second point can you plot?",
+      "questionText": "To graph y = 6/5x + 9, start at the y-intercept and move right 5 units. Which point do you reach?",
       "options": [
         "(5, 3)",
         "(5, -3)",
@@ -923,7 +923,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 5, then add that vertical change to the starting y-value. This gives (5, 15). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-047",
@@ -968,7 +968,7 @@
     {
       "id": "course3-graph-linear-equations-core-049",
       "type": "multiple_choice",
-      "questionText": "A line has equation y = x + 1. Starting at (0, 1), which point follows from the slope?",
+      "questionText": "A line has equation y = x + 1. Starting at (0, 1), move right 4 units. Which point do you reach?",
       "options": [
         "(4, 3)",
         "(4, 5)",
@@ -983,7 +983,7 @@
         "visual",
         "reasoning"
       ],
-      "explanation": "Graph a line by plotting the y-intercept first, then using slope as rise over run to find another point."
+      "explanation": "Start at the y-intercept (x = 0). Multiply the slope by the horizontal change of 4, then add that vertical change to the starting y-value. This gives (4, 5). Other points may lie on the line but do not match the requested movement."
     },
     {
       "id": "course3-graph-linear-equations-core-050",
