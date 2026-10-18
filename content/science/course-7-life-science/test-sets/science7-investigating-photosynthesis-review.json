@@ -1,0 +1,333 @@
+{
+  "id": "science7-investigating-photosynthesis-review",
+  "testId": "science7-investigating-photosynthesis-review",
+  "conceptId": "concept-investigating-photosynthesis",
+  "title": "Investigating Photosynthesis Review Test",
+  "description": "Use controlled comparisons, matter models, and rate data to investigate photosynthesis and distinguish oxygen production from net change.",
+  "questions": [
+    {
+      "id": "science7-investigating-photosynthesis-review-q1",
+      "type": "multiple_choice",
+      "prompt": "An algae model labels carbon dioxide 'energy' and sunlight 'matter.' What correction is needed?",
+      "questionText": "An algae model labels carbon dioxide 'energy' and sunlight 'matter.' What correction is needed?",
+      "options": [
+        "Both labels should say matter.",
+        "Both labels should say oxygen.",
+        "The labels are correct because light contains carbon.",
+        "Carbon dioxide supplies matter; sunlight supplies energy."
+      ],
+      "correctAnswer": "Carbon dioxide supplies matter; sunlight supplies energy.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Matter and energy play different roles in photosynthesis."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q2",
+      "type": "multiple_choice",
+      "prompt": "A leafy shoot remains alive overnight. Which process can release usable energy from its stored sugars?",
+      "questionText": "A leafy shoot remains alive overnight. Which process can release usable energy from its stored sugars?",
+      "options": [
+        "Photosynthesis without light.",
+        "Cellular respiration.",
+        "Transpiration alone.",
+        "Absorption of soil minerals alone."
+      ],
+      "correctAnswer": "Cellular respiration.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Respiration can use stored sugars during darkness."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q3",
+      "type": "multiple_choice",
+      "prompt": "A sample produces 45 bubbles in five minutes. What rate was counted?",
+      "questionText": "A sample produces 45 bubbles in five minutes. What rate was counted?",
+      "options": [
+        "40 bubbles per minute.",
+        "9 bubbles per minute.",
+        "225 bubbles per minute.",
+        "5 bubbles per minute."
+      ],
+      "correctAnswer": "9 bubbles per minute.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "45 divided by 5 is 9; this is a count rate, not a calibrated gas volume."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q4",
+      "type": "multiple_choice",
+      "prompt": "Which question could a controlled light-level experiment answer most directly?",
+      "questionText": "Which question could a controlled light-level experiment answer most directly?",
+      "options": [
+        "How does the tested light change affect a measured photosynthesis proxy under matched conditions?",
+        "Do all plants in every habitat respond identically?",
+        "Does photosynthesis create carbon atoms?",
+        "Can one trial prove that nutrients never matter?"
+      ],
+      "correctAnswer": "How does the tested light change affect a measured photosynthesis proxy under matched conditions?",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "A controlled experiment answers a specific, bounded comparison."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q5",
+      "type": "multiple_choice",
+      "prompt": "Two trials count equal numbers of bubbles but do not record their sizes. What extra measurement would improve comparison of released gas?",
+      "questionText": "Two trials count equal numbers of bubbles but do not record their sizes. What extra measurement would improve comparison of released gas?",
+      "options": [
+        "The color of the experiment labels.",
+        "The total number of notebook pages.",
+        "Gas volume over the same time interval.",
+        "The age of the room's door."
+      ],
+      "correctAnswer": "Gas volume over the same time interval.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Gas volume provides information that counts alone cannot supply."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q6",
+      "type": "multiple_choice",
+      "prompt": "A simplified light-period model makes 13 oxygen units and uses 5. What change should the oxygen store show?",
+      "questionText": "A simplified light-period model makes 13 oxygen units and uses 5. What change should the oxygen store show?",
+      "options": [
+        "An increase of 8 units.",
+        "An increase of 18 units.",
+        "A decrease of 5 units.",
+        "No change because both processes occur."
+      ],
+      "correctAnswer": "An increase of 8 units.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Production minus use is 13 - 5 = 8."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q7",
+      "type": "multiple_choice",
+      "prompt": "Why does a larger oxygen gain not automatically mean a larger photosynthesis rate when comparing two different plants?",
+      "questionText": "Why does a larger oxygen gain not automatically mean a larger photosynthesis rate when comparing two different plants?",
+      "options": [
+        "Oxygen cannot be measured in plants.",
+        "Respiration is always exactly the same in every plant.",
+        "Photosynthesis never produces oxygen.",
+        "Different respiration rates or background exchanges can affect net gain."
+      ],
+      "correctAnswer": "Different respiration rates or background exchanges can affect net gain.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Net gain combines production and consumption and may include other exchanges."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q8",
+      "type": "multiple_choice",
+      "prompt": "A seedling becomes taller in shade but gains less dry mass than a matched seedling in moderate light. Which interpretation fits both observations?",
+      "questionText": "A seedling becomes taller in shade but gains less dry mass than a matched seedling in moderate light. Which interpretation fits both observations?",
+      "options": [
+        "The shaded plant must have made more sugar because it is taller.",
+        "Greater height does not necessarily mean greater accumulation of plant material.",
+        "Dry mass consists only of water.",
+        "The two observations cannot occur together."
+      ],
+      "correctAnswer": "Greater height does not necessarily mean greater accumulation of plant material.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Shape and accumulated dry matter are different measurements."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q9",
+      "type": "multiple_choice",
+      "prompt": "At fixed light, rates at low, medium, and high carbon dioxide are 3, 7, and 7 units. What does the plateau justify?",
+      "questionText": "At fixed light, rates at low, medium, and high carbon dioxide are 3, 7, and 7 units. What does the plateau justify?",
+      "options": [
+        "Concluding carbon dioxide has no role in photosynthesis.",
+        "Concluding all plants have a maximum rate of 7 units.",
+        "Investigating another limiting factor rather than assuming more carbon dioxide will keep helping.",
+        "Removing the medium treatment from the data."
+      ],
+      "correctAnswer": "Investigating another limiting factor rather than assuming more carbon dioxide will keep helping.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "A plateau is a clue for a follow-up, not proof of a particular cause."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q10",
+      "type": "multiple_choice",
+      "prompt": "A student's diagram removes respiration whenever a light arrow appears. How should it change?",
+      "questionText": "A student's diagram removes respiration whenever a light arrow appears. How should it change?",
+      "options": [
+        "Keep respiration in the light model as well as the dark model.",
+        "Remove respiration from both models.",
+        "Show respiration only in dead leaves.",
+        "Replace water transport with respiration."
+      ],
+      "correctAnswer": "Keep respiration in the light model as well as the dark model.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "Living plant cells continue to respire in the light."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q11",
+      "type": "multiple_choice",
+      "prompt": "One sample gains 18 oxygen units in three hours and another gains 16 in two hours. Which has the greater average net gain rate?",
+      "questionText": "One sample gains 18 oxygen units in three hours and another gains 16 in two hours. Which has the greater average net gain rate?",
+      "options": [
+        "The first: 18 rather than 16 units per hour.",
+        "Both: 6 units per hour.",
+        "The second: 8 rather than 6 units per hour.",
+        "The second: 32 rather than 54 units per hour."
+      ],
+      "correctAnswer": "The second: 8 rather than 6 units per hour.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Normalize the changes by duration before comparing rates."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q12",
+      "type": "multiple_choice",
+      "prompt": "A dim-light sample has a net oxygen change of zero. Which additional evidence would distinguish 'no production' from 'production balanced by use'?",
+      "questionText": "A dim-light sample has a net oxygen change of zero. Which additional evidence would distinguish 'no production' from 'production balanced by use'?",
+      "options": [
+        "A second label on the same container.",
+        "The leaf's shape alone.",
+        "A rule that zero net change means no reactions.",
+        "An independent estimate of oxygen consumption under comparable conditions."
+      ],
+      "correctAnswer": "An independent estimate of oxygen consumption under comparable conditions.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Separating opposing processes needs information beyond their combined net effect."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q13",
+      "type": "multiple_choice",
+      "prompt": "A team moves a lamp closer but uses a cooling arrangement to keep temperature steady. Why does that improve the test?",
+      "questionText": "A team moves a lamp closer but uses a cooling arrangement to keep temperature steady. Why does that improve the test?",
+      "options": [
+        "It guarantees bubble sizes cannot change.",
+        "It reduces heating as an alternative explanation for a light-treatment effect.",
+        "It makes plant size irrelevant.",
+        "It proves carbon dioxide is unlimited."
+      ],
+      "correctAnswer": "It reduces heating as an alternative explanation for a light-treatment effect.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Controlling one confound improves interpretation without eliminating every limitation."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q14",
+      "type": "multiple_choice",
+      "prompt": "A light trial gains 4 oxygen units per hour; comparable respiration is estimated at 3 units per hour. With no other exchanges, what production is implied?",
+      "questionText": "A light trial gains 4 oxygen units per hour; comparable respiration is estimated at 3 units per hour. With no other exchanges, what production is implied?",
+      "options": [
+        "7 oxygen units per hour.",
+        "1 oxygen unit per hour.",
+        "4 oxygen units per hour.",
+        "12 oxygen units per hour."
+      ],
+      "correctAnswer": "7 oxygen units per hour.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Production must replace the 3 used and supply the 4 net gain: 7."
+    },
+    {
+      "id": "science7-investigating-photosynthesis-review-q15",
+      "type": "multiple_choice",
+      "prompt": "A drought-stressed plant receives bright light but has mostly closed stomata. Which prediction best connects water balance and photosynthesis?",
+      "questionText": "A drought-stressed plant receives bright light but has mostly closed stomata. Which prediction best connects water balance and photosynthesis?",
+      "options": [
+        "Bright light guarantees maximum sugar production regardless of gas entry.",
+        "Stomatal closure supplies extra carbon dioxide to every cell.",
+        "Reduced carbon dioxide entry may limit sugar production despite abundant light.",
+        "Water balance and photosynthesis cannot affect each other."
+      ],
+      "correctAnswer": "Reduced carbon dioxide entry may limit sugar production despite abundant light.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Water-saving responses can constrain a matter input needed for photosynthesis."
+    }
+  ]
+}

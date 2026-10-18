@@ -510,6 +510,120 @@
                 }
               ],
               "testQuestionCount": 30
+            },
+            {
+              "id": "concept-water-transport-transpiration",
+              "title": "Water Transport and Transpiration",
+              "description": "Connect roots, xylem, and leaves to water movement and evaluate evidence about plant water loss.",
+              "tags": [
+                "science",
+                "life-science",
+                "water",
+                "transport",
+                "transpiration",
+                "MS-LS1-2"
+              ],
+              "skillTags": [
+                "conceptual",
+                "application",
+                "reasoning",
+                "visual"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "7"
+              ],
+              "programPathways": [
+                "SRVUSD"
+              ],
+              "standardsFrameworks": [
+                "CA NGSS"
+              ],
+              "order": 3,
+              "tutorial": "./content/tutorials/concept-water-transport-transpiration.md",
+              "tests": [
+                {
+                  "id": "science7-water-transport-transpiration-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/science7-water-transport-transpiration-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "science7-water-transport-transpiration-review",
+                  "type": "review",
+                  "path": "./content/test-sets/science7-water-transport-transpiration-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "testQuestionCount": 30
+            },
+            {
+              "id": "concept-investigating-photosynthesis",
+              "title": "Investigating Photosynthesis",
+              "description": "Use controlled comparisons, matter models, and rate data to investigate photosynthesis and distinguish oxygen production from net change.",
+              "tags": [
+                "science",
+                "life-science",
+                "investigating",
+                "photosynthesis",
+                "MS-LS1-6",
+                "MS-LS1-7"
+              ],
+              "skillTags": [
+                "conceptual",
+                "application",
+                "reasoning",
+                "visual"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "7"
+              ],
+              "programPathways": [
+                "SRVUSD"
+              ],
+              "standardsFrameworks": [
+                "CA NGSS"
+              ],
+              "order": 4,
+              "tutorial": "./content/tutorials/concept-investigating-photosynthesis.md",
+              "tests": [
+                {
+                  "id": "science7-investigating-photosynthesis-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/science7-investigating-photosynthesis-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "science7-investigating-photosynthesis-review",
+                  "type": "review",
+                  "path": "./content/test-sets/science7-investigating-photosynthesis-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "testQuestionCount": 30
             }
           ]
         },
