@@ -1,0 +1,652 @@
+{
+  "id": "science7-ecosystem-disturbance-recovery-core",
+  "testId": "science7-ecosystem-disturbance-recovery-core",
+  "conceptId": "concept-ecosystem-disturbance-recovery",
+  "title": "Ecosystem Disturbance and Recovery Core Test",
+  "description": "Use before-and-after data, food webs, and comparison sites to explain ecosystem responses to disturbance and evaluate recovery.",
+  "questions": [
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q1",
+      "type": "multiple_choice",
+      "prompt": "A storm removes many trees from a woodland. Which is a direct physical change?",
+      "questionText": "A storm removes many trees from a woodland. Which is a direct physical change?",
+      "options": [
+        "Every herbivore population immediately doubles.",
+        "More sunlight reaches the ground where canopy was lost.",
+        "The soil must lose all living organisms.",
+        "All species experience the same change in food."
+      ],
+      "correctAnswer": "More sunlight reaches the ground where canopy was lost.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Canopy loss directly changes ground-level light; population responses depend on other factors."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q2",
+      "type": "multiple_choice",
+      "prompt": "A fire removes vegetation but leaves much soil and some roots. Which condition can help plants return?",
+      "questionText": "A fire removes vegetation but leaves much soil and some roots. Which condition can help plants return?",
+      "options": [
+        "All recovery must begin on bare rock.",
+        "Plants no longer need water after disturbance.",
+        "The former species must all return at the same time.",
+        "Surviving roots and soil can support regrowth."
+      ],
+      "correctAnswer": "Surviving roots and soil can support regrowth.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "What remains after a disturbance influences recovery; surviving roots can matter."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q3",
+      "type": "multiple_choice",
+      "prompt": "Which description best defines ecological succession?",
+      "questionText": "Which description best defines ecological succession?",
+      "options": [
+        "An individual growing taller during one afternoon.",
+        "Changes in a community's composition over time as conditions and interactions change.",
+        "A community always returning to an identical final state.",
+        "All organisms moving away at the same instant."
+      ],
+      "correctAnswer": "Changes in a community's composition over time as conditions and interactions change.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Succession concerns community change, not a guaranteed fixed endpoint."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q4",
+      "type": "multiple_choice",
+      "prompt": "A food web shows grass -> insects -> small birds, with arrows for food transfer. A disturbance reduces grass. Which effect could follow?",
+      "questionText": "A food web shows grass -> insects -> small birds, with arrows for food transfer. A disturbance reduces grass. Which effect could follow?",
+      "options": [
+        "Reduced food for insects may later reduce food for birds.",
+        "Birds necessarily increase because there is less grass.",
+        "Insects receive more energy from the smaller grass supply.",
+        "The bird response must happen before the grass change."
+      ],
+      "correctAnswer": "Reduced food for insects may later reduce food for birds.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Connected food supplies can create delayed indirect effects."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q5",
+      "type": "multiple_choice",
+      "prompt": "What is a useful baseline for studying a flood's effects?",
+      "questionText": "What is a useful baseline for studying a flood's effects?",
+      "options": [
+        "Only the highest population count after the flood.",
+        "Only a photograph of a different habitat after the flood.",
+        "Measurements of the same habitat before the flood.",
+        "A prediction written after all results were known."
+      ],
+      "correctAnswer": "Measurements of the same habitat before the flood.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "A baseline provides a pre-disturbance comparison."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q6",
+      "type": "multiple_choice",
+      "prompt": "A plot is green again, but one grass species now dominates where many plants grew. What can be concluded?",
+      "questionText": "A plot is green again, but one grass species now dominates where many plants grew. What can be concluded?",
+      "options": [
+        "Every aspect of the ecosystem has recovered.",
+        "All original species must be present under the grass.",
+        "Green cover proves food webs are unchanged.",
+        "Plant cover returned, but species composition may not have recovered."
+      ],
+      "correctAnswer": "Plant cover returned, but species composition may not have recovered.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "scaffold",
+      "explanation": "Cover and community composition are different measures of recovery."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q7",
+      "type": "multiple_choice",
+      "prompt": "Before a flood, a site had 40 shrubs. One month later it had 10; six months later it had 22. Which statement is supported?",
+      "questionText": "Before a flood, a site had 40 shrubs. One month later it had 10; six months later it had 22. Which statement is supported?",
+      "options": [
+        "Shrub count fully recovered within six months.",
+        "Shrub count partly recovered but remained below the baseline.",
+        "Shrub count continued falling throughout the study.",
+        "The flood caused no change because shrubs remained."
+      ],
+      "correctAnswer": "Shrub count partly recovered but remained below the baseline.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "The count rose from 10 to 22 but was still below 40."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q8",
+      "type": "multiple_choice",
+      "prompt": "Two plots lose vegetation. Plot A retains soil; Plot B is newly exposed bare rock. Why might A recover cover sooner?",
+      "questionText": "Two plots lose vegetation. Plot A retains soil; Plot B is newly exposed bare rock. Why might A recover cover sooner?",
+      "options": [
+        "Its plants no longer need sunlight.",
+        "Bare rock always contains more roots.",
+        "Soil guarantees the same community within one week.",
+        "Its existing soil can provide water storage, nutrients, and surviving plant material."
+      ],
+      "correctAnswer": "Its existing soil can provide water storage, nutrients, and surviving plant material.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Remaining resources and organisms can support faster establishment, without guaranteeing a timetable."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q9",
+      "type": "multiple_choice",
+      "prompt": "A trail closes to reduce trampling. What comparison best tests its effect on vegetation?",
+      "questionText": "A trail closes to reduce trampling. What comparison best tests its effect on vegetation?",
+      "options": [
+        "Compare one closed wet site to one open dry site only afterward.",
+        "Count visitors but never measure vegetation.",
+        "Track similar closed and open trail edges before and after closure.",
+        "Measure only the closed site's tallest plant once."
+      ],
+      "correctAnswer": "Track similar closed and open trail edges before and after closure.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Matched sites and baseline measurements help distinguish closure effects from wider changes."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q10",
+      "type": "multiple_choice",
+      "prompt": "A diagram shows canopy loss -> more ground light -> more sun-loving seedlings. What must be added to predict seedling success more carefully?",
+      "questionText": "A diagram shows canopy loss -> more ground light -> more sun-loving seedlings. What must be added to predict seedling success more carefully?",
+      "options": [
+        "A rule that more light benefits every species equally.",
+        "A guarantee that all mature trees return immediately.",
+        "Water, soil conditions, and access to seeds or surviving plants.",
+        "An assumption that light supplies all plant matter."
+      ],
+      "correctAnswer": "Water, soil conditions, and access to seeds or surviving plants.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "Light is one factor; other resources and available organisms constrain the response."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q11",
+      "type": "multiple_choice",
+      "prompt": "What makes frequent mowing different from one mowing followed by a long pause?",
+      "questionText": "What makes frequent mowing different from one mowing followed by a long pause?",
+      "options": [
+        "Repeated removal can prevent plants from reaching later growth stages.",
+        "Repeated mowing has no effect once the first cut is over.",
+        "One cut always removes all soil permanently.",
+        "Both schedules must produce identical communities."
+      ],
+      "correctAnswer": "Repeated removal can prevent plants from reaching later growth stages.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Disturbance frequency can change which plants persist or establish."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q12",
+      "type": "multiple_choice",
+      "prompt": "A site gains plant species from 3 to 8 after a storm. Does this alone prove the storm improved every ecosystem function?",
+      "questionText": "A site gains plant species from 3 to 8 after a storm. Does this alone prove the storm improved every ecosystem function?",
+      "options": [
+        "Yes; more species guarantees improvement in every function.",
+        "No; species number cannot ever be useful evidence.",
+        "No; species number is one measure and other functions were not measured.",
+        "Yes; the original species must all be among the eight."
+      ],
+      "correctAnswer": "No; species number is one measure and other functions were not measured.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Richness is informative but does not establish the state of every function or species."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q13",
+      "type": "multiple_choice",
+      "prompt": "Which factor helps explain different recovery at two burned sites?",
+      "questionText": "Which factor helps explain different recovery at two burned sites?",
+      "options": [
+        "Both sites are called woodlands.",
+        "Both were photographed at noon.",
+        "Both maps use the same color.",
+        "One retains roots and nearby seed sources while the other lacks them."
+      ],
+      "correctAnswer": "One retains roots and nearby seed sources while the other lacks them.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "standard",
+      "explanation": "Surviving organisms and nearby sources can influence what returns."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q14",
+      "type": "multiple_choice",
+      "prompt": "An untreated reference site falls from 100 to 80 insects while a disturbed site falls from 100 to 30. What does the reference reveal?",
+      "questionText": "An untreated reference site falls from 100 to 80 insects while a disturbed site falls from 100 to 30. What does the reference reveal?",
+      "options": [
+        "All 70 lost insects at the disturbed site must be due to the disturbance.",
+        "Some decline may reflect shared conditions, while the disturbed site declined more.",
+        "The disturbance caused the reference site to lose exactly 20 insects.",
+        "The disturbed site lost fewer insects than the reference."
+      ],
+      "correctAnswer": "Some decline may reflect shared conditions, while the disturbed site declined more.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "A shared decline suggests wider factors may contribute; the excess decline needs interpretation."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q15",
+      "type": "multiple_choice",
+      "prompt": "A woodland becomes shrubland after repeated droughts. Which idea does this challenge?",
+      "questionText": "A woodland becomes shrubland after repeated droughts. Which idea does this challenge?",
+      "options": [
+        "Changing water availability can affect populations.",
+        "Communities can change over time.",
+        "Recovery always recreates the exact earlier community.",
+        "Repeated disturbances can influence recovery."
+      ],
+      "correctAnswer": "Recovery always recreates the exact earlier community.",
+      "skillTags": [
+        "conceptual"
+      ],
+      "reasoningTags": [
+        "misconception-check"
+      ],
+      "difficulty": "standard",
+      "explanation": "A changed environment can support a different community; return is not guaranteed."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q16",
+      "type": "multiple_choice",
+      "prompt": "A site has 90% plant cover before disturbance, 20% immediately after, and 65% a year later. What additional evidence is most useful for judging habitat recovery?",
+      "questionText": "A site has 90% plant cover before disturbance, 20% immediately after, and 65% a year later. What additional evidence is most useful for judging habitat recovery?",
+      "options": [
+        "Plant species identities and use of the site by other organisms.",
+        "Only a second estimate of the same final cover.",
+        "The site's distance from the photographer.",
+        "The number of words in the restoration plan."
+      ],
+      "correctAnswer": "Plant species identities and use of the site by other organisms.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Composition and habitat use add dimensions that total cover misses."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q17",
+      "type": "multiple_choice",
+      "prompt": "Which chain plausibly explains a delayed decline in insect-eating birds after vegetation removal?",
+      "questionText": "Which chain plausibly explains a delayed decline in insect-eating birds after vegetation removal?",
+      "options": [
+        "Fewer host plants -> fewer insects -> less bird food.",
+        "Fewer host plants -> more insect food -> fewer birds.",
+        "Fewer birds -> earlier vegetation removal necessarily caused by birds.",
+        "More bare ground -> all birds lose feathers immediately."
+      ],
+      "correctAnswer": "Fewer host plants -> fewer insects -> less bird food.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "standard",
+      "explanation": "An indirect food-web pathway can create a lag between the disturbance and bird response."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q18",
+      "type": "multiple_choice",
+      "prompt": "A restoration plot gains 12 species, but an untreated nearby plot gains 11 during a rainy year. What is the fairest conclusion?",
+      "questionText": "A restoration plot gains 12 species, but an untreated nearby plot gains 11 during a rainy year. What is the fairest conclusion?",
+      "options": [
+        "The treatment caused all 12 species to arrive.",
+        "Rain cannot influence recovery in either plot.",
+        "Both improved; these counts alone show little evidence of a large additional treatment effect.",
+        "The treatment definitely failed because both plots improved."
+      ],
+      "correctAnswer": "Both improved; these counts alone show little evidence of a large additional treatment effect.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "The comparison suggests a large shared change, so treatment attribution should be limited."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q19",
+      "type": "multiple_choice",
+      "prompt": "Two samples have equal total plant counts. One has five species; the other has one. Which recovery measure distinguishes them?",
+      "questionText": "Two samples have equal total plant counts. One has five species; the other has one. Which recovery measure distinguishes them?",
+      "options": [
+        "Total individual count alone.",
+        "Species richness.",
+        "Number of sampling days alone.",
+        "Total plot area alone."
+      ],
+      "correctAnswer": "Species richness.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Equal abundance can conceal different variety."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q20",
+      "type": "multiple_choice",
+      "prompt": "A student sees more seedlings after a storm and claims more light caused them. Which competing explanation should be checked?",
+      "questionText": "A student sees more seedlings after a storm and claims more light caused them. Which competing explanation should be checked?",
+      "options": [
+        "Seedlings were counted in the same units.",
+        "The data were recorded in a notebook.",
+        "The storm also delivered seeds and changed moisture.",
+        "The student used a ruler to mark the plot."
+      ],
+      "correctAnswer": "The storm also delivered seeds and changed moisture.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "standard",
+      "explanation": "Several changes occurred together, so the light mechanism is not isolated."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q21",
+      "type": "multiple_choice",
+      "prompt": "Site A: 100 plants before, 20 after, 80 after a year. Site B: 100 before, 70 after, 75 after a year. Which comparison is correct?",
+      "questionText": "Site A: 100 plants before, 20 after, 80 after a year. Site B: 100 before, 70 after, 75 after a year. Which comparison is correct?",
+      "options": [
+        "B retained more plants initially; A gained more plants during the following year.",
+        "A retained more plants initially; B gained more afterward.",
+        "Both resisted the initial disturbance equally.",
+        "B returned fully to its baseline."
+      ],
+      "correctAnswer": "B retained more plants initially; A gained more plants during the following year.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Initial losses differ: A lost 80, B lost 30. Later gains are 60 and 5."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q22",
+      "type": "multiple_choice",
+      "prompt": "A recovery model assumes that seeds are available nearby. A new road isolates the plot. Which prediction should be reconsidered?",
+      "questionText": "A recovery model assumes that seeds are available nearby. A new road isolates the plot. Which prediction should be reconsidered?",
+      "options": [
+        "Whether plants still need water.",
+        "How readily plants can arrive from surrounding habitat.",
+        "Whether matter has mass.",
+        "Whether the original count was measured before the storm."
+      ],
+      "correctAnswer": "How readily plants can arrive from surrounding habitat.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Isolation changes a model assumption about arrival, not basic plant requirements."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q23",
+      "type": "multiple_choice",
+      "prompt": "After clearing, plant cover rises quickly but soil washes away during rain. Which conclusion fits both observations?",
+      "questionText": "After clearing, plant cover rises quickly but soil washes away during rain. Which conclusion fits both observations?",
+      "options": [
+        "Vegetation cover is improving while soil stability remains a problem.",
+        "Fast cover increase proves soil recovery is complete.",
+        "Erosion proves no plant cover has returned.",
+        "Plant cover and soil loss must always move together."
+      ],
+      "correctAnswer": "Vegetation cover is improving while soil stability remains a problem.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Different functions can recover at different rates; multiple indicators are needed."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q24",
+      "type": "multiple_choice",
+      "prompt": "A proposal replants trees immediately after erosion removes topsoil. What evidence should inform the plan first?",
+      "questionText": "A proposal replants trees immediately after erosion removes topsoil. What evidence should inform the plan first?",
+      "options": [
+        "Whether remaining soil and water conditions can support the chosen trees.",
+        "Whether the original trees had attractive names.",
+        "Whether planting is faster than monitoring.",
+        "Whether the plan contains the most seedlings regardless of survival."
+      ],
+      "correctAnswer": "Whether remaining soil and water conditions can support the chosen trees.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Restoration must address conditions that limit establishment, not just add organisms."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q25",
+      "type": "multiple_choice",
+      "prompt": "An invasive plant covers a restored plot. Total cover rises, but native host plants decline. What outcome is possible for insects that depend on those hosts?",
+      "questionText": "An invasive plant covers a restored plot. Total cover rises, but native host plants decline. What outcome is possible for insects that depend on those hosts?",
+      "options": [
+        "Their food supply must rise with total cover.",
+        "All insects must disappear at once.",
+        "Host identity cannot affect their food supply.",
+        "Their food supply may decline despite the greater total cover."
+      ],
+      "correctAnswer": "Their food supply may decline despite the greater total cover.",
+      "skillTags": [
+        "application"
+      ],
+      "reasoningTags": [
+        "scenario-transfer",
+        "cause-effect"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Species identity and feeding relationships matter; total vegetation alone is insufficient."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q26",
+      "type": "multiple_choice",
+      "prompt": "A three-year recovery curve rises, then falls in year three. What is the best next step before declaring the original treatment harmful?",
+      "questionText": "A three-year recovery curve rises, then falls in year three. What is the best next step before declaring the original treatment harmful?",
+      "options": [
+        "Discard year three because recovery should be smooth.",
+        "Check for new disturbances, changed weather, and matching reference-site trends.",
+        "Assume the original treatment is the only possible cause.",
+        "Use only the highest point as the final outcome."
+      ],
+      "correctAnswer": "Check for new disturbances, changed weather, and matching reference-site trends.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Nonlinear recovery can reflect new conditions; causal claims need the relevant evidence."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q27",
+      "type": "multiple_choice",
+      "prompt": "A study samples one 1-square-meter patch before restoration and ten such patches afterward, then compares totals. What is wrong?",
+      "questionText": "A study samples one 1-square-meter patch before restoration and ten such patches afterward, then compares totals. What is wrong?",
+      "options": [
+        "Larger samples necessarily reduce all counts.",
+        "Plant density cannot be measured with plots.",
+        "Using more patches proves restoration caused growth.",
+        "Unequal sampled area can create an apparent increase without higher density."
+      ],
+      "correctAnswer": "Unequal sampled area can create an apparent increase without higher density.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "data-pattern",
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Comparable area or density is needed; totals across unequal effort are misleading."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q28",
+      "type": "multiple_choice",
+      "prompt": "A model predicts shrubs then trees after clearing. Trees never establish during recurring dry years. How should the model change?",
+      "questionText": "A model predicts shrubs then trees after clearing. Trees never establish during recurring dry years. How should the model change?",
+      "options": [
+        "Include water availability as a condition affecting the predicted sequence.",
+        "Keep the prediction because models cannot be revised.",
+        "State that shrubs turn into trees when conditions improve.",
+        "Remove every species interaction because one prediction failed."
+      ],
+      "correctAnswer": "Include water availability as a condition affecting the predicted sequence.",
+      "skillTags": [
+        "visual"
+      ],
+      "reasoningTags": [
+        "model-interpretation"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Succession depends on conditions; plants do not transform into other species."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q29",
+      "type": "multiple_choice",
+      "prompt": "Which evidence most strongly supports a closure helping plant recovery?",
+      "questionText": "Which evidence most strongly supports a closure helping plant recovery?",
+      "options": [
+        "One closed site has one tall plant after a rainy week.",
+        "A closed site is greener than an open site measured in a different season.",
+        "Visitors say the closure looks helpful.",
+        "Replicated closed sites improve more than matched open sites from similar baselines across the same period."
+      ],
+      "correctAnswer": "Replicated closed sites improve more than matched open sites from similar baselines across the same period.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Matched, repeated before-and-after comparisons better address alternatives and sampling variation."
+    },
+    {
+      "id": "science7-ecosystem-disturbance-recovery-core-q30",
+      "type": "multiple_choice",
+      "prompt": "A recovery report shows cover back at baseline, half the former species, and continuing erosion. Which recommendation best fits?",
+      "questionText": "A recovery report shows cover back at baseline, half the former species, and continuing erosion. Which recommendation best fits?",
+      "options": [
+        "Declare every ecosystem function fully restored.",
+        "Report cover recovery and continue addressing composition and soil stability.",
+        "Ignore cover because no part recovered.",
+        "Stop monitoring because one indicator reached its target."
+      ],
+      "correctAnswer": "Report cover recovery and continue addressing composition and soil stability.",
+      "skillTags": [
+        "reasoning"
+      ],
+      "reasoningTags": [
+        "claim-evidence"
+      ],
+      "difficulty": "challenge",
+      "explanation": "Recovery has multiple dimensions; partial success and remaining limitations can both be reported."
+    }
+  ]
+}

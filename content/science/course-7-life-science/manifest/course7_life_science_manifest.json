@@ -758,6 +758,116 @@
                 }
               ],
               "testQuestionCount": 30
+            },
+            {
+              "id": "concept-decomposers-matter-cycling",
+              "title": "Decomposers and Matter Cycling",
+              "description": "Trace matter through dead material, decomposers, air, soil, and plants using evidence and system boundaries.",
+              "tags": [
+                "science",
+                "life-science",
+                "ecosystems",
+                "MS-LS2-3"
+              ],
+              "skillTags": [
+                "conceptual",
+                "visual",
+                "application",
+                "reasoning"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "7"
+              ],
+              "programPathways": [
+                "SRVUSD"
+              ],
+              "standardsFrameworks": [
+                "CA NGSS"
+              ],
+              "order": 5,
+              "tutorial": "./content/tutorials/concept-decomposers-matter-cycling.md",
+              "tests": [
+                {
+                  "id": "science7-decomposers-matter-cycling-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/science7-decomposers-matter-cycling-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "science7-decomposers-matter-cycling-review",
+                  "type": "review",
+                  "path": "./content/test-sets/science7-decomposers-matter-cycling-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "testQuestionCount": 30
+            },
+            {
+              "id": "concept-ecosystem-disturbance-recovery",
+              "title": "Ecosystem Disturbance and Recovery",
+              "description": "Use before-and-after data, food webs, and comparison sites to explain ecosystem responses to disturbance and evaluate recovery.",
+              "tags": [
+                "science",
+                "life-science",
+                "ecosystems",
+                "MS-LS2-4"
+              ],
+              "skillTags": [
+                "conceptual",
+                "visual",
+                "application",
+                "reasoning"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "7"
+              ],
+              "programPathways": [
+                "SRVUSD"
+              ],
+              "standardsFrameworks": [
+                "CA NGSS"
+              ],
+              "order": 6,
+              "tutorial": "./content/tutorials/concept-ecosystem-disturbance-recovery.md",
+              "tests": [
+                {
+                  "id": "science7-ecosystem-disturbance-recovery-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/science7-ecosystem-disturbance-recovery-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "science7-ecosystem-disturbance-recovery-review",
+                  "type": "review",
+                  "path": "./content/test-sets/science7-ecosystem-disturbance-recovery-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                }
+              ],
+              "testQuestionCount": 30
             }
           ]
         },
