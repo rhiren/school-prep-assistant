@@ -1,0 +1,409 @@
+{
+  "testId": "course3-functions-on-graphs-review",
+  "conceptId": "concept-functions-on-graphs",
+  "type": "review",
+  "title": "Functions on Graphs Review Test",
+  "description": "Interpret representations, explain misconceptions, and transfer reasoning to unfamiliar cases.",
+  "questions": [
+    {
+      "id": "course3-functions-on-graphs-review-001",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A plotted point on a function is (8, 12). What output belongs to this input?",
+      "correctAnswer": "12",
+      "explanation": "The horizontal coordinate 8 is the input. The vertical coordinate 12 is the output.",
+      "difficulty": "scaffold",
+      "options": [
+        "12",
+        "11",
+        "13",
+        "15"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-002",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A graph consists only of the points (0, 8), (1, 8), (2, 8). Is y a function of x?",
+      "correctAnswer": "Yes; each x has exactly one y.",
+      "explanation": "A horizontal set of points may share a height. No input has conflicting outputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; repeated heights are forbidden.",
+        "No; functions must slope upward.",
+        "Yes; each x has exactly one y.",
+        "Yes; all point collections are functions."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-003",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two plotted points are (8, 1) and (8, 4). Why can no function of x contain both?",
+      "correctAnswer": "The vertical line x = 8 meets two different points.",
+      "explanation": "Different y-values only cause a conflict when their x-values agree. A vertical line holds the input fixed.",
+      "difficulty": "scaffold",
+      "options": [
+        "The points have different y-values.",
+        "The vertical line x = 8 meets two different points.",
+        "The graph must contain the origin.",
+        "A function can have only one point."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-004",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The entire graph is the horizontal line y = 8. Does it pass the vertical-line test?",
+      "correctAnswer": "Yes; every vertical line meets it once.",
+      "explanation": "Use vertical, not horizontal, test lines. Each x gives the single output shown by the horizontal line.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; a horizontal line meets it infinitely often.",
+        "No; its slope is zero.",
+        "Yes; it has no output.",
+        "Yes; every vertical line meets it once."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-005",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "The entire graph is the vertical line x = 8. Is it a function of x?",
+      "correctAnswer": "No; one x has many y-values.",
+      "explanation": "All points on a vertical line share one input while their outputs vary. Straightness alone does not establish a function.",
+      "difficulty": "scaffold",
+      "options": [
+        "Yes; it is a straight line.",
+        "Yes; x stays constant.",
+        "No; every straight line fails.",
+        "No; one x has many y-values."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-006",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A plotted point on a function is (9, 13). What output belongs to this input?",
+      "correctAnswer": "13",
+      "explanation": "The horizontal coordinate 9 is the input. The vertical coordinate 13 is the output.",
+      "difficulty": "scaffold",
+      "options": [
+        "12",
+        "14",
+        "13",
+        "16"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-007",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A graph consists only of the points (0, 9), (1, 9), (2, 9). Is y a function of x?",
+      "correctAnswer": "Yes; each x has exactly one y.",
+      "explanation": "A horizontal set of points may share a height. No input has conflicting outputs.",
+      "difficulty": "scaffold",
+      "options": [
+        "No; repeated heights are forbidden.",
+        "Yes; each x has exactly one y.",
+        "No; functions must slope upward.",
+        "Yes; all point collections are functions."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-008",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Two plotted points are (9, 1) and (9, 4). Why can no function of x contain both?",
+      "correctAnswer": "The vertical line x = 9 meets two different points.",
+      "explanation": "Different y-values only cause a conflict when their x-values agree. A vertical line holds the input fixed.",
+      "difficulty": "scaffold",
+      "options": [
+        "The vertical line x = 9 meets two different points.",
+        "The points have different y-values.",
+        "The graph must contain the origin.",
+        "A function can have only one point."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-009",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function graph is a straight line through (0, 8) and (2, 14). What is its output at x = 1?",
+      "correctAnswer": "11",
+      "explanation": "Halfway between x = 0 and x = 2, the height is halfway between 8 and 14: 11. The stated straight line justifies interpolation.",
+      "difficulty": "standard",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "11"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-010",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A graph has only the three solid points (1, 8), (3, 9), (5, 10). Are inputs between these points included?",
+      "correctAnswer": "No; only inputs 1, 3, and 5 are shown as part of this graph.",
+      "explanation": "A discrete graph contains only its plotted points unless connecting segments or a larger rule are specified.",
+      "difficulty": "standard",
+      "options": [
+        "No; only inputs 1, 3, and 5 are shown as part of this graph.",
+        "Yes; automatically join every point.",
+        "Yes; all real inputs belong to every function.",
+        "No; isolated points cannot define a function."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-011",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "At x = 8, a graph has an open circle at y = 2 and a solid point at y = 5. Every other allowed x has one solid graph point. Does this graph define y as a function of x?",
+      "correctAnswer": "Yes; the open circle is excluded, leaving one output at that input.",
+      "explanation": "An open circle marks an excluded endpoint. Only the solid point supplies an output at this input.",
+      "difficulty": "standard",
+      "options": [
+        "No; open circles count as outputs.",
+        "No; one missing point invalidates every function.",
+        "Yes; the open circle is excluded, leaving one output at that input.",
+        "Yes; two included outputs would also be allowed."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-012",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A curved graph turns at (8, 0). Every vertical line meets it at most once, but some horizontal lines meet it twice. Is y a function of x?",
+      "correctAnswer": "Yes; the vertical-line test passes.",
+      "explanation": "A curve can assign one y per x. Horizontal repeats indicate shared outputs, which are allowed.",
+      "difficulty": "standard",
+      "options": [
+        "No; any horizontal repeat breaks a function.",
+        "Yes; the vertical-line test passes.",
+        "No; only straight graphs are functions.",
+        "Yes; every curve is a function."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-013",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A line segment has solid endpoints (8, 3) and (12, 7). What is the greatest allowed input on this graph?",
+      "correctAnswer": "12",
+      "explanation": "Read the horizontal coordinates, not the heights. The right endpoint is included, so the greatest input is 12.",
+      "difficulty": "standard",
+      "options": [
+        "12",
+        "11",
+        "13",
+        "15"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-014",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function graph is a straight line through (0, 9) and (2, 15). What is its output at x = 1?",
+      "correctAnswer": "12",
+      "explanation": "Halfway between x = 0 and x = 2, the height is halfway between 9 and 15: 12. The stated straight line justifies interpolation.",
+      "difficulty": "standard",
+      "options": [
+        "11",
+        "13",
+        "15",
+        "12"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-015",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A graph has only the three solid points (1, 9), (3, 10), (5, 11). Are inputs between these points included?",
+      "correctAnswer": "No; only inputs 1, 3, and 5 are shown as part of this graph.",
+      "explanation": "A discrete graph contains only its plotted points unless connecting segments or a larger rule are specified.",
+      "difficulty": "standard",
+      "options": [
+        "Yes; automatically join every point.",
+        "No; only inputs 1, 3, and 5 are shown as part of this graph.",
+        "Yes; all real inputs belong to every function.",
+        "No; isolated points cannot define a function."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-016",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "At x = 9, a graph has an open circle at y = 2 and a solid point at y = 5. Every other allowed x has one solid graph point. Does this graph define y as a function of x?",
+      "correctAnswer": "Yes; the open circle is excluded, leaving one output at that input.",
+      "explanation": "An open circle marks an excluded endpoint. Only the solid point supplies an output at this input.",
+      "difficulty": "standard",
+      "options": [
+        "No; open circles count as outputs.",
+        "No; one missing point invalidates every function.",
+        "Yes; the open circle is excluded, leaving one output at that input.",
+        "Yes; two included outputs would also be allowed."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-017",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A curved graph turns at (9, 0). Every vertical line meets it at most once, but some horizontal lines meet it twice. Is y a function of x?",
+      "correctAnswer": "Yes; the vertical-line test passes.",
+      "explanation": "A curve can assign one y per x. Horizontal repeats indicate shared outputs, which are allowed.",
+      "difficulty": "standard",
+      "options": [
+        "Yes; the vertical-line test passes.",
+        "No; any horizontal repeat breaks a function.",
+        "No; only straight graphs are functions.",
+        "Yes; every curve is a function."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-018",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A line segment has solid endpoints (9, 3) and (13, 7). What is the greatest allowed input on this graph?",
+      "correctAnswer": "13",
+      "explanation": "Read the horizontal coordinates, not the heights. The right endpoint is included, so the greatest input is 13.",
+      "difficulty": "standard",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "16"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-019",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A function graph is a straight line through (0, 10) and (2, 16). What is its output at x = 1?",
+      "correctAnswer": "13",
+      "explanation": "Halfway between x = 0 and x = 2, the height is halfway between 10 and 16: 13. The stated straight line justifies interpolation.",
+      "difficulty": "standard",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "13"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-functions-on-graphs-review-020",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A graph has only the three solid points (1, 10), (3, 11), (5, 12). Are inputs between these points included?",
+      "correctAnswer": "No; only inputs 1, 3, and 5 are shown as part of this graph.",
+      "explanation": "A discrete graph contains only its plotted points unless connecting segments or a larger rule are specified.",
+      "difficulty": "standard",
+      "options": [
+        "Yes; automatically join every point.",
+        "Yes; all real inputs belong to every function.",
+        "No; only inputs 1, 3, and 5 are shown as part of this graph.",
+        "No; isolated points cannot define a function."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    }
+  ]
+}

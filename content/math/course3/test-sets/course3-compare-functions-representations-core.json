@@ -1,0 +1,1009 @@
+{
+  "testId": "course3-compare-functions-representations-core",
+  "conceptId": "concept-compare-functions-representations",
+  "type": "concept",
+  "title": "Compare Functions in Different Representations Core Test",
+  "description": "Interpret representations, explain misconceptions, and transfer reasoning to unfamiliar cases.",
+  "questions": [
+    {
+      "id": "course3-compare-functions-representations-core-001",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Function A has equation y = 3x + 8. Function B adds 2 to its output for every increase of 1 in x. Which has the greater rate of change?",
+      "correctAnswer": "A",
+      "explanation": "A's rate is 3; B's rate is 2. Compare the rates, not the constant 8.",
+      "difficulty": "scaffold",
+      "options": [
+        "A",
+        "B",
+        "They have equal rates.",
+        "The starting value decides the rate."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-002",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A linear table contains (0, 2), (2, 8), (4, 14). What rate should you use to compare it with another function?",
+      "correctAnswer": "3",
+      "explanation": "The output increases 6 while the input increases 2. Rate = 6 / 2 = 3, not 6.",
+      "difficulty": "scaffold",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-003",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A graph crosses the y-axis at (0, 7). B has equation y = 2x + 2. Which has the greater initial value?",
+      "correctAnswer": "A",
+      "explanation": "At input zero, A gives 7 and B gives 2. Initial values can be compared without knowing A's slope.",
+      "difficulty": "scaffold",
+      "options": [
+        "B",
+        "They have equal initial values.",
+        "The rate must be known first.",
+        "A"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-004",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rental charges $12 initially plus $4 per hour. Which number is its hourly rate when comparing it with a graph of cost against hours?",
+      "correctAnswer": "4",
+      "explanation": "The hourly rate is the change in cost for one additional hour. The initial fee is a separate quantity.",
+      "difficulty": "scaffold",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-005",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A is a straight graph through (0, 2) and (1, 4). B is a linear table with (0, 5) and (1, 7). How do their rates compare?",
+      "correctAnswer": "Equal; both rates are 2.",
+      "explanation": "Each output rises 2 for an input increase of 1. Different starting values do not imply different rates.",
+      "difficulty": "scaffold",
+      "options": [
+        "A is faster because its initial value is lower.",
+        "B is faster because its outputs are larger.",
+        "Equal; both rates are 2.",
+        "Equal; both rates are 0."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-006",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Function A has equation y = 4x + 8. Function B adds 3 to its output for every increase of 1 in x. Which has the greater rate of change?",
+      "correctAnswer": "A",
+      "explanation": "A's rate is 4; B's rate is 3. Compare the rates, not the constant 8.",
+      "difficulty": "scaffold",
+      "options": [
+        "A",
+        "B",
+        "They have equal rates.",
+        "The starting value decides the rate."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-007",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A linear table contains (0, 3), (2, 9), (4, 15). What rate should you use to compare it with another function?",
+      "correctAnswer": "3",
+      "explanation": "The output increases 6 while the input increases 2. Rate = 6 / 2 = 3, not 6.",
+      "difficulty": "scaffold",
+      "options": [
+        "2",
+        "4",
+        "3",
+        "6"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-008",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A graph crosses the y-axis at (0, 8). B has equation y = 2x + 3. Which has the greater initial value?",
+      "correctAnswer": "A",
+      "explanation": "At input zero, A gives 8 and B gives 3. Initial values can be compared without knowing A's slope.",
+      "difficulty": "scaffold",
+      "options": [
+        "B",
+        "A",
+        "They have equal initial values.",
+        "The rate must be known first."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-009",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rental charges $13 initially plus $4 per hour. Which number is its hourly rate when comparing it with a graph of cost against hours?",
+      "correctAnswer": "4",
+      "explanation": "The hourly rate is the change in cost for one additional hour. The initial fee is a separate quantity.",
+      "difficulty": "scaffold",
+      "options": [
+        "4",
+        "3",
+        "5",
+        "7"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-010",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A is a straight graph through (0, 3) and (1, 5). B is a linear table with (0, 6) and (1, 8). How do their rates compare?",
+      "correctAnswer": "Equal; both rates are 2.",
+      "explanation": "Each output rises 2 for an input increase of 1. Different starting values do not imply different rates.",
+      "difficulty": "scaffold",
+      "options": [
+        "A is faster because its initial value is lower.",
+        "B is faster because its outputs are larger.",
+        "Equal; both rates are 0.",
+        "Equal; both rates are 2."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-011",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A has equation y = 3x + 2. B is a straight graph through (2, 10) and (5, 22). Which has the greater rate?",
+      "correctAnswer": "B; its rate is 4, compared with 3 for A.",
+      "explanation": "B rises 12 across 3 input units, so its rate is 4. Divide by the entire horizontal change.",
+      "difficulty": "standard",
+      "options": [
+        "A; its rate is 3, compared with 2 for B.",
+        "Equal; both rates are 3.",
+        "B; its rate is 4, compared with 3 for A.",
+        "B; its rate is 12 per input unit."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-012",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A linear table has (2, 8) and (4, 14). What initial value should be compared with the constant term in another equation?",
+      "correctAnswer": "2",
+      "explanation": "The rate is 6 / 2 = 3. Move back 2 input units from the first row: 8 - 2(3) = 2.",
+      "difficulty": "standard",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "5"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-013",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A starts with 22 liters and loses 3 liters per minute. B is a linear table: (0, 22), (2, 18). Which has the greater signed rate of change?",
+      "correctAnswer": "B; -2 is greater than -3.",
+      "explanation": "B changes by -4 over 2 minutes, giving -2. On the number line, -2 is greater than -3 even though A loses water faster.",
+      "difficulty": "standard",
+      "options": [
+        "A; losing 3 means a greater signed rate.",
+        "Equal; the initial amounts match.",
+        "B; its rate is positive 2.",
+        "B; -2 is greater than -3."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-014",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A charges $2 initially plus $5 per visit. B has cost equation y = 3x + 10. Which costs less for exactly 2 visits?",
+      "correctAnswer": "A; it costs $4 less.",
+      "explanation": "A costs 12; B costs 16. Compare total costs at the requested input: A is 4 dollars cheaper even though its per-visit rate is greater.",
+      "difficulty": "standard",
+      "options": [
+        "B; it costs $4 less.",
+        "A; it costs $4 less.",
+        "They cost the same.",
+        "A; it costs $8 less."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-015",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A is a straight line through (0, 2) and (2, 8). B has equation y = 3x + 2. Do they represent the same function for all real inputs?",
+      "correctAnswer": "Yes; both the rate and initial value match.",
+      "explanation": "A has rate 6 / 2 = 3 and initial value given at x = 0. Two linear functions with the same slope and intercept agree everywhere.",
+      "difficulty": "standard",
+      "options": [
+        "No; a graph cannot represent an equation.",
+        "Yes; sharing any one point is enough.",
+        "Yes; both the rate and initial value match.",
+        "No; the graph has rate 6."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-016",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A has equation y = 3x + 3. B is a straight graph through (2, 11) and (5, 23). Which has the greater rate?",
+      "correctAnswer": "B; its rate is 4, compared with 3 for A.",
+      "explanation": "B rises 12 across 3 input units, so its rate is 4. Divide by the entire horizontal change.",
+      "difficulty": "standard",
+      "options": [
+        "B; its rate is 4, compared with 3 for A.",
+        "A; its rate is 3, compared with 2 for B.",
+        "Equal; both rates are 3.",
+        "B; its rate is 12 per input unit."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-017",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A linear table has (2, 9) and (4, 15). What initial value should be compared with the constant term in another equation?",
+      "correctAnswer": "3",
+      "explanation": "The rate is 6 / 2 = 3. Move back 2 input units from the first row: 9 - 2(3) = 3.",
+      "difficulty": "standard",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-018",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A starts with 23 liters and loses 3 liters per minute. B is a linear table: (0, 23), (2, 19). Which has the greater signed rate of change?",
+      "correctAnswer": "B; -2 is greater than -3.",
+      "explanation": "B changes by -4 over 2 minutes, giving -2. On the number line, -2 is greater than -3 even though A loses water faster.",
+      "difficulty": "standard",
+      "options": [
+        "A; losing 3 means a greater signed rate.",
+        "Equal; the initial amounts match.",
+        "B; its rate is positive 2.",
+        "B; -2 is greater than -3."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-019",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A charges $3 initially plus $5 per visit. B has cost equation y = 3x + 11. Which costs less for exactly 2 visits?",
+      "correctAnswer": "A; it costs $4 less.",
+      "explanation": "A costs 13; B costs 17. Compare total costs at the requested input: A is 4 dollars cheaper even though its per-visit rate is greater.",
+      "difficulty": "standard",
+      "options": [
+        "A; it costs $4 less.",
+        "B; it costs $4 less.",
+        "They cost the same.",
+        "A; it costs $8 less."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-020",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A is a straight line through (0, 3) and (2, 9). B has equation y = 3x + 3. Do they represent the same function for all real inputs?",
+      "correctAnswer": "Yes; both the rate and initial value match.",
+      "explanation": "A has rate 6 / 2 = 3 and initial value given at x = 0. Two linear functions with the same slope and intercept agree everywhere.",
+      "difficulty": "standard",
+      "options": [
+        "No; a graph cannot represent an equation.",
+        "Yes; sharing any one point is enough.",
+        "No; the graph has rate 6.",
+        "Yes; both the rate and initial value match."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-021",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A has equation y = 3x + 4. B is a straight graph through (2, 12) and (5, 24). Which has the greater rate?",
+      "correctAnswer": "B; its rate is 4, compared with 3 for A.",
+      "explanation": "B rises 12 across 3 input units, so its rate is 4. Divide by the entire horizontal change.",
+      "difficulty": "standard",
+      "options": [
+        "A; its rate is 3, compared with 2 for B.",
+        "Equal; both rates are 3.",
+        "B; its rate is 4, compared with 3 for A.",
+        "B; its rate is 12 per input unit."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-022",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A linear table has (2, 10) and (4, 16). What initial value should be compared with the constant term in another equation?",
+      "correctAnswer": "4",
+      "explanation": "The rate is 6 / 2 = 3. Move back 2 input units from the first row: 10 - 2(3) = 4.",
+      "difficulty": "standard",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-023",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A starts with 24 liters and loses 3 liters per minute. B is a linear table: (0, 24), (2, 20). Which has the greater signed rate of change?",
+      "correctAnswer": "B; -2 is greater than -3.",
+      "explanation": "B changes by -4 over 2 minutes, giving -2. On the number line, -2 is greater than -3 even though A loses water faster.",
+      "difficulty": "standard",
+      "options": [
+        "A; losing 3 means a greater signed rate.",
+        "Equal; the initial amounts match.",
+        "B; -2 is greater than -3.",
+        "B; its rate is positive 2."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-024",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A charges $4 initially plus $5 per visit. B has cost equation y = 3x + 12. Which costs less for exactly 2 visits?",
+      "correctAnswer": "A; it costs $4 less.",
+      "explanation": "A costs 14; B costs 18. Compare total costs at the requested input: A is 4 dollars cheaper even though its per-visit rate is greater.",
+      "difficulty": "standard",
+      "options": [
+        "A; it costs $4 less.",
+        "B; it costs $4 less.",
+        "They cost the same.",
+        "A; it costs $8 less."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-025",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A is a straight line through (0, 4) and (2, 10). B has equation y = 3x + 4. Do they represent the same function for all real inputs?",
+      "correctAnswer": "Yes; both the rate and initial value match.",
+      "explanation": "A has rate 6 / 2 = 3 and initial value given at x = 0. Two linear functions with the same slope and intercept agree everywhere.",
+      "difficulty": "standard",
+      "options": [
+        "No; a graph cannot represent an equation.",
+        "Yes; both the rate and initial value match.",
+        "Yes; sharing any one point is enough.",
+        "No; the graph has rate 6."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-026",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A has equation y = 3x + 5. B is a straight graph through (2, 13) and (5, 25). Which has the greater rate?",
+      "correctAnswer": "B; its rate is 4, compared with 3 for A.",
+      "explanation": "B rises 12 across 3 input units, so its rate is 4. Divide by the entire horizontal change.",
+      "difficulty": "standard",
+      "options": [
+        "A; its rate is 3, compared with 2 for B.",
+        "Equal; both rates are 3.",
+        "B; its rate is 12 per input unit.",
+        "B; its rate is 4, compared with 3 for A."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-027",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A linear table has (2, 11) and (4, 17). What initial value should be compared with the constant term in another equation?",
+      "correctAnswer": "5",
+      "explanation": "The rate is 6 / 2 = 3. Move back 2 input units from the first row: 11 - 2(3) = 5.",
+      "difficulty": "standard",
+      "options": [
+        "4",
+        "6",
+        "5",
+        "8"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-028",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A starts with 25 liters and loses 3 liters per minute. B is a linear table: (0, 25), (2, 21). Which has the greater signed rate of change?",
+      "correctAnswer": "B; -2 is greater than -3.",
+      "explanation": "B changes by -4 over 2 minutes, giving -2. On the number line, -2 is greater than -3 even though A loses water faster.",
+      "difficulty": "standard",
+      "options": [
+        "B; -2 is greater than -3.",
+        "A; losing 3 means a greater signed rate.",
+        "Equal; the initial amounts match.",
+        "B; its rate is positive 2."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-029",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A charges $5 initially plus $5 per visit. B has cost equation y = 3x + 13. Which costs less for exactly 2 visits?",
+      "correctAnswer": "A; it costs $4 less.",
+      "explanation": "A costs 15; B costs 19. Compare total costs at the requested input: A is 4 dollars cheaper even though its per-visit rate is greater.",
+      "difficulty": "standard",
+      "options": [
+        "B; it costs $4 less.",
+        "A; it costs $4 less.",
+        "They cost the same.",
+        "A; it costs $8 less."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-030",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A is a straight line through (0, 5) and (2, 11). B has equation y = 3x + 5. Do they represent the same function for all real inputs?",
+      "correctAnswer": "Yes; both the rate and initial value match.",
+      "explanation": "A has rate 6 / 2 = 3 and initial value given at x = 0. Two linear functions with the same slope and intercept agree everywhere.",
+      "difficulty": "standard",
+      "options": [
+        "Yes; both the rate and initial value match.",
+        "No; a graph cannot represent an equation.",
+        "Yes; sharing any one point is enough.",
+        "No; the graph has rate 6."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-031",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A has equation y = 3x + 6. B is a straight graph through (2, 14) and (5, 26). Which has the greater rate?",
+      "correctAnswer": "B; its rate is 4, compared with 3 for A.",
+      "explanation": "B rises 12 across 3 input units, so its rate is 4. Divide by the entire horizontal change.",
+      "difficulty": "standard",
+      "options": [
+        "A; its rate is 3, compared with 2 for B.",
+        "Equal; both rates are 3.",
+        "B; its rate is 12 per input unit.",
+        "B; its rate is 4, compared with 3 for A."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-032",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A linear table has (2, 12) and (4, 18). What initial value should be compared with the constant term in another equation?",
+      "correctAnswer": "6",
+      "explanation": "The rate is 6 / 2 = 3. Move back 2 input units from the first row: 12 - 2(3) = 6.",
+      "difficulty": "standard",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "6"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-033",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A starts with 26 liters and loses 3 liters per minute. B is a linear table: (0, 26), (2, 22). Which has the greater signed rate of change?",
+      "correctAnswer": "B; -2 is greater than -3.",
+      "explanation": "B changes by -4 over 2 minutes, giving -2. On the number line, -2 is greater than -3 even though A loses water faster.",
+      "difficulty": "standard",
+      "options": [
+        "A; losing 3 means a greater signed rate.",
+        "B; -2 is greater than -3.",
+        "Equal; the initial amounts match.",
+        "B; its rate is positive 2."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-034",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A charges $6 initially plus $5 per visit. B has cost equation y = 3x + 14. Which costs less for exactly 2 visits?",
+      "correctAnswer": "A; it costs $4 less.",
+      "explanation": "A costs 16; B costs 20. Compare total costs at the requested input: A is 4 dollars cheaper even though its per-visit rate is greater.",
+      "difficulty": "standard",
+      "options": [
+        "B; it costs $4 less.",
+        "They cost the same.",
+        "A; it costs $4 less.",
+        "A; it costs $8 less."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-035",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A is a straight line through (0, 6) and (2, 12). B has equation y = 3x + 6. Do they represent the same function for all real inputs?",
+      "correctAnswer": "Yes; both the rate and initial value match.",
+      "explanation": "A has rate 6 / 2 = 3 and initial value given at x = 0. Two linear functions with the same slope and intercept agree everywhere.",
+      "difficulty": "standard",
+      "options": [
+        "Yes; both the rate and initial value match.",
+        "No; a graph cannot represent an equation.",
+        "Yes; sharing any one point is enough.",
+        "No; the graph has rate 6."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-036",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A costs 4 dollars per visit with no initial fee. Plan B costs 2 dollars per visit plus a $12 initial fee. At how many visits are their costs equal?",
+      "correctAnswer": "6",
+      "explanation": "Set (4)x = 2x + 12. The difference is 2x = 12, so x = 6.",
+      "difficulty": "challenge",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "6"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-037",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A has equation y = 2x + 8. B's straight graph passes through (0, 2) and (3, 11). For nonnegative inputs, when is B's output greater?",
+      "correctAnswer": "When x > 6.",
+      "explanation": "B is y = 3x plus its starting value. Subtracting A from B gives x - 6. That difference is positive exactly after 6.",
+      "difficulty": "challenge",
+      "options": [
+        "When x < 6.",
+        "At every input because B has a greater rate.",
+        "When x > 6.",
+        "Only when x = 6."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-038",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rises $4 over 2 hours. B rises $6 over 3 hours. The graphs use different axis scales. Which comparison is valid?",
+      "correctAnswer": "Equal rates of $2 per hour.",
+      "explanation": "Divide each rise by its corresponding run in actual units. Apparent steepness is unreliable across different axis scales.",
+      "difficulty": "challenge",
+      "options": [
+        "A is faster because its horizontal interval is shorter.",
+        "Equal rates of $2 per hour.",
+        "B is faster because its total rise is larger.",
+        "The visually steeper line must be faster."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-039",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A is y = 2x + 2. B's only known values are (0, 2) and (2, 6); B is not stated to be linear. What can be concluded?",
+      "correctAnswer": "They agree at the two listed inputs; agreement elsewhere is not guaranteed.",
+      "explanation": "Many nonlinear functions pass through the same two points. Comparing whole functions requires more than two matching values unless linearity is given.",
+      "difficulty": "challenge",
+      "options": [
+        "They agree at the two listed inputs; agreement elsewhere is not guaranteed.",
+        "They must agree at every input.",
+        "B must have constant rate 2 everywhere.",
+        "B cannot be a function because its rule is unknown."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-040",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A bike rental costs $12 initially plus $2 per hour. B costs $6 initially plus $5 per hour. For whole-number rental hours, what is the first hour when A is cheaper?",
+      "correctAnswer": "3",
+      "explanation": "Solve 12 + 2h < 6 + 5h: 6 < 3h, so h > 2. They tie at 2; the first whole hour with A cheaper is 3.",
+      "difficulty": "challenge",
+      "options": [
+        "2",
+        "4",
+        "3",
+        "6"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-041",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A costs 5 dollars per visit with no initial fee. Plan B costs 3 dollars per visit plus a $12 initial fee. At how many visits are their costs equal?",
+      "correctAnswer": "6",
+      "explanation": "Set (5)x = 3x + 12. The difference is 2x = 12, so x = 6.",
+      "difficulty": "challenge",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "6"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-042",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A has equation y = 2x + 9. B's straight graph passes through (0, 3) and (3, 12). For nonnegative inputs, when is B's output greater?",
+      "correctAnswer": "When x > 6.",
+      "explanation": "B is y = 3x plus its starting value. Subtracting A from B gives x - 6. That difference is positive exactly after 6.",
+      "difficulty": "challenge",
+      "options": [
+        "When x < 6.",
+        "When x > 6.",
+        "At every input because B has a greater rate.",
+        "Only when x = 6."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-043",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rises $6 over 2 hours. B rises $9 over 3 hours. The graphs use different axis scales. Which comparison is valid?",
+      "correctAnswer": "Equal rates of $3 per hour.",
+      "explanation": "Divide each rise by its corresponding run in actual units. Apparent steepness is unreliable across different axis scales.",
+      "difficulty": "challenge",
+      "options": [
+        "A is faster because its horizontal interval is shorter.",
+        "Equal rates of $3 per hour.",
+        "B is faster because its total rise is larger.",
+        "The visually steeper line must be faster."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-044",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A is y = 2x + 3. B's only known values are (0, 3) and (2, 7); B is not stated to be linear. What can be concluded?",
+      "correctAnswer": "They agree at the two listed inputs; agreement elsewhere is not guaranteed.",
+      "explanation": "Many nonlinear functions pass through the same two points. Comparing whole functions requires more than two matching values unless linearity is given.",
+      "difficulty": "challenge",
+      "options": [
+        "They must agree at every input.",
+        "B must have constant rate 2 everywhere.",
+        "They agree at the two listed inputs; agreement elsewhere is not guaranteed.",
+        "B cannot be a function because its rule is unknown."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-045",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A bike rental costs $13 initially plus $2 per hour. B costs $7 initially plus $5 per hour. For whole-number rental hours, what is the first hour when A is cheaper?",
+      "correctAnswer": "3",
+      "explanation": "Solve 13 + 2h < 7 + 5h: 6 < 3h, so h > 2. They tie at 2; the first whole hour with A cheaper is 3.",
+      "difficulty": "challenge",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "6"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-046",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "Plan A costs 6 dollars per visit with no initial fee. Plan B costs 4 dollars per visit plus a $12 initial fee. At how many visits are their costs equal?",
+      "correctAnswer": "6",
+      "explanation": "Set (6)x = 4x + 12. The difference is 2x = 12, so x = 6.",
+      "difficulty": "challenge",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "6"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-047",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A has equation y = 2x + 10. B's straight graph passes through (0, 4) and (3, 13). For nonnegative inputs, when is B's output greater?",
+      "correctAnswer": "When x > 6.",
+      "explanation": "B is y = 3x plus its starting value. Subtracting A from B gives x - 6. That difference is positive exactly after 6.",
+      "difficulty": "challenge",
+      "options": [
+        "When x < 6.",
+        "When x > 6.",
+        "At every input because B has a greater rate.",
+        "Only when x = 6."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-048",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A rises $8 over 2 hours. B rises $12 over 3 hours. The graphs use different axis scales. Which comparison is valid?",
+      "correctAnswer": "Equal rates of $4 per hour.",
+      "explanation": "Divide each rise by its corresponding run in actual units. Apparent steepness is unreliable across different axis scales.",
+      "difficulty": "challenge",
+      "options": [
+        "Equal rates of $4 per hour.",
+        "A is faster because its horizontal interval is shorter.",
+        "B is faster because its total rise is larger.",
+        "The visually steeper line must be faster."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-049",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A is y = 2x + 4. B's only known values are (0, 4) and (2, 8); B is not stated to be linear. What can be concluded?",
+      "correctAnswer": "They agree at the two listed inputs; agreement elsewhere is not guaranteed.",
+      "explanation": "Many nonlinear functions pass through the same two points. Comparing whole functions requires more than two matching values unless linearity is given.",
+      "difficulty": "challenge",
+      "options": [
+        "They must agree at every input.",
+        "B must have constant rate 2 everywhere.",
+        "B cannot be a function because its rule is unknown.",
+        "They agree at the two listed inputs; agreement elsewhere is not guaranteed."
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "course3-compare-functions-representations-core-050",
+      "type": "multiple_choice",
+      "answerType": "text",
+      "questionText": "A bike rental costs $14 initially plus $2 per hour. B costs $8 initially plus $5 per hour. For whole-number rental hours, what is the first hour when A is cheaper?",
+      "correctAnswer": "3",
+      "explanation": "Solve 14 + 2h < 8 + 5h: 6 < 3h, so h > 2. They tie at 2; the first whole hour with A cheaper is 3.",
+      "difficulty": "challenge",
+      "options": [
+        "2",
+        "4",
+        "3",
+        "6"
+      ],
+      "skillTags": [
+        "graph",
+        "conceptual",
+        "reasoning"
+      ]
+    }
+  ]
+}

@@ -2741,6 +2741,110 @@
                   }
                 }
               ]
+            },
+            {
+              "id": "concept-functions-on-graphs",
+              "title": "Functions on Graphs",
+              "description": "Use vertical lines, endpoints, and domain restrictions to interpret functions on graphs.",
+              "tags": [
+                "functions",
+                "graphs"
+              ],
+              "skillTags": [
+                "graph",
+                "conceptual",
+                "reasoning"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "8"
+              ],
+              "programPathways": [
+                "accelerated"
+              ],
+              "standardsFrameworks": [
+                "8.F.1"
+              ],
+              "order": 3,
+              "testQuestionCount": 50,
+              "tutorial": "./content/tutorials/concept-functions-on-graphs.md",
+              "tests": [
+                {
+                  "id": "course3-functions-on-graphs-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/course3-functions-on-graphs-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "course3-functions-on-graphs-review",
+                  "type": "review",
+                  "path": "./content/test-sets/course3-functions-on-graphs-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "concept-compare-functions-representations",
+              "title": "Compare Functions in Different Representations",
+              "description": "Compare rates, initial values, and outputs across tables, graphs, equations, and contexts.",
+              "tags": [
+                "functions",
+                "graphs"
+              ],
+              "skillTags": [
+                "graph",
+                "conceptual",
+                "reasoning"
+              ],
+              "meta": {
+                "type": "core",
+                "assessable": true
+              },
+              "instructionalGrades": [
+                "8"
+              ],
+              "programPathways": [
+                "accelerated"
+              ],
+              "standardsFrameworks": [
+                "8.F.2"
+              ],
+              "order": 4,
+              "testQuestionCount": 50,
+              "tutorial": "./content/tutorials/concept-compare-functions-representations.md",
+              "tests": [
+                {
+                  "id": "course3-compare-functions-representations-core",
+                  "type": "concept",
+                  "path": "./content/test-sets/course3-compare-functions-representations-core.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": true
+                  }
+                },
+                {
+                  "id": "course3-compare-functions-representations-review",
+                  "type": "review",
+                  "path": "./content/test-sets/course3-compare-functions-representations-review.json",
+                  "difficultyProfile": {
+                    "scaffold": true,
+                    "standard": true,
+                    "challenge": false
+                  }
+                }
+              ]
             }
           ]
         },
@@ -2855,6 +2959,12 @@
                     "standard": true,
                     "challenge": false
                   }
+                },
+                {
+                  "id": "course3-repeating-decimals-fractions-understanding-check",
+                  "type": "understanding-check",
+                  "path": "./content/test-sets/course3-repeating-decimals-fractions-understanding-check.json",
+                  "difficultyProfile": { "scaffold": true, "standard": true, "challenge": true }
                 }
               ]
             },
@@ -3017,6 +3127,12 @@
                     "standard": true,
                     "challenge": false
                   }
+                },
+                {
+                  "id": "course3-approximate-irrational-numbers-understanding-check",
+                  "type": "understanding-check",
+                  "path": "./content/test-sets/course3-approximate-irrational-numbers-understanding-check.json",
+                  "difficultyProfile": { "scaffold": true, "standard": true, "challenge": true }
                 }
               ]
             },
@@ -3341,6 +3457,12 @@
                     "standard": true,
                     "challenge": false
                   }
+                },
+                {
+                  "id": "course3-operations-with-scientific-notation-understanding-check",
+                  "type": "understanding-check",
+                  "path": "./content/test-sets/course3-operations-with-scientific-notation-understanding-check.json",
+                  "difficultyProfile": { "scaffold": true, "standard": true, "challenge": true }
                 }
               ]
             },
