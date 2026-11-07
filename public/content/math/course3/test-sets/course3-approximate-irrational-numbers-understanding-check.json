@@ -1,0 +1,165 @@
+{
+  "testId": "course3-approximate-irrational-numbers-understanding-check",
+  "conceptId": "concept-approximate-irrational-numbers",
+  "type": "understanding-check",
+  "title": "Approximate Irrational Numbers: Understanding Check",
+  "description": "8 questions",
+  "questions": [
+    {
+      "id": "course3-approximate-irrational-numbers-understanding-check-001",
+      "type": "numeric",
+      "questionText": "What is the greatest whole number less than the square root of 58?",
+      "correctAnswer": "7",
+      "answerType": "number",
+      "explanation": "7 squared is 49 and 8 squared is 64. Therefore 7 < sqrt(58) < 8.",
+      "difficulty": "scaffold",
+      "tags": [
+        "check-foundation"
+      ],
+      "skillTags": [
+        "reasoning",
+        "computation"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-approximate-irrational-numbers-understanding-check-002",
+      "type": "multiple_choice",
+      "questionText": "Which pair of consecutive integers encloses the square root of 115?",
+      "correctAnswer": "10 and 11",
+      "options": [
+        "11 and 12",
+        "9 and 10",
+        "10 and 11",
+        "57 and 58"
+      ],
+      "explanation": "100 < 115 < 121, so 10 < sqrt(115) < 11.",
+      "difficulty": "scaffold",
+      "tags": [
+        "check-foundation"
+      ],
+      "skillTags": [
+        "reasoning",
+        "computation"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-approximate-irrational-numbers-understanding-check-003",
+      "type": "numeric",
+      "questionText": "A square patio has area 38 square meters. Estimate its side length to the nearest tenth of a meter.",
+      "correctAnswer": "6.2",
+      "answerType": "decimal",
+      "explanation": "6.15 squared = 37.8225, so sqrt(38) is above the rounding midpoint 6.15 and below 6.25; it rounds to 6.2.",
+      "difficulty": "standard",
+      "tags": [
+        "check-transfer"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-approximate-irrational-numbers-understanding-check-004",
+      "type": "multiple_choice",
+      "questionText": "A rod has length sqrt(67) meters. Which interval gives a justified bound?",
+      "correctAnswer": "8.1 < length < 8.2",
+      "options": [
+        "8.1 < length < 8.2",
+        "8.2 < length < 8.3",
+        "6.7 < length < 6.8",
+        "8.0 < length < 8.1"
+      ],
+      "explanation": "8.1 squared = 65.61 and 8.2 squared = 67.24. The area 67 lies between these squares.",
+      "difficulty": "standard",
+      "tags": [
+        "check-transfer"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-approximate-irrational-numbers-understanding-check-005",
+      "type": "numeric",
+      "questionText": "A square tile has area 21 square centimeters. Its side length is sqrt(21). What is the smallest whole-centimeter width of a box that can fit this side?",
+      "correctAnswer": "5",
+      "answerType": "number",
+      "explanation": "4 squared < 21 < 5 squared. The side is greater than 4, so a whole-centimeter width must be at least 5.",
+      "difficulty": "standard",
+      "tags": [
+        "check-transfer"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-approximate-irrational-numbers-understanding-check-006",
+      "type": "multiple_choice",
+      "questionText": "A student rounds sqrt(30) to 5.4 because 5.4 squared is below 30. Which reasoning corrects the rounding?",
+      "correctAnswer": "5.45 squared is 29.7025, so sqrt(30) rounds to 5.5.",
+      "options": [
+        "Always round down when a square is below the target.",
+        "sqrt(30) is exactly 5.4.",
+        "Compare 30 with 5.4 instead of squaring.",
+        "5.45 squared is 29.7025, so sqrt(30) rounds to 5.5."
+      ],
+      "explanation": "Use the midpoint between 5.4 and 5.5. Since sqrt(30) exceeds 5.45, round up to 5.5.",
+      "difficulty": "standard",
+      "tags": [
+        "check-misconception"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-approximate-irrational-numbers-understanding-check-007",
+      "type": "multiple_choice",
+      "questionText": "Given 7.2 squared = 51.84 and 7.3 squared = 53.29, can these facts alone decide whether sqrt(52) rounds to 7.2 or 7.3?",
+      "correctAnswer": "No; also compare 52 with the square of the midpoint 7.25.",
+      "options": [
+        "Yes; always choose the lower bound.",
+        "No; also compare 52 with the square of the midpoint 7.25.",
+        "Yes; always choose the upper bound.",
+        "No; square roots cannot be rounded."
+      ],
+      "explanation": "The bounds locate the root, but the midpoint square determines nearest-tenth rounding. Here 7.25 squared = 52.5625, so the result is 7.2.",
+      "difficulty": "standard",
+      "tags": [
+        "check-misconception"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-approximate-irrational-numbers-understanding-check-008",
+      "type": "numeric",
+      "questionText": "Two square gardens have areas 13 and 29 square meters. A straight path has length equal to the sum of their side lengths. Estimate the path length to the nearest tenth of a meter. Keep extra digits until the final rounding.",
+      "correctAnswer": "9",
+      "answerType": "decimal",
+      "explanation": "sqrt(13) is about 3.60555 and sqrt(29) about 5.38516. Their sum is about 8.99071, which rounds to 9.0.",
+      "difficulty": "challenge",
+      "tags": [
+        "check-challenge"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    }
+  ]
+}

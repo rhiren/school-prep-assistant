@@ -4,8 +4,10 @@ import { MasteryBadge } from "../components/MasteryBadge";
 import type { Concept, ProgressRecord, TestAttempt, TestSet } from "../domain/models";
 import { useAppServices, useStudentProfiles } from "../state/AppServicesProvider";
 import { formatDate } from "../utils/format";
+import { checkAvailability } from "../services/understandingChecks";
 
 function getTestSetLabel(testSet: TestSet): string {
+  if (testSet.type === "understanding-check") return "Understanding Check";
   const key = `${testSet.id} ${testSet.title}`.toLowerCase();
 
   if (key.includes("review")) {
@@ -29,6 +31,7 @@ export function ConceptPage() {
   const [attempts, setAttempts] = useState<TestAttempt[]>([]);
   const [testSets, setTestSets] = useState<TestSet[]>([]);
   const [startingTestSetId, setStartingTestSetId] = useState<string | null>(null);
+  const [startError, setStartError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!conceptId) {
@@ -49,8 +52,13 @@ export function ConceptPage() {
 
   const handleStart = async (testSetId?: string) => {
     setStartingTestSetId(testSetId ?? concept.id);
-    const session = await testGenerationService.createConceptSession(concept.id, testSetId);
-    navigate(`/test/${session.id}`);
+    setStartError(null);
+    try {
+      const session = await testGenerationService.createConceptSession(concept.id, testSetId);
+      navigate(`/test/${session.id}`);
+    } catch (error) {
+      setStartError(error instanceof Error ? error.message : "Unable to start test.");
+    } finally { setStartingTestSetId(null); }
   };
 
   return (
@@ -114,6 +122,7 @@ export function ConceptPage() {
 
         <article className="panel panel-padding">
           <h3 className="text-lg font-semibold text-ink">Tutorial and test sets</h3>
+          {startError ? <p role="alert">{startError}</p> : null}
           <div className="mt-4 space-y-3">
             <Link
               className="block rounded-2xl border border-stone-200 bg-white px-4 py-4 transition hover:border-accent"
@@ -152,11 +161,11 @@ export function ConceptPage() {
                   <div className="mt-4">
                     <button
                       className="action-link"
-                      disabled={startingTestSetId === testSet.id}
+                      disabled={startingTestSetId === testSet.id || (testSet.type === "understanding-check" && !checkAvailability(attempts, testSet).ready)}
                       onClick={() => void handleStart(testSet.id)}
                       type="button"
                     >
-                      {startingTestSetId === testSet.id ? "Creating session..." : "Start test"}
+                      {startingTestSetId === testSet.id ? "Creating session..." : testSet.type === "understanding-check" ? checkAvailability(attempts, testSet).label : "Start test"}
                     </button>
                   </div>
                 </div>

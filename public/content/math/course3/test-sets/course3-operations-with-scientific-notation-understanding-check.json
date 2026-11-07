@@ -1,0 +1,165 @@
+{
+  "testId": "course3-operations-with-scientific-notation-understanding-check",
+  "conceptId": "concept-operations-with-scientific-notation",
+  "type": "understanding-check",
+  "title": "Operations with Scientific Notation: Understanding Check",
+  "description": "8 questions",
+  "questions": [
+    {
+      "id": "course3-operations-with-scientific-notation-understanding-check-001",
+      "type": "numeric",
+      "questionText": "Calculate (3 x 10^4)(2 x 10^2). Enter the result as an ordinary number.",
+      "correctAnswer": "6000000",
+      "answerType": "number",
+      "explanation": "Multiply 3 by 2 and add exponents: 6 x 10^6 = 6000000.",
+      "difficulty": "scaffold",
+      "tags": [
+        "check-foundation"
+      ],
+      "skillTags": [
+        "reasoning",
+        "computation"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-operations-with-scientific-notation-understanding-check-002",
+      "type": "multiple_choice",
+      "questionText": "Which expression equals (8.4 x 10^6) / (2 x 10^3)?",
+      "correctAnswer": "4.2 x 10^3",
+      "options": [
+        "4.2 x 10^9",
+        "6.4 x 10^3",
+        "4.2 x 10^3",
+        "4.2 x 10^2"
+      ],
+      "explanation": "Divide coefficients and subtract exponents: 8.4 / 2 = 4.2 and 6 - 3 = 3.",
+      "difficulty": "scaffold",
+      "tags": [
+        "check-foundation"
+      ],
+      "skillTags": [
+        "reasoning",
+        "computation"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-operations-with-scientific-notation-understanding-check-003",
+      "type": "numeric",
+      "questionText": "A sensor records 2400 bytes each second for 300 seconds. How many bytes are recorded?",
+      "correctAnswer": "720000",
+      "answerType": "number",
+      "explanation": "Multiply rate by time: 2400 x 300 = 720000 bytes.",
+      "difficulty": "standard",
+      "tags": [
+        "check-transfer"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-operations-with-scientific-notation-understanding-check-004",
+      "type": "multiple_choice",
+      "questionText": "One archive is 3.7 x 10^5 bytes and another is 8 x 10^4 bytes. What is their combined size?",
+      "correctAnswer": "4.5 x 10^5 bytes",
+      "options": [
+        "4.5 x 10^5 bytes",
+        "1.17 x 10^6 bytes",
+        "1.17 x 10^9 bytes",
+        "4.5 x 10^4 bytes"
+      ],
+      "explanation": "Rewrite the second size as 0.8 x 10^5, then add coefficients: 3.7 + 0.8 = 4.5.",
+      "difficulty": "standard",
+      "tags": [
+        "check-transfer"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-operations-with-scientific-notation-understanding-check-005",
+      "type": "numeric",
+      "questionText": "A sample contains 9 x 10^7 cells. Each tray holds 3 x 10^4 cells. How many full trays are needed?",
+      "correctAnswer": "3000",
+      "answerType": "number",
+      "explanation": "Divide 9 by 3 and subtract exponents: 3 x 10^3 = 3000 trays.",
+      "difficulty": "standard",
+      "tags": [
+        "check-transfer"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-operations-with-scientific-notation-understanding-check-006",
+      "type": "multiple_choice",
+      "questionText": "A student adds 2 x 10^3 and 5 x 10^4 and reports 7 x 10^7. Which correction identifies the mistake?",
+      "correctAnswer": "Use a common power before adding: the result is 5.2 x 10^4.",
+      "options": [
+        "Add coefficients but keep 10^3: 7 x 10^3.",
+        "Multiply coefficients: 1 x 10^8.",
+        "Only subtract the exponents: 7 x 10^1.",
+        "Use a common power before adding: the result is 5.2 x 10^4."
+      ],
+      "explanation": "Exponent addition applies to multiplication, not addition. 2000 + 50000 = 52000.",
+      "difficulty": "standard",
+      "tags": [
+        "check-misconception"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-operations-with-scientific-notation-understanding-check-007",
+      "type": "multiple_choice",
+      "questionText": "A calculation gives 18 x 10^-5. Which normalized scientific notation preserves its value?",
+      "correctAnswer": "1.8 x 10^-4",
+      "options": [
+        "1.8 x 10^-6",
+        "1.8 x 10^-4",
+        "18 x 10^-4",
+        "0.18 x 10^-4"
+      ],
+      "explanation": "Dividing the coefficient by 10 requires multiplying the power of ten by 10. Increase the exponent from -5 to -4.",
+      "difficulty": "standard",
+      "tags": [
+        "check-misconception"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-operations-with-scientific-notation-understanding-check-008",
+      "type": "numeric",
+      "questionText": "A transmitter sends 6 x 10^6 bytes per minute for 4 minutes. After removing 8 x 10^6 duplicate bytes, the remaining data is split equally among 8 files. How many bytes are in each file?",
+      "correctAnswer": "2000000",
+      "answerType": "number",
+      "explanation": "Total 24 x 10^6; subtract 8 x 10^6 to leave 16 x 10^6; divide by 8 to get 2 x 10^6 bytes.",
+      "difficulty": "challenge",
+      "tags": [
+        "check-challenge"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    }
+  ]
+}

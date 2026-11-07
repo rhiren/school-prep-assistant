@@ -3,10 +3,12 @@ import type {
   ContentRepository,
   StudentProfileService,
   TestGenerationService,
+  ProgressService,
 } from "../services/contracts";
 import type { SessionRepository } from "../storage/repositories";
 import { createId } from "../utils/id";
 import type { QuestionSelectionStrategy } from "./questionSelectionStrategy";
+import { checkAvailability } from "../services/understandingChecks";
 
 export class DeterministicConceptTestEngine implements TestGenerationService {
   constructor(
@@ -16,6 +18,7 @@ export class DeterministicConceptTestEngine implements TestGenerationService {
     private readonly studentProfileService: Pick<StudentProfileService, "getActiveStudentId"> = {
       getActiveStudentId: async () => "student-1",
     },
+    private readonly progressService?: Pick<ProgressService, "getConceptAttempts">,
   ) {}
 
   async createConceptSession(
@@ -36,6 +39,16 @@ export class DeterministicConceptTestEngine implements TestGenerationService {
       (await this.contentRepository.getTestSetsForConcept(conceptId))[0]?.id;
 
     const questionIds = options?.questionIds;
+    const testSet = resolvedTestSetId ? await this.contentRepository.getTestSet(resolvedTestSetId) : null;
+    let understandingCheck: TestSession["understandingCheck"];
+    if (testSet?.type === "understanding-check") {
+      if (testSet.conceptId !== conceptId || questionIds || !this.progressService) throw new Error("Invalid understanding check request.");
+      const available = checkAvailability(await this.progressService.getConceptAttempts(conceptId), testSet);
+      if (!available.ready || !available.priorPracticeAt) throw new Error(available.label);
+      const existing = Object.values(await this.sessionRepository.list()).find(s => s.testSetId === resolvedTestSetId && s.status === "in_progress");
+      if (existing) return existing;
+      understandingCheck = { priorPracticeAt: available.priorPracticeAt };
+    }
     const questions = questionIds
       ? (
           await Promise.all(
@@ -70,6 +83,7 @@ export class DeterministicConceptTestEngine implements TestGenerationService {
       conceptIds: [concept.id],
       questionIds: selectedQuestions.map((question) => question.id),
       answers: {},
+      understandingCheck,
       answerHistory: {},
       smartRetry: options?.smartRetry,
       currentQuestionIndex: 0,

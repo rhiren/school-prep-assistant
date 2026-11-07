@@ -150,6 +150,7 @@ export async function createAppServices(
     sessionRepository,
     selectionStrategy,
     studentProfileService,
+    progressService,
   );
   const mixedTestService = new MixedTestEligibilityEngine(progressService);
   const localDataTransferService = new DataTransferService(

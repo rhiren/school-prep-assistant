@@ -218,6 +218,12 @@ remain:
 
 ### Scoring integrity guardrails
 
+Optional concept-level `understanding-check` sets are supported alongside core
+and review. Preserve their delayed eligibility, one-time fresh-form use, exclusion
+from mixed practice/Smart Retry, and parent-only evidence report. They must not
+change mastery badges. Missing first-answer history is unavailable; numeric drafts
+are not attempts. See `docs/understanding_checks.md` for the pilot and release gates.
+
 Scoring correctness is a top-level product requirement.
 
 Preserve the expectation that:
@@ -345,14 +351,14 @@ and tutorial paths when moving them into book-aligned units so existing local
 progress, Firebase sync, export/import, and parent reporting continue to attach
 to the same skills.
 
-The current active Course 3 manifest contains 61 learner-ready concepts:
+The current active Course 3 manifest contains 63 learner-ready concepts:
 
 - Rigid Transformations and Congruence: 10 concepts
 - Dilations, Similarity, and Slope: 9 concepts
 - Proportional and Linear Relationships: 9 concepts
 - Linear Equations and Linear Systems: 19 concepts (18 planned plus the retained
   Linear Equations Checkpoint)
-- Functions and Volume: 2 concepts (Understand Functions; Functions in Tables and Mapping Diagrams)
+- Functions and Volume: 4 concepts (through Compare Functions in Different Representations)
 - Real Numbers and Exponents: 12 concepts
 
 The current book-aligned learner-ready sequence begins with:
@@ -394,7 +400,7 @@ word problems, and the full Unit 4 mixed review.
 
 The next Course 3 build target is:
 
-- `Functions on Graphs` in Unit 5, `Functions and Volume`
+- `Linear and Nonlinear Functions` in Unit 5, `Functions and Volume`
 
 Course 3 multiple-choice answer choices must remain position-balanced. Do not
 author or generate test banks where the correct answer repeatedly appears in

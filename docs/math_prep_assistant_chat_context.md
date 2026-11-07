@@ -455,6 +455,17 @@ after book Unit 1 has enough learner-ready content.
 
 ## Known Deliberate Non-Changes
 
+### November 7, 2026: Understanding Check Pilot
+
+Added delayed eight-question checks for three existing Course 3 concepts:
+scientific-notation operations, repeating decimals as fractions, and approximating
+irrational numbers. See `docs/understanding_checks.md` for current behavior,
+limitations, and tests. Checks preserve existing progress identities and do not
+change mastery or Smart Retry. Numeric drafts now commit on field exit/submission;
+session writes are serialized, and submitted attempts retain their test-set ID.
+Parent reporting distinguishes observed first answers from final accuracy and
+unavailable history. Historical cloud records without history cannot be backfilled.
+
 These were explicitly left alone on purpose:
 
 - `src/storage/indexedDbStorageService.ts` still uses the old DB name for migration compatibility

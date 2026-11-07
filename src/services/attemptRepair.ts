@@ -83,7 +83,7 @@ export function buildProgressRecordFromAttempts(
   attempts: TestAttempt[],
 ): ProgressRecord | null {
   const conceptAttempts = attempts
-    .filter((attempt) => attempt.conceptId === conceptId)
+    .filter((attempt) => attempt.conceptId === conceptId && !attempt.understandingCheck)
     .sort((left, right) => right.submittedAt.localeCompare(left.submittedAt));
 
   const latestAttempt = conceptAttempts[0];

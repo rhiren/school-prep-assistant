@@ -161,6 +161,22 @@ describe("FirestoreProgressSyncClient", () => {
     expect(writtenSnapshot.data.sessions[0]).not.toHaveProperty("testSetId");
   });
 
+  it("round trips check context and committed answer history through cloud serialization", async () => {
+    const client = new FirestoreProgressSyncClient({} as never);
+    const snapshot = buildSnapshot();
+    const session = snapshot.data.sessions[0];
+    session.testSetId = "check-pilot";
+    session.understandingCheck = {priorPracticeAt:"2026-04-01T12:00:00Z",support:"help"};
+    session.answerHistory = {"question-1":[{questionId:"question-1",response:"42",answeredAt:"2026-04-19T18:01:00Z",inputMethod:"text",committed:true,previousResponse:null}]};
+    await client.saveProgressToCloud("student-1",snapshot);
+    const written = setDocMock.mock.calls[0][1];
+    getDocMock.mockResolvedValue({exists:()=>true,data:()=>written});
+    const loaded = await client.loadProgressFromCloud("student-1");
+    expect(loaded?.snapshot.data.sessions[0].understandingCheck).toEqual(session.understandingCheck);
+    expect(loaded?.snapshot.data.sessions[0].answerHistory).toEqual(session.answerHistory);
+    expect(loaded?.snapshot.data.sessions[0].testSetId).toBe("check-pilot");
+  });
+
   it("lists synced student profiles from the shared roster document", async () => {
     getDocMock.mockResolvedValue({
       exists: () => true,

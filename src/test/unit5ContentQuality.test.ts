@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 type Question = { id: string; questionText: string; correctAnswer: string; options: string[] };
-const slugs = ["understand-functions", "functions-tables-mapping-diagrams"];
+const slugs = ["understand-functions", "functions-tables-mapping-diagrams", "functions-on-graphs", "compare-functions-representations"];
 const bank = (slug: string, kind: string): Question[] => JSON.parse(readFileSync(`public/content/math/course3/test-sets/course3-${slug}-${kind}.json`, "utf8")).questions;
 
 describe("Unit 5 function foundations", () => {

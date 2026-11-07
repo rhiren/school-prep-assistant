@@ -137,7 +137,7 @@ export interface TestSet {
   title: string;
   description: string;
   questionCount: number;
-  type?: "concept" | "review" | "practice";
+  type?: "concept" | "review" | "practice" | "understanding-check";
   path?: string;
   difficultyProfile?: DifficultyProfile;
 }
@@ -168,6 +168,7 @@ export interface Question {
 }
 
 export interface AnswerRecord {
+  committed?: boolean;
   questionId: string;
   response: string;
   answeredAt: string;
@@ -210,6 +211,7 @@ export interface AttemptDurationSignal {
 }
 
 export interface TestSession {
+  understandingCheck?: { priorPracticeAt: string; support?: "independent" | "help" };
   id: string;
   studentId: string;
   mode: SessionMode;
@@ -228,6 +230,7 @@ export interface TestSession {
 }
 
 export interface TestAttempt {
+  understandingCheck?: TestSession["understandingCheck"];
   attemptId: string;
   studentId: string;
   sessionId: string;

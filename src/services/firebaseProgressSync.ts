@@ -677,8 +677,8 @@ export class SyncingSessionService implements SessionService {
     this.syncManager.syncInBackground();
   }
 
-  submitSession(sessionId: string) {
-    return this.delegate.submitSession(sessionId);
+  submitSession(sessionId: string, support?: "independent" | "help") {
+    return this.delegate.submitSession(sessionId, support);
   }
 }
 

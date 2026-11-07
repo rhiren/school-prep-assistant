@@ -123,7 +123,7 @@ export interface SessionService {
   getLatestInProgressSession(): Promise<TestSession | null>;
   saveAnswer(sessionId: string, answer: AnswerRecord): Promise<void>;
   setCurrentQuestionIndex(sessionId: string, index: number): Promise<void>;
-  submitSession(sessionId: string): Promise<TestAttempt>;
+  submitSession(sessionId: string, support?: "independent" | "help"): Promise<TestAttempt>;
 }
 
 export interface MixedTestService {

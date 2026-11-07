@@ -61,12 +61,13 @@ export function ResultsPage() {
   const incorrectResults = attempt.results.filter((result) => !result.isCorrect);
   const feedbackResults = attempt.results.filter((result) => result.feedbackTip);
   const isSmartRetryAttempt = attempt.smartRetry?.kind === "targeted";
+  const isCheck = Boolean(attempt.understandingCheck);
   const handleRetry = async () => {
     if (!attempt.conceptId) {
       return;
     }
 
-    if (isSmartRetryAttempt) {
+    if (isSmartRetryAttempt || isCheck) {
       navigate("/");
       return;
     }
@@ -101,7 +102,7 @@ export function ResultsPage() {
             onClick={() => void handleRetry()}
             type="button"
           >
-            {isSmartRetryAttempt
+            {isSmartRetryAttempt || isCheck
               ? "Back to dashboard"
               : isRetrying
                 ? "Creating retry..."
@@ -126,7 +127,8 @@ export function ResultsPage() {
       <div className="panel panel-padding">
         <h3 className="text-lg font-semibold text-ink">Next step</h3>
         <p className="mt-2 text-sm leading-6 text-stone-600">
-          {isSmartRetryAttempt
+          {isCheck ? "Discuss how you solved two questions, then return to your learning."
+            : isSmartRetryAttempt
             ? "This short Smart Retry set is complete. Return to the dashboard and the next recommendation will explain whether you should move on or do one more focused retry."
             : attempt.summary.percentage >= 85
             ? "Nice work. Review any notes below, then try another set or move ahead in the course."
@@ -135,7 +137,7 @@ export function ResultsPage() {
         <div className="mt-4 flex flex-wrap gap-3">
           {attempt.conceptId ? (
             <>
-              {isSmartRetryAttempt ? (
+              {isSmartRetryAttempt || isCheck ? (
                 <button className="action-link" onClick={() => navigate("/")} type="button">
                   Back to dashboard
                 </button>
@@ -163,6 +165,17 @@ export function ResultsPage() {
         </div>
       </div>
 
+      {isCheck ? (
+        <section className="space-y-3">
+          <h3 className="text-lg font-semibold">Explain your reasoning</h3>
+          {[questionsById[attempt.questionIds[2]], questionsById[attempt.questionIds[5]]].filter(Boolean).map(q => (
+            <details key={q.id} className="border-b border-stone-200 py-3">
+              <summary>{q.prompt} How did you decide? How could you check?</summary>
+              <p className="mt-3">{q.explanation}</p>
+            </details>
+          ))}
+        </section>
+      ) : null}
       {feedbackResults.length > 0 ? (
         <article className="panel panel-padding">
           <h3 className="text-lg font-semibold text-ink">Answer notes</h3>

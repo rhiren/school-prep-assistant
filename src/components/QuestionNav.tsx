@@ -38,8 +38,8 @@ export function QuestionNav({
             type="button"
           >
             <span className="block">Q{index + 1}</span>
-            <span className="block text-[10px] uppercase tracking-[0.2em] opacity-75">
-              {isFlagged ? "Flagged" : isAnswered ? "Done" : "Unanswered"}
+            <span className="block text-[10px] uppercase tracking-normal opacity-75">
+              {isFlagged ? "Flagged" : isAnswered ? "Done" : "Open"}
             </span>
           </button>
         );

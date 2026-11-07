@@ -8,12 +8,16 @@ interface QuestionRendererProps {
   question: Question;
   answer?: AnswerRecord;
   onAnswerChange: (value: string) => void;
+  onAnswerCommit?: (value: string) => void;
+  hideHint?: boolean;
 }
 
 export function QuestionRenderer({
   question,
   answer,
   onAnswerChange,
+  onAnswerCommit,
+  hideHint,
 }: QuestionRendererProps) {
   const showRatioHelper = isRatioQuestion(question) && question.questionType !== "multiple_choice";
   const showRatioTip =
@@ -55,6 +59,7 @@ export function QuestionRenderer({
       <input
         className="w-full rounded-2xl border border-stone-300 bg-white px-4 py-4 text-base outline-none ring-0 transition focus:border-accent"
         onChange={(event) => onAnswerChange(event.target.value)}
+        onBlur={(event) => onAnswerCommit?.(event.target.value)}
         placeholder={
           showRatioHelper
             ? "Enter ratio using ':' (e.g., 2:3)"
@@ -76,7 +81,7 @@ export function QuestionRenderer({
           like 2:3.
         </p>
       ) : null}
-      {question.hint ? (
+      {question.hint && !hideHint ? (
         <p className="text-sm text-stone-500">Hint: {question.hint}</p>
       ) : null}
     </div>

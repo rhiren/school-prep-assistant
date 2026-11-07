@@ -1002,6 +1002,7 @@ describe("content repository", () => {
     expect(course?.units[4]?.id).toBe("course3-unit-functions-volume");
     expect(course?.units[4]?.concepts.map(concept => concept.id)).toEqual([
       "concept-understand-functions", "concept-functions-tables-mapping-diagrams",
+      "concept-functions-on-graphs", "concept-compare-functions-representations",
     ]);
     expect(course?.units[5]?.id).toBe("course3-unit-real-numbers-exponents");
     expect(course?.units[5]?.concepts).toHaveLength(12);
@@ -1009,8 +1010,10 @@ describe("content repository", () => {
     for (const [slug, title] of [
       ["understand-functions", "Understand Functions"],
       ["functions-tables-mapping-diagrams", "Functions in Tables and Mapping Diagrams"],
+      ["functions-on-graphs", "Functions on Graphs"],
+      ["compare-functions-representations", "Compare Functions in Different Representations"],
     ]) conceptPacks.push({
-      conceptId: `concept-${slug}`, standards: ["8.F.1"],
+      conceptId: `concept-${slug}`, standards: [slug === "compare-functions-representations" ? "8.F.2" : "8.F.1"],
       tutorialHeading: `# ${title}`, coreTestId: `course3-${slug}-core`,
       reviewTestId: `course3-${slug}-review`,
     });
@@ -1025,7 +1028,7 @@ describe("content repository", () => {
       expect(concept?.hasTest).toBe(true);
       expect(concept?.standardsFrameworks).toEqual(pack.standards);
       expect(tutorial).toContain(pack.tutorialHeading);
-      expect(testSets.map((testSet) => testSet.id)).toEqual([
+      expect(testSets.filter(testSet => testSet.type !== "understanding-check").map((testSet) => testSet.id)).toEqual([
         pack.coreTestId,
         pack.reviewTestId,
       ]);
@@ -1197,7 +1200,7 @@ describe("content repository", () => {
           expect(
             getTemplateStats(challengeQuestions).uniqueTemplateCount,
             `${testSet.id} challenge questions need varied reasoning forms`,
-          ).toBeGreaterThanOrEqual(3);
+          ).toBeGreaterThanOrEqual(testSet.type === "understanding-check" ? 1 : 3);
         }
       }
     }

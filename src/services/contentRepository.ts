@@ -417,7 +417,7 @@ function normalizeManifestDocument(rawManifest: unknown): CourseManifestDocument
                         return {
                           ...test,
                           type:
-                            rawType === "review" || rawType === "practice" ? rawType : "concept",
+                            rawType === "review" || rawType === "practice" || rawType === "understanding-check" ? rawType : "concept",
                           path: resolveCourseContentPath(
                             toStringValue(test.path),
                             subjectId,
@@ -621,7 +621,7 @@ export function buildContentIndex(
           (concept as Concept & {
             tests?: Array<{
               id?: string;
-              type?: "concept" | "review" | "practice";
+              type?: "concept" | "review" | "practice" | "understanding-check";
               path?: string;
               difficultyProfile?: DifficultyProfile;
             }>;
@@ -716,6 +716,7 @@ export function buildContentIndex(
   for (const testSets of Object.values(testSetsByConceptId)) {
     testSets.sort(
       (left, right) =>
+        Number(left.type === "understanding-check") - Number(right.type === "understanding-check") ||
         left.title.localeCompare(right.title) || left.id.localeCompare(right.id),
     );
   }

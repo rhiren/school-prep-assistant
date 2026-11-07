@@ -1,0 +1,165 @@
+{
+  "testId": "course3-repeating-decimals-fractions-understanding-check",
+  "conceptId": "concept-repeating-decimals-fractions",
+  "type": "understanding-check",
+  "title": "Repeating Decimals as Fractions: Understanding Check",
+  "description": "8 questions",
+  "questions": [
+    {
+      "id": "course3-repeating-decimals-fractions-understanding-check-001",
+      "type": "numeric",
+      "questionText": "Write 0.777... as a fraction. Only the digit 7 repeats.",
+      "correctAnswer": "7/9",
+      "answerType": "fraction",
+      "explanation": "Let x = 0.777... . Then 10x - x = 7, so x = 7/9.",
+      "difficulty": "scaffold",
+      "tags": [
+        "check-foundation"
+      ],
+      "skillTags": [
+        "reasoning",
+        "computation"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-repeating-decimals-fractions-understanding-check-002",
+      "type": "multiple_choice",
+      "questionText": "For x = 0.454545..., which subtraction cancels the repeating tail?",
+      "correctAnswer": "100x - x",
+      "options": [
+        "10x - x",
+        "100x - 10x",
+        "100x - x",
+        "x - 1000x"
+      ],
+      "explanation": "The repeating block has two digits, so shift by two places: 100x = 45.454545... .",
+      "difficulty": "scaffold",
+      "tags": [
+        "check-foundation"
+      ],
+      "skillTags": [
+        "reasoning",
+        "computation"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-repeating-decimals-fractions-understanding-check-003",
+      "type": "numeric",
+      "questionText": "A repeating pattern colors exactly 0.363636... of a strip. What fraction of the strip is colored?",
+      "correctAnswer": "4/11",
+      "answerType": "fraction",
+      "explanation": "99x = 36, giving 36/99 = 4/11.",
+      "difficulty": "standard",
+      "tags": [
+        "check-transfer"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-repeating-decimals-fractions-understanding-check-004",
+      "type": "multiple_choice",
+      "questionText": "One machine completes exactly 0.666... of a job each hour; another completes 0.67. Which rate is greater?",
+      "correctAnswer": "The second rate, by 1/300 of a job per hour.",
+      "options": [
+        "The second rate, by 1/300 of a job per hour.",
+        "The rates are equal.",
+        "The first rate, by 1/300.",
+        "The second rate, by 1/3."
+      ],
+      "explanation": "0.666... = 2/3. Subtract: 67/100 - 2/3 = 1/300.",
+      "difficulty": "standard",
+      "tags": [
+        "check-transfer"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-repeating-decimals-fractions-understanding-check-005",
+      "type": "numeric",
+      "questionText": "A tank is exactly 0.1666... full, with only the 6 repeating. What fraction is full?",
+      "correctAnswer": "1/6",
+      "answerType": "fraction",
+      "explanation": "10x = 1.666... and 100x = 16.666... . Subtract to get 90x = 15, so x = 1/6.",
+      "difficulty": "standard",
+      "tags": [
+        "check-transfer"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-repeating-decimals-fractions-understanding-check-006",
+      "type": "multiple_choice",
+      "questionText": "A student says 0.272727... = 27/100 because two digits repeat. What is the correct repair?",
+      "correctAnswer": "Use 27/99 because 100x - x = 27.",
+      "options": [
+        "Keep 27/100; it is exact.",
+        "Use 27/9 because every repeating decimal has denominator 9.",
+        "Use 2/7 because the digits are 2 and 7.",
+        "Use 27/99 because 100x - x = 27."
+      ],
+      "explanation": "27/100 terminates. Cancelling the infinite tail gives 99x, not 100x.",
+      "difficulty": "standard",
+      "tags": [
+        "check-misconception"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-repeating-decimals-fractions-understanding-check-007",
+      "type": "multiple_choice",
+      "questionText": "A display rounds 2/9 to 0.222. Is the displayed decimal exactly equal to 2/9?",
+      "correctAnswer": "No; 2/9 exceeds 0.222 by 1/4500.",
+      "options": [
+        "Yes; three matching digits prove equality.",
+        "No; 2/9 exceeds 0.222 by 1/4500.",
+        "No; 0.222 exceeds 2/9 by 1/4500.",
+        "No; the difference is 2/9."
+      ],
+      "explanation": "2/9 - 222/1000 = 2/9 - 111/500 = 1/4500. A finite display is not the infinite decimal.",
+      "difficulty": "standard",
+      "tags": [
+        "check-misconception"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    },
+    {
+      "id": "course3-repeating-decimals-fractions-understanding-check-008",
+      "type": "numeric",
+      "questionText": "A ribbon is exactly 1.2333... meters long, with only the 3 repeating. After cutting off 0.4 meter, what fraction of a meter remains?",
+      "correctAnswer": "5/6",
+      "answerType": "fraction",
+      "explanation": "The original is 37/30. Subtract 2/5 = 12/30 to get 25/30 = 5/6.",
+      "difficulty": "challenge",
+      "tags": [
+        "check-challenge"
+      ],
+      "skillTags": [
+        "reasoning",
+        "application"
+      ],
+      "eligibleForMixed": false
+    }
+  ]
+}

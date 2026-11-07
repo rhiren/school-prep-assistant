@@ -66,7 +66,7 @@ interface DifficultyPerformanceEntry {
 type DifficultyPerformance = Record<DifficultyBucket, DifficultyPerformanceEntry>;
 
 function sortAttemptsByMostRecent(attempts: TestAttempt[]): TestAttempt[] {
-  return [...attempts].sort((left, right) => right.submittedAt.localeCompare(left.submittedAt));
+  return attempts.filter(attempt => !attempt.understandingCheck).sort((left, right) => right.submittedAt.localeCompare(left.submittedAt));
 }
 
 function getRetryAttempts(attempts: TestAttempt[]): TestAttempt[] {
@@ -421,7 +421,7 @@ export function buildRetrySet(
     weakSkills?: SkillTag[];
   },
 ): SmartRetrySet {
-  const conceptQuestions = questions.filter((question) => question.conceptId === conceptId);
+  const conceptQuestions = questions.filter((question) => question.conceptId === conceptId && !question.tags.some(tag => tag.startsWith("check-")));
   if (conceptQuestions.length < SMART_RETRY_SET_SIZE) {
     throw new Error(`Smart Retry requires at least ${SMART_RETRY_SET_SIZE} questions for ${conceptId}.`);
   }

@@ -15,6 +15,7 @@ export function TestPage() {
   const [session, setSession] = useState<TestSession | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [support, setSupport] = useState<"independent" | "help" | undefined>();
   const [flaggedQuestionIds, setFlaggedQuestionIds] = useState<string[]>([]);
 
   useEffect(() => {
@@ -67,12 +68,13 @@ export function TestPage() {
     return <div className="panel panel-padding">Session not found.</div>;
   }
 
-  const handleAnswerChange = async (value: string) => {
+  const handleAnswerChange = async (value: string, committed = false) => {
     const answer: AnswerRecord = {
       questionId: currentQuestion.id,
       response: value,
       answeredAt: new Date().toISOString(),
       inputMethod: currentQuestion.questionType === "multiple_choice" ? "choice" : "text",
+      committed: currentQuestion.questionType === "multiple_choice" || committed,
     };
 
     setSession((current) =>
@@ -108,7 +110,10 @@ export function TestPage() {
     }
 
     setIsSubmitting(true);
-    const attempt = await sessionService.submitSession(session.id);
+    if (currentQuestion.questionType !== "multiple_choice") {
+      await handleAnswerChange(session.answers[currentQuestion.id]?.response ?? "", true);
+    }
+    const attempt = await sessionService.submitSession(session.id, support);
     navigate(`/results/${attempt.attemptId}`);
   };
 
@@ -131,7 +136,7 @@ export function TestPage() {
   const isCurrentQuestionAnswered = answeredIds.includes(currentQuestion.id);
   const isCurrentQuestionFlagged = flaggedQuestionIds.includes(currentQuestion.id);
   const isLastQuestion = session.currentQuestionIndex === questions.length - 1;
-  const sessionTitle = session.smartRetry ? "Smart Retry Session" : "Concept Test Session";
+  const sessionTitle = session.understandingCheck ? "Understanding Check" : session.smartRetry ? "Smart Retry Session" : "Concept Test Session";
 
   return (
     <section className="space-y-6">
@@ -241,13 +246,22 @@ export function TestPage() {
         <QuestionRenderer
           answer={session.answers[currentQuestion.id]}
           onAnswerChange={handleAnswerChange}
+          onAnswerCommit={(value) => void handleAnswerChange(value, true)}
+          hideHint={Boolean(session.understandingCheck)}
           question={currentQuestion}
         />
       </article>
 
+      {session.understandingCheck ? (
+        <fieldset className="space-y-2">
+          <legend className="font-semibold">Did you have help with this check?</legend>
+          <label className="mr-6 inline-flex gap-2"><input type="radio" name="support" checked={support === "independent"} onChange={() => setSupport("independent")} />I worked independently</label>
+          <label className="inline-flex gap-2"><input type="radio" name="support" checked={support === "help"} onChange={() => setSupport("help")} />I had help</label>
+        </fieldset>
+      ) : null}
       <div className="sticky bottom-4 z-10">
         <div className="panel panel-padding flex flex-col gap-3 border-stone-300 bg-white/95 backdrop-blur sm:flex-row sm:items-center sm:justify-between">
-          <div className="text-sm leading-6 text-stone-600">
+          <div className="flex flex-wrap gap-x-2 text-sm leading-6 text-stone-600">
             <span>{answeredIds.length} answered</span>
             <span className="mx-2 hidden sm:inline">•</span>
             <span className="text-rose-700">{unansweredIndexes.length} unanswered</span>

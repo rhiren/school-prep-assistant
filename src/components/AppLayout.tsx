@@ -16,6 +16,7 @@ import {
   buildWeeklyParentReport,
 } from "../services/weeklyParentReport";
 import { useTestMode } from "../state/TestModeProvider";
+import { UnderstandingCheckReport } from "./UnderstandingCheckReport";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -281,7 +282,7 @@ export function AppLayout() {
                 </button>
               </div>
             </div>
-            <div className="grid gap-4 p-5 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-4 p-5 sm:grid-cols-2 [&>*]:min-w-0 [&_select]:max-w-full [&_select]:min-w-0 [&_pre]:whitespace-pre-wrap [&_pre]:break-all">
               <section className="rounded-2xl border border-stone-200 bg-white p-4">
                 <div className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
                   Platform
@@ -363,6 +364,7 @@ export function AppLayout() {
                 </div>
               </section>
 
+              {adminReportProfile ? <UnderstandingCheckReport key={adminReportProfile.studentId} student={adminReportProfile} /> : null}
               <section className="rounded-2xl border border-stone-200 bg-white p-4 sm:col-span-2">
                 <div className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
                   Daily Parent Summary
