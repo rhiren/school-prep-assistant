@@ -23,7 +23,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set 3x + 4 = x + 2. Combining terms gives 2x = -2, so x = -1. Substituting into y = 3x + 4 gives y = 1. The solution is (-1, 1)."
     },
     {
       "id": "course3-solve-systems-substitution-review-002",
@@ -43,7 +43,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set -2x + 1 = x + 7. Combining terms gives -3x = 6, so x = -2. Substituting into y = -2x + 1 gives y = 5. The solution is (-2, 5)."
     },
     {
       "id": "course3-solve-systems-substitution-review-003",
@@ -63,7 +63,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set 2x + 4 = -x - 5. Combining terms gives 3x = -9, so x = -3. Substituting into y = 2x + 4 gives y = -2. The solution is (-3, -2)."
     },
     {
       "id": "course3-solve-systems-substitution-review-004",
@@ -83,7 +83,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set x + 7 = -x - 1. Combining terms gives 2x = -8, so x = -4. Substituting into y = x + 7 gives y = 3. The solution is (-4, 3)."
     },
     {
       "id": "course3-solve-systems-substitution-review-005",
@@ -103,12 +103,12 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set 3x - 17 = -2x + 13. Combining terms gives 5x = 30, so x = 6. Substituting into y = 3x - 17 gives y = 1. The solution is (6, 1)."
     },
     {
       "id": "course3-solve-systems-substitution-review-006",
       "type": "multiple_choice",
-      "questionText": "A student sets the two expressions for y equal because both equal y. What solution should they find?",
+      "questionText": "For y = x + 4 and y = -3x - 16, a student sets the two expressions for y equal. What ordered-pair solution should they find?",
       "options": [
         "(-4, -1)",
         "(-5, -1)",
@@ -123,12 +123,12 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set x + 4 = -3x - 16. Combining terms gives 4x = -20, so x = -5. Substituting into y = x + 4 gives y = -1. The solution is (-5, -1)."
     },
     {
       "id": "course3-solve-systems-substitution-review-007",
       "type": "multiple_choice",
-      "questionText": "Use substitution on the system y = 4x - 18 and y = -x + 7. Which point makes both equations true?",
+      "questionText": "Use substitution on the system y = 4x - 18 and y = -x + 7. Which equation results when you set the two expressions for y equal?",
       "options": [
         "4 = -1",
         "4x - 18 = 7",
@@ -143,12 +143,12 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set 4x - 18 = -x + 7. Combining terms gives 5x = 25, so x = 5. Substituting into y = 4x - 18 gives y = 2. The solution is (5, 2)."
     },
     {
       "id": "course3-solve-systems-substitution-review-008",
       "type": "multiple_choice",
-      "questionText": "After substituting, the x-value is 4. What full ordered-pair solution follows?",
+      "questionText": "For y = -2x + 5 and y = -4x + 13, substitution gives x = 4. What full ordered-pair solution follows?",
       "options": [
         "(-3, 4)",
         "(5, -3)",
@@ -163,12 +163,12 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set -2x + 5 = -4x + 13. Combining terms gives 2x = 8, so x = 4. Substituting into y = -2x + 5 gives y = -3. The solution is (4, -3)."
     },
     {
       "id": "course3-solve-systems-substitution-review-009",
       "type": "multiple_choice",
-      "questionText": "Which answer checks in both equations: y = 2x - 2 and y = 4x - 8?",
+      "questionText": "For y = 2x - 2 and y = 4x - 8, what x-value makes the two expressions for y equal?",
       "options": [
         "3",
         "-3",
@@ -183,7 +183,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set 2x - 2 = 4x - 8. Combining terms gives -2x = -6, so x = 3. Substituting into y = 2x - 2 gives y = 4. The solution is (3, 4)."
     },
     {
       "id": "course3-solve-systems-substitution-review-010",
@@ -203,7 +203,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set -3x + 5 = -x + 1. Combining terms gives -2x = -4, so x = 2. Substituting into y = -3x + 5 gives y = -1. The solution is (2, -1)."
     },
     {
       "id": "course3-solve-systems-substitution-review-011",
@@ -223,7 +223,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set x + 2 = 3x. Combining terms gives -2x = -2, so x = 1. Substituting into y = x + 2 gives y = 3. The solution is (1, 3)."
     },
     {
       "id": "course3-solve-systems-substitution-review-012",
@@ -243,7 +243,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set -x - 4 = 2x - 4. Combining terms gives -3x = 0, so x = 0. Substituting into y = -x - 4 gives y = -4. The solution is (0, -4)."
     },
     {
       "id": "course3-solve-systems-substitution-review-013",
@@ -263,7 +263,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set 3x + 4 = x + 2. Combining terms gives 2x = -2, so x = -1. Substituting into y = 3x + 4 gives y = 1. The solution is (-1, 1)."
     },
     {
       "id": "course3-solve-systems-substitution-review-014",
@@ -283,7 +283,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set -2x + 1 = x + 7. Combining terms gives -3x = 6, so x = -2. Substituting into y = -2x + 1 gives y = 5. The solution is (-2, 5)."
     },
     {
       "id": "course3-solve-systems-substitution-review-015",
@@ -303,12 +303,12 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set 2x + 4 = -x - 5. Combining terms gives 3x = -9, so x = -3. Substituting into y = 2x + 4 gives y = -2. The solution is (-3, -2)."
     },
     {
       "id": "course3-solve-systems-substitution-review-016",
       "type": "multiple_choice",
-      "questionText": "A student sets the two expressions for y equal because both equal y. What solution should they find?",
+      "questionText": "For y = x + 7 and y = -x - 1, a student sets the two expressions for y equal. What ordered-pair solution should they find?",
       "options": [
         "(-4, 3)",
         "(3, -4)",
@@ -323,12 +323,12 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set x + 7 = -x - 1. Combining terms gives 2x = -8, so x = -4. Substituting into y = x + 7 gives y = 3. The solution is (-4, 3)."
     },
     {
       "id": "course3-solve-systems-substitution-review-017",
       "type": "multiple_choice",
-      "questionText": "Use substitution on the system y = 3x - 17 and y = -2x + 13. Which point makes both equations true?",
+      "questionText": "Use substitution on the system y = 3x - 17 and y = -2x + 13. Which equation results when you set the two expressions for y equal?",
       "options": [
         "3x - 17 = -2x + 13",
         "-2x + 13 = -17",
@@ -343,12 +343,12 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set 3x - 17 = -2x + 13. Combining terms gives 5x = 30, so x = 6. Substituting into y = 3x - 17 gives y = 1. The solution is (6, 1)."
     },
     {
       "id": "course3-solve-systems-substitution-review-018",
       "type": "multiple_choice",
-      "questionText": "After substituting, the x-value is -5. What full ordered-pair solution follows?",
+      "questionText": "For y = x + 4 and y = -3x - 16, substitution gives x = -5. What full ordered-pair solution follows?",
       "options": [
         "(-5, 0)",
         "(-4, -1)",
@@ -363,12 +363,12 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set x + 4 = -3x - 16. Combining terms gives 4x = -20, so x = -5. Substituting into y = x + 4 gives y = -1. The solution is (-5, -1)."
     },
     {
       "id": "course3-solve-systems-substitution-review-019",
       "type": "multiple_choice",
-      "questionText": "Which answer checks in both equations: y = 4x - 18 and y = -x + 7?",
+      "questionText": "For y = 4x - 18 and y = -x + 7, what x-value makes the two expressions for y equal?",
       "options": [
         "5",
         "2",
@@ -383,7 +383,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set 4x - 18 = -x + 7. Combining terms gives 5x = 25, so x = 5. Substituting into y = 4x - 18 gives y = 2. The solution is (5, 2)."
     },
     {
       "id": "course3-solve-systems-substitution-review-020",
@@ -403,7 +403,7 @@
         "substitution",
         "algebra"
       ],
-      "explanation": "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y."
+      "explanation": "Set -2x + 5 = -4x + 13. Combining terms gives 2x = 8, so x = 4. Substituting into y = -2x + 5 gives y = -3. The solution is (4, -3)."
     }
   ]
 }

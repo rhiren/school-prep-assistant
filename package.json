@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "start:electron": "electron .",
     "build:electron": "electron-packager . SchoolPrepAssistant --platform=darwin --arch=x64 --icon=electron/assets/icon.icns --overwrite --ignore=node_modules --ignore=src --ignore=\\.git",
+    "predeploy": "npm test && npm run build",
     "deploy": "gh-pages -d dist",
     "test": "vitest run",
     "test:watch": "vitest"

@@ -474,6 +474,22 @@ These were explicitly left alone on purpose:
 
 ## Known Caveats Mentioned In Chat
 
+### November 8, 2026: Substitution Question Repair
+
+Repaired 28 incomplete or mismatched prompts across the substitution core/review
+banks, and added question-specific worked solutions to all 70 questions. The
+generator used ten prompt templates but selected answer formats using a five-way
+cycle; two templates omitted the system and two did not name the expected answer
+format correctly. IDs, option order, correct answers, and saved responses remain
+unchanged. Historical answers to defective prompts are not reliable evidence of
+understanding; this repair does not rewrite or reinterpret those attempts.
+
+`substitutionContent.test.ts` now independently solves every substitution system
+from its visible prompt, checks requested formats and unique point solutions,
+and rejects fixtures reproducing the original defects and a swapped key. Future
+substitution banks are discovered automatically. The standard deployment command
+now runs the full test suite and build before publishing.
+
 - Electron verification in this environment had some headless/macOS limitations, so web validation was stronger than GUI-window validation.
 - Some older content-loader warnings about missing tutorials were noted in the chat at various points; they did not block the main web build validations mentioned in those turns.
 

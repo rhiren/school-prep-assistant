@@ -245,6 +245,14 @@ When adding or editing content, preserve:
   content reaches students
 - repository-wide scoring validation and known-correct regression tests for new
   concept packs
+- self-contained question prompts with all required givens, and answer choices
+  matching the requested quantity or representation (point, equation, or scalar)
+- independent mathematical checks derived from the visible questions, not just
+  checks that a generator's answer appears among its own choices; include negative
+  regression fixtures for missing givens, mismatched formats, and swapped keys
+
+The standard `npm run deploy` command must run tests and build successfully before
+publishing. Do not bypass this release gate for content-only changes.
 
 Do not weaken these safeguards casually.
 

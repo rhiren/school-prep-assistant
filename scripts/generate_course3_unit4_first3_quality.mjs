@@ -1,4 +1,4 @@
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 
 const contentRoot = "public/content/math/course3";
 const testSetDir = `${contentRoot}/test-sets`;
@@ -356,10 +356,10 @@ function substitutionBuilders(kind) {
       `A system has ${s.eq1} and ${s.eq2}. After substitution, the solution is which ordered pair?`,
       `Substitute ${s.eq1.replace("y = ", "y = ")} into ${s.eq2}. What x-value solves the system?`,
       `Which ordered pair solves the system ${s.eq1} and ${s.eq2}?`,
-      `A student sets the two expressions for y equal because both equal y. What solution should they find?`,
-      `Use substitution on the system ${s.eq1} and ${s.eq2}. Which point makes both equations true?`,
-      `After substituting, the x-value is ${s.x}. What full ordered-pair solution follows?`,
-      `Which answer checks in both equations: ${s.eq1} and ${s.eq2}?`,
+      `For ${s.eq1} and ${s.eq2}, a student sets the two expressions for y equal. What ordered-pair solution should they find?`,
+      `Use substitution on the system ${s.eq1} and ${s.eq2}. Which equation results when you set the two expressions for y equal?`,
+      `For ${s.eq1} and ${s.eq2}, substitution gives x = ${s.x}. What full ordered-pair solution follows?`,
+      `For ${s.eq1} and ${s.eq2}, what x-value makes the two expressions for y equal?`,
       `Solve by substitution: ${s.eq1}; ${s.eq2}. Which ordered pair is correct?`,
     ][template];
     return makeQuestion({
@@ -369,7 +369,7 @@ function substitutionBuilders(kind) {
       correctAnswer,
       difficulty: d,
       skillTags: ["systems", "substitution", "algebra"],
-      explanation: "When both equations equal y, set the expressions equal, solve for x, then substitute x back to find y.",
+      explanation: `Set ${s.eq1.replace("y = ", "")} = ${s.eq2.replace("y = ", "")}. Combining terms gives ${s.m1 - s.m2}x = ${s.b2 - s.b1}, so x = ${s.x}. Substituting into ${s.eq1} gives y = ${s.y}. The solution is ${point(s.x, s.y)}.`,
     });
   });
 }
@@ -542,18 +542,34 @@ The final ordered pair should make both original equations true.
   },
 ];
 
-for (const pack of packs) {
-  await writeTutorial(pack.slug, pack.tutorial);
+// Repair wording without changing saved answer identities or option positions.
+if (process.argv.includes("--repair-substitution")) {
   for (const kind of ["core", "review"]) {
-    await writeBank({
-      slug: pack.slug,
-      conceptId: pack.conceptId,
-      kind,
-      title: pack.title,
-      description: pack.description,
-      questions: finalize(pack.slug, kind, pack.builder(kind)),
+    const path = `${testSetDir}/course3-solve-systems-substitution-${kind}.json`;
+    const bank = JSON.parse(await readFile(path, "utf8"));
+    const builders = substitutionBuilders(kind);
+    if (bank.questions.length !== builders.length) throw new Error("Unexpected bank length");
+    bank.questions = bank.questions.map((question, index) => {
+      const generated = builders[index](question.id);
+      if (generated.correctAnswer !== question.correctAnswer) throw new Error(`Answer changed: ${question.id}`);
+      return { ...question, questionText: generated.questionText, explanation: generated.explanation };
     });
+    await writeFile(path, `${JSON.stringify(bank, null, 2)}\n`);
   }
-}
+} else {
+  for (const pack of packs) {
+    await writeTutorial(pack.slug, pack.tutorial);
+    for (const kind of ["core", "review"]) {
+      await writeBank({
+        slug: pack.slug,
+        conceptId: pack.conceptId,
+        kind,
+        title: pack.title,
+        description: pack.description,
+        questions: finalize(pack.slug, kind, pack.builder(kind)),
+      });
+    }
+  }
 
-console.log(`Generated ${packs.length} tutorials and ${packs.length * 2} assessment banks.`);
+  console.log(`Generated ${packs.length} tutorials and ${packs.length * 2} assessment banks.`);
+}
