@@ -1,0 +1,950 @@
+{
+  "concept-compare-integers-core": {
+    "addedOn": "2026-04-26",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-compare-integers-review": {
+    "addedOn": "2026-04-26",
+    "updatedOn": "2026-04-26"
+  },
+  "concept-constant-of-proportionality-core": {
+    "addedOn": "2026-04-30",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-constant-of-proportionality-review": {
+    "addedOn": "2026-04-30",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-equivalent-ratios-core": {
+    "addedOn": "2026-04-13",
+    "updatedOn": "2026-04-17"
+  },
+  "concept-equivalent-ratios-review": {
+    "addedOn": "2026-04-13",
+    "updatedOn": "2026-04-17"
+  },
+  "concept-integer-operations-core": {
+    "addedOn": "2026-04-27",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-integer-operations-review": {
+    "addedOn": "2026-04-27",
+    "updatedOn": "2026-04-27"
+  },
+  "concept-percent-relationships-core": {
+    "addedOn": "2026-04-13",
+    "updatedOn": "2026-04-17"
+  },
+  "concept-percent-relationships-review": {
+    "addedOn": "2026-04-13",
+    "updatedOn": "2026-04-17"
+  },
+  "concept-proportional-equations-core": {
+    "addedOn": "2026-05-03",
+    "updatedOn": "2026-05-03"
+  },
+  "concept-proportional-equations-review": {
+    "addedOn": "2026-05-03",
+    "updatedOn": "2026-05-03"
+  },
+  "concept-proportional-graphs-core": {
+    "addedOn": "2026-05-03",
+    "updatedOn": "2026-05-03"
+  },
+  "concept-proportional-graphs-review": {
+    "addedOn": "2026-05-03",
+    "updatedOn": "2026-05-03"
+  },
+  "concept-proportional-relationships-core": {
+    "addedOn": "2026-04-30",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-proportional-relationships-review": {
+    "addedOn": "2026-04-30",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-proportional-tables-core": {
+    "addedOn": "2026-04-30",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-proportional-tables-review": {
+    "addedOn": "2026-04-30",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-proportions-core": {
+    "addedOn": "2026-04-13",
+    "updatedOn": "2026-04-17"
+  },
+  "concept-proportions-review": {
+    "addedOn": "2026-04-13",
+    "updatedOn": "2026-04-17"
+  },
+  "concept-ratios-core": {
+    "addedOn": "2026-04-12",
+    "updatedOn": "2026-04-17"
+  },
+  "concept-ratios-review": {
+    "addedOn": "2026-04-12",
+    "updatedOn": "2026-04-17"
+  },
+  "concept-scale-drawings-core": {
+    "addedOn": "2026-04-30",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-scale-drawings-review": {
+    "addedOn": "2026-04-30",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-solving-proportions-core": {
+    "addedOn": "2026-04-26",
+    "updatedOn": "2026-04-30"
+  },
+  "concept-solving-proportions-review": {
+    "addedOn": "2026-04-26",
+    "updatedOn": "2026-04-26"
+  },
+  "concept-unit-rates-core": {
+    "addedOn": "2026-04-13",
+    "updatedOn": "2026-04-17"
+  },
+  "concept-unit-rates-review": {
+    "addedOn": "2026-04-13",
+    "updatedOn": "2026-04-17"
+  },
+  "course3-angle-angle-similarity-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "course3-angle-angle-similarity-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "course3-approximate-irrational-numbers-core": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-approximate-irrational-numbers-review": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-approximate-irrational-numbers-understanding-check": {
+    "addedOn": "2026-11-07",
+    "updatedOn": "2026-11-07"
+  },
+  "course3-build-equations-from-context-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-build-equations-from-context-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-check-explain-equation-solutions-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-check-explain-equation-solutions-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-choose-efficient-system-method-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-choose-efficient-system-method-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-compare-functions-representations-core": {
+    "addedOn": "2026-11-07",
+    "updatedOn": "2026-11-07"
+  },
+  "course3-compare-functions-representations-review": {
+    "addedOn": "2026-11-07",
+    "updatedOn": "2026-11-07"
+  },
+  "course3-compare-order-real-numbers-core": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-compare-order-real-numbers-review": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-compare-rates-of-change-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-compare-rates-of-change-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-congruence-transformation-sequences-core": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-congruence-transformation-sequences-review": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-congruent-figures-grid-core": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-congruent-figures-grid-review": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-cube-roots-perfect-cubes-core": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-cube-roots-perfect-cubes-review": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-dilations-coordinate-plane-core": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "course3-dilations-coordinate-plane-review": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "course3-equations-distributive-property-core": {
+    "addedOn": "2026-08-01",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-distributive-property-review": {
+    "addedOn": "2026-08-01",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-rational-coefficients-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-rational-coefficients-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-solution-types-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-solution-types-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-variables-both-sides-core": {
+    "addedOn": "2026-08-01",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-variables-both-sides-review": {
+    "addedOn": "2026-08-01",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-y-equals-mx-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-y-equals-mx-plus-b-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-y-equals-mx-plus-b-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-equations-y-equals-mx-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-exterior-angles-triangles-core": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-exterior-angles-triangles-review": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-find-slope-from-graphs-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-find-slope-from-graphs-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-find-slope-tables-points-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-find-slope-tables-points-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-functions-on-graphs-core": {
+    "addedOn": "2026-11-07",
+    "updatedOn": "2026-11-07"
+  },
+  "course3-functions-on-graphs-review": {
+    "addedOn": "2026-11-07",
+    "updatedOn": "2026-11-07"
+  },
+  "course3-functions-tables-mapping-diagrams-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-functions-tables-mapping-diagrams-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-graph-linear-equations-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-graph-linear-equations-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-integer-exponents-core": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-integer-exponents-review": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-linear-equation-word-problems-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-linear-equation-word-problems-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-missing-side-lengths-similar-triangles-core": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "course3-missing-side-lengths-similar-triangles-review": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "course3-operations-with-scientific-notation-core": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-operations-with-scientific-notation-review": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-operations-with-scientific-notation-understanding-check": {
+    "addedOn": "2026-11-07",
+    "updatedOn": "2026-11-07"
+  },
+  "course3-parallel-lines-transversals-core": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-parallel-lines-transversals-review": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-powers-of-ten-core": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-powers-of-ten-review": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-proportional-relationships-as-lines-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-proportional-relationships-as-lines-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-rational-irrational-numbers-core": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-rational-irrational-numbers-review": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-reflections-coordinate-plane-core": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-reflections-coordinate-plane-review": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-repeating-decimals-fractions-core": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-repeating-decimals-fractions-review": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-repeating-decimals-fractions-understanding-check": {
+    "addedOn": "2026-11-07",
+    "updatedOn": "2026-11-07"
+  },
+  "course3-review-equivalent-expressions-core": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-review-equivalent-expressions-review": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-rotations-coordinate-plane-core": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-rotations-coordinate-plane-review": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-scale-factor-dilations-core": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "course3-scale-factor-dilations-review": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "course3-scientific-notation-core": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-scientific-notation-review": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-sequences-rigid-transformations-core": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-sequences-rigid-transformations-review": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-similar-figures-core": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "course3-similar-figures-review": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "course3-similar-triangles-constant-slope-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-similar-triangles-constant-slope-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-solve-multi-step-equations-core": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-solve-multi-step-equations-review": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-solve-systems-elimination-core": {
+    "addedOn": "2026-08-10",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-solve-systems-elimination-review": {
+    "addedOn": "2026-08-10",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-solve-systems-graphing-core": {
+    "addedOn": "2026-08-10",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-solve-systems-graphing-review": {
+    "addedOn": "2026-08-10",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-solve-systems-substitution-core": {
+    "addedOn": "2026-08-10",
+    "updatedOn": "2026-11-08"
+  },
+  "course3-solve-systems-substitution-review": {
+    "addedOn": "2026-08-10",
+    "updatedOn": "2026-11-08"
+  },
+  "course3-square-roots-perfect-squares-core": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-square-roots-perfect-squares-review": {
+    "addedOn": "2026-07-24",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-systems-equations-word-problems-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-systems-equations-word-problems-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-systems-infinitely-many-solutions-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-systems-infinitely-many-solutions-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-systems-no-solution-core": {
+    "addedOn": "2026-08-11",
+    "updatedOn": "2026-08-11"
+  },
+  "course3-systems-no-solution-review": {
+    "addedOn": "2026-08-11",
+    "updatedOn": "2026-08-11"
+  },
+  "course3-translations-coordinate-plane-core": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-translations-coordinate-plane-review": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-triangle-angle-relationships-core": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-triangle-angle-relationships-review": {
+    "addedOn": "2026-08-22",
+    "updatedOn": "2026-08-22"
+  },
+  "course3-understand-functions-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-understand-functions-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-understand-slope-rate-change-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-understand-slope-rate-change-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-understand-solutions-systems-core": {
+    "addedOn": "2026-08-10",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-understand-solutions-systems-review": {
+    "addedOn": "2026-08-10",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-understand-y-intercept-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-understand-y-intercept-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-unit-1-mixed-review-core": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-unit-1-mixed-review-review": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-unit-2-mixed-review-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-unit-2-mixed-review-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-unit-3-mixed-review-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-unit-3-mixed-review-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-unit1-geometry-mixed-review-core": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "course3-unit1-geometry-mixed-review-review": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "course3-unit2-dilations-similarity-slope-mixed-review-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "course3-unit2-dilations-similarity-slope-mixed-review-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "course3-unit4-equations-systems-mixed-review-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-unit4-equations-systems-mixed-review-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "course3-write-linear-equations-representations-core": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-write-linear-equations-representations-review": {
+    "addedOn": "2026-08-08",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-zero-negative-exponents-core": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "course3-zero-negative-exponents-review": {
+    "addedOn": "2026-07-31",
+    "updatedOn": "2026-08-10"
+  },
+  "science-genetics-behavior-advanced-test-1": {
+    "addedOn": "2026-05-03",
+    "updatedOn": "2026-05-03"
+  },
+  "science-genetics-behavior-advanced-test-2": {
+    "addedOn": "2026-05-03",
+    "updatedOn": "2026-05-03"
+  },
+  "science-genetics-behavior-test-1": {
+    "addedOn": "2026-05-03",
+    "updatedOn": "2026-05-03"
+  },
+  "science-genetics-behavior-test-2": {
+    "addedOn": "2026-05-03",
+    "updatedOn": "2026-05-03"
+  },
+  "science-genetics-behavior-test-3": {
+    "addedOn": "2026-05-03",
+    "updatedOn": "2026-05-03"
+  },
+  "science7-biodiversity-human-impact-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-biodiversity-human-impact-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-biodiversity-solutions-tradeoffs-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-biodiversity-solutions-tradeoffs-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-body-systems-information-processing-core": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-body-systems-information-processing-review": {
+    "addedOn": "2026-08-23",
+    "updatedOn": "2026-08-23"
+  },
+  "science7-cell-membrane-materials-movement-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-cell-membrane-materials-movement-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-cell-specialization-microscopy-evidence-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-cell-specialization-microscopy-evidence-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-cells-living-things-core": {
+    "addedOn": "2026-08-15",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-cells-living-things-review": {
+    "addedOn": "2026-08-15",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-comparative-anatomy-evolution-relationships-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-comparative-anatomy-evolution-relationships-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-competition-resource-partitioning-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-competition-resource-partitioning-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-decomposers-matter-cycling-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-decomposers-matter-cycling-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-digestion-molecules-cell-fuel-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-digestion-molecules-cell-fuel-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-dna-genes-chromosomes-traits-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-dna-genes-chromosomes-traits-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-ecosystem-disturbance-recovery-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-ecosystem-disturbance-recovery-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-ecosystem-interactions-dynamics-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-ecosystem-interactions-dynamics-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-energy-pyramids-food-web-efficiency-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-energy-pyramids-food-web-efficiency-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-evolution-life-history-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-evolution-life-history-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-fossil-record-rock-layer-evidence-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-fossil-record-rock-layer-evidence-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-genetics-inheritance-variation-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-genetics-inheritance-variation-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-growth-photosynthesis-cellular-respiration-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-growth-photosynthesis-cellular-respiration-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-homeostasis-feedback-body-systems-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-homeostasis-feedback-body-systems-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-invasive-species-food-web-changes-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-invasive-species-food-web-changes-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-investigating-photosynthesis-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-investigating-photosynthesis-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-limiting-factors-carrying-capacity-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-limiting-factors-carrying-capacity-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "science7-matter-energy-transfer-organisms-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-matter-energy-transfer-organisms-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-natural-selection-adaptation-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-natural-selection-adaptation-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-population-data-ecosystem-stability-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-population-data-ecosystem-stability-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "science7-water-transport-transpiration-core": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "science7-water-transport-transpiration-review": {
+    "addedOn": "2026-10-17",
+    "updatedOn": "2026-10-17"
+  },
+  "spanish7-adjectives-agreement-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-adjectives-agreement-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-classroom-phrases-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-classroom-phrases-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-greetings-introductions-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-greetings-introductions-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-likes-dislikes-gustar-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-likes-dislikes-gustar-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-numbers-age-origin-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-numbers-age-origin-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-para-empezar-practice-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-present-tense-regular-verbs-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-present-tense-regular-verbs-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-question-words-conversations-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-question-words-conversations-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-school-schedule-core": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-school-schedule-review": {
+    "addedOn": "2026-09-06",
+    "updatedOn": "2026-09-06"
+  },
+  "spanish7-sounds-pronunciation-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-sounds-pronunciation-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-subject-pronouns-ser-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-subject-pronouns-ser-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-time-and-dates-core": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  },
+  "spanish7-time-and-dates-review": {
+    "addedOn": "2026-09-07",
+    "updatedOn": "2026-09-07"
+  }
+}
