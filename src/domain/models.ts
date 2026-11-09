@@ -132,6 +132,8 @@ export interface DifficultyProfile {
 }
 
 export interface TestSet {
+  addedOn?: string;
+  updatedOn?: string;
   id: string;
   conceptId: string;
   title: string;

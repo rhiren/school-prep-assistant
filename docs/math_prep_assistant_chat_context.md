@@ -474,6 +474,17 @@ These were explicitly left alone on purpose:
 
 ## Known Caveats Mentioned In Chat
 
+### November 8, 2026: Test Dates and New Check Highlight
+
+Concept-page test cards show Added and (when different) Updated dates. These are
+content version dates derived from first/latest Git author dates, following file
+renames, not claims about the exact time a generator ran. Uncommitted content uses
+the current UTC date until committed. A generated catalog under public/content
+keeps this additive metadata separate from question banks. Full Git history is
+required; test/build hooks refresh it automatically. The newest Understanding
+Check per concept receives a green highlight and New label for 30 days, with all
+existing delayed eligibility, one-use, and scoring rules preserved.
+
 ### November 8, 2026: Substitution Question Repair
 
 Repaired 28 incomplete or mismatched prompts across the substitution core/review

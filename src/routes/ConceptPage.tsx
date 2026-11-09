@@ -5,6 +5,7 @@ import type { Concept, ProgressRecord, TestAttempt, TestSet } from "../domain/mo
 import { useAppServices, useStudentProfiles } from "../state/AppServicesProvider";
 import { formatDate } from "../utils/format";
 import { checkAvailability } from "../services/understandingChecks";
+import { latestNewCheckId, TestSetDates } from "../components/TestSetDates";
 
 function getTestSetLabel(testSet: TestSet): string {
   if (testSet.type === "understanding-check") return "Understanding Check";
@@ -49,6 +50,7 @@ export function ConceptPage() {
   }
 
   const testSetTitles = Object.fromEntries(testSets.map((testSet) => [testSet.id, testSet.title]));
+  const newCheckId = latestNewCheckId(testSets);
 
   const handleStart = async (testSetId?: string) => {
     setStartingTestSetId(testSetId ?? concept.id);
@@ -142,10 +144,11 @@ export function ConceptPage() {
               testSets.map((testSet) => (
                 <div
                   key={testSet.id}
-                  className="rounded-2xl border border-stone-200 bg-white px-4 py-4"
+                  className={`rounded-2xl border px-4 py-4 ${testSet.id === newCheckId ? "border-emerald-600 bg-emerald-50 ring-1 ring-emerald-600" : "border-stone-200 bg-white"}`}
                 >
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div>
+                      {testSet.id === newCheckId ? <div className="mb-2 text-xs font-bold text-emerald-800">New understanding check</div> : null}
                       <div className="font-semibold text-ink">{testSet.title}</div>
                       <div className="mt-2">
                         <span className="rounded-full bg-stone-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-stone-600">
@@ -153,6 +156,7 @@ export function ConceptPage() {
                         </span>
                       </div>
                       <div className="mt-1 text-sm text-stone-600">{testSet.description}</div>
+                      <TestSetDates testSet={testSet} />
                     </div>
                     <div className="text-sm text-stone-500">
                       {testSet.questionCount} question{testSet.questionCount === 1 ? "" : "s"}

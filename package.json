@@ -5,6 +5,9 @@
   "main": "electron/main.js",
   "type": "module",
   "scripts": {
+    "content:dates": "node scripts/update_test_set_history.mjs",
+    "pretest": "npm run content:dates",
+    "prebuild": "npm run content:dates",
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",

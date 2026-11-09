@@ -19,6 +19,7 @@ import type {
 import { normalizeConceptId } from "../utils/conceptIds";
 import type { ContentRepository } from "./contracts";
 import { compareQuestionAnswer } from "../utils/answerNormalization";
+import testSetHistory from "../../public/content/test-set-history.json";
 
 const bundledManifestModules = import.meta.glob("../../public/content/**/manifest/*.json", {
   eager: true,
@@ -689,6 +690,7 @@ export function buildContentIndex(
     }
 
     const testSet: TestSet = {
+      ...(testSetHistory as Record<string, { addedOn: string; updatedOn: string }>)[bank.id],
       id: bank.id,
       conceptId: bank.conceptId,
       title: bank.title,

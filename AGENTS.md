@@ -254,6 +254,14 @@ When adding or editing content, preserve:
 The standard `npm run deploy` command must run tests and build successfully before
 publishing. Do not bypass this release gate for content-only changes.
 
+Test cards show content Added/Updated dates, not student attempt dates. Preserve
+the automatically generated `public/content/test-set-history.json` catalog:
+`content:dates` follows each bank's Git history and runs before tests/builds.
+Use full Git history for publishing. New banks and mixed reviews must receive
+dates; rebuilding unchanged content must not reset them. The newest Understanding
+Check per concept is highlighted for 30 days from its added date, without changing
+eligibility or allowing repeat attempts.
+
 Do not weaken these safeguards casually.
 
 ---
